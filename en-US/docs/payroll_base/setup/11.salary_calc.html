@@ -1,0 +1,189 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Salary calculation | Latvian Payroll </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Salary calculation | Latvian Payroll ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../../favicon.ico">
+    <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../index.html">
+                <img id="logo" class="svg" src="../../.././images/elva_logo.jpg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="salary-calculation">Salary calculation</h1>
+
+<h2 id="advances">Advances</h2>
+<p>For employees who have an advance component entered in the card, it is possible to generate a list of advances. Information about the paid advance will be automatically included in the calculation of the salary for the specific month and deducted from the amount to be paid.</p>
+<p>A new advance list is created by clicking on the shortcut <em>+Advance List</em> on the system home page. All lists of advances are included in a common list <em>Advance Headers</em>.</p>
+<p>The number will be assigned to the list automatically. Next, select Year and Month (automatically will be filled in with the current year and month).
+Advance list lines are automatically generated at the click of a buttons <em>Process</em> - <em>Insert New Lines</em> (<img src="count1.png" alt="alt">), where a filters can be applied to generate only specific lines.</p>
+<p>After generating the advance list and the initial check, it is recommended to change the status (<img src="count2.png" alt="alt">) of the list from <em>Open</em> to <em>Released</em>. This protects the calculation data against accidental corrections. If necessary, the status can be changed in the opposite direction with <img src="count3.png" alt="alt">.</p>
+<p>If no filters were used before generating the employee list, then the system will list all employees and those with no advance payment will be queued with an amount of 0. These employees can be deleted from the list by clicking the button <em>Delete Lines with zero Pay-Out</em> (<img src="count4.png" alt="alt">).</p>
+<p><img src="11.salary_calc_1.png" alt="alt"></p>
+<p>The following additional functions are available in the <em>Report</em> and <em>Actions</em> sections of the Advance List toolbar:</p>
+<ul>
+<li><em>Pay Slip</em> – possibility to print and send pay slips for advance payment.</li>
+<li><em>Detailed Salary List</em> – printout of the advance list for approval.</li>
+<li><em>Export to Payment Journal</em> – payment records will be prepared for export to the payment journal, from which they can be further exported to the bank and posted.</li>
+<li><em>Import Advances From Excel</em>  - it is possible to import the data from an Excel file.</li>
+</ul>
+<h2 id="prepayment">Prepayment</h2>
+<p>The vacation pay that needs to be paid to the employee before the vacation, as well as various lists of bonuses or gifts, should be paid from the list of prepayment - this is, before the end of the month. Taxes are calculated from the amounts in Prepayment in the appropriate period. When generating a payroll, the amounts paid in prepayments will automatically be deducted and the amount paid will be reduced.</p>
+<p><strong>Prior to the calculation of the prepayment, all the information must be added to Absence register and to Component Register.</strong></p>
+<p>If you need to separate the calculations by type, then use the tab <em>Filters</em> (<img src="count4.png" alt="alt">). On the Filter tab, select the criteria for the calculations that you want (or don't want) to pay in the prepayment. For example, without entering any filter criteria, the current absence register entries and the component register entries will be prepared for the selected employee at prepayment line.</p>
+<div class="TIP">
+<h5>Tip</h5>
+<p><strong>If, together with the vacation pay, it is also necessary to pay the salary for the period worked until the leave, the absence record with the code <em>ALGA_PER</em> (Salary for the period) must be recorded in the Absence Registration.</strong></p>
+</div>
+<p>A new list of prepayment is created by clicking on the shortcut <em>+Prepayment List</em> on the system home page. All the prepayment lists are included in a common list <em>Prepayment Headers</em>.</p>
+<p>The number will be assigned to the list automatically. Next, select Year and Month (will be filled in automatically with current year and month).
+Automatic generation of prepayment list lines is done by clicking on a buttons <em>Process</em> - <em>Insert New Lines</em> (<img src="count1.png" alt="alt">).</p>
+<p>After generating the prepayment list and initial check, it is recommended to change the status of the list from <em>Open</em> to <em>Released</em> (<img src="count2.png" alt="alt">). This protects the calculation data against accidental corrections. If necessary, the status can be changed in the opposite direction with (<img src="count3.png" alt="alt">).</p>
+<p><img src="11.salary_calc_2.png" alt="alt"></p>
+<p>The following additional functions are available in the <em>Report</em> section of the prepayment list toolbar:</p>
+<ul>
+<li><em>Pay Slip</em> – possibility to print and send pay slips for prepayment.</li>
+<li><em>Export to Payment Journal</em> – payment records will be prepared for export to the payment journal, from which they can be further exported to the bank and posted.</li>
+<li><em>Detailed Salary List</em> – printout of the prepayment list for approval.</li>
+</ul>
+<h2 id="salary-calculation-1">Salary calculation</h2>
+<p>After when</p>
+<ul>
+<li>position changes are registered</li>
+<li>salary changes are registered,</li>
+<li>updated salary tax book information,</li>
+<li>absences are registered,</li>
+<li>data is entered in the hour register, if applicable,</li>
+<li>one time benefits and deductions have been entered in the Component Register,</li>
+<li>entered monthly bonuses and deductions in the employee card, and other changes in employee data (such as an bank account)</li>
+</ul>
+<p>a monthly closing salary list should be generated. Each employee can be in only one current salary calculation within a month period. You can create multiple payrolls – for example, each department can have its own. Typically, a salary list for the terminated employees is created separately to correctly perform a payments.</p>
+<p>A new salary list is created by clicking on the shortcut <em>+Salary List</em> on the system home page. All salary lists are listed in <em>Salary List</em>.</p>
+<p>The number will be assigned to the list automatically. Next, select Year and Month (automatically filled in with current year and month).
+The automatic generation of salary list lines is done by clicking on the button <em>Process</em> (<img src="count1.png" alt="alt">) - <em>Insert New Lines</em> (<img src="count2.png" alt="alt">).</p>
+<p>By using the function <em>Insert New Lines</em> filters can be applied to the employee number and to the department code. If the function is used without filters, then the list will include all employees for whom are specified any calculation amounts for this month.</p>
+<p>After generating the salary list and initial check, it is recommended to change the status of the list from <em>Open</em> to <em>Released</em> (<img src="count3.png" alt="alt">). This protects the calculation data against accidental corrections. If necessary, the status can be changed in the opposite direction (<img src="count4.png" alt="alt">).</p>
+<p><img src="11.salary_calc_3.png" alt="alt"></p>
+<p>In the Salary list toolbar sections <em>Report</em> un <em>Actions</em> following additional functions are available:</p>
+<ul>
+<li><em>Pay Slip</em> – possibility to print and send salary slips for salary payment.</li>
+<li><em>Export to Payment Journal</em> – payment records will be prepared for export to the payment journal, from which they can be further exported to the bank and posted.</li>
+<li><em>Detailed Salary List</em> – printout of the prepayment list for approval.</li>
+</ul>
+<p>In the Salary list tab <em>Lines</em> - <em>Lines</em> (<img src="count5.png" alt="alt">) the following functions are available for each selected employee:</p>
+<ul>
+<li><em>Employee Details</em> – a shortcut to all historical calculation data related to the particular employee is available.</li>
+<li><em>Worktime</em> – data for the reporting month on planned and actual working hours are available.</li>
+<li><em>Average Gain</em> – if the employee has had a paid absence in the reporting month, then the data on the absence and the average earnings used to pay for the absence can be viewed.</li>
+</ul>
+<p>The salary list can be changed and deleted until it is posted and/ or sent to the payment journal. If corrections or adjustments become necessary after the payroll has been sent to payment journal, paid and/ or posting, recalculation functions should be used. Correction can be made to all document or just to a single line for a selected employee  (or several employees). If you need to correct the entire document, click on the buttons <em>Actions</em> (<img src="count6.png" alt="alt">) - <em>Create Correction Document</em>.
+If you only need to correct only some employee lines, in the <em>Lines</em> tab, select the line (or several lines) you want to correct and click <em>Lines</em> - <em>Create Correction</em> (<img src="count7.png" alt="alt">). corrective transactions are described more detailed in section <em>Corrections and cancellations</em>.</p>
+<p>In order to generate a report related to the salary calculation, it is not necessary to post the salary list. All payroll reports are generated from salary lists, regardless of their status.</p>
+<p>If the salary is calculated and <em>Remaining Payment Amount</em> is a negative amount (the employee is overpaid), then the overpaid amount is transferred to the next salary calculation (as a deduction) with the help of an entry generated by the system in the Component Register.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://dev.azure.com/elva-bc-projects/Latvian-Payroll/_git/Latvian-Payroll-Help?path=en-US/docs/payroll_base/setup/11.salary_calc.md&amp;version=GBmaster&amp;line=1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            © ELVA BALTIC
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../styles/main.js"></script>
+  </body>
+</html>

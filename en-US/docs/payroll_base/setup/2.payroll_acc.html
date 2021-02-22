@@ -1,0 +1,418 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Payroll setup | Latvian Payroll </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Payroll setup | Latvian Payroll ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../../../favicon.ico">
+    <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../index.html">
+                <img id="logo" class="svg" src="../../.././images/elva_logo.jpg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="payroll-setup">Payroll setup</h1>
+
+<p>When you apply the configuration package, the default settings are already complete, but we recommend that you review all the settings to suit your business needs.</p>
+<h3 id="tab-general">Tab: <em>General</em></h3>
+<p><img src="2.payroll_acc_1.png" alt="alt"></p>
+<table>
+<thead>
+<tr>
+<th>Field name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Salary Currency Code</td>
+<td>Specifies the payroll currency code. If salaries are calculated in local currency, leave the field blank.</td>
+</tr>
+<tr>
+<td>Salary Pay Date</td>
+<td>Specifies the payout date that appears on the payroll header and in the VSOAI report for State Revenue Service.</td>
+</tr>
+<tr>
+<td>Advance Pay Date</td>
+<td>Specifies the advance payment date that appears on the advance list header.</td>
+</tr>
+<tr>
+<td>Bank Holiday Coef</td>
+<td>The coefficient is used to calculate the allowance for working hours on public holidays and holidays.</td>
+</tr>
+<tr>
+<td>Night Pay Coef</td>
+<td>The coefficient is used to calculate the allowance for night work hours.</td>
+</tr>
+<tr>
+<td>Overtime Coef</td>
+<td>The coefficient is used to calculate the bonus for worked overtime.</td>
+</tr>
+<tr>
+<td>Income Tax Lvl 1 Income Limit</td>
+<td>Level 1 limit.</td>
+</tr>
+<tr>
+<td>Income Tax Lvl 2 Income Limit</td>
+<td>Level 2 limit, for employees with A1 certificate.</td>
+</tr>
+<tr>
+<td>Income Tax Global Base Code</td>
+<td>Used to facilitate the transition to another level.</td>
+</tr>
+<tr>
+<td>No Justif Absence 12M Check for Average</td>
+<td>This option works if the second feature “Use Curr. Month in Avg. Gain if Period not Full&quot;. If the attribute is not inserted, the current month is not taken if the duration of the eligible absence is less than 12 months, but if the duration of the absence is more than 12 months, the current month will be included in the calculation of average earnings.</td>
+</tr>
+<tr>
+<td>Use Curr. Month in Avg. Gain if Period not Full</td>
+<td>If this is activated, the System will first check the previous 6 calendar months to calculate the average earnings. If there have been working hours in the previous 6 calendar months, the system checks the first calendar month (from this 6-month period). If there were no hours in the first month - the system considers this to be an incomplete period and the current month is also used to calculate the average earnings. If there have been hours in the first month - the previous 6 calendar months are used to calculate the average earnings. If there have been no working hours in the previous 6 calendar months, the system checks the previous 12 calendar months. If there have been working hours in the previous 12 calendar months, the System checks the first calendar month (from this 12-month period). If there were no hours in the first month - the System considers that this is an incomplete period and the current month is also used to calculate the average earnings. If there have been hours in the first month - the previous 12 calendar months are used to calculate the average earnings. If there have been no working hours in the previous 12 calendar months, then the System uses only the data of the current month to calculate the average earnings. If there have been no working hours in the previous 12 calendar months, as well as in the current month - the minimum wage of the previous 6 calendar months will be used to calculate the average earnings.</td>
+</tr>
+<tr>
+<td>Average Gain Precision</td>
+<td>Indicates the precision (decimal point) with which the average earnings will be used in the calculations.</td>
+</tr>
+<tr>
+<td>Default Calendar</td>
+<td>National calendar for week of 5 workdays.</td>
+</tr>
+<tr>
+<td>Default Calendar 6DDN</td>
+<td>National calendar for week of 6 workdays.</td>
+</tr>
+<tr>
+<td>Employers Soc. Tax Acc. Type</td>
+<td>Specifies the account type to which the calculated employer social tax will be posted.</td>
+</tr>
+<tr>
+<td>Employers Soc. Tax Acc. No.</td>
+<td>Specifies the account to which the calculated employer's social tax will be posted.</td>
+</tr>
+<tr>
+<td>Automatically Create Employee Position</td>
+<td>If there is a check mark in this field, then when creating a new employee, a position card will be created automatically.</td>
+</tr>
+<tr>
+<td>Bank Journal Template Name</td>
+<td>Indicates the journal through which salary payments will be made from the bank account.</td>
+</tr>
+<tr>
+<td>Child Care Absence Filter</td>
+<td>The corresponding absence code.</td>
+</tr>
+<tr>
+<td>Average Abs. Code For Report</td>
+<td>Absence code for average earnings.</td>
+</tr>
+<tr>
+<td>Absence Code for Correction</td>
+<td>Code with which payroll recalculation lines appear in the Absence register.</td>
+</tr>
+<tr>
+<td>Vacation Day Type</td>
+<td>Indicates how the holidays are counted - Working days or Calendar days.</td>
+</tr>
+<tr>
+<td>Vacation Days per one Period</td>
+<td>Specifies the number of vacation days due per employee per period.</td>
+</tr>
+<tr>
+<td>Vacation Paid Days</td>
+<td>Specifies the number of paid vacation days due to each employee per period.</td>
+</tr>
+<tr>
+<td>Default Hour Qty. For Vacation/Average Calculation</td>
+<td>Indicate the default number of hours per day used in the compensation calculation as well as the average earnings.</td>
+</tr>
+<tr>
+<td>Pay Slip Send Mail By</td>
+<td>Indicates how to send salary slips - Outlook or SMTP protocol. In the case of SMTP, fill in the following fields.</td>
+</tr>
+<tr>
+<td>Pay Slip Sender Name</td>
+<td>Indicates the name that sends out pay slips.</td>
+</tr>
+<tr>
+<td>Pay Slip Sender E-Mail</td>
+<td>Specifies the e-mail through which payroll notes are sent.</td>
+</tr>
+<tr>
+<td>Payroll Role ID</td>
+<td>Indicate the role of the salary that gives the right to see all the information in the employee's card. Indicated only if a user partition with full and partial access is required.</td>
+</tr>
+<tr>
+<td>Next period Deduction Component</td>
+<td>Component used in correction transactions. In case a payment has already been made from the salary list, then in the next salary list of the current month this payment will be listed under the indicated salary component code.</td>
+</tr>
+<tr>
+<td>No System Component Registers</td>
+<td>Indicates if you do not want to use system-generated Component Register entries in payroll calculations. In case adjustments are required and the &quot;Do not use&quot; tick is enabled, notifications of adjustments are displayed during the calculation, but the register entries will not be created.</td>
+</tr>
+<tr>
+<td>Allow Detailed Payment Posting</td>
+<td>A check mark in this field indicates that the salary payment will be posted in detail, rather than grouping everything in one amount. Salary payments are exported to the payment journal and can be posted by the user with standard posting for each employee individually. In this case, in the general ledger can be seen how much each employee receives. Therefore, a second accounting function is provided for salaries, which can be grouped by dimension and then booked into payments.</td>
+</tr>
+<tr>
+<td>No Uncalc. Relief Transfer</td>
+<td>Indicate if you do not want that unapplied reliefs will be carried over to the following months' salary calculations.  Unapplied reliefs are transferred through the entries in Component Register, which is created at the time of calculation. If at the time of the calculation there was an indication that the unapplied reliefs should not be carried over, then there will be no entry in the Component Register and they will not be taken into account next month.</td>
+</tr>
+<tr>
+<td>Department Dimension Code</td>
+<td>Specifies the default dimension code</td>
+</tr>
+</tbody>
+</table>
+<h3 id="tab-numbering">Tab: <em>Numbering</em></h3>
+<p><img src="2.payroll_acc_2.png" alt="alt"></p>
+<table>
+<thead>
+<tr>
+<th>Field name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Salary Nos.</td>
+<td>Specifies the salary list number series.</td>
+</tr>
+<tr>
+<td>Prepayment Nos.</td>
+<td>Specifies the prepayment number series.</td>
+</tr>
+<tr>
+<td>Advance Nos.</td>
+<td>Specifies the advance payment number series.</td>
+</tr>
+<tr>
+<td>Storno Nos.</td>
+<td>Specifies the correction list number series.</td>
+</tr>
+<tr>
+<td>Employee Position Nos.</td>
+<td>Specifies the employee position number series.</td>
+</tr>
+<tr>
+<td>Component Register Nos.</td>
+<td>Specifies the Component register number series.</td>
+</tr>
+<tr>
+<td>System Component Register Nos.</td>
+<td>Specifies the number series for system Component register.</td>
+</tr>
+<tr>
+<td>Position Nos.</td>
+<td>Specifies the number series for system position register.</td>
+</tr>
+<tr>
+<td>Bank Payment Nos.</td>
+<td>Specifies the series of bank salary payment numbers.</td>
+</tr>
+<tr>
+<td>PFPIS Nos.</td>
+<td>Specifies the number series of the report document for State Revenue Services' &quot;The amounts disbursed to the notice of a natural person&quot; (PFPIS).</td>
+</tr>
+</tbody>
+</table>
+<h3 id="tab-components">Tab: <em>Components</em></h3>
+<p><img src="2.payroll_acc_3.png" alt="alt"></p>
+<table>
+<thead>
+<tr>
+<th>Field name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Advance Payroll Component Code</td>
+<td>The specified component will appear on the salary list as a deduction from the advance list.</td>
+</tr>
+<tr>
+<td>Prepay Payroll Component Code</td>
+<td>The specified component will appear in the salary list as a deduction from the prepayment list.</td>
+</tr>
+<tr>
+<td>Minimum Salary Component Code</td>
+<td>Specifies the minimum salary component.</td>
+</tr>
+<tr>
+<td>Negative PayOut Component Code</td>
+<td>Specifies the negative payout component.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="tab-reports">Tab: <em>Reports</em></h3>
+<p><img src="2.payroll_acc_4.png" alt="alt"></p>
+<table>
+<thead>
+<tr>
+<th>Field name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Manager No.</td>
+<td>Indicates the person who will sign the salary statements as manager.</td>
+</tr>
+<tr>
+<td>Status Code Enabled</td>
+<td>If this function is enabled, when filling in the date of recruitment or dismissal in the employee card, the system will automatically offer to enter the employee status code in the list <em>Status codes</em>, from which information for SRS report <em>Information on employees</em> is obtained.</td>
+</tr>
+<tr>
+<td>Executor No.</td>
+<td>Indicates the person who will sign the salary statements as executor.</td>
+</tr>
+<tr>
+<td>Income Tax in Calculation Period</td>
+<td>Indicates that SRS report “The employer's report on payed social and income tax” presents the personal income tax for the current period.</td>
+</tr>
+<tr>
+<td>Exclude Income Tax Clarif.</td>
+<td>The tick works only if no tick is inserted in “Income Tax in Calculation Period”. In case if “Exclude Income Tax Clarif” is enabled, VSAOI report will reflect the income tax amount of the previous calculation period in the income tax field. In case if “Exclude Income Tax Clarif” is not enabled, then the amount of income tax will include the income tax amount of the previous calculation period and the current monthly updates for the previous period.</td>
+</tr>
+<tr>
+<td>PFPIS Default Income Type Code</td>
+<td>It is used in the PFPIS report in case the employee was not granted benefits and no calculation was made because the employee was unpaid in absence. In this case, the default income code will be linked to the gain.</td>
+</tr>
+<tr>
+<td>Soc. Tax Rep. Income Base Code</td>
+<td>Indicates the revenue base for VSAOI report.</td>
+</tr>
+<tr>
+<td>Soc. Tax Rep. Soc. Tax Base Code</td>
+<td>Indicates the social tax base for the VSAOI report.</td>
+</tr>
+<tr>
+<td>Soc. Tax Rep. Income Tax Base Code</td>
+<td>Indicates the income tax base for the VSAOI report.</td>
+</tr>
+<tr>
+<td>Soc. Tax Rep. Risk Base Code</td>
+<td>Indicates the risk fee base for the VSAOI report.</td>
+</tr>
+<tr>
+<td>Soc. Tax Rep. Pension Base Code</td>
+<td>Indicates the pension contribution base for the VSAOI report.</td>
+</tr>
+<tr>
+<td>Soc. Tax Rep. Solid. Tax Base Code</td>
+<td>Specifies the solidarity tax base for the VSAOI report.</td>
+</tr>
+<tr>
+<td>Company is a Startup</td>
+<td>Attribute for VSAOI report.</td>
+</tr>
+<tr>
+<td>Stat. Group Change Status Code</td>
+<td>Status code for reports in case of position change.</td>
+</tr>
+</tbody>
+</table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://dev.azure.com/elva-bc-projects/Latvian-Payroll/_git/Latvian-Payroll-Help?path=en-US/docs/payroll_base/setup/2.payroll_acc.md&amp;version=GBmaster&amp;line=1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            © ELVA BALTIC
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../styles/main.js"></script>
+  </body>
+</html>
