@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Apdro&#353;in&#257;&#353;anas pr&#275;miju imports | Latvian Payroll </title>
+    <title>Amatu vietas un r&#299;kojumi | Latvian Payroll </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Apdro&#353;in&#257;&#353;anas pr&#275;miju imports | Latvian Payroll ">
+    <meta name="title" content="Amatu vietas un r&#299;kojumi | Latvian Payroll ">
     <meta name="generator" content="docfx 2.56.7.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
@@ -77,33 +77,48 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="apdrošināšanas-prēmiju-imports">Apdrošināšanas prēmiju imports</h1>
+<h1 id="amatu-vietas-un-rīkojumi">Amatu vietas un rīkojumi</h1>
 
-<p>Sistēma piedāvā iespēju importēt darbinieku apdrošināšanas prēmiju sarakstu no MS Excel faila.</p>
-<h2 id="faila-sagatavošana">Faila sagatavošana</h2>
-<p>Jāizveido Excel fails ar importēšanai nepieciešamo informāciju, izvietojot kolonnu nosaukumus un ierakstot rindiņas ar datiem precīzi kā norādīts piemērā:</p>
-<p><img src="15.5.insurance1.png" alt="alt"></p>
-<h2 id="faila-importēšana">Faila importēšana:</h2>
-<p>Sistēmas meklētājā ierakstiet <em>Importēt darbinieku apdrošināšanas</em></p>
-<p>Atlases nosacījumos jānorāda:</p>
+<p>Amata rīkojums tiek izmantots, lai iegrāmatotu jebkuras izmaiņas, kas ir saistītas ar amatu – jauna amata izveidošana, slēgšana, slodzes maiņa kā arī citas darbības ar amatiem. Iegrāmatojot amata rīkojumu, sistēma automātiski izveido izmaiņas arī amata kartiņā.</p>
+<h2 id="amata-rīkojums">Amata rīkojums</h2>
+<p>Lai varētu vienu amata rīkojumu izveidot par vairākām darbībām (gan vienam, gan vairākiem darbiniekiem vienlaicīgi), amata rīkojums sastāv no virsraksta un vairākām rindām. Virsrakstā ir iespējams norādīt visam rīkojumam kopējo informāciju. Jaunu rīkojumu var izveidot: <em>Amata rīkojumu saraksts</em> - <em>Jauns</em>.</p>
+<p>Virsraksta rindas satur sekojošu informāciju:</p>
 <ul>
-<li>Darbagrāmatas faila nosaukums – importējamais fails;</li>
-<li>Darblapas nosaukums – importējamā faila lapa (ja izveidotajā Excel failā ir vairākas) ar apdrošināšanas prēmiju datiem;</li>
+<li>Nr. – rīkojuma numurs (no numerācijas sērijām);</li>
+<li>Grāmatošanas datums – datums, kad šis rīkojums stājas spēkā;</li>
+<li>Statuss – rīkojuma statuss (izveidots, apstiprināšanā, pabeigts);</li>
+<li>cilnē <em>Paraksti</em> iespējams izvēlēties divus parakstītājus no uzņēmuma amatpersonu tabulas;</li>
+<li>cilnē <em>Papildinfo</em> norāda informācija par to, kurš un kad ir izveidojis rīkojumu</li>
+<li>cilnē <em>Veidnes</em> izvēlas Galvenes veidnes kodu un Kājenes veidnes kodu.</li>
 </ul>
-<p>Rindu ģenerēšanas nosacījumi:</p>
+<p>Katra rīkojuma rinda satur sekojošu informāciju par vienu amata vietu:</p>
 <ul>
-<li>Periods – jānorāda apdrošināšanas maksājuma summas sadalījuma periods:
-<ul>
-<li>Mēnesis – tiek norādīts, ja apdrošināšanas maksājums tiek sadalīts proporcionāli pa mēnešiem;</li>
-<li>Diena – tiek norādīts, ja apdrošināšanas maksājums tiek sadalīts proporcionāli pa dienām;</li>
-<li>Nedēļa – tiek norādīts, ja apdrošināšanas maksājums tiek sadalīts proporcionāli pa nedēļām;</li>
-<li>Ceturksnis – tiek norādīts, ja apdrošināšanas maksājums tiek sadalīts proporcionāli pa ceturkšņiem;</li>
-<li>Gads – tiek norādīts, ja apdrošināšanas maksājums tiek sadalīts proporcionāli pa gadiem;</li>
+<li>Rindas Nr. – rindas numurs pēc kārtas;</li>
+<li>Esošas amata vietas kods – amata kods, kurš ir jāmaina pret jaunu;</li>
+<li>Jaunas amata vietas kods – jauns amats;</li>
+<li>Apraksts – jaunā amata nosaukums;</li>
+<li>Izveidošanas datums;</li>
+<li>Slēgšanas datums;</li>
+<li>Profesijas kods – profesiju kods no profesiju klasifikatora;</li>
+<li>Struktūrvienības kods – kods no struktūrvienību klasifikatora, aprakstīts nodaļā Personāla uzstādījumi;</li>
+<li>Kopējās slodzes –slodzes, kas ir paredzētas šim amatam kopā;</li>
+<li>Amata alga;</li>
+<li>Veida kods – analīzei var sadalīt amatus pa veidiem, piemēram speciālisti un vadītāji;</li>
+<li>Atvaļinājuma dienas;</li>
+<li>Papildatvaļinājuma dienas;</li>
+<li>Rindas veidnes kods – katrai rīkojuma rindai ir iespējams definēt savu veidni, kas kopējā dokumentā (rīkojumā) parādās kā rīkojuma rindkopa. Veidņu veidošana ir aprakstīta nodaļā Dokumentu veidošana.</li>
 </ul>
-</li>
-<li>Summa uz perioda sākumu/beigām – jānorāda uz kuru norādītā perioda daļu (sākumu vai beigām) proporcionāli sadalītā summa tiks aprēķināta;</li>
-<li>Summas sadalījums – jānorāda par kādu periodu summa tiks proporcionāli dalīta.</li>
-</ul>
+<h2 id="rīkojums-par-esošas-amata-vietas-izmaiņām">Rīkojums par esošas amata vietas izmaiņām</h2>
+<p>Lai veiktu jebkuras izmaiņas jau esošajā amatā, tiek izmantoti amata rīkojumi. Izvēloties Esošas amata vietas kodu, sistēma automātiski aizpilda visus laukus no amata kartes, kas attiecas uz šo amatu. Amata rīkojumā veic nepieciešamos labojumus.</p>
+<p>Ja amatu vēlas slēgt un aizvietot ar citu, tad sākumā ir jāizveido jauns amats. Ar Personāla rīkojumu par amata maiņu darbiniekiem jānomaina esošais amats uz jauno amatu (aprakstīts nodaļā <em>Personāla rīkojums</em>) un tikai tad var aizvērt esošo amatu. Ja lietotājs vērs ciet esošos amatus, nenomainot sākumā darbinieku amatus, tad sistēma izdos paziņojumu un neļaus iegrāmatot rīkojumu.</p>
+<p>Visus labojumus ir iespējams veikt, kad rīkojums ir statusā <em>Izveidots</em>.
+Ja sistēmā tiek labota informācija par profesijas kodu un struktūrvienības kodu, tad lai šīs izmaiņas parādītos arī darbinieka kartiņā, amata kartes sadaļā <em>Apstrāde</em> ir jāaktivizē funkcija <em>Atjaunot darbinieku amatus</em>. Un pie opcijām atzīmēt <em>Atjaunot profesijas kodus</em> un <em>Atjaunot struktūrvienības kodus</em>.</p>
+<h2 id="amata-rīkojuma-apstiprināšana-un-grāmatošana">Amata rīkojuma apstiprināšana un grāmatošana</h2>
+<p>Kad visa nepieciešamā informācija ir ievadīta, izveido amata rīkojuma izdruku no piesaistītās veidnes var klikšķinot uz pogas  &quot;Izveidot dokumentu&quot;. Kad sistēma dokumentu izveidojusi, tad atver dokumentu MS Word failā klikšķinot uz pogas  &quot;Atvērt dokumentu&quot;.</p>
+<p>Veidņu izveidošana un piesaistīšana ir aprakstīta nodaļā <em>Dokumentu pievienošana</em>. Sagatavoto dokumentu izdrukā un atdodot parakstīšanai, amata rīkojumā nomaina statusu uz <em>Apstiprināšanā</em>. Saņemot atpakaļ parakstītu dokumentu, amata rīkojuma statusu nomaina uz <em>Pabeigts</em> un iegrāmato.
+Rīkojuma statuss tiek manuāli mainīts atkarībā no dokumenta stāvokļa. Apstiprināšanā esošam un pabeigtam dokumentam netiek atļautas dokumenta satura maiņas. Iegrāmatot var tikai pabeigtu dokumentu.</p>
+<p>Pēc rīkojuma grāmatošanas tas ar grāmatošanas numuru tiek pārvietots uz iegrāmatotajiem amata rīkojumiem, kurus nav iespējams labot.</p>
+<p>Lai nodrošinātu to, ka pēc grāmatošanas dokumentu numuri ir secīgi, sākotnējais dokumenta numurs tiek izmantots kā pagaidu numurs – tikai kamēr dokuments nav iegrāmatots. Grāmatošanas brīdī tiek ņemts nākamais grāmatošanas numerācijas sērijas numurs un piešķirts iegrāmatotajam amata rīkojumam. Sagatavošanas dokumenta numurs pie iegrāmatotā dokumenta arī tiek saglabāts. Numuru uzstādījumi un definēšana ir aprakstīta nodaļā <em>Personāla uzstādījumi</em>.</p>
 </article>
           </div>
           

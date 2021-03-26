@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Apdro&#353;in&#257;&#353;anas pr&#275;miju imports | Latvian Payroll </title>
+    <title>Amata karte | Latvian Payroll </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Apdro&#353;in&#257;&#353;anas pr&#275;miju imports | Latvian Payroll ">
+    <meta name="title" content="Amata karte | Latvian Payroll ">
     <meta name="generator" content="docfx 2.56.7.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
@@ -77,33 +77,95 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="apdrošināšanas-prēmiju-imports">Apdrošināšanas prēmiju imports</h1>
+<h1 id="amata-karte">Amata karte</h1>
 
-<p>Sistēma piedāvā iespēju importēt darbinieku apdrošināšanas prēmiju sarakstu no MS Excel faila.</p>
-<h2 id="faila-sagatavošana">Faila sagatavošana</h2>
-<p>Jāizveido Excel fails ar importēšanai nepieciešamo informāciju, izvietojot kolonnu nosaukumus un ierakstot rindiņas ar datiem precīzi kā norādīts piemērā:</p>
-<p><img src="15.5.insurance1.png" alt="alt"></p>
-<h2 id="faila-importēšana">Faila importēšana:</h2>
-<p>Sistēmas meklētājā ierakstiet <em>Importēt darbinieku apdrošināšanas</em></p>
-<p>Atlases nosacījumos jānorāda:</p>
+<p>Ja tiek iegrāmatots amata rīkojums par jaunas amata vietas izveidošanu, tad grāmatošanas brīdī tiek veidota jauna amata vieta. Ja tiek iegrāmatots amata rīkojums par esošas amata vietas izmaiņām, tad jau esošā amata kartiņā tiek veidotas iegrāmatotās izmaiņas.</p>
+<p>Amata kartiņa satur sekojošus laukus:</p>
 <ul>
-<li>Darbagrāmatas faila nosaukums – importējamais fails;</li>
-<li>Darblapas nosaukums – importējamā faila lapa (ja izveidotajā Excel failā ir vairākas) ar apdrošināšanas prēmiju datiem;</li>
+<li>Kods – jauna amata vietas kods;</li>
+<li>Apraksts – amata nosaukums;</li>
+<li>Veida kods – analīzei var sadalīt amatus pa veidiem, piemēram speciālisti un vadītāji;</li>
+<li>Profesijas kods – kods no profesiju klasifikatora;</li>
+<li>Struktūrvienības kods;</li>
+<li>Struktūrvienības apraksts;</li>
+<li>Kopējās slodzes - slodzes, kas ir paredzētas šim amatam kopā;</li>
+<li>Patreizējās slodzes – cik slodzes uzņēmumā jau ir aizņemtas;</li>
+<li>Patreizējais darbinieku skaits – darbinieku skaits, kas ir nodarbināti konkrētā uzņēmumā;</li>
+<li>Vakantas slodzes – cik slodzes vēl ir vakantas šim amatam;</li>
+<li>Izveidošanas datums – amata izveidošanas datums;</li>
+<li>Slēgšanas datums – amata slēgšanas datums;</li>
+<li>Amata alga – informatīvs lauks;</li>
+<li>Atvaļinājuma dienas;</li>
+<li>Papildatvaļinājuma dienas;</li>
 </ul>
-<p>Rindu ģenerēšanas nosacījumi:</p>
+<p>No amata vietas kartes ir iespējams piekļūt visiem amata rīkojumiem par šo karti tādējādi nodrošinot iespēju apskatīt amata vietas izmaiņas un iepriekšējos stāvokļus. Sadaļā <em>Apstrāde</em> – poga <em>Rīkojuma rindas</em>.</p>
+<h2 id="nepieciešamās-kvalifikācijas">Nepieciešamās kvalifikācijas</h2>
+<p>Gadījumā, ja kādam amatam ir nepieciešama noteikta kvalifikācija, tad tam ir iespējams definēt <em>Nepieciešamās kvalifikācijas</em> amata kartiņas sadaļā <em>Apstrāde</em>. Atveras logs Amata vietas kvalifikācijas, kurš sastāv no sekojošiem laukiem:</p>
 <ul>
-<li>Periods – jānorāda apdrošināšanas maksājuma summas sadalījuma periods:
+<li>Amata vietas kods;</li>
+<li>Nr. – rindas numurs;</li>
+<li>Kvalifikācijas kods – no kvalifikāciju klasifikatora;</li>
+<li>Tipa kods – no kvalifikāciju tipa klasifikatora;</li>
+<li>Izglītība/Prasme – kvalifikācija ir izglītība vai prasme;</li>
+<li>Līmenis – no konkrētās kvalifikācijas līmeņa klasifikatora.</li>
+</ul>
+<p>Kvalifikāciju klasifikatora veidošana ir aprakstīta nodaļā <em>Darbinieka karte</em>.<br>
+Pieņemot amatā, kuram ir definēta kvalifikācija, sistēma paziņo, ka konkrētam darbiniekam pietrūkst kvalifikācija. Aprakstīts nodaļā <em>Personāla rīkojumi</em>.</p>
+<h2 id="riska-faktori">Riska faktori</h2>
+<p>Ja kāds amats ir pakļauts noteiktiem riskiem un lai nodrošinātu riska faktoru piesaisti pie konkrēta darbinieka, norāda amata vietu riska faktorus, kas pieejami no amata kartiņas. Amata kartiņā klikšķiniet uz pogas <em>Riska faktori</em>, kas atrodama sadaļā <em>Apstrāde</em>.
+Atvērsies logs <em>Amata vietas riska faktori</em>, kurš sastāv no sekojošiem laukiem:</p>
 <ul>
-<li>Mēnesis – tiek norādīts, ja apdrošināšanas maksājums tiek sadalīts proporcionāli pa mēnešiem;</li>
-<li>Diena – tiek norādīts, ja apdrošināšanas maksājums tiek sadalīts proporcionāli pa dienām;</li>
-<li>Nedēļa – tiek norādīts, ja apdrošināšanas maksājums tiek sadalīts proporcionāli pa nedēļām;</li>
-<li>Ceturksnis – tiek norādīts, ja apdrošināšanas maksājums tiek sadalīts proporcionāli pa ceturkšņiem;</li>
-<li>Gads – tiek norādīts, ja apdrošināšanas maksājums tiek sadalīts proporcionāli pa gadiem;</li>
+<li>Amata vietas kods;</li>
+<li>Riska faktora kods – riska faktora kods no risku klasifikatora;</li>
+<li>Riska faktora apraksts;</li>
+<li>Datums no – no kura datuma konkrētais riska faktors šai amata vietai stājas spēkā;</li>
+<li>Datums līdz - no kura datuma riska faktors vairs nav spēkā.</li>
 </ul>
-</li>
-<li>Summa uz perioda sākumu/beigām – jānorāda uz kuru norādītā perioda daļu (sākumu vai beigām) proporcionāli sadalītā summa tiks aprēķināta;</li>
-<li>Summas sadalījums – jānorāda par kādu periodu summa tiks proporcionāli dalīta.</li>
+<p>Riska faktoru klasifikatora veidošana ir aprakstīta nodaļā <em>Darba aizsardzība</em>.</p>
+<h2 id="instruktāžas">Instruktāžas</h2>
+<p>Ja konkrētam amatam ir nepieciešams veikt instruktāžas, tad šim amatam iespējams tās definēt amata kartiņā klikšķinot sadaļā <em>Apstrāde</em> uz pogas <em>Instruktāžas</em>.
+Atveras logs <em>Amata vietas instruktāžas</em>, kurš satur sekojošus laukus:</p>
+<ul>
+<li>Amata vietas kods;</li>
+<li>Instruktāžas veida kods – kods no instruktāžas veida klasifikatora. Instruktāžas veida klasifikators ir aprakstīts nodaļā Darba aizsardzība;</li>
+<li>Instruktāžas tēmas kods – kods no instruktāžas tēmu klasifikatora. Instruktāžas tēmu klasifikators aprakstīts nodaļā Darba aizsardzība;</li>
+<li>Datums no – datums, no kura amata vietas instruktāža ir spēkā;</li>
+<li>Datums līdz – datums, līdz kuram amata vietas instruktāža ir spēkā;</li>
+<li>Instruktāžas veida apraksts;</li>
+<li>Instruktāžas tēmas apraksts.</li>
 </ul>
+<h2 id="nevēlamās-amata-prombūtnes-periodi">Nevēlamās amata prombūtnes periodi</h2>
+<p>Lai aizpildītu amata vietas svarīgos periodus, kuros nav vēlamas prombūtnes, no amata kartiņas jāatver un jānorāda nevēlamās prombūtnes periodi, kas atrodas sadaļā <em>Apstrāde</em> un poga <em>Nevēlamās prombūtnes</em>.
+Katram periodam ir iespējams norādīt sekojošu informāciju:</p>
+<ul>
+<li>Amata kods;</li>
+<li>No datuma – perioda sākuma datums;</li>
+<li>Līdz datumam – perioda beigu datums;</li>
+<li>Apraksts – svarīgā notikuma apraksts.</li>
+</ul>
+<p>Šādi periodi jāievada par katru kārtējo gadu atsevišķi.</p>
+<h2 id="amata-algas-komponentes-definēšana">Amata algas komponentes definēšana</h2>
+<p>Lai katram amatam un tālāk arī katram darbiniekam caur personāla rīkojumu piesaistītu algu, amata kartē ir iespējams izveidot amata algas komponentes.
+Amata kartiņā, klikšķinot uz pogas <em>Algas komponentes</em> ir iespējams definēt algas komponentes.</p>
+<ul>
+<li>Amata kods – no amata kodu klasifikatora;</li>
+<li>Rindas Nr. – aizpildās automātiski;</li>
+<li>Tips – aizpildās automātiski, izvēloties kodu;</li>
+<li>Kods – kods no algas komponenšu klasifikatora;</li>
+<li>Apraksts – aizpildās automātiski, ievadot kodu;</li>
+<li>No datuma – no kura datuma algas komponente ir spēkā;</li>
+<li>Līdz datumam – līdz kuram datumam komponente ir spēkā;</li>
+<li>Pamatalga – atzīme par to, vai dotā komponente ir pamatalga</li>
+<li>Aprēķina veids – kā tiek rēķināta sekojoša algas komponente;</li>
+<li>Vērtība – vērtība noteiktai algas komponentei;</li>
+<li>Aprēķināt pēc – automātiski aizpildās, ievadot kodu;</li>
+<li>Bāze – piemaksām un atvilkumiem, kas tiek rēķināti uz bāzes pamata;</li>
+<li>Prioritāte – lielums, kurš norāda konkrētās komponentes vietu algas aprēķināšanas darbību ķēdē – jo mazāks šis lielums, jo augstāku prioritāti tas nozīmē, un jo ātrāk tas tiek iesaistīts aprēķinos;</li>
+<li>Apmaksāt nakts stundas – atzīme par to, ka nakts stundas tiek apmaksātas;</li>
+<li>Apmaksāt svētku stundas – atzīme par to, ka svētku stundas tiek apmaksātas;</li>
+<li>Apmaksāt virsstundas – atzīme par to, ka virsstundas tiek apmaksātas.</li>
+</ul>
+<p>Algas definēšana pie amata kartes nav obligāti – ja uzņēmumam nav definētas algas katram amatam, tad to var nepildīt.</p>
 </article>
           </div>
           
