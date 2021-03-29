@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Person&#257;la r&#299;kojums | Latvian Payroll </title>
+    <title>Zi&#326;ojumu veido&#353;ana | Latvian Payroll </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Person&#257;la r&#299;kojums | Latvian Payroll ">
+    <meta name="title" content="Zi&#326;ojumu veido&#353;ana | Latvian Payroll ">
     <meta name="generator" content="docfx 2.56.7.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
@@ -77,66 +77,80 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="personāla-rīkojums">Personāla rīkojums</h1>
+<h1 id="ziņojumu-veidošana">Ziņojumu veidošana</h1>
 
-<p>Personāla rīkojums tiek izmantots, lai iegrāmatotu jebkuras izmaiņas, kas ir saistītas ar personālu – pieņemšana darbā, atbrīvošana, darbinieka amatu maiņa, slodzes maiņa, algas maiņa utt. Iegrāmatojot personāla rīkojumu, sistēma automātiski izveido izmaiņas arī darbinieka kartiņā. Personāla rīkojumi tiek reģistrēti sarakstā <em>Personāla rīkojumi</em>.</p>
-<h2 id="personāla-rīkojuma-uzbūve">Personāla rīkojuma uzbūve</h2>
-<p>Tā kā personāla rīkojums tāpat kā amata rīkojums pēc sava satura var būt orientēts gan uz vienu, gan uz vairākiem darbiniekiem kā arī vairākām darbībām ar vienu darbinieku, tas sastāv no divām daļām – virsraksta un rindām. Par rīkojuma virsrakstu tiek glabāta sekojoša informācija:</p>
-<p>Cilne <em>Visp. info</em></p>
+<p>Sistēmā ir iespējams automātiski sagatavot un informēt darbiniekus par uzņēmumā svarīgiem notikumiem, kā arī papildus iespējams pārskatīt nosūtīto ziņojumu vēsturi.</p>
+<p>Visi ziņojumi, kā arī to uzstādījumi pieejami atverot sarakstu <em>Ziņojumi</em>.</p>
+<h2 id="ziņojumu-adresātu-grupas">Ziņojumu adresātu grupas</h2>
+<p>Lai nevajadzētu katru reizi jaunam ziņojumam, kas attiecas tikai uz kādu konkrētu saņēmēju loku, pievienot adresātus pa vienam, ir iespējams izveidot adresātu grupas. Atveriet sarakstu <em>Ziņojumu adresātu grupas</em>. Izveidojiet jaunu rindiņu jaunai grupai un caur pogu <em>Rindas</em> piesaistiet adresātus.</p>
+<p>Ziņojumu adresātu grupas rindas satur sekojošus laukus:</p>
 <ul>
-<li>Nr. – rīkojuma unikāls identifikators (iespēja aizpildīt automātiski no numuru sērijām);</li>
-<li>Grāmatošanas datums – rīkojuma stāšanās spēkā datums;</li>
-<li>Statuss – izveidots, apstiprināšanā, pabeigts (paredzēts dokumenta apstiprināšanas procesam).</li>
+<li>Grupas kods – no adresātu grupas klasifikatora, veido pats lietotājs;</li>
+<li>Tips – adresātu grupa vai darbinieks;</li>
+<li>Kods – adresātu grupas kods vai darbinieka numurs (ja noradām e-pastu, var vienkārši ierakstīt kaut ko);</li>
+<li>E-pasts – aizpildīts tikai gadījumā, ja ziņojums sūtīts cilvēkam, kurš nav uzņēmuma darbinieks.</li>
 </ul>
-<p>Cilne <em>Paraksti</em></p>
-<p>Iespējams izvēlēties divus parakstītājus no uzņēmuma amatpersonu tabulas.</p>
-<p>Cilne <em>Veidnes</em>:</p>
+<p>Adresātu grupas rindā ir iespējams definēt darbinieku vai citu adresātu grupu. Šādā veidā iespējams no mazākām grupām veidot lielākas ziņojumu grupas, kas apvieno dažādus darbiniekus. Adresāta e-pasts tiks paņemts no visiem adresātu grupu hierarhijā esošajiem darbiniekiem.</p>
+<h2 id="ziņojumu-notikumu-uzstādījumi">Ziņojumu notikumu uzstādījumi</h2>
+<p>Papildus jāaizpilda <em>Ziņojuma notikumu uzstādījumi</em>, kas satur sekojošus laukus:</p>
 <ul>
-<li>Galvenes veidnes kods;</li>
-<li>Kājenes veidnes kods.</li>
+<li>Kods – ziņojuma kods;</li>
+<li>Nosaukums;</li>
+<li>Automātiskā procesa tips – jānorāda gadījumā, ja tiek konfigurētas procesa rindas, tas ir  automātiskā nosūtīšana par definētiem notikumiem ( dzimšanas dienas, pases termiņš u.c.). Ja procesa rindas netiek konfigurētas, nekas nav jāaizpilda.</li>
+<li>Adresātu grupas kods – no adresātu grupas klasifikatora;</li>
+<li>Sūtīt pašam darbiniekam;</li>
+<li>Sūtīt struktūrvienības vadītājam;</li>
+<li>Pēdējā ziņojuma datums;</li>
+<li>Datuma formula – obligāti jābūt definētai, ja ziņojumam norādīts automātiskā procesa tips;</li>
+<li>
+<ol start="2">
+<li>datuma formula - obligāti jābūt definētai, ja ziņojumam norādīts automātiskā procesa tips;</li>
+</ol>
+</li>
+<li>
+<ol start="3">
+<li>datuma formula - obligāti jābūt definētai, ja ziņojumam norādīts automātiskā procesa tips;</li>
+</ol>
+</li>
+<li>Veidnes kods – ziņojuma veidne.</li>
+<li>Nepieciešama apstiprināšana;</li>
+<li>Apstiprināšanas adresātu grupas kods;</li>
+<li>Prombūtnes filtrs – tiek norādīts prombūtnes kods, ja jāziņo tikai par kādu konkrētu prombūtni (sākuma un beigu datumiem).</li>
 </ul>
-<p>Cilne <em>Papildinfo</em></p>
-<p>Informācija par to, kurš un kad ir izveidojis rīkojumu</p>
-<p>Par rīkojuma rindām tiek glabāta sekojoša informācija:</p>
+<h2 id="ziņojuma-veidne">Ziņojuma veidne</h2>
+<p>Jāizveido jaunas veidnes kods sarakstā <em>Ziņojumu veidnes</em>.
+Jāsagatavo MS Word dokuments, kurā sagatavots ziņojuma teksts. Mainīgā teksta vietā ierakstīt mainīgā dokumenta lauka kodu ar procentiem. Piemēram:</p>
+<p><img src="24.notification_1.png" alt="alt"></p>
+<p><strong>Jāpievērš uzmanība, ka locījumi nav pieejami.</strong> Dokumentu laiku nosaukumi ir pieejami pie konkrētā ziņojuma veida sarakstā <em>Ziņojumu notikumu uzstādījumi</em>, noklikšķinot uz pogas <em>Dokumentu lauki</em>.</p>
+<p>Sagatavotu failu saglabājiet ar paplašinājumu .htm.</p>
+<h2 id="smtp-pasta-servera-uzstādījumi">SMTP pasta servera uzstādījumi</h2>
+<p>Lai būtu iespējams sūtīt ziņojumus no sistēmas ir jāaizpilda <em>SMTP pasta uzstādījumi</em>, kas sastāv no sekojošiem laukiem:</p>
 <ul>
-<li>Rindas Nr. – rindas kārtas Nr. (aizpildās automātiski);</li>
-<li>Darbinieka Nr. – no darbinieku klasifikatora;</li>
-<li>Vārds – darbinieka vārds;</li>
-<li>Uzvārds – darbinieka uzvārds;</li>
-<li>Personas kods – darbinieka personas kods;</li>
-<li>Notikuma veids – pieņemšana, atbrīvošana, amata maiņa, slodzes maiņa, algas maiņa, prombūtne, disciplinārsods, uzteikums, piemaksa/atvilkums, papildus amats, amata atcelšana;</li>
-<li>Rindas veidnes kods – no dokumentu veidņu klasifikatora.</li>
+<li>SMTP serveris – e-pasta pārsūtīšanas SMTP servera adrese</li>
+<li>Autentifikācija – autentifikācijas mehānisms (Anonīms – nav nepieciešams lietotāja ID un parole; NTLM – tiks izmantota Windows autentifikācija; Pamata – tiks izmantots formā norādītais lietotājs un parole.)</li>
+<li>Lietotāja ID – pamata autentifikācijas gadījumā;</li>
+<li>Parole - pamata autentifikācijas gadījumā.</li>
 </ul>
-<h2 id="personāla-rīkojuma-algas-komponentes">Personāla rīkojuma algas komponentes</h2>
-<p>Rīkojuma rindas algas komponentes sastāv no sekojošiem laukiem:</p>
+<h2 id="lietotāju-uzstādījumi">Lietotāju uzstādījumi</h2>
+<p>Lapā <em>Lietotāju uzstādījumi</em> priekš Personāla risinājuma vajadzībām nepieciešams aizpildīt tikai:</p>
 <ul>
-<li>Darbinieka Nr.;</li>
-<li>Vārds;</li>
-<li>Uzvārds;</li>
-<li>Tips - aizpildās automātiski, izvēloties kodu;</li>
-<li>Rīkojuma Nr.;</li>
-<li>Rīkojuma rindas Nr.;</li>
-<li>Rindas Nr.;</li>
-<li>Kods - kods no algas komponenšu klasifikatora;</li>
-<li>Apraksts - aizpildās automātiski, ievadot kodu;</li>
-<li>Dokumenta lauku ID – lauks, kas ir izmantojams pie dokumenta veidošanas MS Word formātā. Dokumentu veidošanas process ir aprakstīts Dokumentu veidošanas sadaļā;</li>
-<li>Slodze;</li>
-<li>No datuma – no kura datuma algas komponentes ir spēkā;</li>
-<li>Līdz datumam - līdz kuram datumam algas komponentes ir spēkā;</li>
-<li>Pamatalga – atzīme par to, vai konkrētā komponente ir pamatalga vai piemaksa;</li>
-<li>Summa par slodzi – summa par vienu slodzi, ielasās no amata kartiņas, ja ir aizpildīts;</li>
-<li>Vērtība - vērtība noteiktai algas komponentei pie noteiktās slodzes;</li>
-<li>Aprēķina veids - kā tiek rēķināta sekojoša algas komponente;</li>
-<li>Aprēķināt pēc - automātiski aizpildās, ievadot kodu;</li>
-<li>Bāze - piemaksām un atvilkumiem, kas tiek rēķināti uz bāzes pamata;</li>
-<li>Prioritāte - lielums, kurš norāda konkrētās komponentes vietu algas aprēķināšanas darbību ķēdē – jo mazāks šis lielums, jo augstāku prioritāti tas nozīmē, un jo ātrāk tas tiek iesaistīts aprēķinos;</li>
-<li>Apmaksāt nakts stundas - atzīme par to, ka nakts stundas tiek apmaksātas;</li>
-<li>Apmaksāt svētku stundas - atzīme par to, ka svētku stundas tiek apmaksātas;</li>
-<li>Apmaksāt virsstundas - atzīme par to, ka virsstundas tiek apmaksātas.</li>
+<li>Lietotā ID – sistēmas lietotāja ID;</li>
+<li>Darbinieka Nr. – norāda darbinieka Nr. tam lietotājam, kurš apstiprina ziņojumu nosūtīšanu.</li>
 </ul>
-<p>Ja personāla rīkojums tiek veidots, neizmantojot darba līgumu vai tā  grozījumus, tad tāpat kā darba līguma algas komponentes, arī personāla rīkojuma algas komponentes tiek ielasītas no amata kartes algas komponentēm, tāpēc lietotājam pirms rīkojuma grāmatošanas ir jāpārliecinās, ka visa informācija, kas ievadīta personāla rīkojuma algas komponentēs atbilst reālajai situācijai.</p>
-<h2 id="personāla-rīkojuma-notikuma-veidi">Personāla rīkojuma notikuma veidi</h2>
-<p>Kā jau tika augstāk minēts, personāla rīkojumam ir iespējams definēt sekojošus notikumus: pieņemšana, atbrīvošana, amata maiņa, slodzes maiņa, algas maiņa, prombūtne, disciplinārsods, uzteikums, piemaksa/atvilkums, papildus amats, amata atcelšana, anulēšana. Katram notikumu veidam atkarībā no tā rakstura sistēmā tiek ievadīta dažāda informācija. Ievade notiek caur Rindas karti, kas pieejama Rindu rīkjoslā.</p>
+<p>Pārējie lauki šim risinājumam nav aktuāli.</p>
+<h2 id="procesa-rinda">Procesa rinda</h2>
+<p><em>Procesa rindas ieraksti</em> kartes cilnē <em>Visp. info</em> var redzēt notikuma veidu, kuram var definēt periodiskumu. Lai definētu pašu notikumu, lietotājam ir jābūt MS Business Central programmēšanas zināšanām.</p>
+<p>Jāpievērš uzmanība, ka laukiem Apraksts un Parametru virkne jābūt vienādiem.</p>
+<p>Cilnē Periodiskums definē ziņojumu sūtīšanas intervālu. Šo lietotājs var definēt pats. Definējot periodiskumu ir jāpievērš uzmanība, lai minūšu skaits no vienas izpildes līdz otrai  nav mazāks par vienu reizi, kas nepieciešams ziņojuma apstrādei.</p>
+<p>Izsūtīto ziņojumu vēsturi par konkrētiem notikumiem var apskatīties procesa rindas žurnāla ierakstos. Žurnāls satur sekojošus laukus:</p>
+<ul>
+<li>Statuss – kurā notikums atrodas uz pārbaudes brīdi - veiksmīgi, notiek, kļūda;</li>
+<li>Lietotāja ID – kurš ir palaidis šo notikuma procesu;</li>
+<li>Izpildāmais objekta nosaukums;</li>
+<li>Sākuma datums/Laiks;</li>
+<li>Beigu datums/Laiks;</li>
+<li>Kļūdas ziņojums – ja statuss ir kļūda.</li>
+</ul>
 </article>
           </div>
           

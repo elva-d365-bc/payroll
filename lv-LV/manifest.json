@@ -1725,7 +1725,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/setup/1.0.setting_up.html",
-          "hash": "0UvJYnMn+Z+9GgHfVsuJ4A=="
+          "hash": "eLzSSPnbFQAzxayn0Hw2wQ=="
         }
       },
       "is_incremental": false,
@@ -2040,7 +2040,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/setup/1.4.pfpis_relief.html",
-          "hash": "m0kICgBIVkkiHnwG4clXxw=="
+          "hash": "3xDZufLbRuxZgs/X66yO7Q=="
         }
       },
       "is_incremental": false,
@@ -2063,7 +2063,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/setup/1.6.overtime.html",
-          "hash": "1RN1DiZMzS5lnf0qfEvBRw=="
+          "hash": "ASQjdzSJ+F5MFgiQWvmG7A=="
         }
       },
       "is_incremental": false,
@@ -3197,12 +3197,100 @@
       "version": ""
     },
     {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/setup/23.docum_templ_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/setup/23.docum_templ_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/setup/23.docum_templ_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/setup/23.docum_templ_2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/setup/23.docum_templ_3.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/setup/23.docum_templ_3.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/setup/23.docum_templ_4.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/setup/23.docum_templ_4.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/setup/23.docum_templ_5.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/setup/23.docum_templ_5.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/setup/23.docum_templ_6.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/setup/23.docum_templ_6.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/setup/23.docum_templ_7.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/setup/23.docum_templ_7.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "docs/payroll_extended/setup/23.document.templates.md",
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/setup/23.document.templates.html",
-          "hash": "ndNgck5mUMstuBH0GnAJlg=="
+          "hash": "nvpWLxu2AFYCDsK5VyWI1g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/setup/24.notification_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/setup/24.notification_1.png"
         }
       },
       "is_incremental": false,
@@ -3214,7 +3302,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/setup/24.notifications.html",
-          "hash": "dCbaMqWsTWvec/77aijrKw=="
+          "hash": "h52yZeKhHJ7HGy2VJWuZUg=="
         }
       },
       "is_incremental": false,
@@ -3226,7 +3314,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/setup/25.permissions.html",
-          "hash": "U11eJOa5e5xC7r3HJDaCPA=="
+          "hash": "fgL24KkCzr8JzgQ4qOfV4Q=="
         }
       },
       "is_incremental": false,
