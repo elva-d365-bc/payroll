@@ -3162,6 +3162,78 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "docs/payroll_extended/setup/22.1_ovp.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/payroll_extended/setup/22.1_ovp.html",
+          "hash": "ESklK2ZRzUJcV9k+5C9/ZQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/payroll_extended/setup/22.2.work_safety.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/payroll_extended/setup/22.2.work_safety.html",
+          "hash": "g842X8BwXT8qmU6hki4ufw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/payroll_extended/setup/22.work_safetry.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/payroll_extended/setup/22.work_safetry.html",
+          "hash": "tRFIJCMcZ2jhmjZCus8PWg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/payroll_extended/setup/23.document.templates.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/payroll_extended/setup/23.document.templates.html",
+          "hash": "ndNgck5mUMstuBH0GnAJlg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/payroll_extended/setup/24.notifications.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/payroll_extended/setup/24.notifications.html",
+          "hash": "dCbaMqWsTWvec/77aijrKw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/payroll_extended/setup/25.permissions.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/payroll_extended/setup/25.permissions.html",
+          "hash": "U11eJOa5e5xC7r3HJDaCPA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "docs/payroll_extended/setup/3.0.employee_card.md",
       "output": {
         ".html": {
@@ -4552,12 +4624,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Toc",
       "source_relative_path": "docs/payroll_extended/toc.md",
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/toc.html",
-          "hash": "G0wJHVkshzXx9fsJkj5OEw=="
+          "hash": "1z4TA0/bKfAMzZTYFQpmsA=="
         }
       },
       "is_incremental": false,
@@ -5992,7 +6067,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 128,
+          "total_file_count": 134,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
