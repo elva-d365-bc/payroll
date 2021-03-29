@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Virsstundu izmanto&#353;ana | Latvian Payroll </title>
+    <title>Virsstundu kompens&#257;cija ar atp&#363;tas laiku | Latvian Payroll </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Virsstundu izmanto&#353;ana | Latvian Payroll ">
+    <meta name="title" content="Virsstundu kompens&#257;cija ar atp&#363;tas laiku | Latvian Payroll ">
     <meta name="generator" content="docfx 2.56.7.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
@@ -77,13 +77,67 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="virsstundu-izmantošana">Virsstundu izmantošana</h1>
+<h1 id="virsstundu-kompensācija-ar-atpūtas-laiku">Virsstundu kompensācija ar atpūtas laiku</h1>
 
-<h2 id="virsstundu-apmaksa">Virsstundu apmaksa</h2>
+<h2 id="uzstādījumi">Uzstādījumi</h2>
+<p>Lai varētu lietot funkcionalitāti, nepieciešami sekojoši uzstādījumi:</p>
+<ol>
+<li>Prombūtnes iemesla karte un algas komponente atpūtas dienām:</li>
+</ol>
+<p><img src="8_overtime_1.png" alt="alt"></p>
+<p><img src="8_overtime_2.png" alt="alt"></p>
+<ol start="2">
+<li>Prombūtnes karte un algas komponente atvaļinājuma papildus dienām</li>
+</ol>
+<p><img src="8_overtime_3.png" alt="alt"></p>
+<p><img src="8_overtime_4.png" alt="alt"></p>
+<ol start="3">
+<li>Virsstundu uzstādījumos aizpilda sekojošus laukus:</li>
+</ol>
+<ul>
+<li>Izmantošanas veids pēc noklusējuma - Apmaksa, Brīvdiena, Atvaļinājuma papilddiena.</li>
+<li>Prombūtnes kods brīvdienu izmantošanai - Norāda kodu “VIRS_ATPUT”.</li>
+<li>Mēnešu skaits brīvdienu izmantošanai - Norāda cik mēnešus atpakaļ vajag meklēt pieejamas virsstundas, kuras izmantos kā brīvdienu.</li>
+<li>Stundu sk. dienā atvaļin. Papilddienai - Norāda virsstundu skaitu lai piešķirt darbiniekam vienu atvaļinājuma papilddienu.</li>
+</ul>
+<h2 id="virsstundu-reģistrācija">Virsstundu reģistrācija</h2>
+<p>Uzskaites logā veicot procesu <em>Aprēķināt virsstundas</em>, automātiski aizpildās arī saraksts <em>Virsstundu uzskaite</em>.
+Gadījumā, ja uzskaites <em>Mēneša virsstundas</em> vērtība tika izmainīta uz 0 vai tiks izdzēsta rinda no Uzskaites, tad tiks dzēsts atbilstošais ieraksts no <em>Virsstundu uzskaite</em>.</p>
+<p><strong>Jāņem vērā ka <em>Uzskaites Mēneša virsstundas</em> vērtībā būs iekļauti gan aprēķinātās virsstundas, gan pārnestas apmaksai no citiem mēnešiem virsstundu skaits.</strong></p>
+<p>Saraksts <em>Virsstundu uzskaite</em> pieejams no Uzskaites loga rīkjoslas vai sistēmas meklētājā. <em>Virsstundu uzskaite</em> satur sekojošus laukus:</p>
+<ul>
+<li>Uzskaites dokumenta Nr. - Uzskaites dokumenta Nr. , kurā darbiniekam ir aprēķinātas virsstundas.</li>
+<li>Darbinieka Nr. - Darbinieka Nr.</li>
+<li>Izmantošanas veids - Virsstundu izmantošanas veids (Apmaksa, Brīvdiena, Atvaļinājuma papilddiena). Gadījumā kad virsstundas izmantošana sadalīta uz vairākiem variantiem (piem. apmaksa + brīvdiena, apmaksa + atvaļ. papildiena), tad laukā būs  pēdējais virsstundu izmantošanas veids. Ierakstiem piešķiras noklusētais tips no Virsstundu uzstādījumiem.</li>
+<li>Atvaļinājuma perioda Nr. - Atvaļinājuma perioda Nr. , kurā tiks piešķirta atvaļinājuma papilddiena.</li>
+<li>Aprēķina uzskaites mēnesis - Konkrētā Uzskaites dokumenta Nr. mēnesis.</li>
+<li>Aprēķina uzskaites gads - Konkrētā Uzskaites dokumenta Nr. gads.</li>
+<li>Uzskaites darbinieka virsstundas - Vērtība no konkrēta Uzskaites dokumenta Nr. lauka Mēneša virsstundas.</li>
+<li>Izmantotas virsstundas - Tabulas Virsstundu izmantošana (sk. zemāk) ierakstu kopēja vērtība ar filtru uz konkrētu Uzskaites dokumenta Nr. un Darbinieka Nr.</li>
+<li>Apmaksas uzskaites mēnesis - Mēnesis, uz kuru tiek pārnesta atlikušas virsstundas apmaksa.</li>
+<li>Apmaksas uzskaites gads - Mēnesis, uz kuru tiek pārnesta atlikušas virsstundas apmaksa.</li>
+<li>Pārvietotas stundas - Uz citu mēnesi apmaksai pārvietojams virsstundu skaits.</li>
+</ul>
+<h2 id="virsstundu-izmantošana">Virsstundu izmantošana</h2>
+<p><img src="8_overtime_5.png" alt="alt"></p>
+<h3 id="virsstundu-apmaksa">Virsstundu apmaksa</h3>
 <p>Algas sarakstā virsstundu aprēķins notiek  tikai tiem darbiniekiem, kam atbilstoša periodā  Virsstundu uzskaitē izmantošanas tips ir Apmaksa.
 Algas sarakstā darbinieka apmaksāta virsstundu skaits sakrīt ar Atlikušas virsstundas vērtību no tabulas Virsstundu uzskaite un ar Uzskaites Mēneša virsstundas vērtību.
-Virsstundu aprēķina brīdī automātiski veidojas ieraksts par virsstundu izmantošanu tabulā Virsstundu izmantošana.
-Tabula Virsstundu izmantošana ir pieejama no Virsstundu uzskaitē rīkjoslas pogas (<img src="count1.png" alt="alt">) vai  klikšķinot uz stundu skaitļa (<img src="count2.png" alt="alt">) rindas laukā Izmantotas virsstundas.</p>
+Virsstundu izmantošanas reģistrs sastāv no sekojošiem laukiem:</p>
+<ul>
+<li>Uzskaites dokumenta Nr. - Uzskaites dokumenta Nr. , kurā darbiniekam ir aprēķinātas virsstundas.</li>
+<li>Darbinieka Nr. - Darbinieka numurs.</li>
+<li>Ieraksta Nr. - Sistēmas automātiski piešķirtais numurs.</li>
+<li>Izmantošanas veids - Apmaksa, Brīvdiena, Atvaļinājuma papilddiena.</li>
+<li>Izmantotas virsstundas - Izmantoto virsstundu skaits.</li>
+<li>Avota tabulas ID / Avota tabulas nosaukums  - Izmantoto virsstundu avota tabulas identifikācija.</li>
+<li>Primārā atslēga - Izmantoto virsstundu avota primārā atslēga, lai varētu caur šo lauku pārslēgties uz dokumentu, kurā tiek izmantotās virsstundas.</li>
+<li>Ieraksta datums un laiks - Ieraksta datums un laiks, kad ieraksts tika izveidots.</li>
+<li>Ieraksta lietotāja ID - Ieraksta lietotāja ID, kurš izveidoja ierakstu.</li>
+<li>Uzskaites mēnesis / Uzskaites gads - Mēnesis/ gads konkrētajam Uzskaites dokumenta Nr.</li>
+</ul>
+<h3 id="virsstundu-kompensēšana-ar-atvaļinājuma-papildus-dienām">Virsstundu kompensēšana ar atvaļinājuma papildus dienām</h3>
+<p>Ja darbinieks vēlas tekoša mēneša virsstundas izmantot nākotnē kā atvaļinājuma papilddienu, tad pirms algas aprēķina darbiniekam Virsstundu uzskaitē atbilstošam ierakstam jāizmaina izmantošanas veids uz Atvaļ.papilddiena. Izmainīt izmantošanas veidu uz Atvaļinājuma papilddienu var ar funkciju <em>Izmainīt virsstundu izmantošanas veidu</em>. Funkcijas filtrā obligāti jānorāda uzskaites dokumenta Nr. , kuram jāizmaina izmantošanas veids.</p>
 </article>
           </div>
           
