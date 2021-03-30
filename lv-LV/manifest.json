@@ -3770,7 +3770,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/setup/4.1.registering_absence.html",
-          "hash": "+emf+C0NGK2YTGzEbF3b/g=="
+          "hash": "G/En0w3jZQIZAF8uzH4bug=="
         }
       },
       "is_incremental": false,
@@ -3793,18 +3793,6 @@
       "output": {
         "resource": {
           "relative_path": "docs/payroll_extended/setup/4.1.registering_absence_1.2.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "docs/payroll_extended/setup/4.2.absence_contin.md",
-      "output": {
-        ".html": {
-          "relative_path": "docs/payroll_extended/setup/4.2.absence_contin.html",
-          "hash": "fU6HvKrerXQ6SsnlXPdHSw=="
         }
       },
       "is_incremental": false,
@@ -4775,7 +4763,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/toc.html",
-          "hash": "S3wpj+sV7SGlbTSzD3ZS9Q=="
+          "hash": "yTQWREqtoUq+KeExgxB8vQ=="
         }
       },
       "is_incremental": false,
@@ -6210,7 +6198,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 134,
+          "total_file_count": 133,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
