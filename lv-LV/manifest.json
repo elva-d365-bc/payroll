@@ -4755,15 +4755,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Toc",
       "source_relative_path": "docs/payroll_extended/toc.md",
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/toc.html",
-          "hash": "yTQWREqtoUq+KeExgxB8vQ=="
+          "hash": "TheW8hL3d8awARvcfWQB3Q=="
         }
       },
       "is_incremental": false,
