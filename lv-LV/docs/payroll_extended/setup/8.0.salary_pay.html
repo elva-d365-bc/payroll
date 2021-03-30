@@ -137,7 +137,40 @@ Virsstundu izmantošanas reģistrs sastāv no sekojošiem laukiem:</p>
 <li>Uzskaites mēnesis / Uzskaites gads - Mēnesis/ gads konkrētajam Uzskaites dokumenta Nr.</li>
 </ul>
 <h3 id="virsstundu-kompensēšana-ar-atvaļinājuma-papildus-dienām">Virsstundu kompensēšana ar atvaļinājuma papildus dienām</h3>
-<p>Ja darbinieks vēlas tekoša mēneša virsstundas izmantot nākotnē kā atvaļinājuma papilddienu, tad pirms algas aprēķina darbiniekam Virsstundu uzskaitē atbilstošam ierakstam jāizmaina izmantošanas veids uz Atvaļ.papilddiena. Izmainīt izmantošanas veidu uz Atvaļinājuma papilddienu var ar funkciju <em>Izmainīt virsstundu izmantošanas veidu</em>. Funkcijas filtrā obligāti jānorāda uzskaites dokumenta Nr. , kuram jāizmaina izmantošanas veids.</p>
+<p>Ja darbinieks vēlas tekoša mēneša virsstundas izmantot nākotnē kā atvaļinājuma papilddienu, tad pirms algas aprēķina darbiniekam Virsstundu uzskaitē atbilstošam ierakstam jāizmaina izmantošanas veids uz Atvaļ.papilddiena. Izmainīt izmantošanas veidu uz Atvaļinājuma papilddienu var ar funkciju <em>Izmainīt virsstundu izmantošanas veidu</em>. Funkcijas filtrā obligāti jānorāda uzskaites dokumenta Nr., kuram jāizmaina izmantošanas veids.</p>
+<p>Papildatvaļinājuma dienu piešķiršana notiek Virsstundu uzskaites tabulā ar secību:</p>
+<ul>
+<li>rindai (-ām) ar izmantošanas veidu Atvaļinājuma papilddiena jānorāda darbinieka atvaļinājuma perioda Nr., kurā jāizveido ieraksts par papildatvaļinājuma piešķiršanu.</li>
+<li>cilnē Darbības palaist funkciju Ģenerēt papildus atvaļinājuma dienas.</li>
+</ul>
+<p><strong>Atvaļinājuma periodos ierakstu par virsstundām piešķirto papildatvaļinājumu var atcelt tikai no Virsstundu uzskaites tabulas ar funkciju <em>Atcelt ģenerētas papildatvaļinājuma dienas</em>.</strong></p>
+<p>Pēc papilddienas ģenerēšanas tiks automātiski izveidoti:</p>
+<ul>
+<li>ieraksts par virsstundu izmantošanu;</li>
+<li>ieraksts par papildatvaļinājuma dienas piešķiršanu noradītā Atvaļinājuma periodā.</li>
+</ul>
+<p>Pēc papildatvaļinājuma piešķiršanas Atvaļinājuma periodā, darbiniekam var iegrāmatot personāla rīkojumu par papildus atvaļinājuma prombūtni.</p>
+<h3 id="virsstundu-kompensēšana-ar-apmaksātām-atpūtas-dienām">Virsstundu kompensēšana ar apmaksātām atpūtas dienām</h3>
+<p>Ja darbinieks vēlas tekoša mēneša virsstundas izmantot nākotnē kā brīvdienu atpūtai, tad pirms algas aprēķina darbiniekam Virsstundu uzskaitē atbilstošam ierakstam jāizmaina izmantošanas veids uz Brīvdiena.</p>
+<p>Izmainīt izmantošanas veidu uz Brīvdienu var arī ar funkciju <em>Izmainīt virsstundu izmantošanas veidu</em>. Funkcijas filtrā obligāti jānorāda uzskaites dokumenta Nr., kuram jāmaina izmantošanas veidu.</p>
+<p>Virsstundu izmantošanas veidu var koriģēt tieši no Uzskaites, izmantojot rindas pogu  Virsstundu uzskaite.</p>
+<p>Brīvdienas piešķiršana notiek ar personāla rīkojuma grāmatošanu vai prombūtnes reģistrāciju žurnālā caur ierakstu ar prombūtnes iemesla kodu VIRS_ATPUT (aprakstīts virsstundu Uzstādījumu nodaļā).</p>
+<p>Pēc personāla rīkojuma grāmatošanas vai prombūtnes reģistrācijas, automātiski veidojas ieraksts par virsstundu izmantošanu.</p>
+<p>Apmaksa par brīvdienu būs aprēķināta algas sarakstā, kas sakrīt ar prombūtnes norādīto aprēķina gadu un mēnesi.</p>
+<h3 id="virsstundu-pārcelšana-uz-citu-periodu">Virsstundu pārcelšana uz citu periodu</h3>
+<p>Ir iespējams viena perioda atlikušās virsstundas pārcelt uz citu periodu.
+Virsstundu pārcelšana notiek ar Virsstundu uzskaite funkciju Izmainīt Virsstundu izmantošanas veidu. Obligāti filtrā jānorāda uzskaites dokumenta Nr., no kura pārceļ virsstundas.
+<strong>Pirms virsstundu pārcelšanas darbiniekam obligāti jābūt izveidotai uzskaitei par periodu, uz kuru plānots pārnest virsstundas.</strong></p>
+<p>Virsstundu pārcelšanas rezultāts:</p>
+<ul>
+<li>Izmantošanas veids periodā, no kura pārceltās virsstundas, izmainīts uz vērtību, kas bija piemērota pārcelšanas funkcijas logā.</li>
+<li>Atlikušas virsstundas periodā, no kura pārceltās virsstundas, ir 0</li>
+<li>Uzskaites darbinieka virsstundas periodā, uz kuru pārceltās virsstundas, palielinātas par pārcelto stundu skaitu.</li>
+<li>Pārcelšana piefiksēta speciālajos pārvietoto stundu laukos.</li>
+</ul>
+<p><strong>Jāņem vēra ka pārceltās virsstundas ar izmantošanas tipu Apmaksa būs pievienotas uzskaitē pie Mēneša virsstundām. Rekomendējam veikt virsstundu pārcelšanu pēdējā solī (pirms Virsstundu aprēķināšanas), kad uzskaite ir korekta un nav vairs plānots mainīt datus.</strong></p>
+<p>Gadījumā, ja darbinieks būs izdzēsts no uzskaites, veiktā virsstundu pārcelšana tiks anulēta - virsstundu uzskaites dati atgriezīsies uz virsstundu atlikumu, kas bija līdz pārcelšanai.
+Gadījumā, ja jāatceļ virsstundas pārcelšanas operācija, tad  Virsstundu uzskaitē  laukos Apmaksa uzskaites mēnesis un Apmaksa uzskaites gads  jāievada tukšas vērtības.</p>
 </article>
           </div>
           
