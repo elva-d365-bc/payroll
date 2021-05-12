@@ -4006,15 +4006,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Conceptual",
       "source_relative_path": "docs/payroll_extended/setup_ext/0.conf_pack.md",
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/setup_ext/0.conf_pack.html",
-          "hash": "6Qeep1I4gi7DkmfwgBRdWBoov4rb3mn/I8t1YjsWQNg="
+          "hash": "7RH+8NFixdw/aqh+xoaEo4W39dDkctUhjkFKlw4KfDw="
         }
       },
       "is_incremental": false,
@@ -4037,7 +4034,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/setup_ext/1.0.setting_up.html",
-          "hash": "kntR7m/8t3pK2/z7cg+Ne1UQbyW8XfB6tieLdTl0DOA="
+          "hash": "qZZuUsF3SxK6EyPWcemthPhuMWC7EJr3eaNNevEijNg="
         }
       },
       "is_incremental": false,
@@ -4060,7 +4057,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/setup_ext/1.1.payroll_dimension.html",
-          "hash": "Th+PEE3sLMD+roLNXKvlvHnHqkw6NMjNeqMh8V0Akvs="
+          "hash": "3GSP5e3yVAuQOFx/paQ9Wc8Sp2t6bHiuMlWhifDaDdY="
         }
       },
       "is_incremental": false,
@@ -4138,7 +4135,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/setup_ext/1.10.soc_stat_codes.html",
-          "hash": "yLIdtyey80+/CDJn/9o5EFEQUwq1lSGRonywdiX64II="
+          "hash": "UbjqAQE3LOpzY0teYUS0o9ieYm+iuS+CN7KBvk/antM="
         }
       },
       "is_incremental": false,
@@ -4161,7 +4158,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/setup_ext/1.11.banks.html",
-          "hash": "ffMsyb20rtK7c2a5JRFw48/kdBgR1+Hv1nUMIBkESok="
+          "hash": "T+cG42+Eh77JyayjKfx/LXW7YL4n/zNjRGav38UP30I="
         }
       },
       "is_incremental": false,
@@ -4206,7 +4203,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/setup_ext/1.12.analysis_templates.html",
-          "hash": "HkuwmUj7oaFv/haTW/myS65TB84m3SQHq3LOFuvpnks="
+          "hash": "RH1OpyBdsFX9/0UIcjgSUv3wElN3mrXQ6tUYDcHItp8="
         }
       },
       "is_incremental": false,
@@ -4240,7 +4237,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/setup_ext/1.2.payroll_setup.html",
-          "hash": "+TQED2k10BZbnhsIMP+vfMAVzcn/5kL0BKGtTrIuYkM="
+          "hash": "YZb5Ldg06ElsfejKPlU2IrhTJjqxO0/9BraT+Az2LCU="
         }
       },
       "is_incremental": false,
@@ -4329,7 +4326,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/setup_ext/1.3.status_codes.html",
-          "hash": "BbwtoTv4e7R7abl06mjcn4rvXK5r35KMtJpkz+QcroA="
+          "hash": "trpryVcUlXvDxR1WPJ5hkR8dH2x+XbF25svn4rSrzcU="
         }
       },
       "is_incremental": false,
@@ -4352,7 +4349,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/setup_ext/1.4.pfpis_relief.html",
-          "hash": "UqKDDb5ttKKVuTlw2ZwDLysGNHjltDuTAoI9KGXlTgg="
+          "hash": "GCoOn7RFH4tdKcCy2XVnqo6wL1yvnd4SZ+La3mGbUGA="
         }
       },
       "is_incremental": false,
@@ -4375,7 +4372,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/setup_ext/1.6.overtime.html",
-          "hash": "whe0iVRFtPGy+77SdbDOUq3WuV6A5EfJ8JTs94HBgcg="
+          "hash": "CpQoOYQuXm+8puTQWUUMtyJVVgXtKyIbOqJSEMDoZJg="
         }
       },
       "is_incremental": false,
@@ -4398,7 +4395,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/setup_ext/1.7.empl_post_groups.html",
-          "hash": "z2STshv6WAA6mihPsw9rDCS/kzBoG7LsrLSmM1FVC9M="
+          "hash": "vubfHiDmAsGoLCx90VzQ4yXogY96qwXn2mRDdyljgNY="
         }
       },
       "is_incremental": false,
@@ -4432,7 +4429,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/setup_ext/1.8.positions.html",
-          "hash": "BlHXUmDa9xgjeEj4HKduE/POvsD648ILLDyf/PQTzAw="
+          "hash": "pF39J15naW3utnXiG6DhQjBPgmCujwYWIsMz4dAp9EM="
         }
       },
       "is_incremental": false,
@@ -4466,7 +4463,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/setup_ext/1.9.retirement.html",
-          "hash": "Apx5wvtQJrcZ7tfD19tBWNr58bvfymKzLF9XN1vFD2o="
+          "hash": "/CG7aqPLS497K3XZZ/1tM30F5qcr+abdtBH6GYVew5s="
         }
       },
       "is_incremental": false,
@@ -4946,7 +4943,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/setup_ext/2.0.salary_list_setup.html",
-          "hash": "NVoT9UtAiF5gP6uRyKu096xWSaoX8dpFGunTyLWVYjM="
+          "hash": "cEY0dpvH542kDQCH0hdP6gSHgQkHIzJZBzIYV8Uikv0="
         }
       },
       "is_incremental": false,
@@ -4958,7 +4955,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/setup_ext/2.1.payroll_components.html",
-          "hash": "cNLmxX6quzOL/Ha4PZt2Zf9/KA//8w7S1jiFCCk73gQ="
+          "hash": "qXdgEJSfv0d8Zp1S6ZRlEUCFim8cpvAvAUBFL/b6J4k="
         }
       },
       "is_incremental": false,
@@ -5014,7 +5011,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/setup_ext/2.2.bases.html",
-          "hash": "lA06bdc9c7PplUPPfGlYfU2ZhLa1CuXK0BN93MdYkas="
+          "hash": "pUvTKwso32NMiHKyUg6QJ8ux4eMrJpYjD9Z40MmT61E="
         }
       },
       "is_incremental": false,
@@ -5059,7 +5056,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/setup_ext/2.3.absence_causes.html",
-          "hash": "aNVjBmChoidjS4KCL91zheOkdVD5l94JsHRQfE1V0L4="
+          "hash": "S/9e0gPu9a2CIi0yeDhOJRJ0E4SILOOYp4S3QFgnTYM="
         }
       },
       "is_incremental": false,
@@ -6691,7 +6688,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/setup_ext/8.0.salary_pay.html",
-          "hash": "Axr8vTR4lMrXgHG8MSij4sJ1/mOFQPVv4zlzEvrPRXo="
+          "hash": "Bs2r8D5sOlBQiH9yZ2GP60rCTlBmOAAm/10K+3egnvY="
         }
       },
       "is_incremental": false,

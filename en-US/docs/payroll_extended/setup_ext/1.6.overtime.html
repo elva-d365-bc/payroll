@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Virsstundu uzst&#257;d&#299;jumi | Latvian Payroll </title>
+    <title>Overtime Setup | Latvian Payroll </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Virsstundu uzst&#257;d&#299;jumi | Latvian Payroll ">
+    <meta name="title" content="Overtime Setup | Latvian Payroll ">
     <meta name="generator" content="docfx 2.57.2.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
@@ -77,69 +77,69 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="virsstundu-uzstādījumi">Virsstundu uzstādījumi</h1>
+<h1 id="overtime-setup">Overtime Setup</h1>
 
-<p>Lai sistēmā tiktu veikts korekts virsstundu aprēķins, ir jāsaliek sekojoši uzstādījumi:</p>
+<p>In order to make correct overtime calculation in the system, the following settings must be set:</p>
 <p><img src="1.6.overtime_1.png" alt="alt"></p>
 <table>
 <thead>
 <tr>
-<th>Lauka nosaukums</th>
-<th>Apraksts</th>
+<th>Field name</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Algas tips</td>
-<td>Izvēlas, kāds darba algas aprēķina tips tiks izmantots Virsstundu aprēķinā: <br>a) 5 Darba dienu nedēļa; <br>b) Summētais darba laiks; <br>c) Maiņu darbs; <br>c) 6 Darba dienu nedēļa.</td>
+<td>Salary type</td>
+<td>Chooses what salary calculation type will be used in overtime calculation: <br>a) 5 Day Work Week; <br>b) Aggregated Working Time; <br>c) Shift Work; <br>c) 6 Day Work Week.</td>
 </tr>
 <tr>
-<td>Darb. kalendāra kods</td>
-<td>Norāda kalendāru, kurš tiks izmantots virsstundu aprēķinā.</td>
+<td>Empl. Calendar Code</td>
+<td>Specifies the calendar that will be used in overtime calculation.</td>
 </tr>
 <tr>
-<td>Sākuma mēnesis</td>
-<td>Norāda, no kāda mēneša tiek veikts virsstundu aprēķins. Paredzēts summētajam darba laikam, ja pārskata perioda sākums atšķiras no gada sākuma. Visos pārējos gadījumos jānorāda Janvāris.</td>
+<td>Start Month</td>
+<td>Indicates overtime calculation starting month.Designed for the aggregated working time if the beginning of the reporting period differs from the beginning of the year.In all other cases, January.</td>
 </tr>
 <tr>
-<td>Datuma formula</td>
-<td>Norāda periodu, par kuru virsstundas tiks aprēķinātas.</td>
+<td>Date formula</td>
+<td>Indicates the period for which overtime will be calculated.</td>
 </tr>
 <tr>
-<td>Limita tips</td>
-<td>Norāda tipu, no kura tiks ņemta informācija par nostrādātajām stundām: <br>a) Stundas - izvēlas, ja jānorāda stundu skaits; <br>b) Kalendārs - par pamatu virsstundu aprēķinam tiks izmantots kalendārs.</td>
+<td>Limit Type</td>
+<td>Specifies the type from which information about hours worked will be taken: <br>a) Hours - selects if the number of hours should be specified; <br>b) Calendar - Calendar will be used as base for the calculation of overtime.</td>
 </tr>
 <tr>
-<td>Limita stundas/kalendārs</td>
-<td>Ja ir izvēlēts tips kalendārs, tad izvēlas atbilstošo kalendāru no saraksta. Ja tips ir stundas, tad norāda stundu skaitu, kuras pārsniedzot tiks rēķinātas virsstundas.</td>
+<td>Limit Hours/Calendar</td>
+<td>If the type calendar is selected, the corresponding calendar from the list is selected. If the type is hours then indicates the number of hours starting from what overtime should be calculated.</td>
 </tr>
 <tr>
-<td>Nosaukums</td>
-<td>Brīvi ierakstāms paskaidrojums.</td>
+<td>Description</td>
+<td>A freely recordable explanation.</td>
 </tr>
 <tr>
-<td>Proporcionāli</td>
-<td>Izvēlas, ja laukā tips ir Kalendārs un virsstundas paredzēts rēķināt tikai no nostrādātā laika. Aprēķinā ņem vērā arī prombūtni un darbā pieņemšanas datumu.</td>
+<td>Proportional</td>
+<td>Select, if Limit Type is calendar and overtime should be calculated only from work time. The calculation also takes into account the absence and recruitment date.</td>
 </tr>
 <tr>
-<td>Izmantošanas veids pēc noklusējuma *</td>
-<td>Izvēlas: <br>a) Apmaksa; <br>b) Brīvdiena; <br>c) Atvaļinājuma papilddiena.</td>
+<td>Default Usage Type *</td>
+<td>Select: <br>a) Pay Out; <br>b) Day Off; <br>c) Vacation Add.Day.</td>
 </tr>
 <tr>
-<td>Prombūtnes kods brīvdienu izmantošanai *</td>
-<td>Norāda kodu VIRS_ATPUT.</td>
+<td>Absence code for use of Day Off *</td>
+<td>select the code VIRS_ATPUT.</td>
 </tr>
 <tr>
-<td>Mēnešu skaits brīvdienu izmantošanai *</td>
-<td>Norāda cik mēnešus atpakaļ vajag meklēt pieejamas virsstundas, kuras izmantos kā brīvdienu.</td>
+<td>Months Qty. For DayOff Usage *</td>
+<td>Indicates how many months ago need to look for available overtime, which will be used as a day off.</td>
 </tr>
 <tr>
-<td>Stundu sk. dienā atvaļin. papilddienai *</td>
-<td>Norāda virsstundu skaitu lai piešķirt darbiniekam vienu atvaļinājuma papilddienu.</td>
+<td>Hours Qty. For Day On Vacation *</td>
+<td>Specifies the number of overtime to assign an employee one additional vacation day.</td>
 </tr>
 </tbody>
 </table>
-<p>*Lauki paredzēti virsstundu kompensēšanai. Detalizēts procesa apraksts nodaļā <em>Virsstundas kompensācijas ar atpūtas laiku</em>.</p>
+<p>*Fields designed for overtime compensation. Detailed process description in chapter <em>Overtime compensation with rest time</em>.</p>
 </article>
           </div>
           

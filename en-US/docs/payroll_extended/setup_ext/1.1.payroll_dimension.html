@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Algu dimensiju uzst&#257;d&#299;jumi | Latvian Payroll </title>
+    <title>Payroll dimension setup | Latvian Payroll </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Algu dimensiju uzst&#257;d&#299;jumi | Latvian Payroll ">
+    <meta name="title" content="Payroll dimension setup | Latvian Payroll ">
     <meta name="generator" content="docfx 2.57.2.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
@@ -77,52 +77,52 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="algu-dimensiju-uzstādījumi">Algu dimensiju uzstādījumi</h1>
+<h1 id="payroll-dimension-setup">Payroll dimension setup</h1>
 
-<p>Tikai tās dimensijas, kas būs norādītās šajos uzstādījumos, tiks lietotas algas aprēķinos, pārējās tiks ignorētas.</p>
+<p>Only the dimensions that will be specified in these setup will be used in the salary calculations, the rest will be ignored.</p>
 <p><img src="1.1.payroll_dimension.png" alt="alt"></p>
 <table>
 <thead>
 <tr>
-<th>Lauka nosaukums</th>
-<th>Apraksts</th>
+<th>Field name</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Dimensijas kods</td>
-<td>Izvēlas dimensiju no saraksta, kura tiks lietota algas aprēķinos.</td>
+<td>Dimension Code</td>
+<td>Selects the dimension from the list that will be used in salary calculations.</td>
 </tr>
 <tr>
-<td>Vērtības izcelsme</td>
-<td>Norāda līmeni, no kurienes tiks ņemta dimensijas vērtība:<br>a)	Avots – Prombūtnes reģistrācija, Darba algas komponentes, Algas komponenšu reģistrs; <br>b)	Algas komponente –  Norādītais dimensijas kods tiek ņemts no algas komponentes; <br>c)	Darbinieka amats – Norādītais dimensijas kods tiek ņemts no Darbinieku amata; <br>d)	Darbinieks – Augstākais līmenis, norādītais dimensijas kods tiek ņemts no darbinieka kartes.</td>
+<td>Value From</td>
+<td>Indicates the level from where the dimension will be taken:<br>a)	Source – Absence Registration, Payroll Components, Payroll Component Register; <br>b)	Payroll component –  The specified dimension code is taken from payroll components; <br>c)	Employee Position – The specified dimension code is taken from employee position; <br>d)	Employee – The highest level, the specified dimension code is taken from the employee's card.</td>
 </tr>
 <tr>
-<td>Nelietot hierarhiju</td>
-<td>Ja nav atzīme šajā laukā, tad norādītais dimensijas kods tiek meklēts augstākos līmeņos. Ja ir atzīme, tad tikai izvēlētajā līmenī.</td>
+<td>Don't Use Hierarchy</td>
+<td>If there is no checkmark in this field, the specified dimension code is searchable at higher levels. If there is a checkmark, then only in the selected level.</td>
 </tr>
 <tr>
-<td>Pieļaut tukšu vērtību</td>
-<td>Pārbauda, vai pēc iepriekš norādītajiem uzstādījumiem dimensijas vērtība nav tukša vērtība. Ja ir atzīme šajā laukā, tad programma <strong>nedod kļūdas paziņojumu, ja</strong> nevienā no līmeņiem (konkrētā līmenī, ja ir atzīme laukā nelietot hierarhiju) <strong>dimensija nav atrasta</strong>.</td>
+<td>Blank Value Allowed</td>
+<td>Check if the dimension value is not an empty value after the settings specified above. If there is a checkmark in this field, then system <strong>will not give the error message, if</strong> in none of the levels (at a particular level if there is a checkmark in the field not to use a hierarchy) <strong>dimension will not be found</strong>.</td>
 </tr>
 </tbody>
 </table>
-<h2 id="dimensijas-pie-struktūrvienības-un-amata-lietojot-personāla-moduli">Dimensijas pie struktūrvienības un amata, lietojot Personāla moduli</h2>
-<p>Sistēma piedāvā iespēju pievienot pie struktūrvienības, amata n-tās dimensijas. Veidojot personāla rīkojumu (par pieņemšanu, amata maiņu), norādītās noklusējuma dimensijas tiek pievienotas darbinieka amatam.</p>
-<p>Dimensiju piešķiršana struktūrvienībai:
+<h2 id="dimensions-for-the-departments-and-positions-using-a-personnel-module">Dimensions for the departments and positions using a Personnel module</h2>
+<p>The system offers the ability to add to each department and each position a numerous dimensions. Creating a personnel order (for an employment, change of position), the specified default dimensions are added to the employee's position.</p>
+<p>Assigning Dimensions to the department:
 <img src="1.1.payroll_dimension_1.png" alt="alt"></p>
 <p><img src="1.1.payroll_dimension_2.png" alt="alt"></p>
-<p>Dimensiju piešķiršana amatam:
+<p>Assigning Dimensions to the position:
 <img src="1.1.payroll_dimension_3.png" alt="alt"></p>
 <p><img src="1.1.payroll_dimension_4.png" alt="alt"></p>
-<p>Ja pie struktūrvienības norāda dimensiju vērtības un pie attiecīgās struktūrvienības amata norāda vēl citu dimensiju vērtības, tad pie darbinieka amata parāda visas (gan tās, kas bija norādītas pie struktūrvienības, gan tās, kas bija norādītas pie amata).</p>
+<p>If the dimensions are assigned to departments and positions have another dimensions, then the employee's post shows all (Both those indicated at the position and those specified in the position).</p>
 <div class="TIP">
 <h5>Tip</h5>
-<p><strong>Nav ieteicams norādīt vienas un tās pašas dimensijas, bet ar atšķirīgām vērtībām gan pie struktūrvienības, gan amata</strong>.</p>
+<p><strong>It is not advisable to specify the same dimensions, but with different values both at the department and position</strong>.</p>
 </div>
-<h2 id="analīze-pa-dimensijām">Analīze pa dimensijām</h2>
-<p>Ērtākai algu analīzes pa dimensijām veikšanai Algas komponenšu rindās iespējams izvēlēties rādīt dimensijas, kuras ir norādītas <em>Virsgrāmatas uzstādījumi</em>.</p>
-<p>Algas komponenšu rindas var atvērt algu sarakstā uzklikšķinot uz ienākumu, nodokļu, atvieglojumu u.c. summām, un pēc tam, izvēloties nepieciešamos filtrus.</p>
+<h2 id="analysis-by-dimensions">Analysis by dimensions</h2>
+<p>For more convenient salary analyzes by dimensions, in payroll component rows can be chosen to show dimensions, what are stated in  <em>General Ledger Setup</em>.</p>
+<p>Payroll component rows can be opened in the salary list by clicking on the amounts of income, tax, relief etc., and then by choosing the required filter.</p>
 <p><img src="1.1.payroll_dimension_5.png" alt="alt"></p>
 </article>
           </div>
