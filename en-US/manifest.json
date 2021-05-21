@@ -6930,15 +6930,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Toc",
       "source_relative_path": "docs/payroll_extended/toc.md",
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/toc.html",
-          "hash": "X77u4l+A8cxu32XLYbkBSCJSMJ5i5aiTE4ONMNcbEqs="
+          "hash": "3ICsKVsa1Wp2mrcCqz0nNyDyFX7qnnxcgvXf+uAm6tw="
         }
       },
       "is_incremental": false,
