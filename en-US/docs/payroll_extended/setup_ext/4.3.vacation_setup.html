@@ -190,21 +190,21 @@ In the field <em>Age</em>, the system automatically calculates age to today ( Th
 <p>There is a possibility to run the recalculation of the number of belonging add. vacation days <img src="count1.png" alt="alt"> from the vacation period register <em>Vacation Periods</em> (Role Center - <em>Vacation Periods</em> - <em>Vacation Periods</em>):</p>
 <p><img src="4.3.vacation_setup_5.png" alt="alt"></p>
 <p>Using a standard feature <em>Generate Periods</em> <img src="count2.png" alt="alt">, the system will also assign additional days for children.</p>
-<p>When you enter the absence, the system performs the recalculation of the balance. Ja tabulā <em>Atvaļ. periodu papilddienu uzstādījumi</em> nav ierakstu ar lauka <em>Prombūtnes kods</em> vērtību, kura sakrīt ar lauku <em>Prombūtnes kods</em> darbinieka prombūtnes kartiņā, tad pārrēķins nenotiek.</p>
-<p>Lai nodrošinātu dienu par bērniem nedalīšanu proporcionāli, tām prombūtnēm, kurām laukā <em>Ietekme uz atvaļinājumu</em> vienādu ar <em>Samazina atvaļinājuma periodu</em> , pirms pieejamo papildatvaļinājumu dienu aprēķina, tiek uzlikts filtrs <em>Papilddienu uzstādījuma koda filtrs</em> tabulai <em>Atvaļinājuma periods</em> uz tukšumu. Kā arī netiks pārbaudīts, ka papildatvaļinājums par bērniem paliek negatīvs, respektīvi, ja tas tika izmantots, tad nebūs kļūdas paziņojums par dienu nepietiekamību.</p>
+<p>When you enter the absence, the system performs the recalculation of the balance. If in the setup <em>Vacation Period Add. Day Setup</em> does not have a record with the field <em>Absence Code</em> value that coincides with the field <em>Absence Code</em> in the employee's absence card, then recalculation does not happen.</p>
+<p>To ensure the day of non-division of children in proportion, those absences who have in the field <em>Influence on Vacation</em> is equal to <em>Reduce Vacation Period</em> , before calculating of available additional days, a filter is enabled <em>Vacation Add. Days Granting Filter</em> for the tab <em>Vacation Period</em> to empty. As well as will not be checked whether a vacation for children balance remains negative, - respectively, if it will be used then there will be no error notice about the lack of days.</p>
 <p><img src="4.3.vacation_setup_6.png" alt="alt"></p>
-<p>Dienu attiecināšana pa periodiem: papildināta funkcionalitāte, lai varētu piešķirt papildatvaļinājuma dienas par bērniem vai citas papildatvaļinājuma dienas. Tiek pārbaudīts vai tagad tiek apstrādāts papildatvaļinājums, tad tiek pārbaudīts vai tabulā <em>Atvaļ. periodu papilddienu uzstādījumi</em> pastāv ieraksts ar tādu <em>Prombūtnes kods</em>, kā šim ierakstam. Ja ir, tad tiks uzlikts filtrs uz lauku <em>Papilddienu uzstādījuma koda filtrs</em> tabulai <em>Atvaļinājuma periodi</em>, kur nav tukšs, pretējā gadījumā, tas tiks uzlikts tieši tukšs, lai aprēķinātu korekti pieejamas papildatvaļinājuma dienas – atbilstoši bērnu papilddienas vai citas. Ja tas būs par bērniem, tad tiks aizpildīts lauks <em>Papilddienu uzstādījuma kods</em> ar pirmo atrasto tabulā <em>Atvaļ. periodu papilddienu uzstādījumi</em>. Pārējā loģika paliek, ka bija standarta – mēģinās piešķirt dienas pa visiem iespējamiem periodiem.</p>
-<p>Gadījumā, ja papildatvaļinājums tika piešķirts un izmantots par nākamajiem periodiem, tad atlaižot darbinieku, sistēma noslēgs tekošo atvaļinājuma periodu, pārējie tiks dzēsti.</p>
-<h2 id="atvaļinājuma-periodi">Atvaļinājuma periodi</h2>
-<p>Lomu centrs - <em>Atvaļinājumu periodi</em> - <em>Atvaļinājumu periodi</em>.</p>
+<p>Extension of days by period: is supplementary functionality to be able to grant additional vacation days for children or other days. System is checking if now is processed the additional vacation, Then checked or in the table <em>Vacation Period Add. Day Setup</em> does have a record with the same value like in field <em>Absence Code</em>. If yes, then filter will be applied <em>Vacation Add. Days Setup Filter</em> for tab <em>Vacation Periods</em>, where is not empty, otherwise, it will be set to empty, To calculate correctly available additional vacation days for children or other. If this will be for children, then the field <em>Additional Day Setup Code</em> will be filled with first value found in table <em>Vacation Period Add. Day Setup</em>.</p>
+<p>In case if additional vacation will be used for the next periods, then when terminating this employee, system will closes current vacation period and others will be deleted.</p>
+<h2 id="vacation-periods">Vacation Periods</h2>
+<p>Role Center - <em>Vacation Periods</em> - <em>Vacation Periods</em>.</p>
 <p><img src="4.3.vacation_setup_7.png" alt="alt"></p>
-<p>Atvaļinājuma periodos iespējams iegūt informāciju par darbiniekam piešķirtajām, izmantotajām, pieejamajām ikgadējā/papildatvaļinājuma dienām, kā arī, uz kādiem darba periodiem tās attiecas.
-Lai izveidotu jaunus atvaļinājuma periodus, jāizvēlas <em>Ģenerēt periodus</em></p>
+<p>In Vacation Periods register can be obtained information about the employee, used, available annual/ additional days, as well as what periods it related to.
+To create new vacation periods should be selected function <em>Generate Periods</em></p>
 <p><img src="4.3.vacation_setup_8.png" alt="alt"></p>
-<h2 id="atvaļinājuma-periodu-žurnāls">Atvaļinājuma periodu žurnāls</h2>
-<p>Lomu centrs - <em>Atvaļinājumu periodi</em> - <em>Atvaļinājuma periodu žurnāls</em></p>
-<p>Atvaļinājuma periodu žurnālā iespējams ievadīt/koriģēt datus par piešķirto/izmantoto atvaļinājuma/papildatvaļinājuma dienu skaitu.</p>
-<p>Kad nepieciešamā informācija atvaļinājuma periodu žurnālā ir ievadīta, to iespējams Pārbaudīt <img src="count1.png" alt="alt"> un pēc tam Grāmatot <img src="count2.png" alt="alt">. Pēc grāmatošanas iegrāmatotā informācija atspoguļojas <em>Atvaļinājumu periodi</em>.</p>
+<h2 id="vacation-period-journals">Vacation Period Journals</h2>
+<p>Role Center - <em>Vacation Periods</em> - <em>Vacation Period Journals</em></p>
+<p>A vacation period can be entered/corrected data on assigned/used vacation/ additional vacation number of days.</p>
+<p>When the required information on the vacation period is entered in the journal, this can be checked with <em>Check</em> <img src="count1.png" alt="alt"> and then <em>Posting</em> <img src="count2.png" alt="alt">. The information recorded after the posting is reflected in <em>Vacation Periods</em>.</p>
 <p><img src="4.3.vacation_setup_9.png" alt="alt"></p>
 <table>
 <thead>
@@ -215,24 +215,24 @@ Lai izveidotu jaunus atvaļinājuma periodus, jāizvēlas <em>Ģenerēt periodus
 </thead>
 <tbody>
 <tr>
-<td>Sākotnējā piešķ. dienu rinda</td>
-<td>Izmanto gadījumos, kad ir nepieciešamība koriģēt perioda piešķirto dienu skaitu. Tiks ņemts vērā pie perioda samazināšanas un pie atlikušo dienu aprēķina perioda vidū.</td>
+<td>Initial Granted Days Line</td>
+<td>Used in cases where there is a need to adjust the number of days assigned to the period. Will be taken into account at the reduction of the period and the remaining day in the middle of the calculation period.</td>
 </tr>
 <tr>
-<td>Atlaišanas pārrēķina rinda</td>
-<td>Izmanto gadījumos, kad ir nepieciešamība koriģēt dienu skaitu, kas aprēķināts pie darbinieka atbrīvošanas pēdējā atvaļinājuma periodā.</td>
+<td>Termination Recalculation Line</td>
+<td>Used in cases where there is a need to adjust the number of days, calculated at the end of the vacation period when the employee is terminated.</td>
 </tr>
 <tr>
-<td>Bezalgas atvaļinājuma rinda</td>
-<td>Izmanto gadījumos, kad ir nepieciešamība veikt piešķirto atvaļinājuma dienu skaita samazinājuma korekciju saistībā ar bezalgas atvaļinājumu. Darba likums paredz, ka laikā, kas dod tiesības uz ikgadējo apmaksāto atvaļinājumu, neieskaita atvaļinājuma laiku bez darba samaksas saglabāšanas, kas ir ilgāks par četrām nedēļām viena gada laikā.</td>
+<td>Nonpaid vacation Line</td>
+<td>Used in cases where there is a need to carry out a reduction in the number of vacation days as correction in relation to unpaid leave. The Labor Law provides that during the year, which entitles the annual paid leave, it does not include a period of leave without salary pay, which is longer than four weeks within one year.</td>
 </tr>
 <tr>
-<td>Atvaļinājuma atsevišķu dienu piešķiršana</td>
-<td>Izmanto gadījumos, kad ir nepieciešams piešķirt papildu dienu no kāda konkrēta datuma. Diena netiek sadalīta proporcionāli atvaļinājuma periodam, stājas spēkā uzreiz.</td>
+<td>Vacation Additional Days Granting</td>
+<td>Used in cases where it is necessary to assign an additional vacation day from a particular date. The day is not divided in proportion to the vacation period, shall enter into force at once.</td>
 </tr>
 </tbody>
 </table>
-<p>Jāpievērš uzmanība, ka gadījumos, kad atvaļinājumu dienas uzskaite ir kalendārās dienās, tad piešķirot papildatvaļinājuma dienu, sistēma uzkrājumos ņems vērā ka piešķirta diena ir darba diena, nevis kalendārā diena.</p>
+<p>Should pay attention that in cases when vacation are counted in calendar days, then by granting a additional vacation day, system for accrual purposes will takes in account that this is an additional working day, not a calendar day.</p>
 </article>
           </div>
           

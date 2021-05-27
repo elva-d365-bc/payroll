@@ -80,48 +80,48 @@
 <h1 id="overtime-compensation-with-rest-time">Overtime compensation with rest time</h1>
 
 <h2 id="setup">Setup</h2>
-<p>Lai varētu lietot funkcionalitāti, nepieciešami sekojoši uzstādījumi:</p>
+<p>In order to be able to use this functionality, the following setup is required:</p>
 <ol>
-<li>Prombūtnes iemesla karte un algas komponente atpūtas dienām:</li>
+<li>Cause of Absence card and Payroll Component for rest time:</li>
 </ol>
 <p><img src="8_overtime_1.png" alt="alt"></p>
 <p><img src="8_overtime_2.png" alt="alt"></p>
 <ol start="2">
-<li>Prombūtnes karte un algas komponente atvaļinājuma papildus dienām</li>
+<li>Cause of Absence card and Payroll Component for additional vacation days</li>
 </ol>
 <p><img src="8_overtime_3.png" alt="alt"></p>
 <p><img src="8_overtime_4.png" alt="alt"></p>
 <ol start="3">
-<li>Virsstundu uzstādījumos aizpilda sekojošus laukus:</li>
+<li>In <em>Overtime Setup</em> is required to set the following fields:</li>
 </ol>
 <ul>
-<li>Izmantošanas veids pēc noklusējuma - Apmaksa, Brīvdiena, Atvaļinājuma papilddiena.</li>
-<li>Prombūtnes kods brīvdienu izmantošanai - Norāda kodu “VIRS_ATPUT”.</li>
-<li>Mēnešu skaits brīvdienu izmantošanai - Norāda cik mēnešus atpakaļ vajag meklēt pieejamas virsstundas, kuras izmantos kā brīvdienu.</li>
-<li>Stundu sk. dienā atvaļin. Papilddienai - Norāda virsstundu skaitu lai piešķirt darbiniekam vienu atvaļinājuma papilddienu.</li>
+<li>Default Usage Type - Pay Out, Day Off, Vacation Add.Day.</li>
+<li>Absence Code For DayOff Usage - set the code “VIRS_ATPUT”.</li>
+<li>Month Qty. For DayOff Usage - Indicates how many months ago need to look for available overtime, what will be used as Day Off.</li>
+<li>Hours Qty. For Day On Vacation - Number of overtime what can be transferred into one additional vacation day.</li>
 </ul>
-<h2 id="virsstundu-reģistrācija">Virsstundu reģistrācija</h2>
-<p>Uzskaites logā veicot procesu <em>Aprēķināt virsstundas</em>, automātiski aizpildās arī saraksts <em>Virsstundu uzskaite</em>.
-Gadījumā, ja uzskaites <em>Mēneša virsstundas</em> vērtība tika izmainīta uz 0 vai tiks izdzēsta rinda no Uzskaites, tad tiks dzēsts atbilstošais ieraksts no <em>Virsstundu uzskaite</em>.</p>
-<p><strong>Jāņem vērā ka <em>Uzskaites Mēneša virsstundas</em> vērtībā būs iekļauti gan aprēķinātās virsstundas, gan pārnestas apmaksai no citiem mēnešiem virsstundu skaits.</strong></p>
-<p>Saraksts <em>Virsstundu uzskaite</em> pieejams no Uzskaites loga rīkjoslas vai sistēmas meklētājā. <em>Virsstundu uzskaite</em> satur sekojošus laukus:</p>
+<h2 id="registration-of-overtime">Registration of overtime</h2>
+<p>By using the function <em>Calculate Overtime</em> in the Accounting table, at the same time also entries to the <em>Overtime Registration</em> are added.
+In case if in Accounting's field <em>Monthly Overtime</em> value will be corrected to zero or the line with overtimes will be deleted, then also the corresponding record will be deleted from <em>Overtime Registration</em>.</p>
+<p><strong>Pay attention that in Accounting's field <em>Monthly Overtime</em> value will includes also those overtimes what will be postponed for the pay out from the previous months to the current month.</strong></p>
+<p><em>Overtime Registration</em> is available from the Accounting's tool pane or by using system search. <em>Overtime Registration</em> includes following fields:</p>
 <ul>
-<li>Uzskaites dokumenta Nr. - Uzskaites dokumenta Nr. , kurā darbiniekam ir aprēķinātas virsstundas.</li>
-<li>Darbinieka Nr. - Darbinieka Nr.</li>
-<li>Izmantošanas veids - Virsstundu izmantošanas veids (Apmaksa, Brīvdiena, Atvaļinājuma papilddiena). Gadījumā kad virsstundas izmantošana sadalīta uz vairākiem variantiem (piem. apmaksa + brīvdiena, apmaksa + atvaļ. papildiena), tad laukā būs  pēdējais virsstundu izmantošanas veids. Ierakstiem piešķiras noklusētais tips no Virsstundu uzstādījumiem.</li>
-<li>Atvaļinājuma perioda Nr. - Atvaļinājuma perioda Nr. , kurā tiks piešķirta atvaļinājuma papilddiena.</li>
-<li>Aprēķina uzskaites mēnesis - Konkrētā Uzskaites dokumenta Nr. mēnesis.</li>
-<li>Aprēķina uzskaites gads - Konkrētā Uzskaites dokumenta Nr. gads.</li>
-<li>Uzskaites darbinieka virsstundas - Vērtība no konkrēta Uzskaites dokumenta Nr. lauka Mēneša virsstundas.</li>
-<li>Izmantotas virsstundas - Tabulas Virsstundu izmantošana (sk. zemāk) ierakstu kopēja vērtība ar filtru uz konkrētu Uzskaites dokumenta Nr. un Darbinieka Nr.</li>
-<li>Apmaksas uzskaites mēnesis - Mēnesis, uz kuru tiek pārnesta atlikušas virsstundas apmaksa.</li>
-<li>Apmaksas uzskaites gads - Mēnesis, uz kuru tiek pārnesta atlikušas virsstundas apmaksa.</li>
-<li>Pārvietotas stundas - Uz citu mēnesi apmaksai pārvietojams virsstundu skaits.</li>
+<li>Schedule Document No. - Schedule table No., where overtime is calculated.</li>
+<li>Employee No. - Number of employee.</li>
+<li>Usage Type - how the overtime will be reimbursed (Pay Out, Day Off, Vacation Add.Day). In case of overtime use divided into multiple variants (for example, pay out + day off, pay out + vacation add.day), then in this field will be stated the last usage type. To all entries will be added the default type, what is stated in <em>Overtime Setup</em>.</li>
+<li>Vacation Period No. - vacation period, where additional vacation day will be granted.</li>
+<li>Source Schedule Month - Related Accounting table's month.</li>
+<li>Source Schedule Year - Related Accounting table's year</li>
+<li>Schedule Employee Overtime - overtime count from related Accounting table.</li>
+<li>Usage Overtime - <em>Overtime Usage</em> (see chapter below) total entry value with filter on particular Accounting No. and employee No.</li>
+<li>Target Schedule Month - The month to which the remaining overtime is transferred.</li>
+<li>Target Schedule Year - Year, to which the remaining overtime is transferred.</li>
+<li>Moved Overtime - Overtime count, transferred to pay out to another month.</li>
 </ul>
-<h2 id="virsstundu-izmantošana">Virsstundu izmantošana</h2>
+<h2 id="overtime-usage">Overtime usage</h2>
 <p><img src="8_overtime_5.png" alt="alt"></p>
-<h3 id="virsstundu-apmaksa">Virsstundu apmaksa</h3>
-<p>Algas sarakstā virsstundu aprēķins notiek  tikai tiem darbiniekiem, kam atbilstoša periodā  Virsstundu uzskaitē izmantošanas tips ir Apmaksa.
+<h3 id="overtime-pay-out">Overtime Pay Out</h3>
+<p>Salaries list performs overtime calculation only for employees, who in appropriate period for overtimes in <em>Overtime Registration</em> usage type is <em>Pay Out</em>.
 Algas sarakstā darbinieka apmaksāta virsstundu skaits sakrīt ar Atlikušas virsstundas vērtību no tabulas Virsstundu uzskaite un ar Uzskaites Mēneša virsstundas vērtību.
 Virsstundu izmantošanas reģistrs sastāv no sekojošiem laukiem:</p>
 <ul>

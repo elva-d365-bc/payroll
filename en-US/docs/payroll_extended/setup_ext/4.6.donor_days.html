@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Donoru dienas | Latvian Payroll </title>
+    <title>Donor Days | Latvian Payroll </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Donoru dienas | Latvian Payroll ">
+    <meta name="title" content="Donor Days | Latvian Payroll ">
     <meta name="generator" content="docfx 2.57.2.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
@@ -77,22 +77,22 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="donoru-dienas">Donoru dienas</h1>
+<h1 id="donor-days">Donor Days</h1>
 
-<p>Prombūtnes kartē <em>NEIER_DND</em> (atrodams: Lomu centrs - <em>Prombūtnes</em> - <em>Prombūtnes iemesli</em>) jānorāda, ka par šo prombūtni pienākas 1 papildatvaļinājuma diena, bet šīs prombūtnes aprēķina veids ir saglabājot darba algu.</p>
+<p>In the Case of Absence with Code <em>NEIER_DND</em> (available at: Role Center - <em>Absences</em> - <em>Causes of Absence</em>) should be noted that this absence is entitled to 1 additional vacation day, but the type of calculation of this absence is keeping a salary.</p>
 <p><img src="4.6.donor_days_1.png" alt="alt"></p>
 <div class="TIP">
 <h5>Tip</h5>
-<p><strong>Jāpievērš uzmanība: ja ielikts ķeksis “Brīvdiena saglabājot darba algu”, ievadot prombūtni sistēma prombūtnes kartē uzreiz aprēķinās dienas/stundas izpeļņu ar pazīmi “Vidējā izpeļņa izmainīta”. Veicot algas aprēķinu, tiks ignorēts prombūtnes iemesla aprēķina veids un tiks ņemta vērā vidējā izpeļņa no prombūtnes kartes.</strong></p>
+<p><strong>Should pay attention to: if is enabled a function <em>Day Off Saved Salary</em>, by entering an absence, system will calculate in the absence card daily/hourly gain with a note <em>Average Gain Changed</em>. By performing a salary calculation, will be ignored calculation type stated in Cause of Asence and the average gain of absence card will be taken into account.</strong></p>
 </div>
-<p>Dienas / stundas  aprēķins: tiek analizētas darbinieka algas komponentes, kurām ir pazīme Pamatalga. Tiek apstrādāti sekojošie veidi: proporc. nostr. dienām, proporc. nostr. stundām, stundu, dienu. Gadījumā, ja darbinieka kartē pazīme Vidējā samaksa par stundām,  tad tiek rēķināta arī stundu izpeļņa. Stundu skaits apmaksai tiek ņemts no grafika. Ja darbiniekam šajā periodā tika mainīta algas, tad tiek analizēta katra diena un izrēķināta vidējā par šo periodu.</p>
-<p>Atvaļinājuma periodos automātiski tiks izveidots ieraksts par piešķirto papildatvaļinājuma dienu.  Atvaļinājuma periods – prombūtnes <em>No datuma</em> periods.</p>
+<p>Daily/ hourly calculation: The employee's payroll components are analyzed, what have a sign of the basic salary. The following types are processed: in proportion to the days worked, in proportion to hours worked, hour, day. In case if an employee card includes the mark  - <em>Average by Hours</em> at tab <em>Payroll</em>,  then the hourly gain are also calculated. The number of hours for salary calculation is taken from Schedule. If the employee has changed the salary during this period, then each day is analyzed and calculated average for this period.</p>
+<p>For each additional vacation day granted, system will creates an entry in <em>Vacation Periods</em> register. Vacation Periods – absence <em>Date From</em> period.</p>
 <p><img src="4.6.donor_days_2.png" alt="alt"></p>
-<p>Donora dienas apmaksai nevajadzētu būt iekļautai vidējā izpeļņā. Tāpēc Bāzē ATVALIN apmaksas komponentes kodam jābūt izslēgtam no bāzes.</p>
+<p>Donor's day payment should not be included in the average gain. Therefor in Base Code <em>ATVALIN</em> payment component code must be excluded.</p>
 <p><img src="4.6.donor_days_3.png" alt="alt"></p>
-<p><strong>!!! Atpūtas dienai par donoru dienu labāk izveidot jaunu prombūtnes kodu, kuram būtu sekojošie uzstādījumi:</strong></p>
+<p><strong>!!! For a Day-Off regards Donor Day is better to create a new absence card, what would have the following setup:</strong></p>
 <p><img src="4.6.donor_days_4.png" alt="alt"></p>
-<p>Tādā gadījumā, rēķinot atlikumu uz jebkuru datumu, dienas piešķiršanai / norakstīšanai  tiks izmantots princips “stājas spēkā uzreiz” ( nevis proporcionāli).</p>
+<p>In this case by calculating the balance on a day, the principle “come into effect at once” (not in proportion) will be used for the award / write-off of the additional days.</p>
 </article>
           </div>
           
