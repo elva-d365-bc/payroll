@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Uzkr&#257;tais atva&#316;in&#257;jums | Latvian Payroll </title>
+    <title>Vacation accruals | Latvian Payroll </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Uzkr&#257;tais atva&#316;in&#257;jums | Latvian Payroll ">
+    <meta name="title" content="Vacation accruals | Latvian Payroll ">
     <meta name="generator" content="docfx 2.57.2.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
@@ -77,24 +77,21 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="uzkrātais-atvaļinājums">Uzkrātais atvaļinājums</h1>
+<h1 id="vacation-accruals">Vacation accruals</h1>
 
-<p>Sistēma nodrošina atskaiti <em>Uzkrātais atvaļinājums</em>.  Atskaite atrodas: <em>Atskaites</em> - <em>Papildus atskaites</em> - <em>Uzkrātais atvaļinājums</em>.</p>
+<p>System provides a report for vacation accruals <em>Average gain with amounts</em>. Available at <em>Reports</em> - <em>Add. Reports</em> - <em>Average gain with amounts</em> or by using systems' search function.</p>
 <p><img src="12.vacation_accr_1.png" alt="alt"></p>
-<p>Atskaites izdrukas parametri:</p>
+<p>Reports' Print Settings::</p>
 <ul>
-<li>Uz datumu – norāda uz kādu datumu jāaprēķina atvaļinājumu atlikumi.</li>
-<li>Sūtīt uz V/G žurnālu – ķeksis jāieliek gadījumā, ja izveidojot atskaiti, jāizveido ieraksti virsgrāmatas žurnālā.</li>
-<li>V/G žurn. veidne – jānorāda virsgrāmatas žurnāla veidnes nosaukums.</li>
-<li>V/G žurn. iedaļa – jānorāda virsgrāmatas žurnāla iedaļas nosaukums.</li>
-<li>Uzkrājumu komponentes kods – jānorāda algas komponentes kods, kurā norādīti visi grāmatojumu uzstādījumi. Ieteicams izveidot komponenti, kura netiks izmantota algu aprēķinos.</li>
+<li>Date On – indicates the date, on what accruals should be calculated.</li>
+<li>Show Additional Vacation Days - enable if additional days also should be included in report</li>
+<li>Send to Gen. Journal – enable if entries for accruals should be sent to general ledger journal additionally to report's printout. If enabled, will be created accrual postings with date from field <em>Date on</em> and the same posting lines with minus with following month's last date - for reversal.</li>
+<li>Gen. Journal Template – select the ledger template where postings should be prepared, if function <em>Send to Gen. Journal</em> enabled.</li>
+<li>Gen. Journal Batch – select the Batch name where postings should be prepared, if function <em>Send to Gen. Journal</em> enabled.</li>
+<li>Savings Component code – The code of the accrual component must indicate. It is a code of the payroll component, which indicates all the accounting settings. It is recommended to create a component that will not be used in salary calculations. As an example, component card no. 190 see below.</li>
 </ul>
-<p>Palaižot atskaiti, norādītājā virsgrāmatas žurnālā tiks izveidoti grāmatojumi:</p>
-<ol>
-<li>Atvaļinājumu uzkrājumu grāmatojumi uz atskaitē norādīto datumu.</li>
-<li>Atvaļinājumu uzkrājumu grāmatojumi ar mīnus zīmi ar nākama mēneša pēdējo datumu.</li>
-</ol>
-<p>Gadījumā, ja nepieciešams veidot atvaļinājumu uzkrājumus pa dimensijām, atskaites parametros nepieciešams noradīt atbilstošas dimensijas. Dimensijas vērtība tiks meklēta darbinieka amatā, ja netiks atrasta, un uzstādījumos neatzīmēts ķeksis Nelietot hierarhiju, tad meklēs darbinieka dimensijas vērtību. Atskaites izdrukā būs sagrupēti darbinieki pa šo dimensiju un apakšā pa kontējumu grupām un dimensijas vērtībām divas summas. Ja tiks atzīmēts ķeksis <em>Sūtīt uz V/G žurnālu</em>, tad veidos V/G žurnāla rindas pa dimensijām. Arī, jāņem vērā, ja žurnāla rindai būs citas dimensijas, tad šī dimensija papildina esošu, respektīvi kombinēs kopā dimensijas rindā.</p>
+<p><img src="12.vacation_accr_2.png" alt="alt"></p>
+<p>In case if it is necessary to create vacation accruals by dimensions, it is necessary to indicate appropriate dimensions in the reference parameters. The dimension value will be searched in employee's position, if not found and in <em>Payroll Dimension Setup</em> is not enabled <em>Don't use Hierarchy</em> then system will search the dimension of employee. employees in report will be grouped by dimension and at the bottom in employee posting groups and dimension values in two amounts. If there will be enabled <em>Send to Gen. Journal</em>, then rows in G/L Journal will be created by dimensions. Also, take into account if the journal's rows will have other dimensions, then this dimension complements existing - combines together in the dimension line.</p>
 </article>
           </div>
           

@@ -4588,7 +4588,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/setup_ext/10.3.corrections3.html",
-          "hash": "EpabLMQvaO2+gDddhTWRXU5PIDizWcwiTv+8K05u78M="
+          "hash": "iGj4hPkV3LQHeTCIdsPXTzZR2/NSPx+4BjgwXCZvgb0="
         }
       },
       "is_incremental": false,
@@ -4600,7 +4600,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/setup_ext/10.4.corrections4.html",
-          "hash": "ytORlokh+nehDn1t3ojxv6ctR9+TF2q/bhA7pnG/iIE="
+          "hash": "xiHx62/12513rcJSfTgxoNTJcIU8olVysuXCOa1kQUE="
         }
       },
       "is_incremental": false,
@@ -4612,7 +4612,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/setup_ext/10.5.corrections5.html",
-          "hash": "0/ezDDnKI+nYu5gdEaGTH6rxAa7YzgWKilAhm+4j0oM="
+          "hash": "IXjWr/CW4xZNOY2N5zLenBzlF5XB8A1II/jPJg1tcG4="
         }
       },
       "is_incremental": false,
@@ -4624,7 +4624,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/setup_ext/10.6.corrections6.html",
-          "hash": "agahAYslGZlP7pHT9i97aptcA9SFSL9TcbVIaETe+ms="
+          "hash": "GyVVgMbiBmVkNdy1itxIoHln8zNDpcJQfW9eqq7jrWw="
         }
       },
       "is_incremental": false,
@@ -4636,7 +4636,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/setup_ext/10.7.corrections7.html",
-          "hash": "6PHdBQD/3r+XKy40P3jIv93U26Der6hUnrvCIvp3bT0="
+          "hash": "EB8i9Gjw2XZWNnUSE+AcM238w7gtwvuNc+Bmbrdjr0M="
         }
       },
       "is_incremental": false,
@@ -4648,7 +4648,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/setup_ext/11.writ_of_exec.html",
-          "hash": "lxC1gEt5/Us6/o2GhNfMd1iLJ6OewR4O/u4EKgTIiOY="
+          "hash": "CGqBu5dqMIGwsMYNUGVFBRCJMLQYVs189SBNA+JEluE="
         }
       },
       "is_incremental": false,
@@ -4660,7 +4660,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/setup_ext/12.vacation_accr.html",
-          "hash": "SMZalahdxnFrWBvzPKbrrQyN86mLGrCSJddF8vgW0R8="
+          "hash": "dQOkwHAHOfp4YGUS3yJl/o4D+eGiTyq7e3GoKx9DG0g="
         }
       },
       "is_incremental": false,
@@ -4678,12 +4678,23 @@
       "version": ""
     },
     {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/setup_ext/12.vacation_accr_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/setup_ext/12.vacation_accr_2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "docs/payroll_extended/setup_ext/13.0.stat_reports.md",
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/setup_ext/13.0.stat_reports.html",
-          "hash": "uQqhto6pItO/NxEEizpF0Q3bTnwrvmF8IaS9WLKuxDE="
+          "hash": "wBbPlc0wxaI0GPrOIxPy94k2nV5NmeShhXrtWH9eDk0="
         }
       },
       "is_incremental": false,
@@ -4695,7 +4706,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/setup_ext/13.1.2darbs.html",
-          "hash": "zPWKNJ9XD9ID1GS0mHcNHSEHUBTc31LcclfFEoSYtlE="
+          "hash": "IxgDbUG/riJQZgoCpz8djkoHEC3ZOEyNyf8tZzFLwHA="
         }
       },
       "is_incremental": false,
@@ -4707,7 +4718,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/setup_ext/13.2.5darbs.html",
-          "hash": "Eagagm2Q9ccI1LzD/B9MO1ytGDzgGCz/xBEEzk71Vyg="
+          "hash": "UtntqWcmtWzfk5O3FWxifTWEjmoFF4VkI9mXqRNCRYg="
         }
       },
       "is_incremental": false,
@@ -6923,7 +6934,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/toc.html",
-          "hash": "lGjxO/faUccdKRVJAX6QHH49qV4qlwDigOgbMImz4Cw="
+          "hash": "XjX/gMAZMi77gCWiTrjXwetNuaQluK2zNZLk45MgK2g="
         }
       },
       "is_incremental": false,
