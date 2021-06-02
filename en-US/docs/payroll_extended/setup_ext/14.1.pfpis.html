@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>PFPIS dokumenta veido&#353;ana | Latvian Payroll </title>
+    <title>Creating PFPIS List | Latvian Payroll </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="PFPIS dokumenta veido&#353;ana | Latvian Payroll ">
+    <meta name="title" content="Creating PFPIS List | Latvian Payroll ">
     <meta name="generator" content="docfx 2.57.2.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
@@ -77,39 +77,34 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="pfpis-dokumenta-veidošana">PFPIS dokumenta veidošana</h1>
+<h1 id="creating-pfpis-list">Creating PFPIS List</h1>
 
-<p>Lai izveidotu paziņojumu par fiziskajām personām izmaksātajām summām, jāveido jauns dokuments-buferis funkcijā <em>PFPIS saraksts</em>, uz kuru saīsne pieejama no algu Lomu centra.</p>
-<p>PFPIS buferis sastāv no 3 daļām:</p>
-<p><strong>Visp. informācija</strong></p>
-<p><strong>Kopsummas</strong></p>
-<p><strong>PFPIS rindu apakšforma</strong></p>
-<p>Virsrakstā tiek norādīta vienam buferim kopīgā informācija, bet katrā rindā tiek norādīta vienam darbiniekam atbilstoša informācija. Virsraksts satur sekojošu informāciju:</p>
-<p><strong>Visp. info</strong></p>
+<p>To create a report for the amounts disbursed to the notice of a natural person (PFPIS List), need to be created a new buffer in <em>PFPIS List</em>, what is available from Role Center's shortcuts.</p>
+<p><strong>General Info</strong></p>
 <ul>
-<li>Nr. – PFPIS dokumenta numurs;</li>
-<li>Kods – uzņēmuma reģistrācijas Nr.;</li>
-<li>Apraksts – dokumenta apraksts;</li>
-<li>Gads – bufera veidošanas gads;</li>
-<li>Mēnesis – bufera veidošanas mēnesis;</li>
-<li>Noslēgts – pazīme, ka buferis ir noslēgts;</li>
-<li>Izpildītājs – atbildīgās personas vārds un uzvārds;</li>
-<li>Izpildītāja tālruņa nr. – atbildīgās personas tālruņa nr.</li>
+<li>No. – PFPIS document number;</li>
+<li>Code – Company Registration No.;</li>
+<li>Description – document description;</li>
+<li>Year – Buffer issuing year;</li>
+<li>Month – Buffer issuing month;</li>
+<li>Closed – a sign that the buffer is closed;</li>
+<li>Responsible Person – Name and surname of responsible person;</li>
+<li>Phone No. – Phone number of Responsible Person</li>
 </ul>
-<p><strong>Kopsummas</strong></p>
+<p><strong>Totals</strong></p>
 <ul>
-<li>R05..R16 – bufera rindu vērtību lauku kopsummas.</li>
+<li>R05..R16 – Buffer line value totals.</li>
 </ul>
-<p><strong>PFPIS bufera rindu apakšforma</strong></p>
+<p><strong>PFPIS Line ListPart</strong></p>
 <ul>
-<li>Darbinieka Nr. – Navision darbinieka Nr. (neobligāts);</li>
-<li>Kods – darbinieka personas kods;</li>
-<li>mNosaukums – darbinieka vārds un uzvārds;</li>
-<li>Ienākuma kods – no ienākumu veidu klasifikatora;</li>
-<li>Ienākuma veids – no ienākumu veidu klasifikatora nosaukums;</li>
-<li>Periods no – periods, no kura gūti konkrētie ienākumi;</li>
-<li>Periods līdz – periods, līdz kuram gūti konkrētie ienākumi;</li>
-<li>Ienākuma izmaksas datums – datums, kad izmaksāti ienākumi;</li>
+<li>Employee No. – employee number from the system. (not mandatory);</li>
+<li>Code – employee personal code;</li>
+<li>Name – name and surname of the employee;</li>
+<li>Income Type – no ienākumu veidu klasifikatora;</li>
+<li>Income Description – no ienākumu veidu klasifikatora nosaukums;</li>
+<li>Period From – periods, no kura gūti konkrētie ienākumi;</li>
+<li>Period To – periods, līdz kuram gūti konkrētie ienākumi;</li>
+<li>Income Payment Date – datums, kad izmaksāti ienākumi;</li>
 <li>R05..R16 – PFPIS atskaitei atbilstošās summas;</li>
 <li>R09a – atvieglojumu kods no klasifikatora.</li>
 </ul>
