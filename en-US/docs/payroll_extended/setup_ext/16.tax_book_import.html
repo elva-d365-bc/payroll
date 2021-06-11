@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Nodok&#316;u gr&#257;mati&#326;u imports no EDS | Latvian Payroll </title>
+    <title>Salary book import form EDS | Latvian Payroll </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Nodok&#316;u gr&#257;mati&#326;u imports no EDS | Latvian Payroll ">
-    <meta name="generator" content="docfx 2.57.2.0">
+    <meta name="title" content="Salary book import form EDS | Latvian Payroll ">
+    <meta name="generator" content="docfx 2.58.0.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
     <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
@@ -77,135 +77,144 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="nodokļu-grāmatiņu-imports-no-eds">Nodokļu grāmatiņu imports no EDS</h1>
+<h1 id="salary-book-import-form-eds">Salary book import form EDS</h1>
 
-<p>Lai katru mēnesi nevajadzētu veikt izmaiņas par darbinieku atvieglojumiem manuāli, tiek realizēts nodokļu grāmatiņu datu imports: algu Lomu centrs - <em>Uzdevumi</em> - <em>Algas grāmatiņas importa saraksts</em>.</p>
-<p>Tiek veidots jauns dokuments, kur ievada sekojošu informāciju:</p>
+<p>In order not to perform manually changes to employee reliefs every month, import of salary book data is available: LV Payroll Role Center - <em>Tasks</em> - <em>Salary Book Import List</em>.</p>
+<p>A new document is created where the following information shall be entered:</p>
 <ul>
-<li>Nr. - tiek ievadīts manuāli;</li>
-<li>Reģistrācijas Nr.  – tiek aizpildīts no faila</li>
-<li>Uzņēmuma nosaukums - tiek aizpildīts no faila</li>
-<li>Tips – pastāv divas iespējas:
+<li>No. - is entered manually;</li>
+<li>Registration No.  – is completed from the file ;</li>
+<li>Company Name - is completed from the file;</li>
+<li>Type – you can choose between two options:
 <ul>
-<li>Viss - importēt visu informāciju par atvieglojumiem , tiek aizpildīts no faila;</li>
-<li>Izmaiņas - importē tikai izmaiņas. EDS atskaites opcijai jābūt <em>iekļaut visas izmaiņas</em> ( gan neapl. min, gan visas citas izmaiņas). Pretējā gadījumā sistēma iedos kļūdas paziņojumu.</li>
+<li>All - imports all information about relief, is entered from the file;</li>
+<li>Changed - imports only changes. EDS report's option must be <em>include all changes</em> ( both non-taxable minimum and all other changes). Otherwise the system will give an error message.</li>
 </ul>
 </li>
-<li>Neapl. minimuma komponentes kods – jāizvēlas no saraksta;</li>
-<li>No datuma – perioda sākums, tiek aizpildīts no faila ar iespēju rediģēt</li>
-<li>No datuma failā – aizpildīts no faila</li>
-<li>Līdz datumam – perioda beigas, tiek aizpildīts no faila</li>
-<li>Izveidošanas datums, tiek aizpildīts no faila.</li>
+<li>Non-Taxable Minimum Comp. Code – should be selected from the list;</li>
+<li>From Date – the start of the period, is completed from the file with the option to edit;</li>
+<li>From Date In File – filled from the file;</li>
+<li>To Date – the end of the period, filled from the file;</li>
+<li>Date Created - filled from the file.</li>
 </ul>
 <ol>
-<li>solis:  nospiest pogu <em>Importēt</em>, noradīt ceļu līdz failam. Pastāv iespēja norādīt no kāda datuma apstrādāt darbinieku algas komponentes. Gadījumā, ja nekādi pārrēķini par iepriekšējiem mēnešiem netiks veikti, šo datumu var nelabot.</li>
-<li>solis: ieimportējot datus, tie ir jāapstrādā. Jāpalaiž funkcija <em>Apstrādāt</em>. Pēc datu apstrādes var apskatīt gan ieimportētus datus, gan piedāvātas izmaiņas.</li>
+<li>step:  press button <em>Import</em>, set up the path to the file. It is possible to specify from what date system should processing employees' salary components. In case if no conversion of previous months will be made, this date can left as it is.</li>
+<li>step: When importing the data, they must be processed. Start the function <em>Process</em>. After data processing, you can view both - an imported data and the proposed changes.</li>
 </ol>
-<p>Atverot atbilstošu kolonnu, var noņemt filtru un nepieciešamības gadījumā manuāli veikt labojumus (piemēram, neapl. minimuma summas).</p>
-<p><strong>Neapl. minimuma summas var labot tikai kolonnā <em>Neapliekama minimuma rindu skaits</em>. Tikai pēc summu labojumiem jānospiež <em>Apstrādāt</em>. Ja pirms tam tika apstrādātas rindas, bet netika apstiprinātas, tad vēlreiz jāapstrādā.</strong></p>
-<p><strong>Lai katru mēnesi nevajadzētu mainīt neapliekamā minimuma summas, kuras tiek mainītas pēc darbinieka iesnieguma, ieteicams palūgt darbinieku par šīs pazīmes ielikšanu EDSā.</strong></p>
-<p><strong>Sistēma apstrādā papildatvieglojumus: Pirmās, otrās un trešās grupa invaliditātei. Par citiem papildatvieglojumiem (politiski represētām personām, vai nacionālās pretošanās kustības dalībniekiem) tiek atrādīts brīdinājums par manuālo apstrādi. Gadījumā, ja invaliditāte ir līdz konkrētam datumam un darbiniekam pienākas neapliekamais minimums pēc EDS datiem, sistēma pārbaudīs katru neapliekamā minimuma ierakstu (vai šajā periodā darbiniekam bija spēkā invaliditāte vismaz vienu dienu) un atkarībā no tā atstās vērtību vai anulēs. Pabalsta par invaliditāti saņēmējiem pienākas gan neapl. minimums, gan papildatvieglojums. Pensijas saņēmējiem (par invaliditāti) pienākas tikai papildatvieglojums.</strong></p>
-<p><strong>Gadījumā, ja manuāli ievadīti dati par iepriekšējo periodu, piemēram NM 01.08.20 līdz 31.08.20, bet importēti dati, kuri spēkā no 01.09.2020, iepriekš izveidotais ieraksts netiks apstrādāts. Ja failā būs periods NM 01.08.20 līdz 31.12.20, tad rezultātā par augustu būs 2 NM ieraksti. Iesakām vai nu visu laiku importēt vai, ievadot informāciju manuāli, atstāt ierakstu atvērtu (bez beigu datuma), tad sistēma anulēs šo ierakstu un izveidos korektu.</strong></p>
-<p>Visas izmaiņas var apskatīties kolonnā <em>Izmaiņu skaits</em>. Katrai rindai noradīta darbība, kura tiks veikta pēc apstiprināšanas.</p>
-<p>Algas grāmatiņas importa izmaiņu sarakstā pastāv iespēja kaut ko pielabot. Piemēram, ja darba devējs nevelētos importēt apgādājamas personas, var atlasīt tādus ierakstus un izdzēst.
-Gadījumā, ja izmaiņas ir korektas, jāiezīmē korektā rindiņa un jānospiež poga <em>Apstiprināt</em>. Darbinieku algas komponentēs tiks veiktas izmaiņas. Lai būtu apstrādāti pensionāri un izdienas pensionāri, jābūt sekojošiem uzstādījumiem Soc. statusi:</p>
+<p>The filter can be removed when you open the appropriate column and, if necessary, can manually make corrections (for example, the amounts of the non-taxable minimum).</p>
+<p><strong>The non-taxable minimum amounts can only be corrected in the column <em>Non-taxable Minimum Count</em>. Only after the amount corrections should be pressed the button <em>Process</em>. If lines were processed before, but not approved, then they need to be processed again.</strong></p>
+<p><strong>In order not to change the non-taxable minimum amount each month, (because it is changed on demand by the employee), It is recommended to ask employee to insert a check mark in EDS profile.</strong></p>
+<p><strong>System is processing the additional reliefs: First, second and third group disability. For other additional reliefs (Politically Repressed Persons, or Members of the National Resistance Movement) a warning for manual processing is shown. In case the disability is up to a particular date and the employee is entitled to non-taxable minimum by EDS data, the system will check every non-taxable minimum record (Had this employee a disability for at least one day during this period) and according to that, value remains or will be canceled. Those who receives a disability allowance, are entitled also for non-applicable minimum as well as for additional relief. Those why receive pensions (for disability) are entitled for only additional relief.</strong></p>
+<p><strong>In case of manually entered data for the previous period, for example Non-applicable minimum 01.08.20 till 31.08.20, but additionally was imported data what take effect from 01.09.2020, then previously created record will not be processed. If file will includes the period Non-applicable minimum 01.08.20 till 31.12.20, then as a result for August will be 2 Non-applicable minimum entries. We recommend that either all time import or by entering information manually, leave the record open (without the end date), Then the system will cancel this record and set up correct.</strong></p>
+<p>All changes can be viewed in the column <em>Change Count</em>. A performed  action is identified for each line, what was done after the approval.</p>
+<p>Salary books in the list of import changes can be corrected. for example, if employer don't want to import data on dependants those entries can be sorted out and deleted.
+In case if the changes are correct, select the correct lines and press the button <em>Approve</em>. The changes will be made to the employees' payroll components. Following settings in the <em>Social Statuses</em> must be set if also retired employees need to be processed:</p>
 <p><img src="16.tax_book1.png" alt="alt"></p>
-<p>Apstrādājot datus par pensionāriem, sistēma pārbauda darbinieka kartē lauku Soc Statusa Kods. Gadījumā, ja statusa kods ir DP ( atbilst pensionāriem), tad neapl. minimumu apstrāde ir līdzīga parastiem darba ņēmējiem. Soc. likmes jebkurā gadījumā tiks pārbaudītas.</p>
-<p><strong>Gadījumā, ja pirms importa darbiniekam tika piešķirts DN statusa kods un tiek saņemta informācija par vecuma pensiju, tad neapl. minimuma No datuma ir vienāds ar nākamā mēneša 1. datumu.Bet, ja sistēmā jau ir DP statusa kods, tad neapl. minimuma datums ir vienāds ar neapl. minimuma datumu no EDS faila.</strong></p>
-<p>Grāmatiņu apstrādes algoritms:</p>
+<p>When processing the data with retired employees, system checks the <em>Social Status Code</em> field in the employee card. In case if code is <em>DP</em> ( related to pensioners), then processing of the Non-applicable minimum is similar to ordinary employees. Social rates will be checked in any case.</p>
+<p><strong>In case if prior to import, to employee will be assigned a status code <em>DN</em> and will be received information on retirement, the <em>Date From</em> of on-applicable minimum is the same as it will be on next month's first date. But, in case if <em>DP</em> status is al;ready in the system, then non-applicable minimum date is the same as on-applicable minimum date from EDS file.</strong></p>
+<p>Algorithm of the processing salary books:</p>
 <table>
 <thead>
 <tr>
-<th style="text-align: center;">Neapl. minimums</th>
-<th style="text-align: center;">Apgādājamie</th>
-<th style="text-align: center;">Papildatvieglojumi</th>
-<th style="text-align: center;">Pensijas (invalīd.)</th>
-<th style="text-align: center;">Pensijas (izdienas)</th>
-<th style="text-align: center;">Pensionārs (citas valsts)</th>
-<th style="text-align: center;">Pensionārs</th>
-<th style="text-align: left;">Rezultātā:</th>
+<th style="text-align: center;">Non-applicable minimum</th>
+<th style="text-align: center;">Dependants</th>
+<th style="text-align: center;">Add. relief</th>
+<th style="text-align: center;">retirement (disabled)</th>
+<th style="text-align: center;">Retirement (retirement)</th>
+<th style="text-align: center;">Retirement (Non-resident)</th>
+<th style="text-align: center;">Retirement</th>
+<th style="text-align: left;">Result:</th>
+<th></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: center;">nav</td>
+<td style="text-align: center;">No</td>
 <td style="text-align: center;">1..</td>
-<td style="text-align: center;">nav/ ir</td>
-<td style="text-align: center;">nav/ ir</td>
-<td style="text-align: center;">nav/ ir</td>
-<td style="text-align: center;">nav/ ir</td>
-<td style="text-align: center;">nav/ ir</td>
-<td style="text-align: left;">Nekas netiks apstrādāts. Ja neapl. min nav kā ieraksta, tad nekādas izmaiņas netiks apstrādātas</td>
+<td style="text-align: center;">No/ Yes</td>
+<td style="text-align: center;">No/ Yes</td>
+<td style="text-align: center;">No/ Yes</td>
+<td style="text-align: center;">No/ Yes</td>
+<td style="text-align: center;">No/ Yes</td>
+<td style="text-align: left;">Nothing will be processed. If non-applicable minimum is not like in the entry, then no changes will be processed</td>
+<td></td>
 </tr>
 <tr>
 <td style="text-align: center;">0..200 EUR</td>
-<td style="text-align: center;">nav</td>
-<td style="text-align: center;">nav</td>
-<td style="text-align: center;">nav</td>
-<td style="text-align: center;">nav</td>
-<td style="text-align: center;">nav</td>
-<td style="text-align: center;">nav</td>
-<td style="text-align: left;">Izveidot ierakstu neapl. minimums , aizpildīt saistīto informāciju. Tiks piemērots IIN 20%.</td>
+<td style="text-align: center;">No</td>
+<td style="text-align: center;">No</td>
+<td style="text-align: center;">No</td>
+<td style="text-align: center;">No</td>
+<td style="text-align: center;">No</td>
+<td style="text-align: center;">No</td>
+<td style="text-align: left;">Create entry on non-applicable minimum, complete related information. PIT 20% applied.</td>
+<td></td>
 </tr>
 <tr>
 <td style="text-align: center;">0..200 EUR</td>
 <td style="text-align: center;">1..</td>
-<td style="text-align: center;">nav</td>
-<td style="text-align: center;">nav</td>
-<td style="text-align: center;">nav</td>
-<td style="text-align: center;">nav</td>
-<td style="text-align: center;">nav</td>
-<td style="text-align: left;">Izveidot ierakstus neapl. minimums un apgādājamie, aizpildīt saistīto informāciju. Tiks piemērots IIN 20%.</td>
+<td style="text-align: center;">No</td>
+<td style="text-align: center;">No</td>
+<td style="text-align: center;">No</td>
+<td style="text-align: center;">No</td>
+<td style="text-align: center;">No</td>
+<td style="text-align: left;">Create entries on non-applicable minimum and dependants, complete related information. PIT 20% applied.</td>
+<td></td>
 </tr>
 <tr>
 <td style="text-align: center;">0</td>
 <td style="text-align: center;">1..</td>
-<td style="text-align: center;">1. vai 2. vai 3. invalīd., repres</td>
-<td style="text-align: center;">ir</td>
-<td style="text-align: center;">nav</td>
-<td style="text-align: center;">nav</td>
-<td style="text-align: center;">nav</td>
-<td style="text-align: left;">Izveidot ierakstus neapl. minimums un apgādājamie, aizpildīt saistīto informāciju. Tiks piemērots IIN 20%.</td>
+<td style="text-align: center;">1..</td>
+<td style="text-align: center;">1. or 2. or 3. disabled, repression</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: center;">No</td>
+<td style="text-align: center;">No</td>
+<td style="text-align: left;">No</td>
+<td>Create entry on non-applicable minimum and dependants, complete related information. PIT 20% applied.</td>
 </tr>
 <tr>
 <td style="text-align: center;">0,01..200 EUR</td>
 <td style="text-align: center;">1..</td>
-<td style="text-align: center;">1. vai 2. vai 3. invalīd., repres</td>
-<td style="text-align: center;">ir</td>
-<td style="text-align: center;">nav</td>
-<td style="text-align: center;">nav</td>
-<td style="text-align: center;">nav</td>
-<td style="text-align: left;">Izveidot ierakstus neapl. minimums (summa =0, jo piemērot nedrīkst ,tikai papildatvieglojumi) un apgādājamie un papildatvieglojumi, aizpildīt saistīto informāciju. Tiks piemērots IIN 20%. Soc likmes nemainās.</td>
+<td style="text-align: center;">1. or 2. or 3. disabled, repression</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: center;">No</td>
+<td style="text-align: center;">No</td>
+<td style="text-align: center;">No</td>
+<td style="text-align: left;">Create entries on non-applicable minimum (value =0, because can't be applied to ,only additional reliefs) and dependants and additional reliefs, complete related information. PIT 20% applied. No changes in Social tax rates.</td>
+<td></td>
 </tr>
 <tr>
 <td style="text-align: center;">0,01..200 EUR</td>
 <td style="text-align: center;">1..</td>
-<td style="text-align: center;">1. vai 2. vai 3. invalīd., repres</td>
-<td style="text-align: center;">nav</td>
-<td style="text-align: center;">nav</td>
-<td style="text-align: center;">nav</td>
-<td style="text-align: center;">nav</td>
-<td style="text-align: left;">Izveidot ierakstus neapl. minimums un apgādājamie un papildatvieglojumi, aizpildīt saistīto informāciju. Tiks piemērots IIN 20%. Soc likmes nemainās.</td>
+<td style="text-align: center;">1. or 2. or 3. disabled, repression</td>
+<td style="text-align: center;">No</td>
+<td style="text-align: center;">No</td>
+<td style="text-align: center;">No</td>
+<td style="text-align: center;">No</td>
+<td style="text-align: left;">Create entries on non-applicable minimum and dependants and additional reliefs, complete related information. PIT 20% applied. No changes in Social tax rates.</td>
+<td></td>
 </tr>
 <tr>
 <td style="text-align: center;">0..200 EUR</td>
 <td style="text-align: center;">1..</td>
-<td style="text-align: center;">nav</td>
-<td style="text-align: center;">nav</td>
-<td style="text-align: center;">nav</td>
-<td style="text-align: center;">ir</td>
-<td style="text-align: center;">nav</td>
-<td style="text-align: left;">Izveidot neapl. min =0, apgād. , aizpildīt saistīto informāciju. Soc likmes nomainīt (no 01. datuma pēc pensijas piešķiršanas vai noslēgt iepr. Ierakstus) Piemērot IIN 20%.</td>
+<td style="text-align: center;">No</td>
+<td style="text-align: center;">No</td>
+<td style="text-align: center;">No</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: center;">No</td>
+<td style="text-align: left;">Create non-applicable minimum =0, dependants , complete related information. Change Social tax rate (starting from the first date after the pension is granted or close the previous entries) PIT 20% applied.</td>
+<td></td>
 </tr>
 <tr>
 <td style="text-align: center;">0..200 EUR</td>
 <td style="text-align: center;">1..</td>
-<td style="text-align: center;">nav</td>
-<td style="text-align: center;">nav</td>
-<td style="text-align: center;">ir</td>
-<td style="text-align: center;">nav</td>
-<td style="text-align: center;">nav</td>
-<td style="text-align: left;">Izveidot neapl. min =0, apgād. , aizpildīt saistīto informāciju. Soc likmes nomainīt (no 01. datuma pēc pensijas piešķiršanas vai noslēgt iepr. Ierakstus) Piemērot IIN 20%.</td>
+<td style="text-align: center;">No</td>
+<td style="text-align: center;">No</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: center;">No</td>
+<td style="text-align: center;">No</td>
+<td style="text-align: left;">Create non-applicable minimum min =0, dependants , complete related information. Change Social tax rate (starting from the first date after the pension is granted or close the previous entries) PIT 20% applied.</td>
+<td></td>
 </tr>
 </tbody>
 </table>

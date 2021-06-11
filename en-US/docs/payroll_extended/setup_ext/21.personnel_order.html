@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Person&#257;la r&#299;kojums | Latvian Payroll </title>
+    <title>Personnel Order | Latvian Payroll </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Person&#257;la r&#299;kojums | Latvian Payroll ">
-    <meta name="generator" content="docfx 2.57.2.0">
+    <meta name="title" content="Personnel Order | Latvian Payroll ">
+    <meta name="generator" content="docfx 2.58.0.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
     <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
@@ -77,66 +77,63 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="personāla-rīkojums">Personāla rīkojums</h1>
+<h1 id="personnel-order">Personnel Order</h1>
 
-<p>Personāla rīkojums tiek izmantots, lai iegrāmatotu jebkuras izmaiņas, kas ir saistītas ar personālu – pieņemšana darbā, atbrīvošana, darbinieka amatu maiņa, slodzes maiņa, algas maiņa utt. Iegrāmatojot personāla rīkojumu, sistēma automātiski izveido izmaiņas arī darbinieka kartiņā. Personāla rīkojumi tiek reģistrēti sarakstā <em>Personāla rīkojumi</em>.</p>
-<h2 id="personāla-rīkojuma-uzbūve">Personāla rīkojuma uzbūve</h2>
-<p>Tā kā personāla rīkojums tāpat kā amata rīkojums pēc sava satura var būt orientēts gan uz vienu, gan uz vairākiem darbiniekiem kā arī vairākām darbībām ar vienu darbinieku, tas sastāv no divām daļām – virsraksta un rindām. Par rīkojuma virsrakstu tiek glabāta sekojoša informācija:</p>
-<p>Cilne <em>Visp. info</em></p>
+<p>The personnel order is used to record any changes associated with changes in the staff – employment, termination, position change, loading change, salary change etc. When posting a Personnel order, the system transfers changes also to the Employee cards. All the Personnel Orders are stored in the list <em>Personnel Order List</em>.</p>
+<h2 id="structure-of-the-personnel-order">Structure of the Personnel Order</h2>
+<p>As the same as positions orders, also the personnel order may also be oriented to one and several employees, as well as several activities with one employee. Personnel Order card includes following fields:</p>
+<p>Tab <em>General</em></p>
 <ul>
-<li>Nr. – rīkojuma unikāls identifikators (iespēja aizpildīt automātiski no numuru sērijām);</li>
-<li>Grāmatošanas datums – rīkojuma stāšanās spēkā datums;</li>
-<li>Statuss – izveidots, apstiprināšanā, pabeigts (paredzēts dokumenta apstiprināšanas procesam).</li>
+<li>No. – unique order identifier (can be entered automatically from the number series);</li>
+<li>Posting Date – entry into force date;</li>
+<li>Status – created, In Approval, Created (intended for the document approval process).</li>
 </ul>
-<p>Cilne <em>Paraksti</em></p>
-<p>Iespējams izvēlēties divus parakstītājus no uzņēmuma amatpersonu tabulas.</p>
-<p>Cilne <em>Veidnes</em>:</p>
+<p>Tab <em>Signatures</em></p>
+<p>You can select two signatories from the company's officials list.</p>
+<p>Tab <em>Templates</em>:</p>
 <ul>
-<li>Galvenes veidnes kods;</li>
-<li>Kājenes veidnes kods.</li>
+<li>Header Template Code - a code from the list <em>Document Templates</em>;</li>
+<li>Footer Template Code - a code from the list <em>Document Templates</em>.</li>
 </ul>
-<p>Cilne <em>Papildinfo</em></p>
-<p>Informācija par to, kurš un kad ir izveidojis rīkojumu</p>
-<p>Par rīkojuma rindām tiek glabāta sekojoša informācija:</p>
+<p>Tab <em>Add.info</em></p>
+<p>Information about when and who have been created this order.</p>
+<p>Tab <em>Lines</em></p>
 <ul>
-<li>Rindas Nr. – rindas kārtas Nr. (aizpildās automātiski);</li>
-<li>Darbinieka Nr. – no darbinieku klasifikatora;</li>
-<li>Vārds – darbinieka vārds;</li>
-<li>Uzvārds – darbinieka uzvārds;</li>
-<li>Personas kods – darbinieka personas kods;</li>
-<li>Notikuma veids – pieņemšana, atbrīvošana, amata maiņa, slodzes maiņa, algas maiņa, prombūtne, disciplinārsods, uzteikums, piemaksa/atvilkums, papildus amats, amata atcelšana;</li>
-<li>Rindas veidnes kods – no dokumentu veidņu klasifikatora.</li>
+<li>Employee No. – a code from the list <em>Employee</em>;</li>
+<li>First Name – employee's name;</li>
+<li>Last Name – employee's surname;</li>
+<li>Social Security No. – employee's personal code;</li>
+<li>Event Type – Employment, Termination, Position Change, Loading Change, Amount Change, Absence, Demerit, Notice, Surch./Deduct., Add Position, Cancellation, Last Name Change, Informative;</li>
+<li>Line Template Code – a code from the list <em>Document Templates</em>.</li>
 </ul>
-<h2 id="personāla-rīkojuma-algas-komponentes">Personāla rīkojuma algas komponentes</h2>
-<p>Rīkojuma rindas algas komponentes sastāv no sekojošiem laukiem:</p>
+<h2 id="payroll-components-of-the-personnel-order">Payroll Components of the Personnel Order</h2>
+<p>Payroll Components are available by pressing <em>Manage - Payroll Components</em> in the tab <em>Lines</em>. Following fields are available:</p>
 <ul>
-<li>Darbinieka Nr.;</li>
-<li>Vārds;</li>
-<li>Uzvārds;</li>
-<li>Tips - aizpildās automātiski, izvēloties kodu;</li>
-<li>Rīkojuma Nr.;</li>
-<li>Rīkojuma rindas Nr.;</li>
-<li>Rindas Nr.;</li>
-<li>Kods - kods no algas komponenšu klasifikatora;</li>
-<li>Apraksts - aizpildās automātiski, ievadot kodu;</li>
-<li>Dokumenta lauku ID – lauks, kas ir izmantojams pie dokumenta veidošanas MS Word formātā. Dokumentu veidošanas process ir aprakstīts Dokumentu veidošanas sadaļā;</li>
-<li>Slodze;</li>
-<li>No datuma – no kura datuma algas komponentes ir spēkā;</li>
-<li>Līdz datumam - līdz kuram datumam algas komponentes ir spēkā;</li>
-<li>Pamatalga – atzīme par to, vai konkrētā komponente ir pamatalga vai piemaksa;</li>
-<li>Summa par slodzi – summa par vienu slodzi, ielasās no amata kartiņas, ja ir aizpildīts;</li>
-<li>Vērtība - vērtība noteiktai algas komponentei pie noteiktās slodzes;</li>
-<li>Aprēķina veids - kā tiek rēķināta sekojoša algas komponente;</li>
-<li>Aprēķināt pēc - automātiski aizpildās, ievadot kodu;</li>
-<li>Bāze - piemaksām un atvilkumiem, kas tiek rēķināti uz bāzes pamata;</li>
-<li>Prioritāte - lielums, kurš norāda konkrētās komponentes vietu algas aprēķināšanas darbību ķēdē – jo mazāks šis lielums, jo augstāku prioritāti tas nozīmē, un jo ātrāk tas tiek iesaistīts aprēķinos;</li>
-<li>Apmaksāt nakts stundas - atzīme par to, ka nakts stundas tiek apmaksātas;</li>
-<li>Apmaksāt svētku stundas - atzīme par to, ka svētku stundas tiek apmaksātas;</li>
-<li>Apmaksāt virsstundas - atzīme par to, ka virsstundas tiek apmaksātas.</li>
+<li>Employee No.;</li>
+<li>First Name;</li>
+<li>Last Name;</li>
+<li>Type - fill in automatically by selecting a code;</li>
+<li>Code - code from the list of <em>Payroll Components</em>;</li>
+<li>Description - fills automatically by entering the code;</li>
+<li>Document Field ID - a field that is essential if creating a document in MS Word format. The process of document creation is described in the chapter <em>Creating Documents</em>;</li>
+<li>Loading;</li>
+<li>From Date - date from which the salary component is valid;</li>
+<li>To Date - date to which component is valid;</li>
+<li>Base Salary - mark that the selected payroll component is the base salary;</li>
+<li>Amount per Load – the amount per load, includes from position card, if filled;</li>
+<li>Amount - value for a specified payroll component and for a specified loading;</li>
+<li>Calculation Method - how the following payroll component is calculated;</li>
+<li>Calculate By - automatically fills in by entering the code;</li>
+<li>Base - for surcharges and deductions that are calculated on the basis of Base;</li>
+<li>Priority - level, what indicates the particular component's place in the chain of the salary calculation – the smaller this amount, the higher the priority of this means and the sooner it is involved in the calculations;</li>
+<li>Allow Night Hours – the mark of the fact that night hours are paid;</li>
+<li>Allow Bank Holiday Hours – the mark of the fact that the bank holiday hours are paid;</li>
+<li>Allow Overtime – the mark that overtime is paid;</li>
+<li>Dimensions can be assigned to payroll components.</li>
 </ul>
-<p>Ja personāla rīkojums tiek veidots, neizmantojot darba līgumu vai tā  grozījumus, tad tāpat kā darba līguma algas komponentes, arī personāla rīkojuma algas komponentes tiek ielasītas no amata kartes algas komponentēm, tāpēc lietotājam pirms rīkojuma grāmatošanas ir jāpārliecinās, ka visa informācija, kas ievadīta personāla rīkojuma algas komponentēs atbilst reālajai situācijai.</p>
-<h2 id="personāla-rīkojuma-notikuma-veidi">Personāla rīkojuma notikuma veidi</h2>
-<p>Kā jau tika augstāk minēts, personāla rīkojumam ir iespējams definēt sekojošus notikumus: pieņemšana, atbrīvošana, amata maiņa, slodzes maiņa, algas maiņa, prombūtne, disciplinārsods, uzteikums, piemaksa/atvilkums, papildus amats, amata atcelšana, anulēšana. Katram notikumu veidam atkarībā no tā rakstura sistēmā tiek ievadīta dažāda informācija. Ievade notiek caur Rindas karti, kas pieejama Rindu rīkjoslā.</p>
+<p>If the Personnel Order is created without reference to the labour contract or it's alterations, then payroll components are  included from the position card's payroll components (if indicated). Therefore, the user must make sure that all entered information in the personnel order payroll components matches the required situation.</p>
+<h2 id="event-types-of-the-personnel-order">Event Types of the Personnel Order</h2>
+<p>As already mentioned above, in the personnel order it is possible to define the following event types: Employment, Termination, Position Change, Loading Change, Amount Change, Absence, Demerit, Notice, Surch./Deduct., Add Position, Cancellation, Last Name Change, Informative. For each type of events, depending on it's purpose, in the system is entered the various information. Information is entered through <em>Manage - Line Card</em> in the tab <em>Lines</em>.</p>
 </article>
           </div>
           

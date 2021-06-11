@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Person&#257;la r&#299;kojumu piem&#275;ri | Latvian Payroll </title>
+    <title>Examples of Personnel Orders | Latvian Payroll </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Person&#257;la r&#299;kojumu piem&#275;ri | Latvian Payroll ">
-    <meta name="generator" content="docfx 2.57.2.0">
+    <meta name="title" content="Examples of Personnel Orders | Latvian Payroll ">
+    <meta name="generator" content="docfx 2.58.0.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
     <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
@@ -77,75 +77,75 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="personāla-rīkojumu-piemēri">Personāla rīkojumu piemēri</h1>
+<h1 id="examples-of-personnel-orders">Examples of Personnel Orders</h1>
 
-<h2 id="rīkojums-par-atbrīvošanu">Rīkojums par atbrīvošanu</h2>
-<p>Atbrīvošanas no darba notikums satur sekojošu informāciju:</p>
+<h2 id="termination-order">Termination order</h2>
+<p>The following fields are required for the order of termination:</p>
 <p><img src="20.personel_example1.png" alt="alt"></p>
 <ul>
-<li>Līguma izbeigšanas datums;</li>
-<li>Atbrīvošanas pamata kods – no atbrīvošanas pamatu klasifikatora;</li>
-<li>Atbrīvošanas pamata apraksts;</li>
-<li>Atbrīvošanas iemesla kods – no atbrīvošanas iemeslu klasifikatora;</li>
-<li>Atbr. iemesla apraksts;</li>
-<li>Sociālo ziņu kods;</li>
-<li>Saskaņots ar arodbiedrību – ja darbinieks nav arodbiedrībā, tad šis lauks nav aktīvs;</li>
-<li>Atlaišanas pabalsts.</li>
-<li>Atsauce uz līgumu Nr.</li>
+<li>Termination Date;</li>
+<li>Termination Grounds Code – a code from the list <em>Grounds for Termination</em>;</li>
+<li>Term. Grounds Description;</li>
+<li>Termination Reason Code – a code from the list <em>Termination Reasons</em>;</li>
+<li>Term. Reason Description;</li>
+<li>Social Sign Code;</li>
+<li>Co-ordinated with Trade-Union – if the employee is not the member of the union, then this field is not active;</li>
+<li>Termination Allowance.</li>
+<li>Relation to Labour Contr. No.</li>
 </ul>
-<p>Pirms rīkojuma grāmatošanas par atbrīvošanu sistēma pārbauda:</p>
+<p>Before the posting of the termination order, system checks:</p>
 <ul>
-<li>Vai darbinieks ir pieņemts pirms atbrīvošanas datuma;</li>
-<li>Vai darbinieks jau nav atbrīvots no darba;</li>
-<li>Vai darbinieks ir arodbiedrībā un vai ar arodbiedrību ir saskaņots.</li>
+<li>Is the employee recruited before the termination date;</li>
+<li>Is the employee not already terminated before;</li>
+<li>Is the employee in a trade union and is it aligned with the trade union.</li>
 </ul>
-<p>Ja kāds no šiem nosacījumiem nav, tad sistēma neļauj grāmatot rīkojumu par atbrīvošanu.</p>
-<h2 id="rīkojums-par-amata-maiņu">Rīkojums par amata maiņu</h2>
-<p>Amata maiņas notikums satur sekojošu informāciju:</p>
+<p>If any of these conditions is not fulfilled, then the system does not allows to post the order.</p>
+<h2 id="position-change-order">Position Change Order</h2>
+<p>The following fields are required for the order of position change:</p>
 <p><img src="20.personel_example2.png" alt="alt"></p>
 <ul>
-<li>Darba līguma Nr. - ja par slodzes maiņu tika veidots darba līguma grozījumu, tad šajā laukā to izvēlas un visi pārējie lauki, ieskaitot algas komponentes laukus tiks aizpildīti no konkrēta grozījuma;</li>
+<li>Labour Contract No. - If for this event an alteration to the labour contract was made, then select the alteration number and all other related fields will be filled in from the labour contract card, including payroll components;</li>
 </ul>
-<p>Ja darba līguma grozījumi netika veidoti, tad ir jāaizpilda pārējie lauki, izņemot Darba līguma Nr.</p>
+<p>If an alteration wasn't made then you should fill all below fields, excluding the <em>Labour Contract No</em>.</p>
 <ul>
-<li>Darbinieka amata Nr. – darbinieka amata numurs, kuru ir nepieciešams nomainīt;</li>
-<li>Galvenais amats – atzīme par to, ka tas ir galvenais amats;</li>
-<li>Darbinieka amata apraksts;</li>
-<li>Amata kods – jaunā amata kods;</li>
-<li>Amata nosaukums;</li>
-<li>Struktūrvienības kods – jaunā amata struktūrvienības kods;</li>
-<li>Struktūrvienības nosaukums;</li>
-<li>Sociālo ziņu kods;</li>
-<li>No datums – no kura datuma jaunais amats ir spēkā;</li>
-<li>Plānotais līdz datums – plānotais amata beigu datums;</li>
-<li>Līdz datumam – līdz kuram datumam jaunais amats ir spēkā. Pēc tam atkal iepriekšējais amats stājās spēkā;</li>
-<li>Algas tips – summētais vai normālais darba laiks</li>
-<li>Slodze.</li>
-<li>Cikla kalendārs – atzīme par to, ka darbiniekam ir slīdošs grafiks;</li>
-<li>Kalendāra kods;</li>
-<li>Kalendāra nosaukums;</li>
-<li>Cikla kārtas nr.</li>
+<li>Employee Position No. – position number what should be replaced;</li>
+<li>Primary Position – enable if it is primary position;</li>
+<li>Employee Position Description;</li>
+<li>Position Code – a code of the new position;</li>
+<li>Position Description;</li>
+<li>Department Code – a code of the department of the new position;</li>
+<li>Department Name;</li>
+<li>Social sign Code;</li>
+<li>Date From – from which date the new position is effective;</li>
+<li>Planned Date To – planned due date;</li>
+<li>Date To – due date of the new position. A date what comes after the previous position steps into force;</li>
+<li>Salary Type – aggregated or normal working time</li>
+<li>Loading;</li>
+<li>Cycle Calendar – enable if the working time is organized according to the shift;</li>
+<li>Calendar Code;</li>
+<li>Calendar Name;</li>
+<li>Cycle Serial Number.</li>
 </ul>
-<h2 id="rīkojums-par-slodzes-maiņu">Rīkojums par slodzes maiņu</h2>
-<p>Slodzes maiņas notikums satur sekojošu informāciju:</p>
+<h2 id="loading-change-order">Loading Change Order</h2>
+<p>The following fields are required for the order of loading change:</p>
 <p><img src="20.personel_example3.png" alt="alt"></p>
 <ul>
-<li>Darba līguma Nr. – ja par slodzes maiņu tika veidots darba līguma grozījumu, tad šajā laukā to izvēlas un visi pārējie lauki, ieskaitot algas komponentes laukus tiks aizpildīti no konkrēta grozījuma;</li>
+<li>Labour Contract No. - If for this event an alteration to the labour contract was made, then select the alteration number and all other related fields will be filled in from the labour contract card, including payroll components;</li>
 </ul>
-<p>Ja darba līguma grozījumi netika veidoti, tad ir jāaizpilda pārējie lauki, izņemot Darba līguma Nr.</p>
+<p>If an alteration wasn't made then you should fill all below fields, excluding the <em>Labour Contract No</em>.</p>
 <ul>
-<li>Darbinieka amata Nr. – darbinieka amata numurs, kuru ir nepieciešams nomainīt;</li>
-<li>Galvenais amats – atzīme par to, ka tas ir galvenais amats;</li>
-<li>Darbinieka amata apraksts;</li>
-<li>No datuma – no kura datuma jaunais amats ir spēkā;</li>
-<li>Plānotais līdz datums – plānotais amata beigu datums;</li>
-<li>Līdz datumam – līdz kuram datumam jaunais amats ir spēkā. Pēc tam atkal iepriekšējais amats stājās spēkā;</li>
-<li>Algas tips – summētais vai normālais darba laiks</li>
-<li>Slodze;</li>
-<li>Cikla kalendārs – atzīme par to, ka darbiniekam ir slīdošs grafiks;</li>
-<li>Kalendāra kods;</li>
-<li>Kalendāra nosaukums;</li>
-<li>Cikla kārtas nr.</li>
+<li>Employee Position No. – position number what should be adjusted;</li>
+<li>Primary Position – enable if it is primary position;</li>
+<li>Employee Position Description;</li>
+<li>Date From – from which date the new conditions is effective;</li>
+<li>Planned Date To – planned due date;</li>
+<li>Date To – due date of the new conditions. A date what comes after the previous conditions steps into force;</li>
+<li>Salary Type – aggregated or normal working time;</li>
+<li>Loading;</li>
+<li>Cycle Calendar – enable if the working time is organized according to the shift;</li>
+<li>Calendar Code;</li>
+<li>Calendar Name;</li>
+<li>Cycle Serial Number.</li>
 </ul>
 <p>Izmainot slodzes vērtību laukā Slodze, sistēma izmainīs slodzi pie algas komponentēm, kā arī izrēķinās jauno vērtību, kas pienākas par sekojošu slodzi.</p>
 <h2 id="rīkojums-par-algas-maiņu">Rīkojums par algas maiņu</h2>

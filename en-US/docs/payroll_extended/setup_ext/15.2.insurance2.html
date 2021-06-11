@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Darbinieku apdro&#353;in&#257;&#353;anas uzskaite | Latvian Payroll </title>
+    <title>Accounting of employee insurance | Latvian Payroll </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Darbinieku apdro&#353;in&#257;&#353;anas uzskaite | Latvian Payroll ">
-    <meta name="generator" content="docfx 2.57.2.0">
+    <meta name="title" content="Accounting of employee insurance | Latvian Payroll ">
+    <meta name="generator" content="docfx 2.58.0.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
     <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
@@ -77,48 +77,49 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="darbinieku-apdrošināšanas-uzskaite">Darbinieku apdrošināšanas uzskaite</h1>
+<h1 id="accounting-of-employee-insurance">Accounting of employee insurance</h1>
 
-<p>Darbinieku apdrošināšanas uzskaites reģistrs pieejams ievadot
-sistēmas meklētājā <em>Darbinieku apdrošināšanas</em></p>
-<h2 id="cilne-visp-info">Cilne <em>Visp. info</em></h2>
-<p>Aizpildot darbinieka apdrošināšanas kartiņu jānorāda:</p>
+<p>Employee Insurance Accounting Register available
+in the system search function <em>Employee Insurances</em></p>
+<p>Press button <em>+ New</em> to open new insurance entry card:</p>
+<h2 id="tab-general">Tab <em>General</em></h2>
+<p>By completing the employee's insurance card must be specified:</p>
 <ul>
-<li>Nr. – tiek norādīta Num. sērija no uzstādījumiem;</li>
-<li>Darbinieka Nr. – apdrošināmā darbinieka numurs;</li>
-<li>Nosaukums – norāda apdrošināšanas maksājumu aprakstu;</li>
-<li>Kopsumma – apdrošināšanas maksājumu kopējā summa;</li>
-<li>Dimensijas kods (Nodaļas kods, Projekta kods) – apdrošināšanas prēmiju aprēķiniem atbilstošās dimensiju vērtības. Ja jāizmanto tās pašas dimensijas, kas ir aizpildītas darbinieka kartiņā, tad šie lauku jāatstāj tukši;</li>
-<li>No datuma – apdrošināšanas maksājumu sākuma datums;</li>
-<li>Līdz datumam – apdrošināšanas maksājumu beigu datums.</li>
+<li>No. – The number series from the <em>No. Series</em> is specified;</li>
+<li>Employee No. – Insurable employee number;</li>
+<li>Description – Indicates description of insurance payments;</li>
+<li>Total Amount – The total amount of insurance payments;</li>
+<li>Global Dimension 1 Code/ 2 Code – Values for calculations of insurance premiums. If you use the same dimensions filled in the employee card, then these fields should be left blank;</li>
+<li>Date From – Start date of insurance payments;</li>
+<li>Date To – End Date of insurance Payments.</li>
 </ul>
-<h2 id="cilne-rindu-ģenerēšanas-nosacījumi">Cilne <em>Rindu ģenerēšanas nosacījumi</em></h2>
-<p>Šajā sadaļā tiek aizpildīta informācija, pēc kuras tiks ģenerētas apdrošināšanas prēmiju rindas, kas tiks izmantotas algas aprēķinos.</p>
+<h2 id="tab-line-generation-rules">Tab <em>Line Generation Rules</em></h2>
+<p>This section is filled in information that will be generated in the lines of insurance premiums, which will be used in salary calculations.</p>
 <ul>
-<li>Periods – jānorāda apdrošināšanas maksājumu summas sadalījuma periods:
+<li>Period – The allocation period of the insurance payment amount must be indicated:
 <ul>
-<li>Mēnesis – tiek norādīts, ja apdrošināšanas maksājums tiek sadalīts proporcionāli pa mēnešiem</li>
-<li>Diena – tiek norādīts, ja apdrošināšanas maksājums tiek sadalīts proporcionāli pa dienām;</li>
-<li>Nedēļa – tiek norādīts, ja apdrošināšanas maksājums tiek sadalīts proporcionāli pa nedēļām;</li>
-<li>Ceturksnis – tiek norādīts, ja apdrošināšanas maksājums tiek sadalīts proporcionāli pa ceturkšņiem;</li>
-<li>Gads – tiek norādīts, ja apdrošināšanas maksājums tiek sadalīts proporcionāli pa gadiem;</li>
+<li>Month – is indicated if the insurance payment is divided proportionally by month</li>
+<li>Day – is indicated if the insurance payment is divided in proportion to the days;</li>
+<li>Week – indicated if the insurance payment is divided in proportion to weeks;</li>
+<li>Quarter – is indicated if the insurance payment is divided proportionally by quarters;</li>
+<li>Year – is indicated if the insurance payment is divided proportionally over the years;</li>
 </ul>
 </li>
 </ul>
 <ul>
-<li>Summa uz perioda sākumu/beigām – jānorāda uz kuru norādītā perioda daļu (sākumu vai beigām) proporcionāli sadalītā summa tiks aprēķināta;</li>
-<li>Summas sadalījums – jānorāda par kādu periodu summa tiks proporcionāli dalīta.</li>
+<li>Amount on Period Start/End – should indicate which part of the specified period (start or end) proportionally distributed amount will be calculated;</li>
+<li>Amount Distribution – should be indicated for what period the amount will be proportionally shared.</li>
 </ul>
-<p><strong>Piemērs</strong>
-Lai iestatītu sadalījumu pa gadiem proporcionāli dienām, jāveic sekojoši iestatījumi:</p>
+<p><strong>Example</strong>
+To set the distribution over the years in proportion to days, the following settings must be performed:</p>
 <p><img src="15.2.insurance1.png" alt="alt"></p>
-<p>Lai būtu iespēja sadalīt apdrošināšanas summu pa gadiem, laukā <em>Periods</em> jāizvēlas Gads. Gadījumā, ja summas sadalījums pa dienām, tad katram gadam tiks sarēķināta summa atkarībā no apdrošināšanas polises konkrētā gada dienu skaita.<br>
-Summa uz periodu sākumu/beigām definē kādā aprēķina periodā tiks izveidota darbinieka algas rinda algu sarakstā.
-Jāpievērš uzmanība, ka gadījumā, ja tiks noradīts Gads un Beigās, tad apdrošināšanas polises rindās tiks izveidots ieraksts ar datumu 31.12.2020. Tas nozīmē, ka šis ieraksts tiks apstrādāts tikai 2020. gada decembrī. Ja darbinieks tiks atbrīvots līdz 2020. decembrim, darbiniekam netiks piereģistrēta apdrošināšanas summa algu sarakstos, tāpēc  apliekamās summas aprēķins netiks veikts. Šajā gadījumā jākoriģē algas saraksts manuāli.</p>
+<p>To be able to divide the insurance amount over the years, in the field <em>Period</em> should be selected <em>Year</em>. In case of distribution of the amount in the days, then for each year, the amount will be calculated depending on the insurance policy of a given yearly number of days.<br>
+Amount for the beginning /end of the period Defined in what calculation period will be set up an employee's salary line in Salary List.
+Should pay attention to that if the <em>Year</em>and <em>End</em> will be specified, then the insurance policy lines will be recorded with date 31.12.2020. This means that this entry will be processed only in December 2020. If the employee will be terminated by December 2020, the insurance amount in salary lists will not be registered, and the calculation of the taxable amount therefore will not be made. In this case, the salary list should be adjusted manually.</p>
 <p><img src="15.2.insurance2.png" alt="alt"></p>
-<h2 id="apdrošināšanas-prēmiju-rindas">Apdrošināšanas prēmiju rindas</h2>
-<p>Apdrošināšanas prēmiju rindas tiek ģenerētas automatizēti, izmantojot lentē funkciju <em>Veidot ierakstus</em>.
-Pēc šīs funkcijas nospiešanas sistēma izveidos sadaļā Rindas apdrošināšanas prēmiju rindas pēc iepriekš norādītajiem nosacījumiem.</p>
+<h2 id="insurance-premium-lines">Insurance premium lines</h2>
+<p>Insurance premium lines are generated automated using function <em>Generate Lines</em>.
+After launching this function, the system will create the lines of insurance premiums after the above set conditions.</p>
 </article>
           </div>
           

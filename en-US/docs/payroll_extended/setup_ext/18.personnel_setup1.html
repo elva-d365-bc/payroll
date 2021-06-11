@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Strukt&#363;rvien&#299;bas | Latvian Payroll </title>
+    <title>Departments | Latvian Payroll </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Strukt&#363;rvien&#299;bas | Latvian Payroll ">
-    <meta name="generator" content="docfx 2.57.2.0">
+    <meta name="title" content="Departments | Latvian Payroll ">
+    <meta name="generator" content="docfx 2.58.0.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
     <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
@@ -77,25 +77,26 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="struktūrvienības">Struktūrvienības</h1>
+<h1 id="departments">Departments</h1>
 
-<p>Sistēmā iespējams uzturēt strukturētu informāciju par uzņēmuma struktūrvienībām. Gan aktuālu, gan arī vēsturisku, jo struktūrvienības sistēmā netiek dzēstas, bet gan slēgtas. Tabula Struktūrvienības satur sekojošus laukus:</p>
+<p>In the system, you can maintain structured information about the departments. The information will be both current and historical, because the structural units in the system are not deleted, but closed. Following fields are available:</p>
 <ul>
-<li>Kods – struktūrvienības kods, ko definē lietotājs.</li>
-<li>Nosaukums;</li>
-<li>Adrese – struktūrvienības piesaistītā faktiskās atrašanās vietas adrese;</li>
-<li>Izveidošanas datums – datums, kad struktūrvienība ir izveidota;</li>
-<li>Slēgšanas datums – datums, kad struktūrvienība ir slēgta;</li>
-<li>Pakļautība hierarhijā kods – struktūrvienības kods, kurai struktūrvienība ir pakļauta</li>
-<li>Vadītāja amata kods;</li>
-<li>Nodaļas dim. vērtības kods - Struktūrvienības dimensijas vērtības kods (tiek izmantota dimensija, kas nodefinēta Personāla uzstādījumos) no standarta dimensiju klasifikatora.</li>
+<li>Code – department code defined by the user;</li>
+<li>Description - department name;</li>
+<li>Address – address where the department is located;</li>
+<li>Date Created – date when the department was created;</li>
+<li>Date Closed – date when the department is closed;</li>
+<li>Parent Department code – department code to which the department is subject;</li>
+<li>Manager Position Code - The corresponding manager position code from the list <em>Positions</em>;</li>
+<li>Department Dim. Value Code - Department dimension value code (the dimension that has been defined in <em>Personnel Setup</em> is used) from standard payroll dimension classifier;</li>
+<li>Decline Gender - choose <em>Female</em> or <em>Male</em> in order to set the declination of the department in the document templates.</li>
 </ul>
-<p>Lai nodrošinātu struktūrvienību hierarhiju, tiek kombinētas kārtošanas un atkāpju metodes. Tātad viena struktūrvienība ir pakļauta otrai struktūrvienībai, ja tā atrodas pēc galvenās struktūrvienības un ir ar vienu līmeni lielāku atkāpi. Atkarībā no struktūrvienību atkāpju dziļuma un struktūrvienību skaita, sastāda struktūrvienības kodu. Struktūrvienības atkāpes tiek veidotas ar podziņu palīdzību Struktūrvienības tabulā. Piemēram, dalot kodu trijās daļās „00-00-00”, pirmā daļa ir augstākās struktūrvienības līmeņa kods, otrā un trešā attiecīgi nākamās. Katrā līmenī pakļautībā zem vienas un tās pašas struktūrvienības ir iespējams izveidot 100 struktūrvienības.</p>
-<p>Piemēram:</p>
-<p>00-00-00 Vadība – 1. līmenis</p>
-<p>00-10-00 Finanšu daļa – 2. līmenis</p>
-<p>00-10-10 Grāmatvedība – 3. līmenis</p>
-<p>Šādā veidā, izmantojot kodus, tiek nodrošināta kārtošanas metode. Papildus tiek veidotas atkāpes atbilstoši līmenim.</p>
+<p>To ensure the departmental hierarchy, sorting and indent methods are combined. Thus, one department is subordinate to another if it is after the main unit and has one level more indention. Depending on the depth of department indention and the number of departments, a department code shall be drawn up. Departmental indentions are created through function buttons in the <em>Departments</em> tool pane. For example, dividing the code into three parts „00-00-00”, the first part is the higher department level code, second and third respectively the lower levels. At each level, under the same department, 100 lover departments can be created.</p>
+<p>For Example:</p>
+<p>00-00-00 Management – 1st level</p>
+<p>00-10-00 Finance – 2nd level</p>
+<p>00-10-10 Accounting – 3rd level</p>
+<p>This way, using codes, a method of sorting is provided. In addition, indentions are made according to the level.</p>
 </article>
           </div>
           
