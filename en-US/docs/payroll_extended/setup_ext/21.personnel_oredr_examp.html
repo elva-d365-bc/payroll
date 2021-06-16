@@ -79,7 +79,7 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="examples-of-personnel-orders">Examples of Personnel Orders</h1>
 
-<h2 id="termination-order">Termination order</h2>
+<h2 id="order-for-termination">Order for Termination</h2>
 <p>The following fields are required for the order of termination:</p>
 <p><img src="20.personel_example1.png" alt="alt"></p>
 <ul>
@@ -100,7 +100,7 @@
 <li>Is the employee in a trade union and is it aligned with the trade union.</li>
 </ul>
 <p>If any of these conditions is not fulfilled, then the system does not allows to post the order.</p>
-<h2 id="position-change-order">Position Change Order</h2>
+<h2 id="order-for-position-change">Order for Position Change</h2>
 <p>The following fields are required for the order of position change:</p>
 <p><img src="20.personel_example2.png" alt="alt"></p>
 <ul>
@@ -126,13 +126,13 @@
 <li>Calendar Name;</li>
 <li>Cycle Serial Number.</li>
 </ul>
-<h2 id="loading-change-order">Loading Change Order</h2>
-<p>The following fields are required for the order of loading change:</p>
+<h2 id="order-for-loading-change">Order for Loading Change</h2>
+<p>The following fields are required for the order for loading change:</p>
 <p><img src="20.personel_example3.png" alt="alt"></p>
 <ul>
 <li>Labour Contract No. - If for this event an alteration to the labour contract was made, then select the alteration number and all other related fields will be filled in from the labour contract card, including payroll components;</li>
 </ul>
-<p>If an alteration wasn't made then you should fill all below fields, excluding the <em>Labour Contract No</em>.</p>
+<p>If an alteration wasn't made previously then you should fill all below fields, excluding the <em>Labour Contract No</em>.</p>
 <ul>
 <li>Employee Position No. – position number what should be adjusted;</li>
 <li>Primary Position – enable if it is primary position;</li>
@@ -147,122 +147,120 @@
 <li>Calendar Name;</li>
 <li>Cycle Serial Number.</li>
 </ul>
-<p>Izmainot slodzes vērtību laukā Slodze, sistēma izmainīs slodzi pie algas komponentēm, kā arī izrēķinās jauno vērtību, kas pienākas par sekojošu slodzi.</p>
-<h2 id="rīkojums-par-algas-maiņu">Rīkojums par algas maiņu</h2>
-<p>Algas maiņas notikums satur sekojošu informāciju:</p>
+<p>When changing the value in the field <em>Loading</em>, system will change the loading at the payroll components, as well as calculates the new salary amount for the new loading.</p>
+<h2 id="order-for-salary-change">Order for Salary Change</h2>
+<p>The following fields are required for the order for salary change:</p>
 <p><img src="20.personel_example4.png" alt="alt"></p>
 <ul>
-<li>Darba līguma Nr. – ja par algas maiņu tika veidots darba līguma grozījumu, tad šajā laukā to izvēlas un visi pārējie lauki, ieskaitot algas komponentes laukus tiks aizpildīti no konkrēta grozījuma;</li>
+<li>Labour Contract No. - If for this event an alteration to the labour contract was made, then select the alteration number and all other related fields will be filled in from the labour contract card, including payroll components;</li>
 </ul>
-<p>Ja darba līguma grozījumi netika veidoti, tad ir jāaizpilda pārējie lauki, izņemot Darba līguma Nr.</p>
+<p>If an alteration wasn't made previously then you should fill all below fields, excluding the <em>Labour Contract No</em>.</p>
 <ul>
-<li>Darbinieka amata Nr. – darbinieka amata numurs, kuru ir nepieciešams nomainīt;</li>
-<li>Galvenais amats – atzīme par to, ka tas ir galvenais amats;</li>
-<li>Darbinieka amata apraksts;</li>
-<li>No datuma – no kura datuma jaunā alga būs spēkā;</li>
-<li>Līdz datumam – līdz kuram datumam jaunā alga būs spēkā. Pēc tam spēkā iestājās iepriekšējās darba algas nosacījumi.</li>
+<li>Employee Position No. – position number what should be adjusted;</li>
+<li>Primary Position – enable if it is primary position;</li>
+<li>Employee Position Description;</li>
+<li>Date From – from which date the new salary is effective;</li>
+<li>Date To – due date of the new salary amount. A date what comes after the previous salary amount steps into force.</li>
 </ul>
-<p>Jauno darba algu ievada caur algas komponentēm.
-Tiks noslēgtas visas aktīvas (beigu datums nav norādīts vai ir vēlāks par rīkojuma “No datuma”) darbinieka algas komponentes ar datumu, kas ir vienu dienu pirms rīkojuma par algas maiņu sākuma datuma.</p>
-<h2 id="rīkojums-par-prombūtni">Rīkojums par prombūtni</h2>
-<p>Prombūtnes rīkojuma rindas karte satur sekojošu informāciju:</p>
+<p>The new salary is entered through payroll components.
+All open (Date To is not specified or the date is later then order's <em>Date From</em>) employees salary payroll components will be closed with the date, what is the one day before this order's <em>Date From</em>.</p>
+<h2 id="absence-order">Absence Order</h2>
+<p>Absence order's Line Card includes the following fields:</p>
 <p><img src="20.personel_example5.png" alt="alt"></p>
-<p>Cilne <em>Visp.info</em>:</p>
+<p>Tab <em>General</em>:</p>
 <ul>
-<li>Prombūtnes kods;</li>
-<li>Prombūtnes veida kods;</li>
-<li>Prombūtnes apraksts – tiks aizpildīts no prombūtnes koda;</li>
-<li>No datuma - pēc noklusējuma lauks aizpildās no Plānotās darbinieku prombūtnes klasifikatora, taču to var labot;</li>
-<li>Līdz datumam – pēc noklusējuma lauks aizpildās no Plānotās darbinieku prombūtnes klasifikatora, taču to var labot;</li>
-<li>Dienas pēc kalendāra;</li>
-<li>Darbinieks aizvietotājs;</li>
-<li>Veidot algas apmaksu- gadījumā, ja pirms prombūtnes jāaprēķina alga līdz prombūtnes sākumam, jāieliek ķeksis. Rezultātā prombūtnes reģistrā tiks izveidot ieraksts ar prombūtnes kodu ALGA_PER (standarta uzstādījumi) un starpizmaksas sarakstā var aprēķināt gan prombūtnes naudu, gan algu pirms prombūtnes;</li>
-<li>Izlaist starpizmaksās – ielikt ķeksi gadījumā, ja nevajadzētu šo prombūtni aprēķināt starpizmaksas sarakstā</li>
-<li>Sadalīt pa periodiem – rīkojuma grāmatošanas rezultātā sistēma sadalīs prombūtni pa kalendāra mēnešiem, aizpildot lauku <em>Turpinājums</em>.  Tādā veidā aprēķins par katru mēnesi tiks veikts atbilstošajā mēnesī.</li>
+<li>Absence code;</li>
+<li>Absence Description – will be completed from the codes of absence;</li>
+<li>Date From - when absence starts;</li>
+<li>Date To – when absence ends;</li>
+<li>Calendar Days;</li>
+<li>Employee Replacing;</li>
+<li>Create Payroll Payment- enable if the salary for the period before the absence should be paid before the start of the absence. As a result a new absence card will be created in the Absence Register with the Cause of Absence code ALGA_PER (standard setup) Now in the Prepayment list you can filter out and pay absence pay as well as the salary for the period before the absence;</li>
+<li>Skip in Prepayment – enable, if this absence should be skipped in the Prepayment list;</li>
+<li>Split By Periods – As a result of the order posting, the system will divide the absence by calendar months by entering the field <em>Related Entry No.</em>.  In this way, the calculation for each month will be made in the appropriate month.</li>
 </ul>
-<p>Cilne <em>Komandējums</em>:</p>
+<p>Tab <em>Business Trip</em>:</p>
 <ul>
-<li>Komandējuma vieta - valsts;</li>
-<li>Komandējuma mērķis;</li>
+<li>Business Trip Place - country;</li>
+<li>Business Trip Aim;</li>
 </ul>
-<h2 id="rīkojums-par-disciplinārsodu">Rīkojums par disciplinārsodu</h2>
-<p>Disciplinārsoda rīkojuma rindas karte satur sekojošu informāciju:</p>
+<h2 id="order-for-demerit">Order for Demerit</h2>
+<p>The following fields are required for the order for demerit:</p>
 <p><img src="20.personel_example6.png" alt="alt"></p>
 <ul>
-<li>Disciplinārsoda kods – no disciplinārsodu klasifikatora;</li>
-<li>Disciplinārsoda apraksts;</li>
-<li>Datums – rīkojuma datums;</li>
-<li>Piezīmes – brīvā tekstā var uzrakstīt rīkojuma tekstu.</li>
+<li>Demerit Code – a code from the list <em>Demerits</em>;</li>
+<li>Demerit Description;</li>
+<li>Date – order's date;</li>
+<li>Memo – order text written in free form.</li>
 </ul>
-<h2 id="rīkojums-par-uzteikumu">Rīkojums par uzteikumu</h2>
-<p>Uzteikuma rīkojuma karte satur sekojošu informāciju:</p>
+<h2 id="order-on-notice">Order on Notice</h2>
+<p>Notice order card includes the following fields:</p>
 <p><img src="20.personel_example7.png" alt="alt"></p>
 <ul>
-<li>Atbrīvošanas pamata kods – no atbrīvošanas pamatu klasifikatora;</li>
-<li>Atbrīvošanas pamata apraksts;</li>
-<li>Likuma panta Nr.;</li>
-<li>Piezīmes – brīvā tekstā var uzrakstīt rīkojuma tekstu;</li>
-<li>Atbrīvošanas datums.</li>
+<li>Termination Grounds Code – a code from the list <em>Grounds for Termination</em>;</li>
+<li>Term. Grounds Description;</li>
+<li>Law Article No.;</li>
+<li>Memo – order text written in free form;</li>
+<li>Termination Date.</li>
 </ul>
-<h2 id="rīkojums-par-piemaksu--atvilkumu">Rīkojums par piemaksu / atvilkumu</h2>
-<p>Piemaksas vai atvilkuma rīkojuma karte satur sekojošu informāciju:</p>
+<h2 id="order-for-surcharge-deduction">Order for Surcharge/ Deduction</h2>
+<p>Following fields are available:</p>
 <p><img src="20.personel_example8.png" alt="alt"></p>
 <ul>
-<li>Datums – piemaksas datums;</li>
-<li>Komponentes kods – piemaksas komponentes kods no klasifikatora;</li>
-<li>Komponentes apraksts;</li>
-<li>Summa – piemaksa – bruto summa;</li>
-<li>Piezīmes – teksts brīvā formā.</li>
+<li>Date – date of the surcharge or deduction;</li>
+<li>Component Code – a code form the list <em>Payroll Components</em>;</li>
+<li>Component Description;</li>
+<li>Amount – gross amount of the surcharge/ deduction;</li>
+<li>Memo – text written in free form.</li>
 </ul>
-<h2 id="rīkojums-par-papildus-amatu">Rīkojums par papildus amatu</h2>
-<p>Tāpat kā rīkojumu par pieņemšanu darbā arī rīkojumu par papildus amatu ir iespējams izveidot gan uz darba līguma grozījumu pamata, gan arī kā jaunu un neatkarīgu dokumentu. Ar šo notikumu tiek izveidots jauns darbinieka amats (papildus esošajiem). Par papildus amatu tiek norādīta sekojoša informācija:</p>
+<h2 id="order-on-additional-position">Order on Additional Position</h2>
+<p>Like with an order for employment, also an order for additional position is possible to create on basis of the alteration of labour contract as well as by creating a new order. A new employee position is created with this event (in addition to existing ones). The following information is indicated for additional position:</p>
 <p><img src="20.personel_example9.png" alt="alt"></p>
 <ul>
-<li>Darba līgums – no iegrāmatotiem darba līgumiem (ja šim notikumam tika izveidots atsevišķi grozījumi);</li>
-<li>No datuma – no kura datuma darbiniekam tiek piešķirts papildus amats;</li>
-<li>Plānotais līdz datums – plānotais beigu datums;</li>
-<li>Līdz datumam – līdz kuram datumam darbiniekam tiek piešķirts papildus amats. Termiņa beigās tiek atjaunots atkal iepriekšējais darbinieka amats;</li>
-<li>Amata kods – papildus amata kods;</li>
-<li>Struktūrvienības kods – papildus amata struktūrvienības kods – ielasās automātiski, izvēloties amata kodu;</li>
-<li>Struktūrvienības nosaukums;</li>
-<li>Slodze;</li>
-<li>Cikla kalendārs;</li>
-<li>Kalendāra kods;</li>
-<li>Kalendāra nosaukums;</li>
-<li>Cikla kārtas nr.</li>
+<li>Labour Contract No. – number from the Posted Labour Contract list (if an alteration was posted for this event);</li>
+<li>Date From – from which date an additional position is assigned;</li>
+<li>Planned Date To – planned due date;</li>
+<li>Date To – by which date the employee is assigned an additional position. At the end of the term the previous position is restored;</li>
+<li>Position Code – code of the add. position;</li>
+<li>Department Code – code of department what is related to the add. position – inserts automatically from the position card;</li>
+<li>Department Name;</li>
+<li>Loading;</li>
+<li>Cycle Calendar – enable if the working time is organized according to the shift;</li>
+<li>Calendar Code;</li>
+<li>Calendar Name;</li>
+<li>Cycle Serial Number.</li>
 </ul>
-<p>Ja pirms rīkojuma izveidošanas tika izveidots darba līguma grozījums, tad algas komponentes ielasīsies no darba līguma grozījuma algas komponentēm, kuras labot nebūs iespējams.
-Pirms rīkojuma par papildus amatu grāmatošanas sistēma pārbauda, vai darbiniekam uz <em>No datuma</em> ir aktīvs statuss.</p>
-<h2 id="rīkojums-par-amata-atcelšanu">Rīkojums par amata atcelšanu</h2>
-<p>Amata atcelšanas rīkojuma karte satur sekojošu informāciju:</p>
+<p>If a alteration of the labour contract was issued before the creating the order, Then the payroll components will be inserted from labour contract payroll components, which will not be able to correct.
+Before the posting of the add. position order, system checks weather the status of the employee is <em>Active</em> at the date of the orders field <em>Date From</em>.</p>
+<h2 id="position-close-order">Position close order</h2>
+<p>Order for the closing of the position includes the following fields:</p>
 <p><img src="20.personel_example10.png" alt="alt"></p>
 <ul>
-<li>Darba līguma Nr. – no iegrāmatotiem darba līgumiem (ja šim notikumam tika izveidots atsevišķs grozījums);</li>
-<li>Darbinieka amata Nr. – norāda amatu, kurš ir jāatceļ;</li>
-<li>Līdz datumam – līdz kuram datumam amats ir aktīvs.</li>
+<li>Labour Contract No. – number from the Posted Labour Contract list (if an alteration was posted for this event);</li>
+<li>Employee Position No. – indicates the position that should be closed;</li>
+<li>Date To – till which date the position is active.</li>
 </ul>
-<p>Pirms rīkojuma par amata atcelšanas grāmatošanas tiek pārbaudīts, vai darbinieks uz pieņemšanas datumu ir aktīvs darbinieks.</p>
-<h2 id="iegrāmatoto-rīkojumu-anulēšana">Iegrāmatoto rīkojumu anulēšana</h2>
-<p>Sistēmā anulēt ir iespējams gan visu rīkojumu, gan arī tikai konkrētu rindu. Rīkojumu vai rīkojuma rindu var anulēt no iegrāmatotā rīkojuma, bet izmantojot rīkojumu ar notikuma veidu Anulēšana var anulēt tikai konkrētu rindu.</p>
+<p>Before the posting the order of the position closing, system checks is the employee in status active, when the position is closed.</p>
+<h2 id="cancelling-the-posted-orders">Cancelling the posted orders</h2>
+<p>It is possible to cancel all order, as well as only a specific line. Order or order line can be cancelled from the posted order, but when using the personnel order with the Event Type <em>Cancellation</em>, only a separate line can be cancelled.</p>
 <ol>
-<li>Rīkojuma anulēšana caur iegrāmatoto rīkojumu
-Atver sarakstu <em>Iegrāmatotie Personāla rīkojumi</em>
-Atrod rīkojumu, kas ir jāanulē.
-Var anulēt visu rīkojumu, klikšķinot uz <img src="count1.png" alt="alt"> un <img src="count2.png" alt="alt">, vai arī anulēt tikai konkrētu rindu klikšķinot uz <img src="count3.png" alt="alt"> un <img src="count4.png" alt="alt"></li>
+<li>Cancelling with the posted order
+Open the list <em>Posted Personnel Order List</em>
+Find the order that should be canceled.
+Can cancel the entire order by clicking on <img src="count1.png" alt="alt"> and <img src="count2.png" alt="alt">, or cancel only a specific line by clicking on <img src="count3.png" alt="alt"> and <img src="count4.png" alt="alt"></li>
 </ol>
 <p><img src="20.personel_example11.png" alt="alt"></p>
-<p>Ja rīkojums tiek anulēts caur iegrāmatotiem rīkojumiem, tad sistēmā nevar pievienot aprakstu, kāpēc līgums ir anulēts, kā arī netiek izveidots dokuments. Taču tā ir vienīgā iespēja, kā var anulēt visu rīkojumu.</p>
+<p>If the order is canceled through the posted orders, then the description why the contract has been canceled can not be added to the system, as well as a document can't be created. But it is the only way to cancel the entire order.</p>
 <ol>
-<li>Rīkojuma anulēšana, izmantojot notikuma veidu <em>Anulēšana</em>. Anulēšanas rīkojums sastāv no sekojošiem laukiem:</li>
+<li>Cancellation of the Order using the Event Type <em>Cancellation</em>. The cancellation order consists of the following fields:</li>
 </ol>
-<p><img src="20.personel_example12.png" alt="alt"></p>
 <ul>
-<li>Rīkojuma Nr. anulēšana – iegrāmatotā rīkojuma nr., kurš jāanulē;</li>
-<li>Rīkojuma rindas Nr. anulēšanai –norāda, kura rinda ir jāanulē;</li>
-<li>Anulēšanas iemesla apraksts.</li>
+<li>Order No. to Cancel – a posted order number to be canceled;</li>
+<li>Order Line No. to Cancel – indicates which line should be canceled;</li>
+<li>Cancellation Reason Descr.</li>
 </ul>
-<p>Anulēt var jebkuru rīkojuma veidu pie nosacījuma, ka nav izveidots algas saraksts. Tomēr jāatceras, ka rīkojumi ir jāanulē secīgi - tas nozīmē, ka ja, piemēram, darbinieks ir  pieņemts darbā ar pieņemšanas rīkojumu, tad tam ir mainīta alga ar algas maiņas rīkojumu, tad, lai anulētu pieņemšanas rīkojumu, sākumā jāanulē rīkojums par algas maiņu.
-Anulētie rīkojumi no sistēmas nekur nepazūd un tos var apskatīt gan iegrāmatoto rīkojumu sarakstā, gan arī no darbinieka kartiņas sadaļā <em>Personāla ieraksti</em>.</p>
+<p>Cancel can any type of order on condition that there is no salary list created. However, it should be remembered that orders must be canceled successively - this means that if, for example, an employee has been employed with an Employment order, and lately has been changed a salary with Amount Change order, then, to cancel the Employment order, at first, the order of the amount change should be cancelled.
+The canceled orders from the system do not disappear from the system and they can be viewed in the list of posted orders, as well as in Employee card's section <em>Employee Payment Entries</em>.</p>
 </article>
           </div>
           
