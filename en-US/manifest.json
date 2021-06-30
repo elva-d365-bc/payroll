@@ -5486,7 +5486,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/setup_ext/22.2.work_safety.html",
-          "hash": "74q/iX5jKVdNVFZyR6DWlXhmXSKnRvhglq6Zze7sBYc="
+          "hash": "oY10W23qhcE42VI2+lTBRxfspwA6zFHSnCwyZp+vXQM="
         }
       },
       "is_incremental": false,
@@ -5498,7 +5498,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/setup_ext/22.work_safetry.html",
-          "hash": "Btf4uFI6IsycHNofrB8boRTPfybWNTTiD5GuKoerPX0="
+          "hash": "5makS6RH10Z5jK2zmqGncFTCqici5fY+X0jATBaYT5Q="
         }
       },
       "is_incremental": false,
@@ -5587,7 +5587,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/setup_ext/23.document.templates.html",
-          "hash": "b+ATBP6TkEpUGtrUOyNoxyJWkM9pOJD8nRzaYKIG2xQ="
+          "hash": "bxne4LtNycWog8IsbhOcl+Rv3bqrc6kLYEmVXaujsZA="
         }
       },
       "is_incremental": false,
@@ -7095,6 +7095,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/usage_scenarios/10_absence2_2.1.1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/usage_scenarios/10_absence2_2.1.1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/payroll_extended/usage_scenarios/10_absence2_2.1.png",
       "output": {
         "resource": {
@@ -7150,6 +7161,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/usage_scenarios/10_absence2_3.2.9.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/usage_scenarios/10_absence2_3.2.9.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/payroll_extended/usage_scenarios/10_absence2_3.2.png",
       "output": {
         "resource": {
@@ -7165,6 +7187,17 @@
       "output": {
         "resource": {
           "relative_path": "docs/payroll_extended/usage_scenarios/10_absence2_3.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/usage_scenarios/10_absence2_4.1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/usage_scenarios/10_absence2_4.1.png"
         }
       },
       "is_incremental": false,
@@ -7194,10 +7227,43 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/usage_scenarios/10_absence2_6.1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/usage_scenarios/10_absence2_6.1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/usage_scenarios/10_absence2_6.2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/usage_scenarios/10_absence2_6.2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/payroll_extended/usage_scenarios/10_absence2_6.png",
       "output": {
         "resource": {
           "relative_path": "docs/payroll_extended/usage_scenarios/10_absence2_6.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/usage_scenarios/10_absence2_7.1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/usage_scenarios/10_absence2_7.1.png"
         }
       },
       "is_incremental": false,
@@ -7286,6 +7352,17 @@
       "output": {
         "resource": {
           "relative_path": "docs/payroll_extended/usage_scenarios/11_termination_11.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/usage_scenarios/11_termination_12.1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/usage_scenarios/11_termination_12.1.png"
         }
       },
       "is_incremental": false,
@@ -7447,6 +7524,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/usage_scenarios/11_termination_8.1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/usage_scenarios/11_termination_8.1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/payroll_extended/usage_scenarios/11_termination_8.png",
       "output": {
         "resource": {
@@ -7557,10 +7645,43 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/usage_scenarios/14_salary_2.1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/usage_scenarios/14_salary_2.1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/usage_scenarios/14_salary_2.2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/usage_scenarios/14_salary_2.2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/payroll_extended/usage_scenarios/14_salary_2.png",
       "output": {
         "resource": {
           "relative_path": "docs/payroll_extended/usage_scenarios/14_salary_2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/usage_scenarios/14_salary_3.1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/usage_scenarios/14_salary_3.1.png"
         }
       },
       "is_incremental": false,
@@ -8162,6 +8283,28 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/usage_scenarios/5_hiring_7.2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/usage_scenarios/5_hiring_7.2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/usage_scenarios/5_hiring_7.3.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/usage_scenarios/5_hiring_7.3.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/payroll_extended/usage_scenarios/5_hiring_7.png",
       "output": {
         "resource": {
@@ -8349,6 +8492,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/usage_scenarios/8_salary_list_1.4.1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/usage_scenarios/8_salary_list_1.4.1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/payroll_extended/usage_scenarios/8_salary_list_1.4.png",
       "output": {
         "resource": {
@@ -8430,6 +8584,17 @@
       "output": {
         "resource": {
           "relative_path": "docs/payroll_extended/usage_scenarios/8_salary_list_15.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/usage_scenarios/8_salary_list_16.1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/usage_scenarios/8_salary_list_16.1.png"
         }
       },
       "is_incremental": false,
@@ -8547,6 +8712,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/usage_scenarios/9_advance_1.1.1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/usage_scenarios/9_advance_1.1.1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/payroll_extended/usage_scenarios/9_advance_1.1.png",
       "output": {
         "resource": {
@@ -8584,6 +8760,17 @@
       "output": {
         "resource": {
           "relative_path": "docs/payroll_extended/usage_scenarios/9_advance_3.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/usage_scenarios/9_advance_4.1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/usage_scenarios/9_advance_4.1.png"
         }
       },
       "is_incremental": false,
@@ -8881,7 +9068,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/usage_scenarios/usage_scenarios.html",
-          "hash": "zHm+hMH/uG/dpsd1Jc02wAoBe5NEemiKinymj14d9yA="
+          "hash": "tjdIazCK0guedq+w56nFKPceJQIvCZmSdmzWbceZLMg="
         }
       },
       "is_incremental": false,

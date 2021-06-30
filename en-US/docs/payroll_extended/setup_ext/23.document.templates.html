@@ -79,52 +79,52 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="creating-documents">Creating Documents</h1>
 
-<h2 id="uzstādījumi-ms-word">Uzstādījumi MS Word</h2>
-<p>Lai varētu izveidot dokumenta veidni Microsoft Word programmā, rīkjoslā ir jāuztaisa jauna poga <em>Field</em>. <em>File</em> (<img src="count1.png" alt="alt">) – <em>Options</em> – <em>Customize Ribbon</em> (<img src="count2.png" alt="alt">) – zem <em>Insert</em> (<img src="count3.png" alt="alt">) – kreisais peles taustiņš <em>Add New Group</em> – Nosauciet to par <em>Field</em> (<img src="count4.png" alt="alt">) – pievienot funkciju <em>Field</em></p>
+<h2 id="setup-in-ms-word">Setup in MS Word</h2>
+<p>To be able to create a template in Microsoft Word, a new button <em>Field</em> must be added to the toolbar. <em>File</em> (<img src="count1.png" alt="alt">) – <em>Options</em> – <em>Customize Ribbon</em> (<img src="count2.png" alt="alt">) – under the section <em>Insert</em> (<img src="count3.png" alt="alt">) – left click of the mouse <em>Add New Group</em> – Name it into <em>Field</em> (<img src="count4.png" alt="alt">) – add the function <em>Field</em></p>
 <p><img src="23.docum_templ_1.png" alt="alt"></p>
-<p>Dokumentā jau pievienota poga izskatās sekojoši:</p>
+<p>The already added button to the system appears as follows:</p>
 <p><img src="23.docum_templ_2.png" alt="alt"></p>
-<h2 id="dokumentu-lauki-business-central">Dokumentu lauki Business Central</h2>
-<p>Lai varētu izveidot veidni, sistēmā ir izveidoti nepieciešamie lauki, ko izmanto, lai aizpildītu mainīgos laukus lietotāja definētajā veidnē.
-Tabula <em>Dokumentu lauki</em> satur sekojošus laukus:</p>
+<h2 id="document-fields-in-business-central">Document fields in Business Central</h2>
+<p>In order to be able to create a template, the fields are developed to the system, what are used to enter the variable values in the user defined template.
+A list <em>Document Fields</em> includes following fields:</p>
 <ul>
-<li>Kods – lauka kods;</li>
-<li>Atsauce – tabula sistēmā, no kurienes tiek ņemta informācija;</li>
-<li>Apraksts – koda apraksts;</li>
-<li>Izmantojami locījumi – šo lauku var locīt visos locījumos;</li>
-<li>Locījuma dzimums – norādīts, kurā dzimumā tiek locīts lauks;</li>
-<li>Lauka vērtība – tiek norādīta lauka vērtība, kas jau ir aizpildīta rīkojumā.</li>
+<li>Code – field code;</li>
+<li>Reference – a list in the system from where the fields are processed;</li>
+<li>Description – description of the code;</li>
+<li>Use Text Case – check if this field can bend in all text cases;</li>
+<li>Text Case Gender – select the gender for bending;</li>
+<li>Field Value – the field value, already filled in the document.</li>
 </ul>
-<p>Dokumentu lauki atrodas:</p>
+<p>document fields are located at:</p>
 <ul>
-<li>Darbinieku kartiņās - pieejami Darbinieku kartiņā zem <em>Naviģēt</em> - <em>Personāls</em>;</li>
-<li>Darba līgumos - pieejami Darba līguma kartē zem <em>Apstrāde</em>. Darba līguma dokumenta laukos ir apkopoti pēc iespējas tie lauki, kuri būs nepieciešami veidojot darba līgumus un grozījumus – gan lauki no darbinieka kartiņas, gan lauki no darba līguma, gan arī lauki no darba līguma algas komponentēm un uzņēmuma informācijas;</li>
-<li>Amata rīkojumos - tā kā Amata rīkojums sastāv no divām daļām – virsraksta un rindām, tad attiecīgi katrai daļai ir savi dokumentu lauki. Virsraksta dokumentu laukus var atvērt rīkojuma kartiņā zem <em>Apstrāde</em>, bet Rindu laukus var atvērt Rindu cilnē zem <em>Rinda</em>;</li>
-<li>Personāla rīkojumos - tāpat kā Amata rīkojums, arī Personāla rīkojums sastāv no divām daļām – virsraksta un rindām, tad attiecīgi katrai daļai ir savi dokumentu lauki. Virsraksta dokumentu laukus ir iespējams atvērt rīkojuma kartiņā zem <em>Apstrāde</em>, bet Rindu laukus var atvērt Rindu cilnē zem <em>Rinda</em>, kas satur informāciju no Darbinieka kartes laukiem, Personāla rīkojuma rindas, ieskaitot Personāla rīkojuma algas komponentes, kā arī Uzņēmuma informācijas laukiem;</li>
-<li>Personāla dokumentos - pieejami sadaļā <em>Apstrāde</em>. Šeit ir apkopoti pēc iespējas tie lauki, kuri būs nepieciešami veidojot dažādus personāla dokumentus, piemēram, līgums par auto izmantošanu, līgums par mobilā telefona limitiem utt., – gan lauki no darbinieka kartiņas, gan lauki no darba līguma un tā algas komponentēm, gan lauki no amata rīkojuma virsraksta un rindām, personāla rīkojuma virsraksta un rindām, kā arī algas komponentēm, personāla dokumenta laukiem un uzņēmuma informācijas.</li>
+<li>Employee Card - available at <em>Employees</em> card by pressing <em>Related - Personnel</em>;</li>
+<li>Labour Contract - available at Labour Contract List card by pressing <em>Process - Document Fields</em>. In the document Field list of the Labour contract are summarize those fields, what will be necessary when creating labour contracts and alterations – fields from employee cards and fields from employment contract, as well as fields from labour contract payroll components and company information;</li>
+<li>Position Order - As the position order consists of two parts – header and lines, then each part has its own document fields. The header document fields can open by pressing  <em>Process - Document Fields</em>, but line fields can open from the Line toolbar by pressing <em>Line - Document Fields</em>;</li>
+<li>Personnel Order - Like the position orders, the personnel orders consists of two parts – header and lines, then each part has its own document fields. The header document fields can open by pressing  <em>Process - Document Fields</em>, but line fields can open from the Line toolbar by pressing <em>Line - Document Fields</em>, containing information from the employee card fields, personnel order lines, including personnel order payroll components, as well fields from <em>Company Information</em>;</li>
+<li>Personnel Documents - fields are available at <em>Process - Document Fields</em>. Here are summarized as much as possible the fields that will be needed by creating different personnel documents, for example, contract for company car, contracts for mobile phone limits etc., – fields from employee cards, labour contracts and it's payroll components, as well as fields from position orders, personnel orders and company information.</li>
 </ul>
-<h2 id="veidņu-veidošana">Veidņu veidošana</h2>
-<h3 id="dokumenta-veidošana-un-lauku-pievienošana-kas-nav-algu-komponentes">Dokumenta veidošana un lauku pievienošana, kas nav algu komponentes</h3>
-<p>Lai izveidotu veidni:</p>
+<h2 id="creating-templates">Creating templates</h2>
+<h3 id="creating-documents-and-inserting-fields-what-are-not-payroll-components">Creating documents and inserting fields, what are not payroll components</h3>
+<p>To create a template:</p>
 <ol>
-<li>Ir  jāatver tukšs MS Word dokuments vai arī kāds dokumenta paraugs, ko vēlas izmantot kā veidni;</li>
-<li>Tajā vietā, kur nepieciešams, lai informācija aizpildās no sistēmas, definē lauku, piemēram, jāieliek lauks darbinieka pilns vārds:</li>
+<li>Open the empty MS Word document or a sample of a document, what to use as a template;</li>
+<li>At the place where you need the information to fill in out of the system, defines the field, for example, insert the field for the full name of the employee:</li>
 </ol>
 <ul>
-<li>Noliek kursoru vai iezīmē tekstu, kas ir jānomaina uz nepieciešamo lauku;</li>
-<li>Nospiež uz iepriekš pievienotās pogas Field;</li>
-<li>Atveras sekojošs logs, kurā izvēlas no Field names DocVariable (<img src="count1.png" alt="alt">) un New name laukā ieraksta FULLNAME (<img src="count2.png" alt="alt">), kas ir dokumenta lauka nosaukums, kas izsauks darbinieka pilnu vārdu:</li>
+<li>Place a cursor or select the text, what needs to be replaced with required field;</li>
+<li>Presse on the pre-attached button <em>Field</em>;</li>
+<li>Will open the following window, where you should choose from the list <em>Field names - DocVariable</em> (<img src="count1.png" alt="alt">) and in the field <em>New name</em> type <em>FULLNAME</em> (<img src="count2.png" alt="alt">), what is the name of the field, what will returns the full name of the employee:</li>
 </ul>
 <p><img src="23.docum_templ_3.png" alt="alt"></p>
 <ul>
-<li>vairumu no laukiem var locīt. Lai to izdarītu, pirms lauka koda jāieraksta  attiecīgā locījuma pirmais burts:</li>
+<li>most of the fields can bend. To do this, write the appropriate declension first letter before the field code:</li>
 </ul>
-<p>G – Ģenitīvs – kā?</p>
-<p>D – Datīvs – kam?</p>
-<p>A – Akuzatīvs – ko?</p>
-<p>I – Instrumentāls – ar ko?</p>
-<p>L – Lokatīvs – kur?</p>
-<p>V – Vokatīvs - !</p>
+<p>G – Genitive – kā?</p>
+<p>D – Dative – kam?</p>
+<p>A – Accusative – ko?</p>
+<p>I – Instrumental – ar ko?</p>
+<p>L – Locative – kur?</p>
+<p>V – Vocative - !</p>
 <p>Pieminētā piemērā, piemēram, locījums akuzatīvā izskatīsies sekojoši:</p>
 <p><img src="23.docum_templ_4.png" alt="alt"></p>
 <ul>
