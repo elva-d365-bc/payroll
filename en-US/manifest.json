@@ -8470,10 +8470,32 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/usage_scenarios/8_salary_list_1.1new.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/usage_scenarios/8_salary_list_1.1new.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/payroll_extended/usage_scenarios/8_salary_list_1.2.png",
       "output": {
         "resource": {
           "relative_path": "docs/payroll_extended/usage_scenarios/8_salary_list_1.2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/usage_scenarios/8_salary_list_1.2new.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/usage_scenarios/8_salary_list_1.2new.png"
         }
       },
       "is_incremental": false,
@@ -9068,7 +9090,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/usage_scenarios/usage_scenarios.html",
-          "hash": "tjdIazCK0guedq+w56nFKPceJQIvCZmSdmzWbceZLMg="
+          "hash": "676GoHsyAJtVynfMKNQWtR9FQ8NHJp9rWSD8MrJ+2dM="
         }
       },
       "is_incremental": false,
