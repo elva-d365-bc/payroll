@@ -587,7 +587,7 @@
   "docs/personnel_base/usage_scenarios.html": {
     "href": "docs/personnel_base/usage_scenarios.html",
     "title": "Disclaimer | Latvian Payroll",
-    "keywords": "Disclaimer Please note that data provided in the steps of user scenarios are sample data and differ from real life data of your company. This user scenario does not include setup, that is required by Latvian Personnel Base standard. Sample data that are displayed in brackets are intended to provide an indication, what information is expected to be completed at a certain step. In terms of real life scenarios, please ensure that your master data are configured in the way as it is recommended by the Setup of this App."
+    "keywords": "Disclaimer Please note that data provided in the steps of user scenarios are sample data and differ from real life data of your company. This user scenario does not include setup, that is required by Latvian Payroll Personnel standard. Sample data that are displayed in brackets are intended to provide an indication, what information is expected to be completed at a certain step. In terms of real life scenarios, please ensure that your master data are configured in the way as it is recommended by the Setup of this App."
   },
   "docs/personnel_extended/faq.html": {
     "href": "docs/personnel_extended/faq.html",
@@ -602,7 +602,7 @@
   "docs/personnel_extended/usage_scenarios.html": {
     "href": "docs/personnel_extended/usage_scenarios.html",
     "title": "Disclaimer | Latvian Payroll",
-    "keywords": "Disclaimer Please note that data provided in the steps of user scenarios are sample data and differ from real life data of your company. This user scenario does not include setup, that is required by Latvian Payroll Personnel standard. Sample data that are displayed in brackets are intended to provide an indication, what information is expected to be completed at a certain step. In terms of real life scenarios, please ensure that your master data are configured in the way as it is recommended by the Setup of this App."
+    "keywords": "Disclaimer Please note that data provided in the steps of user scenarios are sample data and differ from real life data of your company. This user scenario does not include setup, that is required by Latvian Payroll Personnel Advanced standard. Sample data that are displayed in brackets are intended to provide an indication, what information is expected to be completed at a certain step. In terms of real life scenarios, please ensure that your master data are configured in the way as it is recommended by the Setup of this App."
   },
   "docs/support/customer_terms.html": {
     "href": "docs/support/customer_terms.html",
@@ -617,7 +617,7 @@
   "index.html": {
     "href": "index.html",
     "title": "Latvian payroll and personnel localization contains following apps: | Latvian Payroll",
-    "keywords": "Latvian payroll and personnel localization contains following apps: Latvian Payroll Latvian Payroll Advanced Latvian Personnel Base Latvian Payroll Personnel Latvian Payroll HR Portal Sync"
+    "keywords": "Latvian payroll and personnel localization contains following apps: Latvian Payroll Latvian Payroll Advanced Latvian Payroll Personnel Latvian Payroll Personnel Advanced Latvian Payroll HR Portal Sync"
   },
   "readme.html": {
     "href": "readme.html",
