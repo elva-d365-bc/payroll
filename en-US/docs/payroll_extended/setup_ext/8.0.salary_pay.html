@@ -143,27 +143,27 @@ In the Salary List Number of overtime payable employee coincides with value in t
 <li>entry for the additional vacation day adding in the indicated vacation period.</li>
 </ul>
 <p>After adding the additional vacation days, the personnel order for additional absences can be booked.</p>
-<h3 id="virsstundu-kompensēšana-ar-apmaksātām-atpūtas-dienām">Virsstundu kompensēšana ar apmaksātām atpūtas dienām</h3>
-<p>Ja darbinieks vēlas tekoša mēneša virsstundas izmantot nākotnē kā brīvdienu atpūtai, tad pirms algas aprēķina darbiniekam Virsstundu uzskaitē atbilstošam ierakstam jāizmaina izmantošanas veids uz Brīvdiena.</p>
-<p>Izmainīt izmantošanas veidu uz Brīvdienu var arī ar funkciju <em>Izmainīt virsstundu izmantošanas veidu</em>. Funkcijas filtrā obligāti jānorāda uzskaites dokumenta Nr., kuram jāmaina izmantošanas veidu.</p>
-<p>Virsstundu izmantošanas veidu var koriģēt tieši no Uzskaites, izmantojot rindas pogu  Virsstundu uzskaite.</p>
-<p>Brīvdienas piešķiršana notiek ar personāla rīkojuma grāmatošanu vai prombūtnes reģistrāciju žurnālā caur ierakstu ar prombūtnes iemesla kodu VIRS_ATPUT (aprakstīts virsstundu Uzstādījumu nodaļā).</p>
-<p>Pēc personāla rīkojuma grāmatošanas vai prombūtnes reģistrācijas, automātiski veidojas ieraksts par virsstundu izmantošanu.</p>
-<p>Apmaksa par brīvdienu būs aprēķināta algas sarakstā, kas sakrīt ar prombūtnes norādīto aprēķina gadu un mēnesi.</p>
-<h3 id="virsstundu-pārcelšana-uz-citu-periodu">Virsstundu pārcelšana uz citu periodu</h3>
-<p>Ir iespējams viena perioda atlikušās virsstundas pārcelt uz citu periodu.
-Virsstundu pārcelšana notiek ar Virsstundu uzskaite funkciju Izmainīt Virsstundu izmantošanas veidu. Obligāti filtrā jānorāda uzskaites dokumenta Nr., no kura pārceļ virsstundas.
-<strong>Pirms virsstundu pārcelšanas darbiniekam obligāti jābūt izveidotai uzskaitei par periodu, uz kuru plānots pārnest virsstundas.</strong></p>
-<p>Virsstundu pārcelšanas rezultāts:</p>
+<h3 id="overtime-compensation-with-the-day-off">Overtime compensation with the day off</h3>
+<p>If an employee wants current month overtime use in the future as a day off, then before the salary is calculated, in the <em>Overtime Register</em> field <em>Usage Type</em> must be changed to <em>Day Off</em>.</p>
+<p>Usage Type also can be changed with the function <em>Change Overtime Usage Type</em>. In the functions filter must indicate the accounting document no. where the type must be changed.</p>
+<p>Overtime Usage Type can be corrected directly from the Accounting table by using the button <em>Overtime Registration</em> from the <em>Sched./Account. Line ListPart</em> tab section <em>Employee</em>.</p>
+<p>Day Off can be granted via personnel order posting or absence card creating with the code of absence No. <em>VIRS_ATPUT</em> (described in overtime Setup chapter).</p>
+<p>After posting the personnel order or registering an absence card, an entry is automatically created on the usage of overtime.</p>
+<p>Payment for the day off will be calculated on the salary list, which coincides with in the absence specified calculation year and month.</p>
+<h3 id="transferring-the-overtime-to-another-period">Transferring the overtime to another period</h3>
+<p>It is possible to transfer the remaining overtime of one period to another period.
+Overtime transfer can be made with <em>Overtime Registrations</em> function <em>Change Overtime Usage Type</em>. In the functions filter must indicate the accounting document no. from where the overtime are transferred.</p>
+<p><strong>Before the overtime transfer, Accounting table must be created where the overtime will be transferred.</strong></p>
+<p>The result of transferring the overtime:</p>
 <ul>
-<li>Izmantošanas veids periodā, no kura pārceltās virsstundas, izmainīts uz vērtību, kas bija piemērota pārcelšanas funkcijas logā.</li>
-<li>Atlikušas virsstundas periodā, no kura pārceltās virsstundas, ir 0</li>
-<li>Uzskaites darbinieka virsstundas periodā, uz kuru pārceltās virsstundas, palielinātas par pārcelto stundu skaitu.</li>
-<li>Pārcelšana piefiksēta speciālajos pārvietoto stundu laukos.</li>
+<li>Usage Type in the period, from where the overtimes were transferred, changed to the type what was indicated in the transfer function window;</li>
+<li>Remaining overtime over the period from which overtime was moved is 0;</li>
+<li>Overtime balance in the Accounting table will rise accordingly to the transferred overtime amount.</li>
+<li>The transfer overtimes indicates in the <em>Overtime Registrations</em> field <em>Moved Overtime</em> and <em>Moved Overtime From</em>.</li>
 </ul>
-<p><strong>Jāņem vēra ka pārceltās virsstundas ar izmantošanas tipu Apmaksa būs pievienotas uzskaitē pie Mēneša virsstundām. Rekomendējam veikt virsstundu pārcelšanu pēdējā solī (pirms Virsstundu aprēķināšanas), kad uzskaite ir korekta un nav vairs plānots mainīt datus.</strong></p>
-<p>Gadījumā, ja darbinieks būs izdzēsts no uzskaites, veiktā virsstundu pārcelšana tiks anulēta - virsstundu uzskaites dati atgriezīsies uz virsstundu atlikumu, kas bija līdz pārcelšanai.
-Gadījumā, ja jāatceļ virsstundas pārcelšanas operācija, tad  Virsstundu uzskaitē  laukos Apmaksa uzskaites mēnesis un Apmaksa uzskaites gads  jāievada tukšas vērtības.</p>
+<p><strong>Should keep in mind that transferred overtimes with the usage type <em>Pay Out</em> will be added to the Accounting' s month overtimes. We recommend to perform a overtime transfer in the last step (before calculating overtime), when the Accounting tab's data is correct and final.</strong></p>
+<p>In case the employee will be deleted from the Accounting table, the transferred overtime will be canceled - <em>Overtime Registration</em> data will be returned to the overtime balance, what was up to the transfer.
+In case of cancelling the of overtime transfer, then the <em>Overtime Registration</em> fields Payment Accounting Month and Payment Accounting Year must be left blank.</p>
 </article>
           </div>
           
