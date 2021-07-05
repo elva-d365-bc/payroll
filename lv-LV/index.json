@@ -157,7 +157,7 @@
   "docs/payroll_extended/overview.html": {
     "href": "docs/payroll_extended/overview.html",
     "title": "| Latvian Payroll",
-    "keywords": "Latvian Payroll Extended ir aplikācija, kas pilnībā integrēta ar Dynamics 365 Business Central. Aplikācija nodrošina nepieciešamās funkcionalitātes algas aprēķinam saskaņā ar Latvijas likumdošanas prasībām."
+    "keywords": "Latvian Payroll Extended ir aplikācija, kas pilnībā integrēta ar Dynamics 365 Business Central. Aplikācija nodrošina nepieciešamās funkcionalitātes algas aprēķinam saskaņā ar Latvijas likumdošanas prasībām. Aplikācija ietver sevī sekojošas funkcija: Algas komponentes Kalendāri Avansu / starpizmaksu / algu saraksti Departamenti Amati VID atskaites un risinājuma standarta atskaites Algas datu grāmatošana virsgrāmatā Maksājumu žurnāla aizpildīšana Maksājumu fails eksportam uz internetbanku Darbinieku veselības apdrošināšanas ieraksti algās Plānotais grafiks un aktuālais grafiks Atvaļinājuma periodu pārvaldīšana Statistikas atskaites - Darbs-2, Darbs-5 Algas nodokļu grāmatiņu imports no EDS Slimības lapu imports no EDS Darba aizsardzība- Obligātās Veselības pārbaudes, Instruktāžu vadība ziņojumi - atgādinājumu ziņojumu sūtīšana iepriekš definētām darbinieku grupām Dokumenti - personāla dokumentu reģistrēšana un automātiska sagatavošana atsevišķām darbībām."
   },
   "docs/payroll_extended/setup/0.conf_pack.html": {
     "href": "docs/payroll_extended/setup/0.conf_pack.html",
