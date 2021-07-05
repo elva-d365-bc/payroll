@@ -12,7 +12,7 @@
   "docs/eds_import/setup/0.conf_pack.html": {
     "href": "docs/eds_import/setup/0.conf_pack.html",
     "title": "Kā sākt strādāt | Latvian Payroll",
-    "keywords": "Kā sākt strādāt Lai sāktu lietot Dynamics 365 Business Central Latvian Payroll EDS Import, nav nepieciešams izvēlēties kādu specifisku lomu centru. Funkcionalitāte darbosies no jebkura lomu centra. Tomēr iesakām izmantot LV Alga lomu centru, lai sākuma lapā būtu pieejamas visas saīsnes ērtākai un ātrākai piekļuvei darbā ar algām. Konfigurācijas pakotnes attiecināšana Latvian Payroll EDS Import lietošanai nepieciešamie pamata uzstādījumi un kodi tiek izveidoti, attiecinot konfigurācijas pakotni. Lai ielādētu konfigurācijas pakotni, klikšķiniet uz pogas Meklēt lapu vai atskaiti… Tad ierakstiet meklēšanas logā Konfigurācijas pakotnes un izvēlieties to no piedāvātās izvēlnes . Konfigurācijas pakotnes loga rīkjoslā klikšķiniet uz pogām Apstrādāt - Importēt pakotni un izvēlieties attiecīgo pakotnes failu no jūsu failu glabātuves. Ar vienu klikšķi iezīmējiet ielādēto pakotni un noklikšķiniet uz pogām Apstrādāt un Attiecināt pakotni . Konfigurācijas pakotnes saturs Konfigurācijas pakotne ievada sistēmā sekojošu informāciju: Numuru sērijas un to rindas Algu uzstādījumus Slimības lapu importa uzstādījumus Vispārējie sistēmas uzstādījumi Uzņēmuma informācija uzstādījumos ir obligāti aizpildāmi sekojoši lauki : Uzņēmuma nosaukums Reģistrācijas Nr."
+    "keywords": "Kā sākt strādāt Lai sāktu lietot Dynamics 365 Business Central EDS Import, nav nepieciešams izvēlēties kādu specifisku lomu centru. Funkcionalitāte darbosies no jebkura lomu centra. Tomēr iesakām izmantot LV Alga lomu centru, lai sākuma lapā būtu pieejamas visas saīsnes ērtākai un ātrākai piekļuvei darbā ar algām. Konfigurācijas pakotnes attiecināšana EDS Import lietošanai nepieciešamie pamata uzstādījumi un kodi tiek izveidoti, attiecinot konfigurācijas pakotni. Lai ielādētu konfigurācijas pakotni, klikšķiniet uz pogas Meklēt lapu vai atskaiti… Tad ierakstiet meklēšanas logā Konfigurācijas pakotnes un izvēlieties to no piedāvātās izvēlnes . Konfigurācijas pakotnes loga rīkjoslā klikšķiniet uz pogām Apstrādāt - Importēt pakotni un izvēlieties attiecīgo pakotnes failu no jūsu failu glabātuves. Ar vienu klikšķi iezīmējiet ielādēto pakotni un noklikšķiniet uz pogām Apstrādāt un Attiecināt pakotni . Konfigurācijas pakotnes saturs Konfigurācijas pakotne ievada sistēmā sekojošu informāciju: Numuru sērijas un to rindas Algu uzstādījumus Slimības lapu importa uzstādījumus Vispārējie sistēmas uzstādījumi Uzņēmuma informācija uzstādījumos ir obligāti aizpildāmi sekojoši lauki : Uzņēmuma nosaukums Reģistrācijas Nr."
   },
   "docs/eds_import/setup/1.setting_up.html": {
     "href": "docs/eds_import/setup/1.setting_up.html",
@@ -22,7 +22,22 @@
   "docs/eds_import/usage_scenarios.html": {
     "href": "docs/eds_import/usage_scenarios.html",
     "title": "Disclaimer | Latvian Payroll",
-    "keywords": "Disclaimer Please note that data provided in the steps of user scenarios are sample data and differ from real life data of your company. This user scenario does not include setup, that is required by Latvian Payroll EDS Import standard. Sample data that are displayed in brackets are intended to provide an indication, what information is expected to be completed at a certain step. In terms of real life scenarios, please ensure that your master data are configured in the way as it is recommended by the Setup of this App."
+    "keywords": "Disclaimer Please note that data provided in the steps of user scenarios are sample data and differ from real life data of your company. This user scenario does not include setup, that is required by EDS Import standard. Sample data that are displayed in brackets are intended to provide an indication, what information is expected to be completed at a certain step. In terms of real life scenarios, please ensure that your master data are configured in the way as it is recommended by the Setup of this App."
+  },
+  "docs/hrw/faq.html": {
+    "href": "docs/hrw/faq.html",
+    "title": "FAQ | Latvian Payroll",
+    "keywords": "FAQ"
+  },
+  "docs/hrw/overview.html": {
+    "href": "docs/hrw/overview.html",
+    "title": "| Latvian Payroll",
+    "keywords": "some text"
+  },
+  "docs/hrw/usage_scenarios.html": {
+    "href": "docs/hrw/usage_scenarios.html",
+    "title": "Disclaimer | Latvian Payroll",
+    "keywords": "Disclaimer Please note that data provided in the steps of user scenarios are sample data and differ from real life data of your company. This user scenario does not include setup, that is required by HR Portal Sync standard. Sample data that are displayed in brackets are intended to provide an indication, what information is expected to be completed at a certain step. In terms of real life scenarios, please ensure that your master data are configured in the way as it is recommended by the Setup of this App."
   },
   "docs/payroll_base/faq.html": {
     "href": "docs/payroll_base/faq.html",
@@ -617,7 +632,7 @@
   "docs/personnel_base/setup/0.conf_pack.html": {
     "href": "docs/personnel_base/setup/0.conf_pack.html",
     "title": "Kā sākt strādāt | Latvian Payroll",
-    "keywords": "Kā sākt strādāt Lai sāktu lietot Dynamics 365 Business Central Latvian Personnel Base, nav nepieciešams izvēlēties kādu specifisku lomu centru. Funkcionalitāte darbosies no jebkura lomu centra. Tomēr iesakām izmantot LV Alga lomu centru, lai sākuma lapā būtu pieejamas visas saīsnes ērtākai un ātrākai piekļuvei darbā ar algām. Konfigurācijas pakotnes attiecināšana Latvian Personnel Base lietošanai nepieciešamie pamata uzstādījumi un kodi tiek izveidoti, attiecinot konfigurācijas pakotni. Lai ielādētu konfigurācijas pakotni, klikšķiniet uz pogas Meklēt lapu vai atskaiti… Tad ierakstiet meklēšanas logā Konfigurācijas pakotnes un izvēlieties to no piedāvātās izvēlnes . Konfigurācijas pakotnes loga rīkjoslā klikšķiniet uz pogām Apstrādāt - Importēt pakotni un izvēlieties attiecīgo pakotnes failu no jūsu failu glabātuves. Ar vienu klikšķi iezīmējiet ielādēto pakotni un noklikšķiniet uz pogām Apstrādāt un Attiecināt pakotni . Konfigurācijas pakotnes saturs Konfigurācijas pakotne ievada sistēmā sekojošu informāciju: Numuru sērijas un to rindas Personāla uzstādījumus Dokumentu veidņu grupas Dokumentu veidnes Vispārējie sistēmas uzstādījumi Uzņēmuma informācija uzstādījumos ir obligāti aizpildāmi sekojoši lauki : Uzņēmuma nosaukums Reģistrācijas Nr."
+    "keywords": "Kā sākt strādāt Lai sāktu lietot Dynamics 365 Business Central Latvian Payroll Personnel, nav nepieciešams izvēlēties kādu specifisku lomu centru. Funkcionalitāte darbosies no jebkura lomu centra. Tomēr iesakām izmantot LV Alga lomu centru, lai sākuma lapā būtu pieejamas visas saīsnes ērtākai un ātrākai piekļuvei darbā ar algām. Konfigurācijas pakotnes attiecināšana Latvian Payroll Personnel lietošanai nepieciešamie pamata uzstādījumi un kodi tiek izveidoti, attiecinot konfigurācijas pakotni. Lai ielādētu konfigurācijas pakotni, klikšķiniet uz pogas Meklēt lapu vai atskaiti… Tad ierakstiet meklēšanas logā Konfigurācijas pakotnes un izvēlieties to no piedāvātās izvēlnes . Konfigurācijas pakotnes loga rīkjoslā klikšķiniet uz pogām Apstrādāt - Importēt pakotni un izvēlieties attiecīgo pakotnes failu no jūsu failu glabātuves. Ar vienu klikšķi iezīmējiet ielādēto pakotni un noklikšķiniet uz pogām Apstrādāt un Attiecināt pakotni . Konfigurācijas pakotnes saturs Konfigurācijas pakotne ievada sistēmā sekojošu informāciju: Numuru sērijas un to rindas Personāla uzstādījumus Dokumentu veidņu grupas Dokumentu veidnes Vispārējie sistēmas uzstādījumi Uzņēmuma informācija uzstādījumos ir obligāti aizpildāmi sekojoši lauki : Uzņēmuma nosaukums Reģistrācijas Nr."
   },
   "docs/personnel_base/setup/1.setting_up.html": {
     "href": "docs/personnel_base/setup/1.setting_up.html",
@@ -642,7 +657,7 @@
   "docs/personnel_extended/usage_scenarios.html": {
     "href": "docs/personnel_extended/usage_scenarios.html",
     "title": "Disclaimer | Latvian Payroll",
-    "keywords": "Disclaimer Please note that data provided in the steps of user scenarios are sample data and differ from real life data of your company. This user scenario does not include setup, that is required by Latvian Payroll Personnel standard. Sample data that are displayed in brackets are intended to provide an indication, what information is expected to be completed at a certain step. In terms of real life scenarios, please ensure that your master data are configured in the way as it is recommended by the Setup of this App."
+    "keywords": "Disclaimer Please note that data provided in the steps of user scenarios are sample data and differ from real life data of your company. This user scenario does not include setup, that is required by Latvian Payroll Personnel Advanced standard. Sample data that are displayed in brackets are intended to provide an indication, what information is expected to be completed at a certain step. In terms of real life scenarios, please ensure that your master data are configured in the way as it is recommended by the Setup of this App."
   },
   "docs/support/customer_terms.html": {
     "href": "docs/support/customer_terms.html",
@@ -657,7 +672,7 @@
   "index.html": {
     "href": "index.html",
     "title": "Latvijas algu un personāla lokalizācija sastāv no sekojošām aplikācijām: | Latvian Payroll",
-    "keywords": "Latvijas algu un personāla lokalizācija sastāv no sekojošām aplikācijām: Latvian Payroll Latvian Payroll Advanced Latvian Personnel Base Latvian Payroll Personnel Latvian Payroll EDS Import"
+    "keywords": "Latvijas algu un personāla lokalizācija sastāv no sekojošām aplikācijām: Latvian Payroll Latvian Payroll Advanced Latvian Payroll Personnel Latvian Payroll Personnel Advanced EDS Import"
   },
   "readme.html": {
     "href": "readme.html",
