@@ -118,38 +118,31 @@ In case if in Accounting's field <em>Monthly Overtime</em> value will be correct
 <li>Target Schedule Year - Year, to which the remaining overtime is transferred.</li>
 <li>Moved Overtime - Overtime count, transferred to pay out to another month.</li>
 </ul>
-<h2 id="overtime-usage">Overtime usage</h2>
-<p><img src="8_overtime_5.png" alt="alt"></p>
 <h3 id="overtime-pay-out">Overtime Pay Out</h3>
 <p>Salaries list performs overtime calculation only for employees, who in appropriate period for overtimes in <em>Overtime Registration</em> usage type is <em>Pay Out</em>.
-Algas sarakstā darbinieka apmaksāta virsstundu skaits sakrīt ar Atlikušas virsstundas vērtību no tabulas Virsstundu uzskaite un ar Uzskaites Mēneša virsstundas vērtību.
-Virsstundu izmantošanas reģistrs sastāv no sekojošiem laukiem:</p>
+In the Salary List Number of overtime payable employee coincides with value in the <em>Overtime Registration</em>'s field <em>Remaining Overtime</em> and with overtime value at month's <em>Accounting</em> table.
+<em>Overtime Register</em> includes following fields:</p>
 <ul>
-<li>Uzskaites dokumenta Nr. - Uzskaites dokumenta Nr. , kurā darbiniekam ir aprēķinātas virsstundas.</li>
-<li>Darbinieka Nr. - Darbinieka numurs.</li>
-<li>Ieraksta Nr. - Sistēmas automātiski piešķirtais numurs.</li>
-<li>Izmantošanas veids - Apmaksa, Brīvdiena, Atvaļinājuma papilddiena.</li>
-<li>Izmantotas virsstundas - Izmantoto virsstundu skaits.</li>
-<li>Avota tabulas ID / Avota tabulas nosaukums  - Izmantoto virsstundu avota tabulas identifikācija.</li>
-<li>Primārā atslēga - Izmantoto virsstundu avota primārā atslēga, lai varētu caur šo lauku pārslēgties uz dokumentu, kurā tiek izmantotās virsstundas.</li>
-<li>Ieraksta datums un laiks - Ieraksta datums un laiks, kad ieraksts tika izveidots.</li>
-<li>Ieraksta lietotāja ID - Ieraksta lietotāja ID, kurš izveidoja ierakstu.</li>
-<li>Uzskaites mēnesis / Uzskaites gads - Mēnesis/ gads konkrētajam Uzskaites dokumenta Nr.</li>
+<li>Schedule Document No. - Accounting table No. , where these overtimes are calculated;</li>
+<li>Employee No. - Employee number;</li>
+<li>Usage Type - Pay Out, Day Off, Vacation Add.Day;</li>
+<li>Usage Overtime - overtime used;</li>
+<li>Accounting month / Accounting Year - Month/ Year of the involved Accounting table.</li>
 </ul>
-<h3 id="virsstundu-kompensēšana-ar-atvaļinājuma-papildus-dienām">Virsstundu kompensēšana ar atvaļinājuma papildus dienām</h3>
-<p>Ja darbinieks vēlas tekoša mēneša virsstundas izmantot nākotnē kā atvaļinājuma papilddienu, tad pirms algas aprēķina darbiniekam Virsstundu uzskaitē atbilstošam ierakstam jāizmaina izmantošanas veids uz Atvaļ.papilddiena. Izmainīt izmantošanas veidu uz Atvaļinājuma papilddienu var ar funkciju <em>Izmainīt virsstundu izmantošanas veidu</em>. Funkcijas filtrā obligāti jānorāda uzskaites dokumenta Nr., kuram jāizmaina izmantošanas veids.</p>
-<p>Papildatvaļinājuma dienu piešķiršana notiek Virsstundu uzskaites tabulā ar secību:</p>
+<h3 id="overtime-compensation-with-vacation-additional-days">Overtime compensation with vacation additional days</h3>
+<p>If an employee wants current monthly overtime use in the future as a vacation days, then before the salary is calculated, in the <em>Overtime Register</em> field <em>Usage Type</em> must be changed to <em>Vacation Add.Day</em>. Use function <em>Change Overtime Usage Type</em> to change the usage type. In the functions filter must indicate the accounting document no. where the type must be changed.</p>
+<p>Additional vacation days can be granted in the Overtime Registration table with the following sequence:</p>
 <ul>
-<li>rindai (-ām) ar izmantošanas veidu Atvaļinājuma papilddiena jānorāda darbinieka atvaļinājuma perioda Nr., kurā jāizveido ieraksts par papildatvaļinājuma piešķiršanu.</li>
-<li>cilnē Darbības palaist funkciju Ģenerēt papildus atvaļinājuma dienas.</li>
+<li>for the line/ lines with the usage type <em>Vacation Add.Day</em> should be indicated the number of the employee's vacation period, where the entry for the additional vacation days should be created.</li>
+<li>in the tool pane press the buttons <em>Actions - Generate Additional Vacation Days</em> to create the additional days.</li>
 </ul>
-<p><strong>Atvaļinājuma periodos ierakstu par virsstundām piešķirto papildatvaļinājumu var atcelt tikai no Virsstundu uzskaites tabulas ar funkciju <em>Atcelt ģenerētas papildatvaļinājuma dienas</em>.</strong></p>
-<p>Pēc papilddienas ģenerēšanas tiks automātiski izveidoti:</p>
+<p><strong>Entry for the additional vacation day can be canceled only with the function <em>Cancel Generated Additional Vacation Days</em> in the <em>Overtime Registration</em>.</strong></p>
+<p>After additional day generation will be automatically created:</p>
 <ul>
-<li>ieraksts par virsstundu izmantošanu;</li>
-<li>ieraksts par papildatvaļinājuma dienas piešķiršanu noradītā Atvaļinājuma periodā.</li>
+<li>entry for the use of overtime;</li>
+<li>entry for the additional vacation day adding in the indicated vacation period.</li>
 </ul>
-<p>Pēc papildatvaļinājuma piešķiršanas Atvaļinājuma periodā, darbiniekam var iegrāmatot personāla rīkojumu par papildus atvaļinājuma prombūtni.</p>
+<p>After adding the additional vacation days, the personnel order for additional absences can be booked.</p>
 <h3 id="virsstundu-kompensēšana-ar-apmaksātām-atpūtas-dienām">Virsstundu kompensēšana ar apmaksātām atpūtas dienām</h3>
 <p>Ja darbinieks vēlas tekoša mēneša virsstundas izmantot nākotnē kā brīvdienu atpūtai, tad pirms algas aprēķina darbiniekam Virsstundu uzskaitē atbilstošam ierakstam jāizmaina izmantošanas veids uz Brīvdiena.</p>
 <p>Izmainīt izmantošanas veidu uz Brīvdienu var arī ar funkciju <em>Izmainīt virsstundu izmantošanas veidu</em>. Funkcijas filtrā obligāti jānorāda uzskaites dokumenta Nr., kuram jāmaina izmantošanas veidu.</p>

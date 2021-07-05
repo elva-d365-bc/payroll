@@ -88,9 +88,8 @@
 <li>Send to Gen. Journal – enable if entries for accruals should be sent to general ledger journal additionally to report's printout. If enabled, will be created accrual postings with date from field <em>Date on</em> and the same posting lines with minus with following month's last date - for reversal.</li>
 <li>Gen. Journal Template – select the ledger template where postings should be prepared, if function <em>Send to Gen. Journal</em> enabled.</li>
 <li>Gen. Journal Batch – select the Batch name where postings should be prepared, if function <em>Send to Gen. Journal</em> enabled.</li>
-<li>Savings Component code – The code of the accrual component must indicate. It is a code of the payroll component, which indicates all the accounting settings. It is recommended to create a component that will not be used in salary calculations. As an example, component card no. 190 see below.</li>
+<li>Savings Component code – The code of the accrual component must indicate. It is a code of the payroll component, which indicates all the accounting settings. It is recommended to create a component that will not be used in salary calculations.</li>
 </ul>
-<p><img src="12.vacation_accr_2.png" alt="alt"></p>
 <p>In case if it is necessary to create vacation accruals by dimensions, it is necessary to indicate appropriate dimensions in the reference parameters. The dimension value will be searched in employee's position, if not found and in <em>Payroll Dimension Setup</em> is not enabled <em>Don't use Hierarchy</em> then system will search the dimension of employee. employees in report will be grouped by dimension and at the bottom in employee posting groups and dimension values in two amounts. If there will be enabled <em>Send to Gen. Journal</em>, then rows in G/L Journal will be created by dimensions. Also, take into account if the journal's rows will have other dimensions, then this dimension complements existing - combines together in the dimension line.</p>
 </article>
           </div>
