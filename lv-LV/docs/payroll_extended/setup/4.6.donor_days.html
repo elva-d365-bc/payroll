@@ -80,16 +80,13 @@
 <h1 id="donoru-dienas">Donoru dienas</h1>
 
 <p>Prombūtnes kartē <em>NEIER_DND</em> (atrodams: Lomu centrs - <em>Prombūtnes</em> - <em>Prombūtnes iemesli</em>) jānorāda, ka par šo prombūtni pienākas 1 papildatvaļinājuma diena, bet šīs prombūtnes aprēķina veids ir saglabājot darba algu.</p>
-<p><img src="4.6.donor_days_1.png" alt="alt"></p>
 <div class="TIP">
 <h5>Tip</h5>
 <p><strong>Jāpievērš uzmanība: ja ielikts ķeksis “Brīvdiena saglabājot darba algu”, ievadot prombūtni sistēma prombūtnes kartē uzreiz aprēķinās dienas/stundas izpeļņu ar pazīmi “Vidējā izpeļņa izmainīta”. Veicot algas aprēķinu, tiks ignorēts prombūtnes iemesla aprēķina veids un tiks ņemta vērā vidējā izpeļņa no prombūtnes kartes.</strong></p>
 </div>
 <p>Dienas / stundas  aprēķins: tiek analizētas darbinieka algas komponentes, kurām ir pazīme Pamatalga. Tiek apstrādāti sekojošie veidi: proporc. nostr. dienām, proporc. nostr. stundām, stundu, dienu. Gadījumā, ja darbinieka kartē pazīme Vidējā samaksa par stundām,  tad tiek rēķināta arī stundu izpeļņa. Stundu skaits apmaksai tiek ņemts no grafika. Ja darbiniekam šajā periodā tika mainīta algas, tad tiek analizēta katra diena un izrēķināta vidējā par šo periodu.</p>
 <p>Atvaļinājuma periodos automātiski tiks izveidots ieraksts par piešķirto papildatvaļinājuma dienu.  Atvaļinājuma periods – prombūtnes <em>No datuma</em> periods.</p>
-<p><img src="4.6.donor_days_2.png" alt="alt"></p>
 <p>Donora dienas apmaksai nevajadzētu būt iekļautai vidējā izpeļņā. Tāpēc Bāzē ATVALIN apmaksas komponentes kodam jābūt izslēgtam no bāzes.</p>
-<p><img src="4.6.donor_days_3.png" alt="alt"></p>
 <p><strong>!!! Atpūtas dienai par donoru dienu labāk izveidot jaunu prombūtnes kodu, kuram būtu sekojošie uzstādījumi:</strong></p>
 <p><img src="4.6.donor_days_4.png" alt="alt"></p>
 <p>Tādā gadījumā, rēķinot atlikumu uz jebkuru datumu, dienas piešķiršanai / norakstīšanai  tiks izmantots princips “stājas spēkā uzreiz” ( nevis proporcionāli).</p>
