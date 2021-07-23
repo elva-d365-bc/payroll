@@ -1976,7 +1976,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/setup/1.2.payroll_setup.html",
-          "hash": "H5mJE+QcZiRX4vAO0tE+8OPOEZwyZTdhQ/o4PLdu7/8="
+          "hash": "IdFt3mkbp23G/3MUMiNJLncfKxB5/ATEWMjmdVU/ooM="
         }
       },
       "is_incremental": false,
@@ -3345,12 +3345,34 @@
       "version": ""
     },
     {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/setup/24.notification_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/setup/24.notification_2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/setup/24.notification_3.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/setup/24.notification_3.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "docs/payroll_extended/setup/24.notifications.md",
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/setup/24.notifications.html",
-          "hash": "Avo1jvppTsK4LAhOjq7UTYulcFEa6cvlXT90xRFR+8w="
+          "hash": "VQjUKh/2MwA2zTFftw/OtpDF6UzjD0rf7nbaJ43OhEc="
         }
       },
       "is_incremental": false,

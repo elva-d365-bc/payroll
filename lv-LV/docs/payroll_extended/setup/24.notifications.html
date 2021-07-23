@@ -80,25 +80,25 @@
 <h1 id="ziņojumu-veidošana">Ziņojumu veidošana</h1>
 
 <p>Sistēmā ir iespējams automātiski sagatavot un informēt darbiniekus par uzņēmumā svarīgiem notikumiem, kā arī papildus iespējams pārskatīt nosūtīto ziņojumu vēsturi.</p>
-<p>Visi ziņojumi, kā arī to uzstādījumi pieejami atverot sarakstu <em>Ziņojumi</em>.</p>
-<p>Iestatījumiem pieejami sekojoši lauki:</p>
+<p>Visi izveidotie ziņojumi pieejami atverot sarakstu <em>Ziņojumi</em>.</p>
+<p>Sarakstā pieejami sekojoši lauki:</p>
 <ul>
 <li>Atļautais piegādes laiks no - ievada laiku no kura pieļauj izsūtīt ziņojumu</li>
 <li>Atļautais piegādes laiks līdz - ievada laiku līdz kuram pieļauj ziņojuma izsūtni</li>
 <li>Statuss - Izveidots; Gaida apstiprināšanu; Pabeigts; Nosūtīts</li>
-<li>Apstiprinātājs</li>
-<li>Avots</li>
-<li>Adresātu grupas kods</li>
-<li>Darbinieka Nr.</li>
-<li>Sūtīt pašam darbiniekam</li>
-<li>Sūtīt struktūrvienības vadītājam</li>
-<li>Veidnes kods</li>
-<li>Temats</li>
-<li>Pastāv kļūdas</li>
-<li>Nosūtīšanas datums un laiks</li>
-<li>Ziņojuma datums</li>
-<li>Brīdināt par apstiprināšanu tips</li>
-<li>Brīdināt par apstiprināšanu</li>
+<li>Apstiprinātājs - informatīvs lauks, kurā izveidojas ieraksts, apstiprinot ziņojumu</li>
+<li>Avots - informatīvs lauks</li>
+<li>Adresātu grupas kods - ziņojumam piesaistītā adresātu grupa</li>
+<li>Darbinieka Nr. - ziņojumam piesaistītais adresāts - darbinieks</li>
+<li>Sūtīt pašam darbiniekam -</li>
+<li>Sūtīt struktūrvienības vadītājam -</li>
+<li>Veidnes kods - ziņojumam piesaistītā teksta veidne</li>
+<li>Temats - Veidnes koda apraksts</li>
+<li>Pastāv kļūdas - saite uz kļūdu ziņojumu sarakstu, ja pastāv kļūda saistīta ar konkrēto ziņojumu</li>
+<li>Nosūtīšanas datums un laiks - informatīvs lauks</li>
+<li>Ziņojuma datums - ievada datumu</li>
+<li>Brīdināt par apstiprināšanu tips -</li>
+<li>Brīdināt par apstiprināšanu -</li>
 </ul>
 <h2 id="ziņojumu-adresātu-grupas">Ziņojumu adresātu grupas</h2>
 <p>Lai nevajadzētu katru reizi jaunam ziņojumam, kas attiecas tikai uz kādu konkrētu saņēmēju loku, pievienot adresātus pa vienam, ir iespējams izveidot adresātu grupas. Atveriet sarakstu <em>Ziņojumu adresātu grupas</em>. Izveidojiet jaunu rindiņu jaunai grupai un caur pogu <em>Rindas</em> piesaistiet adresātus.</p>
@@ -109,6 +109,7 @@
 <li>Kods – adresātu grupas kods vai darbinieka numurs (ja noradām e-pastu, var vienkārši ierakstīt kaut ko);</li>
 <li>E-pasts – aizpildīts tikai gadījumā, ja ziņojums sūtīts cilvēkam, kurš nav uzņēmuma darbinieks.</li>
 </ul>
+<p><img src="24.notification_2.png" alt="alt"></p>
 <p>Adresātu grupas rindā ir iespējams definēt darbinieku vai citu adresātu grupu. Šādā veidā iespējams no mazākām grupām veidot lielākas ziņojumu grupas, kas apvieno dažādus darbiniekus. Adresāta e-pasts tiks paņemts no visiem adresātu grupu hierarhijā esošajiem darbiniekiem.</p>
 <h2 id="ziņojumu-notikumu-uzstādījumi">Ziņojumu notikumu uzstādījumi</h2>
 <p>Papildus jāaizpilda <em>Ziņojuma notikumu uzstādījumi</em>, kas satur sekojošus laukus:</p>
@@ -142,7 +143,7 @@ Jāsagatavo MS Word dokuments, kurā sagatavots ziņojuma teksts. Mainīgā teks
 <p><img src="24.notification_1.png" alt="alt"></p>
 <p><strong>Jāpievērš uzmanība, ka locījumi nav pieejami.</strong> Dokumentu laiku nosaukumi ir pieejami pie konkrētā ziņojuma veida sarakstā <em>Ziņojumu notikumu uzstādījumi</em>, noklikšķinot uz pogas <em>Dokumentu lauki</em>.</p>
 <p>Sagatavotu failu saglabājiet ar paplašinājumu .htm.</p>
-<h2 id="smtp-pasta-servera-uzstādījumi">SMTP pasta servera uzstādījumi</h2>
+<h2 id="smtp-pasta-uzstādījumi">SMTP pasta uzstādījumi</h2>
 <p>Lai būtu iespējams sūtīt ziņojumus no sistēmas ir jāaizpilda <em>SMTP pasta uzstādījumi</em>, kas sastāv no sekojošiem laukiem:</p>
 <ul>
 <li>SMTP serveris – e-pasta pārsūtīšanas SMTP servera adrese</li>
@@ -150,12 +151,9 @@ Jāsagatavo MS Word dokuments, kurā sagatavots ziņojuma teksts. Mainīgā teks
 <li>Lietotāja ID – pamata autentifikācijas gadījumā;</li>
 <li>Parole - pamata autentifikācijas gadījumā.</li>
 </ul>
+<p><img src="24.notification_3.png" alt="alt"></p>
 <h2 id="lietotāju-uzstādījumi">Lietotāju uzstādījumi</h2>
-<p>Lapā <em>Lietotāju uzstādījumi</em> priekš Personāla risinājuma vajadzībām nepieciešams aizpildīt tikai:</p>
-<ul>
-<li>Lietotā ID – sistēmas lietotāja ID;</li>
-<li>Darbinieka Nr. – norāda darbinieka Nr. tam lietotājam, kurš apstiprina ziņojumu nosūtīšanu.</li>
-</ul>
+<p>Lapā <em>Lietotāju uzstādījumi</em> priekš Personāla risinājuma vajadzībām nepieciešams aizpildīt tikai lauku <em>Lietotā ID</em> jeb sistēmas lietotāja ID;</p>
 <p>Pārējie lauki šim risinājumam nav aktuāli.</p>
 <h2 id="procesa-rinda">Procesa rinda</h2>
 <p><em>Procesa rindas ieraksti</em> kartes cilnē <em>Visp. info</em> var redzēt notikuma veidu, kuram var definēt periodiskumu. Lai definētu pašu notikumu, lietotājam ir jābūt MS Business Central programmēšanas zināšanām.</p>
