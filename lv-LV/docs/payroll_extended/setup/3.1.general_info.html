@@ -183,7 +183,7 @@
 <tr>
 <td>Darbā pieņemšanas datums</td>
 <td style="text-align: center;">!</td>
-<td>Ja Algu uzstādījumu cilnē <em>Atskaites</em> ir ieslēgta funkcija <em>Ziņu koda pārbaudes iesl.</em>, tad aizpildot šo lauku, sistēma piedāvās ievadīt darbinieka ziņu kodu EDS iesniedzamam paziņojumam <em>Ziņas par darba ņēmējiem</em>. Atkārtoti šo logu var atvērt klikšķinot rīkjoslā uz pogām <em>Naviģēt</em> - <em>Papaildus inform. algām</em> - <em>Ziņu kodi</em></td>
+<td>Lauks aizpildās automātiski, informāciju ņemot no Darba līguma kartes.</td>
 </tr>
 <tr>
 <td>Statuss</td>
@@ -379,11 +379,12 @@
 </tbody>
 </table>
 <h2 id="cilne-darbinieka-amati">Cilne: <em>Darbinieka amati</em></h2>
-<p>Būtiska darbinieka kartiņas daļa. Šajā cilnē tiek norādīti tādi aprēķinam vajadzīgie parametri kā darba laika kalendārs, amatā pieņemšanas datums, atlaišanas datums, amata numurs.
-Amata informācijas aizpildīšana tiek veikta caur darba līgumiem vai personāla rīkojumiem.
-Darbinieka amata Nr. tiek piešķirts automātiski, veidojot jaunu darbinieka kartiņu. Numerācija nepieciešama, lai programma varētu pareizi aprēķināt algu gadījumā, ja darbiniekam mainījies amats. Amata maiņas gadījumā jaunajam amatam automātiski tiek piešķirts jauns Darbinieka amata numurs.</p>
+<p>Būtiska darbinieka kartiņas daļa. Šajā cilnē tiek norādīti tādi aprēķinam vajadzīgie parametri kā darba laika kalendārs, amatā pieņemšanas datums, atlaišanas datums, amata numurs.</p>
+<p>Amata informācijas aizpildīšana tiek veikta caur darba līgumiem vai personāla rīkojumiem.</p>
+<p>Darbinieka amata Nr. tiek piešķirts automātiski, veidojot jaunu darbinieka kartiņu. Numerācija nepieciešama, lai programma varētu pareizi aprēķināt algu gadījumā, ja darbiniekam mainījies amats. Amata maiņas gadījumā jaunajam amatam automātiski tiek piešķirts jauns Darbinieka amata numurs.</p>
+<p>Amatam dimensiju piešķir atverot Darbinieka amata karti un nospiežot pogu <em>Dimensijas</em>, vai arī iezīmējot nepieciešamo amatu (ja ir piešķirti vairāki amati) un nospiežot pogu <em>Dimensijas-viena</em> kā parādīts attēlā zemāk.</p>
 <p><img src="3.1.general_info_7.1.png" alt="alt"></p>
-<p>Atvērsies jauns logs <em>Darbinieka amata karte</em>, kur pieejami sekojoši lauki:</p>
+<p>Nospiežot pogu <em>Skatīt</em>, atvērsies jauns logs <em>Darbinieka amata karte</em>, kur pieejami sekojoši lauki:</p>
 <table>
 <thead>
 <tr>
@@ -519,7 +520,8 @@ Darbinieka amata Nr. tiek piešķirts automātiski, veidojot jaunu darbinieka ka
 <h2 id="algas-komponentes"><em>Algas komponentes</em></h2>
 <p>Darba algas komponentēs norāda nodokļu, atvieglojumu un atvilkumu komponentes, kuras jāiekļauj darbinieka darba algas aprēķinā.</p>
 <p>Algas komponentes tiek izveidotas, grāmatojot darbinieka Darba Līgumu.</p>
-<p>Darbinieka algas komponentes var apskatīt klikšķinot darbinieka kartiņas rīkjoslā uz pogām <em>Apstrādāt</em> - <em>Darbinieka algas komponentes</em>.</p>
+<p>Darbinieka algas komponentes var apskatīt klikšķinot darbinieka kartiņas rīkjoslā uz pogām <em>Apstrādāt</em> - <em>Darbinieka algas komponentes</em>. Atverot komponenšu logu būs redzamas tikai tās komponentes, kas ir aktīvas darba datumā. Lai redzētu visas komponentes, ir jānoņem datumu filtri.
+<img src="3.1.general_info_14.png" alt="alt"></p>
 <p>Algas komponentes ir vieta, kur ir jānorāda pamatalgas komponente, kā arī citas regulāru papildus ienākumu komponentes (piemaksas, prēmijas, bonusus u.tml., kas ir konstantas summas katru mēnesi ilgstošu laika periodu). Izmaksājamo avansa summu norāda avansa komponentē.
 Nepieciešamības gadījumā rindas papildina ar informāciju par atvieglojumiem - Apgādājamie, Invaliditāte, Represētais.</p>
 <div class="TIP">
@@ -560,6 +562,10 @@ Nepieciešamības gadījumā rindas papildina ar informāciju par atvieglojumiem
 </table>
 <p>Jāpievērš uzmanība, ka ja šis ieturējums jāpārskata trešajai personai, tad jāaizpilda informācija, kam pārskaitīt.</p>
 <p>Ja pēc ieturējuma veikšanas summa jāpārskaita citai personai uz citu bankas kontu, tad jāievada atbilstoši visi bankas konta dati darbinieka kartiņā klikšķinot uz pogām <em>Saistītās</em> - <em>Papildus inform. algām</em> - <em>Pārskaitījumi</em>.</p>
+<h2 id="kopēt-darbinieku">Kopēt darbinieku</h2>
+<p>Kopēšanas funkciju ir ērti izmantot, ja darbinieks pēc atbrīvošanas ir atkārtoti uzsācis darbu uzņēmumā. Lai izvairītos no iespējamām kļūdām (piemēram, vidējās izpeļņas aprēķinā, paziņojumā par fiziskajām personām izmaksātajām summām), ir ieteicams veidot jaunu darbinieka kartiņu.
+Lai veiktu kopēšanu, vispirms ir jāizveido jauna darbinieka kartiņa. Darbinieka kartiņas rīkjoslā spiež uz <em>Saistītās</em> - <em>Papildus inf. izveidošana</em> -<em>Kopēt darbinieku</em>.
+Sadaļā Opcijas ir jāizvēlas <em>Avota darbinieka Nr.</em>, kā arī jāatzīmē kādu informāciju vēlas kopēt.</p>
 </article>
           </div>
           

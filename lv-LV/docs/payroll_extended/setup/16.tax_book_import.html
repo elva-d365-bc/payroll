@@ -88,7 +88,7 @@
 <li>Tips – pastāv divas iespējas:
 <ul>
 <li>Viss - importēt visu informāciju par atvieglojumiem , tiek aizpildīts no faila;</li>
-<li>Izmaiņas - importē tikai izmaiņas. EDS atskaites opcijai jābūt <em>iekļaut visas izmaiņas</em> ( gan neapl. min, gan visas citas izmaiņas). Pretējā gadījumā sistēma iedos kļūdas paziņojumu.</li>
+<li>Izmaiņas - importē tikai izmaiņas. EDS atskaites opcijai jābūt <em>iekļaut visas izmaiņas</em> ( gan neapliekamais mininums, gan visas citas izmaiņas). Pretējā gadījumā sistēma iedos kļūdas paziņojumu.</li>
 </ul>
 </li>
 <li>Neapl. minimuma komponentes kods – jāizvēlas no saraksta;</li>
@@ -101,114 +101,17 @@
 <li>solis:  nospiest pogu <em>Importēt</em>, noradīt ceļu līdz failam. Pastāv iespēja norādīt no kāda datuma apstrādāt darbinieku algas komponentes. Gadījumā, ja nekādi pārrēķini par iepriekšējiem mēnešiem netiks veikti, šo datumu var nelabot.</li>
 <li>solis: ieimportējot datus, tie ir jāapstrādā. Jāpalaiž funkcija <em>Apstrādāt</em>. Pēc datu apstrādes var apskatīt gan ieimportētus datus, gan piedāvātas izmaiņas.</li>
 </ol>
-<p>Atverot atbilstošu kolonnu, var noņemt filtru un nepieciešamības gadījumā manuāli veikt labojumus (piemēram, neapl. minimuma summas).</p>
+<p>Atverot atbilstošu kolonnu, var noņemt filtru un nepieciešamības gadījumā manuāli veikt labojumus (piemēram, neapliekamā minimuma summas).</p>
 <p><strong>Neapl. minimuma summas var labot tikai kolonnā <em>Neapliekama minimuma rindu skaits</em>. Tikai pēc summu labojumiem jānospiež <em>Apstrādāt</em>. Ja pirms tam tika apstrādātas rindas, bet netika apstiprinātas, tad vēlreiz jāapstrādā.</strong></p>
 <p><strong>Lai katru mēnesi nevajadzētu mainīt neapliekamā minimuma summas, kuras tiek mainītas pēc darbinieka iesnieguma, ieteicams palūgt darbinieku par šīs pazīmes ielikšanu EDSā.</strong></p>
-<p><strong>Sistēma apstrādā papildatvieglojumus: Pirmās, otrās un trešās grupa invaliditātei. Par citiem papildatvieglojumiem (politiski represētām personām, vai nacionālās pretošanās kustības dalībniekiem) tiek atrādīts brīdinājums par manuālo apstrādi. Gadījumā, ja invaliditāte ir līdz konkrētam datumam un darbiniekam pienākas neapliekamais minimums pēc EDS datiem, sistēma pārbaudīs katru neapliekamā minimuma ierakstu (vai šajā periodā darbiniekam bija spēkā invaliditāte vismaz vienu dienu) un atkarībā no tā atstās vērtību vai anulēs. Pabalsta par invaliditāti saņēmējiem pienākas gan neapl. minimums, gan papildatvieglojums. Pensijas saņēmējiem (par invaliditāti) pienākas tikai papildatvieglojums.</strong></p>
+<p><strong>Sistēma apstrādā papildatvieglojumus: Pirmās, otrās un trešās grupa invaliditātei. Par citiem papildatvieglojumiem (politiski represētām personām, vai nacionālās pretošanās kustības dalībniekiem) tiek atrādīts brīdinājums par manuālo apstrādi. Gadījumā, ja invaliditāte ir līdz konkrētam datumam un darbiniekam pienākas neapliekamais minimums pēc EDS datiem, sistēma pārbaudīs katru neapliekamā minimuma ierakstu (vai šajā periodā darbiniekam bija spēkā invaliditāte vismaz vienu dienu) un atkarībā no tā atstās vērtību vai anulēs. Pabalsta par invaliditāti saņēmējiem pienākas gan neapliekamais minimums, gan papildatvieglojums. Pensijas saņēmējiem (par invaliditāti) pienākas tikai papildatvieglojums.</strong></p>
 <p><strong>Gadījumā, ja manuāli ievadīti dati par iepriekšējo periodu, piemēram NM 01.08.20 līdz 31.08.20, bet importēti dati, kuri spēkā no 01.09.2020, iepriekš izveidotais ieraksts netiks apstrādāts. Ja failā būs periods NM 01.08.20 līdz 31.12.20, tad rezultātā par augustu būs 2 NM ieraksti. Iesakām vai nu visu laiku importēt vai, ievadot informāciju manuāli, atstāt ierakstu atvērtu (bez beigu datuma), tad sistēma anulēs šo ierakstu un izveidos korektu.</strong></p>
 <p>Visas izmaiņas var apskatīties kolonnā <em>Izmaiņu skaits</em>. Katrai rindai noradīta darbība, kura tiks veikta pēc apstiprināšanas.</p>
 <p>Algas grāmatiņas importa izmaiņu sarakstā pastāv iespēja kaut ko pielabot. Piemēram, ja darba devējs nevelētos importēt apgādājamas personas, var atlasīt tādus ierakstus un izdzēst.
 Gadījumā, ja izmaiņas ir korektas, jāiezīmē korektā rindiņa un jānospiež poga <em>Apstiprināt</em>. Darbinieku algas komponentēs tiks veiktas izmaiņas. Lai būtu apstrādāti pensionāri un izdienas pensionāri, jābūt sekojošiem uzstādījumiem Soc. statusi:</p>
 <p><img src="16.tax_book1.png" alt="alt"></p>
-<p>Apstrādājot datus par pensionāriem, sistēma pārbauda darbinieka kartē lauku Soc Statusa Kods. Gadījumā, ja statusa kods ir DP ( atbilst pensionāriem), tad neapl. minimumu apstrāde ir līdzīga parastiem darba ņēmējiem. Soc. likmes jebkurā gadījumā tiks pārbaudītas.</p>
-<p><strong>Gadījumā, ja pirms importa darbiniekam tika piešķirts DN statusa kods un tiek saņemta informācija par vecuma pensiju, tad neapl. minimuma No datuma ir vienāds ar nākamā mēneša 1. datumu.Bet, ja sistēmā jau ir DP statusa kods, tad neapl. minimuma datums ir vienāds ar neapl. minimuma datumu no EDS faila.</strong></p>
-<p>Grāmatiņu apstrādes algoritms:</p>
-<table>
-<thead>
-<tr>
-<th style="text-align: center;">Neapl. minimums</th>
-<th style="text-align: center;">Apgādājamie</th>
-<th style="text-align: center;">Papildatvieglojumi</th>
-<th style="text-align: center;">Pensijas (invalīd.)</th>
-<th style="text-align: center;">Pensijas (izdienas)</th>
-<th style="text-align: center;">Pensionārs (citas valsts)</th>
-<th style="text-align: center;">Pensionārs</th>
-<th style="text-align: left;">Rezultātā:</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: center;">nav</td>
-<td style="text-align: center;">1..</td>
-<td style="text-align: center;">nav/ ir</td>
-<td style="text-align: center;">nav/ ir</td>
-<td style="text-align: center;">nav/ ir</td>
-<td style="text-align: center;">nav/ ir</td>
-<td style="text-align: center;">nav/ ir</td>
-<td style="text-align: left;">Nekas netiks apstrādāts. Ja neapl. min nav kā ieraksta, tad nekādas izmaiņas netiks apstrādātas</td>
-</tr>
-<tr>
-<td style="text-align: center;">0..200 EUR</td>
-<td style="text-align: center;">nav</td>
-<td style="text-align: center;">nav</td>
-<td style="text-align: center;">nav</td>
-<td style="text-align: center;">nav</td>
-<td style="text-align: center;">nav</td>
-<td style="text-align: center;">nav</td>
-<td style="text-align: left;">Izveidot ierakstu neapl. minimums , aizpildīt saistīto informāciju. Tiks piemērots IIN 20%.</td>
-</tr>
-<tr>
-<td style="text-align: center;">0..200 EUR</td>
-<td style="text-align: center;">1..</td>
-<td style="text-align: center;">nav</td>
-<td style="text-align: center;">nav</td>
-<td style="text-align: center;">nav</td>
-<td style="text-align: center;">nav</td>
-<td style="text-align: center;">nav</td>
-<td style="text-align: left;">Izveidot ierakstus neapl. minimums un apgādājamie, aizpildīt saistīto informāciju. Tiks piemērots IIN 20%.</td>
-</tr>
-<tr>
-<td style="text-align: center;">0</td>
-<td style="text-align: center;">1..</td>
-<td style="text-align: center;">1. vai 2. vai 3. invalīd., repres</td>
-<td style="text-align: center;">ir</td>
-<td style="text-align: center;">nav</td>
-<td style="text-align: center;">nav</td>
-<td style="text-align: center;">nav</td>
-<td style="text-align: left;">Izveidot ierakstus neapl. minimums un apgādājamie, aizpildīt saistīto informāciju. Tiks piemērots IIN 20%.</td>
-</tr>
-<tr>
-<td style="text-align: center;">0,01..200 EUR</td>
-<td style="text-align: center;">1..</td>
-<td style="text-align: center;">1. vai 2. vai 3. invalīd., repres</td>
-<td style="text-align: center;">ir</td>
-<td style="text-align: center;">nav</td>
-<td style="text-align: center;">nav</td>
-<td style="text-align: center;">nav</td>
-<td style="text-align: left;">Izveidot ierakstus neapl. minimums (summa =0, jo piemērot nedrīkst ,tikai papildatvieglojumi) un apgādājamie un papildatvieglojumi, aizpildīt saistīto informāciju. Tiks piemērots IIN 20%. Soc likmes nemainās.</td>
-</tr>
-<tr>
-<td style="text-align: center;">0,01..200 EUR</td>
-<td style="text-align: center;">1..</td>
-<td style="text-align: center;">1. vai 2. vai 3. invalīd., repres</td>
-<td style="text-align: center;">nav</td>
-<td style="text-align: center;">nav</td>
-<td style="text-align: center;">nav</td>
-<td style="text-align: center;">nav</td>
-<td style="text-align: left;">Izveidot ierakstus neapl. minimums un apgādājamie un papildatvieglojumi, aizpildīt saistīto informāciju. Tiks piemērots IIN 20%. Soc likmes nemainās.</td>
-</tr>
-<tr>
-<td style="text-align: center;">0..200 EUR</td>
-<td style="text-align: center;">1..</td>
-<td style="text-align: center;">nav</td>
-<td style="text-align: center;">nav</td>
-<td style="text-align: center;">nav</td>
-<td style="text-align: center;">ir</td>
-<td style="text-align: center;">nav</td>
-<td style="text-align: left;">Izveidot neapl. min =0, apgād. , aizpildīt saistīto informāciju. Soc likmes nomainīt (no 01. datuma pēc pensijas piešķiršanas vai noslēgt iepr. Ierakstus) Piemērot IIN 20%.</td>
-</tr>
-<tr>
-<td style="text-align: center;">0..200 EUR</td>
-<td style="text-align: center;">1..</td>
-<td style="text-align: center;">nav</td>
-<td style="text-align: center;">nav</td>
-<td style="text-align: center;">ir</td>
-<td style="text-align: center;">nav</td>
-<td style="text-align: center;">nav</td>
-<td style="text-align: left;">Izveidot neapl. min =0, apgād. , aizpildīt saistīto informāciju. Soc likmes nomainīt (no 01. datuma pēc pensijas piešķiršanas vai noslēgt iepr. Ierakstus) Piemērot IIN 20%.</td>
-</tr>
-</tbody>
-</table>
+<p>Apstrādājot datus par pensionāriem, sistēma pārbauda darbinieka kartē lauku Soc Statusa Kods. Gadījumā, ja statusa kods ir DP ( atbilst pensionāriem), tad neapliekamo minimumu apstrāde ir līdzīga parastiem darba ņēmējiem. Soc. likmes jebkurā gadījumā tiks pārbaudītas.</p>
+<p><strong>Gadījumā, ja pirms importa darbiniekam tika piešķirts DN statusa kods un tiek saņemta informācija par vecuma pensiju, tad neapliekamā minimuma No Datums ir vienāds ar nākamā mēneša 1. datumu. Bet, ja sistēmā jau ir DP statusa kods, tad neapliekamā minimuma datums ir vienāds ar neapliekamā minimuma datumu no EDS faila.</strong></p>
 </article>
           </div>
           
