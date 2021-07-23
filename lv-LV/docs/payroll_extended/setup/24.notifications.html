@@ -81,25 +81,6 @@
 
 <p>Sistēmā ir iespējams automātiski sagatavot un informēt darbiniekus par uzņēmumā svarīgiem notikumiem, kā arī papildus iespējams pārskatīt nosūtīto ziņojumu vēsturi.</p>
 <p>Visi izveidotie ziņojumi pieejami atverot sarakstu <em>Ziņojumi</em>.</p>
-<p>Sarakstā pieejami sekojoši lauki:</p>
-<ul>
-<li>Atļautais piegādes laiks no - ievada laiku no kura pieļauj izsūtīt ziņojumu</li>
-<li>Atļautais piegādes laiks līdz - ievada laiku līdz kuram pieļauj ziņojuma izsūtni</li>
-<li>Statuss - Izveidots; Gaida apstiprināšanu; Pabeigts; Nosūtīts</li>
-<li>Apstiprinātājs - informatīvs lauks, kurā izveidojas ieraksts, apstiprinot ziņojumu</li>
-<li>Avots - informatīvs lauks</li>
-<li>Adresātu grupas kods - ziņojumam piesaistītā adresātu grupa</li>
-<li>Darbinieka Nr. - ziņojumam piesaistītais adresāts - darbinieks</li>
-<li>Sūtīt pašam darbiniekam -</li>
-<li>Sūtīt struktūrvienības vadītājam -</li>
-<li>Veidnes kods - ziņojumam piesaistītā teksta veidne</li>
-<li>Temats - Veidnes koda apraksts</li>
-<li>Pastāv kļūdas - saite uz kļūdu ziņojumu sarakstu, ja pastāv kļūda saistīta ar konkrēto ziņojumu</li>
-<li>Nosūtīšanas datums un laiks - informatīvs lauks</li>
-<li>Ziņojuma datums - ievada datumu</li>
-<li>Brīdināt par apstiprināšanu tips -</li>
-<li>Brīdināt par apstiprināšanu -</li>
-</ul>
 <h2 id="ziņojumu-adresātu-grupas">Ziņojumu adresātu grupas</h2>
 <p>Lai nevajadzētu katru reizi jaunam ziņojumam, kas attiecas tikai uz kādu konkrētu saņēmēju loku, pievienot adresātus pa vienam, ir iespējams izveidot adresātu grupas. Atveriet sarakstu <em>Ziņojumu adresātu grupas</em>. Izveidojiet jaunu rindiņu jaunai grupai un caur pogu <em>Rindas</em> piesaistiet adresātus.</p>
 <p>Ziņojumu adresātu grupas rindas satur sekojošus laukus:</p>
@@ -156,10 +137,14 @@ Jāsagatavo MS Word dokuments, kurā sagatavots ziņojuma teksts. Mainīgā teks
 <p>Lapā <em>Lietotāju uzstādījumi</em> priekš Personāla risinājuma vajadzībām nepieciešams aizpildīt tikai lauku <em>Lietotā ID</em> jeb sistēmas lietotāja ID;</p>
 <p>Pārējie lauki šim risinājumam nav aktuāli.</p>
 <h2 id="procesa-rinda">Procesa rinda</h2>
-<p><em>Procesa rindas ieraksti</em> kartes cilnē <em>Visp. info</em> var redzēt notikuma veidu, kuram var definēt periodiskumu. Lai definētu pašu notikumu, lietotājam ir jābūt MS Business Central programmēšanas zināšanām.</p>
-<p>Jāpievērš uzmanība, ka laukiem Apraksts un Parametru virkne jābūt vienādiem.</p>
-<p>Cilnē Periodiskums definē ziņojumu sūtīšanas intervālu. Šo lietotājs var definēt pats. Definējot periodiskumu ir jāpievērš uzmanība, lai minūšu skaits no vienas izpildes līdz otrai  nav mazāks par vienu reizi, kas nepieciešams ziņojuma apstrādei.</p>
-<p>Izsūtīto ziņojumu vēsturi par konkrētiem notikumiem var apskatīties procesa rindas žurnāla ierakstos. Žurnāls satur sekojošus laukus:</p>
+<p>Procesu rindas veido sarakstā <em>Procesu rindu ieraksti</em>.
+Katram atsevišķam notikum jāizveido sava procesu rindas ieraksta karte, norādot <em>Izpildāmā objekta ID</em> - 70375502</p>
+<p><img src="24.notification_4.png" alt="alt"></p>
+<p><em>Procesa rindas ieraksti</em> kartes cilnē <em>Visp. info</em> var redzēt notikuma veidu, kuram var definēt periodiskumu. Jāpievērš uzmanība, ka laukiem Apraksts un Parametru virkne jābūt vienādiem. Lai definētu pašu notikumu, lietotājam ir jābūt MS Business Central programmēšanas zināšanām.</p>
+<p>Cilnē <em>Periodiskums</em> definē ziņojumu sūtīšanas intervālu. Šo lietotājs var definēt pats. Definējot periodiskumu ir jāpievērš uzmanība, lai minūšu skaits no vienas izpildes līdz otrai  nav mazāks par vienu reizi, kas nepieciešams ziņojuma apstrādei.</p>
+<p><strong>Lai varētu izsūtīt izveidotos ziņojumu, sistēmai ir nepieciešams, lai Procesu rindas ierakstos būtu izveidota atsevišķa procesu rinda ar kodu <em>MSGSEND</em>, ko ieraksta laukos <em>Apraksts</em> un <em>Parametru virkne</em></strong></p>
+<p><img src="24.notification_5.png" alt="alt"></p>
+<p>Izsūtīto ziņojumu vēsturi par konkrētiem notikumiem var apskatīties <em>Procesa rindas žurnāla ierakstos</em>. Žurnāls satur sekojošus laukus:</p>
 <ul>
 <li>Statuss – kurā notikums atrodas uz pārbaudes brīdi - veiksmīgi, notiek, kļūda;</li>
 <li>Lietotāja ID – kurš ir palaidis šo notikuma procesu;</li>
