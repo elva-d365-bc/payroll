@@ -5616,12 +5616,45 @@
       "version": ""
     },
     {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/setup_ext/24.notification_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/setup_ext/24.notification_2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/setup_ext/24.notification_3.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/setup_ext/24.notification_3.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/setup_ext/24.notification_4.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/setup_ext/24.notification_4.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "docs/payroll_extended/setup_ext/24.notifications.md",
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/setup_ext/24.notifications.html",
-          "hash": "WiX74CnCu7megdQ5aqqCdwwEiCUOzJRwOIkRiobIn7I="
+          "hash": "N/8oMAq9BP8svTub83GqXJ9/HI0eHvVA1icrc8hVPnQ="
         }
       },
       "is_incremental": false,
@@ -6700,7 +6733,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/setup_ext/8.5.payout.html",
-          "hash": "8Sz2a6f8l7RFkF1kWV7bEdPEhXutfPz9ZGSxzY4Z9Mk="
+          "hash": "0uIAXd7vz5tXJEqIRMNlDk3iBvJ0sKn8JkERAUzmIl0="
         }
       },
       "is_incremental": false,
@@ -7086,7 +7119,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/toc.html",
-          "hash": "GNktW4mz8gDQuewy8TNloll0W6ayeTE1nAsHAuxfXtI="
+          "hash": "oXwPaAaX3GGtFEICEuaMhEztKtsdbONo4EoU19RMfl0="
         }
       },
       "is_incremental": false,

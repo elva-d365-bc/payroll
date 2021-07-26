@@ -113,7 +113,7 @@
 Prepare MS Word Document, with a text of message. Instead of a variable text record a variable document field code with percentage. For example:</p>
 <p><img src="24.notification_1.png" alt="alt"></p>
 <p><strong>Pay attention that declensions are not available.</strong> Document field names are available at the appropriate message type in the list <em>Message Event Setup</em>, when clicking on the button <em>Document Fields</em>.</p>
-<p>Prepared file Save with extension <em>.htm.</em></p>
+<p>Prepared file Save with extension <em>Web Page, Filtered (.htm,.html)</em></p>
 <h2 id="smtp-mail-setup">SMTP Mail Setup</h2>
 <p>To be able to send messages from the system must be completed <em>SMTP Mail Setup</em>, consisting of the following fields:</p>
 <ul>
@@ -124,6 +124,24 @@ Prepare MS Word Document, with a text of message. Instead of a variable text rec
 <li>Password - in case if Basic authentication is selected.</li>
 <li>Send As - Specifies the ID of the user in whose name emails will be sent. For example, this can be useful when you want multiple people to be able to send messages that appear to come from a single sender, such as sales@companyname.</li>
 <li>Allow Sender Substitution - Specifies that the SMTP server allows you to change sender name and email.</li>
+</ul>
+<p><img src="24.notification_2.png" alt="alt"></p>
+<h2 id="job-queue">Job Queue</h2>
+<p>Job Queues are created at <em>Job Queue Entries</em>.
+To each separate event should be create a job queue card and <em>Object ID to Run</em> should be indicated as <em>70375502</em></p>
+<p><img src="24.notification_4.png" alt="alt"></p>
+<p>In the tab <em>General</em> can be seen the type of event you can define the periodicity. Should pay attention that the entries in the fields <em>Description</em> and <em>Parameter String</em> must be identical. To define the event, the user must have MS Business Central developing knowledge.</p>
+<p>In the tab <em>Recurrence</em> it can be defined the sending interval of messages. This user can define itself. When defining the recurrence must be paid attention that, the number of minutes from one execution to the other is not less than time, what is necessary for processing a single message.</p>
+<p><strong>To be able to send out the created message, the system requires that in the <em>Job Queue Entries</em> list should be created a separate entry card with code <em>MSGSEND</em>, what should be repeated in fields <em>Description</em> and <em>Parameter String</em></strong></p>
+<p><img src="24.notification_3.png" alt="alt"></p>
+<p>The history of messages sent to specific events can be viewed at <em>Job Queue Log Entries</em>. Journal contains the following fields:</p>
+<ul>
+<li>Status – in which event is at the moment of checking - successfully, happens, error;</li>
+<li>User ID – who has started this event process;</li>
+<li>Object Type to Run - specifies the type of the object that is to be run for the job;</li>
+<li>Start Date/Time;</li>
+<li>End Date/Time;</li>
+<li>Error Message – if the status is <em>Error</em>.</li>
 </ul>
 </article>
           </div>
