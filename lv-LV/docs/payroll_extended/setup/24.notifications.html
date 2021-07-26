@@ -123,14 +123,14 @@
 Jāsagatavo MS Word dokuments, kurā sagatavots ziņojuma teksts. Mainīgā teksta vietā ierakstīt mainīgā dokumenta lauka kodu ar procentiem. Piemēram:</p>
 <p><img src="24.notification_1.png" alt="alt"></p>
 <p><strong>Jāpievērš uzmanība, ka locījumi nav pieejami.</strong> Dokumentu laiku nosaukumi ir pieejami pie konkrētā ziņojuma veida sarakstā <em>Ziņojumu notikumu uzstādījumi</em>, noklikšķinot uz pogas <em>Dokumentu lauki</em>.</p>
-<p>Sagatavotu failu saglabājiet ar paplašinājumu .htm.</p>
+<p>Sagatavotu failu saglabājiet ar paplašinājumu <em>Web Page, Filtered (.htm,.html)</em></p>
 <h2 id="smtp-pasta-uzstādījumi">SMTP pasta uzstādījumi</h2>
 <p>Lai būtu iespējams sūtīt ziņojumus no sistēmas ir jāaizpilda <em>SMTP pasta uzstādījumi</em>, kas sastāv no sekojošiem laukiem:</p>
 <ul>
 <li>SMTP serveris – e-pasta pārsūtīšanas SMTP servera adrese</li>
-<li>Autentifikācija – autentifikācijas mehānisms (Anonīms – nav nepieciešams lietotāja ID un parole; NTLM – tiks izmantota Windows autentifikācija; Pamata – tiks izmantots formā norādītais lietotājs un parole.)</li>
-<li>Lietotāja ID – pamata autentifikācijas gadījumā;</li>
-<li>Parole - pamata autentifikācijas gadījumā.</li>
+<li>SMTP servera ports - norāda SMTP server portu. Noklusētā vērtība ir 25.</li>
+<li>Autentifikācija – anonīms</li>
+<li>Drošs savienojums – norāda, ja SMTP pasta servera uzstādīšana pieprasa drošu savienojumu, kas izmanto šifrēšanu vai drošības protokolu, piemēram, SSL</li>
 </ul>
 <p><img src="24.notification_3.png" alt="alt"></p>
 <h2 id="lietotāju-uzstādījumi">Lietotāju uzstādījumi</h2>
@@ -140,7 +140,7 @@ Jāsagatavo MS Word dokuments, kurā sagatavots ziņojuma teksts. Mainīgā teks
 <p>Procesu rindas veido sarakstā <em>Procesu rindu ieraksti</em>.
 Katram atsevišķam notikum jāizveido sava procesu rindas ieraksta karte, norādot <em>Izpildāmā objekta ID</em> - 70375502</p>
 <p><img src="24.notification_4.png" alt="alt"></p>
-<p><em>Procesa rindas ieraksti</em> kartes cilnē <em>Visp. info</em> var redzēt notikuma veidu, kuram var definēt periodiskumu. Jāpievērš uzmanība, ka laukiem Apraksts un Parametru virkne jābūt vienādiem. Lai definētu pašu notikumu, lietotājam ir jābūt MS Business Central programmēšanas zināšanām.</p>
+<p><em>Procesa rindas ieraksti</em> kartes cilnē <em>Visp. info</em> var redzēt notikuma veidu, kuram var definēt periodiskumu. Jāpievērš uzmanība, ka laukiem <em>Apraksts</em> un <em>Parametru virkne</em> jābūt vienādiem. Lai definētu pašu notikumu, lietotājam ir jābūt MS Business Central programmēšanas zināšanām.</p>
 <p>Cilnē <em>Periodiskums</em> definē ziņojumu sūtīšanas intervālu. Šo lietotājs var definēt pats. Definējot periodiskumu ir jāpievērš uzmanība, lai minūšu skaits no vienas izpildes līdz otrai  nav mazāks par vienu reizi, kas nepieciešams ziņojuma apstrādei.</p>
 <p><strong>Lai varētu izsūtīt izveidotos ziņojumu, sistēmai ir nepieciešams, lai Procesu rindas ierakstos būtu izveidota atsevišķa procesu rinda ar kodu <em>MSGSEND</em>, ko ieraksta laukos <em>Apraksts</em> un <em>Parametru virkne</em></strong></p>
 <p><img src="24.notification_5.png" alt="alt"></p>
