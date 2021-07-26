@@ -277,6 +277,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/elva_logo.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/elva_logo.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/elva_logo_big.png",
       "output": {
         "resource": {
@@ -4284,6 +4295,28 @@
         ".html": {
           "relative_path": "docs/support/toc.html",
           "hash": "mucYDbWMnuxfQkVBTg/EM/QM7q8KhwtkXrmc/ZSDQCo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/elva_logo.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "images/elva_logo.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/elva_logo_big.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/elva_logo_big.png"
         }
       },
       "is_incremental": false,
