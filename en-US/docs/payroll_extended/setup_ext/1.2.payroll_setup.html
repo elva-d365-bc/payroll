@@ -94,12 +94,40 @@
 <td>Indicates salary currency code. In case salary are calculated in local currency, the field should be left blank.</td>
 </tr>
 <tr>
-<td>Salary Pay Date</td>
-<td>Indicates the payment date of salary, what will be indicated in the Salary list header and also in the SRS Social tax report.</td>
+<td>Automatically Create Employee Position</td>
+<td>Enable if a new employee position card should be created automatically.</td>
 </tr>
 <tr>
-<td>Advance Pay Date</td>
-<td>Specifies the date of the advance pay that appears in the header of the advance list.</td>
+<td>Department Dimension Code</td>
+<td>Indicates the default dimension code.</td>
+</tr>
+<tr>
+<td>Pay Slip Send Mail By</td>
+<td>Indicates how the salary pay slip sent – via Outlook or SMTP protocol. In case of SMTP following fields shall be filled in.</td>
+</tr>
+<tr>
+<td>Pay Slip Sender Name</td>
+<td>Indicates the sender name who sends out salary pay slips.</td>
+</tr>
+<tr>
+<td>Pay Slip Sender E-Mail</td>
+<td>Indicates e-mail, through which salary pay slips are sent out.</td>
+</tr>
+<tr>
+<td>No Justif. Absence 12M Check for Average</td>
+<td>This feature works if “Curr. Month in Avg. Gain if Period not Full” is enabled. If the feature is not enabled, the current month is not picked up if the eligible absence is less than 12 months, but in case if absence is more than 12 months, the current month will be included in the calculation of the average earnings.</td>
+</tr>
+<tr>
+<td>Use Curr. Month in Avg. Gain if Period not Full</td>
+<td>Enable if in case of half period, current month should be included in the average gain calculation.</td>
+</tr>
+<tr>
+<td>Average Gain Precision</td>
+<td>Indicates accuracy (decimal places) with average earnings is calculated.</td>
+</tr>
+<tr>
+<td>Average Abs. Code For Report</td>
+<td>Absence code for average earnings.</td>
 </tr>
 <tr>
 <td>Bank Holiday Coef.</td>
@@ -126,18 +154,6 @@
 <td>Is used for relief to switch to another level.</td>
 </tr>
 <tr>
-<td>No Justif. Absence 12M Check for Average</td>
-<td>This feature works if “Curr. Month in Avg. Gain if Period not Full” is enabled. If the feature is not enabled, the current month is not picked up if the eligible absence is less than 12 months, but in case if absence is more than 12 months, the current month will be included in the calculation of the average earnings.</td>
-</tr>
-<tr>
-<td>Use Curr. Month in Avg. Gain if Period not Full</td>
-<td>If enabled, the system for average earnings calculation firstly checks the previous 6 calendar months. If there have been working hours in the previous 6 calendar months, the system checks the first calendar month (From this 6-month period). If there have been no hours in the first month - the system considers that it is a part-period and for the average earnings calculation is also used the current month. If in the first month has been working hours - the average earnings calculation includes data from previous 6 calendar months. If there have been no working hours in the previous 6 calendar months, the system checks the previous 12 calendar months. <br>If working hours have been in the previous 12 calendar months, the system checks the first calendar month (from this 12-month period). If there have been no hours in the first month - the system considers that it is a part-period and the current month is also used for calculating average earnings. If there have been hours in the first month - the previous 12 calendar months are used for calculating average earnings. If there have been no working hours in the previous 12 calendar months, the system will use only the current month data for calculating the average earnings. <br>If there have been no working hours in the previous 12 calendar months, as well as the current month - the minimum salary of the previous 6 calendar months will be used to calculate the average earnings. <br> <strong>Example:</strong> In period from 01.01.2020 to 31.01.2020 employee has a sick list B. From 01.02.2020 till 30.06.2020 employee has hours worked. From 06.07.2020 till 12.07.2020 employee has been on vacation. So as in 01.2020. employee had a sick list B (and haven't been worked), system treats it as not full period, and for calculation of average gain is used a period starting from 02.2020 till 07.2020 (including the current month gain).</td>
-</tr>
-<tr>
-<td>Average Gain Precision</td>
-<td>Indicates accuracy (decimal places) with average earnings is calculated.</td>
-</tr>
-<tr>
 <td>Default Calendar</td>
 <td>Calendar stated by legislation for 5 Business Day week.</td>
 </tr>
@@ -146,28 +162,20 @@
 <td>Calendar stated by legislation for 6 Business Day week.</td>
 </tr>
 <tr>
-<td>Employers Soc. Tax Acc. Type</td>
-<td>Specifies the type of account in which the calculated employer's social tax will be posted.</td>
+<td>No Uncalc. Relief Transfer</td>
+<td>Enables if inappropriate reliefs don't need to be carried over to the next month's salary calculations;  Inappropriate reliefs are carried over through the component register, that is created at the moment of calculation . If at the time of calculation there was a sign that you do not need to carry out inappropriate relief, then there will be no component registry record and next month they will not be taken into account.</td>
 </tr>
 <tr>
-<td>Employers Soc. Tax Acc. No.</td>
-<td>Indicates an account in which the calculated employer's social tax will be posted.</td>
+<td>Compensated Bank Holiday Hours Enabled</td>
+<td>Enable solution when the system can compensate the hours worked as holiday hours with a free day or additional vacation day</td>
 </tr>
 <tr>
-<td>Automatically Create Employee Position</td>
-<td>Enable if a new employee position card should be created automatically.</td>
-</tr>
-<tr>
-<td>Bank Journal Template Name</td>
-<td>Indicates the journal through which payroll payments from the bank will be made.</td>
+<td>Compens.Bank Holiday Hours For Empl./Terminat.</td>
+<td>Works only if function <em>Compensated Bank Holiday Hours Enabled</em> is enabled</td>
 </tr>
 <tr>
 <td>Child Care Absence Filter</td>
 <td>The appropriate absence code.</td>
-</tr>
-<tr>
-<td>Average Abs. Code For Report</td>
-<td>Absence code for average earnings.</td>
 </tr>
 <tr>
 <td>Absence Code for Correction</td>
@@ -190,20 +198,32 @@
 <td>Indicates the default one-day hours, who is used in compensation calculations, also in average gain.</td>
 </tr>
 <tr>
-<td>Pay Slip Send Mail By</td>
-<td>Indicates how the salary pay slip sent – via Outlook or SMTP protocol. In case of SMTP following fields shall be filled in.</td>
+<td>Allow Detailed Payment Posting</td>
+<td>The mark in this field indicates that the salary payment will be recorded in detail, not grouped all in one amount. Salary payments are exported to payment journal and the user can post with a standard posting for each employee separately. In this case, in the general ledger can be seen each employees' earnings. Therefore, a second accounting feature for salary is provided, which can group by dimensions and then post the payments.</td>
 </tr>
 <tr>
-<td>Pay Slip Sender Name</td>
-<td>Indicates the sender name who sends out salary pay slips.</td>
+<td>Employers Soc. Tax Acc. Type</td>
+<td>Specifies the type of account in which the calculated employer's social tax will be posted.</td>
 </tr>
 <tr>
-<td>Pay Slip Sender E-Mail</td>
-<td>Indicates e-mail, through which salary pay slips are sent out.</td>
+<td>Employers Soc. Tax Acc. No.</td>
+<td>Indicates an account in which the calculated employer's social tax will be posted.</td>
 </tr>
 <tr>
-<td>Payroll Role ID</td>
-<td>Indicates the role center, what allows to see all the information in employees card. Indicates only in case if users are granted with full or partial access.</td>
+<td>Salary Pay Date</td>
+<td>Indicates the payment date of salary, what will be indicated in the Salary list header and also in the SRS Social tax report.</td>
+</tr>
+<tr>
+<td>Advance Pay Date</td>
+<td>Specifies the date of the advance pay that appears in the header of the advance list.</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Bank Journal Template Name</td>
+<td>Indicates the journal through which payroll payments from the bank will be made.</td>
 </tr>
 <tr>
 <td>Next period Deduction Component</td>
@@ -212,18 +232,6 @@
 <tr>
 <td>No System Component Registers</td>
 <td>Indicates if in the salary calculations shall not be used the system-generated component registry entries. In case when the adjustments are required, but the function is enabled, when calculating, the changes are displayed, but the registry will not be built.</td>
-</tr>
-<tr>
-<td>Allow Detailed Payment Posting</td>
-<td>The mark in this field indicates that the salary payment will be recorded in detail, not grouped all in one amount. Salary payments are exported to payment journal and the user can post with a standard posting for each employee separately. In this case, in the general ledger can be seen each employees' earnings. Therefore, a second accounting feature for salary is provided, which can group by dimensions and then post the payments.</td>
-</tr>
-<tr>
-<td>No Uncalc. Relief Transfer</td>
-<td>enables if inappropriate reliefs don't need to be carried over to the next month's salary calculations;  Inappropriate reliefs are carried over through the component register, that is created at the moment of calculation . If at the time of calculation there was a sign that you do not need to carry out inappropriate relief, then there will be no component registry record and next month they will not be taken into account.</td>
-</tr>
-<tr>
-<td>Department Dimension Code</td>
-<td>Indicates the default dimension code.</td>
 </tr>
 <tr>
 <td>Schedule by Default</td>
