@@ -539,7 +539,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_base/setup/2.1.payroll_acc.html",
-          "hash": "ZmZ9GL5netZYQ7BfC1FJH40M0/KZHIawh/Wtf5gG7Lw="
+          "hash": "jybDJaIJosVkR56XLIG7+S7lIaZshARiYUWzHOwZH/U="
         }
       },
       "is_incremental": false,
@@ -551,7 +551,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_base/setup/2.2.payroll_acc.html",
-          "hash": "++HfOH1zDI6Xengam8q3nv7cj2ODswMwuHK9N5CkM7Q="
+          "hash": "sxwsOmezck1DiY1nkDXuZ6qabee4nwav/d8XhwVVlIQ="
         }
       },
       "is_incremental": false,
@@ -696,7 +696,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_base/setup/3.1.payroll_calc.html",
-          "hash": "+y+8WFzFvxZvdUrWqX1gYLiTk5zlYhu+1qv6b2pLubc="
+          "hash": "K1Feqp73U1nLAppgpot2M/5MGlT4x8TePQeKfT0DDFE="
         }
       },
       "is_incremental": false,
@@ -708,7 +708,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_base/setup/3.absence.html",
-          "hash": "W6rDAb8WNTffMmZP8+BMs4kGPVNv5qyTtgCtOuM79jE="
+          "hash": "nSpwN5xcpfzP/dV9epB1v6dT15l8NfYTFT17Ee9AjWE="
         }
       },
       "is_incremental": false,
@@ -720,7 +720,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_base/setup/3.calendars.html",
-          "hash": "wP/w8MtrRqdcd74484F+VWFZg5tQPUlU1AF3q0b+SSE="
+          "hash": "FvmvItPMzgjSgW/RoY/J1JgyDG7fK05jmGQTJeq2IO8="
         }
       },
       "is_incremental": false,
@@ -732,7 +732,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_base/setup/3.payroll_calc.html",
-          "hash": "LJhy4MGxfgHk7VWU9b4L+dRKLaBOyOMTTxdJW7IyKWY="
+          "hash": "QMLioiaDhadnceBtcjM9/6MOOb7EwSJ0gpH2kLexSec="
         }
       },
       "is_incremental": false,
@@ -910,7 +910,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_base/setup/5.empl_info.html",
-          "hash": "0P7Z9NgjO93r2I/3kM2fkOXEE6s7WPikVa+03uOTa9k="
+          "hash": "kIG4CIzy0K8AxRLuuHH4tVnogkdwiOTCSYQd4Pp1CGI="
         }
       },
       "is_incremental": false,
