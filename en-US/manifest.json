@@ -563,7 +563,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_base/setup/2.payroll_acc.html",
-          "hash": "C6SydEaq0RVH7oceAEfBoWmFqVD1EtuBcCS/ye5MP3c="
+          "hash": "joCWw46IOrE0dyjJe6WDVrJVBRxwB2WcO0+ctt8XiHY="
         }
       },
       "is_incremental": false,
@@ -708,7 +708,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_base/setup/3.absence.html",
-          "hash": "nIF8JmIiRT/UXQviguOphxDS0rSqCIAOGYE3PybXZ4U="
+          "hash": "W6rDAb8WNTffMmZP8+BMs4kGPVNv5qyTtgCtOuM79jE="
         }
       },
       "is_incremental": false,
@@ -4237,7 +4237,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/setup_ext/1.2.payroll_setup.html",
-          "hash": "bC/PwbBARwRSTm89T3xOH7cEQPVnZCh8IOkePU+Yqck="
+          "hash": "nHpgxH7XUFuKWpPP8QC/bcP1KgmET+khlb9/Z/f7rWo="
         }
       },
       "is_incremental": false,

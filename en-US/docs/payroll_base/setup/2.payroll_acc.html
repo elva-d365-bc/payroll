@@ -81,7 +81,6 @@
 
 <p>When you apply the configuration package, the default settings are already complete, but we recommend that you review all the settings to suit your business needs.</p>
 <h3 id="tab-general">Tab: <em>General</em></h3>
-<p><img src="2.payroll_acc_1.png" alt="alt"></p>
 <table>
 <thead>
 <tr>
@@ -95,12 +94,40 @@
 <td>Specifies the payroll currency code. If salaries are calculated in local currency, leave the field blank.</td>
 </tr>
 <tr>
-<td>Salary Pay Date</td>
-<td>Specifies the payout date that appears on the payroll header and in the VSOAI report for State Revenue Service.</td>
+<td>Automatically Create Employee Position</td>
+<td>If there is a check mark in this field, then when creating a new employee, a position card will be created automatically.</td>
 </tr>
 <tr>
-<td>Advance Pay Date</td>
-<td>Specifies the advance payment date that appears on the advance list header.</td>
+<td>Department Dimension Code</td>
+<td>Specifies the default dimension code</td>
+</tr>
+<tr>
+<td>Pay Slip Send Mail By</td>
+<td>Indicates how to send salary slips - Outlook or SMTP protocol. In the case of SMTP, fill in the following fields.</td>
+</tr>
+<tr>
+<td>Pay Slip Sender Name</td>
+<td>Indicates the name that sends out pay slips.</td>
+</tr>
+<tr>
+<td>Pay Slip Sender E-Mail</td>
+<td>Specifies the e-mail through which payroll notes are sent.</td>
+</tr>
+<tr>
+<td>No Justif Absence 12M Check for Average</td>
+<td>This option works if the second feature “Use Curr. Month in Avg. Gain if Period not Full&quot;. If the attribute is not inserted, the current month is not taken if the duration of the eligible absence is less than 12 months, but if the duration of the absence is more than 12 months, the current month will be included in the calculation of average earnings.</td>
+</tr>
+<tr>
+<td>Use Curr. Month in Avg. Gain if Period not Full</td>
+<td>Enable if in case of half period, current month should be included in the average gain calculation.</td>
+</tr>
+<tr>
+<td>Average Gain Precision</td>
+<td>Indicates the precision (decimal point) with which the average earnings will be used in the calculations.</td>
+</tr>
+<tr>
+<td>Average Abs. Code For Report</td>
+<td>Absence code for average earnings.</td>
 </tr>
 <tr>
 <td>Bank Holiday Coef</td>
@@ -127,18 +154,6 @@
 <td>Used to facilitate the transition to another level.</td>
 </tr>
 <tr>
-<td>No Justif Absence 12M Check for Average</td>
-<td>This option works if the second feature “Use Curr. Month in Avg. Gain if Period not Full&quot;. If the attribute is not inserted, the current month is not taken if the duration of the eligible absence is less than 12 months, but if the duration of the absence is more than 12 months, the current month will be included in the calculation of average earnings.</td>
-</tr>
-<tr>
-<td>Use Curr. Month in Avg. Gain if Period not Full</td>
-<td>If this is activated, the System will first check the previous 6 calendar months to calculate the average earnings. If there have been working hours in the previous 6 calendar months, the system checks the first calendar month (from this 6-month period). If there were no hours in the first month - the system considers this to be an incomplete period and the current month is also used to calculate the average earnings. If there have been hours in the first month - the previous 6 calendar months are used to calculate the average earnings. If there have been no working hours in the previous 6 calendar months, the system checks the previous 12 calendar months. If there have been working hours in the previous 12 calendar months, the System checks the first calendar month (from this 12-month period). If there were no hours in the first month - the System considers that this is an incomplete period and the current month is also used to calculate the average earnings. If there have been hours in the first month - the previous 12 calendar months are used to calculate the average earnings. If there have been no working hours in the previous 12 calendar months, then the System uses only the data of the current month to calculate the average earnings. If there have been no working hours in the previous 12 calendar months, as well as in the current month - the minimum wage of the previous 6 calendar months will be used to calculate the average earnings.</td>
-</tr>
-<tr>
-<td>Average Gain Precision</td>
-<td>Indicates the precision (decimal point) with which the average earnings will be used in the calculations.</td>
-</tr>
-<tr>
 <td>Default Calendar</td>
 <td>National calendar for week of 5 workdays.</td>
 </tr>
@@ -147,28 +162,20 @@
 <td>National calendar for week of 6 workdays.</td>
 </tr>
 <tr>
-<td>Employers Soc. Tax Acc. Type</td>
-<td>Specifies the account type to which the calculated employer social tax will be posted.</td>
+<td>No Uncalc. Relief Transfer</td>
+<td>Indicate if you do not want that unapplied reliefs will be carried over to the following months' salary calculations.  Unapplied reliefs are transferred through the entries in Component Register, which is created at the time of calculation. If at the time of the calculation there was an indication that the unapplied reliefs should not be carried over, then there will be no entry in the Component Register and they will not be taken into account next month.</td>
 </tr>
 <tr>
-<td>Employers Soc. Tax Acc. No.</td>
-<td>Specifies the account to which the calculated employer's social tax will be posted.</td>
+<td>Compensated Bank Holiday Hours Enabled</td>
+<td>Enable solution when the system can compensate the hours worked as holiday hours with a free day or additional vacation day.</td>
 </tr>
 <tr>
-<td>Automatically Create Employee Position</td>
-<td>If there is a check mark in this field, then when creating a new employee, a position card will be created automatically.</td>
-</tr>
-<tr>
-<td>Bank Journal Template Name</td>
-<td>Indicates the journal through which salary payments will be made from the bank account.</td>
+<td>Compens.Bank Holiday Hours For Empl./Terminat.</td>
+<td>Works only if function <em>Compensated Bank Holiday Hours Enabled</em> is enabled.</td>
 </tr>
 <tr>
 <td>Child Care Absence Filter</td>
 <td>The corresponding absence code.</td>
-</tr>
-<tr>
-<td>Average Abs. Code For Report</td>
-<td>Absence code for average earnings.</td>
 </tr>
 <tr>
 <td>Absence Code for Correction</td>
@@ -191,20 +198,28 @@
 <td>Indicate the default number of hours per day used in the compensation calculation as well as the average earnings.</td>
 </tr>
 <tr>
-<td>Pay Slip Send Mail By</td>
-<td>Indicates how to send salary slips - Outlook or SMTP protocol. In the case of SMTP, fill in the following fields.</td>
+<td>Allow Detailed Payment Posting</td>
+<td>A check mark in this field indicates that the salary payment will be posted in detail, rather than grouping everything in one amount. Salary payments are exported to the payment journal and can be posted by the user with standard posting for each employee individually. In this case, in the general ledger can be seen how much each employee receives. Therefore, a second accounting function is provided for salaries, which can be grouped by dimension and then booked into payments.</td>
 </tr>
 <tr>
-<td>Pay Slip Sender Name</td>
-<td>Indicates the name that sends out pay slips.</td>
+<td>Employers Soc. Tax Acc. Type</td>
+<td>Specifies the account type to which the calculated employer social tax will be posted.</td>
 </tr>
 <tr>
-<td>Pay Slip Sender E-Mail</td>
-<td>Specifies the e-mail through which payroll notes are sent.</td>
+<td>Employers Soc. Tax Acc. No.</td>
+<td>Specifies the account to which the calculated employer's social tax will be posted.</td>
 </tr>
 <tr>
-<td>Payroll Role ID</td>
-<td>Indicate the role of the salary that gives the right to see all the information in the employee's card. Indicated only if a user partition with full and partial access is required.</td>
+<td>Salary Pay Date</td>
+<td>Specifies the payout date that appears on the payroll header and in the VSOAI report for State Revenue Service.</td>
+</tr>
+<tr>
+<td>Advance Pay Date</td>
+<td>Specifies the advance payment date that appears on the advance list header.</td>
+</tr>
+<tr>
+<td>Bank Journal Template Name</td>
+<td>Indicates the journal through which salary payments will be made from the bank account.</td>
 </tr>
 <tr>
 <td>Next period Deduction Component</td>
@@ -214,22 +229,9 @@
 <td>No System Component Registers</td>
 <td>Indicates if you do not want to use system-generated Component Register entries in payroll calculations. In case adjustments are required and the &quot;Do not use&quot; tick is enabled, notifications of adjustments are displayed during the calculation, but the register entries will not be created.</td>
 </tr>
-<tr>
-<td>Allow Detailed Payment Posting</td>
-<td>A check mark in this field indicates that the salary payment will be posted in detail, rather than grouping everything in one amount. Salary payments are exported to the payment journal and can be posted by the user with standard posting for each employee individually. In this case, in the general ledger can be seen how much each employee receives. Therefore, a second accounting function is provided for salaries, which can be grouped by dimension and then booked into payments.</td>
-</tr>
-<tr>
-<td>No Uncalc. Relief Transfer</td>
-<td>Indicate if you do not want that unapplied reliefs will be carried over to the following months' salary calculations.  Unapplied reliefs are transferred through the entries in Component Register, which is created at the time of calculation. If at the time of the calculation there was an indication that the unapplied reliefs should not be carried over, then there will be no entry in the Component Register and they will not be taken into account next month.</td>
-</tr>
-<tr>
-<td>Department Dimension Code</td>
-<td>Specifies the default dimension code</td>
-</tr>
 </tbody>
 </table>
 <h3 id="tab-numbering">Tab: <em>Numbering</em></h3>
-<p><img src="2.payroll_acc_2.png" alt="alt"></p>
 <table>
 <thead>
 <tr>
@@ -281,7 +283,6 @@
 </tbody>
 </table>
 <h3 id="tab-components">Tab: <em>Components</em></h3>
-<p><img src="2.payroll_acc_3.png" alt="alt"></p>
 <table>
 <thead>
 <tr>
@@ -309,7 +310,6 @@
 </tbody>
 </table>
 <h3 id="tab-reports">Tab: <em>Reports</em></h3>
-<p><img src="2.payroll_acc_4.png" alt="alt"></p>
 <table>
 <thead>
 <tr>
