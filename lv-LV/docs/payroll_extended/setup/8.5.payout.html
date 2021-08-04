@@ -177,53 +177,19 @@ Algas grāmatošanas buferis ģenerē datus no sekojošiem avotiem:</p>
 </ul>
 <p>Algu sarakstu statusu un grāmatošanas faktu var redzēt sarakstā <em>Algu saraksti</em>.</p>
 <h2 id="algas-lapiņu-izsūtne">Algas lapiņu izsūtne</h2>
-<p>Lai no sistēmas būtu iespējams sūtīt algas lapiņas, ir jāaizpilda <em>SMTP pasta uzstādījumi</em>, kas pieejami ievadot nosaukumu sistēmas meklētājā.</p>
-<p>SMTP pasta uzstādījumi satur sekojošus laukus:</p>
-<table>
-<thead>
-<tr>
-<th>Lauka nosaukums</th>
-<th>Apraksts</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>SMTP serveris</td>
-<td>E-pasta pārsūtīšanas SMTP servera adrese.</td>
-</tr>
-<tr>
-<td>SMTP servera ports</td>
-<td>Norāda SMTP server portu. Noklusētā vērtība ir 25.</td>
-</tr>
-<tr>
-<td>Autentifikācija</td>
-<td>Autentifikācijas mehānisms: <br><em>Anonīms</em> – nav nepieciešams lietotāja ID un parole.</td>
-</tr>
-<tr>
-<td>Lietotāja ID</td>
-<td>Ieraksta, ja iespējams norādīt Pamata autentifikāciju.</td>
-</tr>
-<tr>
-<td>Parole</td>
-<td>Ieraksta, ja iespējams norādīt Pamata autentifikāciju.</td>
-</tr>
-<tr>
-<td>Drošs savienojums</td>
-<td>Norāda, ja SMTP pasta servera uzstādīšana pieprasa drošu savienojumu, kas izmanto šifrēšanu vai drošības protokolu, piemēram, SSL.</td>
-</tr>
-<tr>
-<td>Sūtīt lietotāja vārdā</td>
-<td>Norāda tā lietotāja ID, kura vārdā e-pasta ziņojumi tiks sūtīti. Piemēram, tas var noderēt, ja vēlaties, lai vairākas personas varētu nosūtīt ziņojumus, kas šķietami nāk no viena sūtītāja, piemēram, sales@companyname.</td>
-</tr>
-<tr>
-<td>Atļaut sūtītāja aizvietošanu</td>
-<td>Norāda, ka SMTP serveris ļauj mainīt sūtītāja vārdu un e-pastu.</td>
-</tr>
-</tbody>
-</table>
-<p>Papildus Algas uzstādījumi ir jābūt aizpildītiem laukiem <em>Algas lapiņas izsūtītāja vārds</em> un <em>Algas lapiņas izsūtītāja e-pasts</em></p>
-<p>Algu sarakstā ir saīsne uz funkciju algas lapiņu izdrukai. Ja nepieciešams darbiniekiem izsūtīt algas lapiņas, sistēma izmantos privāto e-pastu, kas norādīts darbinieka kartiņas cilnē <em>Adrese un kontaktinformācija</em>.</p>
-<p>Klikšķiniet uz pogām <em>Pārskats</em> (<img src="count1.png" alt="alt">) - <em>Algas lapiņa</em> (<img src="count2.png" alt="alt">). Drukāšanas iestatījumu logā izvēlieties <em>Sūtīt e-pastā</em> (<img src="count3.png" alt="alt">), ja nepieciešams izsūtīt tikai atsevišķiem darbiniekiem, izvēlieties darbiniekus (<img src="count4.png" alt="alt">) un norādiet periodu (<img src="count5.png" alt="alt">), par kādu vēlaties izsūtīt algas lapiņas.</p>
+<p>Lai no sistēmas būtu iespējams sūtīt algas lapiņas uz e-pastiem, ir nepieciešami sekojoši uzstādījumi:</p>
+<p><strong>E-pasta Konts</strong></p>
+<p>Nepieciešams izveidot e-pasta kontu. Sistēmas meklētājā ierakstiet <em>E-pastu Konti</em> un izvēlieties to no saraksta. Lai izveidotu jaunu kontu, jānospiež pogas <em>Jauns</em> - <em>Pievienot e-pasta kontu</em>. Lai sūtītu e-pastus, no algas moduļa jāizvēlas Konta tips <em>SMTP - Use SMTP to send emails</em>.
+<img src="24.notification_6.png" alt="alt"></p>
+<p>Aizpildiet SMTP uzstādījumus:
+<img src="24.notification_7.png" alt="alt"></p>
+<p>Nākamajā solī var pārbaudīt e-pastu , kā arī iestatīt šo kontu kā noklusēto:
+<img src="24.notification_8.png" alt="alt"></p>
+<p><strong>Algas uzstādījumi</strong></p>
+<p>Algas lapiņu izsūtīšanai ir nepieciešams aizpildīt informāciju <em>Algas uzstādījumos</em>:
+<img src="24.notification_10.png" alt="alt"></p>
+<p>Sistēma algas lapiņas nosūtīs uz privāto e-pastu, kas norādīts darbinieka kartiņas cilnē <em>Adrese un kontaktinformācija</em>. Sūtīšana notiek, palaižot atskaiti Algas lapiņa, ieliekot ķeksi Sūtīt e-pastā.
+Klikšķiniet uz pogām <em>Pārskats</em> (<img src="count1.png" alt="alt">) - <em>Algas lapiņa</em> (<img src="count2.png" alt="alt">). Drukāšanas iestatījumu logā izvēlieties <em>Sūtīt e-pastā</em> (<img src="count3.png" alt="alt">), ja nepieciešams izsūtīt tikai atsevišķiem darbiniekiem, izvēlieties darbiniekus (<img src="count4.png" alt="alt">) un norādiet periodu (<img src="count5.png" alt="alt">), par kādu vēlaties izsūtīt algas lapiņas.</p>
 <p><img src="8.5.payout_8.png" alt="alt"></p>
 </article>
           </div>
