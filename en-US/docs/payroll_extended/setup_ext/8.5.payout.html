@@ -178,51 +178,18 @@ The payroll accounting buffer generates data from the following sources:</p>
 <p><img src="8.5.payout_7.png" alt="alt"></p>
 <p>You can see the status of the salary lists and the fact of posting in the list <em>Salary List</em>.</p>
 <h2 id="sending-out-salary-pay-slips">Sending out salary Pay Slips</h2>
-<p>In order to be able to send salary pay slips from the system, <em>SMTP Mail Setup</em> settings must be filled in. Setup is available by entering the name in the system search function.</p>
-<table>
-<thead>
-<tr>
-<th>Field name</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>SMTP Server</td>
-<td>Email forwarding SMTP server address.</td>
-</tr>
-<tr>
-<td>SMTP Server Port</td>
-<td>Specifies the SMTP server port. The default value is 25.</td>
-</tr>
-<tr>
-<td>Authentication</td>
-<td>Authentication mechanism: <br><em>Anonymous</em> – not required user ID and password;    <br><em>NTLM</em> – required Windows authentication; <br><em>Basic</em> – required user and password specified in the form.</td>
-</tr>
-<tr>
-<td>User ID</td>
-<td>Enter if Basic authentication is selected.</td>
-</tr>
-<tr>
-<td>Password</td>
-<td>Enter if Basic Authentication is selected.</td>
-</tr>
-<tr>
-<td>Secure Connection</td>
-<td>Indicates if the SMTP mail server installation requires a secure connection that uses encryption or a security protocol, for example, SSL.</td>
-</tr>
-<tr>
-<td>Send As</td>
-<td>Specifies the ID of the user on whose behalf the emails will be sent. For example, this can be useful if you want multiple people to be able to send messages that appear to come from the same sender.</td>
-</tr>
-<tr>
-<td>Allow Sender Substitution</td>
-<td>Indicates that the SMTP server allows you to change the sender's name and e-mail.</td>
-</tr>
-</tbody>
-</table>
-<p>Additionally in the Payroll Setup must be filled fields <em>Pay Slip Sender Name</em> and <em>Pay Slip Sender E-Mail</em></p>
-<p>The salary list contains a shortcut to the function for printing pay slips. If it is necessary to send pay slips to employees, the system will use the private e-mail specified in the employee card tab <em>Address &amp; Contact</em>.</p>
+<p>To send salary leaves on emails from the system, the following settings are required:</p>
+<p><strong>Email Accounts</strong></p>
+<p>Need to create an email account. Type in the system search function <em>Email Accounts</em> and select it from the list. To create a new account, press the buttons <em>New</em> - <em>Add an email account</em>. To send emails from payroll module, Account type should be selected <em>SMTP - Use SMTP to send emails</em>.
+<img src="24.notification_6.png" alt="alt"></p>
+<p>Complete SMTP setup:
+<img src="24.notification_7.png" alt="alt"></p>
+<p>In the following step, you can check e-mail, as well as set this account as default:
+<img src="24.notification_8.png" alt="alt"></p>
+<p><strong>Payroll Setup</strong></p>
+<p>For the sending out the pay slips, following information are required to complete in <em>Payroll Setup</em>:
+<img src="24.notification_10.png" alt="alt"></p>
+<p>System pay slips will send to the private e-mail specified in the employee cards tab <em>Address &amp; Contact</em>. Sending starts by running a report <em>Pay Slip</em> and by inserting the checkmark in the field <em>Send by e-mail</em>.</p>
 <p><img src="8.5.payout_8.png" alt="alt"></p>
 <p>Click on the buttons <em>Report</em> (<img src="count1.png" alt="alt">) - <em>Pay Slip</em> (<img src="count2.png" alt="alt">). In the print settings window, select <em>Send by e-mail</em> (<img src="count3.png" alt="alt">), if you only need to send to selected employees, choose employees (<img src="count4.png" alt="alt">) and specify the period (<img src="count5.png" alt="alt">), for what you want to send pay slips.</p>
 </article>

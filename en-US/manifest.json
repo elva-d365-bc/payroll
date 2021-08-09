@@ -281,7 +281,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_base/setup/12.salary_pay.html",
-          "hash": "4oKUiRziAjHzEozo6QMCcMeP7+7GFDOM5X6mi45l4Fk="
+          "hash": "QGgP4WwDu8u95i0c6HqcPSiLIAqn2V6sIW6t2Gs3xQY="
         }
       },
       "is_incremental": false,
@@ -685,6 +685,50 @@
       "output": {
         "resource": {
           "relative_path": "docs/payroll_base/setup/2.payroll_acc_9.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_base/setup/24.notification_10.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/setup/24.notification_10.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_base/setup/24.notification_6.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/setup/24.notification_6.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_base/setup/24.notification_7.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/setup/24.notification_7.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_base/setup/24.notification_8.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/setup/24.notification_8.png"
         }
       },
       "is_incremental": false,
@@ -4002,6 +4046,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/setup_ext/24.notification_10.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/setup_ext/24.notification_10.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/payroll_extended/setup_ext/24.notification_2.png",
       "output": {
         "resource": {
@@ -4039,6 +4094,39 @@
       "output": {
         "resource": {
           "relative_path": "docs/payroll_extended/setup_ext/24.notification_5.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/setup_ext/24.notification_6.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/setup_ext/24.notification_6.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/setup_ext/24.notification_7.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/setup_ext/24.notification_7.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/setup_ext/24.notification_8.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/setup_ext/24.notification_8.png"
         }
       },
       "is_incremental": false,
@@ -4901,7 +4989,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/setup_ext/8.5.payout.html",
-          "hash": "Hpuxp+QzMaDnlLVQPXJaxCOOb1kCWOM9XrrD7TkYILk="
+          "hash": "rgjbGjKm+NUQWYx9LLXV9f3BT2DX7wgtLbY7cS9nmMg="
         }
       },
       "is_incremental": false,
