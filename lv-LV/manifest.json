@@ -529,7 +529,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_base/setup/12.salary_pay.html",
-          "hash": "bJqm2DFLrBHWPrpUXzRwnMzzAwgOU9m/LIfFgO5nFTk="
+          "hash": "eLKaNVy1ppTpFoK81WfEQD6RNfYmWtHeud59Xhs5NjQ="
         }
       },
       "is_incremental": false,
@@ -944,6 +944,50 @@
       "output": {
         "resource": {
           "relative_path": "docs/payroll_base/setup/2.payroll_acc_9.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_base/setup/24.notification_10.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/setup/24.notification_10.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_base/setup/24.notification_6.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/setup/24.notification_6.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_base/setup/24.notification_7.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/setup/24.notification_7.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_base/setup/24.notification_8.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/setup/24.notification_8.png"
         }
       },
       "is_incremental": false,
@@ -1458,6 +1502,17 @@
       "output": {
         "resource": {
           "relative_path": "docs/payroll_base/setup/6.empl_add_info8.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_base/setup/8.5.payout_8.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/setup/8.5.payout_8.png"
         }
       },
       "is_incremental": false,
@@ -3792,7 +3847,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/setup/8.5.payout.html",
-          "hash": "TK2kdSgYmUYGi1eOe9UNcdZ2o7naM/p7HRYIbRPIkco="
+          "hash": "9AmQJrajDjcNByxsdnhz9lS08Rl7uUCtlRNhycAlsGw="
         }
       },
       "is_incremental": false,
