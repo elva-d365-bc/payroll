@@ -1781,7 +1781,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/faq.html",
-          "hash": "/oT5KxISOAcg4HmnmyH0HdxvQjV8R3wCSelIIAPe0R8="
+          "hash": "BIctegCQoWVQXvHNjEuY8Nb3aDpNdOHctyrJ+fnZ8f8="
         }
       },
       "is_incremental": false,
@@ -4130,12 +4130,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Toc",
       "source_relative_path": "docs/payroll_extended/toc.md",
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/toc.html",
-          "hash": "uF27NhuCP58Bp4tg6+tTF7aV8KY/IN9DvrvXAEUVM9U="
+          "hash": "CKmHai1NoRnRSqAm4w2LANV/JIDe/X6OT3bYIrrlbNs="
         }
       },
       "is_incremental": false,
