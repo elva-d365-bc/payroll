@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Slim&#299;bas lapu imports no EDS | Latvian Payroll </title>
+    <title>K&#257; s&#257;kt str&#257;d&#257;t | Latvian Payroll </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Slim&#299;bas lapu imports no EDS | Latvian Payroll ">
+    <meta name="title" content="K&#257; s&#257;kt str&#257;d&#257;t | Latvian Payroll ">
     <meta name="generator" content="docfx 2.58.0.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
@@ -77,20 +77,29 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="slimības-lapu-imports-no-eds">Slimības lapu imports no EDS</h1>
+<h1 id="kā-sākt-strādāt">Kā sākt strādāt</h1>
 
-<p>Lai katru mēnesi nevajadzētu vreģistrēt sistēmā slimības lapas manuāli, sistēmā ir nodrošināts slimības lapu imports.</p>
-<p>Importa sekmīgai norisei ir nepieciešami sekojoši uzstādījumi: algu Lomu centrs - <em>Administrēšana</em> - <em>Slimības lapu importa uzstādījumi</em>.
-Uzstādījumiem pieejami sekojoši lauki:</p>
+<p>Lai sāktu lietot Dynamics 365 Business Central Latvian Payroll Personnel Advanced, nav nepieciešams izvēlēties kādu specifisku lomu centru. Funkcionalitāte darbosies no jebkura lomu centra. Tomēr iesakām izmantot <em>LV Alga</em> lomu centru, lai sākuma lapā būtu pieejamas visas saīsnes ērtākai un ātrākai piekļuvei darbā ar algām.</p>
+<h2 id="konfigurācijas-pakotnes-attiecināšana">Konfigurācijas pakotnes attiecināšana</h2>
+<p>Latvian Payroll Personnel Advanced lietošanai nepieciešamie pamata uzstādījumi un kodi tiek izveidoti, attiecinot konfigurācijas pakotni.</p>
+<p>Lai ielādētu konfigurācijas pakotni, klikšķiniet uz pogas <em>Meklēt lapu vai atskaiti…</em> <img src="count1.png" alt="alt"> Tad ierakstiet meklēšanas logā <em>Konfigurācijas pakotnes</em> <img src="count2.png" alt="alt"> un izvēlieties to no piedāvātās izvēlnes <img src="count3.png" alt="alt">.</p>
+<p><img src="0.conf_pack.png" alt="alt"></p>
+<p>Konfigurācijas pakotnes loga rīkjoslā klikšķiniet uz pogām <em>Apstrādāt</em> <img src="count1.png" alt="alt"> - <em>Importēt pakotni</em> <img src="count2.png" alt="alt"> un izvēlieties attiecīgo pakotnes failu no jūsu failu glabātuves. Ar vienu klikšķi iezīmējiet ielādēto pakotni <img src="count3.png" alt="alt"> un noklikšķiniet uz pogām <em>Apstrādāt</em> <img src="count4.png" alt="alt"> un <em>Attiecināt pakotni</em> <img src="count5.png" alt="alt">.</p>
+<p><img src="0.conf_pack_1.png" alt="alt"></p>
+<h2 id="konfigurācijas-pakotnes-saturs">Konfigurācijas pakotnes saturs</h2>
+<p>Konfigurācijas pakotne ievada sistēmā sekojošu informāciju:</p>
 <ul>
-<li>Slimības lapu numuri – numuru sērija;</li>
-<li>Slimības lapas A prombūtnes kods – no kataloga Prombūtnes iemesli definēts prombūtnes kods slimības lapai A</li>
-<li>Slimības lapas B prombūtnes kods – no kataloga Prombūtnes iemesli definēts prombūtnes kods slimības lapai B</li>
+<li>Numuru sērijas un to rindas</li>
+<li>Personāla uzstādījumus</li>
+<li>Dokumentu veidņu grupas</li>
+<li>Dokumentu veidnes</li>
 </ul>
-<p>Slimības lapu imports tiek veikts: algu Lomu centrs - <em>Uzdevumi</em> - <em>Slimības lapu importa saraksts</em>.</p>
-<p>Lai veiktu importu, jāizveido jauns dokuments. Numuru sistēma piešķirs automātiski. Pēc numura piešķiršanas var importēt failu ( poga Importēt). Sistēma pieprasīs noradīt ceļu, kur atrodas fails.</p>
-<p>Pēc importa, sistēmas lietotājs pārbauda datus, nepieciešamības gadījumā rediģē datus (darbinieka nr., prombūtnes kods). Tad nospiež pogu <em>Apstrādāt rindas</em>, un sistēma pabrīdinās, ka apstrādātas rindas tiks izdzēstas. Rezultātā tiks izveidotas prombūtnes.</p>
-<p>Gadījumā, ja ievadot slimības lapu A, tiek reģistrētas plānotas darba stundas (ķeksis <em>Izmainīt darba grafiku prom. Laikā</em>) , tad pēc importa tiem darbiniekiem, kuriem ir Slimības lapa A, jāpielabo grafiks slimības lapas periodā.</p>
+<h2 id="vispārējie-sistēmas-uzstādījumi">Vispārējie sistēmas uzstādījumi</h2>
+<p><em>Uzņēmuma informācija</em> uzstādījumos ir obligāti aizpildāmi sekojoši lauki :</p>
+<ul>
+<li>Uzņēmuma nosaukums</li>
+<li>Reģistrācijas Nr.</li>
+</ul>
 </article>
           </div>
           
@@ -99,7 +108,7 @@ Uzstādījumiem pieejami sekojoši lauki:</p>
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://dev.azure.com/elva-bc-projects/Latvian-Payroll/_git/Latvian-Payroll-Help?path=lv-LV/docs/payroll_extended/setup/17.sick_list_import.md&amp;version=GBmaster&amp;line=1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://dev.azure.com/elva-bc-projects/Latvian-Payroll/_git/Latvian-Payroll-Help?path=lv-LV/docs/personnel_extended/setup/0.conf_pack.md&amp;version=GBmaster&amp;line=1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

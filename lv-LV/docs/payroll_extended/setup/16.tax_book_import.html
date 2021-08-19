@@ -112,6 +112,19 @@ Gadījumā, ja izmaiņas ir korektas, jāiezīmē korektā rindiņa un jānospie
 <p><img src="16.tax_book1.png" alt="alt"></p>
 <p>Apstrādājot datus par pensionāriem, sistēma pārbauda darbinieka kartē lauku Soc. Statusa Kods. Gadījumā, ja statusa kods ir DP ( atbilst pensionāriem), tad neapliekamo minimumu apstrāde ir līdzīga parastiem darba ņēmējiem. Soc. likmes jebkurā gadījumā tiks pārbaudītas.</p>
 <p><strong>Gadījumā, ja pirms importa darbiniekam tika piešķirts DN statusa kods un tiek saņemta informācija par vecuma pensiju, tad neapliekamā minimuma No Datums ir vienāds ar nākamā mēneša 1. datumu. Bet, ja sistēmā jau ir DP statusa kods, tad neapliekamā minimuma datums ir vienāds ar neapliekamā minimuma datumu no EDS faila.</strong></p>
+<h1 id="slimības-lapu-imports-no-eds">Slimības lapu imports no EDS</h1>
+<p>Lai katru mēnesi nevajadzētu reģistrēt sistēmā slimības lapas manuāli, sistēmā ir nodrošināts slimības lapu imports.</p>
+<p>Importa sekmīgai norisei ir nepieciešami sekojoši uzstādījumi: algu Lomu centrs - <em>Administrēšana</em> - <em>Slimības lapu importa uzstādījumi</em>.
+Uzstādījumiem pieejami sekojoši lauki:</p>
+<ul>
+<li>Slimības lapu numuri – numuru sērija;</li>
+<li>Slimības lapas A prombūtnes kods – no kataloga Prombūtnes iemesli definēts prombūtnes kods slimības lapai A</li>
+<li>Slimības lapas B prombūtnes kods – no kataloga Prombūtnes iemesli definēts prombūtnes kods slimības lapai B</li>
+</ul>
+<p>Slimības lapu imports tiek veikts: algu Lomu centrs - <em>Uzdevumi</em> - <em>Slimības lapu importa saraksts</em>.</p>
+<p>Lai veiktu importu, jāizveido jauns dokuments. Numuru sistēma piešķirs automātiski. Pēc numura piešķiršanas var importēt failu ( poga Importēt). Sistēma pieprasīs noradīt ceļu, kur atrodas fails.</p>
+<p>Pēc importa, sistēmas lietotājs pārbauda datus, nepieciešamības gadījumā rediģē datus (darbinieka nr., prombūtnes kods). Tad nospiež pogu <em>Apstrādāt rindas</em>, un sistēma pabrīdinās, ka apstrādātas rindas tiks izdzēstas. Rezultātā tiks izveidotas prombūtnes.</p>
+<p>Gadījumā, ja ievadot slimības lapu A, tiek reģistrētas plānotas darba stundas (ķeksis <em>Izmainīt darba grafiku prom. Laikā</em>) , tad pēc importa tiem darbiniekiem, kuriem ir Slimības lapa A, jāpielabo grafiks slimības lapas periodā.</p>
 </article>
           </div>
           
