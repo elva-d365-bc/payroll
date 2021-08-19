@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Sick-list import from EDS | Latvian Payroll </title>
+    <title>Payroll components of the labour contract | Latvian Payroll </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Sick-list import from EDS | Latvian Payroll ">
+    <meta name="title" content="Payroll components of the labour contract | Latvian Payroll ">
     <meta name="generator" content="docfx 2.58.0.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
@@ -77,21 +77,36 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="sick-list-import-from-eds">Sick-list import from EDS</h1>
+<h1 id="payroll-components-of-the-labour-contract">Payroll components of the labour contract</h1>
 
-<p>In order not to register the sick lists each month manually, imports of sick leave is provided to the system.</p>
-<p>For the successful import process requires the following settings:
-Payroll Role center - <em>Administration</em> - <em>Sick-list Import Setup</em>.
-Following fields are available for the setup:</p>
+<p>Payroll components can be reached in the Labour contract card by pressing the button <em>Payroll Components</em>. The employment contract components contain the following fields:</p>
 <ul>
-<li>Sick-list Nos;</li>
-<li>Sick-list A Absence Code – a cause of absence code for the sick list A from the list <em>Causes of Absences</em>;</li>
-<li>Sick-list B Absence Code – a cause of absence code for the sick list B from the list <em>Causes of Absences</em>.</li>
+<li>Employee No.;</li>
+<li>First Name;</li>
+<li>Last Name;</li>
+<li>Type - fill in automatically by selecting a code;</li>
+<li>Code - code from the list of <em>Payroll Components</em>;</li>
+<li>Description - fills automatically by entering the code;</li>
+<li>Document Field ID - a field that is essential if creating a document in MS Word format. The process of document creation is described in the chapter <em>Creating Documents</em>;</li>
+<li>Loading;</li>
+<li>From Date - date from which the salary component is valid;</li>
+<li>To Date - date to which component is valid;</li>
+<li>Base Salary - mark that the selected payroll component is the base salary;</li>
+<li>Calculation Method - how the following payroll component is calculated;</li>
+<li>Amount per Load;</li>
+<li>Amount - value for a specified payroll component and for a specified loading;</li>
+<li>Calculate By - automatically fills in by entering the code;</li>
+<li>Base - for surcharges and deductions that are calculated on the basis of Base;</li>
+<li>Priority - level, what indicates the particular component's place in the chain of the salary calculation – the smaller this amount, the higher the priority of this means and the sooner it is involved in the calculations;</li>
+<li>Allow Night Hours – the mark of the fact that night hours are paid;</li>
+<li>Allow Bank Holiday Hours – the mark of the fact that the bank holiday hours are paid;</li>
+<li>Allow Overtime – the mark that overtime is paid;</li>
+<li>Dimensions can be assigned to payroll components.</li>
 </ul>
-<p>Imports of sick lists are made: Payroll Role center - <em>Tasks</em> - <em>Sick-list Import List</em>.</p>
-<p>To start an import, a new document should be created. The number system will assign automatically. After assigning a number, you can import a file ( press button <em>Import</em>). The system will require the file path where the import file is located.</p>
-<p>After import, user should checks the data, if necessary, edit data (Employee No., Code of Absence). Then press the button <em>Process Lines</em>, and system will warn, that all lines will be deleted. As a result, absence cards will be created.</p>
-<p>In case if when registering sick list A, also planned working hours have been registered, then, after import, to employees who have a sick list A, the schedule should be adjusted during the sick leave period.</p>
+<p>Labour contract payroll components will be filled automatically from position cards, therefore it is very important to check that this information is exactly what the user expects.
+If the additional position alteration is created, then it is necessary to change the payroll component number to the premium for additional work and make sure that <em>Primary Position</em> field is disabled.
+Pay attention to the fields <em>From Date</em> and <em>To Date</em> – These fields are also filled in from position card, so if they do not match the required dates, which are defined in the particular labour contract or alterations, this should be corrected.<br>
+By entering a loading that is not equal to one, The system recalculates the loading value according to the loading shown in the labour contract.</p>
 </article>
           </div>
           
@@ -100,7 +115,7 @@ Following fields are available for the setup:</p>
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://dev.azure.com/elva-bc-projects/Latvian-Payroll/_git/Latvian-Payroll-Help?path=en-US/docs/payroll_extended/setup_ext/17.sick_list_import.md&amp;version=GBmaster&amp;line=1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://dev.azure.com/elva-bc-projects/Latvian-Payroll/_git/Latvian-Payroll-Help?path=en-US/docs/personnel_base/setup/20.contract2.md&amp;version=GBmaster&amp;line=1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

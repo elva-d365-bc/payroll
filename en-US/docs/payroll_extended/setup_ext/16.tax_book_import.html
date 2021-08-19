@@ -112,6 +112,20 @@ In case if the changes are correct, select the correct lines and press the butto
 <p><img src="16.tax_book1.png" alt="alt"></p>
 <p>When processing the data with retired employees, system checks the <em>Social Status Code</em> field in the employee card. In case if code is <em>DP</em> ( related to pensioners), then processing of the Non-applicable minimum is similar to ordinary employees. Social rates will be checked in any case.</p>
 <p><strong>In case if prior to import, to employee will be assigned a status code <em>DN</em> and will be received information on retirement, the <em>Date From</em> of on-applicable minimum is the same as it will be on next month's first date. But, in case if <em>DP</em> status is al;ready in the system, then non-applicable minimum date is the same as on-applicable minimum date from EDS file.</strong></p>
+<h1 id="sick-list-import-from-eds">Sick-list import from EDS</h1>
+<p>In order not to register the sick lists each month manually, imports of sick leave is provided to the system.</p>
+<p>For the successful import process requires the following settings:
+Payroll Role center - <em>Administration</em> - <em>Sick-list Import Setup</em>.
+Following fields are available for the setup:</p>
+<ul>
+<li>Sick-list Nos;</li>
+<li>Sick-list A Absence Code – a cause of absence code for the sick list A from the list <em>Causes of Absences</em>;</li>
+<li>Sick-list B Absence Code – a cause of absence code for the sick list B from the list <em>Causes of Absences</em>.</li>
+</ul>
+<p>Imports of sick lists are made: Payroll Role center - <em>Tasks</em> - <em>Sick-list Import List</em>.</p>
+<p>To start an import, a new document should be created. The number system will assign automatically. After assigning a number, you can import a file ( press button <em>Import</em>). The system will require the file path where the import file is located.</p>
+<p>After import, user should checks the data, if necessary, edit data (Employee No., Code of Absence). Then press the button <em>Process Lines</em>, and system will warn, that all lines will be deleted. As a result, absence cards will be created.</p>
+<p>In case if when registering sick list A, also planned working hours have been registered, then, after import, to employees who have a sick list A, the schedule should be adjusted during the sick leave period.</p>
 </article>
           </div>
           
