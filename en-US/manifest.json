@@ -86,6 +86,18 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "docs/payroll_base/payroll_base.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/payroll_base/payroll_base.html",
+          "hash": "5AngJsFJLGtWy0Inv9Vv7mmKjfQQxGpCfXSOCYvBkaU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "docs/payroll_base/setup/0.conf_pack.md",
       "output": {
         ".html": {
@@ -2712,6 +2724,18 @@
         ".html": {
           "relative_path": "docs/payroll_extended/overview.html",
           "hash": "qAkInrn9piuoqh5hqsdG9Ui8yG/nIuGDjfZqTdYFRDY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/payroll_extended/payroll_extended.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/payroll_extended/payroll_extended.html",
+          "hash": "B+rTjx9HjkmJ1IaBji35KwoIycL+FrB15vDvT7e5xCg="
         }
       },
       "is_incremental": false,
@@ -11072,6 +11096,18 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "docs/personnel_base/personnel_base.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/personnel_base/personnel_base.html",
+          "hash": "RRqk1JlogG92vUo1wuvsQJk/z+cy0dZ5cbrqPDYSPbI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "docs/personnel_base/setup/19.positions1.md",
       "output": {
         ".html": {
@@ -11615,6 +11651,18 @@
       "version": ""
     },
     {
+      "type": "Conceptual",
+      "source_relative_path": "docs/personnel_extended/personnel_extended.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/personnel_extended/personnel_extended.html",
+          "hash": "qJP9fHGHX9NICaOE4nodrL/bVGXwQZzbHr5veyy81i0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Resource",
       "source_relative_path": "docs/personnel_extended/setup/23.docum_templ_1.png",
       "output": {
@@ -11946,7 +11994,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 122,
+          "total_file_count": 126,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {

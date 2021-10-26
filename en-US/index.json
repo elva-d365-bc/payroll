@@ -24,6 +24,11 @@
     "title": "| Latvian Payroll",
     "keywords": "Latvian Payroll is an application fully integrated with Dynamics 365 Business Central. The application provides standard functionality for salary calculation in accordance with the requirements of Latvian legislation. The application allows users to: calculate salaries create individual working time and holiday calendars register absences make vacation accruals Set periodic and one time benefits and deductions administer the writ of execution and payment of injunctions to third parties to prepare payment orders for Latvian commercial banks send salary slips by e-mail maintain information on employee qualifications maintain information about employees' relatives and alternative addresses add attachments of any format to employee registers Prepare reports for upload to EDS: Information on employees The employer's report on payed social and income tax The amounts disbursed to the notice of a natural person (Summary) IeIeN overview of the costs to non-residents"
   },
+  "docs/payroll_base/payroll_base.html": {
+    "href": "docs/payroll_base/payroll_base.html",
+    "title": "| Latvian Payroll",
+    "keywords": ""
+  },
   "docs/payroll_base/setup/0.conf_pack.html": {
     "href": "docs/payroll_base/setup/0.conf_pack.html",
     "title": "How to get started | Latvian Payroll",
@@ -148,6 +153,11 @@
     "href": "docs/payroll_extended/overview.html",
     "title": "| Latvian Payroll",
     "keywords": "Latvian Payroll Advanced is a business software solution developed by ELVA for companies that calculates the salaries for the employees in Republic of Latvia. Latvian Payroll Advanced is fully integrated with Dynamics 365 Business Central by extending its functionality and tailoring it to meet the requirements of Latvian legislation and local business requirements. The application allows users to: calculate salaries maintain Payroll components maintain Departments maintain Positions create individual working time and holiday calendars create schedule planned and schedule actual manage vacation periods register absences calculate and post vacation accruals post payroll data to General Ledger create a payment journal perform different type of payments - Advance/Prepayment/Salary and payment to third parties prepare and export file to InternetBank include employee health insurance entries in salary prepare EDS reports and internal reports import EDS Salary Books import EDS Sick Lists create statistic reports - Work-2, Work-5"
+  },
+  "docs/payroll_extended/payroll_extended.html": {
+    "href": "docs/payroll_extended/payroll_extended.html",
+    "title": "| Latvian Payroll",
+    "keywords": ""
   },
   "docs/payroll_extended/setup_ext/0.conf_pack.html": {
     "href": "docs/payroll_extended/setup_ext/0.conf_pack.html",
@@ -504,6 +514,11 @@
     "title": "| Latvian Payroll",
     "keywords": "Latvian Payroll Personnel is a business software solution developed by ELVA for companies that calculates the salaries for the employees in Republic of Latvia. Latvian Payroll Personnel is fully integrated with Dynamics 365 Business Central by extending its functionality and tailoring it to meet the requirements of Latvian legislation and local business requirements. The application allows users to: register labor contracts; register personnel orders; manage Health Protection- Mandatory health examination, Briefing Management; send messages to defined recipients about some notifications."
   },
+  "docs/personnel_base/personnel_base.html": {
+    "href": "docs/personnel_base/personnel_base.html",
+    "title": "| Latvian Payroll",
+    "keywords": ""
+  },
   "docs/personnel_base/setup/19.positions1.html": {
     "href": "docs/personnel_base/setup/19.positions1.html",
     "title": "Position card | Latvian Payroll",
@@ -578,6 +593,11 @@
     "href": "docs/personnel_extended/overview.html",
     "title": "| Latvian Payroll",
     "keywords": "Latvian Payroll Personnel is a business software solution developed by ELVA for companies that calculates the salaries for the employees in Republic of Latvia. Latvian Payroll Personnel is fully integrated with Dynamics 365 Business Central by extending its functionality and tailoring it to meet the requirements of Latvian legislation and local business requirements. The application allows users to: create and store documents - Personnel documents registering and automatic processing for some actions on document posting."
+  },
+  "docs/personnel_extended/personnel_extended.html": {
+    "href": "docs/personnel_extended/personnel_extended.html",
+    "title": "| Latvian Payroll",
+    "keywords": ""
   },
   "docs/personnel_extended/setup/23.document.templates.html": {
     "href": "docs/personnel_extended/setup/23.document.templates.html",
