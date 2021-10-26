@@ -2979,6 +2979,18 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "docs/payroll_extended/payroll_extended.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/payroll_extended/payroll_extended.html",
+          "hash": "Clkfjm9QPk3bet4OtBqIrMxMKu0HdxWzp+IB8NjCCBM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "docs/payroll_extended/setup/0.conf_pack.md",
       "output": {
         ".html": {
@@ -4826,6 +4838,18 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "docs/personnel_base/personnel_base.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/personnel_base/personnel_base.html",
+          "hash": "OKs99pc3yBGtTxcHPIPHdw/4QS02jgKqFS9iPBxzC4g="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "docs/personnel_base/setup/0.conf_pack.md",
       "output": {
         ".html": {
@@ -5414,6 +5438,18 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "docs/personnel_extended/personnel_extended.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/personnel_extended/personnel_extended.html",
+          "hash": "EsgN7dVpi1Vcc6FumY+oPDrvMETmGFqBkTG+VaeZggM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "docs/personnel_extended/setup/0.conf_pack.md",
       "output": {
         ".html": {
@@ -5778,7 +5814,7 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 130,
+          "total_file_count": 133,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {

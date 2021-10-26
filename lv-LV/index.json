@@ -179,6 +179,11 @@
     "title": "| Latvian Payroll",
     "keywords": "Latvian Payroll Advanced ir aplikācija, kas pilnībā integrēta ar Dynamics 365 Business Central. Aplikācija nodrošina nepieciešamās funkcionalitātes algas aprēķinam saskaņā ar Latvijas likumdošanas prasībām. Aplikācija ietver sevī sekojošas funkcijas: Algas komponentes; Kalendāri; Avansu / starpizmaksu / algu saraksti; Departamenti; Amati; VID atskaites un risinājuma standarta atskaites; Algas datu grāmatošana virsgrāmatā; Maksājumu žurnāla aizpildīšana; Maksājumu fails eksportam uz internetbanku; Darbinieku veselības apdrošināšanas ieraksti algās; Plānotais grafiks un aktuālais grafiks; Atvaļinājuma periodu pārvaldīšana; Statistikas atskaites - Darbs-2, Darbs-5; Algas nodokļu grāmatiņu imports no EDS; Slimības lapu imports no EDS."
   },
+  "docs/payroll_extended/payroll_extended.html": {
+    "href": "docs/payroll_extended/payroll_extended.html",
+    "title": "| Latvian Payroll",
+    "keywords": ""
+  },
   "docs/payroll_extended/setup/0.conf_pack.html": {
     "href": "docs/payroll_extended/setup/0.conf_pack.html",
     "title": "Kā sākt strādāt | Latvian Payroll",
@@ -539,6 +544,11 @@
     "title": "| Latvian Payroll",
     "keywords": "Latvian Payroll Personnel ir aplikācija, kas pilnībā integrēta ar Dynamics 365 Business Central. Aplikācija nodrošina nepieciešamās funkcionalitātes personāla resursu vadībai saskaņā ar Latvijas likumdošanas prasībām. Aplikācija ietver sevī sekojošas funkcijas: Darba līgumu reģistrēšana; Personāla rīkojumu reģistrēšana; Darba aizsardzība- Obligātās Veselības pārbaudes, Instruktāžu vadība; Ziņojumi - atgādinājumu ziņojumu sūtīšana iepriekš definētām darbinieku grupām."
   },
+  "docs/personnel_base/personnel_base.html": {
+    "href": "docs/personnel_base/personnel_base.html",
+    "title": "| Latvian Payroll",
+    "keywords": ""
+  },
   "docs/personnel_base/setup/0.conf_pack.html": {
     "href": "docs/personnel_base/setup/0.conf_pack.html",
     "title": "Kā sākt strādāt | Latvian Payroll",
@@ -613,6 +623,11 @@
     "href": "docs/personnel_extended/overview.html",
     "title": "| Latvian Payroll",
     "keywords": "Latvian Payroll Personnel Advanced ir aplikācija, kas pilnībā integrēta ar Dynamics 365 Business Central. Aplikācija nodrošina nepieciešamās funkcionalitātes personāla resursu vadībai saskaņā ar Latvijas likumdošanas prasībām. Aplikācija ietver sevī sekojošu funkciju: Dokumentu veidošana - personāla dokumentu veidošana, rediģēšana un automātiska sagatavošana atsevišķām darbībām."
+  },
+  "docs/personnel_extended/personnel_extended.html": {
+    "href": "docs/personnel_extended/personnel_extended.html",
+    "title": "| Latvian Payroll",
+    "keywords": ""
   },
   "docs/personnel_extended/setup/0.conf_pack.html": {
     "href": "docs/personnel_extended/setup/0.conf_pack.html",
