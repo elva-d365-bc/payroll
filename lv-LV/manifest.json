@@ -333,6 +333,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/payroll_base/images/0.conf_pack_1_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/images/0.conf_pack_1_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/payroll_base/images/1.empl_termin_1.png",
       "output": {
         "resource": {
@@ -348,6 +359,17 @@
       "output": {
         "resource": {
           "relative_path": "docs/payroll_base/images/10.salary_comp.register_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_base/images/10.salary_comp.register_1_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/images/10.salary_comp.register_1_1.png"
         }
       },
       "is_incremental": false,
@@ -476,6 +498,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/payroll_base/images/12.salary_pay_1_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/images/12.salary_pay_1_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/payroll_base/images/12.salary_pay_2.png",
       "output": {
         "resource": {
@@ -575,6 +608,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/payroll_base/images/13.salary_recalc_3_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/images/13.salary_recalc_3_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/payroll_base/images/14.reports_1.1.png",
       "output": {
         "resource": {
@@ -619,10 +663,32 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/payroll_base/images/14.reports_1_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/images/14.reports_1_2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/payroll_base/images/14.reports_2.png",
       "output": {
         "resource": {
           "relative_path": "docs/payroll_base/images/14.reports_2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_base/images/14.reports_2_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/images/14.reports_2_1.png"
         }
       },
       "is_incremental": false,
@@ -667,6 +733,17 @@
       "output": {
         "resource": {
           "relative_path": "docs/payroll_base/images/15.empl_termin_2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_base/images/15.empl_termin_3.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/images/15.empl_termin_3.png"
         }
       },
       "is_incremental": false,
@@ -777,6 +854,17 @@
       "output": {
         "resource": {
           "relative_path": "docs/payroll_base/images/2.payroll_acc_8.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_base/images/2.payroll_acc_8_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/images/2.payroll_acc_8_1.png"
         }
       },
       "is_incremental": false,
@@ -997,6 +1085,17 @@
       "output": {
         "resource": {
           "relative_path": "docs/payroll_base/images/3.payroll_calc_9.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_base/images/3.salary_recalc_3.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/images/3.salary_recalc_3.png"
         }
       },
       "is_incremental": false,
@@ -1268,6 +1367,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/payroll_base/images/8.5.payout_8_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/images/8.5.payout_8_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/payroll_base/images/8.salary_hours_1.png",
       "output": {
         "resource": {
@@ -1349,6 +1459,17 @@
       "output": {
         "resource": {
           "relative_path": "docs/payroll_base/images/9.salary_absence_5.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_base/images/conf_pack_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/images/conf_pack_1.png"
         }
       },
       "is_incremental": false,
@@ -1488,12 +1609,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "include-not-found"
+      ],
       "type": "Conceptual",
       "source_relative_path": "docs/payroll_base/payroll_base.md",
       "output": {
         ".html": {
           "relative_path": "docs/payroll_base/payroll_base.html",
-          "hash": "L6XgzE8hBRkG66JCefKsN3N7NdlhZjlV0Yx8JOrm6Dw="
+          "hash": "aSeM7P6xLIgWh9pENqZ3J1k7yJxsZwhaMyl7uKuqhnA="
         }
       },
       "is_incremental": false,
@@ -2935,7 +3059,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_base/toc.html",
-          "hash": "6uFOJPQ3LmNPHQBck7IlxMI9co1egDsaOo6Hqe3Bdyk="
+          "hash": "wVfQoQQhT6uJUOSqbAEyKP7Rdxu4gsNn7vZk3wGimP0="
         }
       },
       "is_incremental": false,
