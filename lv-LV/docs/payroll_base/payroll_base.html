@@ -1187,7 +1187,7 @@ Ja svētku dienas neatkārtojas ik gadu vienos un tajos pašos datumos, tad lauk
 </tr>
 </tbody>
 </table>
-<h2 id="uzņēmuma-uzstādījumi">Uzņēmuma uzstādījumi</h2>
+<h2 id="uzņēmuma-struktūra-un-amati">Uzņēmuma struktūra un amati</h2>
 <p>Lai varētu sākt ērti, bez aizķeršanās vadīt datus darbinieka kartiņā, ir ieteicams sākotnēji veikt zemāk uzskaitītos uzstādījumus, kas būs nepieciešami darbinieku kartiņas lauku aizpildīšanai:</p>
 <ul>
 <li>jāizveido uzņēmuma struktūrvienības;</li>
@@ -1345,22 +1345,10 @@ Ja svētku dienas neatkārtojas ik gadu vienos un tajos pašos datumos, tad lauk
 <h5>Tip</h5>
 <p><strong>Nav ieteicams norādīt vienas un tās pašas dimensijas, bet ar atšķirīgām vērtībām gan pie struktūrvienības, gan amata</strong>.</p>
 </div>
-<h1 id="darbinieku-pieņemšana-darbā">Darbinieku pieņemšana darbā</h1>
+<h1 id="darbinieku-dati">Darbinieku dati</h1>
 <p>Lai pieņemti darbā jaunu darbinieku ir jāizveido jauna darbinieka kartiņa. Katram darbiniekam ir sava atsevišķa kartiņa, kur ir jāievada visa pieejamā informācija, kas attiecas uz konkrēto darbinieku. Darbinieka kartiņā ir apkopo visa informācija, kas nepieciešama uzskaitei, aprēķiniem un atskaitēm.</p>
 <p>Visas darbinieku kartiņas ir apkopotas sarakstā <em>Darbinieki</em>.</p>
 <p>Lietotāju ērtībām darbinieku ievadīšanai sistēmā ir pieejama arī darbinieka kartiņas kopēšanas funkcija (Darbinieka kartiņas rīkjoslā <em>Naviģēt</em>-<em>Papildus inf. izveidošana</em>-<em>Kopēt darbinieku</em>), ko ir ērti izmantot, ja darbinieks pēc atbrīvošanas ir atkārtoti uzsācis darbu uzņēmumā. Tomēr, lai izvairītos no iespējamām kļūdām (piemēram, vidējās izpeļņas aprēķinā, paziņojumā par fiziskajām personām izmaksātajām summām), ir ieteicams veidot jaunu darbinieka kartiņu.</p>
-<h1 id="darbinieku-atbrīvošana-no-darba">Darbinieku atbrīvošana no darba</h1>
-<p>Lai darbinieku atbrīvotu no darba, darbinieka kartiņas cilnē <em>Administrēšana</em> ieraksta atbrīvošanas datumu (1).</p>
-<p><img src="images/15.empl_termin_1.png" alt="alt"></p>
-<p>Apstiprinot datuma ievadi, sistēma šo datumu ievadīs arī Darbinieka amata kartiņas laukā <em>Datums līdz</em> (2) un tiks noslēgtas visas algu komponentes (3).</p>
-<p><img src="images/15.empl_termin_3.png" alt="alt"></p>
-<p><img src="images/15.empl_termin_2.png" alt="alt"></p>
-<blockquote>
-<p>Ja Algu uzstādījumu cilnē <em>Atskaites</em> ir ieslēgta funkcija <em>Ziņu koda pārbaudes iesl.</em>, tad aizpildot <em>Līguma izbeigšanas datums</em> lauku, sistēma piedāvās arī ievadīt darbinieka ziņu kodu EDS iesniedzamam paziņojumam <em>Ziņas par darba ņēmējiem</em>.</p>
-</blockquote>
-<p>Darbinieka atbrīvošanas datuma ievades brīdī, sistēma saģenerēs prombūtnes ierakstu (ar kodu ATVAL_KOMP) neizmantotā atvaļinājuma kompensācijas apmaksai, kas tiks pievienots algas aprēķinam automātiski.</p>
-<p><em>Komponenšu reģistrā</em> var pievienot nepieciešamās piemaksas vai atvilkumus gala aprēķinam.</p>
-<p>Sagatavojot EDS Paziņojumu par fiziskai personai izmaksātām summām atskaites buferi, cilnes <em>Visp. info</em> laukā <em>Mēnesis</em> jānorāda mēnesis, kurā darbinieks tiek atbrīvots. Gadījumā, ja ir vairāki darbinieki, ģenerējot bufera ierakstus, ir iespējams norādīt atbrīvošanas periodu</p>
 <h2 id="darbinieku-kartiņa">Darbinieku kartiņa</h2>
 <p><strong>Obligāti aizpildāmie lauki apraksta tabulu kolonnā <em>Lauka tips</em> ir atzīmēti ar izsaukuma zīmi <em>&quot;!&quot;</em></strong>.</p>
 <h3 id="cilne-visp-info-6">Cilne: <em>Visp. info</em></h3>
@@ -2234,6 +2222,18 @@ Algu saraksta rindu automātiskā ģenerēšana notiek noklikšķinot uz pogas <
 Ja nepieciešams stornēt tikai darbinieku rindiņas atsevišķi, tad cilnē <em>Rindas</em> iezīmē rindiņu ( vai vairākas), ko nepieciešams stornēt un klikšķina uz <em>Rinda</em> - <em>Izveidot labojumu</em>. Sīkāk par labojumu veikšanu ir aprakstīts nodaļā <em>Labojumi un darbību atcelšana</em>.</p>
 <p>Lai saģenerētu atskaiti, kurai ir saistība ar algas aprēķinu, nav nepieciešams grāmatot algu sarakstu. Visas algu atskaites un pārskati veidojas no algu sarakstiem, neatkarīgi no to statusa.</p>
 <p>Ja algas aprēķina rezultātā <em>Izmaksāt</em> summa izveidojas negatīva (darbiniekam ir pārmaksāts), tad pārmaksātā summa tiek pārnesta uz nākamo algas aprēķinu (kā atvilkums) ar sistēmas ģenerētā ieraksta palīdzību Komponenšu reģistrā.</p>
+<h2 id="darbinieku-atbrīvošana-no-darba">Darbinieku atbrīvošana no darba</h2>
+<p>Lai darbinieku atbrīvotu no darba, darbinieka kartiņas cilnē <em>Administrēšana</em> ieraksta atbrīvošanas datumu (1).</p>
+<p><img src="images/15.empl_termin_1.png" alt="alt"></p>
+<p>Apstiprinot datuma ievadi, sistēma šo datumu ievadīs arī Darbinieka amata kartiņas laukā <em>Datums līdz</em> (2) un tiks noslēgtas visas algu komponentes (3).</p>
+<p><img src="images/15.empl_termin_3.png" alt="alt"></p>
+<p><img src="images/15.empl_termin_2.png" alt="alt"></p>
+<blockquote>
+<p>Ja Algu uzstādījumu cilnē <em>Atskaites</em> ir ieslēgta funkcija <em>Ziņu koda pārbaudes iesl.</em>, tad aizpildot <em>Līguma izbeigšanas datums</em> lauku, sistēma piedāvās arī ievadīt darbinieka ziņu kodu EDS iesniedzamam paziņojumam <em>Ziņas par darba ņēmējiem</em>.</p>
+</blockquote>
+<p>Darbinieka atbrīvošanas datuma ievades brīdī, sistēma saģenerēs prombūtnes ierakstu (ar kodu ATVAL_KOMP) neizmantotā atvaļinājuma kompensācijas apmaksai, kas tiks pievienots algas aprēķinam automātiski.</p>
+<p><em>Komponenšu reģistrā</em> var pievienot nepieciešamās piemaksas vai atvilkumus gala aprēķinam.</p>
+<p>Sagatavojot EDS Paziņojumu par fiziskai personai izmaksātām summām atskaites buferi, cilnes <em>Visp. info</em> laukā <em>Mēnesis</em> jānorāda mēnesis, kurā darbinieks tiek atbrīvots. Gadījumā, ja ir vairāki darbinieki, ģenerējot bufera ierakstus, ir iespējams norādīt atbrīvošanas periodu</p>
 <h1 id="algas-izmaksa">Algas izmaksa</h1>
 <h2 id="maksājumu-sagatavošana">Maksājumu sagatavošana</h2>
 <p>Algu pārskaita uz darbinieka bankas kontu. Informāciju par bankas kodu un kontu ievada darbinieka kartiņas cilnē Maksājumi, bet izmaksas veidu nosaka noklusētā algas komponente (Kods: BANKA) cilnē Algas komponentes.</p>
