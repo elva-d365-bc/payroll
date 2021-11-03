@@ -18,7 +18,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/hrw/faq.html",
-          "hash": "6kajS7az/pm7RcsP+cQrDO8dAnD4PqSqlTNrpA0HA4g="
+          "hash": "559dAiRUAVGmBXOMPVA+jlk18wb/eiA4gZbzF6FX50c="
         }
       },
       "is_incremental": false,
@@ -30,7 +30,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/hrw/overview.html",
-          "hash": "R+dtxZNYd87pROaBSQojAepXFllWB0LjCv5I+nUtydY="
+          "hash": "Kv31Q4txnrCj0VyT7iFV6dlk0hbSFNbHY3jxzL0kdoM="
         }
       },
       "is_incremental": false,
@@ -54,7 +54,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/hrw/usage_scenarios.html",
-          "hash": "z/WF2ioBY30yS2l9F+dPYp7YEswL4Fx6fIwpiwm4ru0="
+          "hash": "JaV8Uvm1JI7g3Z2KC84W1CkOUgLNWBJl/upfxAUmUHo="
         }
       },
       "is_incremental": false,
@@ -66,7 +66,1206 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_base/faq.html",
-          "hash": "RPoJSkSkFQuaxrH85Nvd6D0TQ2/QhxQZsgvDSAXI2RM="
+          "hash": "OUP1fN+BG6rcGk/nSpjGvMtVYFTuBC3tuuavuD1kzRY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_base/images/0.bank_acc.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/images/0.bank_acc.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_base/images/0.bank_acc_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/images/0.bank_acc_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_base/images/0.conf_pack.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/images/0.conf_pack.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_base/images/0.conf_pack_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/images/0.conf_pack_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_base/images/0.conf_pack_1_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/images/0.conf_pack_1_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_base/images/10.salary_comp.register_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/images/10.salary_comp.register_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_base/images/10.salary_comp.register_1_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/images/10.salary_comp.register_1_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_base/images/10.salary_comp.register_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/images/10.salary_comp.register_2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_base/images/10.salary_comp.register_3.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/images/10.salary_comp.register_3.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_base/images/10.salary_comp.register_4.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/images/10.salary_comp.register_4.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_base/images/10.salary_comp.register_5.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/images/10.salary_comp.register_5.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_base/images/10.salary_comp.register_6.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/images/10.salary_comp.register_6.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_base/images/10.salary_comp.register_7.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/images/10.salary_comp.register_7.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_base/images/10.salary_comp.register_8.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/images/10.salary_comp.register_8.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_base/images/11.salary_calc_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/images/11.salary_calc_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_base/images/11.salary_calc_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/images/11.salary_calc_2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_base/images/11.salary_calc_3.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/images/11.salary_calc_3.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_base/images/12.salary_pay_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/images/12.salary_pay_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_base/images/12.salary_pay_1_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/images/12.salary_pay_1_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_base/images/12.salary_pay_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/images/12.salary_pay_2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_base/images/12.salary_pay_2_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/images/12.salary_pay_2_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_base/images/12.salary_pay_3.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/images/12.salary_pay_3.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_base/images/12.salary_pay_4.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/images/12.salary_pay_4.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_base/images/12.salary_pay_5.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/images/12.salary_pay_5.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_base/images/12.salary_pay_5_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/images/12.salary_pay_5_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_base/images/12.salary_pay_6.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/images/12.salary_pay_6.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_base/images/13.salary_recalc_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/images/13.salary_recalc_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_base/images/13.salary_recalc_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/images/13.salary_recalc_2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_base/images/13.salary_recalc_3.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/images/13.salary_recalc_3.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_base/images/13.salary_recalc_3_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/images/13.salary_recalc_3_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_base/images/14.reports_1.1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/images/14.reports_1.1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_base/images/14.reports_1.2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/images/14.reports_1.2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_base/images/14.reports_1.5.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/images/14.reports_1.5.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_base/images/14.reports_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/images/14.reports_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_base/images/14.reports_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/images/14.reports_2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_base/images/14.reports_2_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/images/14.reports_2_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_base/images/14.reports_3.1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/images/14.reports_3.1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_base/images/14.reports_3.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/images/14.reports_3.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_base/images/15.empl_termin_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/images/15.empl_termin_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_base/images/15.empl_termin_1_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/images/15.empl_termin_1_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_base/images/15.empl_termin_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/images/15.empl_termin_2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_base/images/2.calendar.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/images/2.calendar.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_base/images/2.calendar_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/images/2.calendar_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_base/images/2.calendar_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/images/2.calendar_2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_base/images/2.calendar_3.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/images/2.calendar_3.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_base/images/2.calendar_4.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/images/2.calendar_4.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_base/images/2.calendar_5.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/images/2.calendar_5.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_base/images/2.calendar_abs.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/images/2.calendar_abs.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_base/images/2.payroll_acc_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/images/2.payroll_acc_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_base/images/2.payroll_acc_10.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/images/2.payroll_acc_10.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_base/images/2.payroll_acc_11.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/images/2.payroll_acc_11.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_base/images/2.payroll_acc_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/images/2.payroll_acc_2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_base/images/2.payroll_acc_3.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/images/2.payroll_acc_3.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_base/images/2.payroll_acc_4.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/images/2.payroll_acc_4.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_base/images/2.payroll_acc_5.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/images/2.payroll_acc_5.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_base/images/2.payroll_acc_6.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/images/2.payroll_acc_6.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_base/images/2.payroll_acc_6_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/images/2.payroll_acc_6_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_base/images/2.payroll_acc_6_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/images/2.payroll_acc_6_2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_base/images/2.payroll_acc_6_3.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/images/2.payroll_acc_6_3.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_base/images/2.payroll_acc_7.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/images/2.payroll_acc_7.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_base/images/2.payroll_acc_8.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/images/2.payroll_acc_8.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_base/images/2.payroll_acc_8_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/images/2.payroll_acc_8_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_base/images/2.payroll_acc_8_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/images/2.payroll_acc_8_2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_base/images/2.payroll_acc_9.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/images/2.payroll_acc_9.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_base/images/24.notification_10.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/images/24.notification_10.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_base/images/24.notification_6.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/images/24.notification_6.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_base/images/24.notification_7.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/images/24.notification_7.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_base/images/24.notification_8.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/images/24.notification_8.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_base/images/3.payroll_calc_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/images/3.payroll_calc_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_base/images/3.payroll_calc_10.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/images/3.payroll_calc_10.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_base/images/3.payroll_calc_11.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/images/3.payroll_calc_11.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_base/images/3.payroll_calc_12.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/images/3.payroll_calc_12.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_base/images/3.payroll_calc_13.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/images/3.payroll_calc_13.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_base/images/3.payroll_calc_14.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/images/3.payroll_calc_14.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_base/images/3.payroll_calc_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/images/3.payroll_calc_2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_base/images/3.payroll_calc_3.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/images/3.payroll_calc_3.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_base/images/3.payroll_calc_4.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/images/3.payroll_calc_4.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_base/images/3.payroll_calc_5.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/images/3.payroll_calc_5.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_base/images/3.payroll_calc_6.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/images/3.payroll_calc_6.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_base/images/3.payroll_calc_7.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/images/3.payroll_calc_7.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_base/images/3.payroll_calc_8.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/images/3.payroll_calc_8.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_base/images/3.payroll_calc_9.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/images/3.payroll_calc_9.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_base/images/5.empl_info_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/images/5.empl_info_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_base/images/5.empl_info_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/images/5.empl_info_2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_base/images/5.empl_info_3.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/images/5.empl_info_3.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_base/images/5.empl_info_4.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/images/5.empl_info_4.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_base/images/5.empl_info_5.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/images/5.empl_info_5.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_base/images/5.empl_info_6.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/images/5.empl_info_6.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_base/images/5.empl_info_7.1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/images/5.empl_info_7.1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_base/images/5.empl_info_7.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/images/5.empl_info_7.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_base/images/5.empl_info_7_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/images/5.empl_info_7_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_base/images/5.empl_info_8.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/images/5.empl_info_8.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_base/images/6.empl_add_info2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/images/6.empl_add_info2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_base/images/6.empl_add_info3.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/images/6.empl_add_info3.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_base/images/6.empl_add_info4.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/images/6.empl_add_info4.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_base/images/6.empl_add_info5.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/images/6.empl_add_info5.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_base/images/6.empl_add_info6.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/images/6.empl_add_info6.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_base/images/6.empl_add_info7.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/images/6.empl_add_info7.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_base/images/6.empl_add_info8.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/images/6.empl_add_info8.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_base/images/6.empl_add_info9.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/images/6.empl_add_info9.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_base/images/8.salary_hours_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/images/8.salary_hours_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_base/images/9.salary_absence_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/images/9.salary_absence_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_base/images/9.salary_absence_4.1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/images/9.salary_absence_4.1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_base/images/9.salary_absence_5.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/images/9.salary_absence_5.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_base/images/9.salary_absence_5_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/images/9.salary_absence_5_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_base/images/payroll_comp.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/images/payroll_comp.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_base/images/payroll_comp_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/images/payroll_comp_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_base/images/payroll_comp_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/images/payroll_comp_2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_base/images/payroll_comp_3.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/images/payroll_comp_3.png"
         }
       },
       "is_incremental": false,
@@ -78,7 +1277,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_base/overview.html",
-          "hash": "08rIbL87Lsj4F+VwvxCe5QuDwbTxKFBgnVXzCvCfSmc="
+          "hash": "rLfDmJkWAUbB1VHH8zfawh5elTxNeWokE+bnrqTrOjY="
         }
       },
       "is_incremental": false,
@@ -90,7 +1289,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_base/payroll_base.html",
-          "hash": "5AngJsFJLGtWy0Inv9Vv7mmKjfQQxGpCfXSOCYvBkaU="
+          "hash": "uvWbpL5qPoK4hschwPx2zWzBMDwXpB4yfmfa/Ihn9hs="
         }
       },
       "is_incremental": false,
@@ -102,7 +1301,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_base/setup/0.conf_pack.html",
-          "hash": "zU4XRLOHmYTdQiU/m3hIRj3yDgqcWB5Kl8f3bSOUuu0="
+          "hash": "XHY+kkNgwOyvAManBKiHnB2xvlgRNs0Rb6mjY0BLA2E="
         }
       },
       "is_incremental": false,
@@ -136,7 +1335,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_base/setup/1.setting_up.html",
-          "hash": "5/OC7ShiZa5Zaca0D9WL3GCTyLN4aAbub4akxHBRbE0="
+          "hash": "z0HVbniC/4GgfHZdAE4Z78Ee6GStkgrkU4yZrykTjl0="
         }
       },
       "is_incremental": false,
@@ -148,7 +1347,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_base/setup/10.salary_comp.register.html",
-          "hash": "A/6Vlbyu/2WwGIeTRQ4LP0y2hCY7KpoUUa+6qS0xkFM="
+          "hash": "qNTs6D84Lgt9gdy5Bd9CBDnoifH7tc54C40ZuQjgU2M="
         }
       },
       "is_incremental": false,
@@ -248,7 +1447,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_base/setup/11.salary_calc.html",
-          "hash": "XeyNEI8uTlKRWtY1yYpTS6jOraToB+khel8b4Fv6Guk="
+          "hash": "sMxHXbEIqLrabbRMzPPeExkjRD+zjA1/asb8Yp0vJ/M="
         }
       },
       "is_incremental": false,
@@ -293,7 +1492,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_base/setup/12.salary_pay.html",
-          "hash": "yuvnRYr4OOhGov4cevEkoGZstQb+/4l5gNXwE85NKgs="
+          "hash": "BuXYHDtTc84En2bjZ+FhDn/bvnHKhpZJE5L3qX72FDQ="
         }
       },
       "is_incremental": false,
@@ -371,7 +1570,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_base/setup/13.salary_recalc.html",
-          "hash": "Kb/1VdIIszbz+By/CbrfOdPKLUMfK9rvKYN++VTKi9w="
+          "hash": "WVHRIkiieeOF6bO2D0LmG2pjYeKqHL1XTTAIIPGaqrw="
         }
       },
       "is_incremental": false,
@@ -416,7 +1615,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_base/setup/14.reports.html",
-          "hash": "PZHONRlR5ZY4NFHNlNGcW3QQGVo9Qfuq7+fND51yHy8="
+          "hash": "pFAOfY51Zzc2PfXUJTVD377YpjvJbrB3oyfjkCEhpm8="
         }
       },
       "is_incremental": false,
@@ -505,7 +1704,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_base/setup/14.reports_an.html",
-          "hash": "WK64mh20IKfssDu64Po5Um8aafIWropmslpUCCsxwoc="
+          "hash": "nP9wwiowj+BLohUhfT3L7f8TXexmxbJ3IP5rjc3HEAE="
         }
       },
       "is_incremental": false,
@@ -517,7 +1716,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_base/setup/14.reports_eds.html",
-          "hash": "jCEAove09Z/p+UMu4x5rbTMzp4F/DnzOsTmKB2WJpoM="
+          "hash": "UKCxksK/2B2UBRws36PKMl7oZtHFOzNlvNyWWDbeXts="
         }
       },
       "is_incremental": false,
@@ -551,7 +1750,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_base/setup/2.1.payroll_acc.html",
-          "hash": "VdSmHGjJdILQRLlfA0mOGSWY3ejbDxw6/IehggWrZcI="
+          "hash": "xcCm72wGWc/nnyC4wISi0O0cYsqOf35tfObZKoLmOew="
         }
       },
       "is_incremental": false,
@@ -563,7 +1762,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_base/setup/2.2.payroll_acc.html",
-          "hash": "w66tVvy/3yFgV0A7ap2Ut8FEAn4zZUH8U753qfOsaWc="
+          "hash": "C1kboV9Nd4OOPrnTnU4IKZgJx3I0MTVcktLOOW6v6vA="
         }
       },
       "is_incremental": false,
@@ -575,7 +1774,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_base/setup/2.payroll_acc.html",
-          "hash": "3WqKWo0ddl6XzpX4NNgeisZVYkawjcjt5BG6I41xt2E="
+          "hash": "cNnPC3GWFAWCYx7Sor0mt/GHJrrFPEwrQRuYoONmrpI="
         }
       },
       "is_incremental": false,
@@ -752,7 +1951,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_base/setup/3.1.payroll_calc.html",
-          "hash": "Tmzu+15HHGAX0b2NCyW708o/iENhzRm/VZtifxwnFGI="
+          "hash": "a3uOgafG6o2Oj1qmYNRmeb56WjluL+pt72l1awJ2XpM="
         }
       },
       "is_incremental": false,
@@ -764,7 +1963,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_base/setup/3.absence.html",
-          "hash": "hqwVyO8dUDckmsWZYh1xPKbKc9wDXDoBMKFCldeK/EA="
+          "hash": "93bI5uswhENI9X7cucHYEMORiyzvhAshjGdiSsXgruU="
         }
       },
       "is_incremental": false,
@@ -776,7 +1975,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_base/setup/3.calendars.html",
-          "hash": "JsPHm7bvH0LZZoGR7BeQ86WEguM+yQ/Wk0Q1i+pcc+U="
+          "hash": "vAGe/mBAXgRNHiUZkIilQgcRUvfqVgyZMxEezHpUm7Q="
         }
       },
       "is_incremental": false,
@@ -788,7 +1987,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_base/setup/3.payroll_calc.html",
-          "hash": "Dy/6TUhtFUWJtE57N15r4xtTvY4ndAMKM0GZO7N9aY0="
+          "hash": "JChFp9UCmYhgyeZHucHFXsuuiOatW7Zw4Esn6irDp1M="
         }
       },
       "is_incremental": false,
@@ -954,7 +2153,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_base/setup/4.empl_card.html",
-          "hash": "ubQTjJff4uhh+jmEBPXp02g3ZQCyHaE2ScB7ESy8+HA="
+          "hash": "UM7JoOaYgQjV/PerB7sr3VftaY4L8jU2Zxe6Pt3iqsE="
         }
       },
       "is_incremental": false,
@@ -966,7 +2165,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_base/setup/5.empl_info.html",
-          "hash": "t6E/i0XpQydhyy0jXv0mXb9LRPeMlZ3b2NBeHI+2Xow="
+          "hash": "+AbRU4ObCPLs2flTVwZvd331mAMEbeC0SvpNwUfrgcU="
         }
       },
       "is_incremental": false,
@@ -1077,7 +2276,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_base/setup/6.1.empl_add.info.html",
-          "hash": "uwsM9RpDV6doQqXASfXJSALxsdiLJiTFZhTJ8oTKMW8="
+          "hash": "PYERQmibfe9rixfcpjQgRM8WszyxkTEQRDzhNskaQ/U="
         }
       },
       "is_incremental": false,
@@ -1089,7 +2288,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_base/setup/6.empl_add.info.html",
-          "hash": "4EeasWrHjjcgIz0RZJHebpupsSg8nD+AA6MvSjXu0/Y="
+          "hash": "utUMP4keQdldK7lWF2ejj4yScXOzwp8/uWRR/fjiX4E="
         }
       },
       "is_incremental": false,
@@ -1200,7 +2399,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_base/setup/8.salary_timing.html",
-          "hash": "sC/4ZZHlJO9g0cOO0m91ysIjGhRXPc6+sxibHPikL3k="
+          "hash": "ETNaTqVvHEJds0ObYrOx3H/t2TbWgqym0/B+E6YtOfs="
         }
       },
       "is_incremental": false,
@@ -1212,7 +2411,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_base/setup/9.salary_absence.html",
-          "hash": "0EC/J48O/c6ksLic2hSU2F1XlwlFrnfu2nP+OGUJEOQ="
+          "hash": "1rOkOahbN9BZz7Y1LkyDH1wcN7pKZG/2RVekX9zp+GM="
         }
       },
       "is_incremental": false,
@@ -1367,7 +2566,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_base/toc.html",
-          "hash": "vnlgiARJDlhHXUzULJaruG9z4rEMdYWV+wvXp62eEaQ="
+          "hash": "t2OJoVTO3l6QV9/+tG8xUIzwTHxtswslS6eecK96SEs="
         }
       },
       "is_incremental": false,
@@ -2699,7 +3898,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_base/usage_scenarios_cronus/usage_scenarios.html",
-          "hash": "dBZb18myoVdss9S08Ey19qRtbxByy9zpZD1iKzuGoXs="
+          "hash": "hiwlO1V1nIzPngOEHjYjz2Fhe63vzDj25mDtmHIsoos="
         }
       },
       "is_incremental": false,
@@ -2711,7 +3910,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/faq.html",
-          "hash": "yHLASUxTHCntRsnekIDeTy6ro5JsZiH5Yc4XUmNc7Ac="
+          "hash": "k9wI2h3ZeH52jXGWJSQisA7jlt0zZYJL6Sav1c/ozUA="
         }
       },
       "is_incremental": false,
@@ -2723,7 +3922,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/overview.html",
-          "hash": "qAkInrn9piuoqh5hqsdG9Ui8yG/nIuGDjfZqTdYFRDY="
+          "hash": "XysQa3hN9hc2uWXdGd/All8TDVMl0vl13hZzt+zUIE8="
         }
       },
       "is_incremental": false,
@@ -2735,7 +3934,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/payroll_extended.html",
-          "hash": "B+rTjx9HjkmJ1IaBji35KwoIycL+FrB15vDvT7e5xCg="
+          "hash": "OfF/ogw1VxrsteAYw7ctgHTo+ep8o7Y5QIc9143VNGQ="
         }
       },
       "is_incremental": false,
@@ -2747,7 +3946,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/setup_ext/0.conf_pack.html",
-          "hash": "9izycamjl2U9UYKfAwVvI86xcm23vB0WRNpi58fSPpI="
+          "hash": "V6YZWn1AFLKdMMtsvD9RL6Ps3BOVxz0RgprPgZ74usc="
         }
       },
       "is_incremental": false,
@@ -2770,7 +3969,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/setup_ext/1.0.setting_up.html",
-          "hash": "pjlbe32qSfKHm4BjBovg9rjbm7prVUnINR+y/xpFZHc="
+          "hash": "i4ejBn36JcrzjCKSuE/94Hj1sm8zVMxeyxBxL+s7BdA="
         }
       },
       "is_incremental": false,
@@ -2793,7 +3992,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/setup_ext/1.1.payroll_dimension.html",
-          "hash": "CkzhIBgKkxGH0jnxzNDUvFbKmjC2Qu6YWENz3R0AQWs="
+          "hash": "UvcQXveJSNbvXkYvJcnGDCzfyEx757HiGfQ67AOn6Rg="
         }
       },
       "is_incremental": false,
@@ -2871,7 +4070,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/setup_ext/1.10.soc_stat_codes.html",
-          "hash": "waRLrW5KKQ47dNnhRTK37QebzDXn17sBh5tQLNnLhIw="
+          "hash": "nvgY40yciY/i6gWRzHca+82gAkFV7ESE8mh5OZtLy/4="
         }
       },
       "is_incremental": false,
@@ -2894,7 +4093,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/setup_ext/1.11.banks.html",
-          "hash": "dBZgSw/flBe+0hboIMdE9uT0LAzlMpbZFQ+4/Kyg8FA="
+          "hash": "kA/WwJEpvksH5hxMGFjRk70SJ334o5+E09xTEB2s/6E="
         }
       },
       "is_incremental": false,
@@ -2928,7 +4127,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/setup_ext/1.12.analysis_templates.html",
-          "hash": "TmlV02U4P0u4JX5/cdBsqzdQiFcdHEBzvgDu6ovq4co="
+          "hash": "A6N4gakdFIoMI7mJonO3pGRV7OG/mWhBzaLRRYRGZ4o="
         }
       },
       "is_incremental": false,
@@ -2962,7 +4161,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/setup_ext/1.2.payroll_setup.html",
-          "hash": "gvwhIRRjtCAPgBdN350ESPb76vYB2jOnCJldRIZkvdA="
+          "hash": "G5H5T5I5MxNw0yyrSroCfFxvqDmXqM7u5qQ8yPnNxXM="
         }
       },
       "is_incremental": false,
@@ -2974,7 +4173,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/setup_ext/1.3.status_codes.html",
-          "hash": "XZRtNRSuD/dAqfs63ULUr9KeMvDZU5AHG/9FH9Mpk+w="
+          "hash": "e4Z4byoCuHiTgCKliAM06vyH1faICnJtuabuJpWl15o="
         }
       },
       "is_incremental": false,
@@ -2997,7 +4196,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/setup_ext/1.4.pfpis_relief.html",
-          "hash": "hO5os1vPeUMs/Y5J7ZdlytEUgANd5eYzmO/R26DzAK4="
+          "hash": "Co1ar9SzCHQirxG5Lhz34J/OSwp3UzBQAX3G2PGYlx4="
         }
       },
       "is_incremental": false,
@@ -3020,7 +4219,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/setup_ext/1.6.overtime.html",
-          "hash": "F7N+ZomsRLf2EhH5D5PDlc+znwS/wCRExWOIvBiBaO0="
+          "hash": "p6Jcib1q4oqjf/44eu8SUhiQ0rbNB7MvuqF9jfylJXw="
         }
       },
       "is_incremental": false,
@@ -3032,7 +4231,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/setup_ext/1.7.empl_post_groups.html",
-          "hash": "dlZeDbZM7bJxvS79HSCgcGGuFluUn4dzXUBpKnojPW4="
+          "hash": "wsCGmSoFgmsNTfPB0+JNGLx/4fHzlUCL/0P0GBZHkNU="
         }
       },
       "is_incremental": false,
@@ -3055,7 +4254,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/setup_ext/1.8.positions.html",
-          "hash": "tB6W3mdZdrHWs22OcMAQEqkh+YGRk+myJDZH3OXBFsM="
+          "hash": "uFrqqYfQHijz+avijl4GjBdWtR7nhMlNlUY0iL74Mt0="
         }
       },
       "is_incremental": false,
@@ -3078,7 +4277,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/setup_ext/1.9.retirement.html",
-          "hash": "+JK/kc3E22YeE49dlVkA/s2qop0WerOwC4LNGybnDCg="
+          "hash": "/LV4NY543asatthRA3Ft40e/W3Xf31ZSMXVpBngyQGs="
         }
       },
       "is_incremental": false,
@@ -3101,7 +4300,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/setup_ext/10.0.corrections.html",
-          "hash": "vNI+osvGQ+KlGEhCwAXsqRYUG1IClDdrPBip8CqoLWM="
+          "hash": "4Se7z8SXp5hJN1ScZLzXPzrlvmJw1ugtmPn1drw8kmE="
         }
       },
       "is_incremental": false,
@@ -3113,7 +4312,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/setup_ext/10.1.corrections1.html",
-          "hash": "p2qE+M+ZgYpadVmMs5OrLwATLrZmQakKtCIfmXfHePE="
+          "hash": "JuNk2/o7lochNIBlVv/TSCIa/TBlRjYa9j2Md55iWMU="
         }
       },
       "is_incremental": false,
@@ -3158,7 +4357,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/setup_ext/10.2.corrections2.html",
-          "hash": "TexI9BDpW7IOp0e76J9uumEC+uiR66lv4zpUmx5cVjM="
+          "hash": "tKyeFFC+XEfSGo7R4G2MEq4GNOYHRjcwDj/lQJJ5QEI="
         }
       },
       "is_incremental": false,
@@ -3214,7 +4413,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/setup_ext/10.3.corrections3.html",
-          "hash": "Z+2BxdoaM8+Bha37SJUuIe/CCos2PNamjsXKlAyJafM="
+          "hash": "1puM9xY9VcXXYkL5aR7z+82Nwlt+p1Xkjrt7XG9SGX0="
         }
       },
       "is_incremental": false,
@@ -3226,7 +4425,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/setup_ext/10.4.corrections4.html",
-          "hash": "9Qs75C2XCh0v6QQWzzbGLJrZj3zfQKdX/f2UJxpgZfY="
+          "hash": "rUzk1nHEXxuzlH9lmZL4zrTAqKMaQNJLiGO1H94YI2E="
         }
       },
       "is_incremental": false,
@@ -3238,7 +4437,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/setup_ext/10.5.corrections5.html",
-          "hash": "w9/gDmt0bz9xDZFkVgzFy9pEGyJ5MdYSW0/kXbuvwDI="
+          "hash": "g6/qs6IUTXLiygmn6xFLe3IiqQXV+3OOHOnKnGoHzDQ="
         }
       },
       "is_incremental": false,
@@ -3250,7 +4449,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/setup_ext/10.6.corrections6.html",
-          "hash": "JubH8Zv2ShxAhAA2vMJTApuIXWCL3z3WHtNTNFwGTow="
+          "hash": "zXAWtgqz95sGKXpWExeTNIgqgFRMOAWQBziOuOUamro="
         }
       },
       "is_incremental": false,
@@ -3262,7 +4461,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/setup_ext/10.7.corrections7.html",
-          "hash": "Vz/YbsZMVpHmMRvwRMCaDgHNElU57QSpHphlEWNWo3U="
+          "hash": "W5GpmmWIXftG8+QEoO7F5N1qGaD3KGkM6tU7yN11k4w="
         }
       },
       "is_incremental": false,
@@ -3277,7 +4476,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/setup_ext/11.writ_of_exec.html",
-          "hash": "Vg+FZdDhFJil9VSgZZyMBmCajjpV+43Rr9uc5LiElj0="
+          "hash": "LtzgaXlFeKborlVy2GoZYEXbHBRzImJRQDuBwPcdEMY="
         }
       },
       "is_incremental": false,
@@ -3289,7 +4488,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/setup_ext/12.vacation_accr.html",
-          "hash": "MJoaFSEgKcjztsP82BntXUkJBlLaHR+BLJhfNI4gWd0="
+          "hash": "BWF3hn6wmZWxv8dJoINIaA2TlBCrT1EvJtNAFUbRpH0="
         }
       },
       "is_incremental": false,
@@ -3323,7 +4522,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/setup_ext/13.0.stat_reports.html",
-          "hash": "Afw661fWOEWfi9afTGZ5nABD09KtfgIe+yxyg7RYVdU="
+          "hash": "fS3uQhhr7zVXnHpVxr/yEZfJ61vBZmyrPQabKZ/3hPc="
         }
       },
       "is_incremental": false,
@@ -3335,7 +4534,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/setup_ext/13.1.2darbs.html",
-          "hash": "1G5yKLc0yK5RRt4j5shaJZ1HrXBFVfpOwBZGIipor8s="
+          "hash": "QJFG+1RSSfAU4j9n2i+SexbwbKTkecipTgr7TSS0G5w="
         }
       },
       "is_incremental": false,
@@ -3347,7 +4546,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/setup_ext/13.2.5darbs.html",
-          "hash": "Q7YFdvLgqOxA2BcZ9hFblBFulqCEWw7ve6QjfvjY16E="
+          "hash": "a+A+4sGhSVCoHe6N+Tne5E1xREkaPXurjRl5JsUm6gc="
         }
       },
       "is_incremental": false,
@@ -3359,7 +4558,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/setup_ext/14.1.pfpis.html",
-          "hash": "bkg5qUC8nhkCy2FiSCpRKWyqoC7Puhbmi4T0mysRFdo="
+          "hash": "mHJEzo1HqjUU7LQvrQm+lriOaYhf4AYCU2J6VzEdOEA="
         }
       },
       "is_incremental": false,
@@ -3371,7 +4570,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/setup_ext/14.payroll_analysis.html",
-          "hash": "z3DeYJNsLu64mjnzxmpekUytX4aQ1Mr9yGQMTNpAuEU="
+          "hash": "NN0uQRMBcUq5JpBOxkRekI4uAOKEneYIqdZZDEQtdVg="
         }
       },
       "is_incremental": false,
@@ -3383,7 +4582,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/setup_ext/15.0.insurance.html",
-          "hash": "dz2R3eSHJPpVj4q/si9uCkI6qly3aQhx2bG7G1/SVW0="
+          "hash": "3EYYGvmberakZdJRFDXnuNcn9RUNIXxy1qlV/LMZld0="
         }
       },
       "is_incremental": false,
@@ -3406,7 +4605,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/setup_ext/15.2.insurance2.html",
-          "hash": "EFY64knz+ww2oOQdMmG3yLAacqr363sOunbdofSn8DE="
+          "hash": "H6H7w55dVRn0uyeYM4C5eJGJ+ZZkGW8Gr+Nj4lTUi48="
         }
       },
       "is_incremental": false,
@@ -3429,7 +4628,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/setup_ext/15.3.insurance3.html",
-          "hash": "IhlZPh5WaXtyEpQlE6zb6CumzqQOLrqZj2cVskvpveA="
+          "hash": "mddT69jr2l9myFM30hxJvFN6ynCUdqf9YROoVmEEEFQ="
         }
       },
       "is_incremental": false,
@@ -3452,7 +4651,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/setup_ext/15.5.insurance5.html",
-          "hash": "1gj5rC5bypDX2rvfDi6m8dwPd8qJMtAMiCy4oUvM75U="
+          "hash": "jdJRPzYLDt1+tWo1BezX2oo+PAwO2/v8qHKX8zl2wB4="
         }
       },
       "is_incremental": false,
@@ -3475,7 +4674,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/setup_ext/16.tax_book_import.html",
-          "hash": "UZviJRbUB0lXXUq3byLU48ELJZvG/KXq30dKB8Ymdhg="
+          "hash": "f+JeEh35iD1wtEKHo3jRyDzcUvbi7P2WW2rEgQ3q3rg="
         }
       },
       "is_incremental": false,
@@ -3487,7 +4686,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/setup_ext/18.personnel_setup.html",
-          "hash": "JcaqKnIFUUrqHUoZ51Y6AWEA2xrA9GJ2E3GJ640tl+0="
+          "hash": "mq1xfltqNgs1+GrvQpPlYZJIVXbCdoL1D+Dxviyd9NM="
         }
       },
       "is_incremental": false,
@@ -3499,7 +4698,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/setup_ext/18.personnel_setup1.html",
-          "hash": "yui38ebn98eT2yvOH0AMS8bheOhvFuNGq51p6tlRxNc="
+          "hash": "M5JnBuCCejUUprQ+kwzz+q7+vROeTZ72/l/PJiU5V5s="
         }
       },
       "is_incremental": false,
@@ -3511,7 +4710,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/setup_ext/19.positions.html",
-          "hash": "zJhiWYndd3w5OOGLgBq0+6pEW/INi8TSUAqTCLgmKs0="
+          "hash": "xdI3+DfZ6S7NQg8J1OL3bK7b5FTCOvnSzJkB9gp1M9g="
         }
       },
       "is_incremental": false,
@@ -3523,7 +4722,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/setup_ext/2.0.salary_list_setup.html",
-          "hash": "JH88MdTUD+PJKiWB56RBBAqcmtrsujVGD3tyoGqN8pk="
+          "hash": "Qjp7JGbqI1o/eL7Gkx+McKl2f0lo11aLL1439QK5Bew="
         }
       },
       "is_incremental": false,
@@ -3535,7 +4734,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/setup_ext/2.1.payroll_components.html",
-          "hash": "eDjCU17hkKK54hrGcjbTOdtRAAhcMNr68vLAAqQvkI8="
+          "hash": "8ktyU+nc85PK36D8zR6xCpEmTDMQ9AeNKE8w3h2Fczk="
         }
       },
       "is_incremental": false,
@@ -3547,7 +4746,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/setup_ext/2.2.bases.html",
-          "hash": "9bd92+Co8DQxi9RE66cIri2/KNOwKqTiEUJI/oSeuVU="
+          "hash": "UVVQfWb7Mzqk3VMWyJXhlNEqBvj3GZh6JeVC8aKQ1gU="
         }
       },
       "is_incremental": false,
@@ -3559,7 +4758,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/setup_ext/2.3.absence_causes.html",
-          "hash": "60z4jKeFIk6v2bnvLlxqZlaRMHqExv6nQijRMzFyC5A="
+          "hash": "ND6xEySGSQrh9/6PWDJ+8kq/6Mk4ETe0mLNcligjdLI="
         }
       },
       "is_incremental": false,
@@ -3582,7 +4781,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/setup_ext/2.4.calendars.html",
-          "hash": "1HjHbnPZ2H15qtzAr8JQLkQp3ZPocIMeiJJcXoHwZko="
+          "hash": "8iJJO3yPCicuPTaz7sDq38rD4sw017EeRhUkCYjEbWg="
         }
       },
       "is_incremental": false,
@@ -3594,7 +4793,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/setup_ext/2.5.holiday_calend.html",
-          "hash": "vq+loaYHp9J3DLpGHzKq7wx6l6hKYZb69dgIlYUkJt8="
+          "hash": "u0WgPyKKZylocD/C3Us+a5YTrwgr43xiAS/1B/fP4/E="
         }
       },
       "is_incremental": false,
@@ -3606,7 +4805,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/setup_ext/2.6.pfpis_income_type.html",
-          "hash": "mvmp2GVcfccVaGI4sf0xyuLHFeG7hMiMugh8VDBFkB0="
+          "hash": "C5RTugdFC/wb6wrHFs5PfEvQnSRf3SGaknQ0n4tutko="
         }
       },
       "is_incremental": false,
@@ -3629,7 +4828,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/setup_ext/2.7.comp_reg_exp.html",
-          "hash": "c1RWJlmcUfwRGU9J4Kg7eCmfWbIwCvI2TA4qCZbo/Ko="
+          "hash": "r4Aof1q2LftmbS8kMnKeK5Zrhe5B49XfQn3D2/pbYMs="
         }
       },
       "is_incremental": false,
@@ -3663,7 +4862,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/setup_ext/25.permissions.html",
-          "hash": "Ia9O0K6ePmdKwGqnwPFN2+ozfvZoW+P1Hm/p1SCzH3o="
+          "hash": "eHOolHEkJNVH9r7s4lUH+OP1EaR2EN8nq3Eig+BP2rs="
         }
       },
       "is_incremental": false,
@@ -3678,7 +4877,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/setup_ext/3.1.general_info.html",
-          "hash": "Qm6/7wRQSRmfA0lImwzWh33xl4t/2COlzk3OaBSBPeM="
+          "hash": "mnBipE6mX4a/wKdqJYumHqNbUFcLNPlp6WMx7C61anM="
         }
       },
       "is_incremental": false,
@@ -3789,7 +4988,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/setup_ext/4.1.registering_absence.html",
-          "hash": "XOM4cFWBfwCQi/hDXY6c+0xO7ynnvTaL9vOezqEzPds="
+          "hash": "qTCQFnrkXSqcHuGNZU53U66FPWSRG7SaZOOIAVOxe+I="
         }
       },
       "is_incremental": false,
@@ -3823,7 +5022,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/setup_ext/4.3.vacation_setup.html",
-          "hash": "6PKiR1jt/ubQFeRQ+fIFh8SYFXPpjMSCglb7LdWaQH8="
+          "hash": "T16Zsvxxu+D2GDItFDjSSkWdP9D8vPkdE3zYO3s9ET8="
         }
       },
       "is_incremental": false,
@@ -3934,7 +5133,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/setup_ext/4.5.business_trips.html",
-          "hash": "JhKJkxfbbPL3mzNpzrXofPTBBH7d1RSCfAO88GYtCuc="
+          "hash": "RgJdqes8UtWEvJZ85zVozbD5A9ZHHAWVAI/WdyLxZ/0="
         }
       },
       "is_incremental": false,
@@ -4001,7 +5200,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/setup_ext/4.6.donor_days.html",
-          "hash": "t7VRM+eDWi3NR63l3p1a0ZhIkweq7vfR2HqxQovYioE="
+          "hash": "sUaK1KuNv5mjw7tZ8akUHLYvB/2vIDhTEBynQLiRoVM="
         }
       },
       "is_incremental": false,
@@ -4079,7 +5278,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/setup_ext/5.0.comp_register.html",
-          "hash": "irBBd4PsWvpXWttc0wc0mhhs+sfzd579BAKfP3kkIFA="
+          "hash": "B38DL5L0y/42WRYFyv6W9rZGYgxdpm5mOtcHtQAGRZo="
         }
       },
       "is_incremental": false,
@@ -4091,7 +5290,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/setup_ext/5.1.new_comp_reg.html",
-          "hash": "XbSahYVQS9fgtWZMKKE9J9EV/fUKT57V+zdTxPNpI6M="
+          "hash": "D5fAJiHGunOxOL569KL2lDKpzqzoVq7iFv3zukBMlWw="
         }
       },
       "is_incremental": false,
@@ -4114,7 +5313,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/setup_ext/5.2.comp_list_gen.html",
-          "hash": "J7UHQVyHdbp1krpLlqquaZ0T+ydizgc2DwjLvdKXFHM="
+          "hash": "nxk9pEQ4uA8WFLkEZy1na1UA66iu8x036wevk/wAh8s="
         }
       },
       "is_incremental": false,
@@ -4137,7 +5336,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/setup_ext/5.3.comp_list_manual.html",
-          "hash": "fGToKIdIvkGxBG1C4ObqP+g61RAMweVhNdCKLBemEkw="
+          "hash": "uOSqBO9YKJ2Spnq9VI1rsKhbQb34r6llwHtdNlj3dLU="
         }
       },
       "is_incremental": false,
@@ -4149,7 +5348,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/setup_ext/5.5.comp_exp_imp.html",
-          "hash": "qCFIbWqB1iZYk3gbNNNKlumFoVRLQffeWLTDqa5GEAQ="
+          "hash": "mESdx2bWGUJHFqe4pmcptyX640q8Couz4ROdyNIG+dc="
         }
       },
       "is_incremental": false,
@@ -4216,7 +5415,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/setup_ext/5.6.averge_month_sal.html",
-          "hash": "4VxrG7Q9J9+ta1YO4S0R4xbay5KOADGscemfBG8edNE="
+          "hash": "i84yeJdqe16bF4GbjGxIHBU0zs/TA9pq6LAX98MZzQM="
         }
       },
       "is_incremental": false,
@@ -4228,7 +5427,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/setup_ext/6.hour_register.html",
-          "hash": "u+CeEroMLD67KIZJD+LEAtahXqLolH9xvDeXoGfF0no="
+          "hash": "hl92WYHCZwel+GZ4UZUEfkD+8S5qE3lc9YCf5e2xnao="
         }
       },
       "is_incremental": false,
@@ -4240,7 +5439,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/setup_ext/7.0.time_register.html",
-          "hash": "E/4Iu413ORIR8flFH+SyD955aSiWLhYxSZcmAneCTGw="
+          "hash": "sq1tjLmni133YerGuk/dyAKbT0REK4pgg6TSEpE5pOY="
         }
       },
       "is_incremental": false,
@@ -4252,7 +5451,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/setup_ext/7.1.schedule.html",
-          "hash": "PW0PJuFToLu/1V3BJYigDAipRDJ1FibwrTmvuX31VYI="
+          "hash": "W4L+MT5gTs6UlguNzPc5VmadSId9okNPd+6TFJe42PA="
         }
       },
       "is_incremental": false,
@@ -4286,7 +5485,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/setup_ext/7.2.count.html",
-          "hash": "l3FyeuMXgxN77e2eJR6+yJ7dBmFE63TZBfjez9xn4+c="
+          "hash": "qBr4BbYpjhtPaFtqJe00GQXzYtbQlX4jNZlX9krS69U="
         }
       },
       "is_incremental": false,
@@ -4386,7 +5585,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/setup_ext/7.3.control.html",
-          "hash": "g+V8e7wGbMBwqg+SDllca1TKnFDknCumlme19S8WcOg="
+          "hash": "A+BMpnbeW3+ocxEvAdpY+Ovlxgd0x8yXHYmQpqKKqpM="
         }
       },
       "is_incremental": false,
@@ -4398,7 +5597,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/setup_ext/8.0.salary_pay.html",
-          "hash": "hyKQmxrqt6M4v+2tdjI5gFre6idMTvmQ5B0On7QsbuU="
+          "hash": "1+iOBz//TUTAwmwltsvOLDQ4Y9OWbn4dYpl/YtgR8nU="
         }
       },
       "is_incremental": false,
@@ -4410,7 +5609,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/setup_ext/8.1.advance.html",
-          "hash": "1w18uzOPO1wOfc9Dw+cPjlsu07vwPP9Iij/vL0FWZVM="
+          "hash": "SFt+qz0cOYFtBfq01Jnaup7oIKTuccszjRc4Fg/vetw="
         }
       },
       "is_incremental": false,
@@ -4444,7 +5643,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/setup_ext/8.2.prepayment.html",
-          "hash": "0nZP3yxsho1vXGU63cF3rkVhn36ZUX1zoHhFRayl0fQ="
+          "hash": "Pte+WjdE7AMOOad4fW9ezWp7F2zHrXz9YVjr1v7C+WE="
         }
       },
       "is_incremental": false,
@@ -4467,7 +5666,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/setup_ext/8.4.sal_calc.html",
-          "hash": "KZqI8je8BbBkB69XQYYg4CMbccLD63TqmPs4RC+TH8A="
+          "hash": "clm1TI5diW6SZHEpR7WowKW4oiXrQY+x1MhwuYEg+G8="
         }
       },
       "is_incremental": false,
@@ -4493,7 +5692,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/setup_ext/8.5.payout.html",
-          "hash": "usBiQkF/Qup0wAirr/t9r7GzPu71Soz+IoukKa8SMxM="
+          "hash": "iMngQA4GTFXayupK26XPLt8lwuIIQGfYyvDZeRWPxTQ="
         }
       },
       "is_incremental": false,
@@ -6948,7 +8147,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/usage_scenarios_BASE_ADV/usage_scenarios.html",
-          "hash": "HgLK//o05TM7PtGU5oBM0ucXJJOaDk4Z5wpIrHnJr74="
+          "hash": "9mCz2GCk2o+hcTL3ORbwkTrOhJJoXvtUHzsRpr4eHHI="
         }
       },
       "is_incremental": false,
@@ -9006,7 +10205,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/usage_scenarios_BASE_ADV_PERS/usage_scenarios.html",
-          "hash": "2tRwLDUixzgM5t9qi5rrPQ0TApvJpljuaF7zEUgSkv0="
+          "hash": "93SCu3+IHyrLWnoQzOeae2x1nY5gJA2P28n0CwXq6Vk="
         }
       },
       "is_incremental": false,
@@ -11064,7 +12263,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/usage_scenarios_BASE_PERS/usage_scenarios.html",
-          "hash": "REshDZq9rBAElQ9tMxtepfAgcdCJ3ZH1e2a2v7JVGiQ="
+          "hash": "ruRiKG7ZGoQtq+pXmGgAKT3zMFw72zs06EXZFx6K5C8="
         }
       },
       "is_incremental": false,
@@ -11076,7 +12275,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/personnel_base/faq.html",
-          "hash": "6cfr+DAwif1BYQExlCPlkkJKKLGydG3XZeHRBjurG6c="
+          "hash": "gQryprKIRkgy0DWkhN8nYit4XZR3dYtMbUYnwZWZLbM="
         }
       },
       "is_incremental": false,
@@ -11088,7 +12287,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/personnel_base/overview.html",
-          "hash": "YnUGhoI3s06fCNqjAjgd5UERH+uE5BDnHd4PqDqz1no="
+          "hash": "2C1RAuC7nWhBIB5xJyRp9y1dmoci/zsq5EclzvBBk4Q="
         }
       },
       "is_incremental": false,
@@ -11100,7 +12299,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/personnel_base/personnel_base.html",
-          "hash": "RRqk1JlogG92vUo1wuvsQJk/z+cy0dZ5cbrqPDYSPbI="
+          "hash": "rMiUi1lkp8sgvcvdFTlbFMSCd/pyKkGgv5DLYoj34NY="
         }
       },
       "is_incremental": false,
@@ -11112,7 +12311,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/personnel_base/setup/19.positions1.html",
-          "hash": "T5fJRoif2NpbhhSgbMAn3MDaaDFQ8TV35/BqcWWRRwI="
+          "hash": "tQc1MJM/41tf+wGEnP3hx0Gc0RYABJYXqwupf/abRCA="
         }
       },
       "is_incremental": false,
@@ -11124,7 +12323,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/personnel_base/setup/20.contract.html",
-          "hash": "rCrFf/QY8Y1EA0WlkK60YBW5+xuNnKTqLZvlcTOUX1I="
+          "hash": "NgSoyg6jLv0l1BGPM/aiIvLqHUOGwD/oCdd/wqBmM1I="
         }
       },
       "is_incremental": false,
@@ -11136,7 +12335,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/personnel_base/setup/20.contract1.html",
-          "hash": "uYo0cjXky6EfB2rkvPZ1V1O2MXsFejtKbSCFo8EeYWg="
+          "hash": "6WckZL1plEL7tULklWFspsDETRtEDkIUp+8FkE2kuIY="
         }
       },
       "is_incremental": false,
@@ -11148,7 +12347,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/personnel_base/setup/20.contract2.html",
-          "hash": "f3ufmn20aAOvEXPjDfET0btaPFVUgLEQKJFI1+ElVQE="
+          "hash": "EQCrFbGDWRpzeaxiIDYPcPF045C3SQdupV5BErJDOvo="
         }
       },
       "is_incremental": false,
@@ -11160,7 +12359,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/personnel_base/setup/20.contract3.html",
-          "hash": "hzliAMNt8lqelPN+RQOYNW/Gr+dBuSNS+T+N6Raixq0="
+          "hash": "gtI6NjvIYlvAn7Q1KLVdm1K/oE5ch0UyCJvtBQZ2vTk="
         }
       },
       "is_incremental": false,
@@ -11172,7 +12371,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/personnel_base/setup/20.contract4.html",
-          "hash": "VHGdyzB+30SHwIgSrzSW9UkT4bqvbCc9IRSXkfMGyOI="
+          "hash": "IuQm9QqfpWQ3nMTAvf/wXYJgHEMhyv2/bhS3OoMsHwk="
         }
       },
       "is_incremental": false,
@@ -11316,7 +12515,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/personnel_base/setup/21.personnel_order.html",
-          "hash": "ScKQ9apYpoa6IMODAbKgc2rr1nQ7hfH3BYcHGXrfrvU="
+          "hash": "ExqPwO8UqjmJ6iCWMyQlQ39yXhu6Gb6dGxhrefBuWm8="
         }
       },
       "is_incremental": false,
@@ -11328,7 +12527,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/personnel_base/setup/21.personnel_oredr_examp.html",
-          "hash": "ZCa7u80r13GFlgA4ohopJ2m1ZJ4UC+5ZZMg0Bjuz46I="
+          "hash": "M1Ge/aBQfciCZU9eMXj5NCxwZaJIIl3NE76g1qPKQ64="
         }
       },
       "is_incremental": false,
@@ -11340,7 +12539,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/personnel_base/setup/22.1_ovp.html",
-          "hash": "oJPPSebV7n77BxzP7Xg0p9H14i3WKp85Vpevr7qniNk="
+          "hash": "feSWkYQbkI/XF2PXhhBa/GstLgKcoRedy8IF4r0s0RA="
         }
       },
       "is_incremental": false,
@@ -11352,7 +12551,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/personnel_base/setup/22.2.work_safety.html",
-          "hash": "VSO6q9/XecogfsHwW7JGEeBTInKshJ3ykF53sdaW6YY="
+          "hash": "hG83PiWjwpjyMBtQ5/Tz+3prAlSJlfeAE/ncvy9zTDE="
         }
       },
       "is_incremental": false,
@@ -11375,7 +12574,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/personnel_base/setup/22.work_safety.html",
-          "hash": "Jp3eIjNgnHRxG9J9VejbAuxiWFI5FVGm4cU5KP8B7sM="
+          "hash": "rtWAeMwrcIherHAAO3JOuLR0Ei2parZGWiFKXgaCgvg="
         }
       },
       "is_incremental": false,
@@ -11486,7 +12685,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/personnel_base/setup/24.notifications.html",
-          "hash": "dY2DV3feFXdinXxfKb0iuHTLuBFPN/s/lIrxVDvI2uM="
+          "hash": "Diy7SGA9Dehxyer34RAtpI2cWMor1H1HLDQpzg3PPFw="
         }
       },
       "is_incremental": false,
@@ -11620,7 +12819,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/personnel_base/usage_scenarios.html",
-          "hash": "NisR9xKtUBfCDHsf49Gh67ZXDqlvHx7FPU7+FyTPPao="
+          "hash": "ikeo1VtkGHjmLQyG7aLk9xYtSIUAZ98GAqPbBr6swAU="
         }
       },
       "is_incremental": false,
@@ -11632,7 +12831,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/personnel_extended/faq.html",
-          "hash": "mU4rterCe7P0oBgp9Hg7g+ymoi1D4hsbU6PaR7V2WpQ="
+          "hash": "WA4YKUJtmsc+k4TlwBj/HO/wxDUQ9HgH/xLGSBLUNq4="
         }
       },
       "is_incremental": false,
@@ -11644,7 +12843,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/personnel_extended/overview.html",
-          "hash": "E5wBE4Xk8+fng849JIcSu6EiAQVIcDZU+KMn+aILHaU="
+          "hash": "WZBs7aSbbXVMW61foZeGmpb8lZPO0y91o7CrBAug2Os="
         }
       },
       "is_incremental": false,
@@ -11656,7 +12855,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/personnel_extended/personnel_extended.html",
-          "hash": "qJP9fHGHX9NICaOE4nodrL/bVGXwQZzbHr5veyy81i0="
+          "hash": "u+4ndN9kY0lR/a8LqYZ0eFUzg5+DRpPx+naP/3mhBgM="
         }
       },
       "is_incremental": false,
@@ -11745,7 +12944,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/personnel_extended/setup/23.document.templates.html",
-          "hash": "zkj3asoVfmcrrSQGhJ+RuujylFqnSVefpA/dw41cFFE="
+          "hash": "6ER9wVntol12uBgy0V2PyBSQ/2+ru0MnglAcfO+vXcA="
         }
       },
       "is_incremental": false,
@@ -11879,7 +13078,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/personnel_extended/usage_scenarios.html",
-          "hash": "TSRhllzOmRYswzhH6WsVLeXqLlHwWsCpnNLRVgKLlnM="
+          "hash": "Xf6f8trL9Bd5SJJfRWlIrvLk9BWQNBnVuU2bFjzKUDQ="
         }
       },
       "is_incremental": false,
@@ -11891,7 +13090,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/support/customer_terms.html",
-          "hash": "zi8wH1i0AWRydw2k3VTw/XB/dUuLXESlncn6kow51wY="
+          "hash": "N2QSJcWrP2GPu5Tchf27EGZJ9ieZlzVS/p+NEG/fTw0="
         }
       },
       "is_incremental": false,
@@ -11903,7 +13102,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/support/privacy_statement.html",
-          "hash": "2t+qNbN3gPAraVkgvDZxgLFOAfZnKDq6dmXrNX0Mr1k="
+          "hash": "WSeOkCtC89KcuIpJIzMrLTjm36JBLPTcT9MC/Yy5Dm8="
         }
       },
       "is_incremental": false,
@@ -11949,7 +13148,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "y6QTi1KLdb0lfpwnzsOMKYV41EkipxjWnX+0YWhTZXY="
+          "hash": "5YAI+x69825kmLuMSGs1QJgrtfmdCypwweZneSUFVII="
         }
       },
       "is_incremental": false,
@@ -11961,7 +13160,7 @@
       "output": {
         ".html": {
           "relative_path": "readme.html",
-          "hash": "BEBXIF6xkYDaCnWbZ3SUkuWel0vOabD4ezht6YTYx8Y="
+          "hash": "OtBx8PbdWZRSuCAGLuNkg/UIELS+ouVWCmMmGYlDonE="
         }
       },
       "is_incremental": false,

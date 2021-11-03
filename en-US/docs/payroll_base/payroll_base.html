@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title> | Latvian Payroll </title>
+    <title>How to get started | Latvian Payroll </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content=" | Latvian Payroll ">
-    <meta name="generator" content="docfx 2.58.5.0">
+    <meta name="title" content="How to get started | Latvian Payroll ">
+    <meta name="generator" content="docfx 2.58.8.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
@@ -77,7 +77,2518 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
+<h1 id="how-to-get-started">How to get started</h1>
 
+<p>To start using Dynamics 365 Business Central Latvian Payroll, you do not need to choose a specific role center. The functionality will work from any Role Center. However, we recommend to use <em>LV Alga</em> role center to provide all shortcuts on the home page for easier and faster access to payroll transactions.</p>
+<h2 id="role-center">Role Center</h2>
+<p>No specific role center is required, because the functionality can be accessed via search pane. However we recommend to use role <em>LV Payroll</em> for the convenience of the user.</p>
+<h2 id="permission-sets">Permission Sets</h2>
+<p>Use of Latvian Payroll require the LV-HR-PAYROLL permission set to be assigned per user or user group.</p>
+<h2 id="applying-a-configuration-package">Applying a configuration package</h2>
+<p>The basic settings and codes required for use of Latvian Payroll are created by applying the configuration package.</p>
+<p>To apply the configuration package, click the <em>Search</em> (1).</p>
+<p><img src="images/0.conf_pack_1_1.png" alt="alt"></p>
+<p>Then type in the search window <em>Configuration packages</em> (2) and select it from the offered options (3).</p>
+<p><img src="images/0.conf_pack.png" alt="alt"></p>
+<p>Click the following buttons on the configuration package window toolbar <em>Process</em> (1) - <em>Import package</em> (2) and select the appropriate package file from your file storage. Highlight the downloaded package with one click (3) , and then click the buttons <em>Process</em> (1) un <em>Apply package</em> (4).</p>
+<p><img src="images/0.conf_pack_1.png" alt="alt"></p>
+<h2 id="configuration-package-content">Configuration package content</h2>
+<p>The configuration package enters the following information into the system:</p>
+<ul>
+<li>Countries/Regions</li>
+<li>Payroll-related chart of accounts</li>
+<li>General ledger setup related to salaries</li>
+<li>General journal templates and batches</li>
+<li>Units of measures</li>
+<li>LV postal codes</li>
+<li>Bank account card for salary payments</li>
+<li>Bank posting group</li>
+<li>Number series and their lines</li>
+<li>SWIFT codes</li>
+<li>Causes for absence codes</li>
+<li>Employee statistics groups</li>
+<li>Employee posting groups</li>
+<li>References to articles of the Labor Law</li>
+<li>Human Resources setup</li>
+<li>Payroll setup</li>
+<li>Payroll components and setup</li>
+<li>Payroll bases and setup</li>
+<li>Social statuses and status codes</li>
+<li>Reduced interest rates for absence</li>
+<li>Calendars and calendar changes for current year.</li>
+<li>Posting setup for salary payments</li>
+<li>Posting setup for salary components</li>
+<li>PFPIS income and easing types</li>
+</ul>
+<h2 id="general-system-settings">General system settings</h2>
+<p><em>Company information</em> include the following mandatory fields:</p>
+<ul>
+<li>Name (Company name)</li>
+<li>Registration No.</li>
+</ul>
+<p>In the <em>Bank accounts</em> section, a bank account card for salary payments will be loaded with the configuration package. The following fields are mandatory on this card:</p>
+<ul>
+<li>SWIFT Code</li>
+<li>IBAN</li>
+</ul>
+<p>In the <em>Chart of accounts</em> section, the standard accounts required for payroll postings will be loaded with the configuration package. If necessary, we recommend renumbering / renaming these accounts so that no adjustments need to be made to the posting settings.</p>
+<p>In the <em>Dimensions</em> section should be entered dimensions, that will be used for Payroll.</p>
+<h1 id="setting-up">Setting up</h1>
+<p>In order to successfully function of Dynamics 365 Business Central Latvian Payroll according to the requirements of your company, the following settings are available.</p>
+<p>The basic settings are imported with the configuration package, however, the settings described below shall be additionally checked and/or completed to ensure and verify the exact adaptation of the system to the needs of your company.</p>
+<table>
+<thead>
+<tr>
+<th>Setup name</th>
+<th>Imported with package</th>
+<th>User created</th>
+<th>User is editing</th>
+<th>The user is not recommended to edit</th>
+<th>Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Payroll Setup</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+<td><em>The setup is described in the chapter &quot;Payroll setup&quot;</em>.</td>
+</tr>
+<tr>
+<td>Payroll Components</td>
+<td>Yes</td>
+<td>-</td>
+<td>(Yes)*</td>
+<td>Yes</td>
+<td>* <em>The value on the &quot;Settings&quot; tab must be updated according to changes in the legislation. <br> The settings are described in the chapter &quot;Salary components&quot;.</em></td>
+</tr>
+<tr>
+<td>Bases</td>
+<td>Yes</td>
+<td>-</td>
+<td>(Yes)*</td>
+<td>Yes</td>
+<td>* <em>In some cases, the user can adjust the calculation of average earnings and deductions for injunctions. <br> The settings are described in the chapter &quot;Bases&quot;.</em></td>
+</tr>
+<tr>
+<td>Employee Posting Groups</td>
+<td>Yes</td>
+<td>(Yes)*</td>
+<td>Yes</td>
+<td>-</td>
+<td>* <em>The configuration package will import standard posting groups. If necessary, they can be renamed, or add new ones. <br> The setup is described in the chapter &quot;Employee posting groups&quot;</em>.</td>
+</tr>
+<tr>
+<td>Employee Posting Setup</td>
+<td>Yes</td>
+<td>(Yes)*</td>
+<td>Yes</td>
+<td>-</td>
+<td>* <em>The configuration package will import the posting setup, but if you add a new employee posting groups, the posting setup lines must be replenished. The setup is described in the chapter &quot;Employee posting groups&quot;</em>.</td>
+</tr>
+<tr>
+<td>Payroll dimension setup</td>
+<td>-</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td><em>Not mandatory. The settings are described in the chapter &quot;Company settings&quot;</em>.</td>
+</tr>
+<tr>
+<td>Calendars</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+<td><em>If necessary, you can create additional calendars. On the &quot;Calendar change ListPart&quot; tab, you must add the working day dates when the working time is shortened. The settings are described in the chapter &quot;Calendars&quot;</em>.</td>
+</tr>
+<tr>
+<td>Bank Holiday Calendars</td>
+<td>Yes</td>
+<td>-</td>
+<td>Yes</td>
+<td>-</td>
+<td><em>If necessary, you can additionally create calendars. On the &quot;Calendar change ListPart&quot; tab, you should add dates to holidays that are different each year. The settings are described in the chapter &quot;Calendars&quot;</em>.</td>
+</tr>
+<tr>
+<td>Causes of Absence</td>
+<td>Yes</td>
+<td>-</td>
+<td>-</td>
+<td>Yes</td>
+<td><em>The reason codes for absentees should be reviewed and, if necessary, adjusted or supplemented in consultation with ELVA consultants. The settings are described in the chapter &quot;Causes of Absence&quot;</em>.</td>
+</tr>
+<tr>
+<td>Departments</td>
+<td>-</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td><em>The settings are described in the chapter &quot;Employee setup&quot;</em>.</td>
+</tr>
+<tr>
+<td>Positions</td>
+<td>-</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td><em>The settings are described in the chapter &quot;Company settings&quot;</em>.</td>
+</tr>
+<tr>
+<td>Payroll Bank Accounts</td>
+<td>Yes</td>
+<td>(Yes)*</td>
+<td>Yes</td>
+<td>-</td>
+<td>* <em>The configuration package will import the bank card to the payroll bank account. If there are several bank accounts used for salary pay, you need to add new bank account cards. <br> The setup is described in the chapter &quot;Payroll setup&quot;</em>.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="payroll-setup">Payroll setup</h2>
+<p>When you apply the configuration package, the default settings are already complete, but we recommend that you review all the settings to suit your business needs.</p>
+<h3 id="tab-general">Tab: <em>General</em></h3>
+<table>
+<thead>
+<tr>
+<th>Field name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Salary Currency Code</td>
+<td>Specifies the payroll currency code. If salaries are calculated in local currency, leave the field blank.</td>
+</tr>
+<tr>
+<td>Automatically Create Employee Position</td>
+<td>If there is a check mark in this field, then when creating a new employee, a position card will be created automatically.</td>
+</tr>
+<tr>
+<td>Department Dimension Code</td>
+<td>Specifies the default dimension code</td>
+</tr>
+<tr>
+<td>Pay Slip Send Mail By</td>
+<td>Indicates how to send salary slips - Outlook or SMTP protocol. In the case of SMTP, fill in the following fields.</td>
+</tr>
+<tr>
+<td>Pay Slip Sender Name</td>
+<td>Indicates the name that sends out pay slips.</td>
+</tr>
+<tr>
+<td>Pay Slip Sender E-Mail</td>
+<td>Specifies the e-mail through which payroll notes are sent.</td>
+</tr>
+<tr>
+<td>No Justif Absence 12M Check for Average</td>
+<td>This option works if the second feature “Use Curr. Month in Avg. Gain if Period not Full&quot;. If the attribute is not inserted, the current month is not taken if the duration of the eligible absence is less than 12 months, but if the duration of the absence is more than 12 months, the current month will be included in the calculation of average earnings.</td>
+</tr>
+<tr>
+<td>Use Curr. Month in Avg. Gain if Period not Full</td>
+<td>Enable if in case of half period, current month should be included in the average gain calculation.</td>
+</tr>
+<tr>
+<td>Average Gain Precision</td>
+<td>Indicates the precision (decimal point) with which the average earnings will be used in the calculations.</td>
+</tr>
+<tr>
+<td>Average Abs. Code For Report</td>
+<td>Absence code for average earnings.</td>
+</tr>
+<tr>
+<td>Bank Holiday Coef</td>
+<td>The coefficient is used to calculate the allowance for working hours on public holidays and holidays.</td>
+</tr>
+<tr>
+<td>Night Pay Coef</td>
+<td>The coefficient is used to calculate the allowance for night work hours.</td>
+</tr>
+<tr>
+<td>Overtime Coef</td>
+<td>The coefficient is used to calculate the bonus for worked overtime.</td>
+</tr>
+<tr>
+<td>Income Tax Lvl 1 Income Limit</td>
+<td>Level 1 limit.</td>
+</tr>
+<tr>
+<td>Income Tax Lvl 2 Income Limit</td>
+<td>Level 2 limit, for employees with A1 certificate.</td>
+</tr>
+<tr>
+<td>Income Tax Global Base Code</td>
+<td>Used to facilitate the transition to another level.</td>
+</tr>
+<tr>
+<td>Default Calendar</td>
+<td>National calendar for week of 5 workdays.</td>
+</tr>
+<tr>
+<td>Default Calendar 6DDN</td>
+<td>National calendar for week of 6 workdays.</td>
+</tr>
+<tr>
+<td>No Uncalc. Relief Transfer</td>
+<td>Indicate if you do not want that unapplied reliefs will be carried over to the following months' salary calculations.  Unapplied reliefs are transferred through the entries in Component Register, which is created at the time of calculation. If at the time of the calculation there was an indication that the unapplied reliefs should not be carried over, then there will be no entry in the Component Register and they will not be taken into account next month.</td>
+</tr>
+<tr>
+<td>Compensated Bank Holiday Hours Enabled</td>
+<td>Enables if it's necessary to compensate holiday hours, what falls into working days, if the employee have a monthly salary.</td>
+</tr>
+<tr>
+<td>Compens.Bank Holiday Hours For Empl./Terminat.</td>
+<td>Works only if function <em>Compensated Bank Holiday Hours Enabled</em> is enabled. Enables if it's necessary to compensate holiday hours, what falls into working days, if the employee has been hired/terminated in the current month.</td>
+</tr>
+<tr>
+<td>Child Care Absence Filter</td>
+<td>The corresponding absence code.</td>
+</tr>
+<tr>
+<td>Absence Code for Correction</td>
+<td>Code with which payroll recalculation lines appear in the Absence register.</td>
+</tr>
+<tr>
+<td>Vacation Day Type</td>
+<td>Indicates how the holidays are counted - Working days or Calendar days. Provided in cases where no vacation periods are not used.</td>
+</tr>
+<tr>
+<td>Vacation Days per one Period</td>
+<td>Specifies the number of vacation days due per employee per period.</td>
+</tr>
+<tr>
+<td>Vacation Paid Days</td>
+<td>Specifies the number of paid vacation days due to each employee per period.</td>
+</tr>
+<tr>
+<td>Default Hour Qty. For Vacation/Average Calculation</td>
+<td>Indicate the default number of hours per day used in the compensation calculation as well as the average earnings.</td>
+</tr>
+<tr>
+<td>Allow Detailed Payment Posting</td>
+<td>A check mark in this field indicates that the salary payment will be posted in detail, rather than grouping everything in one amount. Salary payments are exported to the payment journal and can be posted by the user with standard posting for each employee individually. In this case, in the general ledger can be seen how much each employee receives. Therefore, a second accounting function is provided for salaries, which can be grouped by dimension and then booked into payments.</td>
+</tr>
+<tr>
+<td>Employers Soc. Tax Acc. Type</td>
+<td>Specifies the account type to which the calculated employer social tax will be posted.</td>
+</tr>
+<tr>
+<td>Employers Soc. Tax Acc. No.</td>
+<td>Specifies the account to which the calculated employer's social tax will be posted.</td>
+</tr>
+<tr>
+<td>Salary Pay Date</td>
+<td>Specifies the payout date that appears on the payroll header and employer reports for State Revenue Service.</td>
+</tr>
+<tr>
+<td>Advance Pay Date</td>
+<td>Specifies the advance payment date that appears on the advance list header.</td>
+</tr>
+<tr>
+<td>Bank Journal Template Name</td>
+<td>Indicates the journal through which salary payments will be made from the bank account.</td>
+</tr>
+<tr>
+<td>Next period Deduction Component</td>
+<td>Component used in correction transactions. In case a payment has already been made from the salary list, then in the next salary list of the current month this payment will be listed under the indicated salary component code.</td>
+</tr>
+<tr>
+<td>No System Component Registers</td>
+<td>Indicates if you do not want to use system-generated Component Register entries in payroll calculations. In case adjustments are required and the &quot;Do not use&quot; tick is enabled, notifications of adjustments are displayed during the calculation, but the register entries will not be created.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="tab-numbering">Tab: <em>Numbering</em></h3>
+<table>
+<thead>
+<tr>
+<th>Field name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Salary Nos.</td>
+<td>Specifies the salary list number series.</td>
+</tr>
+<tr>
+<td>Prepayment Nos.</td>
+<td>Specifies the prepayment number series.</td>
+</tr>
+<tr>
+<td>Advance Nos.</td>
+<td>Specifies the advance payment number series.</td>
+</tr>
+<tr>
+<td>Storno Nos.</td>
+<td>Specifies the correction list number series.</td>
+</tr>
+<tr>
+<td>Employee Position Nos.</td>
+<td>Specifies the employee position number series.</td>
+</tr>
+<tr>
+<td>Component Register Nos.</td>
+<td>Specifies the Component register number series.</td>
+</tr>
+<tr>
+<td>System Component Register Nos.</td>
+<td>Specifies the number series for system Component register.</td>
+</tr>
+<tr>
+<td>Position Nos.</td>
+<td>Specifies the number series for system position register.</td>
+</tr>
+<tr>
+<td>Bank Payment Nos.</td>
+<td>Specifies the series of bank salary payment numbers.</td>
+</tr>
+<tr>
+<td>PFPIS Nos.</td>
+<td>Specifies the number series of the report document for State Revenue Services' &quot;The amounts disbursed to the notice of a natural person&quot; (PFPIS).</td>
+</tr>
+</tbody>
+</table>
+<h3 id="tab-components">Tab: <em>Components</em></h3>
+<table>
+<thead>
+<tr>
+<th>Field name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Advance Payroll Component Code</td>
+<td>The specified component will appear on the salary list as a deduction from the advance list.</td>
+</tr>
+<tr>
+<td>Prepay Payroll Component Code</td>
+<td>The specified component will appear in the salary list as a deduction from the prepayment list.</td>
+</tr>
+<tr>
+<td>Minimum Salary Component Code</td>
+<td>Specifies the minimum salary component.</td>
+</tr>
+<tr>
+<td>Negative PayOut Component Code</td>
+<td>Specifies the negative payout component.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="tab-reports">Tab: <em>Reports</em></h3>
+<table>
+<thead>
+<tr>
+<th>Field name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Manager No.</td>
+<td>Indicates the person who will sign the salary statements as manager.</td>
+</tr>
+<tr>
+<td>Status Code Enabled</td>
+<td>If this function is enabled, when filling in the date of recruitment or dismissal in the employee card, the system will automatically offer to enter the employee status code in the list <em>Status codes</em>, from which information for SRS report <em>Information on employees</em> is obtained.</td>
+</tr>
+<tr>
+<td>Executor No.</td>
+<td>Indicates the person who will sign the salary statements as executor.</td>
+</tr>
+<tr>
+<td>Income Tax in Calculation Period</td>
+<td>Indicates that SRS report “The employer's report on payed social and income tax” presents the personal income tax for the current period.</td>
+</tr>
+<tr>
+<td>Exclude Income Tax Clarif.</td>
+<td>The tick works only if no tick is inserted in “Income Tax in Calculation Period”. In case if “Exclude Income Tax Clarif” is enabled, VSAOI report will reflect the income tax amount of the previous calculation period in the income tax field. In case if “Exclude Income Tax Clarif” is not enabled, then the amount of income tax will include the income tax amount of the previous calculation period and the current monthly updates for the previous period.</td>
+</tr>
+<tr>
+<td>PFPIS Default Income Type Code</td>
+<td>It is used in the PFPIS report in case the employee was not granted benefits and no calculation was made because the employee was unpaid in absence. In this case, the default income code will be linked to the gain.</td>
+</tr>
+<tr>
+<td>Soc. Tax Rep. Income Base Code</td>
+<td>Indicates the revenue base for VSAOI report.</td>
+</tr>
+<tr>
+<td>Soc. Tax Rep. Soc. Tax Base Code</td>
+<td>Indicates the social tax base for the VSAOI report.</td>
+</tr>
+<tr>
+<td>Soc. Tax Rep. Income Tax Base Code</td>
+<td>Indicates the income tax base for the VSAOI report.</td>
+</tr>
+<tr>
+<td>Soc. Tax Rep. Risk Base Code</td>
+<td>Indicates the risk fee base for the VSAOI report.</td>
+</tr>
+<tr>
+<td>Soc. Tax Rep. Pension Base Code</td>
+<td>Indicates the pension contribution base for the VSAOI report.</td>
+</tr>
+<tr>
+<td>Soc. Tax Rep. Solid. Tax Base Code</td>
+<td>Specifies the solidarity tax base for the VSAOI report.</td>
+</tr>
+<tr>
+<td>Company is a Startup</td>
+<td>Attribute for VSAOI report.</td>
+</tr>
+<tr>
+<td>Stat. Group Change Status Code</td>
+<td>Status code for reports in case of position change.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="payroll-bank-accounts">Payroll bank accounts</h2>
+<p>The configuration package imports the bank account card for salary payments and its setup.
+Defining setup is important for successfully exporting payroll payments from the system. You can adjust the settings if necessary.</p>
+<p><img src="images/0.bank_acc.png" alt="alt"></p>
+<p>Following fields are available at <em>Payroll Bank Accounts</em>:</p>
+<table>
+<thead>
+<tr>
+<th>Field name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Payroll Bank Account No.</td>
+<td>Payroll bank account is selected.</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>Freely defined description.</td>
+</tr>
+<tr>
+<td>Output File Type</td>
+<td>The most commonly used is SEPA (xml format).</td>
+</tr>
+<tr>
+<td>File Path</td>
+<td>If you are using a type FIDAVISTA , then please leave a blank field. If you are using a type txt, then you must specify the folder where the file will be saved.</td>
+</tr>
+<tr>
+<td>Separate Payments</td>
+<td>You should tick here, if you need to send a payroll payment for each employee individually as a separate document.</td>
+</tr>
+<tr>
+<td>Group by Employee No.</td>
+<td>You should tick here, if a payout is made to one employee from multiple lists, then in the bank file a single record is created for one Employee No.</td>
+</tr>
+</tbody>
+</table>
+<p>For the convenience of the user, the configuration package also imports a batch of the General journal for salary payments, what needs to be used when preparing salary payments.</p>
+<p><img src="images/0.bank_acc_1.png" alt="alt"></p>
+<h2 id="payroll-components">Payroll components</h2>
+<p>Salary calculation is made from different salary components – incomes, deductions, reliefs, taxes, etc.. All components are listed in <em>Payroll components</em>.</p>
+<div class="TIP">
+<h5>Tip</h5>
+<p><strong>Generally, most of these components are common to all companies and are prepared in advance - while creating a new customer base. Therefore, it is not recommended to delete and modify these values ​​without consulting ELVA consultants</strong>.</p>
+</div>
+<p>Each component has a separate card where settings are made and it is possible to assign <em>Dimensions</em> (1) and view calculation bases, in which the specific component is used, by clicking on <em>Related Bases By Type</em> (2) and <em>Related Bases By Code</em> (3).</p>
+<p><img src="images/payroll_comp.png" alt="alt"></p>
+<h3 id="tab-general-1">Tab: <em>General</em></h3>
+<table>
+<thead>
+<tr>
+<th>Field name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Code</td>
+<td>Freely defined code.</td>
+</tr>
+<tr>
+<td>Type</td>
+<td>Select the appropriate type from the list.</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>Freely defined component name.</td>
+</tr>
+<tr>
+<td>Priority</td>
+<td>Specifies the priority of the component in the payroll calculation process – the smaller the number, the higher the priority. Thus, this component will be included in the salary calculation sooner. Priority falls automatically when you create a new payroll component, <strong>it is not advised to change on your own</strong>.</td>
+</tr>
+<tr>
+<td>Calculation Method</td>
+<td>Choose from the list how the component will be calculated</td>
+</tr>
+<tr>
+<td>Quantity Type</td>
+<td>It is necessary to specify which units of measure to be used when calculating overtime in the timesheet.</td>
+</tr>
+<tr>
+<td>Valid Until</td>
+<td>Until what date the component is in effect.</td>
+</tr>
+<tr>
+<td>Validity Explanation</td>
+<td>Freely definable text that will be reflected in the calculation of salaries in the error message in case the component is not already in force.</td>
+</tr>
+<tr>
+<td>Social Status Code</td>
+<td>Provide a social status code for the social tax component.</td>
+</tr>
+<tr>
+<td>Default Component</td>
+<td>Enable if this component fills in automatically when you create payroll components on the employee card.</td>
+</tr>
+<tr>
+<td>Dependant Count</td>
+<td>Is filled in case it is a relief component regarding dependants  – inserts the appropriate number of dependants.</td>
+</tr>
+<tr>
+<td>Disability Group</td>
+<td>Is filled in case it is a relief component regarding disability – fills in the appropriate disability group.</td>
+</tr>
+<tr>
+<td>Global Dimension 1 Code</td>
+<td>If necessary, indicate the 1st global dimension for the salary component.</td>
+</tr>
+<tr>
+<td>Global Dimension 2 Code</td>
+<td>If necessary, indicate the 2nd global dimension for the salary component.</td>
+</tr>
+<tr>
+<td>Hide in Pay Slip</td>
+<td>Enable if the information about this payroll component will not be printed in the pay slip.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="tab-additional-info">Tab: <em>Additional Info</em></h3>
+<p><img src="images/payroll_comp_1.png" alt="alt"></p>
+<table>
+<thead>
+<tr>
+<th>Field name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Net Amount</td>
+<td>Enable if the net amount is used in the calculation. <strong>If the net component has an amount with a negative sign, this amount will be considered as a gross amount</strong>.</td>
+</tr>
+<tr>
+<td>Overtime Component Code</td>
+<td>Specifies the attached Overtime payroll component.</td>
+</tr>
+<tr>
+<td>Bank Holiday Component Code</td>
+<td>Specifies the attached Bank Holiday Hour payroll component.</td>
+</tr>
+<tr>
+<td>Night Pay Component Code</td>
+<td>Specifies the associated Night Hour Payroll components.</td>
+</tr>
+<tr>
+<td>Compensated Hour Comp. Code</td>
+<td>Specifies the payroll component that is used in the payroll with hourly rate calculation to compensate the bank holiday hours that fall during normal working hours and the employee did not work on that day.</td>
+</tr>
+<tr>
+<td>Over Annual Limit Comp. Code</td>
+<td>Specifies the payroll component code that will be used in the payroll calculation if the limit for this component is exceeded.</td>
+</tr>
+<tr>
+<td>Relief Available Amount Base</td>
+<td>Base that defines the amount of relief for a given component.</td>
+</tr>
+<tr>
+<td>Uncalc. Relief Comp. Code</td>
+<td>Specifies the payroll component code that will be applied to transfer uncalculated reliefs to salary calculations for the next months.</td>
+</tr>
+<tr>
+<td>Income Tax Lvl2 Component Code</td>
+<td>Income Tax level 2 Base Code</td>
+</tr>
+<tr>
+<td>Income Tax Lvl3 Component Code</td>
+<td>Income Tax level 3 Base Code.</td>
+</tr>
+<tr>
+<td>Always Use Calculation Period</td>
+<td>Enable if it is necessary to use the current calculation period for income tax calculation.</td>
+</tr>
+<tr>
+<td>Split To Related Components</td>
+<td>Enable if components are formed from setup (base amounts) and are divided according to the components that are in the base amounts.</td>
+</tr>
+<tr>
+<td>Base Salary</td>
+<td>Enable if this component is recognized as a base salary component.</td>
+</tr>
+<tr>
+<td>Bank Holiday Pay in Vacation</td>
+<td>Enable at the basic salary component cards if you want that payment for bank holidays (which falls on an employee's work day) to be calculated during vacation. If a bank holiday falls during vacation, the system reduces the number of days taken by the holiday by these days.</td>
+</tr>
+<tr>
+<td>Nonworking Bank Holiday by Average</td>
+<td>Enable at the basic salary component cards if you wan to pay average salary, for a worker's holiday falls on a bank holiday that falls on a working day according to the national calendar.To calculate average earnings per day, the check mark must be at <em>Allow Bank Holiday Hours</em> what is located at employee card's section <em>Employee Payroll components</em>.</td>
+</tr>
+<tr>
+<td>No G/L Posting</td>
+<td>Indicates that the corresponding component data will not be posted to the general ledger.</td>
+</tr>
+<tr>
+<td>Salary Account No.</td>
+<td>Indicates the corresponding general ledger account in which Payroll Payments will be posted.</td>
+</tr>
+<tr>
+<td>Posting Group Account Sign</td>
+<td>Indicates the side of the posting group: debit or credit.</td>
+</tr>
+<tr>
+<td>Include Zero Amount</td>
+<td>Enable if you want to create a payroll line with 0 amount (there is no possibility to deduct the amount, but there is a possibility that the user can adjust the amount of the deduction). It is necessary to generate a queue to be able to transfer money to third parties.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="tab-posting">Tab: <em>Posting</em></h3>
+<p><img src="images/payroll_comp_2.png" alt="alt"></p>
+<table>
+<thead>
+<tr>
+<th>Field name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Employee Posting Group Code</td>
+<td>Selects from the list to which group this component applies.</td>
+</tr>
+<tr>
+<td>Account Type</td>
+<td>Selects from the list.</td>
+</tr>
+<tr>
+<td>Account No.</td>
+<td>Payroll account number is selected from the chart of accounts (or vendor/customer if the type is vendor/customer).</td>
+</tr>
+<tr>
+<td>Social Tax Account</td>
+<td>Specifies the Account Number of the Employer's Social Tax (DDSN) Cost.  DDSN can be posted to different cost accounts specified for each employee posting group.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="tab-setup">Tab: <em>Setup</em></h3>
+<p><img src="images/payroll_comp_3.png" alt="alt"></p>
+<table>
+<thead>
+<tr>
+<th>Field name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>From Date</td>
+<td>Indicates the date from which this value is valid.</td>
+</tr>
+<tr>
+<td>Amount</td>
+<td>Indicates a value if it is constant.</td>
+</tr>
+<tr>
+<td>Calculation Type</td>
+<td>Indicates whether the value entered will be an amount or a percentage</td>
+</tr>
+<tr>
+<td>Base</td>
+<td>If percentage is selected, indicate the base from which amount the percentage will be calculated.</td>
+</tr>
+<tr>
+<td>Base Annual Limit Amount</td>
+<td>The limit is indicated, after which no calculations are made.</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>Free field to fill.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="employee-posting-groups">Employee posting groups</h2>
+<p>Employee posting groups are used when amounts obtained in payroll calculation must be distributed between different general ledger accounts (for example, administration payroll costs and worker payroll costs ). To view all payroll postings on one page, on the <em>Employee posting groups</em> toolbar press a button <em>Posting Setup</em></p>
+<p><img src="images/2.payroll_acc_6.png" alt="alt"></p>
+<table>
+<thead>
+<tr>
+<th>Field name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Code</td>
+<td>Employee posting group code.</td>
+</tr>
+<tr>
+<td>Payables Account</td>
+<td>Specifies the ledger account to be used when posting vendor debts to employees in this posting group.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="employee-posting-setup">Employee Posting Setup</h2>
+<p>This list summarizes the posting setup of all payroll groups, depending on the Employee posting group code.</p>
+<p><img src="images/2.payroll_acc_6_1.png" alt="alt"></p>
+<p>Following fields for setup are available:</p>
+<table>
+<thead>
+<tr>
+<th>Field name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Employee Posting Group Code</td>
+<td>Code name of the employee posting group.</td>
+</tr>
+<tr>
+<td>Payroll component code</td>
+<td>Specifies which payroll component is reflected in postings.</td>
+</tr>
+<tr>
+<td>Payroll Component Description</td>
+<td>Payroll component name.</td>
+</tr>
+<tr>
+<td>Account type</td>
+<td>Account type of the fields <em>Account No.</em> and <em>Social Tax Account</em>.</td>
+</tr>
+<tr>
+<td>Accounts No.</td>
+<td>Account number.</td>
+</tr>
+<tr>
+<td>Social Tax Account</td>
+<td>Employer's social tax account number.</td>
+</tr>
+<tr>
+<td>Salary Account No..</td>
+<td>Offset account. No editable field, just for informational purposes.</td>
+</tr>
+<tr>
+<td>Posting Group Account Sign</td>
+<td>Debit or credit side mark of the fields <em>Account No.</em> and <em>Social Tax Account</em>. No editable field, just for informational purposes.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="bases">Bases</h2>
+<p>Bases are settings that determine the calculation of various salary components - vacation, sick leave as well as algorithms for calculating some reports. These amounts can be defined as needed.</p>
+<p>Each base has its own card and all base cards are grouped in the <em>Bases</em> list.</p>
+<h3 id="tab-general-2">Tab: <em>General</em></h3>
+<p><img src="images/2.payroll_acc_6_2.png" alt="alt"></p>
+<table>
+<thead>
+<tr>
+<th>Field name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Base Code</td>
+<td>Freely defined code.</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>Freely chosen description.</td>
+</tr>
+<tr>
+<td>Related Payroll Component Code</td>
+<td>This functionality is intended for extended filtering of data. If the Related Component code is specified for the base, then only the rows from the payroll component rows are counted, where the component code or the related component code coincides with the base component related component code. There are limitations to the related component (for gathering correct PFPIS), therefore it is highly recommended to consult with ELVA consultants.</td>
+</tr>
+<tr>
+<td>Income Tax Lvl Filter</td>
+<td>If percent rate is selected, indicate the basis from which the (base) amounts will be calculated the percentage.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="tab-setup-1">Tab: <em>Setup</em></h3>
+<p><img src="images/2.payroll_acc_6_3.png" alt="alt"></p>
+<table>
+<thead>
+<tr>
+<th>Field name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Plus Type</td>
+<td>Indicate the types of components that will be included in the calculation of the amount of base.</td>
+</tr>
+<tr>
+<td>Minus Type</td>
+<td>Indicates the types of components that will be deducted from the amount of the base.</td>
+</tr>
+<tr>
+<td>Plus Code</td>
+<td>Indicate the specific components that will be included in the calculation of the amount of the base.</td>
+</tr>
+<tr>
+<td>Minus Code</td>
+<td>Indicate the components that will be deducted in the calculation of the amount of the base.</td>
+</tr>
+</tbody>
+</table>
+<p>In addition, in each table, it is possible to indicate the date from and until which the relevant component or component type operates in the calculation. This data is preserved in history.</p>
+<h2 id="calendars">Calendars</h2>
+<blockquote>
+<p>The calendar is the basis for all calculations. In each employee's position card must be indicated a working time calendar code. The calendar is used to calculate working days and hours, as well as to calculate planned working days and hours per month, which are used to calculate absences.</p>
+</blockquote>
+<p>Each calendar has its own card. Working time calendar cards are summarized in the list <em>Calendars</em>. The configuration package imports several standard calendar types. The user can create additional calendars depending on the needs of the company. Working days, which have  different count of working hours (for example: days before the holidays ), need to be replenished manually annually in each calendar.</p>
+<p>The following fields are available for settings when creating a new calendar:</p>
+<h3 id="tab-general-3">Tab: <em>General</em></h3>
+<p><img src="images/2.calendar.png" alt="alt"></p>
+<table>
+<thead>
+<tr>
+<th>Field name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Code</td>
+<td>Freely defined code.</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>Freely chosen description.</td>
+</tr>
+<tr>
+<td>Bank Holiday Calendar Code</td>
+<td>A holiday calendar code that is linked to this specific calendar.</td>
+</tr>
+<tr>
+<td>Bank Holiday Calendar</td>
+<td>Mark that this calendar is a bank holiday calendar bank holiday calendars only).</td>
+</tr>
+<tr>
+<td>Work outside working days</td>
+<td>Notes that employees also work on weekends.</td>
+</tr>
+<tr>
+<td>Cycle Calendar</td>
+<td>Mark if this calendar is created as a cycle calendar.</td>
+</tr>
+<tr>
+<td>Cycle Start Date</td>
+<td>Defines the first day of the cycle calendar.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="tab-calendar-summary">Tab: <em>Calendar Summary</em></h3>
+<p><img src="images/2.calendar_1.png" alt="alt"></p>
+<p>Calendar entries show information about each day, taking into account the associated bank holiday calendar.
+If a bank holiday calendar is specified in the title of the calendar, then all holidays apply to that calendar as well. Changes can be made to each calendar individually - transfer specific working days, shorten working hours for working days before the holidays, indicating specific dates.  In case that a holiday what falls during a normal working week should be compensated, this information can be registered in the tab <em>Calendar change ListPart</em>.</p>
+<h3 id="tab-calendar-change-listpart">Tab: <em>Calendar Change ListPart</em></h3>
+<p><img src="images/2.calendar_2.png" alt="alt"></p>
+<table>
+<thead>
+<tr>
+<th>Field name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Recurring System</td>
+<td>Period of the year (commonly used for bank holiday calendars), Period of a week or Cycle.</td>
+</tr>
+<tr>
+<td>Date</td>
+<td>If necessary, indicate a specific date (commonly used for bank holiday calendars).</td>
+</tr>
+<tr>
+<td>Day</td>
+<td>Specifies the name of the day of the week.</td>
+</tr>
+<tr>
+<td>Cycle sequence number</td>
+<td>If the recurrence is Cycle, identicate the cycle sequence No.</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>Freely chosen description.</td>
+</tr>
+<tr>
+<td>Nonworking</td>
+<td>Check whether a given day is a day off.</td>
+</tr>
+<tr>
+<td>Bank Holiday</td>
+<td>Mark whether a given day is a bank holiday.</td>
+</tr>
+</tbody>
+</table>
+<p>In case that a public holiday is moved to another day (for example, 18 November or 4 May), this information must be entered in the calendar with the type Holiday and with compensated hours.</p>
+<h3 id="tab-calendar-year-listpart">Tab: <em>Calendar Year ListPart</em></h3>
+<p><img src="images/2.calendar_3.png" alt="alt"></p>
+<p>The year and the average number of hours per month are indicated in case the employee has the aggregated working time and the base salary in proportion to the hours, the average number of hours per month is taken into account for the calculation of the hourly rate. This rate is used for night hours, overtime, public holidays, holiday / hourly compensations.</p>
+<h2 id="bank-holiday-calendars">Bank Holiday Calendars</h2>
+<p>The configuration package of the system creates a standard holiday calendar with already set holidays, which repeats every year on the same date. (for example: Christmas, Midsummer, etc.). Bank holidays that do not repeat on the same date (for example: Easter, Mother's day, Pentecost, and postponed public holidays as well), must be replenished manually each year.</p>
+<h3 id="tab-general-4">Tab: <em>General</em></h3>
+<p>Only fields <em>Code</em> and <em>Description</em> are filled, and embedded a feature <em>Public Holiday Calendar</em> as well. The other fields on this tab are inactive and are filled in by the system.</p>
+<p><img src="images/2.calendar_4.png" alt="alt"></p>
+<h3 id="tab-calendar-summary-1">Tab: <em>Calendar Summary</em></h3>
+<p>Calendar entries show information about each day, taking into account entered data in the tab <em>Calendar Change ListPart</em>.</p>
+<h3 id="tab-calendar-change-listpart-1">Tab: <em>Calendar Change ListPart</em></h3>
+<p>If the holidays are repeated on the same dates each year, the <em>Recurring System</em> field is selected as <em>Annual Recurring</em> and the corresponding settings are made.
+If the holidays do not repeat on the same dates each year, then <em>Recurring System</em> fields is left blank and the corresponding settings are made.</p>
+<p><img src="images/2.calendar_5.png" alt="alt"></p>
+<h2 id="causes-of-absence">Causes of absence</h2>
+<p>To register an absence, causes of absence codes are necessary. All reason codes are initially imported into the system via the configuration package and are listed <em>Causes of absence</em>. The code card can be opened by clicking on the required line of code and pressing the buttons on the toolbar <em>Actions - New document - Card</em>.</p>
+<p><strong>It is not recommended to do any changes to the reason codes and their settings</strong>.</p>
+<p><img src="images/2.calendar_abs.png" alt="alt"></p>
+<h3 id="tab-general-5">Tab <em>General</em></h3>
+<table>
+<thead>
+<tr>
+<th>Field name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Code</td>
+<td>Freely defined absence code.</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>Description of absence.</td>
+</tr>
+<tr>
+<td>Unit of Measure Code</td>
+<td>Selects from the list.</td>
+</tr>
+<tr>
+<td>Total Absence (Base)</td>
+<td>The system shows how many times this absence is registered. Taking into account that this is a standard Microsoft field that is not maintained, it always shows zero.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="tab-payroll">Tab <em>Payroll</em></h3>
+<table>
+<thead>
+<tr>
+<th>Field name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Unjustified Absence</td>
+<td>Sign of unjustified absence.</td>
+</tr>
+<tr>
+<td>Calculate in Payroll as</td>
+<td>Selects from the list how the absence is calculated: <br>1. Average – the calculation period is taken first in the previous 6 months, if not, then in the previous 12 months. If not, the program checks <em>Payroll Setup</em>, is there a check mark in the field <em>Use Curr. Month in Avg. Gain if Period not Full</em>. If this field is not checked, then the average of the minimum wage is calculated;<br>2.	Keep salary separated – the calculated basic salary will be retained for the selected period, the amount being divided into another salary component; <br>3. Keep Salary –  for the selected period nothing changes in the calculation of the basic salary (for example: justified absence); <br> 4. Prepayment – pays basic salary as Prepayment for the selected period (vacation ahead); <br> 5. No Salary – no salary is calculated for the selected period (for example: unpaid vacation, unjustified absence); <br> 6. Without Relief – Does not calculate salary and benefits (for example: sick leave B); <br> 7.	Blank – overrides in the payroll calculation.</td>
+</tr>
+<tr>
+<td>Payroll Component Code</td>
+<td>Indicate the corresponding salary component.</td>
+</tr>
+<tr>
+<td>Next Period Payroll Comp. Code</td>
+<td>Indicate the component if the payment for the next period is allocated to another component.</td>
+</tr>
+<tr>
+<td>Calendar Day Limit</td>
+<td>Indicates the number of days of cause of absence (for example, sick leaves, business trips), to warn of exceeding the limits.</td>
+</tr>
+<tr>
+<td>Reduced Pay</td>
+<td>Indicates reduced rates by day (for example.:  how sick leave is paid). Click on the field link to set. <br><img src="images/9.salary_absence_4.1.png" alt="alt"></td>
+</tr>
+<tr>
+<td>Forced Calendar Code</td>
+<td>Selects the default calendar according to which the calculation for a specific absence will be performed.</td>
+</tr>
+<tr>
+<td>Forced Calendar Code 6DDN</td>
+<td>Selects the default calendar to calculate for a specific absence according to a six-day calendar.</td>
+</tr>
+<tr>
+<td>Day Type</td>
+<td>Indicates the type of absence calculation by days (periods): <br>-	Work Day; <br> -	Calendar Day; <br>-	Manual  - the number of days does not depend on the period.</td>
+</tr>
+<tr>
+<td>Relief in Calc. Period</td>
+<td>A checkmark in the field indicates that the relief will be calculated this month. If there is no check mark, it will be carried forward. (for example: long vacations for teachers).</td>
+</tr>
+<tr>
+<td>Include in Actual Worktime</td>
+<td>If there is a check mark, then the days are considered as actually worked (for example: a business trip).</td>
+</tr>
+<tr>
+<td>Calculation Priority</td>
+<td>Indicates the sequence number of the cause of absence code in the chain of salary calculation activities - the lower the number, the higher the priority. Priority can be given to both - salary components and reasons for absence. If the salary component comes from an absence record (for example: compensation of unused vacation.), then priority is taken from the cause of absence.</td>
+</tr>
+<tr>
+<td>Average By Hours</td>
+<td>You can choose between: <br>leave blank, <br>Only SDL ( for the totaled working time), <br>All.</td>
+</tr>
+<tr>
+<td>Post Next Periods</td>
+<td>A check mark is placed if part of the next period of the temporary absence is booked to the expenses of the next period.</td>
+</tr>
+<tr>
+<td>Graph Code</td>
+<td>Indicates a freely chosen code that will be used to indicate this type of absence in the schedule printouts.</td>
+</tr>
+<tr>
+<td>Schedule Printout Colour</td>
+<td>Selects the color in which the absence days are marked in the schedule printout.</td>
+</tr>
+<tr>
+<td>Day Off Saved Salary</td>
+<td>Used when an employee is given a holiday that must be paid according to the principle  “Keep salary”, but not included in real time (for example: blood donor days). <strong>If enabled then value in the field <em>Calculate in Payroll as</em> must be <em>Average</em></strong>.</td>
+</tr>
+<tr>
+<td>Not compensate Bank Holiday Hours</td>
+<td>Enables if holiday hours what falls into working hours included in absence period will not be offered to compensate.</td>
+</tr>
+<tr>
+<td>Not paid compensated Bank Holiday Hours</td>
+<td>Enables if during the period of absence, the holiday hours included in the absence would not be added to paid days together with base salary.</td>
+</tr>
+<tr>
+<td>Absence Start Status Code</td>
+<td>Specifies the status code that will be displayed in the report <em>Information on employees</em> (Employee social sign codes) in connection with the beginning of the absence. The employee status code will be filled in the system after entering the start date of the absence.</td>
+</tr>
+<tr>
+<td>Work Restart Status Code</td>
+<td>Specifies the status code that will be displayed in the report <em>Information on employees</em> (Employee social sign codes) in connection with the end of the absence. The employee status code will be filled in the system after entering the end date of the absence.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="tab-vacations">Tab <em>Vacations</em></h3>
+<table>
+<thead>
+<tr>
+<th>Field name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Influence on Vacation</td>
+<td>Indicate the effect of the absence on the balance of annual leave.</td>
+</tr>
+<tr>
+<td>Vacation Compensation</td>
+<td>Vacation compensation feature. Used in the Vacation Compensation Code Card.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="company-structure-and-positions">Company structure and positions</h2>
+<p>In order to start enter the data in the employee card easily, without a hitch, it is recommended that you initially perform the settings listed below, which will be required to fill in the fields on the employee card:</p>
+<ul>
+<li>create a list of departments ;</li>
+<li>create a list of employee positions;</li>
+<li>define the payroll dimensions;</li>
+<li>set up calendars according to which salaries will be calculated</li>
+</ul>
+<h3 id="departments">Departments</h3>
+<p>In the system, you can maintain structured information about the departments. The information will be both current and historical, because the structural units in the system are not deleted, but closed.</p>
+<p>To ensure the departmental hierarchy, sorting and indent methods are combined. Thus, one department is subordinate to another if it is after the main unit and has one level more indention. Depending on the depth of department indention and the number of departments, a department code shall be drawn up. Departmental indentions are created through functions <em>Assign Indent</em> (1), <em>Decrease Indent</em> (3) and <em>Increase Indent</em> (4).</p>
+<p>You can link dimensions to departments by clicking the button <em>Dimensions</em> (2)</p>
+<p><img src="images/2.payroll_acc_9.png" alt="alt"></p>
+<table>
+<thead>
+<tr>
+<th>Field name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Code</td>
+<td>Department code defined by the user.</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>Department name.</td>
+</tr>
+<tr>
+<td>Address</td>
+<td>Address where the department is located.</td>
+</tr>
+<tr>
+<td>Date Created</td>
+<td>Date when the department was created.</td>
+</tr>
+<tr>
+<td>Date Closed</td>
+<td>Date when the department is closed.</td>
+</tr>
+<tr>
+<td>Parent Department code</td>
+<td>Department code to which the department is subject.</td>
+</tr>
+<tr>
+<td>Manager Position Code</td>
+<td>The corresponding manager position code from the list <em>Positions</em>.</td>
+</tr>
+<tr>
+<td>Department Dim. Value Code</td>
+<td>Department dimension value code from standard payroll dimension classifier.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="positions">Positions</h3>
+<p>All positions used in the company are listed in <em>Positions</em>. A separate Job Card must be created for each position.</p>
+<p>If the information about the profession code and department code is corrected in the system, then in order for these changes to appear in the employee card, the data update function shall be activated in the position card, by clicking on <em>Process</em> (1) and <em>Update Employee Positions</em> (2).</p>
+<p><img src="images/2.payroll_acc_8_1.png" alt="alt"></p>
+<p>You can add dimensions to the position by clicking <em>Related</em> (3) and choose the function <em>Dimensions</em> (4).</p>
+<p><img src="images/2.payroll_acc_8.png" alt="alt"></p>
+<table>
+<thead>
+<tr>
+<th>Field name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Code</td>
+<td>New position's code.</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>Positions title.</td>
+</tr>
+<tr>
+<td>Profession Code</td>
+<td>Code from <em>Employee Statistic Groups</em>.</td>
+</tr>
+<tr>
+<td>Department Code</td>
+<td>Code from <em>Departments</em>.</td>
+</tr>
+<tr>
+<td>Department Description</td>
+<td>Description from <em>Departments</em>.</td>
+</tr>
+<tr>
+<td>Total Loading</td>
+<td>Total loads that are expected for this position.</td>
+</tr>
+<tr>
+<td>Current Loading</td>
+<td>Loads what are currently occupied in the company.</td>
+</tr>
+<tr>
+<td>Current Employee Count</td>
+<td>Number of employees employed in a particular position.</td>
+</tr>
+<tr>
+<td>Vacant Loading</td>
+<td>How many workloads are still vacant for this position.</td>
+</tr>
+<tr>
+<td>Date Created</td>
+<td>The date when the position was created.</td>
+</tr>
+<tr>
+<td>Date Closed</td>
+<td>Position close date.</td>
+</tr>
+<tr>
+<td>Salary Amount</td>
+<td>Informative field.</td>
+</tr>
+<tr>
+<td>Work Time Undeterminable</td>
+<td>Note if the job time is undetectable and subordinated to the company's needs.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="payroll-dimension-setup">Payroll Dimension Setup</h3>
+<p>The use of this functionality is not mandatory for the successful operation of the system.</p>
+<p>In the <em>Payroll Dimension Setup</em> indicate the dimensions that will be used in the salary calculations. The other dimensions available in the system will be ignored.</p>
+<p><img src="images/2.payroll_acc_8_2.png" alt="alt"></p>
+<p>Following fields are available:</p>
+<table>
+<thead>
+<tr>
+<th>Field name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Dimension code</td>
+<td>Selects a dimension from the list that will be used in the salary calculation.</td>
+</tr>
+<tr>
+<td>Value From</td>
+<td>Specifies the level from which the dimension value will be taken:<br>a)	Source – the specified dimension code is taken from the Absence Registration, Payroll components, Payroll components registry; <br>b)	Payroll component –  The specified dimension code is taken from the payroll component; <br>c)	Employee Position – The specified dimension code is taken from the employee position; <br>d)	Employee – The highest level, the specified dimension code is taken from the employee card.</td>
+</tr>
+<tr>
+<td>Don't Use Hierarchy</td>
+<td>If there is no check mark in this field, the specified dimension code is searched at higher levels. If there is a check mark, then only at the selected level.</td>
+</tr>
+<tr>
+<td>Blank Value Allowed</td>
+<td>Checks that the dimension value is not an empty value after the above settings. If there is a check mark in this field, the system <strong>does not make an error message if</strong> in any level (at a specific level if there is a check mark in the do not use hierarchy field) <strong>dimension is not found</strong>.</td>
+</tr>
+</tbody>
+</table>
+<p>The system offers the ability to add numerous dimensions to the departments and the positions. If dimension values are indicated at the department and other dimension values are indicated at the relevant position, all (both those indicated to the department and those indicated to the position) will be shown at the position card of the employee.</p>
+<div class="TIP">
+<h5>Tip</h5>
+<p><strong>We do not recommend to specify the same dimensions, but with different values for both - the department and the position</strong>.</p>
+</div>
+<h1 id="employee-data">Employee data</h1>
+<p>In order to hire a new employee, a new employee card must be created. Each employee has their own card, where you must enter all available information relevant to the employee. The employee card contains all the information needed for records, calculations and reports.</p>
+<p>All employee cards are listed in <em>Employees</em>.</p>
+<p>For the convenience of users, an employee card copy function is also available for entering employees into the system (In the tool bar of the employee card press <em>Navigate</em>-<em>Creating Add. Info</em>-<em>Copy Employee</em>), which is convenient to use if the employee has resumed work in the company after the dismissal. However, to avoid possible mistakes (for example: in the calculation of average earnings, in the statement regarding the amounts paid to natural persons), it is recommended to create a new employee card.</p>
+<h2 id="employee-card">Employee Card</h2>
+<p><strong>Fields marked with an exclamation mark <em>&quot;!&quot;</em> at tab <em>Field type</em> are mandatory.</strong></p>
+<h3 id="tab-general-6">Tab: <em>General</em></h3>
+<p><img src="images/5.empl_info_1.png" alt="alt"></p>
+<table>
+<thead>
+<tr>
+<th>Field name</th>
+<th style="text-align: center;">Field Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>No.</td>
+<td style="text-align: center;">!</td>
+<td>Fills in automatically.</td>
+</tr>
+<tr>
+<td>First Name</td>
+<td style="text-align: center;">!</td>
+<td>The employee's name.</td>
+</tr>
+<tr>
+<td>Middle Name/Initials</td>
+<td style="text-align: center;"></td>
+<td>Employee's middle name or initials.</td>
+</tr>
+<tr>
+<td>Last Name</td>
+<td style="text-align: center;">!</td>
+<td>Employee's last name.</td>
+</tr>
+<tr>
+<td>Search Name</td>
+<td style="text-align: center;"></td>
+<td>Fills in automatically.</td>
+</tr>
+<tr>
+<td>Gender</td>
+<td style="text-align: center;">!</td>
+<td>Gender of employee.</td>
+</tr>
+<tr>
+<td>Company Phone No.</td>
+<td style="text-align: center;"></td>
+<td>Free field for information.</td>
+</tr>
+<tr>
+<td>Company Email</td>
+<td style="text-align: center;"></td>
+<td>Free field for information.</td>
+</tr>
+<tr>
+<td>Last Date Modified</td>
+<td style="text-align: center;"></td>
+<td>Information field for controlling the amounts paid to the employee.</td>
+</tr>
+<tr>
+<td>Privacy Blocked</td>
+<td style="text-align: center;"></td>
+<td>Enabled, if the employee has written a request to block information about him. In this case, this employee is not reflected in the relevant lists.</td>
+</tr>
+<tr>
+<td>PayOut Amount</td>
+<td style="text-align: center;"></td>
+<td>Information field for controlling the amounts paid to the employee.</td>
+</tr>
+<tr>
+<td>Payment Amount Before Correction</td>
+<td style="text-align: center;"></td>
+<td>Information field.</td>
+</tr>
+<tr>
+<td>Payment Amount</td>
+<td style="text-align: center;"></td>
+<td>Information field for controlling the amounts paid to the employee.</td>
+</tr>
+<tr>
+<td>Remaining Payment Amount</td>
+<td style="text-align: center;"></td>
+<td>Information field for controlling the amounts paid to the employee.</td>
+</tr>
+<tr>
+<td>Disallowed Congratulations</td>
+<td style="text-align: center;"></td>
+<td>To be filled in if the employee does not want to post his/ her birthday after GDPR.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="tab-address--contact">Tab: <em>Address &amp; Contact</em></h3>
+<p>This tab lists addresses, phone numbers, email addresses, and alternate addresses. The number of alternative addresses can be unlimited. Fields are filled in as needed. If the employee wants to receive salary slips to the e-mail address, then the field <em>Private Email</em> is mandatory.</p>
+<p><img src="images/5.empl_info_2.png" alt="alt"></p>
+<p>You can enter an unlimited number of alternate addresses for each employee. To do this, enter the code and the corresponding contact information in the <em>Alternate addresses</em> list. Next, one of the Alternate Address codes can be entered in the field provided on the employee card tab <em>Address &amp; Contact</em>.</p>
+<h3 id="tab-administration">Tab: <em>Administration</em></h3>
+<p><img src="images/5.empl_info_3.png" alt="alt"></p>
+<table>
+<thead>
+<tr>
+<th>Field name</th>
+<th style="text-align: center;">Field Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Employment Date</td>
+<td style="text-align: center;">!</td>
+<td>If the <em>Status Code Enable</em> function is enabled on the <em>Reports</em> tab of the Payroll Setup, then by filling in this field, the system will offer to enter the employee status code for the  EDS report <em>Employee Social Sign Codes</em>. Later you can reopen this window by clicking the buttons on the toolbar <em>Navigate</em> - <em>Additional Info. For Payroll</em> - <em>Status Codes</em></td>
+</tr>
+<tr>
+<td>Status</td>
+<td style="text-align: center;">!</td>
+<td><em>Active, Inactive, Terminated</em>. <em>Active</em> fills in by default.</td>
+</tr>
+<tr>
+<td>Inactive Date</td>
+<td style="text-align: center;"></td>
+<td>Planned date of termination, if an employee has been recruited for a limited period of time.</td>
+</tr>
+<tr>
+<td>Cause of Inactivity Code</td>
+<td style="text-align: center;"></td>
+<td>Choose employee inactivity reason code.</td>
+</tr>
+<tr>
+<td>Termination Date</td>
+<td style="text-align: center;">!</td>
+<td>Mandatory field when terminating an employee.</td>
+</tr>
+<tr>
+<td>Grounds for Term. Code</td>
+<td style="text-align: center;"></td>
+<td>Indicates the ground for termination code when terminating the employment.</td>
+</tr>
+<tr>
+<td>Emplymt. Contract Code</td>
+<td style="text-align: center;"></td>
+<td>Indicate the code of the employment contract related to the employee.</td>
+</tr>
+<tr>
+<td>Resource No.</td>
+<td style="text-align: center;"></td>
+<td>Indicates the employee resource number.</td>
+</tr>
+<tr>
+<td>Salespers./Purch. Code</td>
+<td style="text-align: center;"></td>
+<td>Indicates the code assigned to the employee who is the seller or buyer.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="tab-personal">Tab: <em>Personal</em></h3>
+<p><img src="images/5.empl_info_4.png" alt="alt"></p>
+<table>
+<thead>
+<tr>
+<th>Field name</th>
+<th>Field Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Birth Date</td>
+<td>!</td>
+<td>Indicates the employee's date of birth.</td>
+</tr>
+<tr>
+<td>Social Security No.</td>
+<td>!</td>
+<td>In case of a non-resident, NMR code assigned by the Republic of Latvia. In case the personal identification code starts with 32, the date of birth will not be filled in.</td>
+</tr>
+<tr>
+<td>Previous Social Security No.</td>
+<td>!</td>
+<td>If a new personal code is entered in the <em>Social Security No.</em> field, the previous personal code will be automatically copied to the <em>Previous Social Security No.</em> field. Make sure that the previous personal identification code is copied in the field <em>Previous Social Security No</em>, prior to that the field <em>Previous Social Security No</em> must be blank.</td>
+</tr>
+<tr>
+<td>Union Code</td>
+<td></td>
+<td>If the employee has joined an association.</td>
+</tr>
+<tr>
+<td>Union Membership No.</td>
+<td></td>
+<td>Required field when releasing an employee who is a member in an association.</td>
+</tr>
+<tr>
+<td>Residence</td>
+<td>!</td>
+<td><em>Resident</em> fills in by default. In case the option is selected <em>Nonresident</em>, then for non-residents the income tax will not be filled in in the report of employer.</td>
+</tr>
+<tr>
+<td>Nonresident ID Code</td>
+<td></td>
+<td>Indicate the personal identification code assigned to the non-resident.</td>
+</tr>
+<tr>
+<td>Working Permit Date</td>
+<td></td>
+<td>Indicate the date until which the work permit is valid.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="tab-payments">Tab: <em>Payments</em></h3>
+<p><img src="images/5.empl_info_5.png" alt="alt"></p>
+<table>
+<thead>
+<tr>
+<th>Field name</th>
+<th>Field Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Employee Posting Group</td>
+<td>!</td>
+<td>Selects an employee posting group from the list.</td>
+</tr>
+<tr>
+<td>Application Method</td>
+<td></td>
+<td>Specify how to apply payments to this employee.</td>
+</tr>
+<tr>
+<td>Bank Branch No.</td>
+<td></td>
+<td>Indicate the name of the bank branch of the employee's salary account.</td>
+</tr>
+<tr>
+<td>Bank Account No.</td>
+<td></td>
+<td>Specifies the employee's bank account to which the payroll payment is to be made.</td>
+</tr>
+<tr>
+<td>IBAN</td>
+<td>!</td>
+<td>International code of the employee's bank account to which the salary payment is to be made.**</td>
+</tr>
+<tr>
+<td>SWIFT Code</td>
+<td>!</td>
+<td>Bank SWIFT code.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="tab-payroll-1">Tab: <em>Payroll</em></h3>
+<p><img src="images/5.empl_info_6.png" alt="alt"></p>
+<table>
+<thead>
+<tr>
+<th>Field name</th>
+<th style="text-align: center;">Field Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Social Status Code</td>
+<td style="text-align: center;">!</td>
+<td>Selects the employee status code from the list.</td>
+</tr>
+<tr>
+<td>Company Contract</td>
+<td style="text-align: center;"></td>
+<td>Enable if the employee works under a company contract.</td>
+</tr>
+<tr>
+<td>Royalty</td>
+<td style="text-align: center;"></td>
+<td>Enable if the employee receives royalties.</td>
+</tr>
+<tr>
+<td>Test Period</td>
+<td style="text-align: center;"></td>
+<td>Indicate the length of the test period. For example, <em>3M</em>.</td>
+</tr>
+<tr>
+<td>Test Period End Date</td>
+<td style="text-align: center;"></td>
+<td>The value is filled automatically based on the recruitment date and the specified test period length.</td>
+</tr>
+<tr>
+<td>Vacation Day Correction</td>
+<td style="text-align: center;"></td>
+<td>This field is used to enter the balance of accrued vacation days.</td>
+</tr>
+<tr>
+<td>Average by Hours</td>
+<td style="text-align: center;"></td>
+<td>If the calculation should be made taking into account the hours.</td>
+</tr>
+<tr>
+<td>NonResident Income Type</td>
+<td style="text-align: center;"></td>
+<td>Indicate if the employee is a non-resident.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="tab-employee-positions">Tab: <em>Employee Positions</em></h3>
+<p>An essential part of an employee card!</p>
+<p>This tab specifies the parameters required for the calculation, such as the calendar, the date of appointment, the title of the position.</p>
+<p>Click on the buttons to assign the position to the employee <em>Related</em> (1) - <em>Creating Add. Info</em> (2) - <em>Create new employee position</em> (3).</p>
+<p><img src="images/5.empl_info_7_1.png" alt="alt"></p>
+<p>A new window <em>Employee Position Card</em> will open, where following fields are available:</p>
+<p><img src="images/5.empl_info_7.png" alt="alt"></p>
+<table>
+<thead>
+<tr>
+<th>Field name</th>
+<th style="text-align: center;">Field Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>No.</td>
+<td style="text-align: center;"></td>
+<td>The numbering of the employee's position is necessary for the system to be able to correctly calculate the salary in case the employee's position has changed. In case of a change of position, the new position is automatically assigned a new Employee position number.</td>
+</tr>
+<tr>
+<td>Employee No.</td>
+<td style="text-align: center;"></td>
+<td>Selects an employee from the list.</td>
+</tr>
+<tr>
+<td>From Date</td>
+<td style="text-align: center;"></td>
+<td>The position takes effect on a date specified in this field. For the first employee position, this field is filled in by the recruitment date by default.</td>
+</tr>
+<tr>
+<td>To Date</td>
+<td style="text-align: center;"></td>
+<td>Indicate if the position has a known expiry date.</td>
+</tr>
+<tr>
+<td>Planned To Date</td>
+<td style="text-align: center;"></td>
+<td>Indicate if the post is planned to expire.</td>
+</tr>
+<tr>
+<td>Position Code</td>
+<td style="text-align: center;">!</td>
+<td>Selects an employee's position from the job list.</td>
+</tr>
+<tr>
+<td>Position Description</td>
+<td style="text-align: center;">!</td>
+<td>The name is read automatically from the selected position card.</td>
+</tr>
+<tr>
+<td>Department Code</td>
+<td style="text-align: center;">!</td>
+<td>Selects the employee's department.</td>
+</tr>
+<tr>
+<td>Primary Position</td>
+<td style="text-align: center;"></td>
+<td>If the employee has several positions, then the main one among all positions must be indicated.</td>
+</tr>
+<tr>
+<td>Skip in Salary</td>
+<td style="text-align: center;"></td>
+<td>In case of termination, this field is checked automatically as soon as the last Salary list has been created.</td>
+</tr>
+<tr>
+<td>Salary Type</td>
+<td style="text-align: center;">!</td>
+<td>Indicates the type of employee's salary calculation (normal or aggregated working time).</td>
+</tr>
+<tr>
+<td>Loading</td>
+<td style="text-align: center;"></td>
+<td>Intended for statistical reporting.</td>
+</tr>
+<tr>
+<td>Calendar Code</td>
+<td style="text-align: center;">!</td>
+<td>Selects from a list of calendars. The calendar is the basis for all calculations.</td>
+</tr>
+<tr>
+<td>Calendar Name</td>
+<td style="text-align: center;"></td>
+<td>The calendar code is read automatically from the Calendar list.</td>
+</tr>
+<tr>
+<td>Cycle Calendar Setup</td>
+<td style="text-align: center;"></td>
+<td>in field <em>Calendar code</em>.</td>
+</tr>
+<tr>
+<td>Don't use def. vacation cal.</td>
+<td style="text-align: center;"></td>
+<td>Do not use the default vacation calendar.</td>
+</tr>
+<tr>
+<td>Statistics Group Code</td>
+<td style="text-align: center;"></td>
+<td>The appropriate code is selected from the position code classifier.</td>
+</tr>
+<tr>
+<td>Work Time Undeterminable</td>
+<td style="text-align: center;"></td>
+<td>Indicate if it is not possible to determine the hours actually worked.</td>
+</tr>
+<tr>
+<td>Global Dimension 1 Code</td>
+<td style="text-align: center;"></td>
+<td>If necessary, indicate the 1st global dimension.</td>
+</tr>
+<tr>
+<td>Global Dimension 2 Code</td>
+<td style="text-align: center;"></td>
+<td>If necessary, indicate the 2nd global dimension.</td>
+</tr>
+</tbody>
+</table>
+<p>If necessary, it is also possible to assign dimensions to the employee position in the Employee Position Card.</p>
+<h3 id="employee-payroll-components"><em>Employee Payroll Components</em></h3>
+<p>The Payroll Components specify the tax, benefit, and deduction components that should be included in the employee's payroll calculation.</p>
+<p>Employee Payroll Components can be viewed by clicking on the buttons <em>Process</em> - <em>Employee Payroll Components</em> on the toolbar .</p>
+<p>When creating a new employee card, Payroll Components shall be generated automatically for the first time. To do this, click the buttons on the toolbar <em>Related</em> (1) - <em>Creating Add. Info</em> (2) - <em>Create Employee Payroll Components</em> (3).</p>
+<p><img src="images/5.empl_info_8.png" alt="alt"></p>
+<p>Employee Payroll Components is the place where should be indicated the basic salary component as well as other regular additional income components (additional pays, bonuses, rewards, etc., which are constant amounts for a long period of time each month).The salary advance amount to be paid shall be specified in the advance component.
+If necessary, the lines are supplemented with information on reliefs - Dependants, Disability, Repressed.</p>
+<div class="TIP">
+<h5>Tip</h5>
+<p><strong>In case the employee has submitted the salary tax book to the employer, this should be registered in the list <em>Related information</em>, which can be found in the toolbar by clicking on <em>Navigate</em> -<em>Additional Info. For Payroll</em>.</strong></p>
+</div>
+<p>Payroll Components shall also include information on long-term deductions (writ of execution, alimony, fee for car use, etc). Deductions are recorded in the employee card only if they are constant amounts that are repeated each month. One-time deductions should be recorded in <em>Component Registers</em>.</p>
+<h4 id="processing-the-writ-of-execution">Processing the writ of execution</h4>
+<p>The writ of execution can be registered in the employee card's <em>Employee Payroll Components</em></p>
+<p><img src="images/10.salary_comp.register_2.png" alt="alt"></p>
+<p><em>In the specific example, 20% of the base ALIM (salary after tax) has been deducted using salary component No. 740, where the minimum deduction is EUR 250 per month, and EUR 1250 has been deducted for previous periods. No limit to the total amount of the deductions has been set.</em></p>
+<p>The following fields must be filled in the Employee Payroll Components tab to set a writ of execution:</p>
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Code</td>
+<td>Choose a salary component. Depending on the settings of the salary component, the amount of the deduction is calculated.</td>
+</tr>
+<tr>
+<td>From Date/ To Date</td>
+<td>If known, indicate the dates on which the deduction is to take place.</td>
+</tr>
+<tr>
+<td>Amount</td>
+<td>To be completed in case a specific amount is known to be deducted each month.</td>
+</tr>
+<tr>
+<td>Total Limit</td>
+<td>Specifies the total amount of debt according to writ of execution.</td>
+</tr>
+<tr>
+<td>Calculated Deducted Amount</td>
+<td>Informative field. The system here represents the total amount deducted for this particular writ of execution (the total amount from all salary lists).</td>
+</tr>
+<tr>
+<td>Month Limit</td>
+<td>Indicates a minimum monthly limit.</td>
+</tr>
+<tr>
+<td>PayOut Limit</td>
+<td>Indicates the minimum limit of the employee's salary payment. In this case, the field PayOut Limit Base must be completed.</td>
+</tr>
+<tr>
+<td>PayOut Limit Base</td>
+<td>Indicates the limit base if a PayOut Limit is specified.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Possible configuration options for the deductions:</strong></p>
+<ul>
+<li>30% of the employee's payment is deducted, but not more than 350 EUR per month. The total amount to be deducted is 350 EUR. It is shown that the full amount of 350 EUR has been deducted from the employee.</li>
+</ul>
+<p><img src="images/10.salary_comp.register_3.png" alt="alt"></p>
+<ul>
+<li>20% is deducted, provided that the amount of the employee's salary payment is at least 370 EUR per month. The total amount to be deducted is 350 EUR. It is shown that on this moment 199.36 EUR has been deducted from the employee.</li>
+</ul>
+<p><img src="images/10.salary_comp.register_4.png" alt="alt"></p>
+<div class="TIP">
+<h5>Tip</h5>
+<p><strong>The system does not provide both options at the same time - when using the <em>Month Limit</em> and <em>PayOut Limit</em>!</strong></p>
+</div>
+<h2 id="additional-employee-information">Additional employee information</h2>
+<p>You can enter various additional information related to a specific employee in the employee card:</p>
+<ul>
+<li>Qualifications</li>
+<li>Confidential information</li>
+<li>Alternate addresses</li>
+<li>Relatives</li>
+<li>Miscellaneous article information</li>
+<li>Status Codes</li>
+<li>Related information</li>
+<li>Payments to third parties</li>
+<li>Comments</li>
+<li>Attachments</li>
+<li>Employee picture</li>
+</ul>
+<h3 id="qualification">Qualification</h3>
+<p>A qualification list of employees can be maintained in the system. Based on this, it is possible to keep track of when trainings and briefings need to be repeated (for example, using a report Employee qualifications).</p>
+<p>In order to start the registration of qualifications, it is necessary to register in the list Qualifications the codes of the types of qualifications and their descriptions, relevant to the company. Qualification codes are entered on each new line, indicating a <em>Code</em> (1) of your choice and a <em>Description</em> (2) of the relevant qualification. If in field <em>Qualified Employees</em> (3) is a check mark Yes, then by clicking on the link (3) you can view a list of which employees have this particular qualification.</p>
+<p><img src="images/6.empl_add_info3.png" alt="alt"></p>
+<p>Once the*Qualifications list is complete, you can define employee qualifications by selecting Employee Cards in the toolbar <em>Related</em> - <em>Employee</em> - <em>Qualifications</em>.</p>
+<p><img src="images/6.empl_add_info2.png" alt="alt"></p>
+<table>
+<thead>
+<tr>
+<th>Field name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Qualification Code</td>
+<td>Code from the register <em>Qualifications</em>.</td>
+</tr>
+<tr>
+<td>From date</td>
+<td>Date of qualification.</td>
+</tr>
+<tr>
+<td>To date</td>
+<td>Qualification valid until.</td>
+</tr>
+<tr>
+<td>Type</td>
+<td>Select the origin: <em>Internal</em>, <em>External</em>, from a <em>Previous Position</em>.</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>Description of the type of education, filled in from the qualification register.</td>
+</tr>
+<tr>
+<td>Institution/Company</td>
+<td>Name of the external qualification institution of origin.</td>
+</tr>
+<tr>
+<td>Comment</td>
+<td>A note that a comment has been added to the post.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="confidential-information">Confidential Information</h3>
+<p>Employee information classified as confidential can be stored in a separate list. Nowhere else in the system will this information be displayed. Each record of confidential information must define a code and provide a description of it. You can add a comment to each entry.</p>
+<p><em>Confidential Information</em> the list can be opened by clicking on the button <em>Navigate</em> in the employee card.</p>
+<p>To be able to review data for multiple employees is available a report <em>Employee Confidential Information</em>, available by entering a name in the system search field.</p>
+<h3 id="alternate-addresses">Alternate Addresses</h3>
+<p>You can enter an unlimited number of alternate addresses for each employee. To do this, enter the code and the corresponding contact information in the list <em>Alternate Addresses</em>. Next, you can enter one of the Alternate Address codes in the field <em>Alt. Address Code</em> provided in the Employee Card tab <em>Address &amp; Contact</em>.</p>
+<h3 id="relatives">Relatives</h3>
+<p>Each employee's card can contain data about relatives and their contact information in case of emergency. Children are given a date of birth, which makes it easy to check how many additional days of vacation are to be granted to the employee.</p>
+<p><img src="images/6.empl_add_info4.png" alt="alt"></p>
+<p>For the needs of the company, it is possible to collect data on employees' relatives using a report <em>Employees Relatives</em>, where data can be selected by various filter criteria (for example, by type of relative - children only).</p>
+<h3 id="misc-article-information">Misc. Article Information</h3>
+<p>Each employee's card can list the inventory issued to the employee. First you need to define the codes of the issued inventory and their names in the list <em>Employee Miscellaneous Articles</em>. The inventory can then be assigned to the employee by recording a Serial Number for each item, determining the time of use, and adding a comment if necessary..</p>
+<p><img src="images/6.empl_add_info5.png" alt="alt"></p>
+<p>It is possible to use the report to control the issued inventory <em>Employee Miscellaneous Article Information</em>, available by entering a name in the system search field.</p>
+<h3 id="status-codes">Status Codes</h3>
+<p>In the Employee's cards toolbar <em>Navigate</em> - <em>Additional Info. For Payroll</em> a function <em>Status codes</em> is available, where you can view and edit the social status codes associated with the employee, and on this basis the report <em>Employee Social Sign Codes</em> is prepared. If in Payroll Setup tab <em>Reports</em> is enabled function <em>Status Code Enabled</em>, then after the date fields are entered (what are related to status codes, for example date of recruitment, or date of termination, or unpaid leave), the system will prompt you to enter an employee status code in <em>Status codes</em> register.</p>
+<h3 id="related-information">Related information</h3>
+<p>In the Employee's cards toolbar <em>Navigate</em> - <em>Additional Info. For Payroll</em> a function <em>Related information</em> is available. Here you have to enter the fact of submission of the Salary Tax Book for each employee and indicate the date. Here should also be made a note and indicated the date for non-residents.</p>
+<p>In addition, a feature is available for calculations <em>Apply Progressive Income Tax</em>.</p>
+<p><img src="images/6.empl_add_info6.png" alt="alt"></p>
+<h3 id="payment-to-third-parties">Payment to third parties</h3>
+<p>If an order has been received to withhold an amount from an employee's salary and transfer it to another person's account (for example bailiff's account), the <em>Payment to third parties</em> functionality found on the employee card toolbar <em>Navigate</em> - <em>Additional Info. For Payroll</em> is provided for this case. The line must contain all the required information so that the system can prepare the payment for sending to the payment journal and later export to the bank. Before you can start this process, you will need to create a new vendor card for this third party (unless such a vendor card haven't been used and created before).</p>
+<p><img src="images/6.empl_add_info7.png" alt="alt"></p>
+<table>
+<thead>
+<tr>
+<th>Field name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Employee No.</td>
+<td>The system enters automatically.</td>
+</tr>
+<tr>
+<td>Empl. Payroll Comp. Line No.</td>
+<td>The relevant deduction component of the salary should been selected from the list.</td>
+</tr>
+<tr>
+<td>Payroll Component Code</td>
+<td>The system enters automatically.</td>
+</tr>
+<tr>
+<td>Vendor No.</td>
+<td>From the list, select the supplier to whom the amount should be transferred.</td>
+</tr>
+<tr>
+<td>Vendor Name</td>
+<td>The system enters automatically.</td>
+</tr>
+<tr>
+<td>Vendor Bank Code</td>
+<td>The supplier's bank account code is selected from the list.</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>Freely chosen.</td>
+</tr>
+<tr>
+<td>Payment Information</td>
+<td>Text to be included in the payment order.</td>
+</tr>
+<tr>
+<td>PayOut Amount</td>
+<td>The system enters automatically.</td>
+</tr>
+<tr>
+<td>Payment Amount</td>
+<td>The system enters automatically.</td>
+</tr>
+<tr>
+<td>Remaining Payment Amount</td>
+<td>The system enters automatically.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="attachments">Attachments</h3>
+<p>If necessary, it is possible to attach files in the system in any format to the employee card (for example, CV, diplomas and other documents).
+The functionality is available in the Employee Card toolbar <em>Employee</em>.</p>
+<p><img src="images/6.empl_add_info8.png" alt="alt"></p>
+<h3 id="reports">Reports</h3>
+<p>The following reports can be easily accessed from the each employee card by clicking on <em>Process</em> (1):</p>
+<ul>
+<li>Detailed information (2) - information and links to all the calculations, payments and absence entries what are related to this particular employee.</li>
+<li>Unused vacation days (3) - the current accrued vacation days appear on the work date in a pop-up window.</li>
+</ul>
+<p><img src="images/6.empl_add_info9.png" alt="alt"></p>
+<h1 id="working-time-accounting">Working Time Accounting</h1>
+<p>For the calculation of the salary, the number of hours worked is taken into account, which is calculated on the basis of the type of calendar attached to the employee in the Position card, registered absences in the <em>Employee Absences</em> and hours registered in the <em>Hour Registers</em>.</p>
+<p>When recruiting a new employee and filling in the Calendar code field if the Position card, the employee will be assigned the planned number of hours according to the settings of the assigned calendar code.</p>
+<h2 id="hour-registers">Hour Registers</h2>
+<p>If the hours actually worked by the employee differ from the planned hours, then by entering a new entry in the <em>Hour Registers</em> and indicating the employee number, you can enter the days and hours the employee has worked actually in the particular month. For aggregated and shift work, the system has a control that does not allow entering/ importing more than 24 hours a day.</p>
+<p><img src="images/8.salary_hours_1.png" alt="alt"></p>
+<p>The number of hours can be corrected until the salary is calculated (salary calculation transferred to payment journal or salary list is posted).</p>
+<div class="TIP">
+<h5>Tip</h5>
+<p><strong>If it is necessary to correct the number of hours worked after the salary has been paid or booked, the reversal calculation must be made in the same month as the error.</strong></p>
+</div>
+<h2 id="working-time-accounting-schedule">Working Time Accounting (schedule)</h2>
+<p>At the end of the month, you can print a timesheet using a report <em>Schedule Print Calendar</em>. You can print a timesheet template, which can be adjusted as needed by sending it to Word or Excel.</p>
+<p>The table shows the <strong>planned</strong> working hours according to the Calendar attached to each employee.</p>
+<p>By enabling the <em>Accounting</em> button in the report printout window, the schedule printout will include the registered absences in the requested period for each employee, and the number of planned working days/ hours will be reduced accordingly.</p>
+<div class="TIP">
+<h5>Tip</h5>
+<p>The hours entered in the <em>Hour registers</em> do not appear in the schedule printout. To obtain data on actual working hours, it is necessary to import the report into Excel or Word environment and prepare a printout with the actual distribution of hours by days.</p>
+</div>
+<h1 id="absences">Absences</h1>
+<p>All deviations from the planned working hours must be entered on a separate absence card. All absence cards are listed in the <em>Employee Absences</em> register.</p>
+<h2 id="registering-a-new-absence">Registering a new absence</h2>
+<p>To enter a new absence, you must go to the Employee Absences register and create a new Employee Absence Card by clicking on the button <em>New</em>.</p>
+<p>You can define dimensions for employee absence by clicking on <em>Dimensions</em> (1).</p>
+<p>By entering Employee No. it is possible to view the details of the selected employee in <em>Employee Details</em> (2), so that you can easily view, for example, records of previous absences or salary data for previous periods.</p>
+<p>If an employee has entered a related absence and the dates overlap, it is possible to recalculate by clicking on <em>Recalculate</em> (3). By default, recalculation entries are shown on the next month for which payroll has not been calculated.</p>
+<p>In the <em>Average Gain Buffer</em> (4) you can view the data of the previous months on the average earnings.</p>
+<p><em>Cancel Absence</em> (6) and <em>Cancel Recalculation</em> (7) options related to absences are available below the toolbar button <em>Related</em> (5). The function <em>Recalculate</em> (3) is used if working hours were recorded during the registered absence. Recalculation can be canceled with <em>Cancel Recalculation</em> (7) function. In all other cases, the function <em>Cancel Absence</em> (6) should be used.</p>
+<div class="TIP">
+<h5>Tip</h5>
+<p><strong>When you cancel your absence, the system does not recalculate the salary. If it is necessary to adjust the number of days worked during this period, the cancellation must be made in the same month.</strong></p>
+</div>
+<p><img src="images/9.salary_absence_1.png" alt="alt"></p>
+<h3 id="tabgeneral">Tab:<em>General</em></h3>
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Employee No.</td>
+<td>Employee selected from the list to register absence.</td>
+</tr>
+<tr>
+<td>Cause of Absence Code</td>
+<td>Code selected from the list.</td>
+</tr>
+<tr>
+<td>From Date</td>
+<td>Date from which the absence is valid.</td>
+</tr>
+<tr>
+<td>To Date</td>
+<td>Date until which the absence is valid.</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>Name of Cause of Absence code, system generated field.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="tabpayroll">Tab:<em>Payroll</em></h3>
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Unjustified Absence</td>
+<td>Enable if the absence is unjustified and there is no need to calculate the payment.</td>
+</tr>
+<tr>
+<td>Calculate in Payroll as</td>
+<td>Settings from the absence list, system generated field.</td>
+</tr>
+<tr>
+<td>Calculate in Year</td>
+<td>The system enters automatically based on the date of absence. Editable field.</td>
+</tr>
+<tr>
+<td>Calculate in Month</td>
+<td>The system enters automatically based on the date of absence. Editable field.</td>
+</tr>
+<tr>
+<td>Days</td>
+<td>The system enters automatically, based on the calendar assigned to the employee.</td>
+</tr>
+<tr>
+<td>Hours</td>
+<td>The system enters automatically, based on the calendar assigned to the employee.</td>
+</tr>
+<tr>
+<td>Skip in Prepayment</td>
+<td>If enabled, the calculated absence fee will not be paid in Prepayments.</td>
+</tr>
+<tr>
+<td>Related Payroll Line</td>
+<td>The system automatically indicates if a related document exists for the entry.</td>
+</tr>
+<tr>
+<td>Related Payroll Header</td>
+<td>The system indicates automatically when an absence calculation is made.</td>
+</tr>
+<tr>
+<td>Global Dimension 1 Code</td>
+<td>Indicate the 1st global dimension, if applicable.</td>
+</tr>
+<tr>
+<td>Global Dimension 2 Code</td>
+<td>Indicates the 2nd global dimension, if applicable.</td>
+</tr>
+<tr>
+<td>Related Entry No.</td>
+<td>Absence linking function. If the employee has entered a series of absences, which must be calculated with the same average earnings, then this absence should be indicated in this field.</td>
+</tr>
+<tr>
+<td>Keep salary with average</td>
+<td>Enables if the average salary should be kept during the absence.</td>
+</tr>
+<tr>
+<td>Day Average Gain</td>
+<td>If you need to change the daily average earnings, enter it manually in the field before calculating.</td>
+</tr>
+<tr>
+<td>Hour Average Gain</td>
+<td>If it is necessary to change the hourly average earnings, enter it manually in the field before the calculation.</td>
+</tr>
+<tr>
+<td>Average Gain Changed</td>
+<td>The system enables it automatically if values ​​are entered in the daily or hourly average gain fields.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="vacation">Vacation</h2>
+<p>The balance of the available vacation days can be checked on the employee card by pressing <em>Unused vacation days</em> (1).</p>
+<p><img src="images/9.salary_absence_5_1.png" alt="alt"></p>
+<p>You can adjust the balance of vacation days through the field <em>Vacation Day Correction</em> (2), where to increase the number of unused days the number of corrective days must be entered with a minus sign, but to decrease - with a plus sign.</p>
+<p><img src="images/9.salary_absence_5.png" alt="alt"></p>
+<h2 id="vacation-accruals">Vacation accruals</h2>
+<p>By opening the report named Average Gain With amounts and selecting a date of your choice in the report print window (1), unused vacation days of employees, as well as their costs can be calculated, taking into account the average daily earnings of employees and the costs of the employer's social tax. Also, you can send (2) the amount of vacation accrual entries to the general ledger journal (3). The code of the accrual component must indicate the <em>Savings Component Code</em> (4) of the payroll component, which indicates all the accounting settings. It is recommended to create a component that will not be used in salary calculations. As an example, component card no. 190  see below.</p>
+<p><img src="images/14.reports_3.png" alt="alt"></p>
+<p><img src="images/14.reports_3.1.png" alt="alt"></p>
+<p>When you run a report, transactions will be created in the specified ledger journal:</p>
+<ol>
+<li>Vacation accrual postings at the reporting date.</li>
+<li>Vacation accruals with a minus sign with the last date of the following month.</li>
+</ol>
+<p>In case it is necessary to create vacation accruals by dimensions, it is necessary to indicate appropriate dimensions in the reference parameters.</p>
+<h2 id="sick-leave">Sick leave</h2>
+<p>All sick lists received from employees are registered in the <em>Employee Absences</em> register.</p>
+<p>Sick leave payment settings are included in the relevant cause of absence code cards. The functional fields of the absence code cards are described in detail in the chapter <em>Causes of Absence</em>.</p>
+<p>If a temporary sick leave is submitted after the salary calculation (salary calculation has been paid or posted), then it is recommended to perform the calculation in the month of the end of the sick leave.</p>
+<h2 id="absence-analytics">Absence analytics</h2>
+<p>OIn the list of <em>Absence Registration</em> are listed all data on employee absences.</p>
+<p>For more convenient absence data analysis, we recommend using filters in the list. For more convenient data processing, we recommend opening the selected information in Excel by clicking the button * Open in Excel* on the toolbar.</p>
+<h1 id="benefits-and-deductions">Benefits and deductions</h1>
+<h2 id="component-registers">Component Registers</h2>
+<p>The component register is intended to be use in cases where the employee has income or deductions that differ from month to month - are determined outside the program. When filling in the Component Register, all the mentioned salary components will be included in the monthly salary calculation indicated in the register title.</p>
+<h3 id="creating-a-new-register">Creating a new register</h3>
+<p>A new registry is created on the home page or in the system search by selecting Component Registers and choosing <em>New</em>.</p>
+<p>The number will be assigned to the register automatically. Next, select the <em>Year</em> (1) and <em>Month</em> (2) for which the benefits and deductions will be entered (when opening a new list, the current year and month will be entered automatically by default).
+It is also recommended to fill in the <em>Description</em> (3) field in free form, choosing the description, which is then easy to understand and after which it is easy to find the required entry - for example, by entering the department name or component type name, or a description of the employee group, etc.</p>
+<p>The list of employees in the Component Register can be compiled in several variants - by automatically generating with filters by selecting employees and specifying a specific salary component code, and by selecting employees one by one. We recommend that you prepare the data in Excel using the export and import function in the toolbar by clicking on <em>Actions</em> (4) - <em>Import From Excel</em> 5) or <em>Export To Excel</em> (6).</p>
+<p><img src="images/10.salary_comp.register_1_1.png" alt="alt"></p>
+<p>If necessary, the generated or imported rows can be adjusted manually in the Component Register ListPart by deleting redundant employee by clicking on <em>Manage</em> (7) - <em>Delete Line</em> (8) or by changing the <em>Payroll Component Code</em> (9) and/ or  <em>Amount</em> (10). The period is entered automatically - the same as indicated on the card header. If the component relates to another period (for example, income is adjusted), the value must be changed to the required one.</p>
+<p><img src="images/10.salary_comp.register_1.png" alt="alt"></p>
+<h2 id="employee-card-1">Employee Card</h2>
+<p>It is recommended to enter in the Employee's card all the benefits and deductions, which are included in the calculation of monthly salary as constant amounts for a long period of time. In doing so, the employee will be automatically added registered benefit to the salary calculation each month and/ or the relevant deduction will be deducted.</p>
+<p>It can be easily entered in the payroll component rows of employee card.</p>
+<p><img src="images/10.salary_comp.register_8.png" alt="alt"></p>
+<h1 id="salary-calculation">Salary calculation</h1>
+<h2 id="advances">Advances</h2>
+<p>For employees who have an advance component entered in the card, it is possible to generate a list of advances. Information about the paid advance will be automatically included in the calculation of the salary for the specific month and deducted from the amount to be paid.</p>
+<p>A new advance list is created by clicking on the shortcut <em>+Advance List</em> on the system home page. All lists of advances are included in a common list <em>Advance Headers</em>.</p>
+<p>The number will be assigned to the list automatically. Next, select Year and Month (automatically will be filled in with the current year and month).
+Advance list lines are automatically generated at the click of a buttons <em>Process</em> (1) - <em>Insert New Lines</em> (2), where a filters can be applied to generate only specific lines.</p>
+<p>After generating the advance list and the initial check, it is recommended to change the status of the list from Open to Released by clicking on <em>Release Document</em> (3). This protects the calculation data against accidental corrections. If necessary, the status can be changed in the opposite direction with <em>Open Document</em> (4).</p>
+<p>If no filters were used before generating the employee list, then the system will list all employees and those with no advance payment will be queued with an amount of 0. These employees can be deleted from the list by clicking the button <em>Delete Lines with zero Pay-Out</em> (5).</p>
+<p><img src="images/11.salary_calc_1.png" alt="alt"></p>
+<p>The following additional functions are available in the <em>Report</em> and <em>Actions</em> sections of the Advance List toolbar:</p>
+<ul>
+<li><em>Pay Slip</em> – possibility to print and send pay slips for advance payment.</li>
+<li><em>Detailed Salary List</em> – printout of the advance list for approval.</li>
+<li><em>Export to Payment Journal</em> – payment records will be prepared for export to the payment journal, from which they can be further exported to the bank and posted.</li>
+<li><em>Import Advances From Excel</em>  - it is possible to import the data from an Excel file.</li>
+</ul>
+<h2 id="prepayment">Prepayment</h2>
+<p>The vacation pay that needs to be paid to the employee before the vacation, as well as various lists of bonuses or gifts, should be paid from the list of prepayment - this is, before the end of the month. Taxes are calculated from the amounts in Prepayment in the appropriate period. When generating a payroll, the amounts paid in prepayments will automatically be deducted and the amount paid will be reduced.</p>
+<p><strong>Prior to the calculation of the prepayment, all the information must be added to Absence register and to Component Register.</strong></p>
+<p>If you need to separate the calculations by type, then use the tab <em>Filters</em> (4). On the Filter tab, select the criteria for the calculations that you want (or don't want) to pay in the prepayment. For example, without entering any filter criteria, the current absence register entries and the component register entries will be prepared for the selected employee at prepayment line.</p>
+<div class="TIP">
+<h5>Tip</h5>
+<p><strong>If, together with the vacation pay, it is also necessary to pay the salary for the period worked until the leave, the absence record with the code <em>ALGA_PER</em> (Salary for the period) must be recorded in the Absence Registration.</strong></p>
+</div>
+<p>A new list of prepayment is created by clicking on the shortcut <em>+Prepayment List</em> on the system home page. All the prepayment lists are included in a common list Prepayment Headers.</p>
+<p>The number will be assigned to the list automatically. Next, select Year and Month (will be filled in automatically with current year and month).
+Automatic generation of prepayment list lines is done by clicking on a buttons <em>Process</em> (1) - <em>Insert New Lines</em> (2).</p>
+<p>After generating the prepayment list and initial check, it is recommended to change the status of the list from Open to Released by clicking on <em>Release Document</em> (3). This protects the calculation data against accidental corrections. If necessary, the status can be changed in the opposite direction with <em>Open Document</em> (4).</p>
+<p><img src="images/11.salary_calc_2.png" alt="alt"></p>
+<p>The following additional functions are available in the <em>Report</em> section of the prepayment list toolbar:</p>
+<ul>
+<li><em>Pay Slip</em> – possibility to print and send pay slips for prepayment.</li>
+<li><em>Export to Payment Journal</em> – payment records will be prepared for export to the payment journal, from which they can be further exported to the bank and posted.</li>
+<li><em>Detailed Salary List</em> – printout of the prepayment list for approval.</li>
+</ul>
+<h2 id="salary-calculation-1">Salary calculation</h2>
+<p>After when</p>
+<ul>
+<li>position changes are registered</li>
+<li>salary changes are registered,</li>
+<li>updated salary tax book information,</li>
+<li>absences are registered,</li>
+<li>data is entered in the hour register, if applicable,</li>
+<li>one time benefits and deductions have been entered in the Component Register,</li>
+<li>entered monthly bonuses and deductions in the employee card, and other changes in employee data (such as an bank account)</li>
+</ul>
+<p>a monthly closing salary list should be generated. Each employee can be in only one current salary calculation within a month period. You can create multiple payrolls – for example, each department can have its own. Typically, a salary list for the terminated employees is created separately to correctly perform a payments.</p>
+<p>A new salary list is created by clicking on the shortcut <em>+Salary List</em> on the system home page. All salary lists are listed in Salary List.</p>
+<p>The number will be assigned to the list automatically. Next, select Year and Month (automatically filled in with current year and month).
+The automatic generation of salary list lines is done by clicking on the button <em>Process</em> (1) - <em>Insert New Lines</em> (2).</p>
+<p>By using the function <em>Insert New Lines</em> (2) filters can be applied to the employee number and to the department code. If the function is used without filters, then the list will include all employees for whom are specified any calculation amounts for this month.</p>
+<p>After generating the salary list and initial check, it is recommended to change the status of the list from Open to Released by clicking on <em>Release Document</em> (3). This protects the calculation data against accidental corrections. If necessary, the status can be changed in the opposite direction with <em>Open Document</em> (4).</p>
+<p><img src="images/11.salary_calc_3.png" alt="alt"></p>
+<p>In the Salary list toolbar sections <em>Report</em> un <em>Actions</em> following additional functions are available:</p>
+<ul>
+<li><em>Pay Slip</em> – possibility to print and send salary slips for salary payment.</li>
+<li><em>Export to Payment Journal</em> – payment records will be prepared for export to the payment journal, from which they can be further exported to the bank and posted.</li>
+<li><em>Detailed Salary List</em> – printout of the prepayment list for approval.</li>
+</ul>
+<p>In the Salary list tab <em>Lines</em> - <em>Lines</em> (5) the following functions are available for each selected employee:</p>
+<ul>
+<li><em>Employee Details</em> – a shortcut to all historical calculation data related to the particular employee is available.</li>
+<li><em>Worktime</em> – data for the reporting month on planned and actual working hours are available.</li>
+<li><em>Average Gain</em> – if the employee has had a paid absence in the reporting month, then the data on the absence and the average earnings used to pay for the absence can be viewed.</li>
+</ul>
+<p>The salary list can be changed and deleted until it is posted and/ or sent to the payment journal. If corrections or adjustments become necessary after the payroll has been sent to payment journal, paid and/ or posting, recalculation functions should be used. Correction can be made to all document or just to a single line for a selected employee  (or several employees). If you need to correct the entire document, click on the buttons <em>Actions</em> - <em>Create Correction Document</em>.
+If you only need to correct only some employee lines, in the <em>Lines</em> tab, select the line (or several lines) you want to correct and click <em>Lines</em> - <em>Create Correction</em>. corrective transactions are described more detailed in section <em>Corrections and cancellations</em>.</p>
+<p>In order to generate a report related to the salary calculation, it is not necessary to post the salary list. All payroll reports are generated from salary lists, regardless of their status.</p>
+<p>If the salary is calculated and <em>Remaining Payment Amount</em> is a negative amount (the employee is overpaid), then the overpaid amount is transferred to the next salary calculation (as a deduction) with the help of an entry generated by the system in the Component Register.</p>
+<h2 id="dismissal-of-employees">Dismissal of employees</h2>
+<p>To dismiss an employee, enter the <em>Termination Date</em> in the employee card tab Administration.</p>
+<p><img src="images/15.empl_termin_1.png" alt="alt"></p>
+<p>By confirming date entry, system will enter this date in the Employee  Position tab field <em>To Date</em> (2) and will close all active Payroll components.</p>
+<p><img src="images/15.empl_termin_1_1.png" alt="alt"></p>
+<blockquote>
+<p>If in Payroll Setup tab <em>Reports</em> is enabled function <em>Status Code Enabled</em>, then after the Termination field <em>To Date</em> will be filled, the system will also prompt you to enter an employee status code for EDS report <em>Employee Social Sign Codes</em>.</p>
+</blockquote>
+<p>When you enter the employee's termination date, the system will generate an absence record for unused vacation compensation (with code ATVAL_KOMP), which will be added automatically to the payroll calculation.</p>
+<p>The necessary allowances or deductions for the final calculation may be added to the <em>Components Register</em>.</p>
+<p>Preparing a report buffer (PFPIS list) for the EDS Statement on amounts paid to a natural person, in the tab's <em>General Info</em> field <em>Month</em> should be entered month when employee was terminated.  In case of multiple employees, you can specify a termination period in the filter when generating buffer entries.</p>
+<h1 id="salary-payment">Salary payment</h1>
+<h2 id="preparing-the-payments">Preparing the payments</h2>
+<p>The salary is transferred to the employee's bank account. Information about the bank code and account is entered in the employee card tab Payments, but the type of payout is determined by the default payroll component (Code: BANKA) in the section Payroll Components.</p>
+<p>Salary list for transfer to the bank can be prepared by clicking on <em>Report</em> (1) - <em>Export to Payment Journal</em> (2).</p>
+<p><img src="images/12.salary_pay_1_1.png" alt="alt"></p>
+<p>In the options you can select the required <em>Payment Type</em> (3):</p>
+<ul>
+<li>Employee Pay-Out (only payments to employees),</li>
+<li>Third Parties Payments (deduction payments to third parties),</li>
+<li>All (both of the above mentioned).</li>
+</ul>
+<p>You can also use filter and choose <em>Pay-Out Component Filter</em> (4) (from which company account money will be transferred), and in which <em>Gen. Journal Batch</em> to make entries  (5).
+In case it is necessary to correct already made payment, a tick must be placed at <em>Fill Pay-Out Storno</em> (6). After you post this cancellation journal, you can create a correct payments.</p>
+<p><img src="images/12.salary_pay_2.png" alt="alt"></p>
+<p>Entering the required parameters and pressing the <em>OK</em> button, opens the payment journal with the salary payout information.</p>
+<p><img src="images/12.salary_pay_2_1.png" alt="alt"></p>
+<p>Click the buttons <em>Bank</em> (1) un <em>Export Payroll Payment</em> (2) to get the payment information in the file.</p>
+<p>To post the salary payment, click on the <em>Post</em> button in the <em>Post/Print</em> (3) section on the toolbar. However, if in the Payroll Setup tab General is not enabled option <em>Allow Detailed Payment Posting</em>, then to post salary payments, you need to press <em>Payroll Paym. Group. Posting</em>  button in the <em>Post/Print</em> (3).</p>
+<p>In addition to control and confirmation before pay, you have the option to print a report with a list of employees and the amounts to be paid to them and bank accounts where the payment will be transferred. The report is available in the toolbar section <em>Report</em> (4) - <em>Salary Printout</em>.</p>
+<h2 id="payment-to-third-parties-1">Payment to third parties</h2>
+<p>If, after making the deduction, the amount has to be transferred to another person to another bank account, then all the bank account data must be entered accordingly by clicking on the buttons on the employee's card. <em>Navigate</em> - <em>Additional Info. For Payroll</em> - <em>Payment to third parties</em>.</p>
+<p><img src="images/10.salary_comp.register_5.png" alt="alt"></p>
+<p>To set up a payment, you must fill in the following fields:</p>
+<table>
+<thead>
+<tr>
+<th>Field name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Employee No.</td>
+<td>System generated field.</td>
+</tr>
+<tr>
+<td>Employee Payroll Comp. Line No.</td>
+<td>Select the appropriate deductive component from the list of components related to the selected employee.</td>
+</tr>
+<tr>
+<td>Payroll Component Code</td>
+<td>Will be filled in automatically from the field <em>Employee Payroll Component List</em>.</td>
+</tr>
+<tr>
+<td>Vendor No.</td>
+<td>Selects the third party from the list of the Vendors. If necessary, enter a new vendor card.</td>
+</tr>
+<tr>
+<td>Vendor Name</td>
+<td>Will be automatically filled in from the list of Vendors</td>
+</tr>
+<tr>
+<td>Vendor Bank code</td>
+<td>Select the required bank account from the vendor's bank account list.</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>Enter a freely chosen payment name.</td>
+</tr>
+<tr>
+<td>Payment Information</td>
+<td>Enter the payment information that needs to be reflected in the bank's payment details.</td>
+</tr>
+<tr>
+<td>PayOut Amount</td>
+<td>A system-generated field that represents the amount calculated for the payout to this third party in all calculation periods at a total.</td>
+</tr>
+<tr>
+<td>Payment Amount</td>
+<td>System-generated field that represents the amount that has been paid to a third party in all calculation periods in total.</td>
+</tr>
+<tr>
+<td>Remaining Payment Amount</td>
+<td>A system-generated field that represents an amount that has been calculated but not paid to a third party in all calculation periods in total.</td>
+</tr>
+</tbody>
+</table>
+<p>To make a payment to third parties, you need to run the function <em>Export to Payment Journal</em> under the <em>Report</em> button in the Salary List's toolbar.</p>
+<p>The following parameters must be entered in the pop-up window:</p>
+<ol>
+<li>Select from the list Third Parties Payments in <em>Payment Type</em> (1);</li>
+<li>Select the Default payment journal batch in <em>Gen. Journal Batch</em> (2);</li>
+<li>Enter the <em>Posting Date</em> (3)  of the payment.</li>
+</ol>
+<p><img src="images/10.salary_comp.register_6.png" alt="alt"></p>
+<p>Entries were created in the payment journal.</p>
+<p>To create a file to be imported to the bank, press <em>Bank</em> (4) and <em>Export</em> (5) - payment to regular vendors.</p>
+<p><img src="images/10.salary_comp.register_7.png" alt="alt"></p>
+<h2 id="posting-a-salaries">Posting a salaries</h2>
+<p>To post a Salary list, you must first use the function <em>Release Document</em> (2) from the toolbar's section <em>Process</em> (1) to lock the list and to make it no longer editable. With starting the function <em>Post Document</em> (3) a <em>Payroll Posting Buffer</em> will be created, showing all payroll entries in the rows.</p>
+<p><img src="images/12.salary_pay_3.png" alt="alt"></p>
+<p>After the checking the correctness of the data, click the <em>OK</em> button.
+The payroll accounting buffer generates data from the following sources:</p>
+<ul>
+<li>The accounts to which the payroll lines will be posted are read from the <em>Payroll Component</em> card's tab <em>Posting</em>.</li>
+<li>Employer's social tax accounts is read from the <em>Payroll Setup</em> field <em>Employers Soc. Tax Acc. No.</em></li>
+<li>Cost accounts are red from each Income payroll component card's tab <em>Posting</em>.</li>
+<li>Reliefs and payouts are not posted in general ledger.</li>
+<li>The amount sign in the salary posting buffer determines the debit/ credit side for the tab <em>Account No.</em>. If the amount is positive, then the transaction will be as follows: 1200.00  D 72200 and K 56110 (First line in posting buffer below).</li>
+</ul>
+<p><img src="images/12.salary_pay_4.png" alt="alt"></p>
+<p>You can see the status of the salary lists and the fact of posting in the list <em>Salary List</em>.</p>
+<h2 id="sending-out-salary-pay-slips">Sending out salary Pay Slips</h2>
+<p>To send salary leaves on emails from the system, the following settings are required:</p>
+<p><strong>Email Accounts</strong></p>
+<p>Need to create an email account. Type in the system search function <em>Email Accounts</em> and select it from the list. To create a new account, press the buttons <em>New</em> - <em>Add an email account</em>. To send emails from payroll module, Account type should be selected <em>SMTP - Use SMTP to send emails</em>.
+<img src="images/24.notification_6.png" alt="alt"></p>
+<p>Complete SMTP setup:
+<img src="images/24.notification_7.png" alt="alt"></p>
+<p>In the following step, you can check e-mail, as well as set this account as default:
+<img src="images/24.notification_8.png" alt="alt"></p>
+<p><strong>Payroll Setup</strong></p>
+<p>For the sending out the pay slips, following information are required to complete in <em>Payroll Setup</em>:
+<img src="images/24.notification_10.png" alt="alt"></p>
+<p>System pay slips will send to the private e-mail specified in the employee cards tab Address &amp; Contact. Sending starts by running a report <em>Pay Slip</em> and by inserting the checkmark in the field <em>Send by e-mail</em>.</p>
+<p>Click on the buttons <em>Report</em> (1) - <em>Pay Slip</em> (2).</p>
+<p><img src="images/12.salary_pay_5.png" alt="alt"></p>
+<p>In the print settings window, select <em>Send by e-mail</em>, if you only need to send to selected employees, choose employees and specify the period, for what you want to send pay slips.</p>
+<p><img src="images/12.salary_pay_5_1.png" alt="alt"></p>
+<h1 id="corrections-and-cancelations">Corrections and cancelations</h1>
+<h2 id="correction-lists">Correction lists</h2>
+<p>If it is necessary to adjust the calculation in the already booked / paid salary list, tax amounts, income amounts, payout amounts and others, then the correction functionality must be used. Because the correction can be made only when the previous calculation is canceled. All the created correction lists are compiled in a register <em>Correction Headers</em>.</p>
+<p>There are different types of possible corrections:</p>
+<ul>
+<li>All employees in the Salary List have the same error in the payroll calculation:
+<br> 1) on the salary list toolbar click the buttons  <em>Actions</em> (1) - <em>Create Correction Document</em> (2); <br>2) a line generation window will pop up, where you can set filters if necessary. <br>3) will be generated a correction list in which the whole calculation one to one is reversed. The list of cancellations must be posted!; <br>4) data correction should be performed and a new salary calculation must be prepared. The amount of the first payroll payments will be included in the next calculation as a deduction.</li>
+</ul>
+<p><img src="images/13.salary_recalc_3_1.png" alt="alt"></p>
+<p>After posting the reversal, in the corrected salary list's tab Lines reversed entries will be marked with <em>Yes</em> (4), that the line has a correction and the corresponding <em>Employee No.</em> (3) are highlighted in red. By clicking on a link  <em>Line Is Corrected</em> (4), a correction list will open in which the whole one-to-one calculation is canceled.</p>
+<p><img src="images/13.salary_recalc_3.png" alt="alt"></p>
+<ul>
+<li><p>Error in calculation algorithm due to incorrect tax rate, amount of relief, etc.:
+<br> 1) correct tax, relief, etc. rates; <br>2) creates a new salary list without reversing or correcting the previous salary list; <br>3) click the button <em>Insert New Lines</em> and enables the function <em>Create correction line, if exist payroll for this month</em> in the payroll lines generation window. If necessary, select the same filters as it was in the payroll to be corrected; <br>4) the system will prepare a list of corrections that need to be posted. The amount of the first salary list payments will be included in the next salary list calculations as a deduction.</p>
+</li>
+<li><p>Error in calculating salary for one or more employees:
+<br> 1) In the Lines tab of the Salary List, select the employee (or several) who needs a correction. <br>2) By clicking the buttons <em>Line</em> (5) and <em>Create Correction</em> (6) the line is marked as corrected. <br>3) Make corrections and prepare a new salary list, where the calculation is made only for the corrected employee (or several).</p>
+</li>
+</ul>
+<p><img src="images/13.salary_recalc_1.png" alt="alt"></p>
+<div class="TIP">
+<h5>Tip</h5>
+<p><strong>If the initial salary list was not paid before the corrective list was created (the payment has not been posted), the system will not allow the payments to be exported, because the next payroll will take into account the information about the payments at the time of cancellation. <br>In case the salary calculation has been reversed and a new salary calculation has not been created for this month, all entries for this month are opened for correction: in the component registers, the absence registers and hour registers.</strong></p>
+</div>
+<h2 id="absence-corrections">Absence corrections</h2>
+<p>We recommend to perform all absence corrections in the current month by correcting the previous salary list!</p>
+<h3 id="sick-list-received-late">Sick List received late</h3>
+<p><em>Example: calculated and paid salary for 07.2020. A sick list has been received from the employee for the period 27.07.2020 - 05.08.2020.</em></p>
+<ol>
+<li><p>Option - perform salary calculation correction in the current period 07.2020.
+<br>1) in the salary list 07.2020 a correction shall be made for the line of the relevant employee. Post the correction list; <br>2) In <em>Absence Registration</em> register a new sick leave and indicate 07.2020 in calculation date fields; <br>3) prepare a new Salary List for 07.2020 and in the tab <em>Line</em> include only the employee who needs to make the correction. Take into account, if a <em>Hour Registers</em> has been used to enter the hours worked by this employee, the system does not recalculate the salary component and the number of hours must be adjusted manually; <br>4) depending on the result, if extra payment must be made, then use function <em>Export to Payment Journal</em>, but if a deduction has to be made, it will be included in the calculation of salary 08.2020.</p>
+</li>
+<li><p>Option - perform salary calculation correction in the next period 08.2020.
+<br>1) In <em>Absence Registration</em> enter a new sick leave and indicate 08.2020 in calculation date fields <br>2) In Employee absence card click on button * Recalculate*. In Absence Register list a check mark <em>Recasted</em> appears for this entry. As a result of the recalculation, the system creates a entry in Component Register for the current period (08.2020) with the previous month's salary correction records. <br>3) at the end of the period, calculate the salary for the current month. The income calculation will be included the previous month's adjustments.</p>
+</li>
+</ol>
+<h3 id="several-sick-leaves-received-late">Several sick leaves received late</h3>
+<p><em>Example: calculated and paid salary for 07.2020. Have been received from the employee a sick list A for the period 15.07.2020 - 24.07.2020 and sick list B for the period 25.07.2020 - 03.08.2020. Correction will be performed in next month - 08.2020.</em>
+<br>1) In <em>Absence Registration</em> enter sick leave for a sick list A and indicate 08.2020 in calculation date fields. Do not recalculate! <br>2) In <em>Absence Registration</em> enter sick leave for a sick list B and indicate 08.2020 in calculation date fields. Recalculate by clicking on the button <em>Recalculate</em>.</p>
+<p>When all absences have been entered, clicking on <em>Recalculate</em> once system collects information about all absences and it will make a one calculation based on all absences in the Component Register. In case that a recalculation is made for each absence, the result will be double entries, so the recalculation only needs to be performed once.</p>
+<h3 id="employee-gets-ill-during-vacation">Employee gets ill during vacation</h3>
+<p>*Example: Salary calculated and paid for 07.2020. The employee has a vacation starting from 15.07.2020 and to 31.07.2020. The employee got ill during the leave and submitted sick list A for the period 19.07.2020. - 21.07.2020. and sick list B for the period 22.07.2020. - 31.07.2020. The correction will be performed in next month - 08.2020. *
+<br>1) In <em>Absence Registration</em> enter sick leave for a sick list A and indicate 08.2020 in calculation date fields. Do not recalculate! <br>2) In <em>Absence Registration</em> enter sick leave for a sick list B and indicate 08.2020 in calculation date fields. Do not recalculate! <br>3) In <em>Absence Registration</em> enter the vacation 15.07.2020. - 18.07.2020. and indicate 08.2020 in calculation date fields. Do not recalculate! <br>4) Open the absence card of the initial vacation and cancel it by clicking the button <em>Cancel Absence</em>. As a result of cancellation, the absence code <em>ATVAL</em> will be changed to the code <em>CORRECTION</em>, and also system created entries 08.2020 will be added to Component Registers (salary changes (if any), vacation pay paid). This information will be included in the salary calculation of 08.2020.</p>
+<h3 id="employee-withdrawn-from-vacation">Employee withdrawn from vacation</h3>
+<p><em>Example: The employee has a vacation 15.07.2020 - 31.07.2020. Calculated and paid vacation pay and salary for 07.2020. After that it turns out that the employee has worked during 20.07.2020. - 21.07.2020. Correction will be performed in next month - 08.2020.</em>
+<br>1) In <em>Absence Registration</em> enter the vacation 15.07.2020. - 19.07.2020. and indicate 08.2020 in calculation date fields. Do not recalculate! <br>2) In <em>Absence Registration</em> enter the vacation 22.07.2020. - 31.07.2020. and indicate 08.2020 in calculation date fields. Do not recalculate! <br>3) Open the absence card of the initial vacation and cancel it by clicking the button <em>Cancel Absence</em>. As a result of cancellation, the absence code <em>ATVAL</em> will be changed to the code <em>CORRECTION</em>, and also system created entries 08.2020 will be added to Component Registers; <br>4) If the hours actually worked for the employee are recorded Hour Registers, then enter the number of additional hours worked.</p>
+<p>The result of the recalculation will be included in the 08.2020 salary list, erroneous and posted salary list 07.2020 will be left unchanged. The system with a minus sign will deduct the calculated vacation pay and add the salary for these days (except if working hours are entered via Hour Register). The amounts will be allocated to the periods for which they are calculated.</p>
+<h3 id="changes-in-absence-start-or-end-date">Changes in Absence start or end date</h3>
+<p>If the employee has an calculated absence, but after the calculation of the salary it is discovered that the period of absence was not correct, then it is possible to adjust this in the next period:
+<br>1) enter the correct absence, indicating the calculation month in which the correction is made; <br>2) cancel the previously entered absence by clicking the button on the absence card <em>Cancel Absence</em>; <br>3) calculate the current period salary. The differences between the correct and incorrect absence amounts are added to the current salary list with the help of the system-generated Component Register entry.</p>
+<h1 id="reports-1">Reports</h1>
+<p>The <em>Reports</em> and <em>Tasks</em> shortcuts are available on the Role Center home page for quick access to key standard reports.</p>
+<p>The system ensures the preparation and export of mandatory reports specified in Latvian legislation to the EDS:</p>
+<ul>
+<li>VSAOI report</li>
+<li>Employee Social Sign code (if enabled)</li>
+<li>PFPIS List - The amounts disbursed to the notice of a natural person</li>
+<li>IINNR List - The amounts disbursed to the notice of a non-resident</li>
+</ul>
+<p>You can also print reports for internal use, such as:</p>
+<ul>
+<li>Personal Accounts</li>
+<li>Average gain with amounts</li>
+<li>Payroll Component Tools</li>
+<li>Employee Payroll Components by Month</li>
+<li>Schedule Print Calendar</li>
+</ul>
+<h1 id="eds-reports">EDS reports</h1>
+<h2 id="vsaoi-report">VSAOI report</h2>
+<h3 id="setup">Setup</h3>
+<p>Reported data settings are available in <em>Payroll Setup</em> tab <em>Reports</em>, for what a detailed description of the fields is available in the chapter <em>Payroll setup</em>.</p>
+<p><img src="images/14.reports_1.2.png" alt="alt"></p>
+<h3 id="preparing">Preparing</h3>
+<p>In order to prepare the report <em>VSAOI report</em> or <em>Social Tax Report</em>, in the report's print window, select the period for which you want to run a report (<em>Year</em> (1) and <em>Month</em> (2)) and enable <em>Export EDS File</em> (3), if you want to prepare also a file for upload to the EDS system.</p>
+<p><img src="images/14.reports_1.1.png" alt="alt"></p>
+<h2 id="employee-social-sign-code">Employee Social Sign code</h2>
+<p>To prepare Employee Social Sign code report, in the print window, enable the button to <em>Create EDS XML file</em> (1), if necessary, specific filter selection criteria should be set in the filter (2, 3) and, if necessary, indicate the period (3) for which a report needs to be prepared.</p>
+<p><img src="images/14.reports_2.png" alt="alt"></p>
+<h2 id="pfpis-list">PFPIS List</h2>
+<h3 id="setup-1">Setup</h3>
+<p>In the list <em>PFPIS easing</em> are listed codes, which divides the PFPIS report by the reliefs applied. Codes and names must be entered in accordance with the State Revenue Service's methodological materials.</p>
+<p>The settings for the data displayed in the report are available in the register <em>PFPIS Income types</em>. In the register are listed income type cards, defined in accordance with the State Revenue Service's methodological materials.</p>
+<p><img src="images/14.reports_1.5.png" alt="alt"></p>
+<p>Tab: <em>General Info</em></p>
+<table>
+<thead>
+<tr>
+<th>Field name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Code</td>
+<td>Income type code from SRS methodological materials.</td>
+</tr>
+<tr>
+<td>Period Length</td>
+<td>Year or month.</td>
+</tr>
+<tr>
+<td>Period Shift</td>
+<td>Indicate whether there is a shift if the payout differs from the calculation period: <br><em>No shift</em>; <br><em>-1M</em> (for example, in the list of PFPIS for August will show the income calculated for individuals for July); <br><em>-2M</em></td>
+</tr>
+<tr>
+<td>.</td>
+<td></td>
+</tr>
+<tr>
+<td>Use Easing</td>
+<td>If enabled, it indicates that you want to use reliefs for the particular code.</td>
+</tr>
+<tr>
+<td>Income Type Name</td>
+<td>The title is entered in accordance with the SRS methodological materials.</td>
+</tr>
+<tr>
+<td>Only Company contract</td>
+<td>If enabled, only employees of company contracts are included in the relevant code</td>
+</tr>
+<tr>
+<td>Skip Non-Residents</td>
+<td>If enabled, non-residents will not be displayed.</td>
+</tr>
+<tr>
+<td>Only Royalty</td>
+<td>Only royalties will be shown.</td>
+</tr>
+</tbody>
+</table>
+<p>Tab: <em>Amount Setup</em></p>
+<p>Bases are indicated in the relevant fields, which will calculate the value of the corresponding fields in the report.</p>
+<h3 id="preparing-1">Preparing</h3>
+<p>A new document ( or as it is called - buffer) must be created to create a statement of amounts paid to individuals in the list <em>PFPIS Headers</em>.</p>
+<p>PFPIS buffer consists of 3 parts –  <em>General Info</em>, <em>Totals</em>, <em>PFPIS Line ListPart</em>.</p>
+<p>To prepare buffer, fill in the tab's <em>General Info</em> fields and click on the buttons <em>Process</em> (1) - <em>Generate Records</em> (2).</p>
+<p>If in field <em>Month</em> is selected a <em>Year</em>, then report will be made for an active employees as of December 31. If the month is specified in this field, report will be made of terminated employees.</p>
+<p>Once the data in the buffer has been generated and checked, you can prepare the export file for submission to EDS by clicking the button <em>Export to XML</em> (3).</p>
+<p>Before submitting to EDS, the report can be printed and checked by clicking on the buttons on the toolbar <em>Report</em> - <em>Print Overview</em> or <em>Print Employee</em>.</p>
+<p><img src="images/14.reports_1.png" alt="alt"></p>
+<p>Tab <em>General Info</em></p>
+<table>
+<thead>
+<tr>
+<th>Field name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>No.</td>
+<td>PFPIS document number. Fills in automatically.</td>
+</tr>
+<tr>
+<td>Code</td>
+<td>Company registration number, filled in automatically from <em>Company information</em>.</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>Document description.</td>
+</tr>
+<tr>
+<td>Year</td>
+<td>Buffer year.</td>
+</tr>
+<tr>
+<td>Month</td>
+<td>Selects the month the buffer was created from the list. If report of termination is prepared, select the month in which the employees were terminated. If an annual statement is required for all employees, then select <em>Year</em> from the list.</td>
+</tr>
+<tr>
+<td>Closed</td>
+<td>Indication that the buffer has been submitted to the EDS and closed.</td>
+</tr>
+<tr>
+<td>Responsible Person</td>
+<td>Name and surname of the responsible person.</td>
+</tr>
+<tr>
+<td>Phone No.</td>
+<td>Phone number of the responsible person.</td>
+</tr>
+</tbody>
+</table>
+<p>Tab: <em>Totals</em></p>
+<p>R05..R16 – The totals of the buffer lines value fields.</p>
+<p>Tab: <em>PFPIS Line ListPart</em></p>
+<p>Buffer lines are generated automatically when the function <em>Generate Records</em> is run. Various filters provided by the records generation window can be used to prepare the buffer.</p>
+<h2 id="iinnr-list">IINNR List</h2>
+<p>To create a new report <em>The amounts disbursed to the notice of a non-resident</em>, a new document need to be created in the <em>IINNR Headers</em> by clicking on a button <em>New</em>. Fill in the required information and prepare the file for export to the EDS system.</p>
+<div class="TIP">
+<h5>Tip</h5>
+<p>To prepare the report export file, the system may require you to fill in the <em>Company information</em> fields <em>Phone No.</em> un <em>Email</em>.</p>
+</div>
+<h1 id="analytical-reports">Analytical reports</h1>
+<p>Reports for internal use in the company. Reports are available in the role center shortcuts <em>Reports</em> or by entering the report name in the system search field.</p>
+<h2 id="reference-of-income">Reference Of Income</h2>
+<p>At the request of the employee, a statement creates a reference where the employer shall present the amount of wages and taxes paid for the selected period of time (3, 6 or 12 months). With the possibility to indicate the purpose of issuing the reference.</p>
+<h2 id="average-gain-per-employee">Average gain Per Employee</h2>
+<p>Upon request, an employee can be provided with a report on his/ her average earnings - daily and hourly. Data will be prepared for the current business date.
+In addition, a monthly breakdown of the average monthly earnings may be indicated.</p>
+<h2 id="salary-list-pay-slip">Salary List (Pay slip)</h2>
+<p>You can print any monthly pay slip for any employee or Salary List.</p>
+<h2 id="schedule-print-calendar">Schedule Print Calendar</h2>
+<p>At the end of the month, you can print a timesheet using a report <em>Schedule Print Calendar</em>. You can print a timesheet template, which can be adjusted as needed by sending it to Word or Excel.</p>
+<p>The table shows the <strong>planned</strong> working hours according to the Calendar attached to each employee.</p>
+<p>By enabling the <em>Accounting</em> button in the report printout window, the schedule printout will include the registered absences in the requested period for each employee, and the number of planned working days/ hours will be reduced accordingly.</p>
+<div class="TIP">
+<h5>Tip</h5>
+<p>The hours entered in the <em>Hour registers</em> do not appear in the schedule printout. To obtain data on actual working hours, it is necessary to import the report into Excel or Word environment and prepare a printout with the actual distribution of hours by days.</p>
+</div>
+<h2 id="payroll-analysis">Payroll Analysis</h2>
+<p>To use this report, you need to prepare a Payroll Analysis Template Card that will meet your business requirements. All template cards are listed in &quot; Payroll Analysis Templates*.</p>
+<h2 id="payroll-components-analysis">Payroll Components analysis</h2>
+<p>In the report <em>Empl. Payroll Comp. by Month</em> the values ​​of the salary components are expanded in the table by months for each employee separately.</p>
+<p>But in the report <em>Payroll Component Tools</em> can obtain data for analysis by payroll component codes together for a separate salary list.</p>
+<h2 id="personal-account">Personal Account</h2>
+<p>A separate report can be printed for each employee, which includes all the data of the employee's salary calculation by months in period of one year. In addition, in the table are listed all absences for this particular employee.</p>
+<h2 id="average-number-of-employees">Average number of employees</h2>
+<p>By specifying the salary dimension and period, it is possible to obtain data on the average number of employees, the number of employees at the beginning of the period, the number of employees at the end of the period, and the number of terminated employees. You can add additional filters, such as selecting the number of employees by gender.</p>
 </article>
           </div>
           
