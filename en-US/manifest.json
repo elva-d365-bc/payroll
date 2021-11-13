@@ -3223,6 +3223,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/payroll_base/usage_scenarios_cronus/2021-11-13 16_14_35-1_conf_pack_3.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/usage_scenarios_cronus/2021-11-13 16_14_35-1_conf_pack_3.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/payroll_base/usage_scenarios_cronus/2_new_employee_1.png",
       "output": {
         "resource": {
@@ -4063,7 +4074,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_base/usage_scenarios_cronus/usage_scenarios.html",
-          "hash": "uOzQX7olhJ0M+7zsvrfgDJP2mnkZb+bsGdsPcYyS4zM="
+          "hash": "TYhJ9Bvd9nE8G8vedzYtCUr4wcbJ/FF6zRBZbKGMCAw="
         }
       },
       "is_incremental": false,
