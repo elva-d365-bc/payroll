@@ -542,7 +542,7 @@
   "docs/personnel_base/overview.html": {
     "href": "docs/personnel_base/overview.html",
     "title": "| Latvian Payroll",
-    "keywords": "[!include[app_payroll_base](../includes/app_personnel_base.md)] ir aplikācija, kas pilnībā integrēta ar [!include[nav_name](../includes/nav_name.md)]. Aplikācija nodrošina nepieciešamās funkcionalitātes personāla resursu vadībai saskaņā ar Latvijas likumdošanas prasībām. Aplikācija ietver sevī sekojošas funkcijas: Darba līgumu reģistrēšana; Personāla rīkojumu reģistrēšana; Darba aizsardzība- Obligātās Veselības pārbaudes, Instruktāžu vadība; Ziņojumi - atgādinājumu ziņojumu sūtīšana iepriekš definētām darbinieku grupām."
+    "keywords": "[!include[app_personnel_base](../includes/app_personnel_base.md)] ir aplikācija, kas pilnībā integrēta ar [!include[nav_name](../includes/nav_name.md)]. Aplikācija nodrošina nepieciešamās funkcionalitātes personāla resursu vadībai saskaņā ar Latvijas likumdošanas prasībām. Aplikācija ietver sevī sekojošas funkcijas: Darba līgumu reģistrēšana; Personāla rīkojumu reģistrēšana; Darba aizsardzība- Obligātās Veselības pārbaudes, Instruktāžu vadība; Ziņojumi - atgādinājumu ziņojumu sūtīšana iepriekš definētām darbinieku grupām."
   },
   "docs/personnel_base/personnel_base.html": {
     "href": "docs/personnel_base/personnel_base.html",
