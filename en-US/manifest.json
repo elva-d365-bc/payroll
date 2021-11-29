@@ -4096,6 +4096,1326 @@
       "version": ""
     },
     {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/0.conf_pack.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/0.conf_pack.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/1.0.setting_up_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/1.0.setting_up_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/1.1.payroll_dimension.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/1.1.payroll_dimension.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/1.1.payroll_dimension_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/1.1.payroll_dimension_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/1.1.payroll_dimension_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/1.1.payroll_dimension_2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/1.1.payroll_dimension_3.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/1.1.payroll_dimension_3.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/1.1.payroll_dimension_4.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/1.1.payroll_dimension_4.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/1.1.payroll_dimension_5.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/1.1.payroll_dimension_5.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/1.10.soc_stat_codes_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/1.10.soc_stat_codes_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/1.11.banks_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/1.11.banks_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/1.11.banks_3.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/1.11.banks_3.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/1.12.analysis_templates_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/1.12.analysis_templates_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/1.12.analysis_templates_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/1.12.analysis_templates_2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/1.3.status_codes_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/1.3.status_codes_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/1.4.pfpis_relief_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/1.4.pfpis_relief_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/1.7.empl_post_groups_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/1.7.empl_post_groups_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/1.8.positions_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/1.8.positions_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/1.9.retirement_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/1.9.retirement_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/10.1.corrections1_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/10.1.corrections1_2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/10.1.corrections1_3.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/10.1.corrections1_3.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/10.1.corrections2_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/10.1.corrections2_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/10.2.corrections2_.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/10.2.corrections2_.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/10.2.corrections2_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/10.2.corrections2_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/10.2.corrections2_2.1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/10.2.corrections2_2.1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/10.2.corrections2_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/10.2.corrections2_2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/10.2.corrections2_3.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/10.2.corrections2_3.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/12.vacation_accr_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/12.vacation_accr_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/12.vacation_accr_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/12.vacation_accr_2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/15.2.insurance1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/15.2.insurance1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/15.2.insurance2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/15.2.insurance2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/15.5.insurance1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/15.5.insurance1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/16.tax_book1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/16.tax_book1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/2.3.absence_causes_4.1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/2.3.absence_causes_4.1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/2.6.pfpis_income_type_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/2.6.pfpis_income_type_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/2.7.comp_reg_exp_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/2.7.comp_reg_exp_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/2.7.comp_reg_exp_1_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/2.7.comp_reg_exp_1_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/2.7.comp_reg_exp_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/2.7.comp_reg_exp_2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/24.notification_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/24.notification_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/24.notification_10.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/24.notification_10.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/24.notification_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/24.notification_2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/24.notification_3.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/24.notification_3.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/24.notification_4.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/24.notification_4.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/24.notification_5.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/24.notification_5.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/24.notification_6.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/24.notification_6.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/24.notification_7.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/24.notification_7.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/24.notification_8.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/24.notification_8.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/3.1.general_info_11 copy.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/3.1.general_info_11 copy.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/3.1.general_info_11.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/3.1.general_info_11.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/3.1.general_info_14 copy.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/3.1.general_info_14 copy.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/3.1.general_info_14.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/3.1.general_info_14.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/3.1.general_info_7.11 copy.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/3.1.general_info_7.11 copy.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/3.1.general_info_7.11.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/3.1.general_info_7.11.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/3.2.additional_info_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/3.2.additional_info_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/3.2.additional_info_10.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/3.2.additional_info_10.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/3.2.additional_info_11.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/3.2.additional_info_11.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/3.2.additional_info_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/3.2.additional_info_2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/3.2.additional_info_7.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/3.2.additional_info_7.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/3.2.additional_info_8.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/3.2.additional_info_8.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/3.2.additional_info_9.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/3.2.additional_info_9.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/4.1.registering_absence_1.1.1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/4.1.registering_absence_1.1.1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/4.1.registering_absence_1.1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/4.1.registering_absence_1.1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/4.3.vacation_setup_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/4.3.vacation_setup_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/4.3.vacation_setup_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/4.3.vacation_setup_2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/4.3.vacation_setup_3.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/4.3.vacation_setup_3.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/4.3.vacation_setup_4.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/4.3.vacation_setup_4.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/4.3.vacation_setup_5.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/4.3.vacation_setup_5.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/4.3.vacation_setup_6.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/4.3.vacation_setup_6.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/4.3.vacation_setup_7.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/4.3.vacation_setup_7.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/4.3.vacation_setup_8.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/4.3.vacation_setup_8.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/4.3.vacation_setup_9.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/4.3.vacation_setup_9.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/4.5.business_trips_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/4.5.business_trips_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/4.5.business_trips_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/4.5.business_trips_2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/4.5.business_trips_3.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/4.5.business_trips_3.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/4.5.business_trips_4.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/4.5.business_trips_4.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/4.5.business_trips_5.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/4.5.business_trips_5.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/4.6.donor_days_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/4.6.donor_days_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/4.6.donor_days_2.1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/4.6.donor_days_2.1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/4.6.donor_days_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/4.6.donor_days_2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/4.6.donor_days_3.1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/4.6.donor_days_3.1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/4.6.donor_days_3.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/4.6.donor_days_3.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/4.6.donor_days_4.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/4.6.donor_days_4.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/5.1.new_comp_reg_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/5.1.new_comp_reg_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/5.2.comp_list_gen_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/5.2.comp_list_gen_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/5.2.comp_list_gen_1_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/5.2.comp_list_gen_1_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/5.2.comp_list_gen_1_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/5.2.comp_list_gen_1_2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/5.5.comp_exp_imp_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/5.5.comp_exp_imp_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/5.5.comp_exp_imp_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/5.5.comp_exp_imp_2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/5.5.comp_exp_imp_3.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/5.5.comp_exp_imp_3.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/5.6.average_month_sal_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/5.6.average_month_sal_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/5.6.average_month_sal_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/5.6.average_month_sal_2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/7.1.schedule_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/7.1.schedule_2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/7.1.schedule_3.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/7.1.schedule_3.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/7.2.count_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/7.2.count_2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/7.2.count_3.1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/7.2.count_3.1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/7.2.count_3.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/7.2.count_3.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/7.2.count_3_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/7.2.count_3_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/7.2.count_4.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/7.2.count_4.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/7.2.count_5.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/7.2.count_5.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/7.2.count_6.1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/7.2.count_6.1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/7.2.count_6.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/7.2.count_6.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/8.1.advance_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/8.1.advance_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/8.1.advance_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/8.1.advance_2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/8.2.prepayment_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/8.2.prepayment_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/8.4.sal_calc_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/8.4.sal_calc_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/8.5.payout_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/8.5.payout_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/8.5.payout_1_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/8.5.payout_1_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/8.5.payout_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/8.5.payout_2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/8.5.payout_3.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/8.5.payout_3.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/8.5.payout_4.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/8.5.payout_4.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/8.5.payout_5.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/8.5.payout_5.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/8.5.payout_6.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/8.5.payout_6.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/8.5.payout_7.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/8.5.payout_7.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/8.5.payout_8.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/8.5.payout_8.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/8.5.payout_8_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/8.5.payout_8_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/8.5.payout_9.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/8.5.payout_9.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/8_overtime_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/8_overtime_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/8_overtime_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/8_overtime_2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/8_overtime_3.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/8_overtime_3.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/8_overtime_4.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/8_overtime_4.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/8_overtime_5.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/8_overtime_5.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "docs/payroll_extended/overview.md",
       "output": {
@@ -4108,12 +5428,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "docs/payroll_extended/payroll_extended.md",
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/payroll_extended.html",
-          "hash": "m85G6GrpJTrq3I348413nX+p7FIc5qdr0ZVxWzNj0vk="
+          "hash": "AidjMpGqUd7NLNlJzFQ3n4YtyZ0wDeXjF5zR3ncpflU="
         }
       },
       "is_incremental": false,
@@ -6257,7 +7580,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/toc.html",
-          "hash": "DlaBm1FxfdHqPSJB/HsijW2nWTKEjHEnp8HIZojzgCY="
+          "hash": "HTUGpy6IUOe2Xb6lc0IEU7CwBeWy995sonkgGEkCAWE="
         }
       },
       "is_incremental": false,
