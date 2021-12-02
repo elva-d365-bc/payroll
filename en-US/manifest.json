@@ -5109,6 +5109,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/7.2.count_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/7.2.count_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/payroll_extended/images/7.2.count_2.png",
       "output": {
         "resource": {
@@ -5428,9 +5439,6 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Conceptual",
       "source_relative_path": "docs/payroll_extended/payroll_extended.md",
       "output": {
