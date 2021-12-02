@@ -1610,15 +1610,14 @@
     },
     {
       "log_codes": [
-        "include-not-found",
-        "InvalidFileLink"
+        "include-not-found"
       ],
       "type": "Conceptual",
       "source_relative_path": "docs/payroll_base/payroll_base.md",
       "output": {
         ".html": {
           "relative_path": "docs/payroll_base/payroll_base.html",
-          "hash": "0YKakJRsT7wxBsi7g+No0uSBIfmi9sfnV9IcnatHwRQ="
+          "hash": "wnZqBsbVU0tTs2y98oa9nfzLwWogObG30BP2hOuIFhs="
         }
       },
       "is_incremental": false,
