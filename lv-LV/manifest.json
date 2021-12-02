@@ -4169,15 +4169,12 @@
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
       "type": "Conceptual",
       "source_relative_path": "docs/payroll_extended/payroll_extended.md",
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/payroll_extended.html",
-          "hash": "saZNoyeAjG+gE0g8IiMXXKUnYynIYWtpOoMgTgSETko="
+          "hash": "6gHsKFy05yJTDIEQc18HjjmqreE7xo07MSfw7mAl9dA="
         }
       },
       "is_incremental": false,
@@ -5988,7 +5985,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/toc.html",
-          "hash": "a4SXCgp6xE1wokBotcvg7KekrRSUS+XIF7gVRFyRxh0="
+          "hash": "4r9ociKnpq+ws+7581zb0tSyMiD8NY0L8Qq7fj+E6Mo="
         }
       },
       "is_incremental": false,
