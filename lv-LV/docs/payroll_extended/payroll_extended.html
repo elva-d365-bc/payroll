@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title> | Latvian Payroll </title>
+    <title>K&#257; s&#257;kt str&#257;d&#257;t | Latvian Payroll </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content=" | Latvian Payroll ">
+    <meta name="title" content="K&#257; s&#257;kt str&#257;d&#257;t | Latvian Payroll ">
     <meta name="generator" content="docfx 2.58.9.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
@@ -77,7 +77,3363 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
+<h1 id="kā-sākt-strādāt">Kā sākt strādāt</h1>
 
+<p>Lai sāktu lietot Dynamics 365 Business Central Latvian Payroll Advanced, nav nepieciešams izvēlēties kādu specifisku lomu centru. Funkcionalitāte darbosies no jebkura lomu centra. Tomēr iesakām izmantot lomu centru <em>LV Alga</em>, lai sākuma lapā būtu pieejamas visas saīsnes ērtākai un ātrākai piekļuvei darbā ar algām.</p>
+<h2 id="konfigurācijas-pakotnes-attiecināšana">Konfigurācijas pakotnes attiecināšana</h2>
+<p>Latvian Payroll Advanced lietošanai nepieciešamie pamata uzstādījumi un kodi tiek izveidoti, attiecinot konfigurācijas pakotni.</p>
+<p>Lai ielādētu konfigurācijas pakotni, klikšķiniet uz pogas <em>Meklēt lapu vai atskaiti…</em> (1). Tad ierakstiet meklēšanas logā <em>Konfigurācijas pakotnes</em> (2) un izvēlieties no piedāvātā saraksta (3).</p>
+<p><img src="images/0.conf_pack.png" alt="alt"></p>
+<p>Konfigurācijas pakotnes loga rīkjoslā klikšķiniet uz pogām <em>Apstrādāt</em> (1) - <em>Importēt pakotni</em> (2) un izvēlieties attiecīgo pakotnes failu no jūsu failu glabātuves. Ar vienu klikšķi iezīmējiet ielādēto pakotni un noklikšķiniet uz pogām <em>Apstrādāt</em> (1) un <em>Attiecināt pakotni</em> (3)</p>
+<p><img src="images/0.conf_pack_1.png" alt="alt"></p>
+<h2 id="konfigurācijas-pakotnes-saturs">Konfigurācijas pakotnes saturs</h2>
+<p>Konfigurācijas pakotne ievada sistēmā sekojošu informāciju:</p>
+<ul>
+<li>Numuru sērijas un to rindas</li>
+<li>Algu uzstādījumus</li>
+<li>Atvaļinājumu periodu uzstādījumus</li>
+<li>Atvaļinājumu papildus dienu uzstādījumus</li>
+<li>Statistikas atskaites Darbs-2 uzstādījumi</li>
+<li>Statistikas atskaites Darbs-2 uzskaites kodi</li>
+</ul>
+<h2 id="vispārējie-sistēmas-uzstādījumi">Vispārējie sistēmas uzstādījumi</h2>
+<p><em>Uzņēmuma informācija</em> uzstādījumos ir obligāti aizpildāmi sekojoši lauki:</p>
+<ul>
+<li>Uzņēmuma nosaukums</li>
+<li>Reģistrācijas Nr.</li>
+</ul>
+<p><em>Banku konti</em> sadaļā ar konfigurācijas pakotni tiks ielādēta bankas konta kartiņa algu maksājumiem. Šajā kartiņā obligāti aizpildāmi sekojoši lauki:</p>
+<ul>
+<li>SWIFT kods</li>
+<li>IBAN</li>
+</ul>
+<p><em>Kontu plāns</em> sadaļā ar konfigurācijas pakotni tiks ielādēti standarta konti, kas nepieciešami algu grāmatojumiem. Nepieciešamības gadījumā šos kontus ieteicams pārnumurēt/pārsaukt, lai nevajadzētu veikt korekcijas grāmatošanas uzstādījumos.</p>
+<p><em>Dimensijas</em> sadaļā jāizveido dimensijas, kas tiks izmantotas algu uzskaitei.</p>
+<h1 id="uzstādījumi">Uzstādījumi</h1>
+<p>Uzstādījumi, kas attiecas uz algu aprēķināšanu ir iekļauti zem sadaļas <em>Administrēšana</em>, klikšķinot uz lomu centra saīsnes vai ievadot nepieciešamo uzstādījumu nosaukumu sistēmas meklētājā.</p>
+<p><img src="images/1.0.setting_up_1.png" alt="alt"></p>
+<h2 id="algu-dimensiju-uzstādījumi">Algu dimensiju uzstādījumi</h2>
+<p>Tikai tās dimensijas, kas būs norādītās sarakstā <em>Algu dimensiju uzstādījumi</em>, tiks lietotas algas aprēķinos, pārējās dimensijas tiks ignorētas.</p>
+<p><img src="images/1.1.payroll_dimension.png" alt="alt"></p>
+<p>Iestatījumiem pieejami sekojoši lauki:</p>
+<table>
+<thead>
+<tr>
+<th>Lauka nosaukums</th>
+<th>Apraksts</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Dimensijas kods</td>
+<td>Izvēlas dimensiju no saraksta, kura tiks lietota algas aprēķinos.</td>
+</tr>
+<tr>
+<td>Vērtības izcelsme</td>
+<td>Norāda līmeni, no kurienes tiks ņemta dimensijas vērtība:<br>a)	Avots – Prombūtnes reģistrācija, Darba algas komponentes, Algas komponenšu reģistrs; <br>b)	Algas komponente –  Norādītais dimensijas kods tiek ņemts no algas komponentes; <br>c)	Darbinieka amats – Norādītais dimensijas kods tiek ņemts no Darbinieku amata; <br>d)	Darbinieks – Augstākais līmenis, norādītais dimensijas kods tiek ņemts no darbinieka kartes.</td>
+</tr>
+<tr>
+<td>Nelietot hierarhiju</td>
+<td>Ja nav atzīme šajā laukā, tad norādītais dimensijas kods tiek meklēts augstākos līmeņos. Ja ir atzīme, tad tikai izvēlētajā līmenī.</td>
+</tr>
+<tr>
+<td>Pieļaut tukšu vērtību</td>
+<td>Pārbauda, vai pēc iepriekš norādītajiem uzstādījumiem dimensijas vērtība nav tukša vērtība. Ja ir atzīme šajā laukā, tad programma <strong>nedod kļūdas paziņojumu, ja</strong> nevienā no līmeņiem (konkrētā līmenī, ja ir atzīme laukā nelietot hierarhiju) <strong>dimensija nav atrasta</strong>.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="struktūrvienības-un-amata-dimensijas">Struktūrvienības un amata dimensijas</h3>
+<p>Sistēma piedāvā iespēju pie struktūrvienības pievienot amata n-tās dimensijas. Veidojot personāla rīkojumu (par pieņemšanu, amata maiņu), norādītās noklusējuma dimensijas tiek pievienotas darbinieka amatam.</p>
+<p><strong>Dimensiju piešķiršana struktūrvienībai:</strong></p>
+<p><img src="images/1.1.payroll_dimension_1.png" alt="alt"></p>
+<p><img src="images/1.1.payroll_dimension_2.png" alt="alt"></p>
+<p>vai, ja ir piešķirama tikai viena dimensija, tad to var izdarīt arī pašā struktūrvienības rindā:</p>
+<p><img src="images/1.1.payroll_dimension_5.png" alt="alt"></p>
+<p><strong>Dimensiju piešķiršana amatam:</strong></p>
+<p><img src="images/1.1.payroll_dimension_3.png" alt="alt"></p>
+<p><img src="images/1.1.payroll_dimension_4.png" alt="alt"></p>
+<p>Ja pie struktūrvienības norāda dimensiju vērtības un pie attiecīgās struktūrvienības amata norāda vēl citu dimensiju vērtības, tad pie darbinieka amata parāda visas (gan tās, kas bija norādītas pie struktūrvienības, gan tās, kas bija norādītas pie amata).</p>
+<div class="TIP">
+<h5>Tip</h5>
+<p><strong>Nav ieteicams norādīt vienas un tās pašas dimensijas, bet ar atšķirīgām vērtībām, gan pie struktūrvienības, gan amata</strong>.</p>
+</div>
+<h2 id="algu-uzstādījumi">Algu uzstādījumi</h2>
+<p>Ielādējot konfigurācijas pakotni, standarta uzstādījumi jau ir aizpildīti, tomēr rekomendējam pārskatīt visus uzstādījumus atbilstoši jūsu uzņēmuma vajadzībām.</p>
+<p>Iestatījumiem pieejami sekojoši lauki:</p>
+<h3 id="cilne-visp-info">Cilne: <em>Visp. info</em></h3>
+<table>
+<thead>
+<tr>
+<th>Lauka nosaukums</th>
+<th>Apraksts</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Algas valūtas kods</td>
+<td>Norāda algas valūtas kodu. Gadījumā, ja algas tiek rēķinātas vietējā valūtā, tad lauks nav jāaizpilda.</td>
+</tr>
+<tr>
+<td>Automātiski veidot amatu karti</td>
+<td>Ja ir atzīme šajā laukā, tad veidojot jaunu darbinieku, automātiski veidosies arī amata karte.</td>
+</tr>
+<tr>
+<td>Struktūrvienības dimensijas kods</td>
+<td>Norāda noklusēto dimensijas kodu.</td>
+</tr>
+<tr>
+<td>Sūtīt algas lapiņas caur</td>
+<td>Norāda vedu, kā tiks sūtītas algu lapiņas – atbilstoši nepieciešamajiem uzstādījumiem.</td>
+</tr>
+<tr>
+<td>Algas lapiņas nosūtītāja vārds</td>
+<td>Norāda vārdu, kas izsūta algu lapiņas.</td>
+</tr>
+<tr>
+<td>Algas lapiņas nosūtītāja e-pasts</td>
+<td>Norāda e-pastu, caur kuru algu lapiņas tiek izsūtītas.</td>
+</tr>
+<tr>
+<td>Nepārbaudīt attaisnotās promb. 12M vid. izpeļņā</td>
+<td>Šī pazīme darbojas, ja ielikta otra pazīme “Nepilniem periodiem lietot tekošo mēnesi vid. izpeļņai”. Ja pazīme nav ielikta, tad tekošais mēnesis netiek paņemts, ja attaisnotās prombūtnes ilgums ir mazāk par 12 mēnešiem, bet gadījumā ja prombūtnes ilgums ir vairāk par 12 mēnešiem, tekošais mēnesis tiks iekļauts vidējās izpeļņas aprēķinā.</td>
+</tr>
+<tr>
+<td>Nepilniem periodiem lietot tekošo mēnesi vid. izpeļņai</td>
+<td>Iespējo, ja vidējo izpeļņu izmanto tekošā mēneša aprēķinā, situācijā, kad darbinieks nav nostrādājis pilnu periodu.</td>
+</tr>
+<tr>
+<td>Vidējās apmaksas precizitāte</td>
+<td>Norāda precizitāti (zīmes aiz komata), ar kādu vidējā izpeļņa tiks izmantota aprēķinos.</td>
+</tr>
+<tr>
+<td>Vidējās izpeļņas prombūtnes kods</td>
+<td>Prombūtnes kods vidējai izpeļņai.</td>
+</tr>
+<tr>
+<td>Svētku un brīvdienu apmaksas koeficients</td>
+<td>Koeficientu izmanto, lai aprēķinātu piemaksu par darba stundām svētku dienās un brīvdienās.</td>
+</tr>
+<tr>
+<td>Nakts darba apmaksas koeficients</td>
+<td>Koeficientu izmanto, lai aprēķinātu piemaksu par nakts darba stundām.</td>
+</tr>
+<tr>
+<td>Virsstundu apmaksas koeficients</td>
+<td>Koeficientu izmanto, lai aprēķinātu piemaksu par nostrādātajām virsstundām.</td>
+</tr>
+<tr>
+<td>IIN 1. līmeņa ienākumu limits</td>
+<td>1. līmeņa limits.</td>
+</tr>
+<tr>
+<td>IIN 2. līmeņa ienākumu limits</td>
+<td>2. līmeņa limits darbiniekiem, kuriem A1 sertifikāts.</td>
+</tr>
+<tr>
+<td>IIN globālais bāzes kods</td>
+<td>Tiek izmantots atvieglojumu pārejai uz citu līmeni.</td>
+</tr>
+<tr>
+<td>Noklusētais kalendārs</td>
+<td>Valsts noteiktais kalendārs 5 darba dienu nedēļai.</td>
+</tr>
+<tr>
+<td>Noklusētais kalendārs 6DDN</td>
+<td>Valsts noteiktais kalendārs 6 darba dienu nedēļai.</td>
+</tr>
+<tr>
+<td>Nepārnest nepiemērotos atviegl.</td>
+<td>Norāda, ja nevēlas nepiemērotos atvieglojumus pārnesti uz nākošo mēnešu algu aprēķiniem;  Nepiemērotie atvieglojumi tiek pārnesti caur Komponenšu reģistru, kas tiek izveidots aprēķina brīdī. Ja aprēķina brīdī bija pazīme, ka nevajag pārnest nepiemērotos atvieglojumus, tad arī nebūs komponenšu reģistra ieraksta un nākamajā mēnesī tie netiks ņemti vērā.</td>
+</tr>
+<tr>
+<td>Iespējotas kompensētās svētku dienu stundas</td>
+<td>Iespējot risinājumu, ja nepieciešams kompensēt svētku dienas, kas iekrīt darba dienās, ja darbiniekam ir mēnešalga.</td>
+</tr>
+<tr>
+<td>Kompens. svētku dienu stundas pieņemš./atbrīv</td>
+<td>Darbojas kopā tikai ar ieslēgtu funkciju <em>Iespējotas kompensētās svētku dienu stundas</em>. Iespējot, ja nepieciešams kompensēt svētku dienas, kas iekrīt darba dienās, ja darbinieks ir pieņemts vai atbrīvots tekošajā mēnesī.</td>
+</tr>
+<tr>
+<td>Bērnu kopšanas prombūtnes filtrs</td>
+<td>Atbilstošais prombūtnes kods.</td>
+</tr>
+<tr>
+<td>Prombūtnes korekcijas kods</td>
+<td>Kods, ar kādu atrādās Algu pārrēķina rindas Prombūtnes reģistrācijā.</td>
+</tr>
+<tr>
+<td>Atvaļ. dienu tips</td>
+<td>Norāda, kā uzskaita atvaļinājuma dienas - Darba dienās vai Kalendārajās dienās. Paredzēts gadījumos, ja neizmanto atvaļinājuma periodus.</td>
+</tr>
+<tr>
+<td>Atvaļ. dienu skaits vienā periodā</td>
+<td>Norāda atvaļinājuma dienu skaitu, kas pienākas katram darbiniekam vienā periodā.</td>
+</tr>
+<tr>
+<td>Atvaļ. apmaksājamo dienu skaits vienā periodā</td>
+<td>Norāda apmaksājamo atvaļinājuma dienu skaitu, kas pienākas katram darbiniekam vienā periodā.</td>
+</tr>
+<tr>
+<td>Noklusētais stundu sk. atvaļ./vid.izp. aprēķiniem</td>
+<td>Norāda noklusēto vienas dienas stundu skaitu, kurš tiek izmantots kompensācijas aprēķinos, kā arī vid. izpeļņā.</td>
+</tr>
+<tr>
+<td>Atļaut detalizētu maksājumu grāmatošanu</td>
+<td>Atzīme šajā laukā norāda uz to, ka algu maksājums tiks grāmatots detalizēti, nevis grupēts viss vienā summā. Algu maksājumus eksportē uz maksājumu žurnālu un lietotājs var iegrāmatot ar standarta grāmatojumu par katru darbinieku atsevišķi. Tādā gadījumā  virsgrāmatā var redzēt, cik katrs darbinieks saņem. Tādēļ ir paredzēta otra grāmatošanas funkcija algām, kura var sagrupēt pa dimensijām un tad iegrāmatot maksājumus.</td>
+</tr>
+<tr>
+<td>Darba dev. soc. nod. konta tips</td>
+<td>Norāda konta tipu, kurā tiks grāmatots aprēķinātais darba devēja sociālais nodoklis.</td>
+</tr>
+<tr>
+<td>Darba dev. soc. nod. konta Nr.</td>
+<td>Norāda kontu, kurā tiks grāmatots aprēķinātais darba devēja sociālais nodoklis.</td>
+</tr>
+<tr>
+<td>Algas izmaksas datums</td>
+<td>Norāda algas izmaksas datumu, kurš parādās algas saraksta virsrakstā un dara devēja ziņojumiem EDS.</td>
+</tr>
+<tr>
+<td>Avansa izmaksas datums</td>
+<td>Norāda avansa izmaksas datumu, kurš parādās avansa saraksta  virsrakstā.</td>
+</tr>
+<tr>
+<td>Bankas veidnes nosaukums</td>
+<td>Norāda žurnālu, caur kuru tiks veikti algas maksājumi no bankas konta.</td>
+</tr>
+<tr>
+<td>Nākamā perioda apmaksas atvilkums</td>
+<td>Komponente, kas tiek lietota storno risinājumā. Gadījumā, ja no algas saraksta jau veikta izmaksa, tad tekošā mēneša nākamajā algu sarakstā šī izmaksa tiks uzskaitīta zem noradīta algas komponentes koda.</td>
+</tr>
+<tr>
+<td>Nelietot sistēmas komp. reģistrus</td>
+<td>Norāda, ja algu aprēķinos nevēlas lietot sistēmas radītus Komponenšu reģistra ierakstus. Gadījumā, ja ir nepieciešamas korekcijas, un ielikts ķeksis “Nelietot” , aprēķinot, tiek paradīti paziņojumi par korekcijām, bet reģistrs netiks veidots.</td>
+</tr>
+<tr>
+<td>Grafiks/Uzskaite pēc noklusējuma</td>
+<td>Ja ir ielikta atzīme šajā laukā, tad veidojot jaunu darbinieka amatu vai mainot to, automātiski aizpildās lauks Grafiks/Uzskaite. Tas nodrošina, ka attiecīgajam darbinieka amatam algas aprēķins notiek tikai secīgi pēc Grafika/Uzskaites izveidošanas.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="cilne-numerācija">Cilne: <em>Numerācija</em></h3>
+<table>
+<thead>
+<tr>
+<th>Lauka nosaukums</th>
+<th>Apraksts</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Algas sarakstu numuri</td>
+<td>Norāda algu sarakstu Nr. sēriju.</td>
+</tr>
+<tr>
+<td>Starpizmaksas sarakstu numuri</td>
+<td>Norāda starpizmaksas Nr. sēriju.</td>
+</tr>
+<tr>
+<td>Avansu sarakstu numuri</td>
+<td>Norāda avansu sarakstu  Nr. sēriju.</td>
+</tr>
+<tr>
+<td>Storno sarakstu numuri</td>
+<td>Norāda storno sarakstu Nr. sēriju.</td>
+</tr>
+<tr>
+<td>Darbinieka amatu numuri</td>
+<td>Norāda darbinieka amatu Nr. sēriju.</td>
+</tr>
+<tr>
+<td>Komponenšu reģistru numuri</td>
+<td>Norāda algas komponenšu reģistra Nr. sēriju.</td>
+</tr>
+<tr>
+<td>Sistēmas komponenšu reģistru numuri</td>
+<td>Norāda sistēmas komponenšu reģistru Nr. sēriju.</td>
+</tr>
+<tr>
+<td>Darb. apdrošināšanas numuri</td>
+<td>Norāda darbinieku apdrošināšanas Nr. sēriju.</td>
+</tr>
+<tr>
+<td>Amatu numuri</td>
+<td>Norāda sistēmas amatu reģistra Nr. sēriju.</td>
+</tr>
+<tr>
+<td>Darbs-2 numuri</td>
+<td>Norāda 2-Darbs atskaites numerāciju.</td>
+</tr>
+<tr>
+<td>Grafiku numuri</td>
+<td>Norāda grafiku reģistra Nr. sēriju.</td>
+</tr>
+<tr>
+<td>Uzskaišu numuri</td>
+<td>Norāda uzskaites reģistra Nr. sēriju.</td>
+</tr>
+<tr>
+<td>Bankas maksājumu numuri</td>
+<td>Norāda bankas algu maksājumu Nr. sēriju.</td>
+</tr>
+<tr>
+<td>Bankas eksporta maksājumu numuri</td>
+<td>Norāda maksājumu nr. bankas failā</td>
+</tr>
+<tr>
+<td>PFPIS numuri</td>
+<td>Norāda Paziņojuma par fiziskai personai izmaksātām summām dokumentu nr. sēriju.</td>
+</tr>
+<tr>
+<td>Algas grāmatiņu importa numuri</td>
+<td>Norāda importa Nr. sēriju.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="cilne-komponentes">Cilne: <em>Komponentes</em></h3>
+<table>
+<thead>
+<tr>
+<th>Lauka nosaukums</th>
+<th>Apraksts</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Avansa atvilkuma komponentes kods</td>
+<td>Norādītā komponente no avansu saraksta ievilksies algu sarakstā kā atvilkums.</td>
+</tr>
+<tr>
+<td>Starpizmaksu atvilkuma komponentes kods</td>
+<td>Norādītā komponente no Starpizmaksu saraksta ievilksies algu sarakstā kā atvilkums.</td>
+</tr>
+<tr>
+<td>Minimālās algas komponentes kods</td>
+<td>Norāda minimālās algas komponenti.</td>
+</tr>
+<tr>
+<td>Negatīvas izmaksas komponentes kods</td>
+<td>Norāda negatīvās izmaksas komponenti.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="cilne-apdrošināšana">Cilne: <em>Apdrošināšana</em></h3>
+<table>
+<thead>
+<tr>
+<th>Lauka nosaukums</th>
+<th>Apraksts</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ar nod. neapl. apdrošināšanas kods</td>
+<td>Jābūt norādītai atbilstošai algas komponentei. <strong>Šis uzstādījums tiek nokonfigurēts veidojot jaunu datu bāzi un nav ieteicams šo uzstādījumu modificēt bez ELVA speciālistu konsultācijas</strong>.</td>
+</tr>
+<tr>
+<td>Atvilkuma apdrošināšanas kods</td>
+<td>Jābūt norādītai atbilstošai algas komponentei. <strong>Šis uzstādījums tiek nokonfigurēts veidojot jaunu datu bāzi un nav ieteicams šo uzstādījumu modificēt bez ELVA speciālistu konsultācijas</strong>.</td>
+</tr>
+<tr>
+<td>Ar nod. apl. apdrošināšanas kods</td>
+<td>Jābūt norādītai atbilstošai algas komponentei. <strong>Šis uzstādījums tiek nokonfigurēts veidojot jaunu datu bāzi un nav ieteicams šo uzstādījumu modificēt bez ELVA speciālistu konsultācijas</strong>.</td>
+</tr>
+<tr>
+<td>Apdrošināšanas algas bāzes kods</td>
+<td>Atbilstošais algas bāzes kods. <strong>Šis uzstādījums tiek nokonfigurēts veidojot jaunu datu bāzi un nav ieteicams šo uzstādījumu modificēt bez ELVA speciālistu konsultācijas</strong>.</td>
+</tr>
+<tr>
+<td>Apdrošināšanas limita procenti</td>
+<td>Pēc likumdošanas noteiktais apdrošināšanas prēmiju summas procents no maksātājam aprēķinātās bruto darba samaksas taksācijas gadā, kuru izslēdz no maksātāju ienākumiem, par kuriem maksā algas nodokli un valsts sociālās apdrošināšanas obligātās iemaksas (bet ne vairāk, kā Apdrošināšanas limita summa)..</td>
+</tr>
+<tr>
+<td>Apdrošināšanas limita summa</td>
+<td>Pēc likumdošanas noteiktā maksimālā apdrošināšanas prēmiju summa gadā, kuru izslēdz no maksātāju ienākumiem, par kuriem maksā algas nodokli un valsts sociālās apdrošināšanas obligātās iemaksas.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="cilne-atskaites">Cilne: <em>Atskaites</em></h3>
+<table>
+<thead>
+<tr>
+<th>Lauka nosaukums</th>
+<th>Apraksts</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Vadītāja Nr.</td>
+<td>Norāda personu, kas parakstīsies algu atskaitēs kā vadītājs.</td>
+</tr>
+<tr>
+<td>Ziņu koda pārbaudes iesl.</td>
+<td>Ja ir ieslēgta šī funkcija, tad aizpildot darbinieka kartiņā darbā pieņemšanas vai atbrīvošanas datumus, sistēma piedāvās ievadīt darbinieka ziņu kodu sarakstā <em>Ziņu kodi</em>, no kura tiek iegūta informācija EDS iesniedzama paziņojuma <em>Ziņas par darba ņēmējiem</em> sagatavošanai.</td>
+</tr>
+<tr>
+<td>Darba laika dimensijas kods</td>
+<td>Dimensijas kods darba laikam.</td>
+</tr>
+<tr>
+<td>Simbols brīvdienai uzskaites atskaitē</td>
+<td>Brīvdienas apzīmējums eksportā uz Excel un tabeles izdrukā.</td>
+</tr>
+<tr>
+<td>Izpildītāja Nr.</td>
+<td>Norāda personu, kas parakstīsies algu atskaitēs kā izpildītājs.</td>
+</tr>
+<tr>
+<td>Iedz. ien. nodoklis aprēķina periodā</td>
+<td>Norāda, ka atskaitē “Ziņojums par VSAOIe” tiek uzrādīts tekošā perioda iedzīvotāju ienākuma nodoklis.</td>
+</tr>
+<tr>
+<td>Neiekļaut iedz. ien. nodokļa precizējumus</td>
+<td>Ķeksis strādā tikai gadījumā, ja nav ielikts ķeksis “Iedz. ien. nodoklis aprēķina periodā”.</td>
+</tr>
+<tr>
+<td>PFPIS noklusētais ienākumu veids</td>
+<td>Tiek izmantots PFPIS atskaitē gadījumā, ja darbiniekam netika piemēroti atvieglojumi un netika veikts aprēķins, jo darbiniekam bija bezalgas prombūtne. Šajā gadījumā, piemērojot atvieglojumus, tiem tiks piesaistīts noklusētais ienākuma kods.</td>
+</tr>
+<tr>
+<td>VSAOI atskaites ienākumu bāzes kods</td>
+<td>Norāda ienākumu bāzi VSAOI atskaitei.</td>
+</tr>
+<tr>
+<td>VSAOI atskaites soc. nod. bāzes kods</td>
+<td>Norāda sociālā nodokļa bāzi VSAOI atskaitei.</td>
+</tr>
+<tr>
+<td>VSAOI atskaites ienākumu nod. bāzes kods</td>
+<td>Norāda IIN bāzi VSAOI atskaitei.</td>
+</tr>
+<tr>
+<td>VSAOI atskaites riska nod. bāzes kods</td>
+<td>Norāda riska nodevas bāzi VSAOI atskaitei.</td>
+</tr>
+<tr>
+<td>VSAOI atskaites pensiju iem. bāzes kods</td>
+<td>Norāda pensiju iemaksas bāzi VSAOI atskaitei.</td>
+</tr>
+<tr>
+<td>VSAOI atskaites solid. nod. bāzes kods</td>
+<td>Norāda  solid. nodokļa bāzi VSAOI atskaitei.</td>
+</tr>
+<tr>
+<td>Uzņēmums ir jaunuzņēmums</td>
+<td>Pazīme priekš VSAOI atskaites.</td>
+</tr>
+<tr>
+<td>Profesijas koda maiņas ziņu kods</td>
+<td>Ziņu kods atskaitēm par profesijas maiņu</td>
+</tr>
+</tbody>
+</table>
+<h2 id="ziņu-kodi">Ziņu kodi</h2>
+<p>Lai no sistēmas būtu iespējams ģenerēt atskaiti <em>Ziņas par darba ņēmējiem</em>, ir nepieciešams nodefinēt ziņu kodus:</p>
+<p><img src="images/1.3.status_codes_1.png" alt="alt"></p>
+<p>Iestatījumiem pieejami sekojoši lauki:</p>
+<table>
+<thead>
+<tr>
+<th>Lauka nosaukums</th>
+<th>Apraksts</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Kods</td>
+<td>Ziņu kods.</td>
+</tr>
+<tr>
+<td>Nosaukums</td>
+<td>Koda nosaukums.</td>
+</tr>
+<tr>
+<td>Apraksts2</td>
+<td>Apraksta turpinājums.</td>
+</tr>
+<tr>
+<td>Nr.p.k.</td>
+<td>Norāda secību atskaitē <em>Ziņas par darba ņēmējiem</em>, parasti šie numuri atbilst secībai, kāda norādīta MK noteikumos.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="pfpis-atvieglojumi">PFPIS atvieglojumi</h2>
+<p>Jānorāda kodi, kas sadala PFPIS atskaiti pēc piemērotajiem atvieglojumiem. Kodi un nosaukumi ievadāmi saskaņā ar VID Metodisko materiālu <em>Paziņojumi par fiziskai personai izmaksātajām summām un to aizpildīšanas kārtība</em>.</p>
+<p><img src="images/1.4.pfpis_relief_1.png" alt="alt"></p>
+<p>Iestatījumiem pieejami sekojoši lauki:</p>
+<table>
+<thead>
+<tr>
+<th>Lauka nosaukums</th>
+<th>Apraksts</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Kods</td>
+<td>Papildus atvieglojuma kods.</td>
+</tr>
+<tr>
+<td>Nosaukums</td>
+<td>Papildus atvieglojuma nosaukums.</td>
+</tr>
+<tr>
+<td>Bāze</td>
+<td>Izvēlas atvieglojumu bāzi, kurā norādīti atbilstošie atvieglojumi.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="virsstundu-uzstādījumi">Virsstundu uzstādījumi</h2>
+<p>Lai sistēmā tiktu veikts korekts virsstundu aprēķins, ir jāsaliek sekojoši iestatījumi logā <em>Virsstundu uzstādījumi</em>:</p>
+<p><img src="images/1.6.overtime_1.png" alt="alt"></p>
+<table>
+<thead>
+<tr>
+<th>Lauka nosaukums</th>
+<th>Apraksts</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Algas tips</td>
+<td>Izvēlas, kāds darba algas aprēķina tips tiks izmantots Virsstundu aprēķinā: <br>a) 5 Darba dienu nedēļa; <br>b) Summētais darba laiks.</td>
+</tr>
+<tr>
+<td>Darb. kalendāra kods</td>
+<td>Norāda kalendāru, kurš tiks izmantots virsstundu aprēķinā.</td>
+</tr>
+<tr>
+<td>Sākuma mēnesis</td>
+<td>Norāda, no kāda mēneša tiek veikts virsstundu aprēķins. Paredzēts summētajam darba laikam, ja pārskata perioda sākums atšķiras no gada sākuma. Visos pārējos gadījumos jānorāda Janvāris.</td>
+</tr>
+<tr>
+<td>Datuma formula</td>
+<td>Norāda periodu, par kuru virsstundas tiks aprēķinātas.</td>
+</tr>
+<tr>
+<td>Limita tips</td>
+<td>Norāda tipu, no kura tiks ņemta informācija par nostrādātajām stundām: <br>a) Stundas - izvēlas, ja jānorāda stundu skaits; <br>b) Kalendārs - par pamatu virsstundu aprēķinam tiks izmantots kalendārs.</td>
+</tr>
+<tr>
+<td>Limita stundas/kalendārs</td>
+<td>Ja ir izvēlēts tips kalendārs, tad izvēlas atbilstošo kalendāru no saraksta. Ja tips ir stundas, tad norāda stundu skaitu, kuras pārsniedzot tiks rēķinātas virsstundas.</td>
+</tr>
+<tr>
+<td>Nosaukums</td>
+<td>Brīvi ierakstāms paskaidrojums.</td>
+</tr>
+<tr>
+<td>Proporcionāli</td>
+<td>Izvēlas, ja laukā tips ir Kalendārs un virsstundas paredzēts rēķināt tikai no nostrādātā laika. Aprēķinā ņem vērā arī prombūtni un darbā pieņemšanas datumu.</td>
+</tr>
+<tr>
+<td>Izmantošanas veids pēc noklusējuma *</td>
+<td>Izvēlas: <br>a) Apmaksa; <br>b) Brīvdiena; <br>c) Atvaļinājuma papilddiena.</td>
+</tr>
+<tr>
+<td>Prombūtnes kods brīvdienu izmantošanai *</td>
+<td>Norāda kodu VIRS_ATPUT.</td>
+</tr>
+<tr>
+<td>Mēnešu skaits brīvdienu izmantošanai *</td>
+<td>Norāda cik mēnešus atpakaļ vajag meklēt pieejamas virsstundas, kuras izmantos kā brīvdienu.</td>
+</tr>
+<tr>
+<td>Stundu sk. dienā atvaļin. papilddienai *</td>
+<td>Norāda virsstundu skaitu lai piešķirt darbiniekam vienu atvaļinājuma papilddienu.</td>
+</tr>
+</tbody>
+</table>
+<p>*Lauki paredzēti virsstundu kompensēšanai. Detalizēts procesa apraksts nodaļā <em>Virsstundas kompensācijas ar atpūtas laiku</em>.</p>
+<h2 id="darbinieka-grāmatošanas-grupas">Darbinieka grāmatošanas grupas</h2>
+<p>Darbinieka grāmatošanas grupas tiek lietotas, ja algas aprēķinā iegūtās summas jādala pa dažādiem virsgrāmatas kontiem (piemēram, administrācijas algas izmaksas un pārdošanas algas izmaksas).</p>
+<p><img src="images/1.7.empl_post_groups_1.png" alt="alt"></p>
+<p>Iestatījumiem pieejami sekojoši lauki:</p>
+<table>
+<thead>
+<tr>
+<th>Lauka nosaukums</th>
+<th>Apraksts</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Kods</td>
+<td>Darbinieka grāmatošanas grupas kods.</td>
+</tr>
+<tr>
+<td>Maksājumu konts</td>
+<td>Norāda Virsgrāmatas kontu, kas jālieto, grāmatojot kreditoru parādus darbiniekiem šajā kontējuma grupā.</td>
+</tr>
+</tbody>
+</table>
+<p>Lai apskatītu visus algu grāmatojumus vienā lapā, jānospiež poga <em>Grāmatošanas uzstādījumi</em>.</p>
+<p><img src="images/1.7.empl_post_groups_2.png" alt="alt"></p>
+<table>
+<thead>
+<tr>
+<th>Lauka nosaukums</th>
+<th>Apraksts</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Darbinieka grām. grupas kods</td>
+<td>Darbinieka grāmatošanas grupas kods.</td>
+</tr>
+<tr>
+<td>Algas komponentes kods</td>
+<td>Norāda kādai algas komponentei ir atspoguļoti grāmatojumi.</td>
+</tr>
+<tr>
+<td>Komponentes nosaukums</td>
+<td>Algas komponentes nosaukums.</td>
+</tr>
+<tr>
+<td>Konta tips</td>
+<td>Lauku <em>Konta Nr.</em> un <em>DDSN konta Nr.</em> konta tips.</td>
+</tr>
+<tr>
+<td>Konta Nr.</td>
+<td>Konta numurs.</td>
+</tr>
+<tr>
+<td>DDSN Konta nr.</td>
+<td>Darba devēja sociālā nodokļa konta numurs.</td>
+</tr>
+<tr>
+<td>Algas norēķinu konta Nr.</td>
+<td>Korespondējošais konts. Nav rediģējams lauks, tikai informatīva nozīme.</td>
+</tr>
+<tr>
+<td>Grāmatošanas grupas konta zīme</td>
+<td><em>Konta Nr.</em> un <em>DDSN konta Nr.</em> puse: debets vai kredīts. Nav rediģējams lauks, tikai informatīva nozīme.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="amatu-klasifikators">Amatu klasifikators</h2>
+<p>Sistēmā var izveidot amatu klasifikatoru, kuram var piesaistīt konkrēto profesiju klasifikatoru. Amati nav hierarhiski sagrupēti, tas ir, nav noteikta pakļautība.</p>
+<p>Klikšķinot uz <em>Apstrādāt</em> (1), katrai amata kartiņā var definēt atsevišķas Rīkojuma rindas (2), Algas komponentes (3), identificēt amata pienākumu veikšanā Riska faktorus (4), kā arī, noteikt instruktāžas (5).
+Ja sistēmā tiek labota informācija par profesijas kodu un struktūrvienības kodu, tad, lai šīs izmaiņas parādītos arī darbinieka kartiņā, amata kartē ir jāaktivizē funkcija <em>Atjaunot darbinieku amatus</em> (6).</p>
+<p>Amata kartiņai var piesaistīt dimensijas, klikšķinot uz <em>Saistītās</em> (7) un izvēloties funkciju <em>Dimensijas</em>.</p>
+<p><img src="images/1.8.positions_1.png" alt="alt"></p>
+<p>Amata kartiņā pieejami sekojoši lauki:</p>
+<table>
+<thead>
+<tr>
+<th>Lauka nosaukums</th>
+<th>Apraksts</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Kods</td>
+<td>Jaunās amata vietas kods.</td>
+</tr>
+<tr>
+<td>Nosaukums</td>
+<td>Amata nosaukums.</td>
+</tr>
+<tr>
+<td>Profesijas kods</td>
+<td>Kods no <em>Darbinieku statistikas grupas</em>.</td>
+</tr>
+<tr>
+<td>Struktūrvienības kods</td>
+<td>Kods no <em>Struktūrvienības</em> saraksta. <strong>Struktūrvienības kodu mainīt kartē nav iespējams, tāpēc tam jābūt korekti ievadītam sākotnēji.</strong></td>
+</tr>
+<tr>
+<td>Struktūrvienības apraksts</td>
+<td>Apraksts no <em>Struktūrvienības</em> saraksta.</td>
+</tr>
+<tr>
+<td>Kopējās slodzes</td>
+<td>Slodzes, kas ir paredzētas šim amatam kopā.</td>
+</tr>
+<tr>
+<td>Patreizējās slodzes</td>
+<td>Cik amata slodzes uzņēmumā jau ir aizņemtas.</td>
+</tr>
+<tr>
+<td>Patreizējais darbinieku skaits</td>
+<td>Darbinieku skaits, kas ir nodarbināti konkrētā amatā.</td>
+</tr>
+<tr>
+<td>Vakantās slodzes</td>
+<td>Cik slodzes vēl ir vakantas šim amatam.</td>
+</tr>
+<tr>
+<td>Izveidošanas datums</td>
+<td>Amata izveidošanas datums.</td>
+</tr>
+<tr>
+<td>Slēgšanas datums</td>
+<td>Amata slēgšanas datums.</td>
+</tr>
+<tr>
+<td>Amata alga</td>
+<td>Informatīvs lauks.</td>
+</tr>
+<tr>
+<td>Atvaļinājuma dienas</td>
+<td>Definēt, cik ikgadējā atvaļinājuma dienas pienākas šim amatam.</td>
+</tr>
+<tr>
+<td>Papildatvaļinājuma dienas</td>
+<td>Definēt, cik papildatvaļinājuma dienas pienākas šim amatam.</td>
+</tr>
+<tr>
+<td>Darba laiks nav nosakāms</td>
+<td>Atzīmē, ja amatam darba laiks nav nosakāms un tiek pakārtots uzņēmuma vajadzībām.</td>
+</tr>
+<tr>
+<td>Darba līguma veidne</td>
+<td>Var piesaistīt amatam līguma veidni.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="struktūrvienības">Struktūrvienības</h2>
+<p>Sistēmā iespējams uzturēt strukturētu informāciju par uzņēmuma struktūrvienībām. Gan aktuālu, gan arī vēsturisku, jo struktūrvienības sistēmā netiek dzēstas, bet gan slēgtas. Tabula Struktūrvienības satur sekojošus laukus:</p>
+<ul>
+<li>Kods – struktūrvienības kods, ko definē lietotājs.</li>
+<li>Nosaukums;</li>
+<li>Adrese – struktūrvienības piesaistītā faktiskās atrašanās vietas adrese;</li>
+<li>Izveidošanas datums – datums, kad struktūrvienība ir izveidota;</li>
+<li>Slēgšanas datums – datums, kad struktūrvienība ir slēgta;</li>
+<li>Pakļautība hierarhijā kods – struktūrvienības kods, kurai struktūrvienība ir pakļauta</li>
+<li>Vadītāja amata kods;</li>
+<li>Nodaļas dim. vērtības kods - Struktūrvienības dimensijas vērtības kods (tiek izmantota dimensija, kas nodefinēta Personāla uzstādījumos) no standarta dimensiju klasifikatora.</li>
+</ul>
+<p>Lai nodrošinātu struktūrvienību hierarhiju, tiek kombinētas kārtošanas un atkāpju metodes. Tātad viena struktūrvienība ir pakļauta otrai struktūrvienībai, ja tā atrodas pēc galvenās struktūrvienības un ir ar vienu līmeni lielāku atkāpi. Atkarībā no struktūrvienību atkāpju dziļuma un struktūrvienību skaita, tiek sastādīts struktūrvienības kods. Struktūrvienības atkāpes tiek veidotas ar podziņu palīdzību Struktūrvienības tabulā. Piemēram, dalot kodu trijās daļās „00-00-00”, pirmā daļa ir augstākās struktūrvienības līmeņa kods, otrā un trešā attiecīgi nākamās. Katrā līmenī pakļautībā zem vienas un tās pašas struktūrvienības ir iespējams izveidot 100 struktūrvienības.</p>
+<p>Piemēram:</p>
+<p>00-00-00 Vadība – 1. līmenis;</p>
+<p>00-10-00 Finanšu daļa – 2. līmenis;</p>
+<p>00-10-10 Grāmatvedība – 3. līmenis.</p>
+<p>Šādā veidā, izmantojot kodus, tiek nodrošināta kārtošanas metode. Papildus tiek veidotas atkāpes atbilstoši līmenim.</p>
+<h2 id="pensionēšanas-vecums">Pensionēšanas vecums</h2>
+<p>Lai varētu atlasīt darbiniekus, kuriem iestājas pensionēšanas vecums, sistēmā ir jānodefinē pensionēšanas vecums.</p>
+<p><img src="images/1.9.retirement_1.png" alt="alt"></p>
+<p>Iestatījumiem pieejami sekojoši lauki:</p>
+<table>
+<thead>
+<tr>
+<th>Lauka nosaukums</th>
+<th>Apraksts</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>No datuma</td>
+<td>Norāda, no kura datuma ir spēkā šie noteikumi.</td>
+</tr>
+<tr>
+<td>Dzimums</td>
+<td>Norāda dzimumu.</td>
+</tr>
+<tr>
+<td>Pensionēšanās vecums</td>
+<td>Norāda vecumu, ar kuru iestājas pensionēšanas vecums.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="sociālā-statusa-kodi">Sociālā statusa kodi</h2>
+<p>Lai sistēmā tiktu korekti aizpildīta atskaite Ziņojums par valsts sociālās apdrošināšanas obligātām iemaksām, ir jānodefinē sekojoši uzstādījumi. Parasti ELVA speciālisti sagatavo uzstādījumus pirms lietotāji sāk lietot sistēmu, bet zinošāki lietotāji var šos uzstādījumus papildināt, ja ir nepieciešams:</p>
+<p><img src="images/1.10.soc_stat_codes_1.png" alt="alt"></p>
+<p>Iestatījumiem pieejami sekojoši lauki:</p>
+<table>
+<thead>
+<tr>
+<th>Lauka nosaukums</th>
+<th>Apraksts</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Kods</td>
+<td>Darba ņēmēju grupas kods.</td>
+</tr>
+<tr>
+<td>Nosaukums</td>
+<td>Apraksts.</td>
+</tr>
+<tr>
+<td>Noklusētais statuss</td>
+<td>Veidojot jaunu darbinieka kartiņu, šis darba ņēmēju grupas kods tiks ielikts pēc noklusējuma.</td>
+</tr>
+<tr>
+<td>XML SAMStat</td>
+<td>Uzstādījumi saskaņā ar dokumentu Elektroniski iesniedzamo failu formāti, ko var atrast Valsts ieņēmuma dienesta mājas lapā <a href="http://www.vid.gov.lv">www.vid.gov.lv</a>.</td>
+</tr>
+<tr>
+<td>XML DarbaVeids</td>
+<td>Uzstādījumi saskaņā ar dokumentu Elektroniski iesniedzamo failu formāti, ko var atrast Valsts ieņēmuma dienesta mājas lapā <a href="http://www.vid.gov.lv">www.vid.gov.lv</a>.</td>
+</tr>
+<tr>
+<td>XML Tab</td>
+<td>Norāda, kurā sadaļā ir jānorāda dati par konkrēto sociālo statusu.</td>
+</tr>
+<tr>
+<td>Algas grāmatiņas importa pensionāra tips</td>
+<td>Tiek ņemts vērā, importējot nodokļu grāmatiņas.</td>
+</tr>
+<tr>
+<td>Algas grāmatiņas importa apraksts</td>
+<td>Tiek ņemts vērā, importējot nodokļu grāmatiņas.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="algu-banku-uzstādījumi">Algu banku uzstādījumi</h2>
+<p>Lai no sistēmas varētu eksportēt algu maksājumus, ir jānodefinē banku uzstādījumi:</p>
+<p><img src="images/1.11.banks_1.png" alt="alt"></p>
+<p>Iestatījumiem pieejami sekojoši lauki:</p>
+<table>
+<thead>
+<tr>
+<th>Lauka nosaukums</th>
+<th>Apraksts</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Algu bankas konta Nr.</td>
+<td>Tiek izvēlēts algu bankas konts.</td>
+</tr>
+<tr>
+<td>Nosaukums</td>
+<td>Brīvi definējams nosaukums.</td>
+</tr>
+<tr>
+<td>Saglabājamā faila tips</td>
+<td>Visbiežāk lietotais ir SEPA (xml formāts).</td>
+</tr>
+<tr>
+<td>Faila ceļš</td>
+<td>Ja tiek lietots FIDAVISTA tips, tad nav jānorāda. Ja lieto txt tipu, tad ir jānorāda mape, kurā šis fails tiks saglabāts.</td>
+</tr>
+<tr>
+<td>Atsevišķi maksājumi</td>
+<td>Jāatzīmē, ja nepieciešams sūtīt algu maksājumu par katru darbinieku atsevišķi kā atsevišķu dokumentu.</td>
+</tr>
+<tr>
+<td>Grupēt pēc Darbinieka Nr.</td>
+<td>Jāatzīmē, ja tiek veikta izmaksa vienam darbiniekam no vairākiem sarakstiem, tad bankas failā pēc darbinieka nr. tiek veidots viens ieraksts.</td>
+</tr>
+</tbody>
+</table>
+<p>Vēl viens no obligātiem nosacījumiem  - jābūt numuru sērijai SEPA. Lai izveidotu SEPA numuru sēriju, katalogā jāizveido jauns kods SEPA, jāaizpilda apraksts un jāpiešķir sākuma Nr. un beigu Nr. Kā arī jāieliek ķeksis <em>Numuri pēc noklusējuma</em>.</p>
+<p><img src="images/1.11.banks_3.png" alt="alt"></p>
+<h2 id="algu-analīzes-veidnes">Algu analīzes veidnes</h2>
+<p>Sistēmā var nodefinēt veidnes, ko izmantot algu analizēšanai.</p>
+<p><img src="images/1.12.analysis_templates_1.png" alt="alt"></p>
+<p>Šie uzstādījumi ir nepieciešami atskaitei <em>Algu analīze</em>:</p>
+<p><img src="images/1.12.analysis_templates_2.png" alt="alt"></p>
+<p>Iestatījumiem pieejami sekojoši lauki:</p>
+<table>
+<thead>
+<tr>
+<th>Lauka nosaukums</th>
+<th>Apraksts</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Kods</td>
+<td>Brīvi nodefinēts kods.</td>
+</tr>
+<tr>
+<td>Nosaukums</td>
+<td>Apraksts.</td>
+</tr>
+<tr>
+<td>Kolonnu vērtības</td>
+<td>Kolonnās iespējams kārtot datus pēc komponentes tipa, aprēķina vai perioda mēneša.</td>
+</tr>
+<tr>
+<td>Sadaļa <em>Rindas</em></td>
+<td>Izvēlas, kādus datus vēlas norādīt rindās: <br>Tips (ienākums, atvieglojums, atvilkums utt.); <br>Kods (algas komponentes kods); <br>Dimensija; <br>Darbinieks.</td>
+</tr>
+</tbody>
+</table>
+<h1 id="algu-aprēķina-uzstādījumi">Algu aprēķina uzstādījumi</h1>
+<p>Nodaļā <em>Administrēšana</em> ir iekļautas vajadzīgās kartiņas un formas Algas aprēķina vajadzībām.</p>
+<p><img src="images/1.0.setting_up_1.png" alt="alt"></p>
+<h2 id="algas-komponentes">Algas komponentes</h2>
+<div class="TIP">
+<h5>Tip</h5>
+<p><strong>Parasti lielākā daļa no šīm komponentēm ir kopīga visiem uzņēmumiem un tās tiek sagatavotas iepriekš, veidojot jaunu bāzi klientam. Tāpēc nav ieteicams šīs vērtības dzēst un modificēt bez konsultācijas ar ELVA konsultantiem</strong>.</p>
+</div>
+<p>Algas aprēķins tiek veidots no dažādām algas komponentēm – ienākumiem, atvieglojumiem, nodokļiem.
+Vienkāršākai bāžu uzturēšanai ir paredzētas divas pogas: <em>Saistītās bāzes pēc tipa</em> (1) un <em>Saistītās bāzes pēc koda</em> (2). Tādā veidā pastāv iespēja ātri atlasīt bāzes, kurās tiek izmantota algas komponente.</p>
+<p><img src="images/2.1.payroll_components_1.png" alt="alt"></p>
+<p>Iestatījumiem pieejami sekojoši lauki:</p>
+<h3 id="cilne-visp-info-1">Cilne: <em>Visp. info</em></h3>
+<table>
+<thead>
+<tr>
+<th>Lauka nosaukums</th>
+<th>Apraksts</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Kods</td>
+<td>Brīvi definēts kods.</td>
+</tr>
+<tr>
+<td>Tips</td>
+<td>Izvēlas no saraksta atbilstošo tipu.</td>
+</tr>
+<tr>
+<td>Nosaukums</td>
+<td>Brīvi definēts komponentes nosaukums.</td>
+</tr>
+<tr>
+<td>Prioritāte</td>
+<td>Norāda konkrētās komponentes vietu algas aprēķināšanas darbību ķēdē – jo mazāks skaitlis, jo augstāka prioritāte. Tādējādi šī komponente ātrāk tiks iesaistīta algas aprēķinā. Veidojot jaunu algas  komponenti, prioritāte iekrīt automātiski, <strong>vēlams pašiem bez vajadzības nemainīt</strong>.</td>
+</tr>
+<tr>
+<td>Aprēķina veids</td>
+<td>Jāizvēlas, kā komponente tiks rēķināta – Proporcionāli nostrādātām dienām, Proporcionāli nostrādātām stundām, Proporcionāli kalendārām dienām, Stundu, Dienu, Gabaldarbs, Neapliekamais limits (uzkrājošs), Neapliekamais limits (neuzkrājošs), Avanss.</td>
+</tr>
+<tr>
+<td>Daudzuma tips</td>
+<td>Nepieciešams noradīt kādas mērvienības jāizmanto, aprēķinot virsstundas tabelē.</td>
+</tr>
+<tr>
+<td>Derīgs līdz</td>
+<td>Līdz kādam datumam komponente ir spēkā.</td>
+</tr>
+<tr>
+<td>Derīguma skaidrojums</td>
+<td>Brīvi definējams teksts, kurš tiks atspoguļots, aprēķinot algas, kļūdas paziņojumā gadījumā, ja komponente jau nav spēkā.</td>
+</tr>
+<tr>
+<td>Soc. statusa kods</td>
+<td>Norāda pie sociālā nodokļa komponentes atbilstošu sociālā statusa kodu.</td>
+</tr>
+<tr>
+<td>Noklusētā darbinieka komponente</td>
+<td>Atzīme, vai šī komponente aizpildās automātiski, veidojot algas komponentes darbinieka kartiņā.</td>
+</tr>
+<tr>
+<td>Apgādājamo skaits</td>
+<td>Tiek aizpildīts pie atvieglojumu par apgādājamajiem komponentes – ieliek atbilstošo apgādājamo skaitu.</td>
+</tr>
+<tr>
+<td>Invaliditātes grupa</td>
+<td>Tiek aizpildīts pie atvieglojumu par invaliditāti komponentes – aizpilda atbilstošu grupu.</td>
+</tr>
+<tr>
+<td>1. globālās dimensijas kods</td>
+<td>Ja nepieciešams, norāda 1. globālo dimensiju algas komponentei.</td>
+</tr>
+<tr>
+<td>2. globālās dimensijas kods</td>
+<td>Ja nepieciešams, norāda 1. globālo dimensiju algas komponentei.</td>
+</tr>
+<tr>
+<td>Nedrukāt algas lapiņā</td>
+<td>Norāda, ka informācija par šo algas komponenti netiks drukāta algas lapiņā.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="cilne-papild-info">Cilne: <em>Papild. info</em></h3>
+<table>
+<thead>
+<tr>
+<th>Lauka nosaukums</th>
+<th>Apraksts</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Neto summa</td>
+<td>Ievieto atzīmi, ja aprēķinā tiek izmantota neto summa. <strong>Gadījumā, ja neto komponentei ir reģistrēta summa ar mīnuss zīmi, šī summa tiks uzskatīta par bruto summu</strong>.</td>
+</tr>
+<tr>
+<td>Virsstundu algas komponente</td>
+<td>Norāda piesaistīto Virsstundu algas komponenti.</td>
+</tr>
+<tr>
+<td>Svētku stundu algas komponente</td>
+<td>Norāda piesaistīto Svētku stundu algas komponenti.</td>
+</tr>
+<tr>
+<td>Nakts stundu algas komponente</td>
+<td>Norāda, piesaistīto Nakts stundu algas komponenti.</td>
+</tr>
+<tr>
+<td>Kompensējamo stundu komponentes kods</td>
+<td>Norāda algas komponenti, kura tiek izmantota algas aprēķinos ar stundas likmi, kompensējot svētku stundas, kuras iekrīt darbiniekam normālajā darba laikā un šajā dienā darbinieks neveica darbu.</td>
+</tr>
+<tr>
+<td>Gada limita pārsniegtās summas komp. kods</td>
+<td>Norāda algas komponentes kodu, kurš tiks izmantots algu aprēķinā gadījumā, ja pārsniegts šīs komponentes limits.</td>
+</tr>
+<tr>
+<td>Atvieglojumu pieejama summa</td>
+<td>Bāze, kura definē atvieglojumu summu dotai komponentei.</td>
+</tr>
+<tr>
+<td>Nepiemēr. atviegloj. komponentes kods</td>
+<td>Norāda algas komponentes kodu, kurš tiks piemērots nepiemēroto atvieglojumu pārnešanai uz nākošo mēnešu algu aprēķiniem.</td>
+</tr>
+<tr>
+<td>IIN 2. līmeņa komponentes kods</td>
+<td>2. līmeņa IIN bāzes kods.</td>
+</tr>
+<tr>
+<td>IIN 3. līmeņa komponentes kods</td>
+<td>3. līmeņa IIN bāzes kods.</td>
+</tr>
+<tr>
+<td>Vienmēr lietot aprēķina periodu</td>
+<td>Norāda, ja ir nepieciešams IIN aprēķinam lietot tekošo aprēķina periodu.</td>
+</tr>
+<tr>
+<td>Dalīt atbilstoši saistītajām komponentēm</td>
+<td>Komponentes veidojas no uzstādījumiem (bāzes summām) un dalās atbilstoši komponentēm, kuras ir bāzes summās.</td>
+</tr>
+<tr>
+<td>Pamatalga</td>
+<td>Norāda kura komponente tiek atzīta kā pamatalgas komponente.</td>
+</tr>
+<tr>
+<td>Svētku dienu apmaksa atvaļ. laikā</td>
+<td>ievieto atzīmi pie pamatalgas komponentes, ja vēlas, lai tiktu aprēķināta samaksa par svētku dienām (kuras iekrīt darbinieka darba dienā) atvaļinājuma laikā. Ja atvaļinājuma laikā iekrīt svētku diena, tad sistēma par šīm dienām samazina atvaļinājuma izmantoto dienu skaitu.</td>
+</tr>
+<tr>
+<td>Svētku dienas brīvdienā vidējā apmaksa</td>
+<td>Atzīmējot šo lauku pie pamatalgas komponentes, ja darbinieka brīvdienā “iekrīt” svētku diena, kas pēc valstī noteiktā kalendāra “iekrīt” darba dienā – tad par šo dienu tiek aprēķināta vidējā izpeļņa. Lai par šo dienu aprēķinātu vidējo izpeļņu, darbinieka kartiņā sadaļā <em>Algas komponentes</em> jābūt atzīmei pie <em>Apmaksāt svētku stundas</em>.</td>
+</tr>
+<tr>
+<td>Netiek grāmatota uz V/G</td>
+<td>Norāda, ka atbilstošās komponentes dati netiks grāmatoti uz virsgrāmatu.</td>
+</tr>
+<tr>
+<td>Algas norēķinu konts</td>
+<td>Norāda atbilstošo virsgrāmatas kontu, kurā tiks grāmatoti Norēķini par darba algu.</td>
+</tr>
+<tr>
+<td>Grāmatošanas grupas konta zīme</td>
+<td>Norāda grāmatošanas grupas pusi: debets vai kredīts.</td>
+</tr>
+<tr>
+<td>Iekļaut nulles summu</td>
+<td>Ieslēdz, ja jāveido algas rindu ar 0 summu (nav iespējas ieturēt summu, bet pastāv iespēja, ka lietotājs koriģēs atvilkuma summu). Ģenerēt rindu vajag, lai būtu iespēja pārskaitīt naudu trešajām pusēm.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="cilne-grāmatošana">Cilne: <em>Grāmatošana</em></h3>
+<table>
+<thead>
+<tr>
+<th>Lauka nosaukums</th>
+<th>Apraksts</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Darbinieka grām. grupas kods</td>
+<td>Izvēlas no saraksta, uz kuru grupu attiecas šī komponente.</td>
+</tr>
+<tr>
+<td>Konta tips</td>
+<td>Iespējamie varianti : virsgrāmatas konts; piegādātājs vai klients.</td>
+</tr>
+<tr>
+<td>Konta Nr.</td>
+<td>Darba algas konta Nr. izvēlas no saraksta (vai piegādātāju/klientu, ja tips ir piegādātājs/klients).</td>
+</tr>
+<tr>
+<td>DDSN Konta Nr.</td>
+<td>Norāda Darba dev.soc.nod. izmaksu Konta Nr. DDSN var grāmatot dažādos izmaksu kontos, kas norādīti katrai darbinieka grāmatošanas grupai.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="cilne-uzstādījumi">Cilne: <em>Uzstādījumi</em></h3>
+<table>
+<thead>
+<tr>
+<th>Lauka nosaukums</th>
+<th>Apraksts</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>No datuma</td>
+<td>Norāda, no kura datuma šī vērtība ir spēkā.</td>
+</tr>
+<tr>
+<td>Vērtība</td>
+<td>Norāda vērtību, ja tā ir konstanta.</td>
+</tr>
+<tr>
+<td>Aprēķināt pēc</td>
+<td>Norāda vai ievadītā vērtība būs summa vai  %</td>
+</tr>
+<tr>
+<td>Bāze</td>
+<td>Ja ir izvēlēti %, tad norāda bāzi, no kuras (bāzes) summas tiks rēķināti %.</td>
+</tr>
+<tr>
+<td>Bāzes gada summas limits</td>
+<td>Tiek norādīts limits, pēc kura pārsniegšanas netiek veikti aprēķini.</td>
+</tr>
+<tr>
+<td>Nosaukums</td>
+<td>Brīvi aizpildāms lauks.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="bāzes">Bāzes</h2>
+<p>Bāzes summas ir uzstādījumi, kuri nosaka dažādu algas sastāvdaļu aprēķinu - atvaļinājumu, slimības naudu, kā arī dažu atskaišu (Paziņojums par algas nodokli, statistika) aprēķināšanas algoritmus. Šīs summas var definēt pēc vajadzības.</p>
+<p>Iestatījumiem pieejami sekojoši lauki:</p>
+<h3 id="cilne-visp-info-2">Cilne: <em>Visp. info</em></h3>
+<table>
+<thead>
+<tr>
+<th>Lauka nosaukums</th>
+<th>Apraksts</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bāze</td>
+<td>Brīvi definēts kods.</td>
+</tr>
+<tr>
+<td>Nosaukums</td>
+<td>Brīvi izvēlēts nosaukums.</td>
+</tr>
+<tr>
+<td>Saistītās komponentes kods</td>
+<td>Šī funkcionalitāte paredzēta paplašinātai datu filtrēšanai. Ja bāzei tiek norādīts Saistītās komponentes kods, tad no algas komponenšu rindām tiek skaitītas tikai rindas, kur komponentes kods vai saistītās komponentes kods sakrīt ar bāzes summas saistītās komponentes kodu. Saistītai komponentei ir ierobežojumi (PFPIS korektai aizpildīšanai), tāpēc obligāti konsultēties ar ELVA konsultantiem.</td>
+</tr>
+<tr>
+<td>IIN līmeņa filtrs</td>
+<td>Ja ir izvēlēti %, tad norāda bāzi, no kuras (bāzes) summas tiks rēķināti %.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="cilne-uzstādījumi-1">Cilne: <em>Uzstādījumi</em></h3>
+<table>
+<thead>
+<tr>
+<th>Tabulas nosaukums</th>
+<th>Apraksts</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>+ Tips</td>
+<td>Norāda komponenšu tipus, kuri tiks pieskaitīti bāzes summas aprēķinā.</td>
+</tr>
+<tr>
+<td>- Tips</td>
+<td>Norāda  komponentes tipus, kuri tiks atņemti no bāzes summas.</td>
+</tr>
+<tr>
+<td>+ Kods</td>
+<td>Norāda konkrētas komponentes, kuras tiks pieskaitītas bāzes summas aprēķinam.</td>
+</tr>
+<tr>
+<td>- Kods</td>
+<td>Norāda komponentes, kuras tiks atņemtas bāzes summas aprēķinā.</td>
+</tr>
+</tbody>
+</table>
+<p>Papildus katrā tabulā pie komponentes ir iespējams norādīt datumus no kura un līdz kuram aprēķinā darbojas attiecīgā komponente vai komponentes tips. Šie dati saglabājas vēsturē.</p>
+<h2 id="prombūtnes-iemesli">Prombūtnes iemesli</h2>
+<p>Lai reģistrētu prombūtni, nepieciešams <em>Neierašanās iemesla kods</em>. Visi neierašanās iemeslu kodi tiek sākotnēji importēti sistēmā ar konfigurācijas pakotnes starpniecību un tie ir apkopoti sarakstā <em>Prombūtnes iemesli</em>. Koda kartiņu var atvērt ieklikšķinot nepieciešamā koda rindiņā un nospiežot rīkjoslā uz pogām <em>Darbības - Jauns dokuments - Karte</em>.</p>
+<p><strong>Prombūtņu iemesla kodus un to uzstādījumus ieteicams patstāvīgi nemainīt</strong>.</p>
+<p>Iestatījumiem pieejami sekojoši lauki:</p>
+<h3 id="cilne-visp-info-3">Cilne <em>Visp. info</em></h3>
+<table>
+<thead>
+<tr>
+<th>Lauka nosaukums</th>
+<th>Apraksts</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Kods</td>
+<td>Brīvi definēts prombūtnes kods.</td>
+</tr>
+<tr>
+<td>Apraksts</td>
+<td>Prombūtnes apraksts.</td>
+</tr>
+<tr>
+<td>Mērvienības kods</td>
+<td>Izvēlas no mērvienību klasifikatora.</td>
+</tr>
+<tr>
+<td>Kopā neierašanās (bāze)</td>
+<td>Sistēma uzrāda, cik kopā ir reģistrēta šī prombūtne. Ņemot vērā ka tas ir standarta Microsoft lauks, kurš nav uzturēts, vienmēr rāda nulli.</td>
+</tr>
+<tr>
+<td>Pēc nokl. veidot algas apmaksu</td>
+<td>Aprēķināt algu pirms prombūtnes, izveidojot prombūtnes reģistrā prombūtni ar atbilstošu prombūtnes kodu (prombūtnes kods norādīts <em>Algu uzstādījumi</em>).</td>
+</tr>
+</tbody>
+</table>
+<h3 id="cilne-algas">Cilne <em>Algas</em></h3>
+<table>
+<thead>
+<tr>
+<th>Lauka nosaukums</th>
+<th>Apraksts</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Neattaisnota prombūtne</td>
+<td>Neattaisnotas prombūtnes pazīme.</td>
+</tr>
+<tr>
+<td>Algas aprēķina veids</td>
+<td>Izvēlas no saraksta, kādā  veidā tiek aprēķināta prombūtne: <br>1. Vidējā apmaksa – aprēķina periodu vispirms ņem iepriekšējos 6 mēn., ja nav, tad iepriekšējos 12 mēn. Ja arī nav, tad programma pārbauda Algu uzstādījumos, vai ir atzīme laukā Nepilniem mēnešiem lietot tekošo mēnesi vid. izpeļņai. Ja šajā laukā nav atzīmes, tad rēķina vidējo no minimālās algas;<br>2.	Saglabāta alga (Cita komponente) – par izvēlēto periodu saglabās aprēķināto pamatalgu, summu izdalot citā algas komponentē; <br>3. Saglabāta alga –  par izvēlēto periodu nekas nemainās pamatalgas aprēķinā (piem.: attaisnota prombūtne); <br> 4. Iepr. apmaksa – izmaksā pamatalgu Starpizmaksās par izvēlēto periodu (atvaļinājums uz priekšu); <br> 5. Bez algas – par izvēlēto periodu neaprēķina algu (piem.: bezalgas atvaļinājums, neattaisnota neierašanās); <br> 6. Bez atvieglojumiem – Neaprēķina algu un atvieglojumus (piem.: B lapas); <br> 7.	Tukšums – ignorē algu aprēķinos.</td>
+</tr>
+<tr>
+<td>Algas komponentes kods</td>
+<td>Norāda atbilstošo algas komponenti.</td>
+</tr>
+<tr>
+<td>Nākamā perioda algas komp. kods</td>
+<td>Norāda komponenti, ja samaksa par nākamo periodu tiek izdalīta citā komponentē.</td>
+</tr>
+<tr>
+<td>Kalendāro dienu ierobežojums</td>
+<td>Norāda prombūtnes iemesla dienu skaitu (piem. slimības lapas, komandējumi), lai brīdinātu par ierobežojumu pārsniegšanu.</td>
+</tr>
+<tr>
+<td>Samazināta likme</td>
+<td>Norāda samazinātās likmes pa dienām, (piem.: kādā veidā tiek apmaksātas slimības lapas). Klikšķiniet uz lauka linku, lai iestatītu. <br><img src="2.3.absence_causes_4.1.png" alt="alt"></td>
+</tr>
+<tr>
+<td>Piespiedu kalendāra kods</td>
+<td>Izvēlas noklusēto kalendāru, pēc kura tiks veikts aprēķins konkrētai prombūtnei.</td>
+</tr>
+<tr>
+<td>Piespiedu kalendāra kods 6DDN</td>
+<td>Izvēlas noklusēto kalendāru, pēc kura tiks veikts aprēķins konkrētai prombūtnei pēc sešu darba dienu kalendāra.</td>
+</tr>
+<tr>
+<td>Lietot kalendārās dienas</td>
+<td>Norāda prombūtnes aprēķina veidu pa dienām (periods): <br>-	Darba diena; <br> -	Kalendārā diena; <br>-	Ar roku  - dienu skaits nav atkarīgs no perioda.</td>
+</tr>
+<tr>
+<td>Atvieglojumi aprēķina periodā</td>
+<td>Atzīme laukā norāda, ka atvieglojumi būs šajā mēnesī. Ja atzīmes nav, tad tie tiks pārnesti arī uz priekšu. (piem.: gari atvaļinājumi skolotājiem).</td>
+</tr>
+<tr>
+<td>Iekļaut faktiskajā darba laikā</td>
+<td>Ja ir atzīme šajā laukā, tad  tiek uztvertas kā faktiski nostrādātās dienas (piem.: komandējums).</td>
+</tr>
+<tr>
+<td>Aprēķina prioritāte</td>
+<td>Norāda prombūtnes iemesla kārtas skaitli algas aprēķināšanas darbību ķēdē - jo mazāks skaitlis, jo augstāka prioritāte. Prioritāti var norādīt gan algas komponentēm, gan arī prombūtnes iemesliem. Ja algas komponente nāk no prombūtnes ieraksta (atval. komp.), tad prioritāte tiek ņemta no prombūtnes iemesla.</td>
+</tr>
+<tr>
+<td>Vidējā izpeļņa pa stundām</td>
+<td>Pastāv iespēja izvēlēties: <br>tukšums, <br>tikai SDL ( summētajam darba laikam), <br>visiem..</td>
+</tr>
+<tr>
+<td>Grāmatot uz nākamajiem periodiem</td>
+<td>Iespējo, ja pārejošās prombūtnes nākamā perioda daļa tiek grāmatota uz nākamā perioda izdevumiem.</td>
+</tr>
+<tr>
+<td>G/U Kods</td>
+<td>Norāda brīvi izvēlētu kodu, kas būs apzīmējums šim prombūtnes veidam tabeles izdrukā.</td>
+</tr>
+<tr>
+<td>Krāsa tabeles izdrukā</td>
+<td>Izvēlas krāsu, ar kādu marķētas prombūtnes dienas tabeles izdrukā.</td>
+</tr>
+<tr>
+<td>Brīvdiena saglabājot darba algu</td>
+<td>Tiek izmantota, ja darbiniekam iedota brīvdiena, kura jāapmaksā pēc principa  “saglabājot darba algu”, bet neiekļaut faktiskajā laikā (piem.: donora dienas). <strong>Ja iespējots, tad lauka <em>Algas aprēķina veids</em> vērtībai ir jābūt <em>Vidējā apmaksa</em></strong>.</td>
+</tr>
+<tr>
+<td>Nekompensēt svētku dienu stundas</td>
+<td>Iespējo, ja vēlas, lai prombūtnes periodā iekļautās svētku dienas, kas iekrīt darba dienā, netiktu kompensēšanai.</td>
+</tr>
+<tr>
+<td>Neapmaksāt kompensējamās svētku dienu stundas</td>
+<td>Iespējo, ja vēlas, lai prombūtnes periodā iekļautās svētku dienas netiktu pievienotas pie apmaksājamām dienām kopā ar pamatalgu.</td>
+</tr>
+<tr>
+<td>Samazina apliekamo apdrošin. summu</td>
+<td>Norāda ka šī prombūtne samazina apdrošināšanas apliekamo ar nodokļiem summu, noslēdzot gadu.</td>
+</tr>
+<tr>
+<td>Iespēja izmainīt grafiku promb. laikā</td>
+<td>Ja iespējots, ievadot prombūtnes kodu, sistēma paradīs plānoto darba grafiku. Nepieciešamības gadījumā  var izlabot darba stundas, kuras jāapmaksā.</td>
+</tr>
+<tr>
+<td>Prombūtnes sāk. ziņu kods</td>
+<td>Norāda ziņu kodu, kāds tiks atspoguļots atskaitē  Ziņas par darba ņēmējiem saistībā ar prombūtnes sākumu. Darbinieka ziņu kods sistēmā aizpildīsies pēc prombūtnes sākuma datuma ievadīšanas.</td>
+</tr>
+<tr>
+<td>Darba atsākšanas ziņu kods</td>
+<td>Norāda ziņu kodu, kāds tiks atspoguļots atskaitē  Ziņas par darba ņēmējiem saistībā ar prombūtnes beigām. Darbinieka ziņu kods sistēmā aizpildīsies pēc prombūtnes beigu datuma ievadīšanas.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="cilne-atvaļinājumi">Cilne <em>Atvaļinājumi</em></h3>
+<table>
+<thead>
+<tr>
+<th>Lauka nosaukums</th>
+<th>Apraksts</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ietekme uz atvaļinājumu</td>
+<td>Norāda prombūtnes ietekmi uz ikgadējo atvaļinājumu atlikumu.</td>
+</tr>
+<tr>
+<td>Atvaļinājuma kompensācija</td>
+<td>Atvaļinājuma kompensācijas pazīme. Pielietota Atvaļinājuma kompensācijas koda kartiņā.</td>
+</tr>
+<tr>
+<td>Dienu skaits/slieksnis</td>
+<td>Nosaka dienu skaita/sliekšņa apmēru.</td>
+</tr>
+<tr>
+<td>Samazināt ieskaitot slieksni</td>
+<td>Iespējo, ja komponente samazinās ieskaitot slieksni.</td>
+</tr>
+<tr>
+<td>Papildatvaļinājums</td>
+<td>Iespējo, ja komponente nosaka papildatvaļinājumu.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="darba-laika-kalendāri">Darba laika kalendāri</h2>
+<p>Kalendārs ir visu aprēķinu pamatā. Katrai darbinieka amata kartei ir jāpievieno darba laika kalendāra kods (DLK). Kalendārs tiek izmantots, lai aprēķinātu plānotās darba dienas un stundas mēnesī, kā arī darba dienu un stundu aprēķinos -  gadījumos, kad nelieto individuālos grafikus un uzskaiti.</p>
+<p>Iestatījumiem pieejami sekojoši lauki:</p>
+<h3 id="cilne-visp-info-4">Cilne: <em>Visp. info</em></h3>
+<table>
+<thead>
+<tr>
+<th>Lauka nosaukums</th>
+<th>Apraksts</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Kods</td>
+<td>Brīvi definēts kods.</td>
+</tr>
+<tr>
+<td>Nosaukums</td>
+<td>Brīvi izvēlēts nosaukums.</td>
+</tr>
+<tr>
+<td>Svētku kalendāra kods</td>
+<td>Svētku kalendārs, kas ir piesaistīts konkrētam darba laika kalendāram.</td>
+</tr>
+<tr>
+<td>Svētku kalendārs</td>
+<td>Atzīme, ka šis kalendārs ir svētku kalendārs (tikai svētku kalendāriem).</td>
+</tr>
+<tr>
+<td>Darbs arī brīvdienās</td>
+<td>Atzīmē, ka darbinieki strādā arī brīvdienās.</td>
+</tr>
+<tr>
+<td>Cikla kalendārs</td>
+<td>Atzīme, ja darba laika kalendārs ir veidots kā cikla kalendārs.</td>
+</tr>
+<tr>
+<td>Cikla sākuma datums</td>
+<td>Nodefinē cikla kalendāra pirmo dienu.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="cilne-kalendāra-ieraksti">Cilne: <em>Kalendāra ieraksti</em></h3>
+<p>Kalendāra ierakstos tiek atspoguļota informācija par katru dienu, ņemot vērā piesaistīto svētku dienu kalendāru.
+Ja pamata kalendāram virsrakstā ir norādīts Svētku kalendārs, tad visas svētku dienas attiecas arī uz šo kalendāru. Īpašas izmaiņas var izdarīt katrā kalendārā atsevišķi - pārcelt konkrētas darba dienas, saīsināt pirmssvētku dienu stundas, norādot konkrētus datumus.  Gadījumā, ja vajadzētu kompensēt svētku dienu, kura iekrīt normālajā darba nedēļā, šo informāciju var reģistrēt cilnē <em>Kalendāra izmaiņu apakšforma</em>.</p>
+<h3 id="cilne-kalendāra-izmaiņu-apakšforma">Cilne: <em>Kalendāra izmaiņu apakšforma</em></h3>
+<table>
+<thead>
+<tr>
+<th>Lauka nosaukums</th>
+<th>Apraksts</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Periodiskums</td>
+<td>Gada periods (parasti izmanto svētku kalendāriem), Nedēļas periods vai Cikls.</td>
+</tr>
+<tr>
+<td>Datums</td>
+<td>Ja nepieciešams, norāda konkrētu datumu (parasti izmanto svētku kalendāriem).</td>
+</tr>
+<tr>
+<td>Diena</td>
+<td>Norāda nedēļas dienas nosaukumu.</td>
+</tr>
+<tr>
+<td>Cikla kārtas numurs</td>
+<td>Ja periodiskums ir Cikls, tad norāda cikla kārtas Nr.</td>
+</tr>
+<tr>
+<td>Nosaukums</td>
+<td>Brīvi izvēlēts apraksts.</td>
+</tr>
+<tr>
+<td>Brīvdiena</td>
+<td>Atzīme, vai konkrētā diena ir brīvdiena.</td>
+</tr>
+<tr>
+<td>Svētku diena</td>
+<td>Atzīme, vai konkrētā diena ir svētku diena.</td>
+</tr>
+<tr>
+<td>Darba stundas</td>
+<td>Norāda, cik darba stundas ir konkrētā dienā.</td>
+</tr>
+<tr>
+<td>Nakts stundas</td>
+<td>Norāda, cik nakts stundas ir konkrētā dienā.</td>
+</tr>
+<tr>
+<td>Kompensējamās stundas</td>
+<td>Norāda, cik stundas tiks ņemtas vērā, aprēķinot svētku dienas kompensāciju, kā arī ja svētku diena iekrīt darbiniekam noteiktajā darba dienā un darbinieks neveic darbu šajās svētku dienās.</td>
+</tr>
+</tbody>
+</table>
+<p>Šajā cilnē ievada iknedēļas darba stundu skaitu, kas atkārtojas katru nedēļu un nosaka vispārējo kalendāra plānoto darba stundu uzbūvi.
+Papildus atsevišķi jaunā rindiņā, norādot datumu, ir jāsavada dienas, kurām atšķiras darba dienas no parastas darba nedēļas, piemēram, pirmssvētku dienas un pārceltās darba dienas. Gadījumā, ja svētku diena pārcelta uz citu dienu (piemēram, 18. novembris vai 4. maijs), tad šai informācijai jābūt ievadītai šajā cilnē atsevišķā ierakstā ar tipu Brīvdiena un  kompensējamām stundām jābūt pievienotām.</p>
+<h3 id="cilne-kalendāra-gadu-apakšforma">Cilne: <em>Kalendāra gadu apakšforma</em></h3>
+<p>Tiek noradīts gads un vidējais stundu skaits mēnesī. Gadījumā, ja darbiniekam ir summētais darba laiks un pamatalga proporcionāli stundām, stundas likmes aprēķinam tiek ņemts vērā vidējais stundu skaits mēnesī. Šī likme tiek izmantota nakts stundām, virsstundām, svētku stundām, svētku dienu/stundu kompensācijām.</p>
+<h2 id="svētku-dienu-kalendāri">Svētku dienu kalendāri</h2>
+<p>Sistēma veido standarta svētku kalendāru ar svētku dienām, kas sākotnēji iestatītas un atkārtojas katru gadu vienā un tajā pašā datumā (piemēram, Jāņi, Ziemassvētki, utt.). Svētku dienas, kas katru gadu neatkārtojas vienā un tajā pašā datumā (piemēram, Lieldienas, Mātes diena, utt.), kā arī pārceltās svētku dienas, ir jāievada katru gadu no jauna, precizējot datumu.</p>
+<p>Iestatījumiem pieejami sekojoši lauki:</p>
+<h3 id="cilne-visp-info-5">Cilne: <em>Visp. info</em></h3>
+<p>Tiek aizpildīti tikai lauki <em>Kods</em> un <em>Nosaukums</em>, kā arī ielikta pazīme <em>Svētku kalendārs</em> . Pārējie šīs cilnes lauki ir neaktīvi, un sistēma tos aizpilda pati.</p>
+<h3 id="cilne-kalendāra-ieraksti-1">Cilne: <em>Kalendāra ieraksti</em></h3>
+<p>Kalendāra ieraksti atspoguļo informāciju par katru gada dienu, ņemot vērā visas veiktās izmaiņas.</p>
+<h3 id="cilne-kalendāra-izmaiņu-apakšforma-1">Cilne: <em>Kalendāra izmaiņu apakšforma</em></h3>
+<p>Ja svētku dienas atkārtojas ik gadu vienos un tajos pašos datumos, tad periodiskumu izvēlas Gada periods un saliek attiecīgos uzstādījumus.
+Ja svētku dienas neatkārtojas ik gadu vienos un tajos pašos datumos, tad lauku periodiskums atstāj tukšu, bet ievada datumu, un ieliek ķeksi pie Brīvdiena un/vai Svētku diena - atbilstoši svētku dienas specifikai.</p>
+<h2 id="pfpis-ienākumu-veidi">PFPIS ienākumu veidi</h2>
+<p>PFPIS ienākumu veidi tiek definēti saskaņā ar VID Metodisko materiālu <em>Paziņojumi par fiziskai personai izmaksātajām summām un to aizpildīšanas kārtība</em>.</p>
+<p><img src="images/2.6.pfpis_income_type_1.png" alt="alt"></p>
+<h3 id="pfpis-ienākumu-veida-karte">PFPIS ienākumu veida karte</h3>
+<p>Iestatījumiem pieejami sekojoši lauki:</p>
+<p>Cilne: <em>Visp. info</em></p>
+<table>
+<thead>
+<tr>
+<th>Lauka nosaukums</th>
+<th>Apraksts</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Kods</td>
+<td>Ienākuma veida kods no VID metodiskajiem norādījumiem.</td>
+</tr>
+<tr>
+<td>Perioda garums</td>
+<td>Gads vai mēnesis.</td>
+</tr>
+<tr>
+<td>Perioda nobīde</td>
+<td>Norāda vai ir nobīde, ja izmaksa atšķiras no aprēķina perioda: <br><em>Bez nobīdes</em>; <br><em>-1 Mēnesis</em> (piemēram, PFPIS sarakstā par augustu tiks atrādīti fiziskajām personām aprēķinātie ienākumi par jūliju); <br><em>-2 Mēneši</em>.</td>
+</tr>
+<tr>
+<td>Lietot atvieglojumus</td>
+<td>Ja ir atzīme šajā laukā, tad norāda, ka attiecīgajam kodam vajag lietot atvieglojumus.</td>
+</tr>
+<tr>
+<td>Ien. veida nosaukums</td>
+<td>Nosaukumu ievada saskaņā ar Metodisko materiālu.</td>
+</tr>
+<tr>
+<td>Tikai uzņēmuma līguma darbinieki</td>
+<td>Atzīmē, ka attiecīgajā kodā iekļauj tikai uzņ.līg.darb.</td>
+</tr>
+<tr>
+<td>Nerādīt nerezidentus</td>
+<td>Ja ir atzīme šajā laukā, tad netiks rādīti nerezidenti.</td>
+</tr>
+<tr>
+<td>Tikai autoratlīdzībām</td>
+<td>Tiks rādītas tikai autoratlīdzības.</td>
+</tr>
+</tbody>
+</table>
+<p>Cilne <em>Summu uzstādījumi</em></p>
+<p>Attiecīgā laukā norāda atbilstošās bāzes, kas aprēķinās atskaitē atbilstošā lauka vērtību.</p>
+<h2 id="komponenšu-reģistra-eksporta-filtri">Komponenšu reģistra eksporta filtri</h2>
+<p>Komponenšu reģistra eksporta filtros atfiltrē (poga Ģenerēt filtru ierakstus) vai ievada manuāli, kādu darbinieku, komponenšu, dimensiju ierakstus vēlas iekļaut komponenšu reģistra importa veidnē.
+Lai izveidotu komponenšu reģistra importa veidni, jāizvēlas Eksportēt uz Excel.</p>
+<p><img src="images/2.7.comp_reg_exp_1.png" alt="alt"></p>
+<p>Izmantojot šo sagatavi, var importēt datus komponenšu reģistrā. Jāpievērš uzmanība, ka 2. rindā tiek sadefinētas dimensijas ar vērtībām, datiem jāsākas no 3. rindas.</p>
+<p><img src="images/2.7.comp_reg_exp_2.png" alt="alt"></p>
+<h1 id="darbinieka-kartiņa">Darbinieka kartiņa</h1>
+<h2 id="pamatinformācijas-ievadīšana-darbinieka-kartiņā">Pamatinformācijas ievadīšana darbinieka kartiņā</h2>
+<p><strong>Obligāti aizpildāmie lauki apraksta tabulu kolonnā <em>Lauka tips</em> ir atzīmēti ar izsaukuma zīmi <em>&quot;!&quot;</em></strong>.</p>
+<h3 id="cilne-visp-info-6">Cilne: <em>Visp. info</em></h3>
+<table>
+<thead>
+<tr>
+<th>Lauka nosaukums</th>
+<th style="text-align: center;">Lauka tips</th>
+<th>Apraksts</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Nr.</td>
+<td style="text-align: center;">!</td>
+<td>Aizpildās automātiski.</td>
+</tr>
+<tr>
+<td>Vārds</td>
+<td style="text-align: center;">!</td>
+<td>Darbinieka vārds.</td>
+</tr>
+<tr>
+<td>Otrais vārds/Iniciāļi</td>
+<td style="text-align: center;"></td>
+<td>Darbinieka otrs vārds vai iniciāļi.</td>
+</tr>
+<tr>
+<td>Uzvārds</td>
+<td style="text-align: center;">!</td>
+<td>Darbinieka uzvārds.</td>
+</tr>
+<tr>
+<td>Meklēšanas nosacījumi</td>
+<td style="text-align: center;"></td>
+<td>Aizpildās automātiski.</td>
+</tr>
+<tr>
+<td>Dzimums</td>
+<td style="text-align: center;">!</td>
+<td>Darbinieka dzimums.</td>
+</tr>
+<tr>
+<td>Uzņēmuma tālruņa Nr.</td>
+<td style="text-align: center;"></td>
+<td>Brīvi aizpildāms lauks informācijai.</td>
+</tr>
+<tr>
+<td>Uzņēmuma e-pasts</td>
+<td style="text-align: center;"></td>
+<td>Brīvi aizpildāms lauks informācijai.</td>
+</tr>
+<tr>
+<td>Pēdējās modifikācijas datums</td>
+<td style="text-align: center;"></td>
+<td>Informatīvs lauks, paredzēts darbiniekam izmaksāto summu kontrolei.</td>
+</tr>
+<tr>
+<td>Bloķēts privātuma dēļ</td>
+<td style="text-align: center;"></td>
+<td>Tiek aizpildīts gadījumā, ja darbinieks uzrakstījis iesniegumu bloķēt informāciju par viņu. Tādā gadījumā šis darbinieks netiek atspoguļots atbilstošos sarakstos.</td>
+</tr>
+<tr>
+<td>Izmaksu summa</td>
+<td style="text-align: center;"></td>
+<td>Informatīvs lauks, paredzēts darbiniekam izmaksāto summu kontrolei.</td>
+</tr>
+<tr>
+<td>Izmaksu summa pirms storno</td>
+<td style="text-align: center;"></td>
+<td>Informatīvs lauks.</td>
+</tr>
+<tr>
+<td>Maksājumu summa</td>
+<td style="text-align: center;"></td>
+<td>Informatīvs lauks, paredzēts darbiniekam izmaksāto summu kontrolei.</td>
+</tr>
+<tr>
+<td>Atlikusī maksājumu summa</td>
+<td style="text-align: center;"></td>
+<td>Informatīvs lauks, paredzēts darbiniekam izmaksāto summu kontrolei.</td>
+</tr>
+<tr>
+<td>Nav atļauts apsveikt</td>
+<td style="text-align: center;"></td>
+<td>Tiek aizpildīts gadījumā, ja darbinieks pēc GDPR negribētu afišēt savu dzimšanas dienu.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="cilne-adrese-un-kontaktinformācija">Cilne: <em>Adrese un kontaktinformācija</em></h3>
+<p>Šajā cilnē norāda adreses, telefona numurus, e-pasta adreses un alternatīvās adreses. Alternatīvo adrešu skaits var būt neierobežots. Lauki ir aizpildāmi pēc vajadzības. Ja lietotājs vēlas, lai darbiniekam tiek sūtītas algu lapiņas uz e-pasta adresi, tad lauks <em>Privātais e-pasts</em> ir jāaizpilda obligāti.</p>
+<p>Katram darbiniekam var ievadīt neierobežotu alternatīvo adrešu skaitu. Šim nolūkam sarakstā <em>Alternatīvās adreses</em> ir jāievada kods un tam atbilstošā kontaktinformācija. Tālāk kādu no Alternatīvās adreses kodiem var ievadīt šim nolūkam paredzētajā laukā darbinieka kartiņas cilnē <em>Adrese un kontakts</em>.</p>
+<h3 id="cilne-administrēšana">Cilne: <em>Administrēšana</em></h3>
+<table>
+<thead>
+<tr>
+<th>Lauka nosaukums</th>
+<th style="text-align: center;">Lauka tips</th>
+<th>Apraksts</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Darbā pieņemšanas datums</td>
+<td style="text-align: center;">!</td>
+<td>Lauks aizpildās automātiski, informāciju ņemot no Darba līguma kartes.</td>
+</tr>
+<tr>
+<td>Statuss</td>
+<td style="text-align: center;">!</td>
+<td><em>Aktīvs, Neaktīvs, Izbeigts</em>. Pēc noklusējuma aizpildās <em>Aktīvs</em>.</td>
+</tr>
+<tr>
+<td>Neaktivitātes datums</td>
+<td style="text-align: center;"></td>
+<td>Plānotais atbrīvošanas datums, ja darbinieks ir pieņemts darbā uz noteiktu laiku.</td>
+</tr>
+<tr>
+<td>Neaktivitātes iemesla kods</td>
+<td style="text-align: center;"></td>
+<td>Darbinieka neaktivitātes iemesla kods.</td>
+</tr>
+<tr>
+<td>Līguma izbeigšanas datums</td>
+<td style="text-align: center;">!</td>
+<td>Obligāts lauks atbrīvojot darbinieku.</td>
+</tr>
+<tr>
+<td>Izbeigšanas iemesla kods</td>
+<td style="text-align: center;"></td>
+<td>Norādīts darba izbeigšanas kodu pārtraucot darba attiecības. Analīzei var definēt un uzturēt neskaitāmus izbeigšanas pamatus, ko vēlāk varēs norādīt sagatavojot personāla dokumentus. Atbrīvošanas pamatu saraksts atrodams meklētājā ievadot nosaukumu <em>Atbrīvošanas pamats</em>. Papildus var definēt un uzturēt neskaitāmus atbrīvošanas iemeslus. Atbrīvošanas iemeslu saraksts atrodams meklētājā ierakstot nosaukumu <em>Atbrīvošanas iemesli</em>.</td>
+</tr>
+<tr>
+<td>Darba līguma kods</td>
+<td style="text-align: center;"></td>
+<td>Norāda ar darbinieku saistīto darba līguma kodu.</td>
+</tr>
+<tr>
+<td>Resursa Nr.</td>
+<td style="text-align: center;"></td>
+<td>Norāda darbinieka resursa numuru.</td>
+</tr>
+<tr>
+<td>Pārdevēja/iepircēja kods</td>
+<td style="text-align: center;"></td>
+<td>Norāda kodu, kas piešķirts darbiniekam, kas ir pārdevējs vai iepircējs.</td>
+</tr>
+<tr>
+<td>Ir arodbiedrībā</td>
+<td style="text-align: center;"></td>
+<td>Iespējo, ja darbinieks ir arodbiedrības biedrs.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="cilne-personas-dati">Cilne: <em>Personas dati</em></h3>
+<table>
+<thead>
+<tr>
+<th>Lauka nosaukums</th>
+<th>Lauka tips</th>
+<th>Apraksts</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Dzimšanas datums</td>
+<td>!</td>
+<td>Norāda darbinieka dzimšanas datumu.</td>
+</tr>
+<tr>
+<td>Personas kods</td>
+<td>!</td>
+<td>Nerezidenta gadījumā LR piešķirtais NMR kods. Gadījumā, ja personas kods sākas ar 32, dzimšanas datums netiks aizpildīts.</td>
+</tr>
+<tr>
+<td>Iepriekšējais personas kods</td>
+<td>!</td>
+<td>Gadījumā, ja laukā <em>Personas kods</em> ir ievadīts jauns personas kods, iepriekšējais personas kods tiks automātiski pārkopēts laukā <em>Iepriekšējais personas kods</em>. Jāpievērš uzmanība, lai iepriekšējais personas kods būtu pārkopēts laukā <em>Iepriekšējais personas kods</em>, laukam <em>Iepriekšējais personas kods</em>  jābūt tukšam.</td>
+</tr>
+<tr>
+<td>Apvienības kods</td>
+<td></td>
+<td>Ja darbinieks ir iestājies kādā apvienībā.</td>
+</tr>
+<tr>
+<td>Apvienības dalībnieka Nr.</td>
+<td></td>
+<td>Obligāts lauks atbrīvojot darbinieku.</td>
+</tr>
+<tr>
+<td>Rezidence</td>
+<td>!</td>
+<td>Pēc noklusējuma aizpildās <em>Rezidents</em>. Gadījumā ja ir izvēlēta opcija <em>Nerezidents</em>, tad darba devēja ziņojumā nerezidentiem netiks aizpildīts IIN.</td>
+</tr>
+<tr>
+<td>Nerezidenta ID kods</td>
+<td></td>
+<td>Norāda nerezidentam piešķirto personas identifikācijas kodu.</td>
+</tr>
+<tr>
+<td>Darba atļaujas termiņš</td>
+<td></td>
+<td>Norāda datumu, līdz kuram derīga ir darba atļauja.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="cilne-maksājumi">Cilne: <em>Maksājumi</em></h3>
+<table>
+<thead>
+<tr>
+<th>Lauka nosaukums</th>
+<th>Lauka tips</th>
+<th>Apraksts</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Darbinieka kontējuma grupa</td>
+<td>!</td>
+<td>Izvēlas darbinieka kontējuma grupu no saraksta.</td>
+</tr>
+<tr>
+<td>Attiecināšanas metode</td>
+<td></td>
+<td>Norādīt veidu, kā piemērot maksājumus šim darbiniekam.</td>
+</tr>
+<tr>
+<td>Bankas nodaļas kods</td>
+<td></td>
+<td>Norāda darbinieka algas konta bankas filiāles nosaukumu.</td>
+</tr>
+<tr>
+<td>Bankas konta Nr.</td>
+<td></td>
+<td>Norāda darbinieka bankas kontu, uz kuru jāveic algas maksājums.</td>
+</tr>
+<tr>
+<td>IBAN</td>
+<td>!</td>
+<td>Darbinieka bankas konta starptautiskais kods, uz kuru ir jāveic algas maksājums.**</td>
+</tr>
+<tr>
+<td>SWIFT kods</td>
+<td>!</td>
+<td>Bankas SWIFT kods.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="cilne-algas-1">Cilne: <em>Algas</em></h3>
+<table>
+<thead>
+<tr>
+<th>Lauka nosaukums</th>
+<th style="text-align: center;">Lauka tips</th>
+<th>Apraksts</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Soc. statusa kods</td>
+<td style="text-align: center;">!</td>
+<td>Izvēlas no saraksta darbinieka statusa kodu.</td>
+</tr>
+<tr>
+<td>Uzņēmuma līgums</td>
+<td style="text-align: center;"></td>
+<td>Norāda, vai darbinieks strādā pamatojoties uz uzņēmuma līguma.</td>
+</tr>
+<tr>
+<td>Autoratlīdzības</td>
+<td style="text-align: center;"></td>
+<td>Norāda, vai darbinieks saņem autoratlīdzību.</td>
+</tr>
+<tr>
+<td>Pārbaudes laika periods</td>
+<td style="text-align: center;"></td>
+<td>Norāda pārbaudes laika ilgumu, piemēram, <em>3M</em>.</td>
+</tr>
+<tr>
+<td>Pārbaudes laika beigas</td>
+<td style="text-align: center;"></td>
+<td>Vērtība ielasās automātiski, vadoties pēc darbā pieņemšanas datuma un norādītā pārbaudes laika perioda ilguma. Ja tiek lietots personāla modulis, tad vērtība tiek ielasīta arī no darba līguma, ja pārbaudes laiks tur bija norādīts.</td>
+</tr>
+<tr>
+<td>Uzkr.(-)/izņ.(+) atvaļ. dienas</td>
+<td style="text-align: center;"></td>
+<td>Šis lauks tiek izmantots uzkrātā atvaļinājuma dienu atlikuma ievadei.</td>
+</tr>
+<tr>
+<td>Vidējā samaksa par stundu</td>
+<td style="text-align: center;"></td>
+<td>Ja aprēķins ir veicams ņemot vērā stundas.</td>
+</tr>
+<tr>
+<td>Nerezidenta ienākumu veids</td>
+<td style="text-align: center;"></td>
+<td>Norāda, ja darbinieks ir nerezidents.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="cilne-darbinieka-amati">Cilne: <em>Darbinieka amati</em></h3>
+<p>Būtiska darbinieka kartiņas daļa ir darbinieka amati. Šajā cilnē tiek norādīti tādi aprēķinam vajadzīgie parametri kā darba laika kalendārs, amatā pieņemšanas datums, atlaišanas datums, amata numurs.</p>
+<p>Amata informācijas aizpildīšana tiek veikta caur darba līgumiem vai personāla rīkojumiem.</p>
+<p>Darbinieka amata Nr. tiek piešķirts automātiski, veidojot jaunu darbinieka kartiņu. Numerācija nepieciešama, lai programma varētu pareizi aprēķināt algu gadījumā, ja darbiniekam mainījies amats. Amata maiņas gadījumā jaunajam amatam automātiski tiek piešķirts jauns Darbinieka amata numurs.</p>
+<p>Amatam dimensiju piešķir atverot Darbinieka amata karti un nospiežot pogu <em>Dimensijas</em> vai arī iezīmējot nepieciešamo amatu (ja ir piešķirti vairāki amati) un nospiežot pogu <em>Dimensijas-viena</em> kā parādīts attēlā zemāk.</p>
+<p><img src="images/3.1.general_info_7.1.png" alt="alt"></p>
+<p>Nospiežot pogu <em>Skatīt</em>, atvērsies jauns logs <em>Darbinieka amata karte</em>, kur pieejami sekojoši lauki:</p>
+<table>
+<thead>
+<tr>
+<th>Lauka nosaukums</th>
+<th style="text-align: center;">Lauka tips</th>
+<th>Apraksts</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Nr.</td>
+<td style="text-align: center;"></td>
+<td>Darbinieka amata numerācija nepieciešama, lai programma varētu pareizi aprēķināt algu gadījumā, ja darbiniekam mainījies amats. Amata maiņas gadījumā jaunajam amatam automātiski tiek piešķirts jauns Darbinieka amata numurs.</td>
+</tr>
+<tr>
+<td>Darbinieka Nr.</td>
+<td style="text-align: center;"></td>
+<td>Izvēlas darbinieku no saraksta.</td>
+</tr>
+<tr>
+<td>No datuma</td>
+<td style="text-align: center;"></td>
+<td>Amats stājas spēkā ar noteiktu datumu, kuru norāda laukā Spēkā no. Pirmajam darbinieka amatam šis lauks pēc noklusējuma tiek aizpildīts ar darbā pieņemšanas datumu.</td>
+</tr>
+<tr>
+<td>Līdz datumam</td>
+<td style="text-align: center;"></td>
+<td>Norāda, ja amatam ir zināms beigu termiņš.</td>
+</tr>
+<tr>
+<td>Plānotais spēkā līdz datums</td>
+<td style="text-align: center;"></td>
+<td>Norāda, ja amatam ir plānots beigu termiņš.</td>
+</tr>
+<tr>
+<td>Amata vietas kods</td>
+<td style="text-align: center;">!</td>
+<td>Izvēlas darbinieka amatu no amatu saraksta.</td>
+</tr>
+<tr>
+<td>Amata nosaukums</td>
+<td style="text-align: center;">!</td>
+<td>Nosaukums ielasās automātiski no izvēlētās amata kartiņas.</td>
+</tr>
+<tr>
+<td>Struktūrvienības kods</td>
+<td style="text-align: center;">!</td>
+<td>Izvēlas darbinieka struktūrvienību.</td>
+</tr>
+<tr>
+<td>Galvenais amats</td>
+<td style="text-align: center;"></td>
+<td>Ja darbiniekam ir vairāki amati, tad starp visiem amatiem ir jānorāda galvenais.</td>
+</tr>
+<tr>
+<td>Neiekļaut algu sarakstā</td>
+<td style="text-align: center;"></td>
+<td>Darbinieka atlaišanas gadījumā šis lauks tiek atzīmēts automātiski, tiklīdz ir izveidots pēdējais algu saraksts.</td>
+</tr>
+<tr>
+<td>Grafiks/ Uzskaite</td>
+<td style="text-align: center;">!</td>
+<td>Aizpildot šo lauku, darbinieka amatam algas aprēķins notiek tikai secīgi pēc grafiku/uzskaites izveidošanas; ja šis lauks nav aizpildīts, tad aprēķins notiek par pamatu ņemot darba laika kalendāru. Izmaiņas veicamas tikai ar stundu reģistra palīdzību.</td>
+</tr>
+<tr>
+<td>Algas tips</td>
+<td style="text-align: center;">!</td>
+<td>Norāda darbinieka darba algas aprēķina tipu (normālais vai summētais darba laiks).</td>
+</tr>
+<tr>
+<td>Slodze</td>
+<td style="text-align: center;"></td>
+<td>Paredzēts statistisko atskaišu veidošanai.</td>
+</tr>
+<tr>
+<td>Kalendāra kods</td>
+<td style="text-align: center;">!</td>
+<td>Izvēlas no darba laika kalendāru saraksta. Kalendārs ir visu aprēķinu pamats.</td>
+</tr>
+<tr>
+<td>Kalendāra nosaukums</td>
+<td style="text-align: center;"></td>
+<td>Kalendāra kods ielasās automātiski no Kalendāru saraksta.</td>
+</tr>
+<tr>
+<td>Cikla kalendārs</td>
+<td style="text-align: center;"></td>
+<td>Parādās informācija par cikla kalendāru, ja tāds tika izvēlēts <em>Kalendāra kods</em> lauciņā.</td>
+</tr>
+<tr>
+<td>Nelietot noklus. atvaļ. kal</td>
+<td style="text-align: center;"></td>
+<td>Nelietot noklusēto atvaļinājuma kalendāru.</td>
+</tr>
+<tr>
+<td>Profesijas kods</td>
+<td style="text-align: center;"></td>
+<td>Tiek izvēlēts atbilstošs kods no profesijas kodu klasifikatora.</td>
+</tr>
+<tr>
+<td>Darba laiks nav nosakāms</td>
+<td style="text-align: center;"></td>
+<td>Norāda, ja par darba izpildi nav iespējams noteikt faktiski nostrādātās stundas.</td>
+</tr>
+<tr>
+<td>1. globālās dimensijas kods</td>
+<td style="text-align: center;"></td>
+<td>Ja nepieciešams, norāda 1. globālo dimensiju.</td>
+</tr>
+<tr>
+<td>2. globālās dimensijas kods</td>
+<td style="text-align: center;"></td>
+<td>Ja nepieciešams, norāda 2. globālo dimensiju.</td>
+</tr>
+<tr>
+<td>Darba līguma Nr.</td>
+<td style="text-align: center;"></td>
+<td>Tiek norādīts darba līguma numurs.</td>
+</tr>
+<tr>
+<td>Personāla rīkojuma Nr.</td>
+<td style="text-align: center;"></td>
+<td>Tiek norādīts personāla rīkojuma numurs.</td>
+</tr>
+<tr>
+<td>Personāla rīkojuma rindas Nr.</td>
+<td style="text-align: center;"></td>
+<td>Tiek norādīts personāla rīkojuma rindas numurs.</td>
+</tr>
+</tbody>
+</table>
+<p>Nepieciešamības gadījumā Darbinieku amata kartiņā ir iespējams arī piešķirt dimensijas apskatītajam darbinieka amatam.</p>
+<h3 id="algas-komponentes-1"><em>Algas komponentes</em></h3>
+<p>Darba algas komponentēs norāda nodokļu, atvieglojumu un atvilkumu komponentes, kuras jāiekļauj darbinieka darba algas aprēķinā.</p>
+<p>Algas komponentes tiek izveidotas, grāmatojot darbinieka Darba Līgumu.</p>
+<p>Darbinieka algas komponentes var apskatīt, klikšķinot darbinieka kartiņas rīkjoslā uz pogām <em>Apstrādāt</em> - <em>Darbinieka algas komponentes</em>. Atverot komponenšu logu, būs redzamas tikai tās komponentes, kas ir aktīvas darba datumā. Lai redzētu visas komponentes, ir jānoņem datumu filtri. Turklāt filtru noņemšana ir izmaiņas, kas nesaglabājas. Nākamreiz, kad vērsiet vaļā komponentes, atkal būs atfiltrētas tikai aktuālās. Lai skatītu visus datus, var izmantot sistēmas filtru *Rādīt visus vēstures datus zem sadaļas <em>Viss</em>.</p>
+<p><img src="images/3.1.general_info_14.png" alt="alt"></p>
+<p>Algas komponentes ir vieta, kur ir jānorāda pamatalgas komponente, kā arī citas regulāru papildus ienākumu komponentes (piemaksas, prēmijas, bonusus u.tml., kas ir konstantas summas katru mēnesi ilgstošu laika periodu). Izmaksājamo avansa summu norāda avansa komponentē.
+Nepieciešamības gadījumā rindas papildina ar informāciju par atvieglojumiem - Apgādājamie, Invaliditāte, Represētais.</p>
+<div class="TIP">
+<h5>Tip</h5>
+<p><strong>Gadījumā, ja darbinieks iesniedzis nodokļu grāmatiņu darba devējam, jāaizpilda katalogs <em>Saistīta informācija</em>, ko var atrast rīkjoslā klikšķinot uz <em>Saistītās</em> -<em>Papildus inform. algām</em>.</strong></p>
+</div>
+<p>Rindas papildina arī ar informāciju par Atvilkumiem. Atvilkumus darbinieku kartiņā atzīmē tikai tajos gadījumos, kad tie ir konstantas summas, kas atkārtojas katru mēnesi.</p>
+<p>Atvilkumiem - darbinieka algas komponentēm pastāv iespēja norādīt sekojošo informāciju:</p>
+<table>
+<thead>
+<tr>
+<th>Lauka nosaukums</th>
+<th>Apraksts</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Kopējais limits</td>
+<td>Atvilkumu kopēju summa, tas nozīmē ka sasniedzot šo limitu, vairāk netiks ieturēts.</td>
+</tr>
+<tr>
+<td>Aprēķinātā summa</td>
+<td>Informatīvs lauks. Sistēma šeit atspoguļo kopējo ieturēto summa šim konkrētajam izpildrakstam (no visiem algu sarakstiem kopējā summa).</td>
+</tr>
+<tr>
+<td>Mēneša limits</td>
+<td>Norāda mēneša limitu.</td>
+</tr>
+<tr>
+<td>Izmaksas minimālais limits</td>
+<td>Norāda kādai jābūt minimālai izmaksas summai.</td>
+</tr>
+<tr>
+<td>Izmaksas limita bāze</td>
+<td>Norāda kāda ir izmaksas limita bāze.</td>
+</tr>
+</tbody>
+</table>
+<p>Jāpievērš uzmanība, ka, ja šis ieturējums jāpārskata trešajai personai, tad jāaizpilda informācija, kam pārskaitīt.</p>
+<p>Ja pēc ieturējuma veikšanas summa jāpārskaita citai personai uz citu bankas kontu, tad jāievada atbilstoši visi bankas konta dati darbinieka kartiņā klikšķinot uz pogām <em>Saistītās</em> - <em>Papildus inform. algām</em> - <em>Pārskaitījumi</em>.</p>
+<h3 id="kopēt-darbinieku">Kopēt darbinieku</h3>
+<p>Kopēšanas funkciju ir ērti izmantot, ja darbinieks pēc atbrīvošanas ir atkārtoti uzsācis darbu uzņēmumā. Lai izvairītos no iespējamām kļūdām (piemēram, vidējās izpeļņas aprēķinā, paziņojumā par fiziskajām personām izmaksātajām summām), ir ieteicams veidot jaunu darbinieka kartiņu.
+Lai veiktu kopēšanu, vispirms ir jāizveido jauna darbinieka kartiņa. Darbinieka kartiņas rīkjoslā spiež uz <em>Saistītās</em> - <em>Papildus inf. izveidošana</em> -<em>Kopēt darbinieku</em>.
+Sadaļā Opcijas ir jāizvēlas <em>Avota darbinieka Nr.</em>, kā arī jāatzīmē kādu informāciju vēlas kopēt.</p>
+<h2 id="papildus-informācijas-ievadīšana-darbinieka-kartiņā">Papildus informācijas ievadīšana darbinieka kartiņā</h2>
+<h3 id="kvalifikācija">Kvalifikācija</h3>
+<p>Lai aizpildītu informāciju par darbinieka kvalifikāciju, sākumā jāizveido kvalifikācijas klasifikators. Kvalifikācijas klasifikatoru atradīsiet, ja sistēmas meklētājā ierakstīsiet <em>Kvalifikācijas</em>.</p>
+<p>Kvalifikācijas kodus ievada katru jaunā rindiņā, norādot brīvi izvēlētu kodu (<img src="count1.png" alt="alt">) un attiecīgās kvalifikācijas aprakstu (<img src="count2.png" alt="alt">). Ja laukā <em>Kvalificēti darbinieki</em> (<img src="count3.png" alt="alt">) ir atzīme <em>Jā</em>, tad klikšķinot uz saites <img src="count3.png" alt="alt"> var apskatīt sarakstu, kuriem darbiniekiem ir piešķirta šī konkrētā kvalifikācija.</p>
+<p><img src="3.2.additional_info_2.png" alt="alt"></p>
+<h4 id="darbinieka-kvalifikācija">Darbinieka kvalifikācija</h4>
+<p>Kad visa informācija ir ievadīta, tad var definēt darbinieka kvalifikāciju. Atver nepieciešamā darbinieka kartiņu un izvēlas Darbinieka kartiņas rīkjoslā <em>Saistītās</em> - <em>Darbinieks</em> - <em>Kvalifikācijas</em>.</p>
+<table>
+<thead>
+<tr>
+<th>Lauka nosaukums</th>
+<th>Apraksts</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Kvalifikācijas kods</td>
+<td>Kods no kvalifikāciju klasifikatora.</td>
+</tr>
+<tr>
+<td>No datuma</td>
+<td>Kvalifikācijas iegūšanas datums.</td>
+</tr>
+<tr>
+<td>Līdz datumam</td>
+<td>Kvalifikācija spēkā līdz.</td>
+</tr>
+<tr>
+<td>Tips</td>
+<td>Izvēlas izcelsmi: <em>iekšēja</em>, <em>ārēja</em>, no <em>iepriekšējās darba vietas</em>.</td>
+</tr>
+<tr>
+<td>Apraksts</td>
+<td>Izglītības veida apraksts, aizpildās no kvalifikāciju klasifikatora.</td>
+</tr>
+<tr>
+<td>Institūcija/Uzņēmums</td>
+<td>Ārējas kvalifikācijas izcelsmes iestādes nosaukums.</td>
+</tr>
+<tr>
+<td>Komentārs</td>
+<td>Atzīme par to, ka ierakstam ir pievienots komentārs.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="darbinieka-ziņu-kodi">Darbinieka ziņu kodi</h3>
+<p>Darbinieka kartiņas rīkjoslā <em>Saistītās</em> - <em>Papildus inform. algām</em> ir pieejama funkcija <em>Ziņu kodi</em>, kur var apskatīt un rediģēt darbiniekam piesaistītos ziņu kodus, pamatojoties uz kuriem tiek veidota atskaite <em>Ziņas par darba ņēmējiem</em>.</p>
+<p>Sociālo ziņu kods jāievada caur Darba līguma karti, Pieņemšanas rīkojuma karti, Atbrīvošanas rīkojuma karti un amata maiņas rīkojuma karti tam paredzētajos laukos.
+Ziņu kodus par bērna kopšanas atvaļinājuma un atvaļinājuma bez darba algas saglabāšanas sākumu iespējams nodefinēt <em>Prombūtnes iemesli</em> kartiņas laukos <em>Prombūtnes sāk. ziņu kods</em> un <em>Darba atsākšanas ziņu kods</em>.</p>
+<h3 id="radinieki">Radinieki</h3>
+<p>Pieejams, klikšķinot darbinieka kartiņā uz pogām <em>Saistītās - Darbinieks - Radinieki</em>.</p>
+<p>Informācijas ievadei pieejami sekojoši lauki:</p>
+<table>
+<thead>
+<tr>
+<th>Lauka nosaukums</th>
+<th>Apraksts</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Radinieka kods</td>
+<td>Norāda kodu, lai definētu radinieka veidu.</td>
+</tr>
+<tr>
+<td>Vārds</td>
+<td>Ja nepieciešams, ieraksta personas vārdu.</td>
+</tr>
+<tr>
+<td>Dzimšanas datums</td>
+<td>Ja nepieciešams ieraksta radinieka dzimšanas datumu. Bērniem ieraksta obligāti, jo vadoties pēc norādītā vecuma, sistēma piedāvā piešķirt papildus atvaļinājuma dienas par bērniem līdz 14 gadu vecumam.</td>
+</tr>
+<tr>
+<td>Vecums</td>
+<td>Sistēmas aizpildīts lauks, atkarībā no laukā <em>Dzimšanas datums</em> ierakstītās vērtības.</td>
+</tr>
+<tr>
+<td>Persona ar invaliditāti</td>
+<td>Norāda, ja bērnam ir invaliditāte. Tas ietekmēs aprēķināto papildus atvaļinājuma dienu skaitu.</td>
+</tr>
+<tr>
+<td>Tālruņa Nr.</td>
+<td>Ja nepieciešams, ieraksta tālruņa numuru.</td>
+</tr>
+<tr>
+<td>Komentārs</td>
+<td>Atzīme par to, ka ierakstam ir pievienots komentārs.</td>
+</tr>
+</tbody>
+</table>
+<p>Apkopotos datus par radiniekiem var analizēt ar sistēmas standarta atskaiti <em>Darbinieku radinieki</em>.</p>
+<h3 id="piešķirtie-priekšmeti">Piešķirtie priekšmeti</h3>
+<p>Pieejams, klikšķinot darbinieka kartiņā uz pogām <em>Saistītās - Darbinieks - Dažādu priekšmetu informācija</em>.
+Šajā logā var uzskaitīt visas darbiniekam piešķirtās materiālās vērtības.</p>
+<p>Informācijas ievadei pieejami sekojoši lauki:</p>
+<table>
+<thead>
+<tr>
+<th>Lauka nosaukums</th>
+<th>Apraksts</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Daž. priekšm. kods</td>
+<td>Norāda kodu, lai definētu dažādu priekšmetu veidus.</td>
+</tr>
+<tr>
+<td>Apraksts</td>
+<td>Ieraksta priekšmeta aprakstu.</td>
+</tr>
+<tr>
+<td>Sērijas Nr.</td>
+<td>Ieraksta priekšmeta sērijas numuru vai citu identifikācijas numuru.</td>
+</tr>
+<tr>
+<td>No datuma</td>
+<td>Norāda datumu, kad darbiniekam priekšmets ir izsniegts.</td>
+</tr>
+<tr>
+<td>Līdz datumam</td>
+<td>Norāda datumu, kad darbinieks priekšmetu ir nodevis.</td>
+</tr>
+<tr>
+<td>Lietošanā</td>
+<td>Norāda, ka priekšmets tiek lietots.</td>
+</tr>
+<tr>
+<td>Komentārs</td>
+<td>Atzīme par to, ka ierakstam ir pievienots komentārs.</td>
+</tr>
+</tbody>
+</table>
+<p>Pēc tam uzkrātos datus var analizēt ar sistēmas standarta atskaiti <em>Darbinieka daž.priekšm.info</em>.</p>
+<h3 id="konfidenciāla-informācija">Konfidenciāla informācija</h3>
+<p>Par katru darbinieku, nepieciešamības gadījumā, var uzturēt atsevišķu reģistru ar informāciju, kas klasificējama kā konfidenciāla.</p>
+<p>Datu ievadei pieejami sekojoši lauki:</p>
+<table>
+<thead>
+<tr>
+<th>Lauka nosaukums</th>
+<th>Apraksts</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Konfidenc. informācijas kods</td>
+<td>Norāda kodu, lai definētu konfidenciālās informācijas veidu.</td>
+</tr>
+<tr>
+<td>Apraksts</td>
+<td>Ieraksta izklāsts.</td>
+</tr>
+<tr>
+<td>Komentārs</td>
+<td>Atzīme par to, ka ierakstam ir pievienots komentārs.</td>
+</tr>
+</tbody>
+</table>
+<p>Apkopotos datus var analizēt ar sistēmas standarta atskaiti <em>Darbinieks - konfidenc. info</em>.</p>
+<h3 id="pievienotie-faili">Pievienotie faili</h3>
+<p>Nepieciešamības gadījumā pie darbinieka kartiņas sistēmā ir iespējams pievienot failus jebkurā formātā (piemēram, CV, diplomus un citus dokumentus).
+Funkcionalitāte ir pieejama darbinieku kartiņas rīkjoslā <em>Saistītās</em> - <em>Darbinieks</em> - <em>Pielikumi</em>.</p>
+<h1 id="darba-laika-izmaiņu-reģistrācija">Darba laika izmaiņu reģistrācija</h1>
+<p>Visas nobīdes no plānotā darba laika par darbinieku jāievada <em>Prombūtnes reģistrācija</em> žurnālā. Nospiežot pogu <em>Jauns</em> izveidojas jauns  ieraksts, kur sākuma cilnē <em>Visp. info</em> ievada darbinieka Nr., prombūtnes kodu un periodu No datuma, Līdz datumam. Prombūtnes kodus nodefinē Lomu centrs - <em>Prombūtnes</em> - <em>Prombūtnes iemesli</em>.</p>
+<p>Pastāv 3 veidi, kā ievadīt prombūtnes:</p>
+<ul>
+<li>Aizpildīt darbinieka prombūtnes kartiņu, kas veidos ierakstu Prombūtnes reģistrā. Sīkāk aprakstīts šajā nodaļā;</li>
+<li>Izveidot personāla rīkojumu par prombūtni, kas izveidos rīkojumu un ierakstu Prombūtnes reģistrā. Sīkāk aprakstīts nodaļā <em>Personāla rīkojumi</em>;</li>
+<li>Importēt slimības lapas prombūtnes no VID EDS, kas veidos ierakstu Prombūtnes reģistrā. Sīkāk aprakstīts nodaļā <em>Slimības lapu imports no EDS</em>.</li>
+</ul>
+<h2 id="prombūtnes-reģistrācija">Prombūtnes reģistrācija</h2>
+<p>Cilnē <em>Visp. info</em> norāda darbinieku, kas ir prombūtnē, izvēlas no saraksta prombūtnes veidu un iestata prombūtnes periodu.</p>
+<table>
+<thead>
+<tr>
+<th>Lauka nosaukums</th>
+<th>Apraksts</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Darbinieka Nr</td>
+<td>No saraksta izvēlēts darbinieks, kam reģistrējama prombūtne.</td>
+</tr>
+<tr>
+<td>Neierašanās iemesla kods</td>
+<td>No saraksta izvēlēts kods.</td>
+</tr>
+<tr>
+<td>No datuma</td>
+<td>Datums, no kura ir spēkā prombūtne.</td>
+</tr>
+<tr>
+<td>Līdz datumam</td>
+<td>Datums, līdz kuram ir spēkā prombūtne.</td>
+</tr>
+<tr>
+<td>Apraksts</td>
+<td>Neierašanās iemesla koda nosaukums, sistēmas ģenerēts lauks.</td>
+</tr>
+</tbody>
+</table>
+<p>Cilnē <em>Algas</em></p>
+<table>
+<thead>
+<tr>
+<th>Lauka nosaukums</th>
+<th>Apraksts</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Neattaisnota prombūtne</td>
+<td>Atzīme, ka prombūtne ir neattaisnota un samaksa nav jāaprēķina.</td>
+</tr>
+<tr>
+<td>Algas aprēķina veids</td>
+<td>Uzstādījumi no prombūtņu saraksta, sistēmas ģenerēts lauks.</td>
+</tr>
+<tr>
+<td>Aprēķina gads</td>
+<td>Sistēma ievada automātiski, vadoties pēc prombūtnes datuma. Rediģējams lauks.</td>
+</tr>
+<tr>
+<td>Aprēķina mēnesis</td>
+<td>Sistēma ievada automātiski, vadoties pēc prombūtnes datuma. Rediģējams lauks.</td>
+</tr>
+<tr>
+<td>Dienas</td>
+<td>Sistēma ievada automātiski, vadoties pēc darbiniekam piešķirtā kalendāra.</td>
+</tr>
+<tr>
+<td>Stundas</td>
+<td>Sistēma ievada automātiski, vadoties pēc darbiniekam piešķirtā kalendāra.</td>
+</tr>
+<tr>
+<td>Izlaist starpizmaksās</td>
+<td>Ja ieslēgts, tad aprēķinātā prombūtnes samaksa netiks izmaksāta starpizmaksās.</td>
+</tr>
+<tr>
+<td>Saistītā dokumenta rinda</td>
+<td>Sistēma norāda automātiski, ja ierakstam pastāv saistīts dokuments.</td>
+</tr>
+<tr>
+<td>Saistītais dokuments</td>
+<td>Sistēma norāda automātiski - tad, kad tiek veikts aprēķins par prombūtni.</td>
+</tr>
+<tr>
+<td>1. globālās dimensijas kods</td>
+<td>Norāda globālo dimensiju ja nepieciešams.</td>
+</tr>
+<tr>
+<td>2. globālās dimensijas kods</td>
+<td>Norāda globālo dimensiju ja nepieciešams.</td>
+</tr>
+<tr>
+<td>Turpinājums no</td>
+<td>Funkcija prombūtņu sasaistīšanai. Ja darbiniekam ievadīta virkne prombūtnes, kurām jābūt aprēķinātām ar vienādu vidējo izpeļņu, tad šajā laukā jānorāda iepriekšējā prombūtne.</td>
+</tr>
+<tr>
+<td>Saglabāt algu ar vidējo izpeļņu</td>
+<td>Ieslēdz, ja vēlas prombūtnes laikā darbiniekam saglabāt algu ar vidējo izpeļņu.</td>
+</tr>
+<tr>
+<td>Dienas vidējā izpeļņa</td>
+<td>Ja nepieciešams mainīt dienas vidējo izpeļņu, to pirms aprēķina manuāli ievada laukā.</td>
+</tr>
+<tr>
+<td>Stundas vidējā izpeļņa</td>
+<td>Ja nepieciešams mainīt stundas vidējo izpeļņu, to pirms aprēķina manuāli ievada laukā.</td>
+</tr>
+<tr>
+<td>Vidējā izpeļņa mainīta</td>
+<td>Sistēma ieslēdz automātiski, ja ierakstītas vērtības dienas vai stundas vidējās izpeļņas lauciņos.</td>
+</tr>
+</tbody>
+</table>
+<p><img src="images/4.1.registering_absence_1.1.png" alt="alt"></p>
+<p>Daži lauki šajā cilnē aizpildās automātiski. Jāpievērš uzmanība <em>Aprēķina gadam</em> un <em>Mēnesim</em> (1) – te jābūt norādītam mēnesim, kurā algu aprēķinā jāiekļauj konkrētā informācija. Sākotnēji, ievadot prombūtni, mēnesis tiek noteikts pēc sākuma datuma. Ja pārejoša slimības lapa tiek iesniegta pēc algu aprēķina (algu aprēķins ir izmaksāts vai iegrāmatots), tad aprēķinu iespējams veikt slimības lapas beigu mēnesī. Pārrēķinu ierakstiem pēc noklusējuma tiek norādīts nākamais mēnesis par kuru nav izveidots algu saraksts. Lauki <em>Saistītais dokuments</em> (2) un <em>Dienas vidējā izpeļņa</em> (3) aizpildās tad, kad tiek veikts aprēķins par prombūtni. Ja nepieciešams mainīt vidējo izpeļņu, to pirms aprēķina manuāli ievada laukā <em>Dienas vai Stundas vidējā izpeļņa</em> (3) (pazīme <em>Vidējā izpeļņa mainīta</em> (4).</p>
+<p>Izvēloties kodu Slims_A un ievadot slimības lapas datumus No un Līdz, ja amata kartiņā ir ķeksis <em>Grafiks/Uzskaite</em>, automātiski tiek atvērts konkrētā mēneša un darbinieka Grafiks, kurā iespējams ievadīt darbiniekam paredzēto darba laiku slimības dienās.</p>
+<p>Visi šajā prombūtnes reģistrā veiktie ieraksti ir jāiekopē arī darba laika uzskates tabelē, ja tabele ir jau uzģenerēta: <em>Uzskaites</em> – atveriet nepieciešamo uzskaites kartiņu - <em>Apstrādāt</em> - <em>Kopēt no prombūtņu reģistra</em>. Ja tomēr tas nav izdarīts, ģenerējot algu sarakstu, sistēma kā primāro uztvers Prombūtnes reģistrā norādīto informāciju, nevis to, kas iekļauta Uzskaites tabelē.</p>
+<p>Cilnē <em>Atvaļinājums</em> tiek parādīts periods, uz kuru atvaļinājuma prombūtne tiek attiecināta (5).</p>
+<h2 id="prombūtnes-sasaistīšana-turpinājums-no">Prombūtnes sasaistīšana <em>Turpinājums no</em></h2>
+<p>Ja darbiniekam ievadīta virkne prombūtnes, kurām jābūt aprēķinātām ar vienādu vidējo izpeļņu, tad laukā <em>Turpinājums no</em> jānorāda iepriekšējā prombūtne.</p>
+<p><img src="images/4.1.registering_absence_1.2.png" alt="alt"></p>
+<h2 id="atvaļinājumu-pārvaldība">Atvaļinājumu pārvaldība</h2>
+<h3 id="atvaļinājuma-periodu-uzstādījumi">Atvaļinājuma periodu uzstādījumi</h3>
+<p>Atvaļinājumu uzstādījumi ( Lomu centrs - <em>Atvaļinājumu periodi</em> - <em>Uzstādījumi</em> - <em>Atvaļ. periodu uzstādījumi</em>) sastāv no sekojošiem laukiem:</p>
+<table>
+<thead>
+<tr>
+<th>Lauka nosaukums</th>
+<th>Apraksts</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Iespējot atvaļinājumu pārvaldību</td>
+<td>Iespējot, ja izmantojat atvaļinājumu pārvaldību.</td>
+</tr>
+<tr>
+<td>Atvaļinājuma perioda garums</td>
+<td>Norāda atvaļinājuma perioda garumu</td>
+</tr>
+<tr>
+<td>Atvaļ. dienu tips</td>
+<td>Kalendāra diena vai darba diena.</td>
+</tr>
+<tr>
+<td>Atvaļ. dienu skaits vienā periodā</td>
+<td>Norāda piešķiramo atvaļinājuma kalendāra dienu skaitu par vienu periodu.</td>
+</tr>
+<tr>
+<td>Plānotās darba dienas</td>
+<td>Norāda piešķiramo atvaļinājuma darba dienu skaitu par vienu periodu.</td>
+</tr>
+<tr>
+<td>Plānotās darba dienas 6DDN</td>
+<td>Norāda piešķiramo atvaļinājuma darba dienu skaitu par vienu periodu sešu darba dienu nedēļai.</td>
+</tr>
+<tr>
+<td>Uzturēt papildus atvaļinājumus</td>
+<td>Iespējot, ja nepieciešams uzturēt papildus atvaļinājumus.</td>
+</tr>
+<tr>
+<td>Dienu apaļošanas precizitāte</td>
+<td>Norāda precizitāti (zīmes aiz komata), ar kādu atlikušās atvaļinājuma dienas/ stundas tiks izmantotas aprēķinos.</td>
+</tr>
+<tr>
+<td>Atvaļ. periodu numuri</td>
+<td>Norāda atvaļinājumu periodu Nr. sēriju.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="atvaļinājuma-periodu-papilddienu-uzstādījumi">Atvaļinājuma periodu papilddienu uzstādījumi</h3>
+<p>Atvaļinājumu periodu papilddienu uzstādījumi (Lomu centrs - <em>Atvaļinājumu periodi</em> - <em>Uzstādījumi</em> - <em>Atvaļinājuma perioda papildus dienas iestatīšana</em>) sastāv no sekojošiem laukiem (visiem atsevišķiem gadījumiem jāizveido sava uzstādījumu kartiņa):</p>
+<table>
+<thead>
+<tr>
+<th>Lauka nosaukums</th>
+<th>Apraksts</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Kods</td>
+<td>Brīvi izvēlēts koda nosaukums.</td>
+</tr>
+<tr>
+<td>Nosaukums</td>
+<td>Brīvi izvēlēts nosaukums.</td>
+</tr>
+<tr>
+<td>Minimālais radinieku skaits</td>
+<td>Norādiet skaitli.</td>
+</tr>
+<tr>
+<td>Maksimālais radinieka vecums</td>
+<td>Norādiet skaitli. Jāņem vēra, ka vecums noradīts, ieskaitot šo vērtību.</td>
+</tr>
+<tr>
+<td>Papilddienu skaits</td>
+<td>Norādiet, cik dienu pienākas par vienu periodu.</td>
+</tr>
+<tr>
+<td>Prioritāte</td>
+<td>Gadījumā, ja izpildās vairāki nosacījumi, tiks ņemta augstākā prioritāte.</td>
+</tr>
+<tr>
+<td>Tikai radinieks ar invaliditāti</td>
+<td>Iespējo, ja papildatvaļinājuma tips attiecas uz radiniekiem ar invaliditāti.</td>
+</tr>
+<tr>
+<td>Radinieka filtrs</td>
+<td>Tiks apstrādāti dati tikai ar noradīto kodu.</td>
+</tr>
+<tr>
+<td>Prombūtnes kods</td>
+<td>Papildatvaļinājumu dienu uzskaitei tiks apstrādātas prombūtnes ar noradīto kodu.</td>
+</tr>
+</tbody>
+</table>
+<p>Risinājums paredzēts automātiskai papildatvaļinājuma dienu  piešķiršanai (par bērniem).</p>
+<p><em>VID pamatojums:</em></p>
+<ol>
+<li><p><em>Darbiniekam, kuram ir divi bērni līdz 14 gadiem, par pirmo darba gadu  pienākas 1 papildatvaļinājuma diena. Papildatvaļinājuma diena proporcionāli nav jārēķina.</em></p>
+</li>
+<li><p><em>Darbiniekam, kurš nav nostrādājis pilnu gadu, ir tiesības uz papildatvaļinājumu, kā to nosaka Darba likuma 151. pants, un darbinieks papildatvaļinājumu drīkst pieprasīt, jo papildatvaļinājums piešķirams darba gada ietvaros.</em></p>
+</li>
+<li><p><em>Darbiniekam ir tiesības uz papildatvaļinājumu līdz bērnam nepaliek 15 gadu. Tādējādi, līdz laikam, kamēr bērnam ir 14 gadi un 11 mēneši, darbiniekam ir tiesības uz papildatvaļinājumu.</em></p>
+</li>
+</ol>
+<p><em>Saskaņā ar VID vēstuli, jāņem vērā, ka dienas tiek piešķirtas, ja darbiniekam ir vismaz viena darba diena šajā atvaļinājuma periodā (nav proporcionāli aprēķināts). Gadījumā, ja darbiniekam ir reģistrēta ilgstošā prombūtne par kuru nepienākas atvaļinājums, un konkrētajā atvaļinājuma periodā ir reģistrēta tikai tāda prombūtne, atvaļinājums netiks piešķirts.</em></p>
+<p>Gadījumā, ja uzstādījumi nav aizpildīti, automātiska dienu piešķiršana nenotiks.</p>
+<p>Tiek pielāgota lapa Darbinieka Radinieki. Ievadot jaunu ierakstu katalogā Radinieki, tiek pārbaudīts, vai sakrīt radinieka kods ar papildatvaļinājuma uzstādījumos radinieka kodu. Gadījumā, ja kods sakrīt, tiek piedāvāts papildatvaļinājuma dienu pārrēķins.</p>
+<p><img src="images/4.3.vacation_setup_3.png" alt="alt"></p>
+<p>Radinieka lapā ir izveidots lauks <em>Persona ar invaliditāti</em>, kurš ietekmē piešķirto papildatvaļinājumu dienu skaitu.<br>
+Laukā <em>Vecums</em> sistēma automātiski aprēķina vecumu uz šodienu (tas ir servera datums, nevis darba datums), vadoties no laukā <em>Dzimšanas datums</em> ievadītās vērtības.</p>
+<p>Sistēma, izejot no radinieka datiem, piešķir papildatvaļinājuma dienas. Tika pieņemts, ka ja nostrādāta kaut 1 diena atvaļinājuma perioda robežās, tad papilddiena par bērniem darbiniekam pienākas. Gadījumā, ja vienā atvaļinājuma periodā mainās nosacījumi, kuri ietekmē pienākošo dienu skaitu (piemēram, bērns sasniedzis kādu noteiktu vecumu), tad sistēma aprēķina dienas uz perioda sākumu un perioda beigām un piešķir lielāko dienu skaitu.</p>
+<p>Pastāv iespēja piešķirt dienas manuāli, aizpildot <em>Atvaļinājuma periodu žurnālu</em> (Lomu centrs - <em>Atvaļinājumu periodi</em> - <em>Atvaļinājuma periodu žurnāls</em>). Tādam nolūkam žurnālā ir izveidots jauns lauks <em>Papilddienu uzstādījuma kods</em>. Šis lauks jāaizpilda tikai gadījumā, ja tiek koriģētas papildatvaļinājuma dienas par bērniem.</p>
+<p><img src="images/4.3.vacation_setup_4.png" alt="alt"></p>
+<p>Pastāv iespēja palaist pienākošo dienu skaita pārrēķinu (1) no atvaļinājuma periodu saraksta <em>Atvaļinājuma periodi</em> (Lomu centrs - <em>Atvaļinājumu periodi</em> - <em>Atvaļinājumu periodi</em>):</p>
+<p><img src="images/4.3.vacation_setup_5.png" alt="alt"></p>
+<p>Izmantojot standarta funkciju <em>Ģenerēt periodus</em> (2), sistēma arī piešķirs papildatvaļinājuma dienas par bērniem.</p>
+<p>Ievadot prombūtni, sistēma veic atlikuma pārrēķinu. Ja tabulā <em>Atvaļ. periodu papilddienu uzstādījumi</em> nav ierakstu ar lauka <em>Prombūtnes kods</em> vērtību, kura sakrīt ar lauku <em>Prombūtnes kods</em> darbinieka prombūtnes kartiņā, tad pārrēķins nenotiek.</p>
+<p>Lai nodrošinātu dienu par bērniem nedalīšanu proporcionāli, tām prombūtnēm, kurām laukā <em>Ietekme uz atvaļinājumu</em> ir vienība <em>Samazina atvaļinājuma periodu</em>, pirms pieejamo papildatvaļinājumu dienu aprēķina, tiek uzlikts filtrs <em>Papilddienu uzstādījuma koda filtrs</em> tabulai <em>Atvaļinājuma periods</em> uz tukšumu. Kā arī netiks pārbaudīts, vai papildatvaļinājums par bērniem paliek negatīvs, respektīvi, ja tas tika izmantots, tad nebūs kļūdas paziņojums par dienu nepietiekamību.</p>
+<p><img src="images/4.3.vacation_setup_6.png" alt="alt"></p>
+<p>Dienu attiecināšana pa periodiem: papildināta funkcionalitāte, lai varētu piešķirt papildatvaļinājuma dienas par bērniem vai citas papildatvaļinājuma dienas. Tiek pārbaudīts, vai tagad tiek apstrādāts papildatvaļinājums, un tiek pārbaudīts, vai tabulā <em>Atvaļ. periodu papilddienu uzstādījumi</em> pastāv ieraksts ar tādu <em>Prombūtnes kods</em> kā šim ierakstam. Ja tāds ir, tad tiks uzlikts filtrs uz lauku <em>Papilddienu uzstādījuma koda filtrs</em> tabulai <em>Atvaļinājuma periodi</em>, kur nav tukšs. Pretējā gadījumā, tas tiks uzlikts tieši tukšs, lai aprēķinātu korekti pieejamas papildatvaļinājuma dienas – atbilstoši bērnu papilddienas vai citas. Ja tas būs par bērniem, tad tiks aizpildīts lauks <em>Papilddienu uzstādījuma kods</em> ar pirmo atrasto kodu tabulā <em>Atvaļ. periodu papilddienu uzstādījumi</em>. Pārējā loģika paliek kā bija standarta – mēģinās piešķirt dienas pa visiem iespējamiem periodiem.</p>
+<p>Gadījumā, ja papildatvaļinājums tika piešķirts un izmantots par nākamajiem periodiem, tad, atlaižot darbinieku, sistēma noslēgs tekošo atvaļinājuma periodu un pārējie tiks dzēsti.</p>
+<h3 id="atvaļinājuma-periodi">Atvaļinājuma periodi</h3>
+<p>Lomu centrs - <em>Atvaļinājumu periodi</em> - <em>Atvaļinājumu periodi</em>.</p>
+<p>Atvaļinājuma periodos iespējams iegūt informāciju par darbiniekam piešķirtajām, izmantotajām, pieejamajām ikgadējā atvaļinājuma/papildatvaļinājuma dienām, kā arī, uz kādiem darba periodiem tās attiecas.
+Lai izveidotu jaunus atvaļinājuma periodus, jāizvēlas <em>Ģenerēt periodus</em>.</p>
+<h3 id="atvaļinājuma-periodu-žurnāls">Atvaļinājuma periodu žurnāls</h3>
+<p>Lomu centrs - <em>Atvaļinājumu periodi</em> - <em>Atvaļinājuma periodu žurnāls</em>.</p>
+<p>Atvaļinājuma periodu žurnālā iespējams ievadīt/koriģēt datus par piešķirto/izmantoto atvaļinājuma/papildatvaļinājuma dienu skaitu.</p>
+<p>Kad nepieciešamā informācija atvaļinājuma periodu žurnālā ir ievadīta, to iespējams Pārbaudīt (1) un pēc tam Grāmatot (2). Pēc grāmatošanas iegrāmatotā informācija atspoguļojas <em>Atvaļinājumu periodi</em>.</p>
+<p><img src="images/4.3.vacation_setup_9.png" alt="alt"></p>
+<table>
+<thead>
+<tr>
+<th>Lauka nosaukums</th>
+<th>Apraksts</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sākotnējā piešķ. dienu rinda</td>
+<td>Izmanto gadījumos, kad ir nepieciešamība koriģēt perioda piešķirto dienu skaitu. Tiks ņemts vērā pie perioda samazināšanas un pie atlikušo dienu aprēķina perioda vidū.</td>
+</tr>
+<tr>
+<td>Atlaišanas pārrēķina rinda</td>
+<td>Izmanto gadījumos, kad ir nepieciešamība koriģēt dienu skaitu, kas aprēķināts pie darbinieka atbrīvošanas pēdējā atvaļinājuma periodā.</td>
+</tr>
+<tr>
+<td>Bezalgas atvaļinājuma rinda</td>
+<td>Izmanto gadījumos, kad ir nepieciešamība veikt piešķirto atvaļinājuma dienu skaita samazinājuma korekciju saistībā ar bezalgas atvaļinājumu. Darba likums paredz, ka laikā, kas dod tiesības uz ikgadējo apmaksāto atvaļinājumu, neieskaita atvaļinājuma laiku bez darba samaksas saglabāšanas, kas ir ilgāks par četrām nedēļām viena gada laikā.</td>
+</tr>
+<tr>
+<td>Atvaļinājuma atsevišķu dienu piešķiršana</td>
+<td>Izmanto gadījumos, kad ir nepieciešams piešķirt papildu dienu no kāda konkrēta datuma. Diena netiek sadalīta proporcionāli atvaļinājuma periodam, stājas spēkā uzreiz.</td>
+</tr>
+</tbody>
+</table>
+<p>Jāpievērš uzmanība, ka gadījumos, kad atvaļinājumu dienas uzskaite ir kalendārās dienās, tad, piešķirot papildatvaļinājuma dienu, sistēma uzkrājumos ņems vērā, ka piešķirta diena ir darba diena, nevis kalendārā diena.</p>
+<h2 id="komandējumi">Komandējumi</h2>
+<p>Darba likuma 53. panta 4. daļa paredz: <em>Darbiniekam, kas nosūtīts komandējumā vai darba braucienā, tā laikā saglabājas darba vieta (amats) un darba samaksa. Ja darbiniekam ir noteikta akorda alga, viņam izmaksā vidējo izpeļņu</em>. Darba likuma 62. panta 2. daļa paredz: <em>Laika algu aprēķina atbilstoši faktiski nostrādātajam darba laikam neatkarīgi no paveiktā darba daudzuma. Akorda algu aprēķina atbilstoši paveiktā darba daudzumam neatkarīgi no laika, kādā tas paveikts</em>.</p>
+<p>Komandējumu sistēmā ievada vai nu izveidojot Darbinieka prombūtnes karti, vai, gadījumā, kad nepieciešams sagatavot arī rīkojumu, izveidojot Personāla rīkojumu par prombūtni ar prombūtnes iemesla kodu - <em>KOMAND</em> (komandējums).</p>
+<p>Lai par komandējuma dienām darbiniekam saglabātu darba algu, jārīkojas sekojoši:</p>
+<ol>
+<li>Jāatver komandējumiem paredzētā prombūtnes iemesla karte ar kodu <em>KOMAND</em>: Lomu centrs - <em>Prombūtnes</em> - <em>Prombūtnes iemesli</em>;</li>
+<li>Prombūtnes iemesla kartē jāizvēlas algas aprēķina veids – <em>Saglabāta alga (cita komponente)</em> vai <em>Saglabāta alga</em> (tad aprēķinātā alga par komandējuma dienām tiks aprēķināta uz pamatalgas komponenti);</li>
+<li>Ja kā Algas aprēķina veids ir izvēlēts <em>Saglabāta alga (Cita komponente)</em>, tad laukā <em>Algas komponentes kods</em> jānorāda algas komponente uz kuru jāaprēķina alga par komandējuma dienām;</li>
+<li>Jāieliek atzīme laukā <em>Iekļaut faktiskajā darba laikā</em>;</li>
+<li>Komandējuma apmaksai paredzētajā algas komponentes kartē ir jāaizpilda sadaļa Uzstādījumi;</li>
+<li>Gadījumos, ja komandējums “pāriet” no viena mēneša uz nākamo, ieteicams komandējumu sadalīt un izveidot divas darbinieka prombūtnes kartes. Piemēram, ja komandējums ir par periodu no 25.02.21. līdz 05.03.21., tad ieteicams reģistrēt sekojoši:</li>
+</ol>
+<p><img src="images/4.5.business_trips_3.png" alt="alt"></p>
+<p><img src="images/4.5.business_trips_4.png" alt="alt"></p>
+<p>Šādi tiks nodrošināts korekts komandējuma naudas aprēķins gadījumos, kad komandējuma mēnešos ir atšķirīgs darba dienu skaits (ja darba alga tiek rēķināta proporcionāli nostrādātajām dienām). Ja nepieciešams visu komandējuma naudu izmaksāt kopā (nesagaidot nākošā mēneša algu aprēķina izmaksu), tad iespējams lietot starpizmaksu (Lomu centrs - <em>Starpizmaksu saraksti</em>).</p>
+<ol start="7">
+<li>Darbinieku prombūtnēs ievadītais komandējums uzskaitē tiks atspoguļots ar G/U Kodu, kas norādīts prombūtnes iemesla kartes sadaļā <em>Algas</em>.</li>
+</ol>
+<h2 id="donoru-dienas">Donoru dienas</h2>
+<p>Prombūtnes kartē <em>NEIER_DND</em> (atrodams: Lomu centrs - <em>Prombūtnes</em> - <em>Prombūtnes iemesli</em>) jānorāda, ka par šo prombūtni pienākas 1 papildatvaļinājuma diena, bet šis prombūtnes aprēķina veids ir nodrošina darba algas saglabāšana.</p>
+<div class="TIP">
+<h5>Tip</h5>
+<p><strong>Jāpievērš uzmanība: ja ielikts ķeksis “Brīvdiena saglabājot darba algu”, ievadot prombūtni sistēma prombūtnes kartē, uzreiz aprēķinās dienas/stundas izpeļņa ar pazīmi “Vidējā izpeļņa izmainīta”. Veicot algas aprēķinu, tiks ignorēts prombūtnes iemesla aprēķina veids un tiks ņemta vērā vidējā izpeļņa no prombūtnes kartes.</strong></p>
+</div>
+<p>Dienas/stundas  aprēķins: tiek analizētas darbinieka algas komponentes, kurām ir pazīme Pamatalga. Tiek apstrādāti sekojošie veidi: proporc. nostr. dienām, proporc. nostr. stundām, stundu, dienu. Gadījumā, ja darbinieka kartē ir pazīme <em>Vidējā samaksa par stundām</em>, tad tiek rēķināta arī stundu izpeļņa. Stundu skaits apmaksai tiek ņemts no grafika. Ja darbiniekam šajā periodā tika mainīta algas, tad tiek analizēta katra diena un izrēķināta vidējā par šo periodu.</p>
+<p>Atvaļinājuma periodos automātiski tiks izveidots ieraksts par piešķirto papildatvaļinājuma dienu.  Atvaļinājuma periods – prombūtnes <em>No datuma</em> periods.</p>
+<p>Donora dienas apmaksai nevajadzētu būt iekļautai vidējā izpeļņā. Tāpēc Bāzē ATVALIN apmaksas komponentes kodam jābūt izslēgtam no bāzes.</p>
+<p><strong>!!! Atpūtas dienai par donoru dienu labāk izveidot jaunu prombūtnes kodu, kuram būtu sekojošie uzstādījumi:</strong></p>
+<p><img src="images/4.6.donor_days_4.png" alt="alt"></p>
+<p>Tādā gadījumā, rēķinot atlikumu uz jebkuru datumu, dienas piešķiršanai/norakstīšanai tiks izmantots princips “stājas spēkā uzreiz” (nevis proporcionāli).</p>
+<h1 id="stundu-reģistrs">Stundu reģistrs</h1>
+<p>Stundu reģistrs ir nepieciešams, ja nav izmantoti darba laika grafiki, bet algas aprēķinam jāņem vērā nostrādāto stundu daudzums.</p>
+<p>Ievadot darbinieka numuru, var manuāli ievadīt, cik dienas un stundas darbinieks nostrādāja konkrētajā mēnesī.</p>
+<p>Stundu skaitu var labot līdz algas aprēķināšanai (algu aprēķins izmaksāts vai iegrāmatots). Kad alga aprēķināta, stundu daudzumu labot nevar.</p>
+<div class="TIP">
+<h5>Tip</h5>
+<p><strong>Ja nepieciešams labot nostrādāto stundu skaitu pēc algas izmaksas vai iegrāmatošanas, ir jāveic storno aprēķins tajā pašā mēnesī, kur bijusi kļūda.</strong></p>
+</div>
+<h1 id="darba-laika-uzskaite">Darba laika uzskaite</h1>
+<p>Darbinieku darba laika uzskaite tiek realizēta, veidojot darba laika grafiku un uzskaiti. <em>Grafiks</em> atspoguļo plānotās darba stundas, bet <em>Uzskaite</em> atspoguļo faktiskās darba stundas.</p>
+<h2 id="grafiks">Grafiks</h2>
+<p>Grafiks – darbinieku plānotais darba laiks. Tas sistēmā ir nepieciešams, lai veiktu pareizus aprēķinus slimības lapas A gadījumā – nosakot, kuras dienas darbiniekam ir jāapmaksā, pamatojoties uz to, kāds bija viņa plānotais darba laiks (skat. sadaļu Prombūtnes reģistrēšana), kā arī nostrādātā laika proporcijas aprēķinam, ja darbinieks nostrādājis nepilnu mēnesi. Grafiks jāģenerē jau laicīgi (piem., mēneša sākumā), lai būtu iespējams korekti ievadīt Slimības lapas A.</p>
+<p>Grafiks tiek izveidots, ģenerējot ierakstus no darbiniekam piesaistītā darba laika kalendāra.</p>
+<h3 id="vispārīgā-informācija">Vispārīgā informācija</h3>
+<p>Jaunu grafiku veido: Lomu Centrs - <em>Grafiki</em> – poga <em>Jauns</em>. Numurs tiks piešķirts automātiski. Tālāk jāizvēlas Gads un Mēnesis, par kuru tiks veidots darba laika grafiks (automātiski tiek aizpildīts ar tekošais gadu un mēnesi).</p>
+<h3 id="darbinieku-saraksta-izveidošana">Darbinieku saraksta izveidošana</h3>
+<p>Grafiku (darbinieku sarakstu) veido ar <em>Apstrādāt</em> - <em>Izveidot rindas</em>. Grafikā tiek ieģenerēti visi tie darbinieki, kas atbilst iepriekš norādītajiem filtriem ar stundām no kalendāra.</p>
+<h3 id="grafika-aizpildīšana-ms-excel">Grafika aizpildīšana MS Excel</h3>
+<p>Grafiku var eksportēt (nosūtīt) uz Excel failu un ieimportēt (ievilkt) atpakaļ uzskaites formā. Lai to darītu, Grafikā ir jābūt ieģenerētam darbinieku sarakstam (saraksts var būt un var arī nebūt aizpildīts ar datiem no kalendāra). Grafika eksportēšana notiek, izmantojot funkciju <em>Apstrādāt</em> - <em>Eksports uz Excel</em>.</p>
+<p>Atskaites parametri:
+Neaizpildīt ierakstus – ja ķeksītis ielikts, tad grafikā netiks aizpildītas stundas.
+Tukšas rindas  - atskaitē paredzētas tukšas rindas darbiniekiem, kuri pieņemti tekošā mēneša laikā;</p>
+<p>Kad Grafika eksports uz Excel ir veiksmīgi pabeigts, tad jaunizveidotajā failā ir iespējams iekopēt datus no citiem uzskaites failiem vai aizpildīt datus ar roku. Importējot šo Grafiku atpakaļ programmā, visa ievadītā informācija tiks saglabāta. Jāievēro, ka rediģējami ir lauki, kuros paredzēts ievadīt plānotās stundas.
+Grafika importēšanai atpakaļ programmā tiek izmantota funkcija <em>Apstrādāt</em> - <em>Imports no Excel</em>. Jāievēro, ka šī funkcija jāveic tajā Grafikā, kurš pirms tam tika eksportēts uz Excel. Sistēmā tiks ieimportēts Grafiks ar visiem veiktajiem ierakstiem – plānoto darba grafiku.</p>
+<p>Lai sistēma varētu importēt grafiku, jānorāda excel faila nosaukums (ceļš līdz failam) un excel lapas nosaukums.</p>
+<h3 id="grafika-pārģenerēšana-pēc-pārskata-mēneša">Grafika pārģenerēšana pēc pārskata mēneša</h3>
+<p>Beidzoties pārskata mēnesim, Grafikā jāieģenerē arī tie darbinieki, kas pieņemti mēneša laikā. To dara, izmantojot funkciju <em>Apstrādāt</em> - <em>Izveidot rindas</em>. Tā rezultātā iepriekš izveidotajam sarakstam tiks pievienoti trūkstošie darbinieki.</p>
+<h2 id="uzskaite">Uzskaite</h2>
+<p>Uzskaiti ģenerē mēneša beigās, kad ievadīti visi mēneša laikā pieņemtie darbinieki, iereģistrētas visas darba laika izmaiņas, vai arī mēneša sākumā, bet tādā gadījumā mēneša beigās saraksts noteikti jāpapildina ar mēneša laikā pieņemtajiem darbiniekiem. Datus uzskaites tabelē var kopēt no grafika, aizpildīt ar roku vai izmantot tabeles eksporta/importa funkciju uz/no MS excel (izveidot sistēmā darbinieku sarakstu, eksportēt uz excel, un tad importēt atpakaļ sistēmā).</p>
+<p>Kodus, kurus izmanto darba laika un neierašanos atzīmēšanai, norāda Uzstādījumos.</p>
+<h3 id="jauna-uzskaites-tabele">Jauna Uzskaites tabele</h3>
+<p>Jaunu Uzskaites tabeli veido: Lomu Centrs - <em>Uzskaites</em> – poga <em>Jauns</em>. Numurs tiks piešķirts automātiski. Tālāk jāizvēlas <em>Gads</em> un <em>Mēnesis</em>, par kuru tiks veidota darba laika tabele (automātiski tiek aizpildīts ar tekošo gadu un mēnesi).</p>
+<h3 id="darbinieku-saraksta-izveidošana-1">Darbinieku saraksta izveidošana</h3>
+<p>Darbinieku sarakstu Uzskaites tabelē ģenerē ar funkcijas palīdzību: <em>Apstrādāt</em> - <em>Izveidot rindas</em>, kā rezultātā uz ekrāna parādās darbinieku saraksts, saskaņā ar izveides loga izvēlētajām vērtībām. Nepieciešamības gadījumā var izmantot filtrus, lai sagrupētu darbiniekus dažādos sarakstos.</p>
+<h3 id="dažādas-tabeles-aizpildīšanas-iespējas">Dažādas tabeles aizpildīšanas iespējas</h3>
+<p><strong>Dati no Grafika</strong></p>
+<p>Tabeli var aizpildīt ar plānoto stundu grafiku. Šim nolūkam izmanto funkciju <em>Kopēt no grafika</em>. Šajā gadījumā visas reģistrētās prombūtnes tiks ignorētas.
+Lai iegūtu pareizus datus par darbinieku prombūtni, izmanto funkciju <em>Kopēt no prombūtņu reģistra</em>, kā rezultātā Uzskaites tabelē iekopēsies dati no Prombūtnes reģistra – par piešķirtajiem atvaļinājumiem, slimību, bērnu kopšanas atvaļinājumu u.c. neierašanos.</p>
+<p><strong>Stundu dalījums pa dimensijām</strong></p>
+<p>Gadījumā, ja vienā dienā darbiniekam jāreģistrē darba stundas ar dažādām dimensijām, var sadalīt stundas, nospiežot pogu <em>Sadalīt rindu</em>. Sistēma izveidos vēl vienu rindu, kurā jāievada stundas un jāpiesaista Darbinieka amata Nr. Dimensijas var norādīt, nospiežot pogu <em>Dimensijas</em>. Stundas katrai rindiņai manuāli var apstrādāt eksportējot tabeli uz Excel.</p>
+<p><img src="images/7.2.count_3.png" alt="alt"></p>
+<p><strong>Tabeles aizpildīšana MS Excel</strong></p>
+<p>Uzģenerēto Uzskaites tabeli eksportē (nosūta) uz Excel failu. Lai to darītu, Uzskaites tabelē obligāti ir jābūt ieģenerētam darbinieku sarakstam, bet saraksts var arī nebūt aizpildīts ar datiem no Prombūtnes reģistra. Tomēr Prombūtnes reģistra datu iekļaušana šajā tabulā atvieglos Uzskaites tabeles manuālo aizpildīšanu excel. Tabulas eksportēšana notiek, izmantojot funkciju <em>Eksports uz Excel</em>.
+Kad Uzskaites tabeles eksports uz Excel ir veiksmīgi pabeigts, tad jaunizveidotajā failā ir iespējams iekopēt datus no citiem uzskaites failiem vai aizpildīt datus par nostrādāto laiku manuāli. Importējot šo Uzskaiti atpakaļ programmā, visa ievadītā informācija tiks saglabāta. <strong>Jāievēro, ka jāaizpilda tie lauki, kuros paredzēts ievadīt stundas, brīvdienas, neierašanās.</strong></p>
+<p><img src="images/7.2.count_4.png" alt="alt"></p>
+<p>Jāizmanto tādi paši neierašanās kodi darba laika ievadīšanai izveidotajā failā, kādi tiks atpazīti, importējot atpakaļ sistēmā aizpildīto failu. Jāņem vērā, ka pirmā rinda satur kopsummas/faktiskās nostrādātas stundas, t. sk. nakts stundas (otrā rinda) un virsstundas (trešā rinda). Šajā tabulā mēneša laikā ievada arī pieņemtos darbiniekus. Tam paredzētas brīvās rindas tabulas lejas daļā.
+Gadījumā, ja darbiniekam vienā dienā ir darba stundas ar dažādām dimensijām, Excel failā katrai dimensijai jābūt atsevišķi aizpildītai (sk. attēlu):</p>
+<p><img src="images/7.2.count_5.png" alt="alt"></p>
+<h3 id="uzskaites-pārģenerēšana-pēc-pārskata-mēneša">Uzskaites pārģenerēšana pēc pārskata mēneša</h3>
+<p><strong>Saraksta pārģenerēšana sistēmā</strong></p>
+<p>Arī Uzskaites tabelē ir jāieģenerē tie darbinieki, kas pieņemti darbā mēneša laikā. To dara, izmantojot funkciju <em>Izveidot rindas</em>. Rezultātā tiks pieģenerēti klāt tie darbinieki, kuri vēl nav šajā sarakstā. Ja nepieciešams, tiem pieģenerē arī datus no Grafika.</p>
+<p><strong>Saraksta papildināšana MS Excel</strong></p>
+<p>Ja tiek izmantota iespēja aizpildīt Uzskaites tabeli Excel, tad pārskata mēneša laikā šajā tabulā iespējams manuāli ievadīt visus pieņemtos darbiniekus. Tam paredzētas tukšās rindas saraksta beigās. Ja darbinieku saraksts sistēmā un excel tabulā sakrīt (kārtība var būt atšķirīga, bet darbinieku numuriem jābūt visiem iekļautiem), tad šīs tabulas imports atpakaļ programmā noritēs veiksmīgi.</p>
+<h3 id="uzskaites-imports-no-excel">Uzskaites imports no Excel</h3>
+<p>Nākamā mēneša sākumā, kad dati par tekošo mēnesi tabelē ievadīti, veic šīs tabeles importēšanu atpakaļ programmā.
+Uzskaites importēšanai atpakaļ programmā tiek izmantota funkcija <em>Imports no Excel</em>. Jāievēro, ka šī funkcija jāveic tajā Uzskaites tabelē, kura pirms tam tika eksportēta uz Excel.</p>
+<p><strong>Gadījumā, ja tiek izmantota uzskaite pa dimensijām, jāpievērš uzmanība, ka 1. darbinieka rindai jābūt izveidotai no sistēmas (bez dimensijas norādes) un tikai pēc tam jābūt rindai ar dimensiju.</strong>
+<strong>Gadījumā, ja ir ielikts ķeksis <em>Pievienot rindas esošiem ierakstiem</em>, sistēma tikai pievienos jaunus datus, nelabojot iepriekš aizpildītos datus.</strong></p>
+<h2 id="svētku-stundu-kompensācija">Svētku stundu kompensācija</h2>
+<p>Gadījumā, ja svētku diena pārcelta uz citu dienu (piemēram, 18. novembris vai 4. maijs), tad šai informācijai jābūt ievadītai darba laika kalendārā ar tipu <em>Brīvdiena</em> un kompensējamām stundām.</p>
+<p>Šis risinājums paredzēts tikai algas komponentēm, kuras tiek rēķinātas pēc stundām. Piemēram komponente Nr. 104, kur komponentes kartiņas laukā <em>Kompensējamo stundu komponentes kods</em> ievadīta komponente Nr. 105 - kompensējamo stundu aprēķinam. Ievadot darbinieka algas komponenti, jābūt izvēlētai algas komponentei, kura tiks izmantota kompensējamo stundu aprēķinā.</p>
+<p>Aizpildot grafiku/tabeli, detalizētos ierakstos tiks aizpildītas kompensējamās stundas.  Stundas tiks aizpildītas arī gadījumā, ja reģistrēta  prombūtne vai darba stundas šajā dienā. Tādā gadījumā uzskaitē var izņemt/rediģēt šīs stundas manuāli. Algu sarakstā šis stundas tiks aprēķinātas atsevišķi.</p>
+<h1 id="virsstundu-kompensācija-ar-atpūtas-laiku">Virsstundu kompensācija ar atpūtas laiku</h1>
+<h2 id="uzstādījumi-1">Uzstādījumi</h2>
+<p>Lai varētu lietot funkcionalitāti, nepieciešami sekojoši uzstādījumi:</p>
+<ol>
+<li>Prombūtnes iemesla karte un algas komponente atpūtas dienām:</li>
+</ol>
+<p><img src="images/8_overtime_1.png" alt="alt"></p>
+<p><img src="images/8_overtime_2.png" alt="alt"></p>
+<ol start="2">
+<li>Prombūtnes karte un algas komponente atvaļinājuma papildus dienām:</li>
+</ol>
+<p><img src="images/8_overtime_3.png" alt="alt"></p>
+<p><img src="images/8_overtime_4.png" alt="alt"></p>
+<ol start="3">
+<li>Virsstundu uzstādījumos aizpilda sekojošus laukus:</li>
+</ol>
+<ul>
+<li>Izmantošanas veids pēc noklusējuma - Apmaksa, Brīvdiena, Atvaļinājuma papilddiena.</li>
+<li>Prombūtnes kods brīvdienu izmantošanai - Norāda kodu “VIRS_ATPUT”.</li>
+<li>Mēnešu skaits brīvdienu izmantošanai - Norāda cik mēnešus atpakaļ vajag meklēt pieejamas virsstundas, kuras izmantos kā brīvdienu.</li>
+<li>Stundu sk. dienā atvaļin. Papilddienai - Norāda virsstundu skaitu lai piešķirt darbiniekam vienu atvaļinājuma papilddienu.</li>
+</ul>
+<h2 id="virsstundu-reģistrācija">Virsstundu reģistrācija</h2>
+<p>Uzskaites logā veicot procesu <em>Aprēķināt virsstundas</em>, automātiski aizpildās arī saraksts <em>Virsstundu uzskaite</em>.
+Gadījumā, ja uzskaites <em>Mēneša virsstundas</em> vērtība tika izmainīta uz 0 vai tiks izdzēsta rinda no Uzskaites, tad tiks dzēsts atbilstošais ieraksts no <em>Virsstundu uzskaite</em>.</p>
+<p><strong>Jāņem vērā ka <em>Uzskaites Mēneša virsstundas</em> vērtībā būs iekļautias gan aprēķinātās virsstundas, gan pārnestās apmaksai no virsstundu skaits citiem mēnešiem.</strong></p>
+<p>Saraksts <em>Virsstundu uzskaite</em> pieejams no Uzskaites loga rīkjoslas vai sistēmas meklētājā. <em>Virsstundu uzskaite</em> satur sekojošus laukus:</p>
+<ul>
+<li>Uzskaites dokumenta Nr. - Uzskaites dokumenta Nr. , kurā darbiniekam ir aprēķinātas virsstundas.</li>
+<li>Darbinieka Nr. - Darbinieka Nr.</li>
+<li>Izmantošanas veids - Virsstundu izmantošanas veids (Apmaksa, Brīvdiena, Atvaļinājuma papilddiena). Gadījumā kad virsstundas izmantošana sadalīta uz vairākiem variantiem (piem. apmaksa + brīvdiena, apmaksa + atvaļ. papildiena), tad laukā būs  pēdējais virsstundu izmantošanas veids. Ierakstiem piešķiras noklusētais tips no Virsstundu uzstādījumiem.</li>
+<li>Atvaļinājuma perioda Nr. - Atvaļinājuma perioda Nr. , kurā tiks piešķirta atvaļinājuma papilddiena.</li>
+<li>Aprēķina uzskaites mēnesis - Konkrētā Uzskaites dokumenta Nr. mēnesis.</li>
+<li>Aprēķina uzskaites gads - Konkrētā Uzskaites dokumenta Nr. gads.</li>
+<li>Uzskaites darbinieka virsstundas - Vērtība no konkrēta Uzskaites dokumenta Nr. lauka Mēneša virsstundas.</li>
+<li>Izmantotas virsstundas - Tabulas Virsstundu izmantošana (sk. zemāk) ierakstu kopēja vērtība ar filtru uz konkrētu Uzskaites dokumenta Nr. un Darbinieka Nr.</li>
+<li>Apmaksas uzskaites mēnesis - Mēnesis, uz kuru tiek pārnesta atlikušas virsstundas apmaksa.</li>
+<li>Apmaksas uzskaites gads - Mēnesis, uz kuru tiek pārnesta atlikušas virsstundas apmaksa.</li>
+<li>Pārvietotas stundas - Uz citu mēnesi apmaksai pārvietojams virsstundu skaits.</li>
+</ul>
+<h2 id="virsstundu-izmantošana">Virsstundu izmantošana</h2>
+<p><img src="images/8_overtime_5.png" alt="alt"></p>
+<h3 id="virsstundu-apmaksa">Virsstundu apmaksa</h3>
+<p>Algas sarakstā virsstundu aprēķins notiek tikai tiem darbiniekiem, kam atbilstošajā periodā Virsstundu uzskaitē izmantošanas tips ir <em>Apmaksa</em>.
+Algas sarakstā darbinieka apmaksāto virsstundu skaits sakrīt ar Atlikušo virsstundas vērtību no tabulas <em>Virsstundu uzskaite</em> un ar Uzskaites Mēneša virsstundas vērtību.
+Virsstundu izmantošanas reģistrs sastāv no sekojošiem laukiem:</p>
+<ul>
+<li>Uzskaites dokumenta Nr. - Uzskaites dokumenta numurs, kurā darbiniekam ir aprēķinātas virsstundas.</li>
+<li>Darbinieka Nr. - Darbinieka numurs.</li>
+<li>Ieraksta Nr. - Sistēmas automātiski piešķirtais numurs.</li>
+<li>Izmantošanas veids - Apmaksa, Brīvdiena, Atvaļinājuma papilddiena.</li>
+<li>Izmantotas virsstundas - Izmantoto virsstundu skaits.</li>
+<li>Avota tabulas ID/Avota tabulas nosaukums  - Izmantoto virsstundu avota tabulas identifikācija.</li>
+<li>Primārā atslēga - Izmantoto virsstundu avota primārā atslēga, lai varētu caur šo lauku pārslēgties uz dokumentu, kurā tiek izmantotās virsstundas.</li>
+<li>Ieraksta datums un laiks - Ieraksta datums un laiks, kad ieraksts tika izveidots.</li>
+<li>Ieraksta lietotāja ID - Ieraksta lietotāja ID, kurš izveidoja ierakstu.</li>
+<li>Uzskaites mēnesis/Uzskaites gads - Mēnesis/gads konkrētajam Uzskaites dokumenta Nr.</li>
+</ul>
+<h3 id="virsstundu-kompensēšana-ar-atvaļinājuma-papildus-dienām">Virsstundu kompensēšana ar atvaļinājuma papildus dienām</h3>
+<p>Ja darbinieks vēlas tekoša mēneša virsstundas izmantot nākotnē kā atvaļinājuma papilddienu, tad pirms algas aprēķina darbiniekam Virsstundu uzskaitē atbilstošam ierakstam jāizmaina izmantošanas veids uz Atvaļ.papilddiena. Izmainīt izmantošanas veidu uz Atvaļinājuma papilddienu var ar funkciju <em>Izmainīt virsstundu izmantošanas veidu</em>. Funkcijas filtrā obligāti jānorāda uzskaites dokumenta Nr., kuram jāizmaina izmantošanas veids.</p>
+<p>Papildatvaļinājuma dienu piešķiršana notiek Virsstundu uzskaites tabulā ar secību:</p>
+<ul>
+<li>rindai (-ām) ar izmantošanas veidu Atvaļinājuma papilddiena jānorāda darbinieka atvaļinājuma perioda Nr., kurā jāizveido ieraksts par papildatvaļinājuma piešķiršanu.</li>
+<li>cilnē Darbības palaist funkciju Ģenerēt papildus atvaļinājuma dienas.</li>
+</ul>
+<p><strong>Atvaļinājuma periodos ierakstu par virsstundām piešķirto papildatvaļinājumu var atcelt tikai no Virsstundu uzskaites tabulas ar funkciju <em>Atcelt ģenerētas papildatvaļinājuma dienas</em>.</strong></p>
+<p>Pēc papilddienas ģenerēšanas tiks automātiski izveidoti:</p>
+<ul>
+<li>ieraksts par virsstundu izmantošanu;</li>
+<li>ieraksts par papildatvaļinājuma dienas piešķiršanu noradītā Atvaļinājuma periodā.</li>
+</ul>
+<p>Pēc papildatvaļinājuma piešķiršanas Atvaļinājuma periodā, darbiniekam var iegrāmatot personāla rīkojumu par papildus atvaļinājuma prombūtni.</p>
+<h3 id="virsstundu-kompensēšana-ar-apmaksātām-atpūtas-dienām">Virsstundu kompensēšana ar apmaksātām atpūtas dienām</h3>
+<p>Ja darbinieks vēlas tekoša mēneša virsstundas izmantot nākotnē kā brīvdienu atpūtai, tad pirms algas aprēķina darbiniekam Virsstundu uzskaitē atbilstošam ierakstam jāizmaina izmantošanas veids uz Brīvdiena.</p>
+<p>Izmainīt izmantošanas veidu uz Brīvdienu var arī ar funkciju <em>Izmainīt virsstundu izmantošanas veidu</em>. Funkcijas filtrā obligāti jānorāda uzskaites dokumenta Nr., kuram jāmaina izmantošanas veidu.</p>
+<p>Virsstundu izmantošanas veidu var koriģēt tieši no Uzskaites, izmantojot rindas pogu  Virsstundu uzskaite.</p>
+<p>Brīvdienas piešķiršana notiek ar personāla rīkojuma grāmatošanu vai prombūtnes reģistrāciju žurnālā caur ierakstu ar prombūtnes iemesla kodu VIRS_ATPUT (aprakstīts virsstundu Uzstādījumu nodaļā).</p>
+<p>Pēc personāla rīkojuma grāmatošanas vai prombūtnes reģistrācijas, automātiski veidojas ieraksts par virsstundu izmantošanu.</p>
+<p>Apmaksa par brīvdienu būs aprēķināta algas sarakstā, kas sakrīt ar prombūtnes norādīto aprēķina gadu un mēnesi.</p>
+<h3 id="virsstundu-pārcelšana-uz-citu-periodu">Virsstundu pārcelšana uz citu periodu</h3>
+<p>Ir iespējams viena perioda atlikušās virsstundas pārcelt uz citu periodu.
+Virsstundu pārcelšana notiek ar Virsstundu uzskaite funkciju Izmainīt Virsstundu izmantošanas veidu. Obligāti filtrā jānorāda uzskaites dokumenta Nr. no kura pārceļ virsstundas.
+<strong>Pirms virsstundu pārcelšanas darbiniekam obligāti jābūt izveidotai uzskaitei par periodu, uz kuru plānots pārnest virsstundas.</strong></p>
+<p>Virsstundu pārcelšanas rezultāts:</p>
+<ul>
+<li>Izmantošanas veids periodā no kura pārceltās virsstundas, izmainīts uz vērtību, kas bija piemērota pārcelšanas funkcijas logā.</li>
+<li>Atlikušās virsstundas periodā, no kura pārceltās virsstundas, ir 0.</li>
+<li>Uzskaites darbinieka virsstundas periodā, uz kuru pārceltās virsstundas, palielinātas par pārcelto stundu skaitu.</li>
+<li>Pārcelšana piefiksēta speciālajos pārvietoto stundu laukos.</li>
+</ul>
+<p><strong>Jāņem vēra ka pārceltās virsstundas ar izmantošanas tipu Apmaksa būs pievienotas uzskaitē pie Mēneša virsstundām. Rekomendējam veikt virsstundu pārcelšanu pēdējā solī (pirms Virsstundu aprēķināšanas), kad uzskaite ir korekta un nav vairs plānots mainīt datus.</strong></p>
+<p>Gadījumā, ja darbinieks būs izdzēsts no uzskaites, veiktā virsstundu pārcelšana tiks anulēta - virsstundu uzskaites dati atgriezīsies uz virsstundu atlikumu, kas bija līdz pārcelšanai.
+Gadījumā, ja jāatceļ virsstundas pārcelšanas operācija, tad  Virsstundu uzskaitē  laukos Apmaksa uzskaites mēnesis un Apmaksa uzskaites gads ir jāievada tukšas vērtības.</p>
+<h1 id="komponenšu-reģistrs">Komponenšu reģistrs</h1>
+<p>Komponenšu reģistru paredzēts aizpildīt gadījumos, ja darbiniekam ir ienākumi vai atvilkumi, kas katru mēnesi atšķiras – tiek noteiktas ārpus programmas. Aizpildot Komponenšu Reģistru, visas minētās algas komponentes tiks iekļautas tajā mēneša algas aprēķinā, kurš norādīts reģistra virsrakstā.</p>
+<p>Tās piemaksas un atvilkumus, kuri ilgu laika periodu tiek iekļauti ikmēneša algas aprēķinā kā konstantas summas, ērtāk ievadīt Darbinieka kartiņā. To izdarot, darbiniekam katru mēnesi algu aprēķinā automātiski tiks pielikta attiecīgā piemaksa vai/un noņemts attiecīgais atvilkums.</p>
+<h2 id="jauna-reģistra-izveide">Jauna reģistra izveide</h2>
+<p>Jaunu reģistru veido sākuma lapā vai sistēmas meklētājā izvēloties <em>Komponenšu reģistri</em> un nospiežot pogu <em>Jauns</em>.</p>
+<p>Numurs reģistram tiks piešķirts automātiski. Tālāk jāizvēlas <em>Gads</em> un <em>Mēnesis</em>, par kuru tiks ievadītas piemaksas un atvilkumi (atverot jaunu sarakstu, kā noklusētais automātiski tiks ievadīts tekošais gads un mēnesis) (1).
+Ieteicams brīvā formā aizpildīt arī lauku Apraksts, izvēloties apzīmējumu, kuru pēc tam viegli atšifrēt un pēc kura viegli atrast nepieciešamo sarakstu, piem., ievadot nodaļas nosaukumu vai komponentes veida nosaukumu (piem., ceturkšņa prēmijas), vai darbinieku grupas aprakstu (piem., līgumstrādnieki), u.tml. (2).</p>
+<p>Darbinieku sarakstu Komponenšu reģistrā iespējams sastādīt vairākos variantos:</p>
+<ul>
+<li>automātiski ģenerējot un ar filtriem atlasot darbiniekus un norādot konkrētu algas komponentes kodu;</li>
+<li>atlasot darbiniekus pa vienam;</li>
+<li>ar tastatūras pogu kombināciju Ctrl+C un Ctrl+V palīdzību iekopēt no Excel iezīmētos datus tieši komponenšu reģistra rindās;</li>
+<li>datus sagatavot Excel programmā, izmantojot  eksportēšanas un importēšanas funkciju rīkjoslā klikšķinot uz <em>Apstrādāt</em> (3) - <em>Importēt no Excel</em> (4) vai <em>Exportēt uz Excel</em> (5).</li>
+</ul>
+<p>Nepieciešamības gadījumā saģenerētās, iekopētās vai importētās rindas ir manuāli koriģējamas, izdzēšot liekos darbiniekus (6) vai nomainot Komponentes kodu (7) un/vai Vērtību (7). Periods ielasās automātiski - tāds pats, kāds norādīts kartiņas galvenē. Ja komponente attiecas uz citu Periodu (piemēram, ienākumi tiek precizēti), jānomaina vērtība uz nepieciešamo.</p>
+<p><img src="images/5.1.new_comp_reg_1.png" alt="alt"></p>
+<h2 id="saraksta-automātiska-ģenerēšana">Saraksta automātiska ģenerēšana</h2>
+<p>Ja piemaksas un atvilkumus paredzēts ievadīt visiem (vai lielākai daļai) darbiniekiem ar vienādu 1. un/vai 2.dimensiju vērtību, tad sarakstu var ieģenerēt automātiski:</p>
+<ul>
+<li>Sadaļa <em>Rindas</em> (1) - <em>Izveidot rindas</em> (2);</li>
+<li>Rindu izveidošanas logā jāaizpilda lauks <em>Komponentes kods</em> (3) - norāda attiecīgo piemaksas vai atvilkumu kodu no izvēlnes. Šajā gadījumā visiem izvēlētajiem darbiniekiem automātiski rindās tiks pievienota norādītā algas komponente. Nepieciešamības gadījumā šo komponenti pēc tam reģistra sarakstā varēs nomainīt;</li>
+<li>Gadījumā, ja visiem darbiniekiem jāievada vienāda piemaksas vai atvilkuma summa, var izmantot lauku <em>Vērtība</em> (4). Nepieciešamības gadījumā šo komponenti pēc tam reģistra sarakstā varēs nomainīt;</li>
+<li>Filtra sadaļā <em>Darbinieks</em> var ievadīt nepieciešamos darbinieku atlases kritērijus. Piemēram, dimensijas vērtības pēc kurām tiks atlasīti visi tie darbinieki, kuriem Darbinieku kartiņā atbilst norādītās vērtības;</li>
+<li>Lai sarakstā ieģenerētu tikai tos darbiniekus, kuri attiecīgajā mēnesī strādājuši (nav atbrīvoti līdz darba mēneša sākumam), laukā <em>Līguma izbeigšanas datums</em> (5) jāuzliek filtrs ar diviem apostrofiem (‘ ’). Tas nozīmē, ka tiks atlasīti tikai tie darbinieki, kuriem Darbinieku kartiņā laukā Līguma izbeigšanas datums ir tukšs;</li>
+</ul>
+<p><img src="images/5.2.comp_list_gen_1.png" alt="alt"></p>
+<ul>
+<li>Kad visas vērtības Algas komponenšu reģistra rindu izveides laukos ievadītas, ar pogu <em>Labi</em>  apstiprina saraksta izveidi. Iegūst sarakstu ar vērtībām;</li>
+<li>Izveidotajā sarakstā jāaizpilda trūkstošā informācija par Vērtībām, ja tāda palikusi neievadīta;</li>
+<li>Ja nepieciešams, šo sarakstu var koriģēt, izdzēšot liekos darbiniekus. To dara, iezīmējot izdzēšamā darbinieka ieraksta rindiņu un ar peles labo pogu izvēlas iespēju Dzēst rindu (Ctrl + Del);</li>
+<li>Ja nepieciešams, sarakstā manuāli var izdarīt korekcijas, nomainot Algas komponentes kodu, Vērtību;</li>
+<li>Gadījumā, ja no sākuma tika izvēlēta tikai viena Algas komponente (piem., Papildpiemaksa 107) un izrādās, ka visiem šiem darbiniekiem nepieciešams ievadīt arī atvilkumus vai cita veida piemaksas, tad iespējams šo sarakstu papildināt ar citu komponenti, atkārtojot iepriekš aprakstīto funkciju <em>Izveidot rindas</em> un norādot nepieciešamo Algas komponenti.</li>
+</ul>
+<h2 id="saraksta-manuāla-veidošana">Saraksta manuāla veidošana</h2>
+<p>Ja nepieciešams ievadīt, piemēram, viena veida piemaksas un/vai atvilkumus darbiniekiem ar dažādām dimensiju vērtībām, tad darbiniekus Komponenšu Reģistrā var ievadīt pa vienam:</p>
+<ul>
+<li>Ieklikšķinot lauciņā <em>Darbinieka Nr.</em> un nospiežot bultiņu blakus laukam, ieiet kopējā darbinieku sarakstā no kura izvēlas vajadzīgo darbinieku. Vajadzīgo darbinieku šajā kopējā sarakstā var atrast, meklējot pēc darbinieka koda vai uzvārda. Kad darbinieks atrasts, izvēli apstiprina ar peles klikšķi vai Enter;</li>
+<li>Sarakstā automātiski tiek aizpildīti lauki <em>Darbinieka Nr.</em>, <em>Vārds</em>, <em>Uzvārds</em>, <em>Periods</em> (kas norādīts reģistra galvenajā daļā), dimensiju vērtības (kas automātiski ģenerējas no darbinieka kartiņas);</li>
+<li>Tālāk jāaizpilda lauki <em>Algas komponentes kods</em> un <em>Vērtība</em>;</li>
+<li>Ja komponente attiecas uz citu Periodu (piemēram, ienākumi tiek precizēti), jānomaina vērtība uz nepieciešamo.</li>
+</ul>
+<h2 id="komponenšu-reģistra-rindu-eksportsimports-ar-ms-excel">Komponenšu reģistra rindu eksports/imports ar MS Excel</h2>
+<p>Datus no Excel faila var ērti iekopēt Komponenšu Reģistra rindiņās, iezīmējot atbilstošā secībā ievadītus datus Excel failā, nokopējot un ieklikšķinot Komponenšu reģistra rindiņas pirmajā kolonnā, kur grib iekopēt pirmo rindiņu.</p>
+<p>Ja vēlas visus datus iekopēt reģistrā caur iepriekš sagatavotu Excel failu, tad rīkjoslā klikšķina uz pogām <em>Importēt no Excel</em> vai <em>Exportēt uz Excel</em>.
+Eksportējot komponenšu reģistru uz Excel, sistēma dod paziņojumu ar iespēju izvēlēties komponenšu reģistra eksporta filtru. Izvēloties filtru jānospiež poga <em>Labi</em>.</p>
+<p><img src="images/5.5.comp_exp_imp_2.png" alt="alt"></p>
+<p>Excel fails tik lejupielādēts jūsu datorā un importējamie dati var tikt ievadīti. Jāpievērš uzmanība, ka 2. rindā tiek sadefinētas dimensijas ar vērtībām, datu ievadi jāsākas no 3. rindas.</p>
+<p><img src="images/2.7.comp_reg_exp_2.png" alt="alt"></p>
+<p>Kad visi dati savadīti, Excel fails ir jāsaglabā un tas ir gatavs datu importam atpakaļ sistēmā.</p>
+<h2 id="mēneša-vidējās-izpeļņas-aprēķins">Mēneša vidējās izpeļņas aprēķins</h2>
+<p>Lai aprēķinātu mēneša vidējo izpeļņu:</p>
+<ul>
+<li>atver sarakstu <em>Komponenšu reģistrs</em> un izveido jaunu kartiņu, klikšķinot uz pogas <em>Jauns</em>;</li>
+<li>cilnē Visp.info ievada gadu, mēnesi un nosaukumu;</li>
+<li>cilnē Komponenšu reģistra apakšforma ievada darbinieku, kuram ir jāaprēķina mēneša vidējā izpeļņa.</li>
+<li>klikšķina uz pogām <em>Rinda – Aprēķināt mēneša vidējo izpeļņu</em>;</li>
+</ul>
+<p><img src="images/5.6.average_month_sal_1.png" alt="alt"></p>
+<ul>
+<li>Sistēma parāda paziņojumu par to, kādas vērtības tiek izmantotas mēneša vidējās izpeļņas aprēķinam;</li>
+</ul>
+<p><img src="images/5.6.average_month_sal_2.png" alt="alt"></p>
+<ul>
+<li>Pēc pogas <em>Labi</em> nospiešanas tiek sarēķināta darbinieka mēneša vidējā izpeļņa.</li>
+</ul>
+<p>Mēneša vidējā izpeļņa tiek aprēķināta atbilstoši Darba likuma 75. panta 3. daļas nosacījumiem (spēkā no 01.01.2015.). Tā nosaka, ka mēneša vidējo izpeļņu aprēķina, dienas vidējo izpeļņu reizinot ar mēneša vidējo darba dienu skaitu pēdējos sešos kalendāra mēnešos (saskaitot darba dienas pēdējos sešos kalendāra mēnešos un šo kopsummu dalot ar seši).
+Mēneša vidējo darba dienu skaitu pēdējos sešos kalendāra mēnešos sistēma aprēķina pēc sekojoša algoritma:</p>
+<ul>
+<li>Ja Darbinieka kartiņas sadaļā Darbinieka amati norādītais Algas tips ir NDL Normālais darba laiks vai SDL Summētais darba laiks – mēneša vidējo darba dienu skaita pēdējos 6 mēnešos aprēķinam sistēma par pamatu ņem <em>Algas uzstādījumi</em> sadaļas Visp.info laukā <em>Noklusētais kalendārs</em> norādīto darba laika kalendāru.</li>
+<li>Ja Darbinieka kartiņas sadaļā <em>Darbinieka amati</em> norādītais <em>Algas tips</em> ir <em>Summētais darba laiks</em> un <em>Kalendāra kods</em> sakrīt ar <em>Algas uzstādījumi</em> norādīto 6 darba dienu nedēļas kalendāra kodu - mēneša vidējo darba dienu skaita pēdējos 6 mēnešos aprēķinam sistēma par pamatu ņem <em>Algas uzstādījumi</em> sadaļas Visp.info laukā <em>Noklusētais kalendārs 6DDN</em> norādīto darba laika kalendāru.</li>
+</ul>
+<h1 id="avansi">Avansi</h1>
+<p>Darbiniekiem, kuriem kartiņā ievadīta avansa komponente, iespējams uzģenerēt avansu sarakstu. Informācija par izmaksāto avansu automātiski tiks iekļauta konkrētā mēneša algas aprēķinā un ieturēta no izmaksājamās summas.</p>
+<p>Jaunu avansa sarakstu veido klikšķinot uz saīsnes <em>+Avansu saraksti</em> sistēmas sākumlapā. Visi avansu saraksti ir iekļauti kopējā sarakstā <em>Avansu virsraksts</em>.</p>
+<p>Sarakstam numurs tiks piešķirts automātiski. Tālāk jāizvēlas <em>Gads</em> un <em>Mēnesis</em> (automātiski tiek aizpildīts ar tekošo gadu un mēnesi).
+Avansa saraksta rindu automātiskā ģenerēšana notiek noklikšķinot uz pogas <em>Apstrādāt</em> - <em>Aprēķināt</em> (1).</p>
+<p>Pēc avansa saraksta ģenerēšanas un sākotnējās pārbaudes vēlams nomainīt saraksta statusu no <em>Atvērts</em> uz <em>Nodots</em> (2). Tas nodrošina aprēķina datu aizsardzību pret labojumiem. Ja nepieciešams, statusu var nomainīt pretējā virzienā (3).</p>
+<p>Ja pirms darbinieku saraksta ģenerēšanas, netika izmantoti filtri, tad sistēma ielasīs visus darbiniekus, un tiem, kam nav avansa maksājums paredzēts, rindās atrādīsies ar 0 summu. Šos darbiniekus var izdzēst no saraksta noklikšķinot uz pogas <em>Dzēst rindas ar 0 izmaksu</em> (4).</p>
+<p><img src="images/8.1.advance_1.png" alt="alt"></p>
+<p>Avansu saraksta rīkjoslas sadaļās <em>Pārskats</em> un <em>Apstrādāt</em> ir pieejamas sekojošas papildus funkcijas:</p>
+<ul>
+<li><p><em>Algas lapiņa</em> – iespēja izdrukāt un nosūtīt algas lapiņas par avansa izmaksu.</p>
+</li>
+<li><p><em>Eksports uz maksājumu žurnālu</em> – tiks sagatavoti maksājumu ieraksti eksportam uz maksājumu žurnālu, no kura varēs tālāk eksportēt uz banku un iegrāmatot.</p>
+</li>
+<li><p><em>Algu saraksta izdruka</em> – avansa saraksta izdruka apstiprināšanai.</p>
+</li>
+<li><p><em>Importēt avanss no Excel</em>  - iespējams importēt avansu datus no Excel faila, kur dati jānorāda sekojošā secībā:</p>
+<p><img src="images/8.1.advance_2.png" alt="alt"></p>
+</li>
+</ul>
+<h1 id="starpizmaksas">Starpizmaksas</h1>
+<p>Atvaļinājuma naudu, kuru nepieciešams izmaksāt darbiniekam pirms atvaļinājuma, kā arī dažādus prēmiju vai dāvanu sarakstus, izmaksā no starpizmaksu saraksta – tas ir pirms mēneša gala aprēķina. Starpizmaksās tiek atvilkti nodokļi no aprēķinātajām summām atbilstošā periodā. Ģenerējot algu sarakstu, starpizmaksās izmaksātās summas automātiski iekļausies atvilkumos un samazinās izmaksājamo summu.</p>
+<p><strong>Pirms starpizmaksu aprēķina jābūt savadītai informācijai prombūtņu reģistros un komponenšu reģistros.</strong></p>
+<p>Ja nepieciešams atdalīt aprēķinus pa veidiem, tad jāizmanto cilne <em>Filtri</em> (4). Filtru cilnē atzīmē kritērijus aprēķiniem, kurus vēlas (vai nevēlas) izmaksāt starpizmaksā. Piemēram, neievadot nevienu filtra kritēriju, izvēlētajam darbiniekam uz izmaksu tiks sagatavoti gan aktuālie prombūtņu reģistra ieraksti, gan komponenšu reģistra ieraksti.</p>
+<div class="TIP">
+<h5>Tip</h5>
+<p><strong>Ja kopā ar atvaļinājuma naudu nepieciešams izmaksāt arī algu par nostrādāto periodu līdz atvaļinājumam, tad prombūtņu reģistrā jāreģistrē prombūtnes ieraksts ar kodu <em>ALGA_PER</em> (Alga par periodu).</strong></p>
+</div>
+<p>Jaunu starpizmaksu sarakstu veido klikšķinot uz saīsnes <em>Starpizmaksu saraksti</em> sistēmas sākuma lapā vai izmantojot sistēmas meklētāju. Visi starpizmaksu saraksti ir iekļauti kopējā sarakstā <em>Starpizmaksu saraksti</em>.</p>
+<p>Sarakstam numurs tiks piešķirts automātiski. Tālāk jāizvēlas Gads un Mēnesis (automātiski tiek aizpildīts ar tekošo gadu un mēnesi).
+Starpizmaksas saraksta rindu automātiskā ģenerēšana notiek noklikšķinot uz pogas <em>Apstrādāt</em> - <em>Aprēķināt</em> (1).</p>
+<p>Pēc starpizmaksas saraksta ģenerēšanas un sākotnējās pārbaudes, vēlams nomainīt saraksta statusu no <em>Atvērts</em> uz <em>Nodots</em> (2). Tas nodrošina aprēķina datu aizsardzību pret labojumiem. Ja nepieciešams, statusu var nomainīt pretējā virzienā (3).</p>
+<p><img src="images/8.2.prepayment_1.png" alt="alt"></p>
+<p>Starpizmaksas saraksta rīkjoslas sadaļā <em>Pārskats</em> ir pieejamas sekojošas papildus funkcijas:</p>
+<ul>
+<li><em>Algas lapiņa</em> – iespēja izdrukāt un nosūtīt algas lapiņas par starpizmaksas izmaksu.</li>
+<li><em>Eksports uz maksājumu žurnālu</em> – tiks sagatavoti maksājumu ieraksti eksportam uz maksājumu žurnālu, no kura varēs tālāk eksportēt uz banku un iegrāmatot.</li>
+<li><em>Algu saraksta izdruka</em> – starpizmaksu saraksta izdruka apstiprināšanai.</li>
+</ul>
+<h2 id="vidējās-izpeļņas-atšifrējums">Vidējās izpeļņas atšifrējums</h2>
+<p>Lai no starpizmaksu saraksta atvērtu vidējās izpeļņas atšifrējumu, jāizvēlas interesējošā darbinieka rindiņa un cilnē <em>Rinda</em> jāklikšķina uz <em>Rinda</em> - <em>Vidējā izpeļņa</em>.</p>
+<p>Gadījumā, ja darbinieka amatam ir piesaistīts normāla darba laika algas tips, tad, aprēķinot vidējo izpeļņu, dienas/stundas izpeļņa tiks salīdzināta ar minimālo algu. Nepieciešamības gadījumā vidējā izpeļņa tiks palielināta līdz minimālai algai. Ja darbiniekam nav pilna slodze, tad  tiks piemērots koeficients.</p>
+<h1 id="algas-aprēķins">Algas aprēķins</h1>
+<p>Pēc tam, kad</p>
+<ul>
+<li>reģistrētas amata maiņas,</li>
+<li>reģistrētas algas maiņas,</li>
+<li>pārbaudīta nodokļu grāmatiņu informācija,</li>
+<li>ievadītas prombūtnes,</li>
+<li>pēc nepieciešamības ievadīti dati stundu reģistrā,</li>
+<li>ievadītas vienreizējas piemaksas un ieturējumi Komponenšu reģistrā,</li>
+<li>ievadītas ikmēneša piemaksas un ieturējumi darbinieku kartiņā, un citas darbinieku datu izmaiņas (piemēram, konts)</li>
+</ul>
+<p>tiek ģenerēts mēnesi noslēdzošais algas saraksts. Katrs darbinieks mēneša ietvaros var būt tikai vienā aktuālā algu aprēķinā. Var veidot vairākus algu sarakstus – piemēram, katrai struktūrvienībai savu. Parasti atsevišķi tiek veidots algu saraksts atbrīvotiem darbiniekiem, lai korekti veiktu izmaksas.</p>
+<p>Jaunu algu sarakstu veido klikšķinot uz saīsnes <em>+Algas saraksti</em> sistēmas sākumlapā vai izmantojot sistēmas meklētāju. Visi algu saraksti ir iekļauti kopējā sarakstā <em>Algu saraksti</em>.</p>
+<p>Sarakstam numurs tiks piešķirts automātiski. Tālāk jāizvēlas <em>Gads</em> un <em>Mēnesis</em> (automātiski tiek aizpildīts ar tekošo gadu un mēnesi).
+Algu saraksta rindu automātiskā ģenerēšana notiek noklikšķinot uz pogas <em>Apstrādāt</em> (1) - <em>Aprēķināt</em> (2).</p>
+<p>Izmantojot funkciju <em>Aprēķināt</em>, algu saraksta ģenerēšanai var uzlikt filtrus gan uz darbinieka Nr., gan uz struktūrvienības koda. Ja funkcija tiek izmantota bez filtriem, tad sarakstā būs visi darbinieki, kuriem šajā mēnesī ir norādītas aprēķina summas.</p>
+<p>Pēc algu saraksta ģenerēšanas un sākotnējās pārbaudes vēlams nomainīt saraksta statusu no <em>Atvērts</em> uz <em>Nodots</em> (3). Tas nodrošina aprēķina datu aizsardzību pret labojumiem. Ja nepieciešams, statusu var nomainīt pretējā virzienā (4).</p>
+<p><img src="images/8.4.sal_calc_1.png" alt="alt"></p>
+<p>Algu saraksta rīkjoslas sadaļās <em>Pārskats</em> un <em>Apstrādāt</em> ir pieejamas sekojošas papildus funkcijas:</p>
+<ul>
+<li><em>Algas lapiņa</em> – iespēja izdrukāt un nosūtīt algas lapiņas par algas izmaksu.</li>
+<li><em>Eksports uz maksājumu žurnālu</em> – tiks sagatavoti maksājumu ieraksti eksportam uz maksājumu žurnālu, no kura varēs tālāk eksportēt uz banku un iegrāmatot.</li>
+<li><em>Algu saraksta izdruka</em> – algas saraksta izdruka apstiprināšanai.</li>
+</ul>
+<p>Algu saraksta cilnē <em>Rindas</em> - <em>Rindas</em> ir pieejamas sekojošas funkcijas par katru iezīmēto darbinieku:</p>
+<ul>
+<li><em>Darbinieka detalizācija</em> – pieejama saīsne uz visiem vēsturiskajiem aprēķinu datiem, kas saistīti ar apskatīto darbinieku.</li>
+<li><em>Darba laiks</em> – pieejami pārskata mēneša dati par plānoto un faktisko darba laiku apskatītajam darbiniekam.</li>
+<li><em>Vidējā izpeļņa</em> – ja darbiniekam pārskata mēnesī ir bijusi apmaksāta prombūtne, tad var apskatīt datus par prombūtni un vidējo izpeļņu, kas izmantota prombūtnes apmaksai.</li>
+</ul>
+<p>Algu sarakstu iespējams mainīt un dzēst līdz tas ir iegrāmatots un/vai nosūtīts uz maksājuma žurnālu. Ja pēc algu saraksta nosūtīšanas uz izmaksu, izmaksas un/vai grāmatošanas atklājas nepieciešamība veikt labojumus vai precizējumus, tad jāizmanto pārrēķina iespējas vai storno funkcija. Stornēt var visu dokumentu vai tikai atsevišķu rindiņu kādam darbiniekam ( vai vairākiem darbiniekiem). Ja nepieciešams stornēt visu dokumentu, tad rīkjoslā klikšķina uz <em>Darbības</em> - <em>Storno dokumenta ģenerēšana</em>.
+Ja nepieciešams stornēt tikai darbinieku rindiņas atsevišķi, tad cilnē <em>Rindas</em> iezīmē rindiņu (vai vairākas), kuras nepieciešams stornēt un klikšķina uz <em>Rinda</em> - <em>Izveidot labojumu</em>. Sīkāk par labojumu veikšanu ir aprakstīts nodaļā <em>Labojumi un darbību atcelšana</em>.</p>
+<p>Lai saģenerētu atskaiti, kurai ir saistība ar algas aprēķinu, nav nepieciešams grāmatot algu sarakstu. Visas algu atskaites un pārskati veidojas no algu sarakstiem, neatkarīgi no to statusa.</p>
+<p>Ja algas aprēķina rezultātā <em>Izmaksāt</em> summa izveidojas negatīva (darbiniekam ir pārmaksāts), tad pārmaksātā summa tiek pārnesta uz nākamo algas aprēķinu (kā atvilkums) ar sistēmas ģenerētā ieraksta palīdzību Komponenšu reģistrā.</p>
+<h1 id="algas-izmaksa">Algas izmaksa</h1>
+<h2 id="maksājumu-sagatavošana">Maksājumu sagatavošana</h2>
+<p>Algu pārskaita uz darbinieka bankas kontu. Informāciju par bankas kodu un kontu ievada darbinieka kartiņas cilnē <em>Maksājumi</em>, bet izmaksas veidu nosaka noklusētā algas komponente (Kods: BANKA) cilnē Algas komponentes.</p>
+<p>Algas sarakstu pārskaitījumam uz banku veido klikšķinot rīkjoslā uz <em>Pārskats</em> (1) - <em>Eksports uz maksājumu žurnālu</em> (2). Opcijās var izvēlēties nepieciešamo izmaksas veidu (3):</p>
+<ul>
+<li>Izmaksa darbiniekam,</li>
+<li>Pārskaitījumi trešajām pusēm (atvilkumu izmaksas trešajām personām),</li>
+<li>Nostrādātas (abi augstākminētie kopā)</li>
+</ul>
+<p>Kā arī opcijās var izvēlēties izmaksas komponentes filtru (no kāda uzņēmuma konta tiks pārskaitīta nauda) (4), kādā maksājumu žurnāla iedaļā veidot ierakstus (5).
+Gadījumā, ja nepieciešams stornēt jau veiktus maksājumus, jāieliek ķeksis <em>Aizpildīt izmaksas storno</em> (6). Pēc žurnāla iegrāmatošanas var veidot atkārtotu izmaksu.</p>
+<p><img src="images/8.5.payout_1.png" alt="alt"></p>
+<p>Atlasot atbilstošos parametrus un nospiežot pogu <em>Labi</em>, atveras maksājumu žurnāls ar izmaksu informāciju.</p>
+<p><img src="images/8.5.payout_2.png" alt="alt"></p>
+<p>Lai iegūtu izmaksu informāciju failā, jāklikšķina uz pogām <em>Banka</em> (1) un <em>Eksportēt algu maksājumu uz failu</em> (2).</p>
+<p>Lai iegrāmatotu algu maksājumu, rīkjoslas sadaļā <em>Grāmatot/drukāt</em> (3) klikšķina uz pogas <em>Grāmatot</em>. Tomēr, ja Algu uzstādījumu cilnē <em>Visp.info</em> nav atzīmēta funkcija <em>Atļaut detalizētu maksājumu grāmatošanu</em>, tad algas maksājumu grāmatošanai sadaļā <em>Grāmatot/drukāt</em> (3) klikšķina uz pogas <em>Algu grupētais grāmatojums</em>.</p>
+<p>Papildus kontrolei un apstiprinājumam pirms algas izmaksas ir iespēja izdrukāt atskaiti ar darbinieku sarakstu un tiem izmaksājamām summām un bankas kontiem, kur tiks pārskaitīts maksājums. Atskaite pieejama rīkjoslas sadaļā <em>Atskaite</em> (4) - <em>Algu saraksta izdruka</em>.</p>
+<h2 id="maksājums-trešajām-pusēm">Maksājums trešajām pusēm</h2>
+<p>Ja pēc ieturējuma veikšanas summa jāpārskaita citai personai uz citu bankas kontu, tad jāievada atbilstoši visi bankas konta dati darbinieka kartiņā klikšķinot uz pogām <em>Saistītās</em> - <em>Papildus inform. algām</em> - <em>Pārskaitījumi</em>.</p>
+<p>Lai iestatītu maksājumu, <em>Pārskaitījumi</em> logā jāaizpilda sekojoši lauki:</p>
+<table>
+<thead>
+<tr>
+<th>Lauka nosaukums</th>
+<th>Apraksts</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Darbinieka Nr</td>
+<td>Sistēmas ģenerēts lauks.</td>
+</tr>
+<tr>
+<td>Darbinieka algas komponentes rindas Nr.</td>
+<td>Izvēlieties no saistītajam darbiniekam pievienoto komponenšu saraksta atbilstošo ieturējuma komponenti.</td>
+</tr>
+<tr>
+<td>Algas komponentes kods</td>
+<td>Tiks automātiski aizpildīts no lauka <em>Darbinieka algas komponente</em>.</td>
+</tr>
+<tr>
+<td>Piegādātāja Nr.</td>
+<td>Izvēlas no Piegādātāju saraksta maksājuma saņēmēju. Ja nepieciešams, ievada jaunu piegādātāju.</td>
+</tr>
+<tr>
+<td>Piegādātāja vārds</td>
+<td>Tiks automātiski aizpildīts no Piegādātāju saraksta.</td>
+</tr>
+<tr>
+<td>Piegādātāja bankas kods</td>
+<td>Izvēlas no piegādātāja bankas kontu saraksta nepieciešamo bankas kontu.</td>
+</tr>
+<tr>
+<td>Nosaukums</td>
+<td>Ieraksta brīvi izvēlētu maksājuma nosaukumu.</td>
+</tr>
+<tr>
+<td>Informācija par maksājumu</td>
+<td>Ieraksta maksājuma pamatojumu, ko nepieciešams atspoguļot bankas maksājuma detaļās.</td>
+</tr>
+<tr>
+<td>Izmaksu summa</td>
+<td>Sistēmas ģenerēts lauks, kas atspoguļo summu, kas aprēķināta izmaksai trešajai personai visos aprēķina periodos kopā.</td>
+</tr>
+<tr>
+<td>Maksājumu summa</td>
+<td>Sistēmas ģenerēts lauks, kas atspoguļo summu, kas ir samaksāta trešajai personai visos aprēķina periodos kopā.</td>
+</tr>
+<tr>
+<td>Atlikusī maksājumu summa</td>
+<td>Sistēmas ģenerēts lauks, kas atspoguļo summu, kas ir aprēķināta, bet nav samaksāta trešajai personai visos aprēķina periodos kopā.</td>
+</tr>
+</tbody>
+</table>
+<p>Lai veiktu izmaksu trešajām personām, jāpalaiž funkcija <em>Eksports uz maksājumu žurnālu</em> atbilstošā mēneša Algas aprēķina sarakstā, kas atrodas zem rīkjoslas pogas <em>Darbības</em>.
+Iznirstošajā logā jāievada sekojoši parametri:</p>
+<ol>
+<li>No saraksta jāizvēlas <em>Pārskaitījumi trešajām pusēm</em>;</li>
+<li>Izvēlas noklusējuma maksājuma žurnāla iedaļu;</li>
+<li>Ieraksta maksājuma grāmatošanas datumu.</li>
+</ol>
+<p><img src="images/8.5.payout_4.png" alt="alt"></p>
+<p>Maksājuma žurnālā tika izveidoti ieraksti.</p>
+<p>Lai izveidotu failu, kas jāimportē internetbankā, jānospiež <em>Banka</em> (1) un poga <em>Eksportēt</em> (2) (maksājumu fails parastiem piegādātājiem).</p>
+<p><img src="images/8.5.payout_5.png" alt="alt"></p>
+<h2 id="algu-saraksta-grāmatošana">Algu saraksta grāmatošana</h2>
+<p>Lai izveidoto algu sarakstu varētu iegrāmatot, vispirms izmanto Rīkjoslas sadaļas <em>Apstrādāt</em> (1) funkciju <em>Nodot</em> (2), lai noslēgtu algu sarakstu (3) un to vairs nebūtu iespējams rediģēt. Ar funkciju <em>Grāmatot</em> (4) tiek izveidots <em>Algas grāmatošanas buferis</em>, kurā redzami visi algas saraksta grāmatojumi rindās.</p>
+<p><img src="images/8.5.payout_6.png" alt="alt"></p>
+<p>Pārbaudot datu pareizību, jāklikšķina uz pogas <em>Labi</em>.
+Algas grāmatošanas buferis ģenerē datus no sekojošiem avotiem:</p>
+<ul>
+<li>Kontus, uz kuriem grāmatosies algu aprēķina rindas, sistēma nolasa no algas komponenšu grāmatošanas uzstādījumiem.</li>
+<li>Darba devēja sociālā nodokļa norēķinu kontu sistēma nolasa no Algas uzstādījumu lauciņa <em>Darba dev. soc. nod. konta Nr.</em>.</li>
+<li>Izdevumu konts tiek nolasīts no katras Ieņēmumu algas komponentes uzstādījumiem.</li>
+<li>Atvieglojumi un izmaksu summas netiek grāmatoti virsgrāmatā.</li>
+<li>Algas grāmatošanas buferī summas zīme nosaka debeta/kredīta pusi kolonnai Konta Nr. Ja summa ir pozitīva, tad grāmatojums būs sekojošs: 1100.00  D 72200 – K 56110 (Pirmā rinda grāmatošanas buferī).</li>
+</ul>
+<p>Algu sarakstu statusu un grāmatošanas faktu var redzēt sarakstā <em>Algu saraksti</em>.</p>
+<h2 id="algas-lapiņu-izsūtne">Algas lapiņu izsūtne</h2>
+<p>Lai no sistēmas būtu iespējams sūtīt algas lapiņas uz e-pastiem, ir nepieciešami sekojoši uzstādījumi:</p>
+<p><strong>E-pasta Konts</strong></p>
+<p>Nepieciešams izveidot e-pasta kontu. Sistēmas meklētājā ierakstiet <em>E-pastu Konti</em> un izvēlieties to no saraksta. Lai izveidotu jaunu kontu, jānospiež pogas <em>Jauns</em> - <em>Pievienot e-pasta kontu</em>. Lai sūtītu e-pastus no algas moduļa jāizvēlas Konta tips <em>SMTP - Use SMTP to send emails</em>.</p>
+<p><img src="images/24.notification_6.png" alt="alt"></p>
+<p>Aizpildiet SMTP uzstādījumus:</p>
+<p><img src="images/24.notification_7.png" alt="alt"></p>
+<p>Nākamajā solī var pārbaudīt e-pastu , kā arī iestatīt šo kontu kā noklusēto:</p>
+<p><img src="images/24.notification_8.png" alt="alt"></p>
+<p><strong>Algas uzstādījumi</strong></p>
+<p>Algas lapiņu izsūtīšanai ir nepieciešams aizpildīt informāciju <em>Algas uzstādījumos</em>:</p>
+<p><img src="images/24.notification_10.png" alt="alt"></p>
+<p>Sistēma algas lapiņas nosūtīs uz privāto e-pastu, kas norādīts darbinieka kartiņas cilnē <em>Adrese un kontaktinformācija</em>. Sūtīšana notiek, palaižot atskaiti Algas lapiņa, ieliekot ķeksi Sūtīt e-pastā.
+Klikšķiniet uz pogām <em>Pārskats</em> (1) - <em>Algas lapiņa</em> (2). Drukāšanas iestatījumu logā izvēlieties <em>Sūtīt e-pastā</em> (3), ja nepieciešams izsūtīt tikai atsevišķiem darbiniekiem, izvēlieties darbiniekus (4) un norādiet periodu (5), par kādu vēlaties izsūtīt algas lapiņas.</p>
+<p><img src="images/8.5.payout_8.png" alt="alt"></p>
+<h1 id="algas-pārrēķins">Algas pārrēķins</h1>
+<p>Šajā nodaļā aprakstītas dažādas situācijas, kad nepieciešami labojumi un izklāstīti risinājumi labojumu veikšanai.</p>
+<h2 id="storno-saraksts">Storno saraksts</h2>
+<p>Ja ir nepieciešams koriģēt aprēķinu jau <strong>iegrāmatotā/izmaksātā</strong> algu sarakstā, nodokļu summas, ienākumu summas, izmaksas summas un tamlīdzīgi, tad ir jāizmanto storno funkcionalitāte.
+Storno saraksta uzstādījumi: iepriekšējā algas saraksta maksājuma atvilkuma komponente (parasti komponente Nr. 735), ko norāda <em>Algu uzstādījumi</em> cilnē Visp. info laukā <em>Nākamā perioda apmaksas atvilkumi</em>.</p>
+<ol>
+<li>Visiem darbiniekiem algu sarakstā vienāda kļūda algu aprēķinā:
+<br> 1) algu saraksta rīkjoslā klikšķina uz pogām <em>Darbības</em> (1) - <em>Storno dokumenta ģenerēšana</em> (2); <br>2) izleks rindu ģenerēšanas logs, kur nepieciešamības gadījumā iespējams iestatīt filtrus. <br>3) tiks saģenerēts storno saraksts, kurā viss aprēķins viens pret vienu ir anulēts. Storno saraksts ir jāiegrāmato!; <br>4) veic datu labošanu un sagatavo jaunu algas aprēķinu. Pirmā algas saraksta maksājumu summa tiks iekļauta nākamajā aprēķinā kā atvilkums.</li>
+</ol>
+<p>Pēc storno iegrāmatošanas algas saraksta cilnē <em>Rindas</em> stornētajiem ierakstiem tiks ielikta pazīme (3), ka rindai ir labojums un attiecīgie darbinieku kodi iezīmēti sarkani (4). Nospiežot uz pazīmi  <em>Rindai pastāv labojums</em> (3), atvērsies storno saraksts, kurā viss aprēķins viens pret vienu ir anulēts.</p>
+<p><img src="images/10.2.corrections2_2.png" alt="alt"></p>
+<ol start="2">
+<li>Kļūda aprēķina algoritmā dēļ nepareizas nodokļa likmes, atvieglojuma apmēra u.tml.:
+<br> 1) nomaina nodokļu, atvieglojumu u.tml. likmes; <br>2) izveido jaunu algu sarakstu, iepriekšējo sarakstu nestornējot un nelabojot; <br>3) klikšķina uz pogas <em>Aprēķināt</em> un rindu ģenerēšanas logā ieslēdz funkciju <em>Veidot storno, ja pastāv aprēķins šajā mēnesī</em>. Ja nepieciešams, filtrus izvēlas tādus pašus, kā algu sarakstā, kas jālabo; <br>4) sistēma sagatavos storno sarakstu, ko nepieciešams iegrāmatot. Pirmā algas saraksta maksājumu summa tiks iekļauta nākamajā aprēķinā kā atvilkums.</li>
+</ol>
+<p><img src="images/10.1.corrections1_2.png" alt="alt"></p>
+<ol start="3">
+<li>Kļūda algas aprēķinā vienam vai vairākiem darbiniekiem:
+<br> 1) algas saraksta cilnē <em>Rindas</em> iezīmē darbinieku (vai vairākus), kuriem nepieciešams labojums. <br>2) Rīkjoslā, klikšķinot uz pogām  <em>Rinda</em> (1) - <em>Izveidot labojumu</em> (2) rindiņa tiek atzīmēta kā labota (3). <br>3) Veic albojumus un sagatavo jaunu algu sarakstu, kur veic aprēķinu tikai labotam darbiniekam (vai vairākiem).</li>
+</ol>
+<p><img src="images/10.2.corrections2_1.png" alt="alt"></p>
+<div class="TIP">
+<h5>Tip</h5>
+<p><strong>Ja sākotnējā algu saraksta izmaksa pirms storno saraksta veidošanas netika veikta (maksājums nav iegrāmatots), sistēma neatļaus eksportēt maksājumus, jo nākamajā algu sarakstā tiks ņemta vērā informācija par maksājumiem storno veidošanas brīdī. <br>Gadījumā, ja algas aprēķini ir stornēti, un jauns algas aprēķins šajā mēnesī nav izveidots, tiek atvērti visi šā mēneša ieraksti labošanai: komponenšu reģistros, prombūtnes reģistrā un uzskaitē.</strong></p>
+</div>
+<h2 id="nav-nomainīts-sociālā-statusa-kods-darbinieka-kartiņā">Nav nomainīts sociālā statusa kods darbinieka kartiņā</h2>
+<p>Nomaina sociālā statusa kodu darbinieka kartiņā un izlabo darbinieka algas komponentēs nodokļu informāciju. Veic aprēķinu ar pazīmi <em>Veidot storno, ja pastāv aprēķins šajā mēnesī</em> par mēnesi, kurā nepieciešami labojumi.</p>
+<h2 id="ar-novēlošanos-saņemta-slimības-lapa">Ar novēlošanos saņemta slimības lapa</h2>
+<p><em>Piemērs: aprēķināta un izmaksāta alga par 07.2020. No darbinieka ir saņemta slimības lapa par periodu 27.07.2020 - 05.08.2020.</em></p>
+<ol>
+<li><p>Variants - veic algas aprēķina korekciju tekošajā periodā 07.2020.
+<br>1) algas aprēķina sarakstā 07.2020 izveido labojumu attiecīgā darbinieka rindiņai. Iegrāmato storno sarakstu; <br>2) <em>Prombūtnes reģistrā</em> ievada jaunu slimības lapas ierakstu, norādot algas aprēķina mēnesi 07.2020.; <br>3) sagatavo jaunu algas sarakstu par 07.2020 un cilnē <em>Rindas</em> iekļauj tikai to darbinieku, kam jāveic labojums. Jāņem vērā, ja darbinieka nostrādāto stundu ievadei ir izmantots <em>Stundu reģistrs</em>, sistēma neveic darba algas komponentes pārrēķinu, stundu skaits jākoriģē manuāli; <br>4) atkarībā no rezultāta, jāveic piemaksa (funkcija <em>Eksports uz maksājumu žurnālu</em>) vai atvilkums (tiks iekļauts 08.2020 algas aprēķinā).</p>
+</li>
+<li><p>Variants - algu koriģē nākamajā periodā 08.2020.
+<br>1) <em>Prombūtnes reģistrā</em> ievada jaunu slimības lapas ierakstu, norādot algas aprēķina mēnesi 08.2020. <br>2) Prombūtnes kartiņā klikšķiniet uz pogas <em>Pārrēķināt</em>. Prombūtņu sarakstā šim ierakstam parādās atzīme <em>Pārrēķināts</em>. Pārrēķina rezultātā sistēma izveido tekošā perioda (08.2020.) komponenšu reģistru ar iepriekšējā mēneša darba algas koriģēšanas ierakstiem. <br>3) perioda beigās veiciet algas aprēķinu par tekošo mēnesi. Ienākuma aprēķinā būs iekļautas iepriekšējā mēneša korekcijas.</p>
+</li>
+</ol>
+<p><strong>Poga <em>Pārrēķināt</em> tiek izmantota gadījumā, ja reģistrētās prombūtnes laikā tika reģistrētas darba stundas. Visos pārējos gadījumos tiek izmantota funkcija <em>Atcelt prombūtni</em>.</strong></p>
+<h2 id="ar-novēlošanos-saņemtas-vairākas-slimības-lapas">Ar novēlošanos saņemtas vairākas slimības lapas</h2>
+<p><em>Piemērs: aprēķināta un izmaksāta alga par 07.2020. No darbinieka ir saņemta slimības lapa A par periodu 15.07.2020 - 24.07.2020 un B lapa par periodu 25.07.2020 - 03.08.2020. Pārrēķins tiks veikts nākamajā mēnesī - 08.2020.</em>
+<br>1) <em>Prombūtnes reģistrā</em> ievada A-lapu, norādot algas aprēķina mēnesi 08.2020. <strong>Nepārrēķina!</strong> <br>2) <em>Prombūtnes reģistrā</em> ievada B-lapu, norādot algas aprēķina mēnesi 08.2020. Klikšķina uz pogas <em>Pārrēķināt</em>.</p>
+<p>Kad ievadītas visas prombūtnes, vienu reizi nospiežot <em>Pārrēķināt</em>, sistēma apkopo informāciju par visām prombūtnēm, un komponenšu reģistrā tiek veikts aprēķins, ņemot vērā visas prombūtnes. Gadījumā, ja katrai prombūtnei tiks veikts pārrēķins, tad rezultātā izveidosies ieraksti dubultā, tāpēc pārrēķins ir jāveic tikai vienu reizi.</p>
+<h2 id="darbinieks-saslimst-atvaļinājuma-laikā-korekcija-nākamajā-periodā">Darbinieks saslimst atvaļinājuma laikā, korekcija nākamajā periodā</h2>
+<p><em>Piemērs: aprēķināta un izmaksāta alga par 07.2020. Darbiniekam bija piešķirts atvaļinājums 15.07.2020 - 31.07.2020. Darbinieks saslimis atvaļinājum laikā un iesniedzis slimības lapu A par periodu 19.07.2020. - 21.07.2020. un B-lapu par periodu 22.07.2020. - 31.07.2020. Korekcija tiks veikta nākamajā mēnesī - 08.2020.</em>
+<br>1) <em>Prombūtnes reģistrā</em> ievada A-lapu, norādot algas aprēķina mēnesi 08.2020. <strong>Nepārrēķina!</strong> <br>2) <em>Prombūtnes reģistrā</em> ievada B-lapu, norādot algas aprēķina mēnesi 08.2020. <strong>Nepārrēķina!</strong> <br>3) <em>Prombūtnes reģistrā</em> ievada atvaļinājumu 15.07.2020. - 18.07.2020., norādot algas aprēķina mēnesi 08.2020. <strong>Nepārrēķina!</strong> <br>4) atver sākotnējā atvaļinājuma prombūtnes kartiņu un to atceļ klikšķinot uz pogas <em>Atcelt prombūtni</em>.
+Atcelšanas rezultātā, prombūtnes kods <em>ATVAL</em> tiks nomainīts uz kodu <em>KOREKCIJA</em>, kā arī tiks izveidoti sistēmas radīti korekcijas ieraksti 08.2020 <em>Komponenšu reģistrā</em> (darba algas izmaiņas (ja ir izmaiņas), izmaksātā atvaļinājuma nauda). Šī informācija tiks iekļauta 08.2020 aprēķinā.
+Ja par prombūtni tika izveidots rīkojums, tad atcelšana notiek rīkojuma anulēšanas brīdī. Šajā gadījumā tiks atvērts tas pats logs ar datumiem.</p>
+<h2 id="darbinieks-tiek-atsaukts-no-atvaļinājuma">Darbinieks tiek atsaukts no atvaļinājuma</h2>
+<p><em>Piemērs: Darbiniekam piešķirts atvaļinājums 15.07.2020 - 31.07.2020. Aprēķināta un izmaksāta atvaļinājuma nauda un alga par 07.2020. Pēc tam, izradās, ka darbinieks ir strādājis 20.07.2020. - 21.07.2020. Korekcija tiks veikta nākamajā mēnesī - 08.2020.</em>
+<br>1) <em>Prombūtnes reģistrā</em> ievada atvaļinājumu 15.07.2020. - 19.07.2020., norādot algas aprēķina mēnesi 08.2020. <strong>Nepārrēķina!</strong> <br>2) <em>Prombūtnes reģistrā</em> ievada atvaļinājumu 22.07.2020. - 31.07.2020., norādot algas aprēķina mēnesi 08.2020. <strong>Nepārrēķina!</strong> <br>3) atver sākotnējā atvaļinājuma prombūtnes kartiņu un to atceļ klikšķinot uz pogas <em>Atcelt prombūtni</em>. Atcelšanas rezultātā, prombūtnes kods <em>ATVAL</em> tiks nomainīts uz kodu <em>KOREKCIJA</em>, kā arī tiks izveidoti sistēmas radīti korekcijas ieraksti 08.2020 <em>Komponenšu reģistrā</em>; <br>4) ja darbiniekam faktiski nostrādātās stundas tiek reģistrētas <em>Stundu uzskaitē</em>, tad ievada papildus nostrādāto stundu skaitu.</p>
+<p>Pārrēķina rezultāts tiks iekļauts 08.2020 algu sarakstā, kļūdaino un iegrāmatoto 07.2020. algas aprēķinu atstājot bez izmaiņām. Sistēma ar mīnus zīmi noņems aprēķināto atvaļinājuma naudu un pieskaitīs pamatalgu par šīm dienām. Summas tiks attiecinātas uz periodiem, par kuriem tās ir aprēķinātas.</p>
+<h2 id="prombūtnes-sākuma-vai-beigu-datuma-izmaiņas">Prombūtnes sākuma vai beigu datuma izmaiņas</h2>
+<p>Ja darbiniekam ir aprēķināta prombūtne, bet pēc algas aprēķina veikšanas tiek atklāts, ka prombūtnes periods nav bijis korekts, tad šo ir iespējams koriģēt nākamajā periodā:
+<br>1) jāievada pareiza prombūtne, Darbinieka prombūtnes kartes laukā <em>Mēnesis</em> jānorāda jau tekošā algas aprēķina mēnesis; <br>2) jāveic iepriekš nekorekti ievadītās prombūtnes atcelšana, klikšķinot prombūtnes kartiņā uz pogas <em>Atcelt prombūtni</em>; <br>3) jāveic tekošā perioda algas aprēķins. Tekošajā algu sarakstā tiek ieliktas summu atšķirības starp nekorekto un korekto prombūtni ar sistēmas ģenerētā komponenšu reģistra palīdzību.</p>
+<h1 id="izpildrakstu-apstrāde">Izpildrakstu apstrāde</h1>
+<p>Gadījumā, ja uzņēmums saņem izpildrakstu par darbinieku, tad izpildraksts jāreģistrē Sistēmā. Reģistrēšanai darbinieka kartēs sadaļā <em>Algas komponentes</em> jāievada atbilstošie ieraksti.</p>
+<p><img src="images/3.1.general_info_10.png" alt="alt"></p>
+<p><em>Konkrētajā piemērā ir ieturēti 20 % no bāzes ALIM (alga pēc nodokļu ieturēšanas) izmantojot algas komponenti Nr.740, kur minimālais ieturējums 250 EUR mēnesī, un par iepriekšējiem periodiem ir veikti ieturējumi 2000 EUR apmērā. Ieturējumam limita nav.</em></p>
+<p>Lai iestatītu izpildraksta ieturējumu, jāaizpilda sekojoši lauki:</p>
+<table>
+<thead>
+<tr>
+<th>Lauka nosaukums</th>
+<th>Apraksts</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Kods</td>
+<td>Izvēlēties algas komponenti. Atkarībā no algas komponentes uzstādījumiem tiek aprēķināta ieturējuma summa.</td>
+</tr>
+<tr>
+<td>No datuma/ Līdz datumam</td>
+<td>Ja zināms, norādiet datumus, kādā periodā jāveic ieturējums.</td>
+</tr>
+<tr>
+<td>Vērtība</td>
+<td>Aizpilda gadījumā, ja ir zināma konkrēta summa, kas tiks ieturēta katru mēnesi.</td>
+</tr>
+<tr>
+<td>Kopējais limits</td>
+<td>Norāda kopējo parāda summu pēc izpildraksta.</td>
+</tr>
+<tr>
+<td>Aprēķinātā summa</td>
+<td>Informatīvs lauks. Sistēma šeit atspoguļo kopējo ieturēto summa šim konkrētajam izpildrakstam (no visiem algu sarakstiem kopējā summa).</td>
+</tr>
+<tr>
+<td>Mēneša limits</td>
+<td>Norāda mēneša minimālo limitu.</td>
+</tr>
+<tr>
+<td>Izmaksas minimālais limits</td>
+<td>Norāda darbinieka algas izmaksas minimālo limitu. Šajā gadījumā obligāti jābūt aizpildītai izmaksas bāzei.</td>
+</tr>
+<tr>
+<td>Izmaksas limita bāze</td>
+<td>Norāda limita bāzi, ja ir norādīts izmaksas minimālais limits.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Iespējamie konfigurācijas varianti:</strong></p>
+<ul>
+<li>Tiek ieturēti 30% no darbiniekam izmaksājamās, bet ne vairāk kā 350 EUR mēnesī. Kopējā ieturamā summa 350 EUR. Parādīts, ka no darbinieka ir jau ieturēta maksimālā summa 350.00 EUR.</li>
+</ul>
+<p><img src="images/3.1.general_info_11.png" alt="alt"></p>
+<ul>
+<li>Tiek ieturēti 20%, pie nosacījuma, ka ir jānodrošina darbinieka algas izmaksas summa vismaz 370 EUR mēnesī. Kopējā ieturamā summa 350 EUR. Parādīts, ka no darbinieka ir ieturēts 36.00 EUR.</li>
+</ul>
+<p><img src="images/3.1.general_info_12.png" alt="alt"></p>
+<div class="TIP">
+<h5>Tip</h5>
+<p><strong>Sistēma nenodrošina abus variantus vienlaicīgi - kad tiek lietots <em>Mēneša limits</em> un <em>Izmaksas minimālais limits</em>!</strong></p>
+</div>
+<p>Gadījumā, ja pēc ieturēšanas jāpārskaita aprēķinātā summa uz citu bankas kontu, jāievada atbilstoši visi bankas konta dati. Darbinieka kartiņa - <em>Naviģēt</em> - <em>Papildus inform. algām</em> - <em>Pārskaitījumi</em>.</p>
+<p>Nepieciešams ievadīt sekojošu informāciju:</p>
+<ol>
+<li>Darbinieka algas komponente – izvēlēt no saraksta : darbinieka algas komponentes. Atbilstoši tiek veikta uzskaite pēc konkrētās darbinieka algas komponentes.</li>
+<li>Algas komponentes kods – tiks automātiski aizpildīts no lauka Darbinieka algas komponente.</li>
+<li>Piegādātāja Nr. – izvēlēt piegādātāju, kuram tiks pārskaitīta nauda, piemēram, tiesu izpildītājs. Gadījumā, ja tāda piegādātāja nav, piegādātājam jāizveido jauna kartiņa.</li>
+<li>Piegādātāja bankas kods.</li>
+<li>Nosaukums – maksājuma žurnālam.</li>
+<li>Informācija par maksājumu – maksājuma pamatojums, automātiski tiks aizpildīts maksājumu žurnālā.  piemēram: saskaņā ar lēmumu xxxxx par Darbinieku, pers. Kods xxxxxxxxxxx.</li>
+<li>Palaižot aprēķinu, ieturējuma summa tiks aprēķināta pēc nosacījumiem, kuri tika norādīti darbinieka algas komponentes kartē.</li>
+</ol>
+<p>Lai veiktu izmaksu trešajām personām, jāpalaiž funkcija Eksports uz maksājumu žurnālu ar sekojošiem parametriem:</p>
+<p><img src="images/10.2.corrections2_3.png" alt="alt"></p>
+<p>Maksājuma žurnālā tiek izveidots ieraksts – maksājums. Lai izveidotu failu, kurš jāimportē internetbankā, jānospiež poga <em>Eksportēt failu ar maksājumu informāciju žurnālu rindās</em> (maksājumu fails parastiem piegādātājiem).</p>
+<h1 id="uzkrātais-atvaļinājums">Uzkrātais atvaļinājums</h1>
+<p>Sistēma nodrošina atskaiti <em>Uzkrātais atvaļinājums</em>.  Atskaite atrodas: <em>Atskaites</em> - <em>Papildus atskaites</em> - <em>Uzkrātais atvaļinājums</em>.</p>
+<p><img src="images/12.vacation_accr_1.png" alt="alt"></p>
+<p>Atskaites izdrukas parametri:</p>
+<ul>
+<li>Uz datumu – norāda uz kādu datumu jāaprēķina atvaļinājumu atlikumi.</li>
+<li>Rādīt papildatvaļinājuma dienas - iespējo, ja papildus atvaļinājuma dienām atskaitē vēlas iekļaut arī papildatvaļinājuma dienas.</li>
+<li>Sūtīt uz V/G žurnālu – ķeksis jāieliek gadījumā, ja izveidojot atskaiti, jāizveido ieraksti virsgrāmatas žurnālā.</li>
+<li>V/G žurn. veidne – jānorāda virsgrāmatas žurnāla veidnes nosaukums.</li>
+<li>V/G žurn. iedaļa – jānorāda virsgrāmatas žurnāla iedaļas nosaukums.</li>
+<li>Uzkrājumu komponentes kods – jānorāda algas komponentes kods, kurā norādīti visi grāmatojumu uzstādījumi. Ieteicams izveidot atsevišķu algu komponenti, kura netiks izmantota algu aprēķinos.</li>
+</ul>
+<p>Palaižot atskaiti, norādītajā virsgrāmatas žurnālā tiks izveidoti grāmatojumi:</p>
+<ol>
+<li>Atvaļinājumu uzkrājumu grāmatojumi uz atskaitē norādīto datumu.</li>
+<li>Atvaļinājumu uzkrājumu grāmatojumi ar mīnus zīmi ar nākama mēneša pēdējo datumu.</li>
+</ol>
+<p>Gadījumā, ja nepieciešams veidot atvaļinājumu uzkrājumus pa dimensijām, atskaites parametros nepieciešams noradīt atbilstošas dimensijas. Dimensijas vērtība tiks meklēta darbinieka amatā, ja netiks atrasta, un uzstādījumos neatzīmēts ķeksis Nelietot hierarhiju, tad meklēs darbinieka dimensijas vērtību. Atskaites izdrukā būs sagrupēti darbinieki pa šo dimensiju un apakšā pa kontējumu grupām un dimensijas vērtībām divas summas. Ja tiks atzīmēts ķeksis <em>Sūtīt uz V/G žurnālu</em>, tad veidos V/G žurnāla rindas pa dimensijām. Arī, jāņem vērā, ja žurnāla rindai būs citas dimensijas, tad šī dimensija papildina esošu, respektīvi kombinēs kopā dimensijas rindā.</p>
+<h1 id="statistikas-atskaites">Statistikas atskaites</h1>
+<p>Sistēmā ir iespējams izveidot atskaiti statistikai 2-Darbs un 5-Darbs. Atskaite strādā uz uzstādījumu pamata, ko lietotājs pats var definēt.</p>
+<h2 id="2-darbs">2-Darbs</h2>
+<h3 id="uzstādījumi-2">Uzstādījumi</h3>
+<p>Uzstādījumi ietverti sekojošos logos:</p>
+<ul>
+<li><p>Darbs-2 summu kodi. Nepieciešams nodefinēt summu kodus, kurus sistēmai ir jāatrāda 2-Darbs atskaitē. Tabula 2-Darbs Summu kodi sastāv no sekojošiem laukiem:</p>
+<ul>
+<li>Kods – brīvi nodefinēts kods;</li>
+<li>Apraksts – koda apraksts;</li>
+<li>Bāzes kods – izvēlēts kods no bāzes summu klasifikatora, kur ir nodefinēts, no kādām komponentēm sastāvēs konkrētā bāzes summa.</li>
+</ul>
+</li>
+<li><p>Darbs-2 stundu kodi. Nepieciešams nodefinēt prombūtnes, kas tiks izmantotas 2-Darbs atskaite. Tabulā 2-Darbs stundu kodi ir sekojoši lauki:</p>
+<ul>
+<li>Kods – brīvi nodefinēts kods;</li>
+<li>Apraksts – koda apraksts;</li>
+<li>Prombūtnes iemesla filtrs – jānorāda prombūtnes, ko saturēs konkrētais 2-Darbs stundu kods.</li>
+</ul>
+</li>
+<li><p>Darbs-2 uzstādījumi. Šie uzstādījumi nosaka atskaites izskatu. Šajos uzstādījumos tiek definēts, kas tiks atrādīts kolonnās un rindās. 2-Darbs stundu uzstādījumi satur sekojošus laukus:</p>
+<ul>
+<li>Sadaļa – norāda, kurā atskaites sadaļā ir jāatrāda dati. Brīvi ierakstāms skaitlis ar roku atbilstoši 2-Darbs atskaites prasībām no Centrālās statistikas mājas lapas;</li>
+<li>Rindas kods – norāda rindas kodu atbilstoši 2-Darbs atskaites prasībām no Centrālās statistikas mājas lapas;</li>
+<li>Rindas apraksts – rindas apraksts atbilstoši 2-Darbs atskaites prasībām no Centrālās statistikas mājas lapas;</li>
+<li>Kolonna – norāda kolonnu, kurā ir jāatrāda dati – pavisam iespējams četras kolonnas;</li>
+<li>Rindas tips – norāda, kādi dati tiks atrādīti konkrētā rindā (Darbinieki – darbinieku skaits; Summas; Stundas faktiski – faktiski nostrādātās stundas; Stundas citas – nav nostrādātas, bet apmaksātas, piemēram, slimības lapas, atvaļinājumi.)</li>
+<li>Dzimums – jāizvēlas konkrēts dzimums (Abi; Sievietes; Vīrieši)</li>
+<li>Slodze – izvēlas, kurus datus atrādīt (Visi; Pilna slodze; Nepilna slodze)</li>
+<li>Profesijas kods – izvēlas atbilstošo profesijas kodu, kas nepieciešams;</li>
+<li>Rezidence (Visi; Nerezidenti; Rezidenti)</li>
+<li>Uzņēmuma līgums – vai atrādīt datus tikai par uzņēmuma līgumiem vai nē (Visi; Jā; Nē)</li>
+<li>Darba laiks nav nosakāms – vai atrādīt datus tikai par nodarbinātajiem, par kuru darba izpildi nav iespējams noteikt faktiski nostrādātās stundas (Visi; Jā; Nē)</li>
+<li>Darba grāmatiņa (Visi; Jā; Nē)</li>
+<li>Summas koda filtrs – ja Rindas tips ir norādīts kā Summas, tad norāda Summas koda filtru, kas tika nodefinēts pie 2-Darbs summu kodiem</li>
+<li>Aktivitāte periodā – norāda, par kuru perioda posmu dati ir jāatrāda (Perioda sākums; Perioda beigas; Pilns periods; Daļa perioda; Visi)</li>
+<li>Ceturkšņa mēnesis – norāda, par kuru ceturkšņa mēnesi ir jāatrāda dati (Visi;1; 2; 3)</li>
+<li>Summas filtrs – jānorāda, vai rādīt tikai tās vērtības, kas lielākas par nulli, vai tikai nulles, vai visas (Visi; &gt;0; =0)</li>
+<li>Stundu koda filtrs – ja Rindas tips ir norādīts kā Stundas faktiski vai Stundas citas, tad norāda Stundu koda filtru, kas tika nodefinēts pie 2-Darbs stundu kodiem;</li>
+<li>Stundu filtrs – jānorāda, vai rādīt tikai tās vērtības, kas lielākas par nulli, vai tikai nulles, vai visas (Visi; &gt;0; =0)</li>
+</ul>
+</li>
+</ul>
+<p>Laukā <em>Nerezidenti</em> tiks saskaitīti darbinieki, kuriem uz ceturkšņa pēdējo datumu darbinieka kartē ir spēkā esošs darba atļaujas termiņš. Tas nozīmē, ja darbinieks no sākuma bijis Nerezidents, pēc tam viņam bija piešķirts statuss Rezidents, līdz datumam, kurš norādīts laukā Darba atļaujas termiņš priekš 2-Darbs, viņš būs kā nerezidents.</p>
+<h3 id="atskaite">Atskaite</h3>
+<p>Kad definēti visi uzstādījumi, var uzģenerēt atskaiti: Lomu centrs - <em>Statistikas atskaites</em> – 2-Darbs – Jauns.</p>
+<p>Nepieciešams aizpildīt sekojošus laukus:</p>
+<ul>
+<li>Nr. – ieraksta atskaites numuru;</li>
+<li>Gads – norāda gadu, par kuru atskaite tiks ģenerēta;</li>
+<li>Ceturksnis – norāda ceturksni, par kuru atskaite tiks veidota;</li>
+<li>Apraksts;</li>
+<li>Statuss (Atvērts vai Slēgts)</li>
+</ul>
+<p>Lai izveidotu atskaiti, ir jāizmanto funkcija <em>Ģenerēt visus datus</em>. Vispirms izejas dati tiek uzģenerēti apakštabulā, pēc tam tie tiek sasummēti atskaitē. Līdz ar to zem katras summas, noklikšķinot uz to, pieejama detalizācija – atsevišķa rinda katram darbiniekam, kurš atbilst konkrētās šūnas uzstādījumiem. Apakštabulas līmenī pieejamie dati ir rediģējami. Līdz ar to, tos iespējams koriģēt, ja nepieciešams. Lai iegūtu koriģētos datus atskaites līmenī, jāizmanto funkcija <em>Atsvaidzināt datus</em>.</p>
+<h2 id="5-darbs">5-Darbs</h2>
+<p>Atskaite atrodas Lomu centrs - <em>Statistikas atskaites</em> – <em>Darbs-5</em>.</p>
+<p>Atskaites parametros jānorāda sekojoša informācija:</p>
+<ul>
+<li>Datums no – perioda sākums;</li>
+<li>Datums līdz – perioda beigas;</li>
+<li>Bruto darba samaksas bāzes kods – jānorāda bāze, kādas algas komponentes jāiekļauj atskaitē;</li>
+<li>Bruto darba samaksas bāzes kods ar nered. Izm. – jānorāda bāze, kādas komponentes jāiekļauj atskaitē;</li>
+<li>Virsstundu bāzes kods – jānorāda bāze, kādas algas komponentes raksturo virsstundas. No algu aprēķiniem tiks paņemta gan summa, gan stundas;</li>
+<li>Piemaksas bāzes kods – jānorāda bāze, kādas algas komponentes tiks  apkopotas kolonnā <em>Piemaksas</em>;</li>
+<li>Slimības naudas bāzes kods – jānorāda bāze, kādas algas komponentes raksturo slimības naudas aprēķinu;</li>
+<li>Prombūtnes koda filtrs – jānorāda prombūtnes iemesli, kuri samazina mēnešu skaitu, par kuriem tiek aprēķināta alga.</li>
+<li></li>
+</ul>
+<p><strong>Jāpievērš uzmanība:</strong></p>
+<ul>
+<li>Kolonnā <em>Dzimums</em>: <em>1</em> – sieviete,  <em>2</em> – vīrietis,  <em>0</em> – nav norādīts dzimums;</li>
+<li>Dzimšanas datums – darbinieka karte, lauks Dzimšanas datums;</li>
+<li>Izglītība – darbinieka kvalifikācija, lauks Līmenis. Tiks ņemts ieraksts, kuram ir ielikts ķeksis <em>Aktuālā informācija</em>;</li>
+<li>Profesijas kods – uz perioda beigām spēkā esošais kods;</li>
+<li>Slodze – uz perioda beigām spēkā esoša slodze;</li>
+<li>Darba vai uzņēmuma līgums: <em>1</em>  - nav ielikts ķeksis Uzņēmuma līgums, <em>2</em> – ir ielikts ķeksis Uzņēmuma līgums;</li>
+<li>Nostrādāto pilno gadu skaits – nav apaļošanas, tikai pilnie gadi saskaņā ar 5-Darbs prasībām;</li>
+<li>Visas summas tiks apkopotas pēc aprēķina datuma;</li>
+<li>Pastāv iespēja izvēlēties konkrētu struktūrvienību;
+Lai izslēgtu darbiniekus, kuri pieņemti pēc <em>Līdz datumam</em>, jāieliek atbilstošs filtrs (piemēram, <em>&lt;&gt;&quot;|..31.10.20</em>)</li>
+</ul>
+<p><strong>!!! Atvaļinājuma dienas netiek apstrādātas, jo pēc statistikas pārvaldes skaidrojumiem (telefoniski), viņi grib redzēt vai nu 0 (ja darbinieks nostrādājis mazāk par 6 mēnešiem) vai 20 (ja nostrādājis visu gadu). Ņemot vērā, ka tas iet kopā ar DL, tas netiek realizēts.</strong></p>
+<h1 id="algas-atskaites">Algas atskaites</h1>
+<p>Programma nodrošina visu Latvijas likumdošanā noteikto obligāto atskaišu sagatavošanu un eksportēšanu uz EDS. Tādas kā:</p>
+<ul>
+<li>Ziņojums par VSOAI;</li>
+<li>Ziņas par darba ņēmējiem;</li>
+<li>Paziņojums par fiziskām personām izmaksātām summām;</li>
+<li>Paziņojums par izmaksātiem ienākumiem nerezidentiem.</li>
+</ul>
+<p>Kā arī iespējams izdrukāt atskaites iekšējai lietošanai, tādas kā:</p>
+<ul>
+<li>Statistika 2-Darbs;</li>
+<li>Algu saraksts;</li>
+<li>Izmaksa uz banku/kasi;</li>
+<li>Vidējās izpeļņas aprēķina atskaite;</li>
+<li>Personīgais konts;</li>
+<li>Uzkrātā atvaļinājuma aprēķina atskaite;</li>
+<li>Algas lapiņas izdruka;</li>
+<li>Algas komponenšu kopsummas;</li>
+<li>Darbinieku AK pa mēnešiem.</li>
+</ul>
+<h2 id="pfpis-dokumenta-veidošana">PFPIS dokumenta veidošana</h2>
+<p>Lai izveidotu paziņojumu par fiziskajām personām izmaksātajām summām, jāveido jauns dokuments-buferis funkcijā <em>PFPIS saraksts</em>, uz kuru saīsne pieejama no algu Lomu centra.</p>
+<p>PFPIS buferis sastāv no 3 daļām:</p>
+<p><strong>Visp. informācija</strong></p>
+<p><strong>Kopsummas</strong></p>
+<p><strong>PFPIS rindu apakšforma</strong></p>
+<p>Virsrakstā tiek norādīta vienam buferim kopīgā informācija, bet katrā rindā tiek norādīta vienam darbiniekam atbilstoša informācija. Virsraksts satur sekojošu informāciju:</p>
+<p><strong>Visp. info</strong></p>
+<ul>
+<li>Nr. – PFPIS dokumenta numurs;</li>
+<li>Kods – uzņēmuma reģistrācijas Nr.;</li>
+<li>Apraksts – dokumenta apraksts;</li>
+<li>Gads – bufera veidošanas gads;</li>
+<li>Mēnesis – bufera veidošanas mēnesis;</li>
+<li>Noslēgts – pazīme, ka buferis ir noslēgts;</li>
+<li>Izpildītājs – atbildīgās personas vārds un uzvārds;</li>
+<li>Izpildītāja tālruņa nr. – atbildīgās personas tālruņa nr.</li>
+</ul>
+<p><strong>Kopsummas</strong></p>
+<ul>
+<li>R05..R16 – bufera rindu vērtību lauku kopsummas.</li>
+</ul>
+<p><strong>PFPIS bufera rindu apakšforma</strong></p>
+<ul>
+<li>Darbinieka Nr. – Navision darbinieka Nr. (neobligāts);</li>
+<li>Kods – darbinieka personas kods;</li>
+<li>Nosaukums – darbinieka vārds un uzvārds;</li>
+<li>Ienākuma kods – no ienākumu veidu klasifikatora;</li>
+<li>Ienākuma veids – no ienākumu veidu klasifikatora nosaukums;</li>
+<li>Periods no – periods, no kura gūti konkrētie ienākumi;</li>
+<li>Periods līdz – periods, līdz kuram gūti konkrētie ienākumi;</li>
+<li>Ienākuma izmaksas datums – datums, kad izmaksāti ienākumi;</li>
+<li>R05..R16 – PFPIS atskaitei atbilstošās summas;</li>
+<li>R09a – atvieglojumu kods no klasifikatora.</li>
+</ul>
+<p>Jāpievērš uzmanība, ka, aizpildot dokumentu par atbrīvotajiem darbiniekiem, laukā <em>Mēnesis</em> jānorāda mēnesis, kurā darbinieks tiek atbrīvots.
+Gadījumā, ja ir vairāki darbinieki, ģenerējot ierakstus, ir iespējams norādīt atbrīvošanas periodu filtru lauciņā rindu ģenerēšanas funkcijas logā.</p>
+<p><strong>Laukā <em>Mēnesis</em> tiek izvēlēts <em>Gads</em> tikai veidojot paziņojumu par aktīviem uz 31. decembri darbiniekiem.</strong></p>
+<h1 id="darbinieku-apdrošināšanas-risinājums">Darbinieku apdrošināšanas risinājums</h1>
+<h2 id="uzstādījumi-3">Uzstādījumi</h2>
+<p>Darbinieku apdrošināšanas uzstādījumi tiek aizpildīti:
+algu Lomu centrs - <em>Administrēšana</em> - <em>Algas uzstādījumi</em>:</p>
+<p><strong>Cilne <em>Numerācija</em></strong></p>
+<ul>
+<li>Darb. apdrošināšanas numuri- norāda numerāciju darbinieku apdrošināšanas ierakstiem.</li>
+</ul>
+<p><strong>Cilne <em>Apdrošināšana</em></strong></p>
+<ul>
+<li>Ar nod. neapl. apdrošināšanas kods – jābūt norādītai atbilstošai algas komponentei. Šis uzstādījums tiek nokonfigurēts veidojot jaunu datu bāzi un nav ieteicams šo uzstādījumu modificēt bez BC programmas apkalpotāju konsultācijas.</li>
+<li>Atvilkuma apdrošināšanas kods – jābūt norādītai atbilstošai algas komponentei. Šis uzstādījums tiek nokonfigurēts veidojot jaunu datu bāzi un nav ieteicams šo uzstādījumu modificēt bez BC programmas apkalpotāju konsultācijas.</li>
+<li>Ar nod. apl. apdrošināšanas kods – jābūt norādītai atbilstošai algas komponentei. Šis uzstādījums tiek nokonfigurēts veidojot jaunu datu bāzi un nav ieteicams šo uzstādījumu modificēt bez BC programmas apkalpotāju konsultācijas.</li>
+<li>Apdrošināšanas algas bāzes kods – atbilstošais algas bāzes kods. Šis uzstādījums tiek nokonfigurēts veidojot jaunu datu bāzi un nav ieteicams šo uzstādījumu modificēt bez NAV programmas apkalpotāju konsultācijas.</li>
+<li>Apdrošināšanas limita procenti – pēc likumdošanas noteiktais apdrošināšanas prēmiju summas procents no maksātājam aprēķinātās bruto darba samaksas taksācijas gadā, kuru izslēdz no maksātāju ienākumiem, par kuriem maksā algas nodokli un valsts sociālās apdrošināšanas obligātās iemaksas (bet ne vairāk, kā Apdrošināšanas limita summa).</li>
+<li>Apdrošināšanas limita summa – pēc likumdošanas noteiktā maksimālā apdrošināšanas prēmiju summa gadā, kuru izslēdz no maksātāju ienākumiem, par kuriem maksā algas nodokli un valsts sociālās apdrošināšanas obligātās iemaksas.</li>
+</ul>
+<h2 id="darbinieku-apdrošināšanas-uzskaite">Darbinieku apdrošināšanas uzskaite</h2>
+<p>Darbinieku apdrošināšanas uzskaites reģistrs pieejams, ievadot
+sistēmas meklētājā <em>Darbinieku apdrošināšanas</em></p>
+<h3 id="cilne-visp-info-7">Cilne <em>Visp. info</em></h3>
+<p>Aizpildot darbinieka apdrošināšanas kartiņu jānorāda:</p>
+<ul>
+<li>Nr. – tiek norādīta Num. sērija no uzstādījumiem;</li>
+<li>Darbinieka Nr. – apdrošināmā darbinieka numurs;</li>
+<li>Nosaukums – norāda apdrošināšanas maksājumu aprakstu;</li>
+<li>Kopsumma – apdrošināšanas maksājumu kopējā summa;</li>
+<li>Dimensijas kods (Nodaļas kods, Projekta kods) – apdrošināšanas prēmiju aprēķiniem atbilstošās dimensiju vērtības. Ja jāizmanto tās pašas dimensijas, kas ir aizpildītas darbinieka kartiņā, tad šie lauku jāatstāj tukši;</li>
+<li>No datuma – apdrošināšanas maksājumu sākuma datums;</li>
+<li>Līdz datumam – apdrošināšanas maksājumu beigu datums.</li>
+</ul>
+<h3 id="cilne-rindu-ģenerēšanas-nosacījumi">Cilne <em>Rindu ģenerēšanas nosacījumi</em></h3>
+<p>Šajā sadaļā tiek aizpildīta informācija, pēc kuras tiks ģenerētas apdrošināšanas prēmiju rindas, kas tiks izmantotas algas aprēķinos.</p>
+<ul>
+<li>Periods – jānorāda apdrošināšanas maksājumu summas sadalījuma periods:
+<ul>
+<li>Mēnesis – tiek norādīts, ja apdrošināšanas maksājums tiek sadalīts proporcionāli pa mēnešiem</li>
+<li>Diena – tiek norādīts, ja apdrošināšanas maksājums tiek sadalīts proporcionāli pa dienām;</li>
+<li>Nedēļa – tiek norādīts, ja apdrošināšanas maksājums tiek sadalīts proporcionāli pa nedēļām;</li>
+<li>Ceturksnis – tiek norādīts, ja apdrošināšanas maksājums tiek sadalīts proporcionāli pa ceturkšņiem;</li>
+<li>Gads – tiek norādīts, ja apdrošināšanas maksājums tiek sadalīts proporcionāli pa gadiem;</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>Summa uz perioda sākumu/beigām – jānorāda uz kuru norādītā perioda daļu (sākumu vai beigām) proporcionāli sadalītā summa tiks aprēķināta;</li>
+<li>Summas sadalījums – jānorāda par kādu periodu summa tiks proporcionāli dalīta.</li>
+</ul>
+<p><strong>Piemērs</strong>
+Lai iestatītu sadalījumu pa gadiem proporcionāli dienām, jāveic sekojoši iestatījumi:</p>
+<p><img src="images/15.2.insurance1.png" alt="alt"></p>
+<p>Lai būtu iespēja sadalīt apdrošināšanas summu pa gadiem, laukā <em>Periods</em> jāizvēlas Gads. Gadījumā, ja summas sadalījums ir pa dienām, tad katram gadam tiks sarēķināta summa atkarībā no apdrošināšanas polises konkrētā gada dienu skaita.<br>
+Summa uz periodu sākumu/beigām definē kādā aprēķina periodā tiks izveidota darbinieka algas rinda algu sarakstā.
+Jāpievērš uzmanība, ka gadījumā, ja tiks noradīts Gads un Beigas, tad apdrošināšanas polises rindās tiks izveidots ieraksts ar datumu 31.12.2020. Tas nozīmē, ka šis ieraksts tiks apstrādāts tikai 2020. gada decembrī. Ja darbinieks tiks atbrīvots līdz 2020. decembrim, darbiniekam netiks piereģistrēta apdrošināšanas summa algu sarakstos, tāpēc  apliekamās summas aprēķins netiks veikts. Šajā gadījumā jākoriģē algas saraksts manuāli.</p>
+<p><img src="images/15.2.insurance2.png" alt="alt"></p>
+<h3 id="apdrošināšanas-prēmiju-rindas">Apdrošināšanas prēmiju rindas</h3>
+<p>Apdrošināšanas prēmiju rindas tiek ģenerētas automatizēti, izmantojot lentē funkciju <em>Veidot ierakstus</em>.
+Pēc šīs funkcijas nospiešanas sistēma sadaļā Rindas izveidos apdrošināšanas prēmiju rindas pēc iepriekš norādītajiem nosacījumiem.</p>
+<h2 id="apdrošināšanas-polišu-summu-uzskaite-darba-algas-aprēķinā">Apdrošināšanas polišu summu uzskaite darba algas aprēķinā</h2>
+<p>Pēc aizpildītās informācijas apdrošināšanas iestatījumos, summas tiek iekļautas darba algas aprēķinā.</p>
+<p>Veicot darba algas aprēķinus par periodiem no janvāra līdz novembrim, sistēma apdrošināšanas maksājumiem nodokļus nepiemēro un tos iekļauj ar nodokli neapliekamajos ienākumos.
+Veicot darba algas aprēķinus par gada pēdējo mēnesi, sistēma veic apdrošināšanas maksājumu aprēķinu par gadu kopumā un, ja apdrošināšanas maksājumiem ir iestājies kāds no likumdošanas ierobežojošajiem nosacījumiem, tad sistēma darba algas aprēķinā sadala apdrošināšanas prēmiju divās daļās, un ar nodokli apliekamajai apdrošināšanas maksājuma daļai piemēro nodokļus un obligātās iemaksas.
+Apdrošināšanas maksājumu kopsavilkuma aprēķinu par tekošo kalendāro gadu un, ja nepieciešams arī nodokļu aprēķinu, sistēma veic arī mēnesī, kad darbinieks tiek atbrīvots.</p>
+<p><strong>Lai iegūtu apliekamo un neapliekamo apdrošināšanas summu pārskatu, izdrukājiet atskaiti <em>Aprēķināt apdrošināšanas gada noslēgumu</em>, kas pieejams no saraksta <em>Darbinieku apdrošināšanas</em>, klikšķinot uz izvēlnes <em>Pārskats</em>.</strong></p>
+<h2 id="apdrošināšanas-prēmiju-imports">Apdrošināšanas prēmiju imports</h2>
+<p>Sistēma piedāvā iespēju importēt darbinieku apdrošināšanas prēmiju sarakstu no MS Excel faila.</p>
+<h3 id="faila-sagatavošana">Faila sagatavošana</h3>
+<p>Jāizveido Excel fails ar importēšanai nepieciešamo informāciju, izvietojot kolonnu nosaukumus un ierakstot rindiņas ar datiem precīzi kā norādīts piemērā:</p>
+<p><img src="images/15.5.insurance1.png" alt="alt"></p>
+<h3 id="faila-importēšana">Faila importēšana</h3>
+<p>Sistēmas meklētājā ierakstiet <em>Importēt darbinieku apdrošināšanas</em>.</p>
+<p>Atlases nosacījumos jānorāda:</p>
+<ul>
+<li>Darbagrāmatas faila nosaukums – importējamais fails;</li>
+<li>Darblapas nosaukums – importējamā faila lapa (ja izveidotajā Excel failā ir vairākas) ar apdrošināšanas prēmiju datiem.</li>
+</ul>
+<p>Rindu ģenerēšanas nosacījumi:</p>
+<ul>
+<li>Periods – jānorāda apdrošināšanas maksājuma summas sadalījuma periods:
+<ul>
+<li>Mēnesis – tiek norādīts, ja apdrošināšanas maksājums tiek sadalīts proporcionāli pa mēnešiem;</li>
+<li>Diena – tiek norādīts, ja apdrošināšanas maksājums tiek sadalīts proporcionāli pa dienām;</li>
+<li>Nedēļa – tiek norādīts, ja apdrošināšanas maksājums tiek sadalīts proporcionāli pa nedēļām;</li>
+<li>Ceturksnis – tiek norādīts, ja apdrošināšanas maksājums tiek sadalīts proporcionāli pa ceturkšņiem;</li>
+<li>Gads – tiek norādīts, ja apdrošināšanas maksājums tiek sadalīts proporcionāli pa gadiem;</li>
+</ul>
+</li>
+<li>Summa uz perioda sākumu/beigām – jānorāda uz kuru norādītā perioda daļu (sākumu vai beigām) proporcionāli sadalītā summa tiks aprēķināta;</li>
+<li>Summas sadalījums – jānorāda par kādu periodu summa tiks proporcionāli dalīta.</li>
+</ul>
+<h1 id="nodokļu-grāmatiņu-imports-no-eds">Nodokļu grāmatiņu imports no EDS</h1>
+<p>Lai katru mēnesi nevajadzētu veikt izmaiņas par darbinieku atvieglojumiem manuāli, tiek realizēts nodokļu grāmatiņu datu imports: algu Lomu centrs - <em>Uzdevumi</em> - <em>Algas grāmatiņas importa saraksts</em>.</p>
+<p>Tiek veidots jauns dokuments, kur ievada sekojošu informāciju:</p>
+<ul>
+<li>Nr. - tiek ievadīts manuāli;</li>
+<li>Reģistrācijas Nr.  – tiek aizpildīts no faila</li>
+<li>Uzņēmuma nosaukums - tiek aizpildīts no faila</li>
+<li>Tips – pastāv divas iespējas:
+<ul>
+<li>Viss - importēt visu informāciju par atvieglojumiem , tiek aizpildīts no faila;</li>
+<li>Izmaiņas - importē tikai izmaiņas. EDS atskaites opcijai jābūt <em>iekļaut visas izmaiņas</em> ( gan neapliekamais minimums, gan visas citas izmaiņas). Pretējā gadījumā sistēma iedos kļūdas paziņojumu.</li>
+</ul>
+</li>
+<li>Neapl. minimuma komponentes kods – jāizvēlas no saraksta;</li>
+<li>No datuma – perioda sākums, tiek aizpildīts no faila ar iespēju rediģēt</li>
+<li>No datuma failā – aizpildīts no faila</li>
+<li>Līdz datumam – perioda beigas, tiek aizpildīts no faila</li>
+<li>Izveidošanas datums, tiek aizpildīts no faila.</li>
+</ul>
+<ol>
+<li>solis:  nospiest pogu <em>Importēt</em>, noradīt ceļu līdz failam. Pastāv iespēja norādīt no kāda datuma apstrādāt darbinieku algas komponentes. Gadījumā, ja nekādi pārrēķini par iepriekšējiem mēnešiem netiks veikti, šo datumu var nelabot.</li>
+<li>solis: ieimportējot datus, tie ir jāapstrādā. Jāpalaiž funkcija <em>Apstrādāt</em>. Pēc datu apstrādes var apskatīt gan ieimportētus datus, gan piedāvātas izmaiņas.</li>
+</ol>
+<p>Atverot atbilstošu kolonnu, var noņemt filtru un nepieciešamības gadījumā manuāli veikt labojumus (piemēram, neapliekamā minimuma summas).</p>
+<p><strong>Neapl. minimuma summas var labot tikai kolonnā <em>Neapliekama minimuma rindu skaits</em>. Tikai pēc summu labojumiem jānospiež <em>Apstrādāt</em>. Ja pirms tam tika apstrādātas rindas, bet netika apstiprinātas, tad vēlreiz jāapstrādā.</strong></p>
+<p><strong>Lai katru mēnesi nevajadzētu mainīt neapliekamā minimuma summas, kuras tiek mainītas pēc darbinieka iesnieguma, ieteicams palūgt darbinieku par šīs pazīmes ielikšanu EDSā.</strong></p>
+<p><strong>Sistēma apstrādā papildatvieglojumus: Pirmās, otrās un trešās grupa invaliditātei. Par citiem papildatvieglojumiem (politiski represētām personām, vai nacionālās pretošanās kustības dalībniekiem) tiek atrādīts brīdinājums par manuālo apstrādi. Gadījumā, ja invaliditāte ir līdz konkrētam datumam un darbiniekam pienākas neapliekamais minimums pēc EDS datiem, sistēma pārbaudīs katru neapliekamā minimuma ierakstu (vai šajā periodā darbiniekam bija spēkā invaliditāte vismaz vienu dienu) un atkarībā no tā atstās vērtību vai anulēs. Pabalsta par invaliditāti saņēmējiem pienākas gan neapliekamais minimums, gan papildatvieglojums. Pensijas saņēmējiem (par invaliditāti) pienākas tikai papildatvieglojums.</strong></p>
+<p><strong>Gadījumā, ja manuāli ievadīti dati par iepriekšējo periodu, piemēram NM 01.08.20 līdz 31.08.20, bet importēti dati, kuri spēkā no 01.09.2020, iepriekš izveidotais ieraksts netiks apstrādāts. Ja failā būs periods NM 01.08.20 līdz 31.12.20, tad rezultātā par augustu būs 2 NM ieraksti. Iesakām vai nu visu laiku importēt vai, ievadot informāciju manuāli, atstāt ierakstu atvērtu (bez beigu datuma), tad sistēma anulēs šo ierakstu un izveidos korektu.</strong></p>
+<p>Visas izmaiņas var apskatīties kolonnā <em>Izmaiņu skaits</em>. Katrai rindai noradīta darbība, kura tiks veikta pēc apstiprināšanas.</p>
+<p>Algas grāmatiņas importa izmaiņu sarakstā pastāv iespēja kaut ko pielabot. Piemēram, ja darba devējs nevelētos importēt apgādājamas personas, var atlasīt tādus ierakstus un izdzēst.
+Gadījumā, ja izmaiņas ir korektas, jāiezīmē korektā rindiņa un jānospiež poga <em>Apstiprināt</em>. Darbinieku algas komponentēs tiks veiktas izmaiņas. Lai būtu apstrādāti pensionāri un izdienas pensionāri, jābūt sekojošiem uzstādījumiem Soc. statusi:</p>
+<p><img src="images/16.tax_book1.png" alt="alt"></p>
+<p>Apstrādājot datus par pensionāriem, sistēma pārbauda darbinieka kartē lauku Soc. Statusa Kods. Gadījumā, ja statusa kods ir DP (atbilst pensionāriem), tad neapliekamo minimumu apstrāde ir līdzīga parastiem darba ņēmējiem. Soc. likmes jebkurā gadījumā tiks pārbaudītas.</p>
+<p><strong>Gadījumā, ja pirms importa darbiniekam tika piešķirts DN statusa kods un tiek saņemta informācija par vecuma pensiju, tad neapliekamā minimuma No Datums ir vienāds ar nākamā mēneša 1. datumu. Bet, ja sistēmā jau ir DP statusa kods, tad neapliekamā minimuma datums ir vienāds ar neapliekamā minimuma datumu no EDS faila.</strong></p>
+<h1 id="datu-imports-no-eds">Datu imports no EDS</h1>
+<h2 id="slimības-lapu-imports-no-eds">Slimības lapu imports no EDS</h2>
+<p>Lai katru mēnesi nevajadzētu reģistrēt sistēmā slimības lapas manuāli, sistēmā ir nodrošināts slimības lapu imports.</p>
+<p>Importa sekmīgai norisei ir nepieciešami sekojoši uzstādījumi: algu Lomu centrs - <em>Administrēšana</em> - <em>Slimības lapu importa uzstādījumi</em>.
+Uzstādījumiem pieejami sekojoši lauki:</p>
+<ul>
+<li>Slimības lapu numuri – numuru sērija;</li>
+<li>Slimības lapas A prombūtnes kods – no kataloga Prombūtnes iemesli definēts prombūtnes kods slimības lapai A;</li>
+<li>Slimības lapas B prombūtnes kods – no kataloga Prombūtnes iemesli definēts prombūtnes kods slimības lapai B.</li>
+</ul>
+<p>Slimības lapu imports tiek veikts: algu Lomu centrs - <em>Uzdevumi</em> - <em>Slimības lapu importa saraksts</em>.</p>
+<p>Lai veiktu importu, jāizveido jauns dokuments. Numuru sistēma piešķirs automātiski. Pēc numura piešķiršanas var importēt failu (poga <em>Importēt</em>). Sistēma pieprasīs noradīt ceļu, kur atrodas fails.</p>
+<p>Pēc importa, sistēmas lietotājs pārbauda datus, nepieciešamības gadījumā rediģē datus (darbinieka nr., prombūtnes kods). Tad nospiež pogu <em>Apstrādāt rindas</em>, un sistēma pabrīdinās, ka apstrādātas rindas tiks izdzēstas. Rezultātā tiks izveidotas prombūtnes.</p>
+<p>Gadījumā, ja, ievadot slimības lapu A, tiek reģistrētas plānotas darba stundas (ķeksis <em>Izmainīt darba grafiku prom. Laikā</em>), tad pēc importa tiem darbiniekiem, kuriem ir Slimības lapa A, jāpielabo grafiks slimības lapas periodā.</p>
+<h1 id="personāla-uzstādījumi">Personāla uzstādījumi</h1>
+<p>Lai uzsāktu darbu ar Personāla moduli ir:</p>
+<ul>
+<li>jāieslēdz <em>Personāla uzstādījumi</em> logā funkcija <em>Personāla pārvaldība iespējota</em>,</li>
+<li>jāieslēdz <em>Atvaļ. periodu uzstādījumi</em> logā funkcija <em>Iespējot atvaļinājumu pārvaldību</em>.</li>
+</ul>
+<p>Personāla uzstādījumi logā ir pieejamas sekojošas funkcionalitātes:</p>
+<p><strong>Cilne <em>Visp. info</em></strong></p>
+<ul>
+<li>Pārbaudes laika ilgums – var definēt vienu pārbaudes laika periodu visiem uzņēmuma darbiniekiem. Taču Darba līguma kartiņā vai Rīkojumā par pieņemšanu to var mainīt individuāli katram darbiniekam, ja ir nepieciešams;</li>
+<li>Pēc noklusējuma veidot nodokļu komponentes – sistēmā ir iespējams definēt, ka, ievadot visu nepieciešamo informāciju par darbinieka algas komponentēm, sistēma automātiski izveidos nodokļu komponentes pēc Personāla rīkojuma iegrāmatošanas;</li>
+<li>Amata kods obligāts – pie Personāla rīkojumiem grāmatošanas brīdī lauks amata kods ir obligāti aizpildāms. Tas ir būtiski uzņēmumam, kuram ir svarīgi uzturēt struktūrvienību hierarhiju;</li>
+<li>Pēc noklusējuma grāmatot rīkojumu ar DL – atzīme par to, kad izveidojot darba līgumu, automātiski iegrāmatosies arī Personāla rīkojums par darbinieka pieņemšanu darbā;</li>
+<li>Amatu izmaiņas bez rīkojuma	- atzīme par to, ka amatu var nomainīt, neveidojot dokumentu;</li>
+<li>Atlaišanas pabalsta komponentes kods – tiek noradīta algas komponenta, kura tiks izmantota aprēķinos.</li>
+</ul>
+<p><strong>Cilne <em>Numerācija</em></strong></p>
+<p>Šajā cilnē definē dokumentu Numuru sērijas, kas satur sekojošus laukus:</p>
+<ul>
+<li>Kods – lietotāja definētais dokumenta kods (obligāti aizpildāmais lauks);</li>
+<li>Apraksts – koda apraksts;</li>
+<li>Sākuma Nr. un Beigu Nr. – definē sākuma un beigu numurus (sākuma numurs ir obligāti aizpildāms);</li>
+<li>Pēdējās izmantošanas datums un Pēdējais izmantotais numurs – aizpildās automātiski, kad sāk lietot Numuru sērijas;</li>
+<li>Numuri pēc noklusējuma – atzīme par to, vai šī numuru sērija tiks lietota, lai piešķirtu numurus automātiski;</li>
+<li>Ar roku piešķirtie numuri – atzīme par to, ka lietotājs var ievadīt dokumentu numurus arī ar roku;</li>
+<li>Datumu secība – atzīme par to, ka numerācija ir jāpiešķir hronoloģiski.</li>
+</ul>
+<p><strong>Cilne <em>Ziņojumi</em></strong></p>
+<p>Šajā cilnē tiek definēti sūtīšanas parametri, kā arī ziņojumu noklusēto veidņu definēšana. Veidņu veidošana ir aprakstīta nodaļā <em>Dokumentu veidošana</em>.</p>
+<p><strong>Cilne <em>Formāti</em></strong></p>
+<p>Šajā cilnē tiek definēti datumu, summas formāti.</p>
+<p><strong>Cilne <em>Prombūtnes reģistrācija</em></strong></p>
+<p>Iepr. apmaksātās dienas (DLI) – pirms atvaļinājuma perioda apmaksāto dienu kods.</p>
+<p><strong>Cilne <em>Dokumenti</em></strong></p>
+<ul>
+<li>Amata rīkojuma bez dokumenta grāmatošana – atzīme par to, ka amata rīkojumu var iegrāmatot, nepievienojot veidni;</li>
+<li>Darba līguma bez dokumenta grāmatošana – atzīme par to, ka darba līgumu var iegrāmatot, nepievienojot veidni;</li>
+<li>Personāla rīkojuma bez dokumenta grāmatošana – atzīme par to, ka personāla rīkojumu var iegrāmatot, nepievienojot veidni;</li>
+<li>Atvērt dokumentu pēc izveides – atzīme par to, ka izveidojot dokumentu, uzreiz atvērt dokumentu ( Word failu).</li>
+</ul>
+<p><strong>Cilne <em>Noklus. veidnes</em></strong></p>
+<p>Šajā cilnē tiek definētas dažādu notikumu noklusētās veidnes. Veidņu veidošana ir aprakstīta nodaļā Dokumentu veidošana.</p>
+<p><strong>Cilne <em>Darba aizsardzība</em></strong></p>
+<p>Sastāv no sekojošiem laukiem:</p>
+<ul>
+<li>Neveidot pirmreizējās veselības pārbaudes - ja lietotājs nevēlas, lai veselības pārbaudes ģenerējas automātiski, iegrāmatojot personāla rīkojumu par pieņemšanu, tad Personāla uzstādījumos ir jāatzīmē Neveidot pirmreizējās veselības pārbaudes;</li>
+<li>Atļaut veselības pārbaužu grāmatošanu bez atzinuma – atzīmē, ja vēlas, lai sistēma ļautu iegrāmatot ierakstus veselības pārbaužu žurnālā bez atzinuma ievadīšanas;</li>
+<li>Atļaut labot atzinumu veselības pārbaudes ierakstos – ja žurnāls ir iegrāmatots bez atzinuma ievadīšanas, tad, ja lietotājs vēlas atzinumu ievadīt vēlāk ierakstos, ir jāatzīmē šī opcija;</li>
+<li>Neveidot pirmreizējās instruktāžas - ja lietotājs nevēlas, lai instruktāžas ģenerējas automātiski, iegrāmatojot personāla rīkojumu par pieņemšanu, tad Personāla uzstādījumos ir jāatzīmē Neveidot pirmreizējās veselības pārbaudes.</li>
+</ul>
 </article>
           </div>
           
