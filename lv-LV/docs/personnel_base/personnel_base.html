@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title> | Latvian Payroll </title>
+    <title>Darba l&#299;gums | Latvian Payroll </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content=" | Latvian Payroll ">
+    <meta name="title" content="Darba l&#299;gums | Latvian Payroll ">
     <meta name="generator" content="docfx 2.58.9.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
@@ -77,7 +77,727 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
+<h1 id="darba-līgums">Darba līgums</h1>
 
+<p>Sistēmā ir iespējams ievadīt darba līgumus vai to izmaiņas, kā arī var piesaistīt veidnes un izdrukāt darba līgumu no sistēmas.</p>
+<h2 id="darba-līguma-veidošana">Darba līguma veidošana</h2>
+<p>Lai darbiniekam varētu izveidot darba līgumu, nepieciešams vispirms izveidot jaunu darbinieka kartiņu ar obligātu priekšnosacījumu, ka darbinieka statuss ir <em>Aktīvs</em>. Statuss <em>Aktīvs</em> iepildās automātiski pēc noklusējuma izveidojot jaunu darbinieka kartiņu. Savukārt, ja tiek pieņemts darbinieks, kurš kādreiz ir strādājis uzņēmumā, tad šim darbiniekam ir jāveido jauna darbinieka karte, klikšķinot uz pogas <em>Jauns</em> darbinieku sarakstā. Darbinieka kartiņā aizpilda visus nepieciešamos laukus, kas ir nepieciešami darba līguma aizpildīšanai, izņemot algu aprēķinu, darbā pieņemšanas datumu un algu komponentes. Darbinieka kartes aizpildīšana ir aprakstīta nodaļā <em>Darbinieka pamatinformācija</em>.
+Algu aprēķinam un personālam nepieciešamā informācija par darba līgumu sistēmā ir jāievada iepriekš definētos laukos. Darba līgumi un to labojumi/papildinājumi atšķirsies pēc pazīmes – grozījums un piesaistes galvenajam līgumam. Par darba līgumu vai grozījumu glabājamā informācija ir sekojoša:</p>
+<ul>
+<li>Nr. – darba līguma numurs no klasifikatora;</li>
+<li>Grāmatošanas datums;</li>
+<li>Statuss – izveidots, apstiprināšanā, pabeigts (lai nodrošinātu darba līguma sagatavošanas un apstiprināšanas procedūru);</li>
+<li>Darbinieka Nr. – no darbinieku klasifikatora;</li>
+<li>Vārds;</li>
+<li>Uzvārds;</li>
+<li>Personas kods;</li>
+<li>Pieņemšanas datums;</li>
+<li>Plānotais atbrīvošanas datums – ja ir noteikts līguma termiņš. Tas ir informatīvais termiņš;</li>
+<li>Amata kods – no amatu saraksta;</li>
+<li>Amata nosaukums;</li>
+<li>Struktūrvienības kods – no struktūrvienību klasifikatora;</li>
+<li>Struktūrvienības nosaukums;</li>
+<li>Sociālo ziņu kods – nepieciešams norādīt, pieņemot jaunu darbinieku darbā;</li>
+<li>Algas tips – NDL(normālais darba laiks) vai SDL(summētais darba laiks);</li>
+<li>Slodze;</li>
+<li>Cikla kalendārs – atzīme par to, ka darbiniekam ir slīdošs grafiks;</li>
+<li>Kalendāra kods;</li>
+<li>Kalendāra nosaukums;</li>
+<li>Cikla kārtas numurs;</li>
+<li>Pārbaudes laiks – ja ir noteikts;</li>
+<li>Pārbaudes laika beigu datums – izrēķinās automātiski, ja ir definēts visam uzņēmumam;</li>
+<li>Ir arodbiedrībā – atzīme par to, ka darbinieks ir iestājies arodbiedrībā;</li>
+<li>Grāmatot pieņemšanas rīkojumu ar DL - atzīme par to, kad izveidojot darba līgumu, automātiski iegrāmatosies ar Personāla rīkojums par darbinieka pieņemšanu darbā.</li>
+</ul>
+<p>Lauki, kas aizpildāmi tikai darba līguma grozījumu gadījumā. Vairāk par līguma grozījumu veidošanu ir aprakstīts nākamā sadaļā:</p>
+<ul>
+<li>Grozījums – pazīme, vai ir grozījums;</li>
+<li>Galvenā līguma Nr. – atsauce uz iegrāmatotu darba līgumu, kuram šis grozījums ir paredzēts. Visbiežāk tas ir līgums, ar kuru darbinieks ir pieņemts darbā;</li>
+<li>Grozījumu veida kods – no Darba līgumu grozījumu veida klasifikatora, piemēram, algas palielināšana/samazināšana, amata apvienošana, amata maiņa utt. Katram grozījumu veidam ir iespējams definēt savu veidni. Veidņu veidošana ir aprakstīta nodaļā Dokumentu veidošana;</li>
+<li>Grozījumu apraksts;</li>
+<li>Darbinieka amata Nr. – esošs darbinieka amata Nr.;</li>
+<li>Pamata amats – atzīme par to, ka tas ir pamata amats;</li>
+<li>Darbinieka amata apraksts.</li>
+</ul>
+<p>Lauks <em>Aizstājamā līguma nr.</em> paredzēts tikai gadījumam, ja jānomaina galvenā darba līguma nr., neveicot nekādas izmaiņas darbinieka kartē. Gadījumā, ja ir aizpildīts lauks <em>Aizstājamā līguma nr</em>, tad sistēma meklē uz dokumenta grāmatošanas datumu aktīvu amatu un šim amatam piesaistītas aktīvas uz dokumenta grāmatošanas datumu algas komponentes. Visi darba līguma kartes lauki nav rediģējami, lai lietotājs nemēģinātu neko pielabot. Gadījumā, ja <em>Aizstājamā līguma nr.</em> ir aizpildīts, sistēma automātiski noņem ķeksi <em>Grāmatot rīkojumu ar DL</em>.</p>
+<ul>
+<li>Soc.statusa kods – izvēlās no saraksta, vai tas darba ņēmējs, vai invalīds, vai pensionārs vai bērns;</li>
+<li>Veidot nodokļu komponentes – šo laiku atzīmē tad, ja ir ievadīta pārējā informācija cilnē <em>Grāmatvedībai</em>.</li>
+</ul>
+<p>Ja lietotājs izmanto funkciju, ka pēc darba līguma iegrāmatošanas automātiski izveidojas un iegrāmatojas personāla rīkojums, un pie tam uzstādījumos ir atzīmēts <em>Veidot nodokļu komponentes</em> (aprakstīts nodaļā Personāla uzstādījumi), tad, iegrāmatojot darba līgumu, kurā nav aizpildīti cilnes <em>Grāmatvedībai</em> lauki, nodokļi nerēķināsies korekti un to aprēķins būs jālabo darbinieka kartē.
+Cilnē <em>Paraksti</em> iespējams izvēlēties divus parakstītājus no uzņēmuma amatpersonu tabulas.</p>
+<p>Cilne <em>Veidne</em> var ielikt dokumenta veidni no veidņu klasifikatora. Pēc noklusējuma veidne nāk no Personāla uzstādījumiem, taču, ja pie Amata kartes ir norādīta veidne, tad sistēma ņem norādīto.</p>
+<p>Cilne <em>Papildinfo</em> – informācijas par to, kas un kad ir ievadījis datus.</p>
+<h2 id="darba-līguma-grozījumu-veidošana">Darba līguma grozījumu veidošana</h2>
+<p>Sistēmā ir iespējams izveidot darba līguma grozījumu, mainoties algai, amatam, slodzei utt. Veido jaunu Darba līguma kartiņu un ieliek atzīmi <em>Grozījums</em>. Darba līguma grozījumu veidošanas procesā lietotāja ērtībai ieteicams ievērot sekojošu secību:</p>
+<ol>
+<li><p>Atzīmējiet, ka tas ir grozījums, un izvēlas laukā <em>Galvenā līguma Nr.</em> līgumu, uz kuru šie grozījumi attiecas;
+Izvēloties galvenā līguma numuru, automātiski aizpildās lauki <em>Darbinieka Nr.</em>, <em>Vārds</em>, <em>Uzvārds</em>, <em>Personas kods</em>. Ja Personāla uzstādījumos ir atzīmēts <em>Pēc noklusējuma grāmatot pieņemšanas rīkojumu ar DL</em> un <em>Pēc noklusējuma veidot nodokļu komponentes</em>, tad pēc lauka <em>Grozījums</em> atzīmēšanas darba līguma kartē, šie ķekši pazūd un sistēma neļauj atzīmēt laukus <em>Grāmatot pieņemšanas rīkojumu ar DL</em> un <em>Veidot nodokļa komponentes</em>.</p>
+</li>
+<li><p>Izvēlas Grozījumu veida kodu, ko uztur Darba līgumu grozījumu veidu klasifikatorā. Darba līgumu grozījumu veids sastāv no sekojošiem laukiem:</p>
+</li>
+</ol>
+<ul>
+<li>Kods – lietotāja brīvi definējams kods;</li>
+<li>Apraksts – koda apraksts;</li>
+<li>Grozījuma veids – sistēmā ir jau definēti dažādi grozījuma veidi – amata maiņa, algas maiņa, papildus amats, slodzes maiņa, amata atcelšana. Izvēloties grozījuma veidu, sistēma veic nepieciešamās kontroles par obligāto lauku aizpildīšanu. Šis lauks nav obligāts un to var neaizpildīt;</li>
+<li>Veidnes kods – pie katra grozījumu veida var definēt savu veidni;</li>
+<li>Obligāta algu komponentes rinda – pazīme, vai šis grozījumam obligāti jāaizpilda algas komponentes. Gadījumā, ja ielikts ķeksis šim grozījumam, sistēma neatļaus pamainīt statusu uz Pabeigts bez algas komponentes rindas.</li>
+</ul>
+<ol start="3">
+<li>Aizpilda datus Darbinieka amata Nr. no Darbinieka amata saraksta izvēlas to amatu, kuram vēlas veikt grozījumus. Izvēloties Darbinieka amatu Nr., izlec paziņojuma logs ar jautājumu, vai atjaunot informāciju no darbinieka amata. Nospiežot pogu <em>Jā</em>, sistēma aizpildīs sekojošus laukus:</li>
+</ol>
+<ul>
+<li>Amata kods – ja tiek veidoti grozījumi par amata maiņu, tad šajā laukā izvēlas jaunā amata kodu;</li>
+<li>Amata nosaukums;</li>
+<li>Struktūrvienības kods;</li>
+<li>Struktūrvienības nosaukums;</li>
+<li>Atzīme par to, ka tas ir pamata amats – ja grozījumi tika veikti pamata amatam;</li>
+<li>Darbinieka amata apraksts – ja tiek veidots grozījums par papildus amatu, tad šo lauku pildīt nevajag;</li>
+<li>Slodze;</li>
+<li>Kalendāra kods;</li>
+<li>Kalendāra nosaukums.</li>
+</ul>
+<p>Aizpildīt informāciju no darbinieka amata ir lietderīgi tad, ja tiek mainīts tikai viens nosacījums, piemēram, slodze.
+Kā arī, izvēloties aizpildīt informāciju no darbinieka amata, sistēma automātiski aizpilda algas komponentes, kas bija definētas konkrētam darbinieka amata numuram. Par algas komponentēm ir aprakstīts nākamajā sadaļā.
+Nospiežot pogu <em>Nē</em>, sistēma automātiski neko neaizpildīs, izņemot laukus:</p>
+<ul>
+<li>Atzīme par to, ka tas ir pamata amats – ja grozījumi tika veikti pamata amatam;</li>
+<li>Darbinieka amata apraksts.</li>
+</ul>
+<ol start="4">
+<li>Aizpilda pārējos laukus:</li>
+</ol>
+<ul>
+<li>Pieņemšanas datums – datums, ar kuru grozījumi stājas spēkā;</li>
+<li>Plānotais atbrīvošanas datums – ja ir noteikts līguma termiņš. Tas ir informatīvais termiņš;</li>
+<li>Amata kods – pie amata maiņas jauns amats. Pārējos gadījumos izvēlās jau esoša amata kodu;</li>
+<li>Amata nosaukums;</li>
+<li>Struktūrvienības kods – aizpildās automātiski no amata kartes;</li>
+<li>Struktūrvienības nosaukums;</li>
+<li>Līdz datumam – ja grozījumi ir uz kādu laika periodu, tad aizpilda šo lauku, kas nozīmē, ka grozījumi būs spēkā tikai laika intervālā līdz šim datumam, un vēlāk stāsies spēkā vecie nosacījumi, kuriem tika veikti grozījumi.</li>
+</ul>
+<p>Pēc Darba līguma grozījumu grāmatošanas jāizveido personāla rīkojums.</p>
+<h2 id="darba-līguma-algas-komponentes">Darba līguma algas komponentes</h2>
+<p>algas komponentes ir sasniedzamas Darba līguma kartiņā zem pogas <em>Algas komponentes</em>. Darba līguma algas komponentes satur sekojošus laukus:</p>
+<ul>
+<li>Darba līguma Nr.;</li>
+<li>Rindas Nr.;</li>
+<li>Darbinieka nr.;</li>
+<li>Vārds;</li>
+<li>Uzvārds;</li>
+<li>Tips - aizpildās automātiski, izvēloties kodu;</li>
+<li>Kods - kods no algas komponenšu klasifikatora;</li>
+<li>Apraksts - aizpildās automātiski, ievadot kodu;</li>
+<li>Dokumenta lauku ID - lauks, kas ir izmantojams pie dokumenta veidošanas MS Word formātā. Dokumentu veidošanas process ir aprakstīts Dokumentu veidošanas nodaļā;</li>
+<li>Slodze;</li>
+<li>No datuma - no kura datuma algas komponentes ir spēkā;</li>
+<li>Līdz datumam - līdz kuram datumam algas komponentes ir spēkā;</li>
+<li>Pamatalga - atzīme par to, vai konkrētā komponente ir pamatalga vai piemaksa;</li>
+<li>Aprēķina veids - kā tiek rēķināta sekojoša algas komponente;</li>
+<li>Summa par slodzi;</li>
+<li>Vērtība - vērtība noteiktai algas komponentei pie noteiktās slodzes;</li>
+<li>Aprēķināt pēc - automātiski aizpildās, ievadot kodu;</li>
+<li>Bāze - piemaksām un atvilkumiem, kas tiek rēķināti uz bāzes pamata;</li>
+<li>Prioritāte - lielums, kurš norāda konkrētās komponentes vietu algas aprēķināšanas darbību ķēdē – jo mazāks šis lielums, jo augstāku prioritāti tas nozīmē, un jo ātrāk tas tiek iesaistīts aprēķinos;</li>
+<li>Apmaksāt nakts stundas - atzīme par to, ka nakts stundas tiek apmaksātas;</li>
+<li>Apmaksāt svētku stundas - atzīme par to, ka svētku stundas tiek apmaksātas;</li>
+<li>Apmaksāt virsstundas - atzīme par to, ka virsstundas tiek apmaksātas;</li>
+<li>Kā arī algas komponentēm var piesaistīt dimensijas.</li>
+</ul>
+<p>Darba līguma algas komponentes aizpildās automātiski, ielasot informāciju no amatu kartiņas, tāpēc ir ļoti būtiski pārbaudīt, vai šī informācija ir tieši tāda, kādu lietotājs sagaida.
+Ja tiek veidots grozījums par papildu amatu, tad, lai sistēmā viss korekti atrādītos ir jānomaina pamatalgas algas komponente uz piemaksu par papildu darbu un jāpārliecinās, ka lauks <em>Pamatalga</em> nav atzīmēts.
+Kā arī jāpievērš laukiem <em>No datuma</em> un <em>Līdz datumam</em> – šie lauki arī aizpildās no amata kartiņas algas komponentēm, tāpēc, ja tie nesakrīt ar lietotāja datumiem, kas ir definēti konkrētajā darba līgumā vai grozījumos, ir jāizlabo uz pareizajiem.<br>
+Ievadot slodzi, kas nav vienāda ar vienu, sistēma pārrēķina slodzes vērtību atbilstoši slodzei, kas uzrādīta darba līgumā.</p>
+<h2 id="darba-līguma-izdruka-un-grāmatošana">Darba līguma izdruka un grāmatošana</h2>
+<p>Kad visa nepieciešamā informācija ir ievadīta un pārbaudīta, izveido darba līguma izdruku no piesaistītās veidnes, ko atdod parakstīšanai, paralēli sistēmā nomainot darba līguma statusu uz <em>Apstiprināšanā</em>. Veidņu izveidošana un piesaistīšana ir aprakstīta nodaļā <em>Dokumentu pievienošana</em>. Saņemot atpakaļ parakstītu dokumentu, darba līguma statusu nomaina uz <em>Pabeigts</em> un iegrāmato.</p>
+<p>Darbinieka kartē pēc darba līguma iegrāmatošanas nekādas izmaiņas netiek veiktas, informācija iepildās tikai pēc Personāla rīkojuma par pieņemšanu darbā iegrāmatošanu. Par personāla rīkojumiem ir aprakstīts nodaļā <em>Personāla rīkojumi</em>. Līgums automātiski tiek pārvietots uz iegrāmatotajiem darba līgumiem.</p>
+<p>Lai nodrošinātu to, ka pēc grāmatošanas dokumentu numuri ir secīgi, sākotnējais dokumenta numurs tiek izmantots kā pagaidu numurs – tikai kamēr dokuments nav iegrāmatots. Grāmatošanas brīdī tiek ņemts nākamais grāmatošanas numerācijas sērijas numurs un piešķirts iegrāmatotajam darba līgumam. Sagatavošanas dokumenta numurs pie iegrāmatotā dokumenta arī tiek saglabāts. Numuru uzstādījumi un definēšana ir aprakstīta nodaļā <em>Personāla uzstādījumi</em>.</p>
+<p>No iegrāmatotā darba līguma var atvērt dokumentu MS Word formātā, nospiežot pogu <em>Atvērt dokumentu</em>. Dokumenta pievienošana ir aprakstīta sadaļā <em>Dokumentu pievienošana</em>.</p>
+<h2 id="darba-līguma-vai-grozījuma-anulēšana">Darba līguma vai grozījuma anulēšana</h2>
+<p>Ja darba līgums jau ir iegrāmatots, bet lietotājs saprot, ka kaut kas nav izdarīts pareizi, tad šo līgumu var anulēt pie nosacījuma, ka nav iegrāmatots personāla rīkojums uz šī līguma pamata. Ja personāla rīkojums jau ir iegrāmatots, tad sākumā jāanulē personāla rīkojums un tikai tad - darba līgums. Personāla rīkojumu anulēšana ir aprakstīta sadaļā <em>Personāla rīkojumi</em>. Darba līgumu var anulēt atverot sarakstu <em>Iegrāmatotie darba līgumi</em>, atrodot nepieciešamo līgumu un kartiņā nospiežot pogu <em>Anulēt</em>. Iegrāmatoto darba līgumu sarakstā parādās atzīme par to, ka līgums ir anulēts.</p>
+<h1 id="personāla-rīkojums">Personāla rīkojums</h1>
+<p>Personāla rīkojums tiek izmantots, lai iegrāmatotu jebkuras izmaiņas, kas ir saistītas ar personālu – pieņemšana darbā, atbrīvošana, darbinieka amatu maiņa, slodzes maiņa, algas maiņa utt. Iegrāmatojot personāla rīkojumu, sistēma automātiski izveido izmaiņas arī darbinieka kartiņā. Personāla rīkojumi tiek reģistrēti sarakstā <em>Personāla rīkojumi</em>.</p>
+<h2 id="personāla-rīkojuma-uzbūve">Personāla rīkojuma uzbūve</h2>
+<p>Tā kā personāla rīkojums tāpat kā amata rīkojums pēc sava satura var būt orientēts gan uz vienu, gan uz vairākiem darbiniekiem, kā arī vairākām darbībām ar vienu darbinieku, tas sastāv no divām daļām – virsraksta un rindām. Par rīkojuma virsrakstu tiek glabāta sekojoša informācija:</p>
+<h3 id="clne-visp-info">Clne: <em>Visp. info</em></h3>
+<ul>
+<li>Nr. – rīkojuma unikāls identifikators (iespēja aizpildīt automātiski no numuru sērijām);</li>
+<li>Grāmatošanas datums – rīkojuma stāšanās spēkā datums;</li>
+<li>Statuss – izveidots, apstiprināšanā, pabeigts (paredzēts dokumenta apstiprināšanas procesam).</li>
+</ul>
+<h3 id="cilne-paraksti">Cilne: <em>Paraksti</em></h3>
+<p>Iespējams izvēlēties divus parakstītājus no uzņēmuma amatpersonu tabulas.</p>
+<p>Cilne <em>Veidnes</em>:</p>
+<ul>
+<li>Galvenes veidnes kods;</li>
+<li>Kājenes veidnes kods.</li>
+</ul>
+<h3 id="cilne-papildinfo">Cilne: <em>Papildinfo</em></h3>
+<p>Informācija par to, kurš un kad ir izveidojis rīkojumu</p>
+<p>Par rīkojuma rindām tiek glabāta sekojoša informācija:</p>
+<ul>
+<li>Rindas Nr. – rindas kārtas Nr. (aizpildās automātiski);</li>
+<li>Darbinieka Nr. – no darbinieku klasifikatora;</li>
+<li>Vārds – darbinieka vārds;</li>
+<li>Uzvārds – darbinieka uzvārds;</li>
+<li>Personas kods – darbinieka personas kods;</li>
+<li>Notikuma veids – pieņemšana, atbrīvošana, amata maiņa, slodzes maiņa, algas maiņa, prombūtne, disciplinārsods, uzteikums, piemaksa/atvilkums, papildus amats, amata atcelšana;</li>
+<li>Rindas veidnes kods – no dokumentu veidņu klasifikatora.</li>
+</ul>
+<h2 id="personāla-rīkojuma-algas-komponentes">Personāla rīkojuma algas komponentes</h2>
+<p>Rīkojuma rindas algas komponentes sastāv no sekojošiem laukiem:</p>
+<ul>
+<li>Darbinieka Nr.;</li>
+<li>Vārds;</li>
+<li>Uzvārds;</li>
+<li>Tips - aizpildās automātiski, izvēloties kodu;</li>
+<li>Rīkojuma Nr.;</li>
+<li>Rīkojuma rindas Nr.;</li>
+<li>Rindas Nr.;</li>
+<li>Kods - kods no algas komponenšu klasifikatora;</li>
+<li>Apraksts - aizpildās automātiski, ievadot kodu;</li>
+<li>Dokumenta lauku ID – lauks, kas ir izmantojams pie dokumenta veidošanas MS Word formātā. Dokumentu veidošanas process ir aprakstīts Dokumentu veidošanas sadaļā;</li>
+<li>Slodze;</li>
+<li>No datuma – no kura datuma algas komponentes ir spēkā;</li>
+<li>Līdz datumam - līdz kuram datumam algas komponentes ir spēkā;</li>
+<li>Pamatalga – atzīme par to, vai konkrētā komponente ir pamatalga vai piemaksa;</li>
+<li>Summa par slodzi – summa par vienu slodzi, ielasās no amata kartiņas, ja ir aizpildīts;</li>
+<li>Vērtība - vērtība noteiktai algas komponentei pie noteiktās slodzes;</li>
+<li>Aprēķina veids - kā tiek rēķināta sekojoša algas komponente;</li>
+<li>Aprēķināt pēc - automātiski aizpildās, ievadot kodu;</li>
+<li>Bāze - piemaksām un atvilkumiem, kas tiek rēķināti uz bāzes pamata;</li>
+<li>Prioritāte - lielums, kurš norāda konkrētās komponentes vietu algas aprēķināšanas darbību ķēdē – jo mazāks šis lielums, jo augstāku prioritāti tas nozīmē, un jo ātrāk tas tiek iesaistīts aprēķinos;</li>
+<li>Apmaksāt nakts stundas - atzīme par to, ka nakts stundas tiek apmaksātas;</li>
+<li>Apmaksāt svētku stundas - atzīme par to, ka svētku stundas tiek apmaksātas;</li>
+<li>Apmaksāt virsstundas - atzīme par to, ka virsstundas tiek apmaksātas.</li>
+</ul>
+<p>Ja personāla rīkojums tiek veidots, neizmantojot darba līgumu vai tā  grozījumus, tad tāpat kā darba līguma algas komponentes, arī personāla rīkojuma algas komponentes tiek ielasītas no amata kartes algas komponentēm. Tāpēc lietotājam pirms rīkojuma grāmatošanas ir jāpārliecinās, ka visa informācija, kas ievadīta personāla rīkojuma algas komponentēs atbilst reālajai situācijai.</p>
+<h2 id="personāla-rīkojuma-notikuma-veidi">Personāla rīkojuma notikuma veidi</h2>
+<p>Kā jau tika augstāk minēts, personāla rīkojumam ir iespējams definēt sekojošus notikumus: pieņemšana, atbrīvošana, amata maiņa, slodzes maiņa, algas maiņa, prombūtne, disciplinārsods, uzteikums, piemaksa/atvilkums, papildus amats, amata atcelšana, anulēšana. Katram notikumu veidam atkarībā no tā rakstura sistēmā tiek ievadīta dažāda informācija. Ievade notiek caur Rindas karti, kas pieejama Rindu rīkjoslā.</p>
+<h2 id="personāla-rīkojumu-piemēri">Personāla rīkojumu piemēri</h2>
+<h3 id="rīkojums-par-atbrīvošanu">Rīkojums par atbrīvošanu</h3>
+<p>Atbrīvošanas no darba notikums satur sekojošu informāciju:</p>
+<p><img src="images/20.personel_example1.png" alt="alt"></p>
+<ul>
+<li>Līguma izbeigšanas datums;</li>
+<li>Atbrīvošanas pamata kods – no atbrīvošanas pamatu klasifikatora;</li>
+<li>Atbrīvošanas pamata apraksts;</li>
+<li>Atbrīvošanas iemesla kods – no atbrīvošanas iemeslu klasifikatora;</li>
+<li>Atbr. iemesla apraksts;</li>
+<li>Sociālo ziņu kods;</li>
+<li>Saskaņots ar arodbiedrību – ja darbinieks nav arodbiedrībā, tad šis lauks nav aktīvs;</li>
+<li>Atlaišanas pabalsts;</li>
+<li>Atsauce uz līgumu Nr.</li>
+</ul>
+<p>Pirms rīkojuma grāmatošanas par atbrīvošanu sistēma pārbauda:</p>
+<ul>
+<li>Vai darbinieks ir pieņemts pirms atbrīvošanas datuma;</li>
+<li>Vai darbinieks jau nav atbrīvots no darba;</li>
+<li>Vai darbinieks ir arodbiedrībā un vai ar arodbiedrību ir saskaņots.</li>
+</ul>
+<p>Ja kāds no šiem nosacījumiem nav izpildīts, tad sistēma neļauj grāmatot rīkojumu par atbrīvošanu.</p>
+<h3 id="rīkojums-par-amata-maiņu">Rīkojums par amata maiņu</h3>
+<p>Amata maiņas notikums satur sekojošu informāciju:</p>
+<p><img src="images/20.personel_example2.png" alt="alt"></p>
+<ul>
+<li>Darba līguma Nr. - ja par slodzes maiņu tika veidots darba līguma grozījumu, tad šajā laukā to izvēlas un visi pārējie lauki, ieskaitot algas komponentes laukus tiks aizpildīti no konkrēta grozījuma;</li>
+</ul>
+<p>Ja darba līguma grozījumi netika veidoti, tad ir jāaizpilda pārējie lauki, izņemot Darba līguma Nr.</p>
+<ul>
+<li>Darbinieka amata Nr. – darbinieka amata numurs, kuru ir nepieciešams nomainīt;</li>
+<li>Galvenais amats – atzīme par to, ka tas ir galvenais amats;</li>
+<li>Darbinieka amata apraksts;</li>
+<li>Amata kods – jaunā amata kods;</li>
+<li>Amata nosaukums;</li>
+<li>Struktūrvienības kods – jaunā amata struktūrvienības kods;</li>
+<li>Struktūrvienības nosaukums;</li>
+<li>Sociālo ziņu kods;</li>
+<li>No datums – no kura datuma jaunais amats ir spēkā;</li>
+<li>Plānotais līdz datums – plānotais amata beigu datums;</li>
+<li>Līdz datumam – līdz kuram datumam jaunais amats ir spēkā. Pēc tam atkal iepriekšējais amats stājās spēkā;</li>
+<li>Algas tips – summētais vai normālais darba laiks;</li>
+<li>Slodze;</li>
+<li>Cikla kalendārs – atzīme par to, ka darbiniekam ir slīdošs grafiks;</li>
+<li>Kalendāra kods;</li>
+<li>Kalendāra nosaukums;</li>
+<li>Cikla kārtas nr.</li>
+</ul>
+<h3 id="rīkojums-par-slodzes-maiņu">Rīkojums par slodzes maiņu</h3>
+<p>Slodzes maiņas notikums satur sekojošu informāciju:</p>
+<p><img src="images/20.personel_example3.png" alt="alt"></p>
+<ul>
+<li>Darba līguma Nr. – ja par slodzes maiņu tika veidots darba līguma grozījumu, tad šajā laukā to izvēlas un visi pārējie lauki, ieskaitot algas komponentes laukus tiks aizpildīti no konkrēta grozījuma;</li>
+</ul>
+<p>Ja darba līguma grozījumi netika veidoti, tad ir jāaizpilda pārējie lauki, izņemot Darba līguma Nr.</p>
+<ul>
+<li>Darbinieka amata Nr. – darbinieka amata numurs, kuru ir nepieciešams nomainīt;</li>
+<li>Galvenais amats – atzīme par to, ka tas ir galvenais amats;</li>
+<li>Darbinieka amata apraksts;</li>
+<li>No datuma – no kura datuma jaunais amats ir spēkā;</li>
+<li>Plānotais līdz datums – plānotais amata beigu datums;</li>
+<li>Līdz datumam – līdz kuram datumam jaunais amats ir spēkā. Pēc tam atkal iepriekšējais amats stājās spēkā;</li>
+<li>Algas tips – summētais vai normālais darba laiks</li>
+<li>Slodze;</li>
+<li>Cikla kalendārs – atzīme par to, ka darbiniekam ir slīdošs grafiks;</li>
+<li>Kalendāra kods;</li>
+<li>Kalendāra nosaukums;</li>
+<li>Cikla kārtas nr.</li>
+</ul>
+<p>Izmainot slodzes vērtību laukā <em>Slodze</em>, sistēma izmainīs slodzi pie algas komponentēm, kā arī izrēķinās jauno vērtību, kas pienākas par sekojošu slodzi.</p>
+<h3 id="rīkojums-par-algas-maiņu">Rīkojums par algas maiņu</h3>
+<p>Algas maiņas notikums satur sekojošu informāciju:</p>
+<p><img src="images/20.personel_example4.png" alt="alt"></p>
+<ul>
+<li>Darba līguma Nr. – ja par algas maiņu tika veidots darba līguma grozījumu, tad šajā laukā to izvēlas un visi pārējie lauki, ieskaitot algas komponentes laukus tiks aizpildīti no konkrēta grozījuma;</li>
+</ul>
+<p>Ja darba līguma grozījumi netika veidoti, tad ir jāaizpilda pārējie lauki, izņemot Darba līguma Nr.</p>
+<ul>
+<li>Darbinieka amata Nr. – darbinieka amata numurs, kuru ir nepieciešams nomainīt;</li>
+<li>Galvenais amats – atzīme par to, ka tas ir galvenais amats;</li>
+<li>Darbinieka amata apraksts;</li>
+<li>No datuma – no kura datuma jaunā alga būs spēkā;</li>
+<li>Līdz datumam – līdz kuram datumam jaunā alga būs spēkā. Pēc tam spēkā iestājās iepriekšējās darba algas nosacījumi.</li>
+</ul>
+<p>Jauno darba algu ievada caur algas komponentēm.
+Tiks noslēgtas visas aktīvas (beigu datums nav norādīts vai ir vēlāks par rīkojuma “No datuma”) darbinieka algas komponentes ar datumu, kas ir vienu dienu pirms rīkojuma par algas maiņu sākuma datuma.</p>
+<h3 id="rīkojums-par-prombūtni">Rīkojums par prombūtni</h3>
+<p>Prombūtnes rīkojuma rindas karte satur sekojošu informāciju:</p>
+<p><img src="images/20.personel_example5.png" alt="alt"></p>
+<h4 id="cilne-vispinfo">Cilne: <em>Visp.info</em>:</h4>
+<ul>
+<li>Prombūtnes kods;</li>
+<li>Prombūtnes veida kods;</li>
+<li>Prombūtnes apraksts – tiks aizpildīts no prombūtnes koda;</li>
+<li>No datuma - pēc noklusējuma lauks aizpildās no Plānotās darbinieku prombūtnes klasifikatora, taču to var labot;</li>
+<li>Līdz datumam – pēc noklusējuma lauks aizpildās no Plānotās darbinieku prombūtnes klasifikatora, taču to var labot;</li>
+<li>Dienas pēc kalendāra;</li>
+<li>Darbinieks aizvietotājs;</li>
+<li>Veidot algas apmaksu - gadījumā, ja pirms prombūtnes jāaprēķina alga līdz prombūtnes sākumam, jāieliek ķeksis. Rezultātā prombūtnes reģistrā tiks izveidot ieraksts ar prombūtnes kodu ALGA_PER (standarta uzstādījumi) un starpizmaksas sarakstā var aprēķināt gan prombūtnes naudu, gan algu pirms prombūtnes;</li>
+<li>Izlaist starpizmaksās – ielikt ķeksi gadījumā, ja nevajadzētu šo prombūtni aprēķināt starpizmaksas sarakstā;</li>
+<li>Sadalīt pa periodiem – rīkojuma grāmatošanas rezultātā sistēma sadalīs prombūtni pa kalendāra mēnešiem, aizpildot lauku <em>Turpinājums</em>.  Tādā veidā aprēķins par katru mēnesi tiks veikts atbilstošajā mēnesī.</li>
+</ul>
+<h4 id="cilne-komandējums">Cilne: <em>Komandējums</em>:</h4>
+<ul>
+<li>Komandējuma vieta - valsts;</li>
+<li>Komandējuma mērķis.</li>
+</ul>
+<h3 id="rīkojums-par-disciplinārsodu">Rīkojums par disciplinārsodu</h3>
+<p>Disciplinārsoda rīkojuma rindas karte satur sekojošu informāciju:</p>
+<p><img src="images/20.personel_example6.png" alt="alt"></p>
+<ul>
+<li>Disciplinārsoda kods – no disciplinārsodu klasifikatora;</li>
+<li>Disciplinārsoda apraksts;</li>
+<li>Datums – rīkojuma datums;</li>
+<li>Piezīmes – brīvā tekstā var uzrakstīt rīkojuma tekstu.</li>
+</ul>
+<h3 id="rīkojums-par-uzteikumu">Rīkojums par uzteikumu</h3>
+<p>Uzteikuma rīkojuma karte satur sekojošu informāciju:</p>
+<p><img src="images/20.personel_example7.png" alt="alt"></p>
+<ul>
+<li>Atbrīvošanas pamata kods – no atbrīvošanas pamatu klasifikatora;</li>
+<li>Atbrīvošanas pamata apraksts;</li>
+<li>Likuma panta Nr.;</li>
+<li>Piezīmes – brīvā tekstā var uzrakstīt rīkojuma tekstu;</li>
+<li>Atbrīvošanas datums.</li>
+</ul>
+<h3 id="rīkojums-par-piemaksu--atvilkumu">Rīkojums par piemaksu / atvilkumu</h3>
+<p>Piemaksas vai atvilkuma rīkojuma karte satur sekojošu informāciju:</p>
+<p><img src="images/20.personel_example8.png" alt="alt"></p>
+<ul>
+<li>Datums – piemaksas datums;</li>
+<li>Komponentes kods – piemaksas komponentes kods no klasifikatora;</li>
+<li>Komponentes apraksts;</li>
+<li>Summa – piemaksa – bruto summa;</li>
+<li>Piezīmes – teksts brīvā formā.</li>
+</ul>
+<h3 id="rīkojums-par-papildus-amatu">Rīkojums par papildus amatu</h3>
+<p>Tāpat kā rīkojumu par pieņemšanu darbā, arī rīkojumu par papildus amatu ir iespējams izveidot gan uz darba līguma grozījumu pamata, gan arī kā jaunu un neatkarīgu dokumentu. Ar šo notikumu tiek izveidots jauns darbinieka amats (papildus esošajiem). Par papildus amatu tiek norādīta sekojoša informācija:</p>
+<p><img src="images/20.personel_example9.png" alt="alt"></p>
+<ul>
+<li>Darba līgums – no iegrāmatotiem darba līgumiem (ja šim notikumam tika izveidots atsevišķi grozījumi);</li>
+<li>No datuma – no kura datuma darbiniekam tiek piešķirts papildus amats;</li>
+<li>Plānotais līdz datums – plānotais beigu datums;</li>
+<li>Līdz datumam – līdz kuram datumam darbiniekam tiek piešķirts papildus amats. Termiņa beigās tiek atjaunots atkal iepriekšējais darbinieka amats;</li>
+<li>Amata kods – papildus amata kods;</li>
+<li>Struktūrvienības kods – papildus amata struktūrvienības kods – ielasās automātiski, izvēloties amata kodu;</li>
+<li>Struktūrvienības nosaukums;</li>
+<li>Slodze;</li>
+<li>Cikla kalendārs;</li>
+<li>Kalendāra kods;</li>
+<li>Kalendāra nosaukums;</li>
+<li>Cikla kārtas nr.</li>
+</ul>
+<p>Ja pirms rīkojuma izveidošanas tika izveidots darba līguma grozījums, tad algas komponentes ielasīsies no darba līguma grozījuma algas komponentēm, kuras labot nebūs iespējams.
+Pirms rīkojuma par papildus amatu grāmatošanas sistēma pārbauda, vai darbiniekam uz <em>No datuma</em> ir aktīvs statuss.</p>
+<h3 id="rīkojums-par-amata-atcelšanu">Rīkojums par amata atcelšanu</h3>
+<p>Amata atcelšanas rīkojuma karte satur sekojošu informāciju:</p>
+<p><img src="images/20.personel_example10.png" alt="alt"></p>
+<ul>
+<li>Darba līguma Nr. – no iegrāmatotiem darba līgumiem (ja šim notikumam tika izveidots atsevišķs grozījums);</li>
+<li>Darbinieka amata Nr. – norāda amatu, kurš ir jāatceļ;</li>
+<li>Līdz datumam – līdz kuram datumam amats ir aktīvs.</li>
+</ul>
+<p>Pirms rīkojuma par amata atcelšanas grāmatošanas tiek pārbaudīts, vai darbinieks uz pieņemšanas datumu ir aktīvs darbinieks.</p>
+<h3 id="iegrāmatoto-rīkojumu-anulēšana">Iegrāmatoto rīkojumu anulēšana</h3>
+<p>Sistēmā ir iespējams anulēt gan visu rīkojumu, gan arī tikai konkrētu rindu. Rīkojumu vai rīkojuma rindu var anulēt no iegrāmatotā rīkojuma, bet, izmantojot rīkojumu ar notikuma veidu Anulēšana, var anulēt tikai konkrētu rindu.</p>
+<ol>
+<li>Rīkojuma anulēšana caur iegrāmatoto rīkojumu:</li>
+</ol>
+<ul>
+<li>Atver sarakstu <em>Iegrāmatotie Personāla rīkojumi</em>;</li>
+<li>Atrod rīkojumu, kas ir jāanulē;</li>
+<li>Var anulēt visu rīkojumu, klikšķinot uz <em>Apstrāde</em> (1) un <em>Anulēt rīkojumu</em> (2);</li>
+<li>Var anulēt tikai konkrētu rindu klikšķinot uz <em>Rinda</em> (3) un <em>Anulēt</em> (4).</li>
+</ul>
+<p><img src="images/20.personel_example11.png" alt="alt"></p>
+<p>Ja rīkojums tiek anulēts caur iegrāmatotiem rīkojumiem, tad sistēmā nevar pievienot aprakstu, kāpēc līgums ir anulēts, kā arī netiek izveidots dokuments. Taču tā ir vienīgā iespēja, kā var anulēt visu rīkojumu.</p>
+<ol start="2">
+<li>Rīkojuma anulēšana, izmantojot notikuma veidu <em>Anulēšana</em>. Anulēšanas rīkojums sastāv no sekojošiem laukiem:</li>
+</ol>
+<p><img src="images/20.personel_example12.png" alt="alt"></p>
+<ul>
+<li>Rīkojuma Nr. anulēšana – iegrāmatotā rīkojuma nr., kurš jāanulē;</li>
+<li>Rīkojuma rindas Nr. anulēšanai –norāda, kura rinda ir jāanulē;</li>
+<li>Anulēšanas iemesla apraksts.</li>
+</ul>
+<p>Anulēt var jebkuru rīkojuma veidu pie nosacījuma, ka nav izveidots algas saraksts. Tomēr jāatceras, ka rīkojumi ir jāanulē secīgi - tas nozīmē, ka, ja, piemēram, darbinieks ir  pieņemts darbā ar pieņemšanas rīkojumu, tad tam ir mainīta alga ar algas maiņas rīkojumu, tad, lai anulētu pieņemšanas rīkojumu, sākumā jāanulē rīkojms par algas maiņu.
+Anulētie rīkojumi no sistēmas nekur nepazūd un tos var apskatīt gan iegrāmatoto rīkojumu sarakstā, gan arī no darbinieka kartiņas sadaļā <em>Personāla ieraksti</em>.</p>
+<h1 id="darba-aizsardzība">Darba aizsardzība</h1>
+<p>Darba aizsardzības risinājums sastāv no:</p>
+<ul>
+<li>Veselības pārbaudes risinājuma;</li>
+<li>Instruktāžu risinājuma.</li>
+</ul>
+<p>Veselības pārbaudes risinājuma ietvaros iespējams definēt darba vides riskus un piesaistīt tos katram darbiniekam caur amata kartiņu. Lietotāja ērtībai sistēma ģenerē pirmreizējās veselības pārbaudes ierakstus žurnālā, iegrāmatojot personāla rīkojumu par jauna darbinieka pieņemšanu darbā. Sūtot darbinieku uz veselības pārbaudi, no sistēmas iespējams izdrukāt nosūtījumu un, saņemot ārsta atzinumu, sistēmā ievadīt atzinumu par veselības stāvokli. Visu šo informāciju ir iespējams uzglabāt veselības pārbaužu ierakstos par visiem darbiniekiem kopā (vēsturē), kur arī uzrādās nākamās pārbaudes termiņš. Kā arī lietotāja ērtībām katram  darbiniekam atsevišķi caur darbinieka kartiņu var redzēt veselības pārbaudes statusu.
+Līdzīgi kā veselības pārbaudes risinājums darbojas arī instruktāžu risinājums. Ir iespējams definēt instruktāžas veidus un tēmas, kā arī piesaistīt tos katram darbiniekam caur amata kartiņu. Iespējams automātiski ģenerēt žurnāla ierakstus, plānot instruktāžas un pārskatīt jau veikto instruktāžu vēsturi, kā arī no instruktāžu žurnāla iespējams drukāt instruktāžu parakstu lapu.</p>
+<p>Uzstādījumi, kas attiecas uz darba aizsardzību, ir aprakstīti nodaļā <em>Personāla uzstādījumi</em>.</p>
+<h2 id="obligātā-veselības-pārbaude">Obligātā veselības pārbaude</h2>
+<h3 id="riska-faktoru-definēšana">Riska faktoru definēšana</h3>
+<p>Katram amatam ir piesaistīti savi riska faktori – vienam amatam tie var būt gan viens, gan vairāki. Riska faktorus definē sarakstā <em>Riska faktori</em>.</p>
+<p>Katrs riska faktors satur sekojošu informāciju:</p>
+<ul>
+<li>Kods – unikāls riska faktora identifikators;</li>
+<li>Apraksts – riska faktora nosaukums;</li>
+<li>Tips – piemēram, darba vides vai īpašais;</li>
+<li>Pārbaužu periodiskums – cik bieži par konkrēto risku jāveic veselības pārbaudes.</li>
+</ul>
+<h3 id="veselības-pārbaužu-žurnāls">Veselības pārbaužu žurnāls</h3>
+<p>Informācija par plānotajām veselības pārbaudēm tiek glabāta reģistrā <em>Veselības pārbaužu žurnāls</em>:</p>
+<ul>
+<li>Dokumenta Nr. - unikāls ieraksta identifikators;</li>
+<li>Darbinieka Nr. – no darbinieku klasifikatora;</li>
+<li>Darbinieka vārds;</li>
+<li>Darbinieka uzvārds;</li>
+<li>Amata kods – aizpilda, ja vēl nav noslēgtas darba attiecības ar potenciālo darbinieku, bet ir jānosūta uz obligāto veselības pārbaudi atbilstoši riskiem konkrētam amatam;</li>
+<li>Pārbaudes veikšanas datums – datums, kad pārbaude ir veikta; sākumā plānotais, reģistrējot faktiskais;</li>
+<li>Pārbaudes veikšanas gala termiņš – termiņš, līdz kuram ir jāveic pārbaude; tiek aizpildīts automātiski, atkarīgs no amata riska faktora periodiskuma un pēdējās veiktas pārbaudes datuma;</li>
+<li>Riska faktori – no riska faktoru klasifikatora;</li>
+<li>Veselības pārbaudes veids – pirmreizējā, periodiskā vai ārkārtas;</li>
+<li>Ārpuskārtas pārbaudes iemesls;</li>
+<li>Nosūtījums izdrukāts – atzīme par to, ka nosūtījums izdrukāts.</li>
+</ul>
+<p>Veselības pārbaužu žurnālu ir iespējams aizpildīt manuāli vai arī ģenerēt to no sistēmā pieejamās informācijas. Kā arī, pieņemot jaunu darbinieku, grāmatojot Personāla rīkojumu, pirmreizējā veselības pārbaude tiks uzģenerēta automātiski. Par Personāla rīkojumiem ir aprakstīts nodaļā <em>Personāla rīkojumi</em>.</p>
+<h3 id="veselības-pārbaužu-žurnāla-ierakstu-manuālā-aizpildīšana">Veselības pārbaužu žurnāla ierakstu manuālā aizpildīšana</h3>
+<p>Aizpildot žurnālu manuāli, pildot informāciju par riskiem, ir jāpilda caur pogu <em>Apstrādāt</em> (1) - <em>Riska faktori</em> (2).</p>
+<p><img src="images/22.ovp_1.png" alt="alt"></p>
+<p>Tabula Veselības pārbaužu žurnāla riska faktori satur sekojošu informāciju:</p>
+<ul>
+<li>Dokumenta Nr. – automātiski ģenerējas no numuru klasifikatora;</li>
+<li>Riska faktora kods – definēts no riska faktoru klasifikatora;</li>
+<li>Riska faktora apraksts;</li>
+<li>Riska faktora tips – piemēram, darba vide;</li>
+<li>Darbinieka amata Nr. – darbinieka amata numurs no amatu klasifikatora;</li>
+<li>Amata kods – amata kods no amatu klasifikatora;</li>
+<li>Amata apraksts;</li>
+<li>Amata no datums – datums, no kura amats ir izveidots;</li>
+<li>Riska faktora no datums – datums, no kura riska faktors ir izveidots;</li>
+<li>No datums – darbinieka amata vai amata riska faktora  jaunākais datums (paredzēts izdrukai, lai būtu iespēja norādīt no kāda datuma darbinieks pakļauts šim riskam);</li>
+<li>Iepriekšējās pārbaudes ieraksta datums;</li>
+<li>Iepriekšējās žurnāla rindas datums;</li>
+<li>Iepriekšējās pārbaudes datums;</li>
+<li>Pārbaudes veikšanas gala termiņš – termiņš, līdz kuram ir jāveic pārbaude; tiek aizpildīts automātiski, atkarīgs no amata riska faktora periodiskuma un pēdējās veiktas pārbaudes datuma;</li>
+<li>Atzinuma kods – no atzinumu klasifikatora;</li>
+<li>Atzinuma apraksts.</li>
+</ul>
+<p>Aizpildot lauku <em>Riska faktora kods</em>, pārējie lauki, izņemot laukus <em>Atzinuma kods</em> un <em>Atzinuma apraksts</em>, aizpildīsies automātiski pie nosacījuma, ka riska faktori tika piesaistīti amatam, veidojot amata kartiņu.</p>
+<h3 id="veselības-pārbaužu-žurnāla-ierakstu-automātiska-ģenerēšana">Veselības pārbaužu žurnāla ierakstu automātiska ģenerēšana</h3>
+<p>Lai aizpildītu žurnālu automātiski, klikšķiniet uz pogas <em>Aizpildīt</em>.
+Ģenerējot žurnāla ierakstus automātiski, tiek ņemti riska faktori no darbinieka amatiem piesaistītajām amata vietām. Ģenerējot nepieciešams norādīt datumu uz kuru vēlas veidot veselības pārbaudes.</p>
+<p>Žurnāla ierakstus ir iespējams ģenerēt pēc Darbinieka numura, Amata koda, Profesiju koda, Struktūrvienības koda, Riska faktora koda un Riska faktora tipa. Cilnē Opcijas ievada datumu uz kuru vēlas ģenerēt žurnāla rindas.
+Lai noskaidrotu riska faktora nākamās pārbaudes termiņu, sistēma pārbauda veselības pārbaužu ierakstos esošās iepriekšējās pārbaudes datumu un darbinieka amatā stāšanās datumu. No šī iegūtā datuma, izmantojot riska faktora periodiskumu, tiek aprēķināts nākamās pārbaudes termiņš. Ja šis termiņš ir pirms sākotnējā norādītajā žurnāla aizpildīšanas datuma, tad konkrētā veselības pārbaude tiek pievienota žurnālam.</p>
+<h3 id="veselības-pārbaužu-žurnāla-ierakstu-apvienošana">Veselības pārbaužu žurnāla ierakstu apvienošana</h3>
+<p>Ja vienam darbiniekam ir vairāki riska faktori, tad sākumā tiek izveidotas vairākas veselības pārbaudes par katru riska faktoru. Lai nepieciešamības gadījumā apvienotu žurnālā esošās veselības pārbaudes zem vienas, žurnālā ir apvienošanas funkcija <em>Apvienot</em>.</p>
+<p>Šī funkcija no atfiltrētajiem ierakstiem pēc darbinieku numuriem apvieno veselības pārbaudes vienā.
+Ja lietotājs vēlas apvienot tikai viena darbinieka veselības pārbaudes, tad filtrā ieliek darbinieka numuru.</p>
+<p>Kā pārbaudes veikšanas gala termiņš atlikušajai veselības pārbaudei tiek norādīts ātrākais termiņš no tajā apvienotajiem riska faktoriem.</p>
+<h3 id="veselības-pārbaudes-nosūtījuma-izdruka">Veselības pārbaudes nosūtījuma izdruka</h3>
+<p>Kad veselības pārbaude atrodas žurnālā, ir iespējams izveidot veselības pārbaudes nosūtījuma izdruku, nospiežot pogu <em>Drukāt nosūtījumu</em>. Pēc drukāšanas laukā <em>Nosūtījums izdrukāts</em> iepildās ķeksis.</p>
+<h3 id="veselības-pārbaudes-atzinums">Veselības pārbaudes atzinums</h3>
+<p>Pēc veselības pārbaudes veikšanas, saņemot atzinumu, to ievada tabulā Veselības pārbaužu žurnālā caur pogu <em>Riska faktori</em>. Izvēlās Atzinuma kodu no Veselības pārbaužu atzinumu klasifikatora.</p>
+<p><em>Veselības pārbaužu atzinumi</em> klasifikators sastāv no sekojošiem laukiem:</p>
+<ul>
+<li>Kods – unikāls atzinuma kods;</li>
+<li>Apraksts – atzinuma apraksts.</li>
+</ul>
+<h3 id="veselības-pārbaužu-žurnāla-grāmatošana-un-veselības-pārbaužu-ieraksti">Veselības pārbaužu žurnāla grāmatošana un veselības pārbaužu ieraksti</h3>
+<p>Pēc atzinuma ievadīšanas Veselības pārbaužu žurnālu var iegrāmatot ar pogu <em>Grāmatot</em>. Lai nodrošinātu vēsturisku informāciju par veselības pārbaudēm, no veselības pārbaužu žurnāla pēc grāmatošanas tiek aizpildīti darbinieka veselības pārbaužu ieraksti reģistrā <em>Veselības pārbaužu ieraksti</em>. Tie satur sekojošu informāciju:</p>
+<ul>
+<li>Dokumenta Nr. – unikāls ieraksta identifikators;</li>
+<li>Darbinieka Nr. – no darbinieku klasifikatora;</li>
+<li>Darbinieka vārds;</li>
+<li>Darbinieka uzvārds;</li>
+<li>Darbinieka amats Nr. - darbinieka amata numurs no amatu klasifikatora;</li>
+<li>Amata vietas kods – darbinieka amata kods no amatu klasifikatora;</li>
+<li>Amata apraksts;</li>
+<li>Riska faktora kods – no riska faktoru klasifikatora;</li>
+<li>Riska faktora apraksts;</li>
+<li>Riska faktora tips - piemēram, darba vide;</li>
+<li>Pārbaudes veikšanas datums – datums, kad pārbaude ir veikta;</li>
+<li>Pārbaudes veikšanas gala termiņš – pārbaudes veikšanas termiņš;</li>
+<li>Veselības pārbaudes veids - pirmreizējā, periodiskā vai ārkārtas;</li>
+<li>Ārpuskārtas pārbaudes iemesls;</li>
+<li>Atzinuma kods – no atzinumu klasifikatora;</li>
+<li>Atzinuma apraksts;</li>
+<li>Piezīmes.</li>
+</ul>
+<h2 id="darba-drošība">Darba drošība</h2>
+<p>Atbilstoši uzņēmuma iekšējo instruktāžu funkcionalitātei instruktāžas tiek klasificētas pa veidiem un tēmām Instruktāžu veida klasifikatorā. Atveriet sarakstu <em>Instruktāžu veidi</em>, kas sastāv no sekojošiem laukiem:</p>
+<ul>
+<li>Kods – unikāls veida identifikators;</li>
+<li>Apraksts – veida apraksts.</li>
+</ul>
+<p>Instruktāžu tēmas var atdalīt atsevišķā reģistrā zem pogas <em>Tēmas</em>. Par instruktāžu tēmām tiek glabāta sekojoša informācija:</p>
+<ul>
+<li>Kods – tēmas identifikators;</li>
+<li>Nosaukums;</li>
+<li>Instruktora darbinieka Nr. – no darbinieku klasifikatora darbinieks, kas veic instruktāžu;</li>
+<li>Instruktora nosaukums – aizpildās ar instruktora darbinieka vārdu un uzvārdu, bet, nenorādot darbinieku, var aizpildīt manuāli;</li>
+<li>Kvalifikācijas rindas Nr. – atsauce uz instruktora darbinieka kvalifikācijas ierakstu, kurā ir norādīta nepieciešamā specialitāte;</li>
+<li>Instruktora specialitāte – aizpildās no darbinieka kvalifikācijas vai arī manuāli;</li>
+<li>Biežums – ja instruktāža ir periodiska, tad norāda biežumu.</li>
+</ul>
+<h3 id="instruktāžu-tēmu-piesaiste-noteiktam-darbiniekam">Instruktāžu tēmu piesaiste noteiktam darbiniekam</h3>
+<p>Lai nodrošinātu instruktāžu tēmu piesaisti pie darbinieka, tiek aizpildītas amata kartes instruktāžu tēmas. Instruktāžas tēmas iestata Amatu sarakstā, noklikšķinot uz pogas <em>Instruktāžas</em>. Instruktāžām ir pieejami sekojoši lauki:</p>
+<ul>
+<li>Amata vietas kods – no amata vietu klasifikatora;</li>
+<li>Instruktāžu veida kods – no instruktāžu veidu klasifikatora;</li>
+<li>Instruktāžas tēmas kods – no instruktāžu tēmu klasifikatora;</li>
+<li>Datums no – datums no kura šī instruktāža nepieciešama amata vietas ieņemšanai;</li>
+<li>Datums līdz  – datums no kura šī instruktāža nav nepieciešama amata vietas ieņemšanai;</li>
+<li>Instruktāžas veida apraksts;</li>
+<li>Instruktāžas tēmas apraksts.</li>
+</ul>
+<h3 id="instruktāžu-žurnāls">Instruktāžu žurnāls</h3>
+<p>Plānotās instruktāžas tiek aizpildītas žurnālā ar nosaukumu <em>Instruktāžu žurnāls</em>, kas satur sekojošus laukus:</p>
+<ul>
+<li>Dokumenta Nr. – žurnāla rindas identifikators;</li>
+<li>Darbinieka Nr. – no darbinieku klasifikatora darbinieks, kas noklausās instruktāžu;</li>
+<li>Instruktāžu veida kods – no instruktāžu veida klasifikatora;</li>
+<li>Instruktāžu tēmas kods – no instruktāžu tēmu klasifikatora;</li>
+<li>Instruktora darbinieka nr. – no darbinieku klasifikatora darbinieks, kas veic instruktāžu;</li>
+<li>Instruktora nosaukums – aizpildās no instruktāžas tēmas vai ar instruktora darbinieka vārdu un uzvārdu, bet, nenorādot darbinieku, var aizpildīt manuāli (piemēram, ja tas ir pieaicināts speciālists no cita uzņēmuma);</li>
+<li>Kvalifikācijas rindas Nr. – atsauce uz instruktora darbinieka kvalifikācijas ierakstu, kurā ir norādīta nepieciešamā specialitāte;</li>
+<li>Instruktora specialitāte – aizpildās no darbinieka kvalifikācijas vai arī manuāli;</li>
+<li>Iepriekšējais instruktāžas veikšanas datums – datums, kad iepriekš veica šo instruktāžu;</li>
+<li>Datums – instruktāžas veikšanas datums (aizpilda pēc veikšanas);</li>
+<li>Termiņš – instruktāžās veikšanas termiņš.</li>
+</ul>
+<p>Instruktāžu žurnāla ierakstus ir iespējams aizpildīt manuāli vai arī norādot konkrētu datumu uz kuru ģenerē žurnāla rindas no sistēmā pieejamās informācijas.</p>
+<h4 id="instruktāžu-žurnāla-ierakstu-automātiskā-ģenerēšana">Instruktāžu žurnāla ierakstu automātiskā ģenerēšana</h4>
+<p>Žurnāla automātisko ģenerēšanu nodrošina poga <em>Aizpildīt</em>, kuru nospiežot atveras filtra logs. Filtrēt var gan pa amatu kodiem, gan pa struktūrvienību kodiem, profesiju kodiem, kā arī instruktāžu veida kodiem. Cilnē Opcijas ievada datumu uz kuru vēlas ģenerēt žurnāla rindas.</p>
+<p>Ģenerēšanas procesā tiek paņemtas tās instruktāžu tēmas, kas ir norādītas pie darbinieka amata vietas. No instruktāžu ierakstiem tiek paņemts pēdējās instruktāžas datums vai arī darbinieka amata ieņemšanas datums un, izmantojot instruktāžas tēmas periodiskumu, tiek aprēķināts nākamās instruktāžas veikšanas termiņš. Ja termiņš ir pirms norādītā žurnāla aizpildīšanas datuma, tad instruktāžas tēma tiek iekļauta žurnālā.</p>
+<h4 id="instruktāžu-parakstu-lapas-izdruka">Instruktāžu parakstu lapas izdruka</h4>
+<p>Pēc žurnāla veiksmīgas aizpildīšanas no tā ir iespējams izdrukāt instruktāžas parakstu lapu, noklikšķinot uz pogas <em>Drukāt</em>.</p>
+<p>Kad instruktāžas ir veiktas, žurnālā aizpilda datumu un grāmato rindas. Pēc grāmatošanas rindas nonāk instruktāžu ierakstos.</p>
+<h3 id="instruktāžu-ieraksti-un-pārskati">Instruktāžu ieraksti un pārskati</h3>
+<p>Par jau veiktajām instruktāžām informācija tiek glabāta reģistrā <em>Instruktāžu ierasti</em>. Tas satur sekojošus laukus:</p>
+<ul>
+<li>Dokumenta Nr. – ieraksta identifikators;</li>
+<li>Darbinieka Nr. – no darbinieku klasifikatora darbinieks, kas noklausās instruktāžu;</li>
+<li>Instruktāžu veida kods – no instruktāžu veida klasifikatora;</li>
+<li>Instruktāžu tēmas kods – no instruktāžu tēmu klasifikatora;</li>
+<li>Instruktora darbinieka Nr. – no darbinieku klasifikatora darbinieks, kas veic instruktāžu;</li>
+<li>Instruktora nosaukums;</li>
+<li>Kvalifikācijas rindas Nr. – atsauce uz instruktora darbinieka kvalifikācijas ierakstu, kurā ir norādīta nepieciešamā specialitāte;</li>
+<li>Instruktora specialitāte – aizpildās no darbinieka kvalifikācijas vai arī manuāli;</li>
+<li>Datums – instruktāžas veikšanas datums.</li>
+</ul>
+<p>No instruktāžu vēstures ir iespējams izdrukāt veikto instruktāžu pārskatu, nospiežot uz pogas <em>Drukāt</em> logā <em>Instruktāžu ieraksti</em>.</p>
+<p>Šis pārskats satur sekojošu informāciju:</p>
+<ul>
+<li>veiktās instruktāžas temats;</li>
+<li>datums;</li>
+<li>instruktora Nr.;</li>
+<li>darbinieku skaits.</li>
+</ul>
+<p>Veidojot pārskatu, norāda periodu. Instruktāžu vienīgais apvienojošais faktors ir datums un tēma. Līdz ar to notiek grupēšana pa instruktāžas tematiem un datumiem. Attiecīgi kopā ir redzamas vienā datumā notikušās vienas tēmas instruktāžas. Saraksts tiek kārtots pēc tēmas un tad pēc datuma.</p>
+<h2 id="amata-karte">Amata karte</h2>
+<p>Ja tiek iegrāmatots amata rīkojums par jaunas amata vietas izveidošanu, tad grāmatošanas brīdī tiek veidota jauna amata vieta. Ja tiek iegrāmatots amata rīkojums par esošas amata vietas izmaiņām, tad jau esošā amata kartiņā tiek veidotas iegrāmatotās izmaiņas.</p>
+<p>Amata kartiņa satur sekojošus laukus:</p>
+<ul>
+<li>Kods – jauna amata vietas kods;</li>
+<li>Apraksts – amata nosaukums;</li>
+<li>Veida kods – analīzei var sadalīt amatus pa veidiem, piemēram speciālisti un vadītāji;</li>
+<li>Profesijas kods – kods no profesiju klasifikatora;</li>
+<li>Struktūrvienības kods;</li>
+<li>Struktūrvienības apraksts;</li>
+<li>Kopējās slodzes - slodzes, kas ir paredzētas šim amatam kopā;</li>
+<li>Patreizējās slodzes – cik slodzes uzņēmumā jau ir aizņemtas;</li>
+<li>Patreizējais darbinieku skaits – darbinieku skaits, kas ir nodarbināti konkrētā uzņēmumā;</li>
+<li>Vakantas slodzes – cik slodzes vēl ir vakantas šim amatam;</li>
+<li>Izveidošanas datums – amata izveidošanas datums;</li>
+<li>Slēgšanas datums – amata slēgšanas datums;</li>
+<li>Amata alga – informatīvs lauks;</li>
+<li>Atvaļinājuma dienas;</li>
+<li>Papildatvaļinājuma dienas.</li>
+</ul>
+<p>No amata vietas kartes ir iespējams piekļūt visiem amata rīkojumiem par šo karti, tādējādi nodrošinot iespēju apskatīt amata vietas izmaiņas un iepriekšējos stāvokļus. Sadaļā <em>Apstrāde</em> – poga <em>Rīkojuma rindas</em>.</p>
+<h3 id="nepieciešamās-kvalifikācijas">Nepieciešamās kvalifikācijas</h3>
+<p>Gadījumā, ja kādam amatam ir nepieciešama noteikta kvalifikācija, tad tam ir iespējams definēt <em>Nepieciešamās kvalifikācijas</em> amata kartiņas sadaļā <em>Apstrāde</em>. Atveras logs <em>Amata vietas kvalifikācijas</em>, kurš sastāv no sekojošiem laukiem:</p>
+<ul>
+<li>Amata vietas kods;</li>
+<li>Nr. – rindas numurs;</li>
+<li>Kvalifikācijas kods – no kvalifikāciju klasifikatora;</li>
+<li>Tipa kods – no kvalifikāciju tipa klasifikatora;</li>
+<li>Izglītība/Prasme – kvalifikācija ir izglītība vai prasme;</li>
+<li>Līmenis – no konkrētās kvalifikācijas līmeņa klasifikatora.</li>
+</ul>
+<p>Kvalifikāciju klasifikatora veidošana ir aprakstīta nodaļā <em>Darbinieka karte</em>.<br>
+Pieņemot darbinieku amatā, kuram ir definēta kvalifikācija, sistēma paziņo, ka konkrētam darbiniekam pietrūkst kvalifikācija. Aprakstīts nodaļā <em>Personāla rīkojumi</em>.</p>
+<h3 id="riska-faktori">Riska faktori</h3>
+<p>Ja kāds amats ir pakļauts noteiktiem riskiem, lai nodrošinātu riska faktoru piesaisti pie konkrēta darbinieka, norāda amata vietu riska faktorus, kas pieejami no amata kartiņas. Amata kartiņā klikšķiniet uz pogas <em>Riska faktori</em>, kas atrodama sadaļā <em>Apstrāde</em>.
+Atvērsies logs <em>Amata vietas riska faktori</em>, kurš sastāv no sekojošiem laukiem:</p>
+<ul>
+<li>Amata vietas kods;</li>
+<li>Riska faktora kods – riska faktora kods no risku klasifikatora;</li>
+<li>Riska faktora apraksts;</li>
+<li>Datums no – no kura datuma konkrētais riska faktors šai amata vietai stājas spēkā;</li>
+<li>Datums līdz - no kura datuma riska faktors vairs nav spēkā.</li>
+</ul>
+<p>Riska faktoru klasifikatora veidošana ir aprakstīta nodaļā <em>Darba aizsardzība</em>.</p>
+<h3 id="instruktāžas">Instruktāžas</h3>
+<p>Ja konkrētam amatam ir nepieciešams veikt instruktāžas, tad šim amatam iespējams tās definēt amata kartiņā, klikšķinot sadaļā <em>Apstrāde</em> uz pogas <em>Instruktāžas</em>.
+Atveras logs <em>Amata vietas instruktāžas</em>, kurš satur sekojošus laukus:</p>
+<ul>
+<li>Amata vietas kods;</li>
+<li>Instruktāžas  veida kods – kods no instruktāžas veida klasifikatora. Instruktāžas veida klasifikators ir aprakstīts nodaļā Darba aizsardzība;</li>
+<li>Instruktāžas tēmas kods – kods no instruktāžas tēmu klasifikatora. Instruktāžas tēmu klasifikators aprakstīts nodaļā Darba aizsardzība;</li>
+<li>Datums no – datums, no kura amata vietas instruktāža ir spēkā;</li>
+<li>Datums līdz – datums, līdz kuram amata vietas instruktāža ir spēkā;</li>
+<li>Instruktāžas veida apraksts;</li>
+<li>Instruktāžas tēmas apraksts.</li>
+</ul>
+<h3 id="nevēlamās-amata-prombūtnes-periodi">Nevēlamās amata prombūtnes periodi</h3>
+<p>Lai aizpildītu amata vietas svarīgos periodus, kuros nav vēlamas prombūtnes, no amata kartiņas jāatver un jānorāda nevēlamās prombūtnes periodi, kas atrodas sadaļā <em>Apstrāde</em> - <em>Nevēlamās prombūtnes</em>.
+Katram periodam ir iespējams norādīt sekojošu informāciju:</p>
+<ul>
+<li>Amata kods;</li>
+<li>No datuma – perioda sākuma datums;</li>
+<li>Līdz datumam – perioda beigu datums;</li>
+<li>Apraksts – svarīgā notikuma apraksts.</li>
+</ul>
+<p>Šādi periodi jāievada par katru kārtējo gadu atsevišķi.</p>
+<h3 id="amata-algas-komponentes-definēšana">Amata algas komponentes definēšana</h3>
+<p>Lai katram amatam un tālāk arī katram darbiniekam caur personāla rīkojumu piesaistītu algu, amata kartē ir iespējams izveidot amata algas komponentes.
+Amata kartiņā, klikšķinot uz pogas <em>Algas komponentes</em>, ir iespējams definēt algas komponentes.</p>
+<ul>
+<li>Amata kods – no amata kodu klasifikatora;</li>
+<li>Rindas Nr. – aizpildās automātiski;</li>
+<li>Tips – aizpildās automātiski, izvēloties kodu;</li>
+<li>Kods – kods no algas komponenšu klasifikatora;</li>
+<li>Apraksts – aizpildās automātiski, ievadot kodu;</li>
+<li>No datuma – no kura datuma algas komponente ir spēkā;</li>
+<li>Līdz datumam – līdz kuram datumam komponente ir spēkā;</li>
+<li>Pamatalga – atzīme par to, vai dotā komponente ir pamatalga</li>
+<li>Aprēķina veids – kā tiek rēķināta sekojoša algas komponente;</li>
+<li>Vērtība – vērtība noteiktai algas komponentei;</li>
+<li>Aprēķināt pēc – automātiski aizpildās, ievadot kodu;</li>
+<li>Bāze – piemaksām un atvilkumiem, kas tiek rēķināti uz bāzes pamata;</li>
+<li>Prioritāte – lielums, kurš norāda konkrētās komponentes vietu algas aprēķināšanas darbību ķēdē – jo mazāks šis lielums, jo augstāku prioritāti tas nozīmē, un jo ātrāk tas tiek iesaistīts aprēķinos;</li>
+<li>Apmaksāt nakts stundas – atzīme par to, ka nakts stundas tiek apmaksātas;</li>
+<li>Apmaksāt svētku stundas – atzīme par to, ka svētku stundas tiek apmaksātas;</li>
+<li>Apmaksāt virsstundas – atzīme par to, ka virsstundas tiek apmaksātas.</li>
+</ul>
+<p>Algas definēšana pie amata kartes nav obligāta – ja uzņēmumam nav definētas algas katram amatam, tad to var nepildīt.</p>
+<h1 id="ziņojumu-veidošana">Ziņojumu veidošana</h1>
+<p>Sistēmā ir iespējams automātiski sagatavot un informēt darbiniekus par uzņēmumā svarīgiem notikumiem, kā arī papildus iespējams pārskatīt nosūtīto ziņojumu vēsturi.</p>
+<p>Visi izveidotie ziņojumi pieejami, atverot sarakstu <em>Ziņojumi</em>.</p>
+<h2 id="ziņojumu-adresātu-grupas">Ziņojumu adresātu grupas</h2>
+<p>Lai nevajadzētu katru reizi jaunam ziņojumam, kas attiecas tikai uz kādu konkrētu saņēmēju loku, pievienot adresātus pa vienam, ir iespējams izveidot adresātu grupas. Atveriet sarakstu <em>Ziņojumu adresātu grupas</em>. Izveidojiet jaunu rindiņu jaunai grupai un caur pogu <em>Rindas</em> piesaistiet adresātus.</p>
+<p>Ziņojumu adresātu grupas rindas satur sekojošus laukus:</p>
+<ul>
+<li>Grupas kods – no adresātu grupas klasifikatora, veido pats lietotājs;</li>
+<li>Tips – adresātu grupa vai darbinieks;</li>
+<li>Kods – adresātu grupas kods vai darbinieka numurs (ja noradām e-pastu, var vienkārši ierakstīt kaut ko);</li>
+<li>E-pasts – aizpildīts tikai gadījumā, ja ziņojums sūtīts cilvēkam, kurš nav uzņēmuma darbinieks.</li>
+</ul>
+<p><img src="images/24.notification_2.png" alt="alt"></p>
+<p>Adresātu grupas rindā ir iespējams definēt darbinieku vai citu adresātu grupu. Šādā veidā iespējams no mazākām grupām veidot lielākas ziņojumu grupas, kas apvieno dažādus darbiniekus. Adresāta e-pasts tiks paņemts no visiem adresātu grupu hierarhijā esošajiem darbiniekiem.</p>
+<h2 id="ziņojumu-notikumu-uzstādījumi">Ziņojumu notikumu uzstādījumi</h2>
+<p>Papildus jāaizpilda <em>Ziņojuma notikumu uzstādījumi</em>, kas satur sekojošus laukus:</p>
+<ul>
+<li>Kods – ziņojuma kods;</li>
+<li>Nosaukums;</li>
+<li>Automātiskā procesa tips – jānorāda gadījumā, ja tiek konfigurētas procesa rindas, t.i., automātiskā nosūtīšana par definētiem notikumiem (dzimšanas dienas, pases termiņš u.c.). Ja procesa rindas netiek konfigurētas, šis lauks nav jāaizpilda.</li>
+<li>Adresātu grupas kods – no adresātu grupas klasifikatora;</li>
+<li>Sūtīt pašam darbiniekam;</li>
+<li>Sūtīt struktūrvienības vadītājam;</li>
+<li>Pēdējā ziņojuma datums;</li>
+<li>Datuma formula – obligāti jābūt definētai, ja ziņojumam norādīts automātiskā procesa tips;</li>
+<li>
+<ol>
+<li>datuma formula - obligāti jābūt definētai, ja ziņojumam norādīts automātiskā procesa tips;</li>
+</ol>
+</li>
+<li>
+<ol start="2">
+<li>datuma formula - obligāti jābūt definētai, ja ziņojumam norādīts automātiskā procesa tips;</li>
+</ol>
+</li>
+<li>Veidnes kods – ziņojuma veidne.</li>
+<li>Nepieciešama apstiprināšana;</li>
+<li>Apstiprināšanas adresātu grupas kods;</li>
+<li>Prombūtnes filtrs – tiek norādīts prombūtnes kods, ja jāziņo tikai par kādu konkrētu prombūtni (sākuma un beigu datumiem).</li>
+</ul>
+<h2 id="ziņojuma-veidne">Ziņojuma veidne</h2>
+<p>Jāizveido jaunas veidnes kods sarakstā <em>Ziņojumu veidnes</em>.
+Jāsagatavo MS Word dokuments, kurā sagatavots ziņojuma teksts. Mainīgā teksta vietā nepieciešams ierakstīt mainīgā dokumenta lauka kodu ar procentiem. Piemēram:</p>
+<p><img src="images/24.notification_1.png" alt="alt"></p>
+<p><strong>Jāpievērš uzmanība, ka locījumi nav pieejami.</strong> Dokumentu laiku nosaukumi ir pieejami pie konkrētā ziņojuma veida sarakstā <em>Ziņojumu notikumu uzstādījumi</em>, noklikšķinot uz pogas <em>Dokumentu lauki</em>.</p>
+<p>Sagatavotu failu saglabājiet ar paplašinājumu <em>Web Page, Filtered (.htm,.html)</em></p>
+<h2 id="uzstādījumi-ziņojumu-nosūtīšanai-e-pastā">Uzstādījumi ziņojumu nosūtīšanai e-pastā</h2>
+<p>Lai ziņojumus varētu izsūtīt ar e-pasta starpniecību, ir nepieciešams veikt zemāk minētos uzstādījumus E-pastu kontos un Personāla uzstādījumos:</p>
+<p><strong>E-pasta Konts</strong></p>
+<p>Nepieciešams izveidot e-pasta kontu. Sistēmas meklētājā ierakstiet <em>E-pastu Konti</em> un izvēlieties to no saraksta. Lai izveidotu jaunu kontu, jānospiež pogas <em>Jauns</em> - <em>Pievienot e-pasta kontu</em>. Lai sūtītu e-pastus, no algas moduļa jāizvēlas Konta tips <em>SMTP - Use SMTP to send emails</em>.</p>
+<p><img src="images/24.notification_6.png" alt="alt"></p>
+<p>Aizpildiet SMTP uzstādījumus:</p>
+<p><img src="images/24.notification_7.png" alt="alt"></p>
+<p>Nākamajā solī var pārbaudīt e-pastu , kā arī iestatīt šo kontu kā noklusēto:</p>
+<p><img src="images/24.notification_8.png" alt="alt"></p>
+<p><strong>Personāla uzstādījumi</strong></p>
+<p>Ziņojumiem ir nepieciešams salikt sekojošos uzstādījumus katalogā <em>Personāla uzstādījumi</em>:</p>
+<p><img src="images/24.notification_9.png" alt="alt"></p>
+<h2 id="lietotāju-uzstādījumi">Lietotāju uzstādījumi</h2>
+<p>Lapā <em>Lietotāju uzstādījumi</em> priekš Personāla risinājuma vajadzībām nepieciešams aizpildīt tikai lauku <em>Lietotāja ID</em> jeb sistēmas lietotāja ID.</p>
+<p>Pārējie lauki šim risinājumam nav aktuāli.</p>
+<h2 id="procesa-rinda">Procesa rinda</h2>
+<p>Procesu rindas veido sarakstā <em>Procesu rindu ieraksti</em>.
+Katram atsevišķam notikum jāizveido sava procesu rindas ieraksta karte, norādot <em>Izpildāmā objekta ID</em> - 70375502:</p>
+<p><img src="images/24.notification_4.png" alt="alt"></p>
+<p><em>Procesa rindas ieraksti</em> kartes cilnē Visp. info var redzēt notikuma veidu, kuram var definēt periodiskumu. Jāpievērš uzmanība, ka laukiem <em>Apraksts</em> un <em>Parametru virkne</em> jābūt vienādiem. Lai definētu pašu notikumu, lietotājam ir jābūt MS Business Central programmēšanas zināšanām.</p>
+<p>Cilnē <em>Periodiskums</em> definē ziņojumu sūtīšanas intervālu. Šo lietotājs var definēt pats. Definējot periodiskumu ir jāpievērš uzmanība, lai minūšu skaits no vienas izpildes līdz otrai  nav mazāks par vienu reizi, kas nepieciešams ziņojuma apstrādei.</p>
+<p><strong>Lai varētu izsūtīt izveidotos ziņojumus, sistēmai ir nepieciešams, lai Procesu rindas ierakstos būtu izveidota atsevišķa procesu rinda ar kodu <em>MSGSEND</em>, ko ieraksta laukos <em>Apraksts</em> un <em>Parametru virkne</em></strong></p>
+<p><img src="images/24.notification_5.png" alt="alt"></p>
+<p>Izsūtīto ziņojumu vēsturi par konkrētiem notikumiem var apskatīties <em>Procesa rindas žurnāla ierakstos</em>. Žurnāls satur sekojošus laukus:</p>
+<ul>
+<li>Statuss – kurā notikums atrodas uz pārbaudes brīdi - veiksmīgi, notiek, kļūda;</li>
+<li>Lietotāja ID – kurš ir palaidis šo notikuma procesu;</li>
+<li>Izpildāmais objekta nosaukums;</li>
+<li>Sākuma datums/Laiks;</li>
+<li>Beigu datums/Laiks;</li>
+<li>Kļūdas ziņojums – ja statuss ir kļūda.</li>
+</ul>
 </article>
           </div>
           
