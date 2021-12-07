@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title> | Latvian Payroll </title>
+    <title>Creating Documents | Latvian Payroll </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content=" | Latvian Payroll ">
+    <meta name="title" content="Creating Documents | Latvian Payroll ">
     <meta name="generator" content="docfx 2.58.9.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
@@ -77,7 +77,84 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
+<h1 id="creating-documents">Creating Documents</h1>
 
+<h2 id="document-templates">Document Templates</h2>
+<p>All document templates can be classified in separate groups in the register that can be found in the system search function by entering <em>Document Templ. Groups</em>.</p>
+<p>For the orders, contracts and notifications a countless document templates can be made. How to create document templates is described in the chapter <em>Creating Documents</em>. All created document templates are summarized in the list <em>Document Templates</em>.</p>
+<h2 id="setup-in-ms-word">Setup in MS Word</h2>
+<p>To be able to create a template in Microsoft Word, a new button <em>Field</em> must be added to the toolbar. Click on the <em>File</em> (1) in the upper left corner and <em>Options</em>.</p>
+<p><img src="images/23.docum_templ_1_1.png" alt="alt"></p>
+<p>Click on <em>Customize Ribbon</em> (2). Under the section <em>Insert</em> in the list on the right choose <em>Insert</em> – left click of the mouse <em>Add New Group</em> – Name it <em>Field</em> (5). Choose the function <em>Field</em> (3) from the list on the left and <em>Add</em> (4).</p>
+<p><img src="images/23.docum_templ_1_2.png" alt="alt"></p>
+<p>The already added button to the system appears as follows:</p>
+<p><img src="images/23.docum_templ_2.png" alt="alt"></p>
+<h2 id="document-fields-in-business-central">Document fields in Business Central</h2>
+<p>In order to be able to create a template, the fields that are used to enter the variable values in the user defined template are developed in the system.
+A list <em>Document Fields</em> includes the following fields:</p>
+<ul>
+<li>Code – field code;</li>
+<li>Reference – a list in the system from where the fields are processed;</li>
+<li>Description – description of the code;</li>
+<li>Use Text Case – check if this field can bend in all text cases;</li>
+<li>Text Case Gender – select the gender for bending;</li>
+<li>Field Value – the field value, already filled in the document.</li>
+</ul>
+<p>Document fields are located at:</p>
+<ul>
+<li>Employee Card - available at <em>Employees</em> card by pressing <em>Related - Personnel</em>;</li>
+<li>Labour Contract - available at Labour Contract List card by pressing <em>Process - Document Fields</em>. In the document Field list of the Labour contract, those fields that will be necessary when creating labour contracts and alterations are summarized. It includes the fields from the employee cards and fields from the employment contract, as well as the fields from the labour contract payroll components and company information;</li>
+<li>Position Order - As the position order consists of two parts – header and lines -, each part has its own document fields. The header document fields can be opened by pressing  <em>Process - Document Fields</em>, but the line fields can be opened from the Line toolbar by pressing <em>Line - Document Fields</em>;</li>
+<li>Personnel Order - The same as the position orders, the personnel orders consist of two parts – header and lines, and each part has its own document fields. The header document fields can be opened by pressing <em>Process - Document Fields</em>, but the line fields can be opened from the Line toolbar by pressing <em>Line - Document Fields</em>, containing information from the employee card fields, personnel order lines, including personnel order payroll components, as well fields from <em>Company Information</em>;</li>
+<li>Personnel Documents - fields are available at <em>Process - Document Fields</em>. There, the fields that will be needed by creating different personnel documents are summarized, for example, contract for company car, contracts for mobile phone limits etc., – fields from the employee cards, labour contracts and it's payroll components, as well as the fields from the position orders, personnel orders and company information.</li>
+</ul>
+<h2 id="creating-templates">Creating templates</h2>
+<h3 id="creating-documents-and-inserting-fields-what-are-not-payroll-components">Creating documents and inserting fields, what are not payroll components</h3>
+<p>To create a template:</p>
+<ol>
+<li>Open the empty MS Word document or a sample of a document to use as a template;</li>
+<li>At the place where you need the information to fill in out of the system, define the field, for example, insert the field for the full name of the employee:</li>
+</ol>
+<ul>
+<li>Place a cursor or select the text that needs to be replaced with the equired field;</li>
+<li>Press on the pre-attached button <em>Field</em>;</li>
+<li>It will open the following window, where you should choose from the list <em>Field names - DocVariable</em> (1) and, in the field <em>New name</em>, type <em>FULLNAME</em> (2) - the name of the field that will return the full name of the employee:</li>
+</ul>
+<p><img src="images/23.docum_templ_3.png" alt="alt"></p>
+<ul>
+<li>most of the fields can be declined. To do this, write the  first letter of the appropriate declension before the field code:</li>
+</ul>
+<p>G – Genitive – of who?</p>
+<p>D – Dative – to whom?</p>
+<p>A – Accusative – whom?</p>
+<p>I – Instrumental – with what?</p>
+<p>L – Locative – in/at?</p>
+<p>V – Vocative - hey!</p>
+<p>In an example below, declension in accusative would look like as follows:</p>
+<p><img src="images/23.docum_templ_4.png" alt="alt"></p>
+<ul>
+<li>The attached field will be invisible by default in the document; therefore, for the user's convenience for editing the document the function <em>Toggle Field Codes</em> can be used. It can be started with the right click on the mouse by pressing in that place, where inserted field is located:</li>
+</ul>
+<p><img src="images/23.docum_templ_5.png" alt="alt"></p>
+<p>The transcript of the following field appears:</p>
+<p><img src="images/23.docum_templ_6.png" alt="alt"></p>
+<ul>
+<li>Repeat these steps until all document fields are defined.</li>
+</ul>
+<ol start="3">
+<li>The created document save in the field format <strong>Word Document(*.docx)</strong>.</li>
+</ol>
+<h3 id="adding-the-payroll-component-field">Adding the payroll component field</h3>
+<p>The payroll components are added to the document similar to the other fields described in the previous section. The difference is in the definition of the field.
+All document fields of payroll components contain the symbol <em>%1</em>, for example, in labour contract payroll component – salary amount looks like this - <em>LPC_%1_AMOUNT</em>. Symbol <em>%1</em> must be replaced with the relevant document field ID that is defined in the payroll component tables.</p>
+<p>For example:</p>
+<p>Labor contract has been created with the following payroll component, which was automatically assigned to a document field ID:</p>
+<p><img src="images/23.docum_templ_7.png" alt="alt"></p>
+<p>Then the definition that should be recorded in MS Word file will be as follows - LPC_101PC1_AMOUNT.</p>
+<p>Next, the same activities that are described in the previous section by adding fields are required - other than payroll components.</p>
+<h2 id="adding-templates-to-business-central">Adding Templates to Business Central</h2>
+<p>When the template is created, it must be added to the system. Then it can be added to different events – when preparing the personnel orders, creating labor contracts, etc.</p>
+<p>Open the list <em>Document Templates</em>. Under the section <em>Template</em>, click on the button <em>Import Template</em>.  Choose a document you want to import. When the document is imported, a checkmark is added to the field <em>Template Exists</em>.</p>
 </article>
           </div>
           
