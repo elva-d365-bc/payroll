@@ -209,6 +209,62 @@ By entering a loading that is not equal to one, the system recalculates the load
 <p>From the posted labour contract card, a MS Word format document can be opened by clicking on the button <em>Open Document</em>. How to create and attach the document is described in the chapter <em>Creating Documents</em>.</p>
 <h2 id="cancelation-of-the-labour-contract-or-its-alteration">Cancelation of the labour contract or it's alteration</h2>
 <p>If the labour contract is posted, but the user understands that something has not been done correctly, the contract can be canceled, but providing that no personnel order is posted on the basis of this labour contract. If the personnel order is already posted, then the personnel order must be canceled first and only then the labour contract can be canceled. Cancelation of the personnel order is described in the chapter <em>Personnel Order</em>. The labour contract can be cancelled in the list <em>Posted Labour Contract List</em>. Find the contract you want to cancel and, in the card, press <em>Process - Cancel</em>. In the <em>Posted Labour Contract List</em>, a mark for this particular contract that this contract is canceled appears.</p>
+<h1 id="personnel-order">Personnel Order</h1>
+<p>The personnel order is used to record any changes associated with the changes in the staff – employment, termination, position change, loading change, salary change etc. When posting a Personnel order, the system transfers changes also to the Employee cards. All the Personnel Orders are stored in the list <em>Personnel Order List</em>.</p>
+<h2 id="structure-of-the-personnel-order">Structure of the Personnel Order</h2>
+<p>The same as position orders, also the personnel order may be oriented to one or to several employees, as well as several activities with one employee. Personnel Order card includes following fields:</p>
+<h3 id="tab-general">Tab: <em>General</em></h3>
+<ul>
+<li>No. – unique order identifier (can be entered automatically from the number series);</li>
+<li>Posting Date – entry into force date;</li>
+<li>Status – created, In Approval, Created (intended for the document approval process).</li>
+</ul>
+<h3 id="tab-signatures">Tab: <em>Signatures</em></h3>
+<p>You can select two signatories from the company's officials list.</p>
+<h3 id="tab-templates">Tab: <em>Templates</em>:</h3>
+<ul>
+<li>Header Template Code - a code from the list <em>Document Templates</em>;</li>
+<li>Footer Template Code - a code from the list <em>Document Templates</em>.</li>
+</ul>
+<h3 id="tab-addinfo">Tab: <em>Add.info</em></h3>
+<p>Information about when and who has created this order.</p>
+<h3 id="tab-lines">Tab: <em>Lines</em></h3>
+<ul>
+<li>Employee No. – a code from the list <em>Employee</em>;</li>
+<li>First Name – employee's name;</li>
+<li>Last Name – employee's surname;</li>
+<li>Social Security No. – employee's personal code;</li>
+<li>Event Type – Employment, Termination, Position Change, Loading Change, Amount Change, Absence, Demerit, Notice, Surch./Deduct., Add Position, Cancellation, Last Name Change, Informative;</li>
+<li>Line Template Code – a code from the list <em>Document Templates</em>.</li>
+</ul>
+<h2 id="payroll-components-of-the-personnel-order">Payroll Components of the Personnel Order</h2>
+<p>Payroll Components are available by pressing <em>Manage - Payroll Components</em> in the tab <em>Lines</em>. Following fields are available:</p>
+<ul>
+<li>Employee No.;</li>
+<li>First Name;</li>
+<li>Last Name;</li>
+<li>Type - fill in automatically by selecting a code;</li>
+<li>Code - code from the list of <em>Payroll Components</em>;</li>
+<li>Description - fills automatically by entering the code;</li>
+<li>Document Field ID - a field that is essential if creating a document in MS Word format. The process of document creation is described in the chapter <em>Creating Documents</em>;</li>
+<li>Loading;</li>
+<li>From Date - date from which the salary component is valid;</li>
+<li>To Date - date to which component is valid;</li>
+<li>Base Salary - mark that the selected payroll component is the base salary;</li>
+<li>Amount per Load – the amount per load, includes from position card, if filled;</li>
+<li>Amount - value for a specified payroll component and for a specified loading;</li>
+<li>Calculation Method - how the following payroll component is calculated;</li>
+<li>Calculate By - automatically fills in by entering the code;</li>
+<li>Base - for surcharges and deductions that are calculated on the basis of Base;</li>
+<li>Priority - level, what indicates the particular component's place in the chain of the salary calculation – the smaller this amount, the higher the priority of this means and the sooner it is involved in the calculations;</li>
+<li>Allow Night Hours – the mark of the fact that night hours are paid;</li>
+<li>Allow Bank Holiday Hours – the mark of the fact that the bank holiday hours are paid;</li>
+<li>Allow Overtime – the mark that overtime is paid;</li>
+<li>Dimensions can be assigned to payroll components.</li>
+</ul>
+<p>If the Personnel Order is created without a reference to the labour contract or it's alterations, then payroll components are included from the position card's payroll components (if indicated). Therefore, the user must make sure that all entered information in the personnel order payroll components matches the required situation.</p>
+<h2 id="event-types-of-the-personnel-order">Event Types of the Personnel Order</h2>
+<p>As already mentioned above, in the personnel order it is possible to define the following event types: Employment, Termination, Position Change, Loading Change, Amount Change, Absence, Demerit, Notice, Surch./Deduct., Add Position, Cancellation, Last Name Change, Informative. For each type of events, depending on it's purpose, in the system is entered the various information. Information is entered through <em>Manage - Line Card</em> in the tab <em>Lines</em>.</p>
 <h2 id="examples-of-personnel-orders">Examples of Personnel Orders</h2>
 <p>There are several event types for personnel orders, depending of how the <em>Line Card</em> fields differ. In this chapter the examples for the all event types are described.</p>
 <h3 id="order-for-termination">Order for Termination</h3>
@@ -299,7 +355,7 @@ All open (<em>Date To</em> is not specified or the date is later than order's <e
 <h3 id="absence-order">Absence Order</h3>
 <p>Absence order's Line Card includes the following fields:</p>
 <p><img src="images/20.personel_example5.png" alt="alt"></p>
-<h4 id="tab-general">Tab <em>General</em>:</h4>
+<h4 id="tab-general-1">Tab <em>General</em>:</h4>
 <ul>
 <li>Absence code;</li>
 <li>Absence Description – will be completed from the codes of absence;</li>
