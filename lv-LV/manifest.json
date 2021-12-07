@@ -6925,6 +6925,127 @@
       "version": ""
     },
     {
+      "type": "Resource",
+      "source_relative_path": "docs/personnel_extended/images/0.conf_pack.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/personnel_extended/images/0.conf_pack.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/personnel_extended/images/0.conf_pack_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/personnel_extended/images/0.conf_pack_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/personnel_extended/images/23.docum_templ_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/personnel_extended/images/23.docum_templ_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/personnel_extended/images/23.docum_templ_1_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/personnel_extended/images/23.docum_templ_1_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/personnel_extended/images/23.docum_templ_1_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/personnel_extended/images/23.docum_templ_1_2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/personnel_extended/images/23.docum_templ_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/personnel_extended/images/23.docum_templ_2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/personnel_extended/images/23.docum_templ_3.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/personnel_extended/images/23.docum_templ_3.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/personnel_extended/images/23.docum_templ_4.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/personnel_extended/images/23.docum_templ_4.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/personnel_extended/images/23.docum_templ_5.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/personnel_extended/images/23.docum_templ_5.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/personnel_extended/images/23.docum_templ_6.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/personnel_extended/images/23.docum_templ_6.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/personnel_extended/images/23.docum_templ_7.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/personnel_extended/images/23.docum_templ_7.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "docs/personnel_extended/overview.md",
       "output": {
@@ -6942,7 +7063,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/personnel_extended/personnel_extended.html",
-          "hash": "R+Tg+HpdBZ1qxDa50Rsr3REBjdZZG6fFITFP0Nqnx84="
+          "hash": "cSCo+6qnMKKmcqYyfRMm7IeaEKx1otivujXQTZnyMYw="
         }
       },
       "is_incremental": false,
@@ -7187,7 +7308,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/personnel_extended/toc.html",
-          "hash": "Eg5pFFm3MSaO+Qr3EP+Ut0A3MXbFu0OpYeg4cNPyP+A="
+          "hash": "CCAifgIXDqK6bXAS6PzlDcphMoZow2UaNbD91S3bYFM="
         }
       },
       "is_incremental": false,
