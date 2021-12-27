@@ -1292,7 +1292,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_base/payroll_base.html",
-          "hash": "+bNb4VVH9KITk5dZyHmrVAgM8pmoCa67qvVND7yUQCc="
+          "hash": "JRJ/ap3zkWB3lHt5ykiogXvFLSMHkuEL8M4qbeelDaA="
         }
       },
       "is_incremental": false,
@@ -5444,7 +5444,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/payroll_extended.html",
-          "hash": "nyEfAcD7oC4v1adPOTE9LZIcOb/3SdUgwK5MrAMUqpw="
+          "hash": "KhIWz5xGOBYYlFYSuoddcNxR0nkhfUA291IeLxI2Yzc="
         }
       },
       "is_incremental": false,
