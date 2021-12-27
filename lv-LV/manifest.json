@@ -6325,6 +6325,94 @@
       "version": ""
     },
     {
+      "type": "Resource",
+      "source_relative_path": "docs/personnel_base/images/contract_changes_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/personnel_base/images/contract_changes_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/personnel_base/images/contract_changes_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/personnel_base/images/contract_changes_2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/personnel_base/images/employee_contract_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/personnel_base/images/employee_contract_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/personnel_base/images/employee_contract_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/personnel_base/images/employee_contract_2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/personnel_base/images/employee_contract_3.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/personnel_base/images/employee_contract_3.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/personnel_base/images/employee_contract_4.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/personnel_base/images/employee_contract_4.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/personnel_base/images/salary_contract_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/personnel_base/images/salary_contract_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/personnel_base/images/salary_contract_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/personnel_base/images/salary_contract_2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "docs/personnel_base/overview.md",
       "output": {
@@ -6342,7 +6430,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/personnel_base/personnel_base.html",
-          "hash": "ldHs1xhB8v6TNNmvvKqQrM0bS/jKUuICdzFRECxtJGI="
+          "hash": "n640ySh8s/LO+twoMe4zkKXuHb4mrhss3OkNgBszYTg="
         }
       },
       "is_incremental": false,
