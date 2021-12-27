@@ -81,127 +81,67 @@
 
 <p>It is possible to enter employment contracts or their changes into the system. You can also attach templates and print an employment contract directly from the system.</p>
 <h2 id="creating-labour-contract">Creating labour contract</h2>
-<p>A new employee card in which the employee's status is <em>Active</em> (fills automatically) should be assigned. If an employee who has worked in the company previously is hired, a new employee card for this employee needs to be created. In the employee card, all the fields that are necessary for completing the labour contract should be filled, except the salary calculation, employment date and payroll components. The completion of the employee card is described in the chapter <em>Employee Card</em>.
-Information on labour contract that is required for salary calculation and personnel should be entered in the previously defined fields in the <em>Labour Contract List</em> card. Labour Contracts and their corrections/appendixes will vary by sign – by <em>Alteration</em> field enabled and by entry in the field <em>Main Contract No.</em>. Following information should be stored when entering the labour contract:</p>
+<p>When a new employee is hired, it is necessary to create a new Labour Contract card. It can be done by clicking <em>New</em> in the Labour Contract list.</p>
+<p><img src="images/employee_contract_1_eng.png" alt="alt"></p>
+<h4 id="tab-general">Tab <em>General</em>:</h4>
+<p><img src="images/employee_contract_2_eng.png" alt="alt"></p>
 <ul>
 <li>No. – Labour contract number From <em>No. Series</em>;</li>
 <li>Posting Date;</li>
 <li>Status – Created, In Approval, Completed (in order to ensure the procedure for preparing and approving the labour contract);</li>
 <li>Employee No. – number from Employee list;</li>
-<li>First Name;</li>
-<li>Last Name;</li>
-<li>Social Security No.;</li>
 <li>Employment Date;</li>
 <li>Planned Termination Date – if the date is specified. Only informative purpose;</li>
 <li>Position Code – code from list <em>Positions</em>;</li>
-<li>Position Description;</li>
-<li>Department Code – code from list <em>Departments</em>;</li>
-<li>Department Name;</li>
 <li>Social Sign Code – mandatory when hiring a new employee;</li>
 <li>Salary Type – Aggregated or normal working time;</li>
 <li>Loading;</li>
-<li>Cycle Calendar – enable if employee's working time is organized as shift;</li>
 <li>Calendar Code;</li>
 <li>Calendar Name;</li>
-<li>Cycle Serial Number;</li>
 <li>Test Period – if defined;</li>
 <li>Test Period End Date – calculates automatically if it is defined for the entire company;</li>
 <li>Post Order with LC - The mark on when the posting of an employment contract automatically will post also the personnel order for the recruitment of the employee.</li>
 </ul>
-<p>Fields to be filled in the case of the alteration of the labour contract. More about the contract's alteration is described in the next paragraph:</p>
-<ul>
-<li>Alteration – enabled if it's alteration of the contract;</li>
-<li>Main Contract No. – reference to a posted labour contract for which this alteration is intended. Usually it is a contract with what the employee has been recruited;</li>
-<li>Alteration Type Code – a code from list <em>Labour Contract Alteration Types</em>, for example, increasing/decreasing salary, unification of the positions, change the position etc. For each type of alteration is possible to define it' own document template;</li>
-<li>Alteration Description;</li>
-<li>Employee Position No. – Current No of employee's position;</li>
-<li>Primary Position – enable, if this position is primary;</li>
-<li>Employee Position Description.</li>
-</ul>
-<p>The field <em>Contract No. to Replace</em> is intended only to replace the main labour contract No. without making any changes to the employee's card. In case when the field <em>Contract No. to Replace</em> is completed, the system is looking for a document posting date for active position and active payroll components attached to this position on a date of posting. Labour contract card's fields are not editable to not allow the user to change anything. In case when the field <em>Contract No. to Replace</em> is filled, system automatically disables the field <em>Post Order with LC</em>.</p>
-<ul>
-<li>Social Status Code – choose from the <em>Social Statuses</em> list;</li>
-<li>Create Tax Components – enable if the <em>Social Status Code</em> was entered.</li>
-</ul>
-<p>If the user uses the function to post the personnel order automatically after the labour contract posting, and, in addition, <em>Create Tax Components</em> is enabled in the setup, by posting labour contract where tab's <em>Accounting</em> fields are left blank and disabled, taxes will not calculate correctly and the tax calculation will be corrected in the employee's card.
-In the tab <em>Signatures</em>, you can select two signatures from the company's officials list.</p>
-<p>In the tab <em>Template</em>, the document template from the template classifier can be inserted. By default, the template comes from the <em>Personnel Setup</em>, however, if the template is indicated in the position card, the system will take the specified one.</p>
-<p>Tab <em>Add.info</em> – information about when and what have entered the data in this card.</p>
+<p>In the employee card, all the fields that are necessary for completing the labour contract should be filled, except the salary calculation, employment date and payroll components. The completion of the employee card is described in the chapter Employee Card.</p>
+<h4 id="tab-signatures">Tab <em>Signatures</em>:</h4>
+<p><img src="images/employee_contract_3_eng.png" alt="alt"></p>
+<p>In this tab, a signer from the employee list can be chosen.</p>
+<h4 id="tab-template">Tab <em>Template</em>:</h4>
+<p><img src="images/employee_contract_4_eng.png" alt="alt"></p>
+<p>The labour contract template can be changed in the tab <em>Template</em>.</p>
 <h2 id="creating-an-amendment-to-the-labour-contract">Creating an amendment to the labour contract</h2>
-<p>It is possible to create an amendment to the labour contract, when changing the salary, position, loading, etc. To create an amendment, open new labour contract card and place a checkmark in the field <em>Alteration</em>. In order to prepare the amendment in more convenient way to the user, it is advised to follow these steps:</p>
+<p>It is possible to create an amendment to the labour contract, when changing the salary, position, loading, etc. To create an amendment, it is recommended to do it in the following sequence:</p>
+<h4 id="tab-general-1">Tab <em>General</em>:</h4>
+<p><img src="images/contract_changes_1_eng.png" alt="alt"></p>
 <ol>
-<li><p>Place a checkmark that this is the alteration, and choose the contract number that you want to alternate in the field <em>Main Contract No.</em>;
-When choosing the main contract, fields <em>Employee No.</em>, <em>First Name</em>, <em>Last Name</em>, and <em>Social Security No.</em> are entered automatically. If, in the Personnel Setup, the options <em>By Default Post Order with LC</em> and <em>By Default Create Tax Comp.</em>  are enabled, after enabling the field <em>Alteration</em> in the labour contract card these marks are automatically disabled and the system will not allow to enable them again.</p>
-</li>
-<li><p>Choose the amendment type code from the list <em>Labour Contract Alteration Types</em>, where the following fields are available to enter the types:</p>
-</li>
+<li>The document number, for instance, &quot;1&quot;, is added. It will be corrected later;</li>
+<li>Posting date - date when the document is prepared;</li>
+<li>Employee No. - can be chosen from the catalogue;</li>
+<li>Employment date - in case of the amendment, it is the date from which it is in force;</li>
+<li>Indicate that it is an amendment by chosing the Main Contract No. and Employee Position No.
+When the Main Contract No. is visible, it can be copied and added in the No. field.</li>
+<li>When adding the Employee Position No., the system will offer to fill in information automatically, including payroll components. If the answer is &quot;Yes&quot;, the system will fill in information an the user can only adjust it. If the answer is &quot;No&quot;, information will have to be filled in manually for all the fields for points (4) and (5) visible in the image above, as well as the payroll components.</li>
 </ol>
-<ul>
-<li>Code – user freely defined code;</li>
-<li>Description – Code description;</li>
-<li>Alteration type – the system has already defined different types of alterations – Position change, Amount change, Add position, Loading change, Close position. By selecting the alteration type, the system performs the necessary control of the mandatory field filling. This field is optional and may not be completed;</li>
-<li>Template code – a document template can be defined at each type of amendment;</li>
-<li>Mandatory Payroll Component Line – mark if this alteration is required to add also payroll component. In case if checkmark is entered, the system will not allow you to change the status to <em>Completed</em> without entering a payroll component line.</li>
-</ul>
-<ol start="3">
-<li>Enter <em>Employee No.</em> and choose the <em>Employee Position No.</em> for which the alteration needs to be made from the list. When choosing the <em>Employee Position No.</em>, the notification with a question pops out. Update information from the employee position.</li>
-</ol>
-<p><strong>By pressing <em>Yes</em>, the system will fill in the following fields</strong>:</p>
-<ul>
-<li>Position Code – if this amendment if for to the position change, the new position code is selected in this field;</li>
-<li>Position Description;</li>
-<li>Department Code;</li>
-<li>Department Name;</li>
-<li>Primary Position – enabled, if alteration made to primary position;</li>
-<li>Loading;</li>
-<li>Calendar Code;</li>
-<li>Calendar Name.</li>
-</ul>
-<p>Completing the information from the employee's position card is useful only if only one condition is changed, for example, only loading.
-The same way as by choosing to complete the information from the employee's position, the system automatically fills the payroll components that were defined for a particular employee's position number. The payroll components are described in the next section.</p>
-<p><strong>By pressing <em>No</em>, the system will not fill the fields automatically, except the <em>Primary Position</em> field that will be enabled, if alteration is made to a primary position.</strong></p>
-<ol start="4">
-<li>Fill in the other fields:</li>
-</ol>
-<ul>
-<li>Employment Date – Date when the alteration takes effect;</li>
-<li>Planned Termination Date – if the termination date is specified. Informative field;</li>
-<li>Position Code – a new position code if the position has changed. In other cases, the already existing position code should be selected;</li>
-<li>Position Description;</li>
-<li>Department Code – fill in automatically from the position card;</li>
-<li>Department Name;</li>
-<li>Date To – if alteration is only for some limited time, then enter the due date in this field. After the end of this date a previous conditions will take effect.</li>
-</ul>
-<p>After the posting of amendment to the labour contract, also a personnel order should be issued.</p>
+<h4 id="tab-template-1">Tab <em>Template</em>:</h4>
+<p><img src="images/contract_changes_2_eng.png" alt="alt"></p>
+<p>The labour contract template can be changed in the tab <em>Template</em>.</p>
 <h2 id="payroll-components-of-the-labour-contract">Payroll components of the labour contract</h2>
-<p>Payroll components can be reached in the Labour contract card by pressing the button <em>Payroll Components</em>. The employment contract components contain the following fields:</p>
+<p>Payroll components can be reached in the Labour contract card by pressing the button <em>Payroll Components</em>.</p>
+<p><img src="images/salary_contract_1_eng.png" alt="alt"></p>
+<p>The employment contract components contain the following fields:</p>
 <ul>
 <li>Employee No.;</li>
 <li>First Name;</li>
 <li>Last Name;</li>
-<li>Type - fill in automatically by selecting a code;</li>
 <li>Code - code from the list of <em>Payroll Components</em>;</li>
 <li>Description - fills automatically by entering the code;</li>
 <li>Document Field ID - a field that is essential if creating a document in MS Word format. The process of document creation is described in the chapter <em>Creating Documents</em>;</li>
 <li>Loading;</li>
 <li>From Date - date from which the salary component is valid;</li>
 <li>To Date - date to which component is valid;</li>
-<li>Base Salary - mark that the selected payroll component is the base salary;</li>
-<li>Calculation Method - how the following payroll component is calculated;</li>
-<li>Amount per Load;</li>
-<li>Amount - value for a specified payroll component and for a specified loading;</li>
-<li>Calculate By - automatically fills in by entering the code;</li>
-<li>Base - for surcharges and deductions that are calculated on the basis of Base;</li>
-<li>Priority - level, what indicates the particular component's place in the chain of the salary calculation – the smaller this amount, the higher the priority of this means and the sooner it is involved in the calculations;</li>
-<li>Allow Night Hours – the mark of the fact that night hours are paid;</li>
-<li>Allow Bank Holiday Hours – the mark of the fact that the bank holiday hours are paid;</li>
-<li>Allow Overtime – the mark that overtime is paid;</li>
-<li>Dimensions can be assigned to payroll components.</li>
+<li>Amount - value for a specified payroll component and for a specified loading.</li>
 </ul>
-<p>Labour contract payroll components will be filled automatically from position cards, therefore, it is very important to check that this information is exactly what the user expects.
-If the additional position alteration is created, then it is necessary to change the payroll component number to the premium for additional work and make sure that the <em>Primary Position</em> field is disabled.
-Pay attention to the fields <em>From Date</em> and <em>To Date</em> – these fields are also filled in from the position card, so if they do not match the required dates, which are defined in the particular labour contract or alterations, this should be corrected.<br>
-By entering a loading that is not equal to one, the system recalculates the loading value according to the loading shown in the labour contract.</p>
+<p>Other information can be filled in if necessary.</p>
 <h2 id="printouts-and-postings-of-labour-contract">Printouts and postings of Labour Contract</h2>
 <p>When all the required information is entered and checked, labour contract printout can be made from the attached document template. It can be forwarded for signatures, and simultaneously the employment contract status is changed to <em>In Approval</em>. The process for creating the document templates is described in the chapter <em>Creating Documents</em>. When signed document is received back, the status of the labour contract shall be changed to <em>Completed</em> and contract can be posted.</p>
 <p>After posting the labour contract, no change in the employee card will be made. Information is updated/inserted only after the posting of the employment personnel order. Personnel orders are described in the chapter <em>Personnel Order</em>. The posted contracts will be automatically moved to the <em>Posted Labour Contract List</em>.</p>
@@ -213,13 +153,13 @@ By entering a loading that is not equal to one, the system recalculates the load
 <p>The personnel order is used to record any changes associated with the changes in the staff – employment, termination, position change, loading change, salary change etc. When posting a Personnel order, the system transfers changes also to the Employee cards. All the Personnel Orders are stored in the list <em>Personnel Order List</em>.</p>
 <h2 id="structure-of-the-personnel-order">Structure of the Personnel Order</h2>
 <p>The same as position orders, also the personnel order may be oriented to one or to several employees, as well as several activities with one employee. Personnel Order card includes following fields:</p>
-<h3 id="tab-general">Tab: <em>General</em></h3>
+<h3 id="tab-general-2">Tab: <em>General</em></h3>
 <ul>
 <li>No. – unique order identifier (can be entered automatically from the number series);</li>
 <li>Posting Date – entry into force date;</li>
 <li>Status – created, In Approval, Created (intended for the document approval process).</li>
 </ul>
-<h3 id="tab-signatures">Tab: <em>Signatures</em></h3>
+<h3 id="tab-signatures-1">Tab: <em>Signatures</em></h3>
 <p>You can select two signatories from the company's officials list.</p>
 <h3 id="tab-templates">Tab: <em>Templates</em>:</h3>
 <ul>
@@ -355,7 +295,7 @@ All open (<em>Date To</em> is not specified or the date is later than order's <e
 <h3 id="absence-order">Absence Order</h3>
 <p>Absence order's Line Card includes the following fields:</p>
 <p><img src="images/20.personel_example5.png" alt="alt"></p>
-<h4 id="tab-general-1">Tab <em>General</em>:</h4>
+<h4 id="tab-general-3">Tab <em>General</em>:</h4>
 <ul>
 <li>Absence code;</li>
 <li>Absence Description – will be completed from the codes of absence;</li>
