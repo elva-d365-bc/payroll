@@ -8,7 +8,7 @@
     <title>K&#257; s&#257;kt str&#257;d&#257;t | Latvian Payroll </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="K&#257; s&#257;kt str&#257;d&#257;t | Latvian Payroll ">
-    <meta name="generator" content="docfx 2.58.9.0">
+    <meta name="generator" content="docfx 2.59.0.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
@@ -214,7 +214,7 @@
 <td>-</td>
 <td>-</td>
 <td>Jā</td>
-<td><em>Prombūtņu iemesla kodi jāizskata, un vajadzības gadījumā, jākoriģē vai jāpapildina konsultējoties ar [!include[comp_name](includes/comp_name.md)] speciālistu. Uzstādījumi aprakstīti nodaļā &quot;Prombūtnes iemesli&quot;</em>.</td>
+<td><em>Prombūtņu iemesla kodi jāizskata, un vajadzības gadījumā, jākoriģē vai jāpapildina konsultējoties ar ELVA speciālistu. Uzstādījumi aprakstīti nodaļā &quot;Prombūtnes iemesli&quot;</em>.</td>
 </tr>
 <tr>
 <td>Struktūrvienības</td>
@@ -584,7 +584,7 @@ Uzstādījumu definēšana ir svarīga, lai no sistēmas varētu veiksmīgi eksp
 <p>Algas aprēķins tiek veidots no dažādām algas komponentēm – ienākumiem, atvilkumiem, atvieglojumiem, nodokļiem, utt. Visas komponentes ir apkopotas sarakstā <em>Algas komponentes</em>.</p>
 <div class="TIP">
 <h5>Tip</h5>
-<p><strong>Parasti lielākā daļa no šīm komponentēm ir kopīga visiem uzņēmumiem un tiek sagatavotas iepriekš, veidojot jaunu bāzi klientam. Tāpēc nav ieteicams šīs vērtības dzēst un modificēt bez konsultācijas ar [!include[comp_name](includes/comp_name.md)] konsultantiem</strong>.</p>
+<p><strong>Parasti lielākā daļa no šīm komponentēm ir kopīga visiem uzņēmumiem un tiek sagatavotas iepriekš, veidojot jaunu bāzi klientam. Tāpēc nav ieteicams šīs vērtības dzēst un modificēt bez konsultācijas ar ELVA konsultantiem</strong>.</p>
 </div>
 <p>Katras komponentei ir atsevišķa kartiņa, kurā tiek veikti iestatījumi, un ir iespējams piesaistīt dimensijas (1) un apskatīt aprēķinu bāzes, kurās konkrētā komponente tiek izmantota, noklikšķinot uz <em>Sastītās bāzes pēc tipa</em> (2) un <em>Saistītās bāzes pēc koda</em> (3).</p>
 <p><img src="images/3.payroll_calc_1.png" alt="alt"></p>
@@ -745,6 +745,14 @@ Uzstādījumu definēšana ir svarīga, lai no sistēmas varētu veiksmīgi eksp
 <td>Iekļaut nulles summu</td>
 <td>Ieslēdz, ja jāveido algas rindu ar 0 summu (nav iespējas ieturēt summu, bet pastāv iespēja, ka lietotājs koriģēs atvilkuma summu). Ģenerēt rindu vajag, lai būtu iespēja pārskaitīt naudu trešajām pusēm.</td>
 </tr>
+<tr>
+<td>Apvienot summu algas lapiņā</td>
+<td>Summas algas lapiņā tiek apvienota pēc algas komponentes koda</td>
+</tr>
+<tr>
+<td>Apvienot dienas/stundas algas lapiņā</td>
+<td>Dienas/stundas algas lapiņā tiek apvienotas pēc algas komponentes koda</td>
+</tr>
 </tbody>
 </table>
 <h3 id="cilne-grāmatošana">Cilne: <em>Grāmatošana</em></h3>
@@ -812,7 +820,7 @@ Uzstādījumu definēšana ir svarīga, lai no sistēmas varētu veiksmīgi eksp
 </tbody>
 </table>
 <h3 id="darbinieku-grāmatošanas-grupas">Darbinieku grāmatošanas grupas</h3>
-<p>Darbinieka grāmatošanas grupas tiek izmantotas, ja algas aprēķinā iegūtās summas jāizdala starp dažādiem virsgrāmatas kontiem (piemēram, administrācijas algu izmaksas un strādnieku algu izmaksas). Lai apskatītu visus algu grāmatojumus vienā lapā, <em>Darbinieku grāmatošanas grupas</em> rīkjoslā jānospiež poga <em>Grāmatošanas uzstādījumi</em></p>
+<p>Darbinieka grāmatošanas grupas tiek izmantotas, ja algas aprēķinā iegūtās summas jāizdala starp dažādiem virsgrāmatas kontiem (piemēram, administrācijas algu izmaksas un strādnieku algu izmaksas). Lai apskatītu visus algu grāmatojumus vienā lapā, <em>Darbinieku grāmatošanas grupas</em> rīkjoslā jānospiež poga <em>Grāmatošanas uzstādījumi</em>.</p>
 <p><img src="images/2.payroll_acc_6.png" alt="alt"></p>
 <table>
 <thead>
@@ -900,7 +908,7 @@ Uzstādījumu definēšana ir svarīga, lai no sistēmas varētu veiksmīgi eksp
 </tr>
 <tr>
 <td>Saistītās komponentes kods</td>
-<td>Šī funkcionalitāte paredzēta paplašinātai datu filtrēšanai. Ja bāzei tiek norādīts Saistītās komponentes kods, tad no algas komponenšu rindām tiek skaitītas tikai rindas, kur komponentes kods vai saistītās komponentes kods sakrīt ar bāzes summas saistītās komponentes kodu. Saistītai komponentei ir ierobežojumi (PFPIS korektai aizpildīšanai), tāpēc obligāti konsultēties ar [!include[comp_name](includes/comp_name.md)] konsultantiem.</td>
+<td>Šī funkcionalitāte paredzēta paplašinātai datu filtrēšanai. Ja bāzei tiek norādīts Saistītās komponentes kods, tad no algas komponenšu rindām tiek skaitītas tikai rindas, kur komponentes kods vai saistītās komponentes kods sakrīt ar bāzes summas saistītās komponentes kodu. Saistītai komponentei ir ierobežojumi (PFPIS korektai aizpildīšanai), tāpēc obligāti konsultēties ar ELVA konsultantiem.</td>
 </tr>
 <tr>
 <td>IIN līmeņa filtrs</td>
