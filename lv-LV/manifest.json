@@ -245,7 +245,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/hrw/overview.html",
-          "hash": "yUPD8jgbLw65ysI2gRSJDKyHrdW8rI7aueIlcFkWPtk="
+          "hash": "YlanhePvHhKnXn/OqdsBpYD5XNXWy93VvE+kKX178mg="
         }
       },
       "is_incremental": false,
@@ -6299,23 +6299,23 @@
       "version": ""
     },
     {
-      "type": "Conceptual",
+      "type": "Resource",
       "source_relative_path": "docs/personnel_base/images/24.notifications.md",
       "output": {
-        ".html": {
-          "relative_path": "docs/personnel_base/images/24.notifications.html",
-          "hash": "p+2uvJ87Q5mHIiTwMsuVd1RQrE/YkIbLS2GbwFzfX5s="
+        "resource": {
+          "relative_path": "docs/personnel_base/images/24.notifications.md"
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
-      "type": "Resource",
+      "type": "Conceptual",
       "source_relative_path": "docs/personnel_base/images/24.notifications.md",
       "output": {
-        "resource": {
-          "relative_path": "docs/personnel_base/images/24.notifications.md"
+        ".html": {
+          "relative_path": "docs/personnel_base/images/24.notifications.html",
+          "hash": "p+2uvJ87Q5mHIiTwMsuVd1RQrE/YkIbLS2GbwFzfX5s="
         }
       },
       "is_incremental": false,
