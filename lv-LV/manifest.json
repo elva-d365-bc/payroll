@@ -6323,6 +6323,182 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/personnel_base/images/Autom_Journal_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/personnel_base/images/Autom_Journal_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/personnel_base/images/Autom_Journal_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/personnel_base/images/Autom_Journal_2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/personnel_base/images/Booking_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/personnel_base/images/Booking_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/personnel_base/images/Booking_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/personnel_base/images/Booking_2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/personnel_base/images/Booking_3.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/personnel_base/images/Booking_3.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/personnel_base/images/Journal_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/personnel_base/images/Journal_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/personnel_base/images/Journal_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/personnel_base/images/Journal_2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/personnel_base/images/Manual_Journal_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/personnel_base/images/Manual_Journal_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/personnel_base/images/OVP_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/personnel_base/images/OVP_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/personnel_base/images/OVP_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/personnel_base/images/OVP_2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/personnel_base/images/Referral_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/personnel_base/images/Referral_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/personnel_base/images/Result_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/personnel_base/images/Result_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/personnel_base/images/Result_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/personnel_base/images/Result_2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/personnel_base/images/Risk_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/personnel_base/images/Risk_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/personnel_base/images/Risk_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/personnel_base/images/Risk_2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/personnel_base/images/Risk_3.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/personnel_base/images/Risk_3.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/personnel_base/images/contract_changes_1.png",
       "output": {
         "resource": {
@@ -6427,7 +6603,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/personnel_base/personnel_base.html",
-          "hash": "tzlP+4UnpXXLAy6DUOrQpjRBhLDDDDgQkwfeoOCvo2E="
+          "hash": "SXi7N8/XDFC3Q7cbCNtCqXUaPPkiUe6YFFhu8xyHleA="
         }
       },
       "is_incremental": false,

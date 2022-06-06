@@ -457,17 +457,35 @@ Anulētie rīkojumi no sistēmas nekur nepazūd un tos var apskatīt gan iegrām
 Līdzīgi kā veselības pārbaudes risinājums darbojas arī instruktāžu risinājums. Ir iespējams definēt instruktāžas veidus un tēmas, kā arī piesaistīt tos katram darbiniekam caur amata kartiņu. Iespējams automātiski ģenerēt žurnāla ierakstus, plānot instruktāžas un pārskatīt jau veikto instruktāžu vēsturi, kā arī no instruktāžu žurnāla iespējams drukāt instruktāžu parakstu lapu.</p>
 <p>Uzstādījumi, kas attiecas uz darba aizsardzību, ir aprakstīti nodaļā <em>Personāla uzstādījumi</em>.</p>
 <h2 id="obligātā-veselības-pārbaude">Obligātā veselības pārbaude</h2>
-<h3 id="riska-faktoru-definēšana">Riska faktoru definēšana</h3>
-<p>Katram amatam ir piesaistīti savi riska faktori – vienam amatam tie var būt gan viens, gan vairāki. Riska faktorus definē sarakstā <em>Riska faktori</em>.</p>
-<p>Katrs riska faktors satur sekojošu informāciju:</p>
+<h3 id="noklusējuma-veselības-pārbaudes-žurnāla-iedaļa">Noklusējuma veselības pārbaudes žurnāla iedaļa</h3>
+<p>Tabulā Personāla uzstādījumi, cilnē <em>Darba aizsardzība</em>, ir pieejams lauks <em>Noklusējuma veselības pārbaudes žurnāla iedaļas nosaukums</em>. Tā ir iedaļa, kurā tiks veidoti ieraksti, pieņemot darbā jaunu darbinieku vai noformējot darbinieka amatu. Ir ieteicams izveidot trīs žurnāla iedaļas atbilstoši iespējamajiem pārbaužu veidiem:</p>
 <ul>
-<li>Kods – unikāls riska faktora identifikators;</li>
-<li>Apraksts – riska faktora nosaukums;</li>
-<li>Tips – piemēram, darba vides vai īpašais;</li>
-<li>Pārbaužu periodiskums – cik bieži par konkrēto risku jāveic veselības pārbaudes.</li>
+<li>Ārpuskārtas;</li>
+<li>Pirmreizējā;</li>
+<li>Periodiskā.</li>
 </ul>
+<p><img src="images/OVP_1.png" alt="alt"></p>
+<p>Katrai iedaļai ir nepieciešams definēt numuru sēriju.</p>
+<p><img src="images/OVP_2.png" alt="alt"></p>
+<h3 id="riska-faktoru-definēšana">Riska faktoru definēšana</h3>
+<p>Katram amatam ir piesaistīti savi riska faktori – vienam amatam tie var būt gan viens, gan vairāki. Riska faktorus definē tabulā Amati, atverot Amata kartiņu – <em>Apstrādāt</em> (1) – <em>Riska faktori</em> (2).</p>
+<p><img src="images/Risk_1.png" alt="alt"></p>
+<p>Uzklikšķinot uz pogas <em>Riska faktori</em>, atvērsies tabula Amata riska faktori. Katrs riska faktors satur sekojošu informāciju:</p>
+<ul>
+<li>Riska faktora kods – unikāls riska faktora identifikators;</li>
+<li>No datuma;</li>
+<li>Līdz datumam;</li>
+<li>Riska faktora apraksts – riska faktora nosaukums;
+Uzklikšķinot uz teksta laukā <em>Riska faktora apraksts</em>, atvērsies tabula Riska faktori.</li>
+</ul>
+<p><img src="images/Risk_2.png" alt="alt"></p>
+<p>Katram riska faktoram ir norādīts savs periodiskums laukā <em>Pārbaužu periodiskums</em> (1). Balstoties uz informāciju šajā laukā, sistēma automātiski aizpildīs nākamās pārbaudes datumu.
+Šajos uzstādījumos ir iespējams norādīt arī Riska faktora <em>Tipu</em> (2), piemēram, darba vide vai īpašais.</p>
+<p><img src="images/Risk_3.png" alt="alt"></p>
 <h3 id="veselības-pārbaužu-žurnāls">Veselības pārbaužu žurnāls</h3>
-<p>Informācija par plānotajām veselības pārbaudēm tiek glabāta reģistrā <em>Veselības pārbaužu žurnāls</em>:</p>
+<p>Informācija par plānotajām veselības pārbaudēm tiek glabāta veselības pārbaužu žurnālā.
+<em>Nodaļas</em> – <em>Personāls</em> – <em>Darba aizsardzība</em> – <em>Veselības pārbaužu žurnāls</em>:</p>
+<p><img src="images/Journal_1.png" alt="alt"></p>
 <ul>
 <li>Dokumenta Nr. - unikāls ieraksta identifikators;</li>
 <li>Darbinieka Nr. – no darbinieku klasifikatora;</li>
@@ -481,8 +499,11 @@ Līdzīgi kā veselības pārbaudes risinājums darbojas arī instruktāžu risi
 <li>Ārpuskārtas pārbaudes iemesls;</li>
 <li>Nosūtījums izdrukāts – atzīme par to, ka nosūtījums izdrukāts.</li>
 </ul>
-<p>Veselības pārbaužu žurnālu ir iespējams aizpildīt manuāli vai arī ģenerēt to no sistēmā pieejamās informācijas. Kā arī, pieņemot jaunu darbinieku, grāmatojot Personāla rīkojumu, pirmreizējā veselības pārbaude tiks uzģenerēta automātiski. Par Personāla rīkojumiem ir aprakstīts nodaļā <em>Personāla rīkojumi</em>.</p>
+<p>Veselības pārbaužu žurnālu ir iespējams aizpildīt manuāli vai arī ģenerējot no sistēmā pieejamās informācijas, kā arī, pieņemot jaunu darbinieku. Pirmreizējā veselības pārbaude tiks automātiski uzģenerēta iedaļā, kura noradīta personāla uzstādījumos.<br>
+Ja kādā no Veselības pārbaužu žurnāla iedaļām jau ir izveidots ieraksts konkrētajam riska faktoram, tas neuzrādīsies citā žurnāla veidnē, ja tiks veikta automātiska rindu aizpildīšana.</p>
 <h3 id="veselības-pārbaužu-žurnāla-ierakstu-manuālā-aizpildīšana">Veselības pārbaužu žurnāla ierakstu manuālā aizpildīšana</h3>
+<p>Veselības pārbaužu žurnālā manuāli aizpildot lauku <em>Pārbaudes veikšanas datums</em> (1), tabulā Veselības pārbaužu žurnāla riska faktori automātiski atjauninās informācija laukā <em>No Datuma</em> un sistēma aprēķina Nākamās veselības pārbaudes datumu.</p>
+<p><img src="images/Manual_Journal_1.png" alt="alt"></p>
 <p>Aizpildot žurnālu manuāli, pildot informāciju par riskiem, ir jāpilda caur pogu <em>Apstrādāt</em> (1) - <em>Riska faktori</em> (2).</p>
 <p><img src="images/22.ovp_1.png" alt="alt"></p>
 <p>Tabula Veselības pārbaužu žurnāla riska faktori satur sekojošu informāciju:</p>
@@ -501,37 +522,60 @@ Līdzīgi kā veselības pārbaudes risinājums darbojas arī instruktāžu risi
 <li>Iepriekšējās žurnāla rindas datums;</li>
 <li>Iepriekšējās pārbaudes datums;</li>
 <li>Pārbaudes veikšanas gala termiņš – termiņš, līdz kuram ir jāveic pārbaude; tiek aizpildīts automātiski, atkarīgs no amata riska faktora periodiskuma un pēdējās veiktas pārbaudes datuma;</li>
+<li>Nākamās veselības pārbaudes datums – sistēma sarēķina no riska faktora uzstādījumiem;</li>
+<li>Nākamās veselības pārbaudes veids - pēc noklusējuma vienmēr Periodiskā;</li>
 <li>Atzinuma kods – no atzinumu klasifikatora;</li>
 <li>Atzinuma apraksts.</li>
 </ul>
 <p>Aizpildot lauku <em>Riska faktora kods</em>, pārējie lauki, izņemot laukus <em>Atzinuma kods</em> un <em>Atzinuma apraksts</em>, aizpildīsies automātiski pie nosacījuma, ka riska faktori tika piesaistīti amatam, veidojot amata kartiņu.</p>
+<div class="TIP">
+<h5>Tip</h5>
+<p><strong>Gadījumā, ja darbiniekam vajadzētu piefiksēt ārpuskārtas veselības pārbaudi (rindai ir noradīts <em>Veselības pārbaudes veids</em> – Ārpuskārtas), tad sistēma pati aizpildīs visus amata riska faktorus. Nepieciešamības gadījumā to var rediģēt</strong>.</p>
+</div>
 <h3 id="veselības-pārbaužu-žurnāla-ierakstu-automātiska-ģenerēšana">Veselības pārbaužu žurnāla ierakstu automātiska ģenerēšana</h3>
-<p>Lai aizpildītu žurnālu automātiski, klikšķiniet uz pogas <em>Aizpildīt</em>.
-Ģenerējot žurnāla ierakstus automātiski, tiek ņemti riska faktori no darbinieka amatiem piesaistītajām amata vietām. Ģenerējot nepieciešams norādīt datumu uz kuru vēlas veidot veselības pārbaudes.</p>
-<p>Žurnāla ierakstus ir iespējams ģenerēt pēc Darbinieka numura, Amata koda, Profesiju koda, Struktūrvienības koda, Riska faktora koda un Riska faktora tipa. Cilnē Opcijas ievada datumu uz kuru vēlas ģenerēt žurnāla rindas.
+<p>Veselības pārbaužu žurnāls – <em>Apstrādāt</em> (1) – <em>Aizpildīt</em> (2).</p>
+<p><img src="images/Autom_Journal_1.png" alt="alt"></p>
+<p>Ģenerējot žurnāla ierakstus automātiski, tiek ņemti riska faktori no darbinieka amatiem piesaistītajām amata vietām. Ģenerējot nepieciešams norādīt datumu uz kuru vēlas veidot veselības pārbaudes.</p>
+<p>Žurnāla ierakstus ir iespējams ģenerēt pēc Darbinieka numura, Amata koda, Profesiju koda, Struktūrvienības koda, Riska faktora koda un Riska faktora tipa. Cilnē <em>Opcijas</em> ievada datumu uz kuru vēlas ģenerēt žurnāla rindas.
 Lai noskaidrotu riska faktora nākamās pārbaudes termiņu, sistēma pārbauda veselības pārbaužu ierakstos esošās iepriekšējās pārbaudes datumu un darbinieka amatā stāšanās datumu. No šī iegūtā datuma, izmantojot riska faktora periodiskumu, tiek aprēķināts nākamās pārbaudes termiņš. Ja šis termiņš ir pirms sākotnējā norādītajā žurnāla aizpildīšanas datuma, tad konkrētā veselības pārbaude tiek pievienota žurnālam.</p>
+<p>Gadījumā, ja iepriekšējā riska ieraksta lauks <em>Nākamais pārbaudes veids</em> ir Ārpuskārtas, tad sistēma ignorēs riska faktora periodiskumu un orientēsies uz  lauku <em>Nākamās veselības pārbaudes datums</em>.
+Lai apskatītu konkrētā darbinieka amatam piesaistītos riska faktorus, ir jāieiet Veselības pārbaužu žurnāla sadaļā <em>Apstrādāt</em> (1) – <em>Riska faktori</em> (2).</p>
+<p><img src="images/Autom_Journal_2.png" alt="alt"></p>
+<p>Ja darbiniekam tiek veikta amata maiņa, ir iespējams, ka jaunajam amatam piesaistītie riski atšķiras no iepriekšējā amata riskiem. Tiklīdz tiek iegrāmatota informācija par amata maiņu, Veselības pārbaužu žurnālā automātiski izveidojas rindas par nepieciešamajām pirmreizējām veselības pārbaudēm, kas saistītas ar jauno amatu.</p>
 <h3 id="veselības-pārbaužu-žurnāla-ierakstu-apvienošana">Veselības pārbaužu žurnāla ierakstu apvienošana</h3>
-<p>Ja vienam darbiniekam ir vairāki riska faktori, tad sākumā tiek izveidotas vairākas veselības pārbaudes par katru riska faktoru. Lai nepieciešamības gadījumā apvienotu žurnālā esošās veselības pārbaudes zem vienas, žurnālā ir apvienošanas funkcija <em>Apvienot</em>.</p>
+<p>Ja vienam darbiniekam ir vairāki riska faktori, tad sākumā tiek izveidotas vairākas veselības pārbaudes par katru riska faktoru. Lai nepieciešamības gadījumā apvienotu žurnālā esošās veselības pārbaudes zem vienas, žurnālā ir apvienošanas funkcija (<em>Apstrādāt</em> (1) – <em>Apvienot</em> (2)).</p>
+<p><img src="images/Journal_2.png" alt="alt"></p>
 <p>Šī funkcija no atfiltrētajiem ierakstiem pēc darbinieku numuriem apvieno veselības pārbaudes vienā.
 Ja lietotājs vēlas apvienot tikai viena darbinieka veselības pārbaudes, tad filtrā ieliek darbinieka numuru.</p>
 <p>Kā pārbaudes veikšanas gala termiņš atlikušajai veselības pārbaudei tiek norādīts ātrākais termiņš no tajā apvienotajiem riska faktoriem.</p>
 <h3 id="veselības-pārbaudes-nosūtījuma-izdruka">Veselības pārbaudes nosūtījuma izdruka</h3>
-<p>Kad veselības pārbaude atrodas žurnālā, ir iespējams izveidot veselības pārbaudes nosūtījuma izdruku, nospiežot pogu <em>Drukāt nosūtījumu</em>. Pēc drukāšanas laukā <em>Nosūtījums izdrukāts</em> iepildās ķeksis.</p>
+<p>Kad veselības pārbaude atrodas žurnālā ir iespējams izveidot veselības pārbaudes nosūtījuma izdruku. Pēc drukāšanas laukā Nosūtījums izdrukāts iepildās ķeksis. Veselības pārbaužu žurnāls – <em>Pārskati</em> (1) – <em>Drukāt nosūtījumu</em> (2).</p>
+<p><img src="images/Referral_1.png" alt="alt"></p>
 <h3 id="veselības-pārbaudes-atzinums">Veselības pārbaudes atzinums</h3>
-<p>Pēc veselības pārbaudes veikšanas, saņemot atzinumu, to ievada tabulā Veselības pārbaužu žurnālā caur pogu <em>Riska faktori</em>. Izvēlās Atzinuma kodu no Veselības pārbaužu atzinumu klasifikatora.</p>
-<p><em>Veselības pārbaužu atzinumi</em> klasifikators sastāv no sekojošiem laukiem:</p>
+<p>Pēc veselības pārbaudes veikšanas saņemot atzinumu, to ievada tabulā Veselības pārbaužu žurnāla riska faktori. Veselības pārbaužu žurnāls – <em>Apstrādāt</em> (1) – <em>Riska faktori</em> (2).</p>
+<p><img src="images/Result_1.png" alt="alt"></p>
+<p>Izvēlās <em>Atzinuma kodu</em> (1) no Veselības pārbaužu atzinumu klasifikatora.</p>
+<p><img src="images/Result_2.png" alt="alt"></p>
+<p>Veselības pārbaužu atzinumu klasifikators
+(<em>Nodaļas</em> – <em>Personāls</em> – <em>Darba aizsardzība</em> – <em>Administrēšana</em> – <em>Veselības pārbaužu atzinumi</em>) sastāv no sekojošiem laukiem:</p>
 <ul>
 <li>Kods – unikāls atzinuma kods;</li>
 <li>Apraksts – atzinuma apraksts.</li>
 </ul>
+<p>Ievadot atzinumu, var nomainīt nākamās pārbaudes datumu un veidu. To sistēma ņems vērā, aprēķinot nākamās pārbaudes datumu.
+Laukā <em>Piezīmes</em> var ierakstīt ārsta komentārus. Piemēram, apmaksāt brilles.</p>
 <h3 id="veselības-pārbaužu-žurnāla-grāmatošana-un-veselības-pārbaužu-ieraksti">Veselības pārbaužu žurnāla grāmatošana un veselības pārbaužu ieraksti</h3>
-<p>Pēc atzinuma ievadīšanas Veselības pārbaužu žurnālu var iegrāmatot ar pogu <em>Grāmatot</em>. Lai nodrošinātu vēsturisku informāciju par veselības pārbaudēm, no veselības pārbaužu žurnāla pēc grāmatošanas tiek aizpildīti darbinieka veselības pārbaužu ieraksti reģistrā <em>Veselības pārbaužu ieraksti</em>. Tie satur sekojošu informāciju:</p>
+<p>Pēc atzinuma ievadīšanas Veselības pārbaužu žurnālu var grāmatot (<em>Veselības pārbaužu žurnāls</em> – <em>Apstrādāt</em> (1) – <em>Grāmatot</em> (2)).</p>
+<p><img src="images/Booking_1.png" alt="alt"></p>
+<p>Lai nodrošinātu vēsturisku informāciju par veselības pārbaudēm, no veselības pārbaužu žurnāla pēc grāmatošanas tiek aizpildīti darbinieka veselības pārbaužu ieraksti. To var izdarīt sadaļā <em>Apstrādāt</em> (1) – <em>Veselības pārbaužu ieraksti</em> (2).</p>
+<p><img src="images/Booking_2.png" alt="alt"></p>
+<p>Tie satur sekojošu informāciju:</p>
 <ul>
 <li>Dokumenta Nr. – unikāls ieraksta identifikators;</li>
 <li>Darbinieka Nr. – no darbinieku klasifikatora;</li>
 <li>Darbinieka vārds;</li>
 <li>Darbinieka uzvārds;</li>
-<li>Darbinieka amats Nr. - darbinieka amata numurs no amatu klasifikatora;</li>
+<li>Darbinieka amata Nr. - darbinieka amata numurs no amatu klasifikatora;</li>
 <li>Amata vietas kods – darbinieka amata kods no amatu klasifikatora;</li>
 <li>Amata apraksts;</li>
 <li>Riska faktora kods – no riska faktoru klasifikatora;</li>
@@ -543,8 +587,10 @@ Ja lietotājs vēlas apvienot tikai viena darbinieka veselības pārbaudes, tad 
 <li>Ārpuskārtas pārbaudes iemesls;</li>
 <li>Atzinuma kods – no atzinumu klasifikatora;</li>
 <li>Atzinuma apraksts;</li>
-<li>Piezīmes.</li>
+<li>Ieraksta Nr.</li>
 </ul>
+<p>Veselības pārbaužu ierakstos ir iespējams atcelt nepareizi iegrāmatoto informāciju, spiežot Rediģēt sarakstu un ieklikšķinot kolonnā <em>Atcelts</em>.</p>
+<p><img src="images/Booking_3.png" alt="alt"></p>
 <h2 id="darba-drošība">Darba drošība</h2>
 <p>Atbilstoši uzņēmuma iekšējo instruktāžu funkcionalitātei instruktāžas tiek klasificētas pa veidiem un tēmām Instruktāžu veida klasifikatorā. Atveriet sarakstu <em>Instruktāžu veidi</em>, kas sastāv no sekojošiem laukiem:</p>
 <ul>
