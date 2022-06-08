@@ -445,19 +445,36 @@ The canceled orders do not disappear from the system and they can be viewed in t
 The briefing solution works similarly as the health examination solution. It is possible to define the types and the themes for the briefings, as well as to assign the briefings to employees through the position cards. You can automatically generate journal entries, plan briefings and review the history of the briefings already performed, as well as from the Briefing Journal you can print a briefing signature page.</p>
 <p>The setup relating to the Labour Protection is described in the chapter <em>Personnel Setup</em>.</p>
 <h2 id="mandatory-health-examinations">Mandatory health examinations</h2>
-<h3 id="defining-risk-factors">Defining Risk factors</h3>
-<p>Each employee positions have their own risk factors – for one position one or several risk factors can be assigned. Risk factors are defined in the list <em>Risk Factors</em>.</p>
-<p>Each Risk factor contains the following information:</p>
+<h3 id="default-health-exam-journal-batch">Default Health Exam. Journal Batch</h3>
+<p>A field <em>Default Health Exam. Journal Batch Name</em> is available in the table Personnel Setup, tab <em>Protection at Work</em>. When a new employee is hired or a new employee position is created, data is recorded in this section. It is recommened that three journal batches are created according to the possible types of health checks:</p>
 <ul>
-<li>Code – a unique risk factor identifier;</li>
-<li>Description – risk factor name;</li>
-<li>Type – Environment or Special;</li>
-<li>Examination Periodicity – recurrence of the health examinations.</li>
+<li>Extra;</li>
+<li>Initial;</li>
+<li>Periodical.</li>
 </ul>
-<h3 id="health-examination-journal">Health Examination Journal</h3>
-<p>Information on planned health examinations is stored in the register <em>Health Examination Journal</em>:</p>
+<p><img src="images/OVP_1.png" alt="alt">
+<img src="images/Risk_2.png" alt="alt">
+A new number series has to be defined for each journal batch.</p>
+<p><img src="images/OVP_2.png" alt="alt"></p>
+<h3 id="defining-risk-factors">Defining Risk factors</h3>
+<p>Each employee positions have their own risk factors – for one position one or several risk factors can be assigned. Risk factors are defined in the table <em>Positions</em>, opening a position card - <em>Process</em> (1) -  <em>Risk Factors</em> (2).</p>
+<p><img src="images/Risk_1.png" alt="alt"></p>
+<p>By clicking on the <em>Risk factors</em>, a table <em>Position Risk Factors</em> is opened. Each Risk factor contains the following information:</p>
 <ul>
-<li>Document No. - a unique record identifier, from the <em>No. Series</em>;</li>
+<li>Risk Factor Code – a unique risk factor identifier;</li>
+<li>Date From;</li>
+<li>Date To;</li>
+<li>Risk Factor Description – risk factor name.</li>
+</ul>
+<p>By clicking on the text in the field <em>Risk Factor Description</em>, the table <em>Risk Factors</em> is opened.</p>
+<p><img src="images/Risk_2.png" alt="alt"></p>
+<p>Each risk factor has its own periodicity that is indicated in the field <em>Examination Periodicity</em> (1). The system will automatically calculate the date of the next examination based on the information in this field. It is also possible to indicate the <em>Type</em> (2) of the risk factor in this setup, for instance, Environment or Special.</p>
+<p><img src="images/Risk_3.png" alt="alt"></p>
+<h3 id="health-examination-journal">Health Examination Journal</h3>
+<p>Information on planned health examinations is stored in the register <em>Health Examination Journal</em>. <em>Departments</em> - <em>Personnel</em> - <em>Labour Protection</em> - <em>Health Examination Journal</em></p>
+<p><img src="images/Journal_1.png" alt="alt"></p>
+<ul>
+<li>Document No. - a unique record identifier;</li>
 <li>Employee No. – a code from the list <em>Employee</em>;</li>
 <li>Employee First Name;</li>
 <li>Employee Last Name;</li>
@@ -469,12 +486,16 @@ The briefing solution works similarly as the health examination solution. It is 
 <li>Extra Exam. Reason;</li>
 <li>Document Printed – the mark that the referral is printed.</li>
 </ul>
-<p>Health Examination Journal can be completed manually or generated from the information available in the system. When hiring a new employee and posting the Personnel order, the first health check will be generated automatically. Personnel orders are described in the chapter <em>Personnel Order</em>.</p>
+<p>The Health Examination Journal can be completed manually or generated from the information available in the system. When hiring a new employee and posting the Personnel order, the first health check will be generated automatically.
+If there already exists a record for a specific risk factor in any of the Health Examination Journal batches, it will not appear in another journal batch when the journal lines will generated automatically.</p>
 <h3 id="manual-entries-in-the-health-examination-journal">Manual entries in the Health Examination Journal</h3>
-<p>By completing the log manually, the information about the risks should be entered through the buttons <em>Process</em> (1) - <em>Risk Factors</em> (2).</p>
+<p>By completing the field <em>Examination date</em> (1) manually, the information is filled automatically in the table <em>Health Exam. Jnl. Risk Factors</em>, in the field <em>Date From</em>. The system calculates the date of the next examination.</p>
+<p><img src="images/Manual_Journal_1.png" alt="alt"></p>
+<p>The information about the risks should be entered through the buttons <em>Process</em> (1) - <em>Risk Factors</em> (2).</p>
 <p><img src="images/22.ovp_1.png" alt="alt"></p>
-<p>A List <em>Health Exam. Jnl. Risk Factors</em> includes following information:</p>
+<p>A List <em>Health Exam. Jnl. Risk Factors</em> includes the following information:</p>
 <ul>
+<li>Document No. - generates automatically;</li>
 <li>Risk Factor Code – a code from the list <em>Risk Factors</em>;</li>
 <li>Risk Factor Description;</li>
 <li>Risk Factor Type – for example, Environment;</li>
@@ -487,31 +508,51 @@ The briefing solution works similarly as the health examination solution. It is 
 <li>Last Jnl. Line Date;</li>
 <li>Last Exam. Date;</li>
 <li>Examination Deadline – deadline by which the examination is required; is completed automatically, depends on the position risk factor periodicity and the last examination date;</li>
+<li>Next Examination Date - the system calculated automatically from the risk factor setup;</li>
+<li>Next Examination Type - by default always Periodical;</li>
 <li>Result Code – a code from the list <em>Health Examination Results</em>;</li>
 <li>Result Description.</li>
 </ul>
 <p>When entering the field <em>Risk Factor Code</em>, other fields, except the fields <em>Result Code</em> and <em>Result Description</em>, will be filled automatically if the risk factors were applied to the position, when creating a position card.</p>
+<div class="TIP">
+<h5>Tip</h5>
+<p><strong>In case, an extra health check needs to be done for an employee (<em>Examination Type</em> - Extra), the system would fill in the position risk factors automatically. They can be corrected manually if necessary</strong>.</p>
+</div>
 <h3 id="automatically-created-entries-in-the-health-examination-journal">Automatically created entries in the Health Examination Journal</h3>
-<p>To complete the journal lines automatically, click on the buttons <em>Process - Fill</em>.
-When generating the journal, the risk factor entries are automatically taken from the employees' positions. A date for the examinations need to be indicated before the generating the entries.</p>
-<p>Journal records can be generated by Employee No, Position Code, Profession Code, Department Code, Risk Factor Code and Risk Factor Type. In the field Date On, the date on which you want to generate the lines needs to be identified.
+<p>To complete the journal lines automatically, click on the buttons <em>Process</em> (1) - <em>Fill</em> (2).</p>
+<p><img src="images/Autom_Journal_1.png" alt="alt"></p>
+<p>When generating the journal, the risk factor entries are automatically taken from the employees' positions. A date for the examinations need to be indicated before the generating the entries.</p>
+<p>Journal records can be generated by Employee No, Position Code, Profession Code, Department Code, Risk Factor Code and Risk Factor Type. In the tab <em>Options</em>, the date on which you want to generate the lines needs to be identified.
 To find out the next test period for the risk factors, the system checks the health examination records - the date of the previous examination and the employment date of the employee. From this obtained date, using risk factor periodicity, the next examination period is calculated. If this period is before the date that was identified in the journal fill option, then the specific health examination is added to the journal.</p>
+<p>In case, the value in the field <em>Next Examination Type</em> is Extra, the system will ignore the periodicity of the risk factor and will focus on the value in the field <em>Next Examination Date</em>. To see the risk factors attached to a specific employee position, open the Health Examination Journal - <em>Process</em> (1) - <em>Risk Factors</em> (2).</p>
+<p><img src="images/Autom_Journal_2.png" alt="alt"></p>
+<p>If a position change is done for an employee, it is possible that the risk factors attached to the new position are different than those attached to the previous position. As soon as the information about the position change is booked, lines for the needed Initial health examinations for the new position are automatically generated in the Health Examination Journal.</p>
 <h3 id="merging-the-entries-of-the-health-examination-journal">Merging the entries of the Health Examination Journal</h3>
-<p>If one employee has several risk factors, then the several health checks are generated at the beginning of each risk factor in order to merge the health examinations in the journal. If necessary, under one examination, journal has a merge function by pressing on <em>Process - Merge</em>.</p>
+<p>If one employee has several risk factors, then the several health checks are generated at the beginning of each risk factor in order to merge the health examinations in the journal. If necessary, under one examination, journal has a merge function by pressing on <em>Process</em> (1) - <em>Merge</em> (2).</p>
+<p><img src="images/Merge_1.png" alt="alt"></p>
 <p>This feature combines health examinations of the filtered entries in one by employee numbers.
 If the user wants to combine only one employee's health examinations, then the employee number should be specified in the merge filter.</p>
 <p>As the Examination Deadline, the date that is the earliest from all merged entries is indicated.</p>
 <h3 id="printout-of-the-health-examination">Printout of the Health Examination</h3>
-<p>When the Health Examination entry is ready in the journal, it is available to be printed as the Health Check referral printout by clicking on <em>Reports - Print document</em>. When document is printed, the checkmark appears in the field <em>Document Printed</em>.</p>
+<p>When the Health Examination entry is ready in the journal, it is available to be printed as the Health Check referral printout in the Health Examination Journal by clicking on <em>Reports</em> (1) - <em>Print document</em> (2). When document is printed, the checkmark appears in the field <em>Document Printed</em>.</p>
+<p><img src="images/Print_1.png" alt="alt"></p>
 <h3 id="health-examination-results">Health Examination Results</h3>
-<p>When health examination is completed, the result should be entered in the Health Examination journal through the <em>Risk Factors</em>. Choose the appropriate code from the list <em>Health Examination Results</em>.</p>
-<p><em>Health Examination Results</em> includes the folowing fields:</p>
+<p>When the health examination is completed, the result should be entered in the Health Examination Journal through the <em>Risk Factors</em>. Health Examination Journal - <em>Process</em> (1) - <em>Risk Factors</em> (2).</p>
+<p><img src="images/22.ovp_1.png" alt="alt"></p>
+<p>Choose the appropriate <em>Result Code</em> (1) from the list <em>Health Examination Results</em>.</p>
+<p><img src="images/Result_2.png" alt="alt"></p>
+<p><em>Health Examination Results</em> (<em>Department</em> - <em>Personnel</em> - <em>Labour Protection</em> - <em>Administration</em> - <em>Health Examination Results</em>) includes the folowing fields:</p>
 <ul>
 <li>Code – freely chosen unique identification code;</li>
-<li>description – description of the result.</li>
+<li>Description – description of the result.</li>
 </ul>
+<p>When the result is filled, the next examination date and type can be change. The system will take it into account when the next Exmamination Date is calculted. In the field <em>Notes</em> the doctor's comments can be added. For instance, to pay for the glasses.</p>
 <h3 id="posting-the-health-examination-journal-and-entries-of-the-health-examination">Posting the Health Examination Journal and entries of the Health Examination</h3>
-<p>When the results are entered, the Health Examination entries can be posted by clicking on <em>Process - Post</em>. To ensure the historical data on the Health Examination of the employees, all posted data are saved to the register <em>Health Examination Entries</em>. Following fields are available:</p>
+<p>When the results are entered, the Health Examination entries can be posted by clicking on <em>Process</em> (1) - <em>Post</em> (2).</p>
+<p><img src="images/Booking_1.png" alt="alt"></p>
+<p>To ensure the historical data on the Health Examination of the employees, all posted data are saved to the register <em>Health Examination Entries</em>. It can be done by clicking on <em>Process</em> (1) - <em>Health Examination Entries</em> (2).</p>
+<p><img src="images/Booking_2.png" alt="alt"></p>
+<p>Following fields are available:</p>
 <ul>
 <li>Document No. – A unique record identifier from the <em>No. Series</em>;</li>
 <li>Employee No. – from the list <em>Employees</em>;</li>

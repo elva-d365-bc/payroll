@@ -14032,6 +14032,160 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/personnel_base/images/Autom_Journal_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/personnel_base/images/Autom_Journal_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/personnel_base/images/Autom_Journal_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/personnel_base/images/Autom_Journal_2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/personnel_base/images/Booking_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/personnel_base/images/Booking_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/personnel_base/images/Booking_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/personnel_base/images/Booking_2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/personnel_base/images/Journal_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/personnel_base/images/Journal_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/personnel_base/images/Manual_Journal_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/personnel_base/images/Manual_Journal_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/personnel_base/images/Merge_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/personnel_base/images/Merge_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/personnel_base/images/OVP_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/personnel_base/images/OVP_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/personnel_base/images/OVP_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/personnel_base/images/OVP_2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/personnel_base/images/Print_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/personnel_base/images/Print_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/personnel_base/images/Result_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/personnel_base/images/Result_2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/personnel_base/images/Risk_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/personnel_base/images/Risk_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/personnel_base/images/Risk_2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/personnel_base/images/Risk_2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/personnel_base/images/Risk_3.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/personnel_base/images/Risk_3.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/personnel_base/images/contract_changes_1_eng.png",
       "output": {
         "resource": {
@@ -14125,7 +14279,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/personnel_base/personnel_base.html",
-          "hash": "hfYAVKLRf0BPh73PTJuCSUYLAwkZTCwsI/zWMJs5dJs="
+          "hash": "XkMb30Ha0iDU2Vetik5jMqCcRD+B4IG82odRsaOJe60="
         }
       },
       "is_incremental": false,
