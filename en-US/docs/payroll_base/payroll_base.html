@@ -1056,6 +1056,39 @@ If a bank holiday calendar is specified in the title of the calendar, then all h
 <p>If the holidays are repeated on the same dates each year, the <em>Recurring System</em> field is selected as <em>Annual Recurring</em> and the corresponding settings are made.
 If the holidays do not repeat on the same dates each year, then <em>Recurring System</em> fields is left blank and the corresponding settings are made.</p>
 <p><img src="images/2.calendar_5.png" alt="alt"></p>
+<h2 id="status-codes">Status codes</h2>
+<p>To generate a State Revenue Service report from the system <em>Notification of employees</em>, the status codes need to be defined:</p>
+<p><img src="images/1.3.status_codes_1.png" alt="alt"></p>
+<table>
+<thead>
+<tr>
+<th>Field name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Code</td>
+<td>Status code.</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>Name of the code.</td>
+</tr>
+<tr>
+<td>Description2</td>
+<td>For extended description.</td>
+</tr>
+<tr>
+<td>Number</td>
+<td>Specifies the order in the report <em>Notification of employees</em>, usually these numbers match the sequence, what is stated in Cabinet of Ministers Regulations.</td>
+</tr>
+<tr>
+<td>Date Formula</td>
+<td>Specifies the date formula based on which the system will calculate when the <em>Notification</em> needs to be uploaded in the EDS</td>
+</tr>
+</tbody>
+</table>
 <h2 id="causes-of-absence">Causes of absence</h2>
 <p>To register an absence, causes of absence codes are necessary. All reason codes are initially imported into the system via the configuration package and are listed <em>Causes of absence</em>. The code card can be opened by clicking on the required line of code and pressing the buttons on the toolbar <em>Actions - New document - Card</em>.</p>
 <p><strong>It is not recommended to do any changes to the reason codes and their settings</strong>.</p>
@@ -1929,7 +1962,7 @@ If necessary, the lines are supplemented with information on reliefs - Dependant
 <p>Each employee's card can list the inventory issued to the employee. First you need to define the codes of the issued inventory and their names in the list <em>Employee Miscellaneous Articles</em>. The inventory can then be assigned to the employee by recording a Serial Number for each item, determining the time of use, and adding a comment if necessary..</p>
 <p><img src="images/6.empl_add_info5.png" alt="alt"></p>
 <p>It is possible to use the report to control the issued inventory <em>Employee Miscellaneous Article Information</em>, available by entering a name in the system search field.</p>
-<h3 id="status-codes">Status Codes</h3>
+<h3 id="status-codes-1">Status Codes</h3>
 <p>In the Employee's cards toolbar <em>Navigate</em> - <em>Additional Info. For Payroll</em> a function <em>Status codes</em> is available, where you can view and edit the social status codes associated with the employee, and on this basis the report <em>Employee Social Sign Codes</em> is prepared. If in Payroll Setup tab <em>Reports</em> is enabled function <em>Status Code Enabled</em>, then after the date fields are entered (what are related to status codes, for example date of recruitment, or date of termination, or unpaid leave), the system will prompt you to enter an employee status code in <em>Status codes</em> register.</p>
 <h3 id="related-information">Related information</h3>
 <p>In the Employee's cards toolbar <em>Navigate</em> - <em>Additional Info. For Payroll</em> a function <em>Related information</em> is available. Here you have to enter the fact of submission of the Salary Tax Book for each employee and indicate the date. Here should also be made a note and indicated the date for non-residents.</p>
