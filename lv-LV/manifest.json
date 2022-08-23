@@ -3209,6 +3209,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/1.10payroll_comp_setup.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/1.10payroll_comp_setup.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/payroll_extended/images/1.11.banks_1.png",
       "output": {
         "resource": {
@@ -3224,6 +3235,17 @@
       "output": {
         "resource": {
           "relative_path": "docs/payroll_extended/images/1.11.banks_3.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/1.11payroll_comp_setup.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/1.11payroll_comp_setup.png"
         }
       },
       "is_incremental": false,
@@ -3253,10 +3275,32 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/1.2payroll_comp_setup.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/1.2payroll_comp_setup.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/payroll_extended/images/1.3.status_codes_1.png",
       "output": {
         "resource": {
           "relative_path": "docs/payroll_extended/images/1.3.status_codes_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/1.3payroll_comp_setup.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/1.3payroll_comp_setup.png"
         }
       },
       "is_incremental": false,
@@ -3275,10 +3319,43 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/1.4payroll_comp_setup.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/1.4payroll_comp_setup.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/1.5payroll_comp_setup.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/1.5payroll_comp_setup.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/payroll_extended/images/1.6.overtime_1.png",
       "output": {
         "resource": {
           "relative_path": "docs/payroll_extended/images/1.6.overtime_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/1.6payroll_comp_setup.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/1.6payroll_comp_setup.png"
         }
       },
       "is_incremental": false,
@@ -3308,6 +3385,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/1.7payroll_comp_setup.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/1.7payroll_comp_setup.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/payroll_extended/images/1.8.positions_1.png",
       "output": {
         "resource": {
@@ -3319,10 +3407,43 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/1.8payroll_comp_setup.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/1.8payroll_comp_setup.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/payroll_extended/images/1.9.retirement_1.png",
       "output": {
         "resource": {
           "relative_path": "docs/payroll_extended/images/1.9.retirement_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/1.9payroll_comp_setup.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/1.9payroll_comp_setup.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/1.payroll_comp_setup.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/1.payroll_comp_setup.png"
         }
       },
       "is_incremental": false,
@@ -4182,7 +4303,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/payroll_extended.html",
-          "hash": "8nix/iU2KCfZM0u+cVLFnIysrXrdHBFLZe8Qr08kCDE="
+          "hash": "xvXQpy8TRcjGxur1qhZdr/Pd11l73s4glWKVyCG910Q="
         }
       },
       "is_incremental": false,
@@ -6431,23 +6552,23 @@
       "version": ""
     },
     {
-      "type": "Resource",
-      "source_relative_path": "docs/personnel_base/images/24.notifications.md",
-      "output": {
-        "resource": {
-          "relative_path": "docs/personnel_base/images/24.notifications.md"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
       "type": "Conceptual",
       "source_relative_path": "docs/personnel_base/images/24.notifications.md",
       "output": {
         ".html": {
           "relative_path": "docs/personnel_base/images/24.notifications.html",
           "hash": "VNFClOKeDMd6USEMASwyNge7E4V6NvxISqR0ErL20QU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/personnel_base/images/24.notifications.md",
+      "output": {
+        "resource": {
+          "relative_path": "docs/personnel_base/images/24.notifications.md"
         }
       },
       "is_incremental": false,
