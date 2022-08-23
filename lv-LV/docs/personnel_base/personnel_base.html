@@ -8,7 +8,7 @@
     <title>Person&#257;la uzst&#257;d&#299;jumi | Latvian Payroll </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Person&#257;la uzst&#257;d&#299;jumi | Latvian Payroll ">
-    <meta name="generator" content="docfx 2.59.2.0">
+    <meta name="generator" content="docfx 2.59.3.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
@@ -828,6 +828,83 @@ Katram atsevišķam notikum jāizveido sava procesu rindas ieraksta karte, norā
 <li>Beigu datums/Laiks;</li>
 <li>Kļūdas ziņojums – ja statuss ir kļūda.</li>
 </ul>
+<h1 id="dokumentu-veidošana">Dokumentu veidošana</h1>
+<h2 id="dokumentu-veidnes">Dokumentu veidnes</h2>
+<p>Dokumentu veidnes var klasificēt atsevišķās grupās reģistrā, ko var atrast meklētājā, ierakstot nosaukumu <em>Dokumentu veidņu grupas</em>.</p>
+<p>Sistēmā rīkojumiem, līgumiem, un ziņojumiem ir iespējams izveidot dokumentu veidnes. Dokumentu veidņu veidošana ir aprakstīta sadaļā <em>Dokumentu veidošana</em>. Visas izveidotās dokumentu veidnes ir apkopotas sarakstā <em>Dokumentu veidnes</em>.</p>
+<h2 id="uzstādījumi-ms-word">Uzstādījumi MS Word</h2>
+<p>Lai varētu izveidot dokumenta veidni Microsoft Word programmā, rīkjoslā ir jāuztaisa jauna poga <em>Field</em>.
+Nospiediet uz pogas <em>File</em> (1) augšējā kreisajā stūrī un <em>Options</em>.</p>
+<p><img src="images/23.docum_templ_1_1.png" alt="alt"></p>
+<p>Atvērsies jauns logs. Nospiediet uz <em>Customize Ribbon</em> (2). Zem <em>Insert</em> labajā sarakstā – kreisais peles taustiņš <em>Add New Group</em> – Nosauciet to par <em>Field</em> (5). Izvēlieties funkciju <em>Field</em> (3) no piedāvātajām komandām kreisajā sarakstā  un pievienot <em>Add</em> (4).</p>
+<p><img src="images/23.docum_templ_1_2.png" alt="alt"></p>
+<p>Dokumentā jau pievienota poga izskatās sekojoši:</p>
+<p><img src="images/23.docum_templ_2.png" alt="alt"></p>
+<h2 id="dokumentu-lauki-business-central">Dokumentu lauki Business Central</h2>
+<p>Lai varētu izveidot veidni, sistēmā ir izveidoti nepieciešamie lauki, ko izmanto, lai aizpildītu mainīgos laukus lietotāja definētajā veidnē.</p>
+<p>Tabula <em>Dokumentu lauki</em> satur sekojošus laukus:</p>
+<ul>
+<li>Kods – lauka kods;</li>
+<li>Atsauce – tabula sistēmā, no kurienes tiek ņemta informācija;</li>
+<li>Apraksts – koda apraksts;</li>
+<li>Izmantojami locījumi – šo lauku var locīt visos locījumos;</li>
+<li>Locījuma dzimums – norādīts, kurā dzimumā tiek locīts lauks;</li>
+<li>Lauka vērtība – tiek norādīta lauka vērtība, kas jau ir aizpildīta rīkojumā.</li>
+</ul>
+<p>Dokumentu lauki atrodas:</p>
+<ul>
+<li>Darbinieku kartiņās - pieejami Darbinieku kartiņā zem <em>Naviģēt</em> - <em>Personāls</em>;</li>
+<li>Darba līgumos - pieejami Darba līguma kartē zem <em>Apstrāde</em>. Darba līguma dokumenta laukos ir apkopoti pēc iespējas tie lauki, kuri būs nepieciešami veidojot darba līgumus un grozījumus – gan lauki no darbinieka kartiņas, gan lauki no darba līguma, gan arī lauki no darba līguma algas komponentēm un uzņēmuma informācijas;</li>
+<li>Amata rīkojumos - tā kā Amata rīkojums sastāv no divām daļām – virsraksta un rindām, tad attiecīgi katrai daļai ir savi dokumentu lauki. Virsraksta dokumentu laukus var atvērt rīkojuma kartiņā zem <em>Apstrāde</em>, bet Rindu laukus var atvērt Rindu cilnē zem <em>Rinda</em>;</li>
+<li>Personāla rīkojumos - tāpat kā Amata rīkojums, arī Personāla rīkojums sastāv no divām daļām – virsraksta un rindām, un attiecīgi katrai daļai ir savi dokumentu lauki. Virsraksta dokumentu laukus ir iespējams atvērt rīkojuma kartiņā zem <em>Apstrāde</em>, bet Rindu laukus var atvērt Rindu cilnē zem <em>Rinda</em>, kas satur informāciju no Darbinieka kartes laukiem, Personāla rīkojuma rindas, ieskaitot Personāla rīkojuma algas komponentes, kā arī Uzņēmuma informācijas laukiem;</li>
+<li>Personāla dokumentos - pieejami sadaļā <em>Apstrāde</em>. Šeit ir apkopoti pēc iespējas tie lauki, kuri būs nepieciešami veidojot dažādus personāla dokumentus, piemēram, līgums par auto izmantošanu, līgums par mobilā telefona limitiem utt., – gan lauki no darbinieka kartiņas, gan lauki no darba līguma un tā algas komponentēm, gan lauki no amata rīkojuma virsraksta un rindām, personāla rīkojuma virsraksta un rindām, kā arī algas komponentēm, personāla dokumenta laukiem un uzņēmuma informācijas.</li>
+</ul>
+<h2 id="veidņu-veidošana">Veidņu veidošana</h2>
+<h3 id="dokumenta-veidošana-un-lauku-pievienošana-kas-nav-algu-komponentes">Dokumenta veidošana un lauku pievienošana, kas nav algu komponentes</h3>
+<p>Lai izveidotu veidni:</p>
+<ol>
+<li>Ir  jāatver tukšs MS Word dokuments vai arī kāds dokumenta paraugs, ko vēlas izmantot kā veidni;</li>
+<li>Tajā vietā, kur nepieciešams, lai informācija aizpildās no sistēmas, definē lauku, piemēram, jāieliek lauks darbinieka pilns vārds:</li>
+</ol>
+<ul>
+<li>Noliek kursoru vai iezīmē tekstu, kas ir jānomaina uz nepieciešamo lauku;</li>
+<li>Nospiež uz iepriekš pievienotās pogas Field;</li>
+<li>Atveras sekojošs logs, kurā izvēlas no Field names DocVariable (1) un New name laukā ieraksta FULLNAME (2), kas ir dokumenta lauka nosaukums, kas izsauks darbinieka pilnu vārdu:</li>
+</ul>
+<p><img src="images/23.docum_templ_3.png" alt="alt"></p>
+<ul>
+<li>vairumu no laukiem var locīt. Lai to izdarītu, pirms lauka koda jāieraksta  attiecīgā locījuma pirmais burts:</li>
+</ul>
+<p>G – Ģenitīvs – kā?</p>
+<p>D – Datīvs – kam?</p>
+<p>A – Akuzatīvs – ko?</p>
+<p>I – Instrumentāls – ar ko?</p>
+<p>L – Lokatīvs – kur?</p>
+<p>V – Vokatīvs - !</p>
+<p>Pieminētā piemērā, piemēram, locījums akuzatīvā izskatīsies sekojoši:</p>
+<p><img src="images/23.docum_templ_4.png" alt="alt"></p>
+<ul>
+<li>Pievienotais lauks pēc noklusējuma dokumentā būs neredzams, tāpēc lietotāja ērtībām, lai rediģētu dokumentu, var izmantot funkciju <em>Toggle Field Codes</em>, ko var izsaukt ar labo peles taustiņu nospiežot uz tās vietas, kur atrodas ieliktais lauks:</li>
+</ul>
+<p><img src="images/23.docum_templ_5.png" alt="alt"></p>
+<p>Parādās sekojoša lauka atšifrējums:</p>
+<p><img src="images/23.docum_templ_6.png" alt="alt"></p>
+<ul>
+<li>Šādi nepieciešams turpināt līdz ir nodefinēti visi dokumenta lauki.</li>
+</ul>
+<ol start="3">
+<li>Izveidoto dokumentu saglabā <strong>Word Document(*.docx)</strong> formātā.</li>
+</ol>
+<h3 id="algas-komponentes-lauku-pievienošana">Algas komponentes lauku pievienošana</h3>
+<p>Algas komponentes dokumentā pievieno līdzīgi kā pārējos laukus, kas ir aprakstīti iepriekšējā sadaļā. Atšķirība ir lauka definēšanā.
+Visi algas komponentes dokumentu lauki satur nosaukumā &quot;%1&quot; zīmi, piemēram, darba līguma algas komponente – darba algas summa - LPC_%1_AMOUNT. %1*” vietā ir jāieraksta attiecīgais Dokumenta lauku ID, kas ir definēts algas komponentes tabulās, piemēram:
+Ir izveidots darba līgums ar sekojošu algas komponenti, kurai tika automātiski piešķirts Dokumenta lauku ID:</p>
+<p><img src="images/23.docum_templ_7.png" alt="alt"></p>
+<p>Tad definējums, kas būs jāieraksta MS Word failā būs sekojošs - LPC_101PC1_AMOUNT.</p>
+<p>Tālāk tiek veiktas tās pašas darbības, kas aprakstītas iepriekšējā sadaļā, pievienojot laukus, kas nav algas komponentes.</p>
+<h2 id="veidņu-pievienošana-business-central-sistēmai">Veidņu pievienošana Business Central sistēmai</h2>
+<p>Kad veidne ir izveidota, tā ir jāpievieno sistēmā, lai tālāk to varētu pievienot dažādiem notikumiem – Personāla rīkojumu veidošanā, Darba līgumu veidošanā utt.</p>
+<p>Atver sarakstu <em>Dokumentu veidnes</em>. Zem sadaļas <em>Veidne</em> klikšķina uz pogas <em>Importēt veidni</em>.  Izvēlas dokumentu, ko vēlas ieimportēt. Kad dokuments ir ieimportēts laukā <em>Veidne pievienota</em> iepildās ķeksis.</p>
 </article>
           </div>
           
