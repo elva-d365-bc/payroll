@@ -1085,7 +1085,7 @@ If the holidays do not repeat on the same dates each year, then <em>Recurring Sy
 </tr>
 <tr>
 <td>Date Formula</td>
-<td>Specifies the date formula based on which the system will calculate when the <em>Notification</em> needs to be uploaded in the EDS</td>
+<td>Specifies the date formula based on which the system will calculate when the <em>Notification</em> needs to be handed in the EDS</td>
 </tr>
 </tbody>
 </table>
@@ -2212,6 +2212,127 @@ It is also recommended to fill in the <em>Description</em> (3) field in free for
 <p>It is recommended to enter in the Employee's card all the benefits and deductions, which are included in the calculation of monthly salary as constant amounts for a long period of time. In doing so, the employee will be automatically added registered benefit to the salary calculation each month and/ or the relevant deduction will be deducted.</p>
 <p>It can be easily entered in the payroll component rows of employee card.</p>
 <p><img src="images/10.salary_comp.register_8.png" alt="alt"></p>
+<h2 id="processing-the-writ-of-execution-1">Processing the writ of execution</h2>
+<p>In case a company receives a writ of execution for an employees, this document must be registered in the system. The writ of execution can be registered in the employee card's <em>Employee Payroll Components</em>.</p>
+<p><em>In the specific example, 20% of the base ALIM (salary after tax) has been deducted using salary component No. 740, where the minimum deduction is EUR 250 per month, and EUR 2000 has been deducted for previous periods. No limit to the total amount of the deductions has been set.</em></p>
+<p>The following fields must be filled in the Employee Payroll Components tab to set a deduction for writ of execution:</p>
+<table>
+<thead>
+<tr>
+<th>Field Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Code</td>
+<td>Choose a salary component. Depending on the settings of the salary component, the amount of the deduction is calculated.</td>
+</tr>
+<tr>
+<td>From Date/ To Date</td>
+<td>If known, indicate the dates on which the deduction is to take place.</td>
+</tr>
+<tr>
+<td>Amount</td>
+<td>To be completed in case a specific amount is known to be deducted each month.</td>
+</tr>
+<tr>
+<td>Total Limit</td>
+<td>Specifies the total amount of debt according to writ of execution.</td>
+</tr>
+<tr>
+<td>Calculated Deducted Amount</td>
+<td>Informative field. The system here represents the total amount deducted for this particular writ of execution (the total amount from all salary lists).</td>
+</tr>
+<tr>
+<td>Month Limit</td>
+<td>Indicates a minimum monthly limit.</td>
+</tr>
+<tr>
+<td>PayOut Limit</td>
+<td>Indicates the minimum limit of the employee's salary payment. In this case, the field PayOut Limit Base must be completed.</td>
+</tr>
+<tr>
+<td>PayOut Limit Base</td>
+<td>Indicates the limit base if a PayOut Limit is specified.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Possible configuration options:</strong></p>
+<ul>
+<li>30% of the employee's payment is deducted, but not more than 350 EUR per month. The total amount to be deducted is 350 EUR. It is shown that the full amount of 350 EUR has been deducted from the employee.</li>
+</ul>
+<p><img src="images/3.1.general_info_11.png" alt="alt"></p>
+<ul>
+<li>T20% is deducted, provided that the amount of the employee's salary payment is at least 370 EUR per month. The total amount to be deducted is 350 EUR. It is shown that on this moment 36 EUR has been deducted from the employee.</li>
+</ul>
+<div class="TIP">
+<h5>Tip</h5>
+<p><strong>The system does not provide both options at the same time - when using the <em>Month Limit</em> and <em>PayOut Limit</em>!</strong></p>
+</div>
+<h3 id="possible-setup---distribution-in-parts">Possible setup - distribution in parts</h3>
+<p>It is possible to control the sequence of the writs of execution. The writ of execution [first part] is covered in full. Accordingly, the next parts are covered afterwards. If there is not enough funds, but the parts are equal, the amount to withhold is divided proportionally.</p>
+<p>Possible configuration:</p>
+<ol>
+<li><p><img src="images/1.payroll_comp_setup.png" alt="alt"></p>
+</li>
+<li><p><img src="images/1.2payroll_comp_setup.png" alt="alt">
+<img src="images/1.2.2payroll_comp_setup.png" alt="alt"></p>
+</li>
+<li><p><img src="images/1.3payroll_comp_setup.png" alt="alt"></p>
+</li>
+<li><p><img src="images/1.4payroll_comp_setup.png" alt="alt"></p>
+</li>
+<li><p><img src="images/1.5payroll_comp_setup.png" alt="alt">
+<img src="images/1.5.2payroll_comp_setup.png" alt="alt"></p>
+</li>
+<li><p><img src="images/1.6payroll_comp_setup.png" alt="alt"></p>
+</li>
+<li><p><img src="images/1.7payroll_comp_setup.png" alt="alt">
+<img src="images/1.7.2payroll_comp_setup.png" alt="alt"></p>
+</li>
+<li><p><img src="images/1.8payroll_comp_setup.png" alt="alt"></p>
+</li>
+<li><p><img src="images/1.9payroll_comp_setup.png" alt="alt">
+<img src="images/1.9.2payroll_comp_setup.png" alt="alt"></p>
+</li>
+<li><p><img src="images/1.10payroll_comp_setup.png" alt="alt">
+<img src="images/1.10.2payroll_comp_setup.png" alt="alt"></p>
+</li>
+<li><p><img src="images/1.11payroll_comp_setup.png" alt="alt"></p>
+</li>
+</ol>
+<p>If, after making the deduction, the amount has to be transferred to another person to another bank account, all the bank account data must be entered accordingly by clicking on the buttons on the employee's card. <em>Navigate - Additional Info. For Payroll - Payment to third parties</em>.</p>
+<p>To set up a payment, you must fill in the following fields:</p>
+<ol>
+<li>Employee Payroll Comp. Line No. – select the appropriate deductive component from the list of components related to the selected employee.</li>
+<li>Payroll Component Code – will be filled in automatically from the field <em>Employee Payroll Component List</em>.</li>
+<li>Vendor No. – selects the third party from the list of the Vendors. If necessary, enter a new vendor card.</li>
+<li>Vendor Bank code - select the required bank account from the vendor's bank account list.</li>
+<li>Description – enter a freely chosen payment description.</li>
+<li>Payment Information – enter the payment information that needs to be reflected in the bank's payment details. For example: according to decision No. xxxxx for Employee, pers. code xxxxxxxxxxx.</li>
+<li>When starting the salary calculation, deductible amount will be calculated accordingly to the conditions that were specified in employee' s card.</li>
+</ol>
+<p>To make a payment to third parties, you need to run the function <em>Export to Payment Journal</em> under the <em>Report</em> button in the <em>Salary List</em>'s toolbar.</p>
+<p>The following parameters must be entered in the pop-up window:</p>
+<p>Select from the list Third Parties Payments;
+Select the default payment journal batch;
+Enter the posting date of the payment.</p>
+<p><img src="images/10.2.corrections2_3.png" alt="alt"></p>
+<p>Payment entries will be created in the payment journal. To create a file to be imported to the bank, press <em>Bank</em> - <em>Export</em> (Export button for regular vendors).</p>
+<h3 id="vacation-accruals-1">Vacation accruals</h3>
+<p>System provides a report for vacation accruals <em>Average gain with amounts</em>. Available at <em>Reports</em> - <em>Add. Reports</em> - <em>Average gain with amounts</em> or by using systems' search function.</p>
+<p><img src="images/12.vacation_accr_1.png" alt="alt"></p>
+<p>Reports' Print Settings::</p>
+<ul>
+<li>Date On – indicates the date, on what accruals should be calculated.</li>
+<li>Show Additional Vacation Days - enable if additional days also should be included in report</li>
+<li>Send to Gen. Journal – enable if entries for accruals should be sent to general ledger journal additionally to report's printout. If enabled, will be created accrual postings with date from field <em>Date on</em> and the same posting lines with minus with following month's last date - for reversal.</li>
+<li>Gen. Journal Template – select the ledger template where postings should be prepared, if function <em>Send to Gen. Journal</em> enabled.</li>
+<li>Gen. Journal Batch – select the Batch name where postings should be prepared, if function <em>Send to Gen. Journal</em> enabled.</li>
+<li>Savings Component code – The code of the accrual component must indicate. It is a code of the payroll component, which indicates all the accounting settings. It is recommended to create a component that will not be used in salary calculations.</li>
+</ul>
+<p>In case it is necessary to create vacation accruals by dimensions, it is necessary to indicate appropriate dimensions in the reference parameters. The dimension value will be searched in employee's position, if not found and in <em>Payroll Dimension Setup</em> is not enabled <em>Don't use Hierarchy</em> then system will search the dimension of employee. employees in report will be grouped by dimension and at the bottom in employee posting groups and dimension values in two amounts. If there will be enabled <em>Send to Gen. Journal</em>, then rows in G/L Journal will be created by dimensions. Also, take into account if the journal's rows will have other dimensions, then this dimension complements existing - combines together in the dimension line.</p>
 <h1 id="salary-calculation">Salary calculation</h1>
 <h2 id="advances">Advances</h2>
 <p>For employees who have an advance component entered in the card, it is possible to generate a list of advances. Information about the paid advance will be automatically included in the calculation of the salary for the specific month and deducted from the amount to be paid.</p>
