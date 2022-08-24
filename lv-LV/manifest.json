@@ -1801,7 +1801,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_base/payroll_base.html",
-          "hash": "zlE7TjNEXuejDYZQ5rPZBqnckkcBE55GK5GeQkcJEjE="
+          "hash": "OY61upiQQxUQIADMMQCMrNV85rxvIV7sgHJ/Nj0Mrw0="
         }
       },
       "is_incremental": false,
@@ -6728,23 +6728,23 @@
       "version": ""
     },
     {
-      "type": "Conceptual",
+      "type": "Resource",
       "source_relative_path": "docs/personnel_base/images/24.notifications.md",
       "output": {
-        ".html": {
-          "relative_path": "docs/personnel_base/images/24.notifications.html",
-          "hash": "VNFClOKeDMd6USEMASwyNge7E4V6NvxISqR0ErL20QU="
+        "resource": {
+          "relative_path": "docs/personnel_base/images/24.notifications.md"
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
-      "type": "Resource",
+      "type": "Conceptual",
       "source_relative_path": "docs/personnel_base/images/24.notifications.md",
       "output": {
-        "resource": {
-          "relative_path": "docs/personnel_base/images/24.notifications.md"
+        ".html": {
+          "relative_path": "docs/personnel_base/images/24.notifications.html",
+          "hash": "VNFClOKeDMd6USEMASwyNge7E4V6NvxISqR0ErL20QU="
         }
       },
       "is_incremental": false,
