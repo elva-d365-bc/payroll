@@ -9,10 +9,10 @@
     "title": "| Latvian Payroll",
     "keywords": "Prepared separately for each customer."
   },
-  "docs/hrw/usage_scenarios.html": {
-    "href": "docs/hrw/usage_scenarios.html",
-    "title": "Disclaimer | Latvian Payroll",
-    "keywords": "Disclaimer Please note that data provided in the steps of user scenarios are sample data and differ from real life data of your company. This user scenario does not include setup, that is required by Latvian Payroll HR Portal Sync standard. Sample data that are displayed in brackets are intended to provide an indication, what information is expected to be completed at a certain step. In terms of real life scenarios, please ensure that your master data are configured in the way as it is recommended by the Setup of this App."
+  "docs/hrw/Panorama 365.html": {
+    "href": "docs/hrw/Panorama 365.html",
+    "title": "| Latvian Payroll",
+    "keywords": ""
   },
   "docs/payroll_base/faq.html": {
     "href": "docs/payroll_base/faq.html",
@@ -622,7 +622,7 @@
   "index.html": {
     "href": "index.html",
     "title": "Latvian payroll and personnel localization contains following apps: | Latvian Payroll",
-    "keywords": "Latvian payroll and personnel localization contains following apps: Latvian Payroll Latvian Payroll Advanced Latvian Payroll Personnel Latvian Payroll Personnel Advanced Latvian Payroll HR Portal Sync"
+    "keywords": "Latvian payroll and personnel localization contains following apps: Latvian Payroll Latvian Payroll Advanced Latvian Payroll Personnel Latvian Payroll Personnel Advanced Panorama 365 Sync"
   },
   "readme.html": {
     "href": "readme.html",
