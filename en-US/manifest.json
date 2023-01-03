@@ -18,7 +18,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/hrw/Panorama 365.html",
-          "hash": "QxFfAidPZTW9v6Sf6WMKZqw09a7Miz3e5UdX9VeVIQY="
+          "hash": "/DBAT0Z+Vqrmm7S1alC7hh4HzMhtR6ZjnrQJMXkyPUk="
         }
       },
       "is_incremental": false,
@@ -37,27 +37,288 @@
       "version": ""
     },
     {
-      "type": "Conceptual",
-      "source_relative_path": "docs/hrw/overview.md",
+      "type": "Resource",
+      "source_relative_path": "docs/hrw/images/Pan_absence1.png",
       "output": {
-        ".html": {
-          "relative_path": "docs/hrw/overview.html",
-          "hash": "/Vb+AK1ixSgRG0SLMhRY1weooLtCVb72kDizzil4LzM="
+        "resource": {
+          "relative_path": "docs/hrw/images/Pan_absence1.png"
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
-      "log_codes": [
-        "InvalidFileLink"
-      ],
+      "type": "Resource",
+      "source_relative_path": "docs/hrw/images/Pan_absence2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/hrw/images/Pan_absence2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/hrw/images/Pan_absence3.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/hrw/images/Pan_absence3.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/hrw/images/Pan_error1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/hrw/images/Pan_error1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/hrw/images/Pan_error2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/hrw/images/Pan_error2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/hrw/images/Pan_error3.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/hrw/images/Pan_error3.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/hrw/images/Pan_error4.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/hrw/images/Pan_error4.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/hrw/images/Pan_error5.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/hrw/images/Pan_error5.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/hrw/images/Pan_error6.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/hrw/images/Pan_error6.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/hrw/images/Pan_error7.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/hrw/images/Pan_error7.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/hrw/images/Pan_howto1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/hrw/images/Pan_howto1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/hrw/images/Pan_howto2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/hrw/images/Pan_howto2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/hrw/images/Pan_mansync1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/hrw/images/Pan_mansync1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/hrw/images/Pan_sync1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/hrw/images/Pan_sync1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/hrw/images/Pan_sync10.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/hrw/images/Pan_sync10.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/hrw/images/Pan_sync1_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/hrw/images/Pan_sync1_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/hrw/images/Pan_sync2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/hrw/images/Pan_sync2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/hrw/images/Pan_sync3.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/hrw/images/Pan_sync3.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/hrw/images/Pan_sync4.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/hrw/images/Pan_sync4.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/hrw/images/Pan_sync5.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/hrw/images/Pan_sync5.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/hrw/images/Pan_sync6.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/hrw/images/Pan_sync6.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/hrw/images/Pan_sync7.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/hrw/images/Pan_sync7.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/hrw/images/Pan_sync8.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/hrw/images/Pan_sync8.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/hrw/images/Pan_sync9.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/hrw/images/Pan_sync9.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/hrw/overview.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/hrw/overview.html",
+          "hash": "0BxvEU/Hun9yI99vWli58qlxEg9pi30oqqx3inznieE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Toc",
       "source_relative_path": "docs/hrw/toc.md",
       "output": {
         ".html": {
           "relative_path": "docs/hrw/toc.html",
-          "hash": "X77u4l+A8cxu32XLYbkBSCJSMJ5i5aiTE4ONMNcbEqs="
+          "hash": "Vg3RfS+SgGlQsDQBw/lrhqaWhYlnNVE1cE/PFY9axq4="
         }
       },
       "is_incremental": false,

@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title> | Latvian Payroll </title>
+    <title>How to get started | Latvian Payroll </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content=" | Latvian Payroll ">
+    <meta name="title" content="How to get started | Latvian Payroll ">
     <meta name="generator" content="docfx 2.59.4.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
@@ -77,7 +77,328 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
+<h1 id="how-to-get-started">How to get started</h1>
 
+<ol>
+<li>In order to start working, ELVA Baltic solutions Latvian Payroll, Latvian Payroll Advanced, and Latvian Personnel should be installed.</li>
+<li>The role center “LV Personnel” should be used for personalisation. Open the functions:</li>
+</ol>
+<p><img src="images/Pan_howto1.png" alt="alt">
+<img src="images/Pan_howto2.png" alt="alt"></p>
+<ol start="3">
+<li>The following information should be received from the Panorama 365 developers:</li>
+</ol>
+<ul>
+<li>API address</li>
+<li>User name</li>
+<li>Password</li>
+</ul>
+<h1 id="synchronization-setup">Synchronization setup</h1>
+<ol>
+<li><em>HR Portal Sync. Setup</em> (an example):</li>
+</ol>
+<p><img src="images/Pan_sync1.png" alt="alt">
+<img src="images/Pan_sync1_1.png" alt="alt"></p>
+<ol start="2">
+<li>HR Portal Tracker fields and tables.
+To set them up, you can import (apply) the configuration package and change the setup if necessary:</li>
+</ol>
+<p><img src="images/Pan_sync2.png" alt="alt"></p>
+<p>As a result, in the <em>HR Portal Tracker - Tables</em> page new records are created:</p>
+<p><img src="images/Pan_sync3.png" alt="alt"></p>
+<p>The <em>Export filter</em> can be changed for the NAV table (for example, relative code, calendar code, absence code etc.). The corresponding fields that will be synchronized are defined for each record. For example, for employee absence the following fields are defined:</p>
+<p><img src="images/Pan_sync4.png" alt="alt"></p>
+<ol start="3">
+<li>If the synchorinzation needs to be automated, this process should be defined in the <em>Job Queue Entries</em>. Create a new process card in the <em>Job Queue Entries</em> page (if the configuration package has been imported, the process is created automatically; the setup can be viewed and updated for the specific organization).</li>
+</ol>
+<p><img src="images/Pan_sync5.png" alt="alt"></p>
+<p>To sync the remaining absence days, the following process is necessary:</p>
+<p><img src="images/Pan_sync6.png" alt="alt"></p>
+<p>It should run not more often than once a day.</p>
+<ol start="4">
+<li>To receive the information about absences from the portal, it should be defined where the information about the specific type of absence will be synchronized. Find the <em>Causes of Absence</em> list, open the <em>Cause of Absence</em> card and fill in the section <em>HR Portal</em>.</li>
+</ol>
+<p><img src="images/Pan_sync7.png" alt="alt"></p>
+<p>It is possibe to receive the information from the portal either in the list of <em>Employee Absences</em> or the <em>Personnel Order List</em>.</p>
+<p>If you choose the <em>Personnel Order List</em>, it is necessary to set up the No. Series for the order import. The No. Series will be used when the information from the portal is received.</p>
+<p>In case this part is not filled in the <em>Cause of Absence</em> card, the absences with this code will not be synchronized.</p>
+<ol start="5">
+<li>To receive the information about bonuses from the portal, it is necessary to indicate where the information from Panorama 365 will be received for the corresponding <em>Payroll Component</em></li>
+</ol>
+<p><img src="images/Pan_sync8.png" alt="alt"></p>
+<p>It is possible to choose from the following options:</p>
+<ul>
+<li>Personnel Order</li>
+<li>Component Register</li>
+<li>Advance List</li>
+</ul>
+<p>Depending on the type chosen, the system will create: 1) a Personnel Order with a corresponding <em>Payroll Component Code</em>, 2) a corresponding record in the monthly <em>Component Register</em>, or 3) a corresponding record in the monthly <em>Advance List</em>.
+In case the field is not filled in the <em>Payroll Component Card</em>, the bonuses with this <em>Payroll Component Code</em> will not be synchronized.</p>
+<h1 id="manual-synchronization">Manual Synchronization</h1>
+<p>In case it is necessary to run the synchronization manually, it can be done in Gadījumā, ja nepieciešams veikt sinhronizāciju ārpus grafika, to var izdarīt:
+<em>HR Portal Sync.</em> -&gt; <em>Tasks</em>-&gt; <em>Synchronize with HR Portal</em></p>
+<p><img src="images/Pan_mansync1.png" alt="alt"></p>
+<p>If you click on <em>Gen. Vacation Days</em> the vacation day buffer will be regenerated. When the next synchronization is run, data will be updated.</p>
+<h1 id="what-to-do-in-case-the-planned-synchronization-fails">What to do in case the planned synchronization fails</h1>
+<p>If the planned synchronization fails, it is necessary to find the reason. In order to do it:</p>
+<ol>
+<li><p>Check if the status for the corresponding <em>Job Queue</em> entry is <em>Ready</em>.</p>
+</li>
+<li><p>Check if all records are processed in the <em>HR Portal Sync. Entries list</em>. To do it, open the list. If at least one of the records has the status <em>Pending</em>, it means that the records are not sent to the portal.</p>
+</li>
+</ol>
+<p><img src="images/Pan_error1.png" alt="alt"></p>
+<p>Find the first record with the status <em>Error</em>. It can be done by clicking on the <em>Go to First Pending</em>.</p>
+<p><img src="images/Pan_error2.png" alt="alt"></p>
+<p>After the notification, the error should be solved. When data is in order, you can <em>Send Changes</em>:</p>
+<p><img src="images/Pan_error3.png" alt="alt"></p>
+<p>If the issue cannot be solved, but te synchronization needs to run, the record can be canceled. However, take into account that the record will not be sent to the portal. It needs to checked if the record is not related to the next records; otherwise, all related records should be canceled. Then Choose <em>Cancel Entries</em>:</p>
+<p><img src="images/Pan_error4.png" alt="alt"></p>
+<ol start="3">
+<li>In case the status for the records in the <em>HR Portal Sync. Entries</em> is Processed, but the synchronization does not work, the <em>HR Portal Sync. Entries Log</em> needs to be checked.</li>
+</ol>
+<p><img src="images/Pan_error5.png" alt="alt"></p>
+<p>In this journal all synchronization processes and their results are recorded. In case there is an error when the data is imported from the portal, the record regarding the error is created in the entry log.</p>
+<p><img src="images/Pan_error6.png" alt="alt"></p>
+<p>When data is in order (on the portal side or the ERP), the synchronization process should be run - manually or with the job queue if it had stopped.</p>
+<p>Periodically, the records in this journal should be deleted not to save too many records in the system. The function <em>Delete Entries</em> deletes all records selected from the list:</p>
+<p><img src="images/Pan_error7.png" alt="alt"></p>
+<ol start="4">
+<li>If the issue cannot be identified and the requsts that were processed during the synchronization need to be analyzed, the field <em>Enable Debug</em> needs to be turned on in the table <em>HR Portal Sync. Setup</em>.
+Then run the synchronization and choose to <em>Export Details to File</em> for the last error message in the <em>HR Portal Sync. Event Log</em>
+There will be infromation about the API requests with Json data in the file. After the issue is solved, the field <em>Enable Debug</em> needs to be turned off not to save additional information in the data base (text files).</li>
+</ol>
+<h1 id="processing-schemes">Processing Schemes</h1>
+<h2 id="personal-information">Personal information</h2>
+<p>It is possible to synchronize the employee's personal information. When a new employee is hired, the data is filled in the ERP system and sent to the portal Panorama 365. On the portal's side the employees themselves can make the changes:</p>
+<ul>
+<li>Address</li>
+<li>Private phone</li>
+<li>Private e-mail</li>
+<li>Bank Account</li>
+</ul>
+<p>After the information is approved on the portal's side, it is sent to the ERP system.</p>
+<p>If data is changed on the ERP's side, the updated information is automatically sent to Panorama 365.</p>
+<h2 id="children">Children</h2>
+<p>Employee can add or modify information about their children. It is forbidden to delete information about children in the portal. After the approval, data is sent to the ERP system. If the function about the additional vacation days is turned in the ERP system, the system will recalculate the number of the vacation days starting from the current period.</p>
+<p>If the data is inserted / modified / deleted on the ERP system's side, the information is updated also in the portal Panorama 365.</p>
+<p>The following information is maintained:</p>
+<ul>
+<li>Child's name / surname (optional - not recommended)</li>
+<li>Date of birth</li>
+<li>Sex (not synchronized, because there is no such field on the ERP system's side)</li>
+<li>Invalidity</li>
+</ul>
+<h2 id="education">Education</h2>
+<p>It is possible to synchronize data regarding employees' qualifications. When the information is added in Panorama 365 and approved, it is sent to the ERP system.</p>
+<ul>
+<li>Educational establishment (ERP field - institution / organization)</li>
+<li>Level of education (ERP field - Qualification code and Description)</li>
+<li>Type of education (not synchronized)</li>
+<li>Speciality (ERP field - Degree)</li>
+<li>Date from (ERP field - Date from)</li>
+<li>Date to (ERP field - Date to)</li>
+</ul>
+<p>If data regarding education is input / modified / deleted in the ERP system, the information is updated also in Panorama 365.</p>
+<p>It is forbidden to correct the qualification code (level of education) both in the ERP, and in Panorama 365. The record has to be deleted on the ERP side and a new record has to be created in the ERP system or the portal.</p>
+<p>It is forbidden to delete the records regarding the employee qualification in the portal.</p>
+<h2 id="absence-processing">Absence processing</h2>
+<p>When the absence records are created / updated / deleted in the ERP, they are  sent to the portal. The information that is sent: <em>Cause of Absence Code</em>, <em>Description</em>, <em>G/U Code</em>, <em>Calendar Day Limit</em>, <em>Country/Region Code</em>.</p>
+<p>In the portal, there is a setup for each <em>Cause of Absence</em> code. It indicated how the specific code needs to be processed. The main synchrnization settings:</p>
+<p><img src="images/Pan_absence1.png" alt="alt"></p>
+<p>It is possible to indicate the payment method for the absences:</p>
+<p><img src="images/Pan_absence2.png" alt="alt"></p>
+<p><img src="images/Pan_absence3.png" alt="alt"></p>
+<p>Only the absences with the status <em>Approved</em> are sent to the ERP.</p>
+<p>Depending on the absence setup in the ERP system, the record is created either in the list of <em>Employee Absences</em> or the <em>Personnel Order List</em>. If the <em>Import Code</em> is not ndicated for the <em>Cause of Absence</em>, the absence will not be imported in the ERP system and there will be a warning in the table <em>HR Portal Sync. Event Log</em></p>
+<p>If the imported record (personnel order) is deleted or anulled in the ERP system, the information about the cancelled absence will be sent to the portal.</p>
+<p>Imported records (absences) can be deleted on the ERP side, if no payroll documents are applied. The absences can be cancelled if a payroll document is already applied. As a result, the system will send the information about the cancelled absence to the portal.</p>
+<h2 id="pay-slip">Pay Slip</h2>
+<p>The pay slip is sent by the ERP system only if the <em>Payroll Header</em> has a status <em>Released</em> or <em>Posted</em>.
+In case the status is changed to <em>Open</em>, data is deleted on the portal's side. If a recalculation is done in this document, and the status is then again changed to <em>Released</em> or <em>Posted</em>, data is updated on the portal's side as well.</p>
+<p>In case the calculation is reversed, additional pay slip is sent to the portal. Accordingly, all pay slips regarding reversed and not reversed payroll headers will be available in the portal.</p>
+<h2 id="bonuses--reducations--advances-synchronization">Bonuses / Reducations / Advances synchronization</h2>
+<p>To synchronize the bonuses / reductions, the catalogue of the <em>Payroll Components</em> should be sent to Panorama 365.</p>
+<p>HR Portal Tracker - Tables:</p>
+<table>
+<thead>
+<tr>
+<th>Code</th>
+<th>Table ID</th>
+<th>Description</th>
+<th>Portal Endpoint Name (export)</th>
+<th>Exporting sequence</th>
+<th>Portal Object Name (import)</th>
+<th>Not Track Changes</th>
+<th>Export Filter for NAV Table</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PAYRLCOMPONENT</td>
+<td>25000000</td>
+<td>Payroll Component</td>
+<td>benefit-type</td>
+<td>10</td>
+<td></td>
+<td>No</td>
+<td>where(Type=Filter(Income|Without Taxes|Deduction))</td>
+</tr>
+</tbody>
+</table>
+<p>HR Portal Tracker - Fields:</p>
+<table>
+<thead>
+<tr>
+<th>Row No.</th>
+<th>Type</th>
+<th>Field no.</th>
+<th>Description</th>
+<th>Constant / Function</th>
+<th>Portal Field Name</th>
+<th>Portal Field Type</th>
+<th>Portal Field Length</th>
+<th>Portal External Key</th>
+<th>Portal Field Mandatory</th>
+<th>Skip Field Validation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Field</td>
+<td>1</td>
+<td>Code</td>
+<td></td>
+<td>code</td>
+<td>string</td>
+<td>50</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Field</td>
+<td>3</td>
+<td>Name</td>
+<td></td>
+<td>Description</td>
+<td>string</td>
+<td>500</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Constant</td>
+<td>0</td>
+<td></td>
+<td>0</td>
+<td>payAsPercent</td>
+<td>int</td>
+<td>0</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Function</td>
+<td>0</td>
+<td></td>
+<td>PayrlCompAmount</td>
+<td>presetedValue</td>
+<td>float</td>
+<td>0</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Function</td>
+<td>0</td>
+<td></td>
+<td>IsDeleted</td>
+<td>state</td>
+<td>int</td>
+<td>0</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Field</td>
+<td>25000970</td>
+<td>Country/Region Code</td>
+<td></td>
+<td>countryCode</td>
+<td>string</td>
+<td>0</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<p>According to the <em>Payroll Components</em>, the request <em>Application Type</em> should be created in the Panorama 365.</p>
+<p><img src="images/Pan_sync9.png" alt="alt"></p>
+<p>The setting <em>Employee can change amount</em> for allowances can be turned off, but then on the ERP side the amount should be defined (<em>Payroll Component Card</em> -&gt; <em>Setup</em> -&gt; <em>From date / amount</em>).</p>
+<p>In case it is allowed that there are several employees in one request, it is allowed to turn on the option <em>Requestable in bulk</em>.</p>
+<h3 id="payroll-components---import">Payroll Components - import</h3>
+<p>In the <em>Payroll Components</em>, an option in the field <em>Import from HR Portal to</em> needs to choosed:</p>
+<p><img src="images/Pan_sync10.png" alt="alt"></p>
+<p>Only the requests with the status <em>Approved</em> will be sent to the ERP system from the portal.</p>
+<h3 id="list-of-payroll-components">List of Payroll Components</h3>
+<p>When a new record is created in the <em>Component register</em>, the system checks if a register with a feature <em>Register created From HR Portal</em> does not already exist.
+If the register already exists, a new row with <em>Employee No.</em>, <em>Payroll Component Code</em>, and <em>Amount</em> is created.
+If the register does not exist, a new <em>Component Register</em> with the correct date, month, and a feature <em>Register created from HR Portal</em> is created taking the date from the portal into account.</p>
+<p>If a new request for several employees is created in Panorama 365, a separate <em>Component Register</em> is created in the ERP system.</p>
+<p>It is allowed to delete the <em>Component Register</em> as a whole or delete separate register rows. Then the system sends information about the cancelled register to the portal. It is not allowed to modify the records imported from the portal.</p>
+<h3 id="personnel-order">Personnel Order</h3>
+<p>When a new <em>Personnel Order</em> is created, the system checks if an order row with an imported <em>HR Portal ID</em> already exists. If it exists, the process will be canceled with an error message in the <em>HR Portal Sync. Entry Log</em>, and the status <em>Canceled</em> will be sent to the portal.
+If the row does not exist, a new <em>Personnel Order</em> and a row with an imported employee and absence type is created - Bonus / Reduction.</p>
+<p>The following fields are filled:</p>
+<ul>
+<li>Component Code</li>
+<li>Date</li>
+<li>Amount</li>
+<li>HR Portal ID</li>
+</ul>
+<p>Each request is created as a separate order except when a request for several employees at once is created in the portal Panorama 365. In that case, one request for several employees is created.
+It is forbidden to modify the order, the order rows or the order card. The order should be booked. If necessary, the order can be canceled; then the system will sent the information about the canceled record to the portal.
+uz portālu informāciju, ka šis ieraksts ir <em>Atcelts</em>.</p>
+<p>In case the status cannot be changed to <em>Released</em>, because the standard check (for isntance, the <em>Payroll Header</em> already exists) has worked, it is allowed to delete the order or order rows to book the <em>Personnel Order</em>. The status <em>Canceled</em> will be sent to the portal.</p>
+<h3 id="advance-list">Advance List</h3>
+<p>When a new <em>Advance List</em> is created for several employees, then a separate list is created for each request. In case an advance is requested for separate employees, it will be imported in the first open list in which the employee is not already included. The information for th component row is filled:</p>
+<ul>
+<li>Code</li>
+<li>Amount</li>
+</ul>
+<p>The advances and advance rows can be deleted. In this case, the system will send the information about the <em>Canceled</em> record to the portal. It is forbidden to modify the records imported from the portal.</p>
+<p>If the portal sends data about a month in which the payroll row already exists:</p>
+<ul>
+<li>If the status for the <em>Payroll Header</em> is <em>Open</em>, an error notification will appear and the synchronization will stop.</li>
+<li>If the status for the <em>Payroll Header</em> is <em>Released</em> or <em>Posted</em>, the error will appear in the <em>HR Portal Sync. Entry Log</em>. Additionally, the system will send the information about the <em>Canceled</em> records to the portal, but the synchronization process will continue.</li>
+</ul>
+<h2 id="working-time">Working Time</h2>
+<p>The portal sends data regarding the working time with the status <em>Approved</em> (that has not been sent previously) to the ERP system. The period is not important.</p>
+<p>Only the actual working time is received in the ERP system (accounted).</p>
+<p>The following information is sent (from the table employee-hour-periods):</p>
+<ul>
+<li>Date</li>
+<li>Hours</li>
+<li>Night hours</li>
+<li>Position No. (if it is not filled in, the main position is found)</li>
+</ul>
+<p>In the records, only the rows for the dates that were sent from the portal are created. To add the absences to this register, the function <em>Copy from Absence Register</em> needs to be activated.</p>
+<p>Dimensions are not processed.</p>
+<p>One document is created from the received data in the corresponding period.</p>
+<p>In case of a position change, the new position has to be synchronized to the portal before the working hours are sent to Panorama 365.</p>
+<p>The actual hours received can be modified and deleted in the ERP system. The information will not be sent to the portal; therefore, it can differ from the information in the ERP system.</p>
 </article>
           </div>
           
