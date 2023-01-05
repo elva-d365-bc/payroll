@@ -170,7 +170,7 @@ There will be infromation about the API requests with Json data in the file. Aft
 </ol>
 <h1 id="processing-schemes">Processing Schemes</h1>
 <h2 id="personal-information">Personal information</h2>
-<p>It is possible to synchronize the employee's personal information. When a new employee is hired, the data is filled in the Dynamics 365 Business Central and sent to Panorama 365 Panorama 365. On Panorama 365 side the employees themselves can make the changes:</p>
+<p>It is possible to synchronize the employee's personal information. When a new employee is hired, the data is filled in Dynamics 365 Business Central and sent to Panorama 365 Panorama 365. On Panorama 365 side the employees themselves can make the changes:</p>
 <ul>
 <li>Address</li>
 <li>Private phone</li>
@@ -180,17 +180,17 @@ There will be infromation about the API requests with Json data in the file. Aft
 <p>After the information is approved on Panorama 365 side, it is sent to the Dynamics 365 Business Central.</p>
 <p>If data is changed on the Dynamics 365 Business Central side, the updated information is automatically sent to Panorama 365.</p>
 <h2 id="children">Children</h2>
-<p>Employee can add or modify information about their children. It is forbidden to delete information about children in Panorama 365. After the approval, data is sent to the Dynamics 365 Business Central. If the function about the additional vacation days is turned in the Dynamics 365 Business Central, it will recalculate the number of the vacation days starting from the current period.</p>
-<p>If the data is inserted / modified / deleted on the Dynamics 365 Business Central side, the information is updated also in Panorama 365.</p>
+<p>Employee can add or modify information about their children. It is forbidden to delete information about children in Panorama 365. After the approval, data is sent to Dynamics 365 Business Central. If the function about the additional vacation days is turned in Dynamics 365 Business Central, it will recalculate the number of the vacation days starting from the current period.</p>
+<p>If the data is inserted / modified / deleted on Dynamics 365 Business Central side, the information is updated also in Panorama 365.</p>
 <p>The following information is maintained:</p>
 <ul>
 <li>Child's name / surname (optional - not recommended)</li>
 <li>Date of birth</li>
-<li>Sex (not synchronized, because there is no such field on the Dynamics 365 Business Central side)</li>
+<li>Sex (not synchronized, because there is no such field on Dynamics 365 Business Central side)</li>
 <li>Invalidity</li>
 </ul>
 <h2 id="education">Education</h2>
-<p>It is possible to synchronize data regarding employees' qualifications. When the information is added in Panorama 365 and approved, it is sent to the Dynamics 365 Business Central.</p>
+<p>It is possible to synchronize data regarding employees' qualifications. When the information is added in Panorama 365 and approved, it is sent to Dynamics 365 Business Central.</p>
 <ul>
 <li>Educational establishment (Dynamics 365 Business Central field - institution / organization)</li>
 <li>Level of education (Dynamics 365 Business Central field - Qualification code and Description)</li>
@@ -200,7 +200,7 @@ There will be infromation about the API requests with Json data in the file. Aft
 <li>Date to (Dynamics 365 Business Central field - Date to)</li>
 </ul>
 <p>If data regarding education is input / modified / deleted in Dynamics 365 Business Central, the information is updated also in Panorama 365.</p>
-<p>It is forbidden to correct the qualification code (level of education) both in Dynamics 365 Business Central , and in Panorama 365. The record has to be deleted on the Dynamics 365 Business Central side and a new record has to be created in the Dynamics 365 Business Central or Panorama 365.</p>
+<p>It is forbidden to correct the qualification code (level of education) both in Dynamics 365 Business Central and Panorama 365. The record has to be deleted on Dynamics 365 Business Central side and a new record has to be created in Dynamics 365 Business Central or Panorama 365.</p>
 <p>It is forbidden to delete the records regarding the employee qualification in Panorama 365.</p>
 <h2 id="absence-processing">Absence processing</h2>
 <p>When the absence records are created / updated / deleted in Dynamics 365 Business Central, they are  sent to Panorama 365. The information that is sent: <em>Cause of Absence Code</em>, <em>Description</em>, <em>G/U Code</em>, <em>Calendar Day Limit</em>, <em>Country/Region Code</em>.</p>
@@ -344,7 +344,7 @@ In case the status is changed to <em>Open</em>, data is deleted on Panorama 365 
 </tr>
 </tbody>
 </table>
-<p>According to the <em>Payroll Components</em>, the request <em>Application Type</em> should be created in the Panorama 365.</p>
+<p>According to the <em>Payroll Components</em>, the request <em>Application Type</em> should be created in Panorama 365.</p>
 <p><img src="images/Pan_sync9.png" alt="alt"></p>
 <p>The setting <em>Employee can change amount</em> for allowances can be turned off, but then on Dynamics 365 Business Central side the amount should be defined (<em>Payroll Component Card</em> -&gt; <em>Setup</em> -&gt; <em>From date / amount</em>).</p>
 <p>In case it is allowed that there are several employees in one request, it is allowed to turn on the option <em>Requestable in bulk</em>.</p>
