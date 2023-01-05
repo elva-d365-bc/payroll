@@ -7,7 +7,7 @@
   "docs/hrw/overview.html": {
     "href": "docs/hrw/overview.html",
     "title": "| Latvian Payroll",
-    "keywords": ""
+    "keywords": "The application ensures data synchronization between Dynamics 365 Business Central and Panorama 365. The application offers: To correctly reflect the actual information about employees from in Panorama 365, including accrued vacation days up to date To synchronize the changes in employees personal infomration to Panorama 365 and Dynamics 365 Business Central To synchronize information about absences in both systems To synchronize information about premiums in both systems To receive information about worked hours for salary calculation from Panorama 365 Pay slips"
   },
   "docs/hrw/Panorama 365.html": {
     "href": "docs/hrw/Panorama 365.html",
