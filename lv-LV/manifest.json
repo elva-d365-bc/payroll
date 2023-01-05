@@ -6981,23 +6981,23 @@
       "version": ""
     },
     {
-      "type": "Resource",
-      "source_relative_path": "docs/personnel_base/images/24.notifications.md",
-      "output": {
-        "resource": {
-          "relative_path": "docs/personnel_base/images/24.notifications.md"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
       "type": "Conceptual",
       "source_relative_path": "docs/personnel_base/images/24.notifications.md",
       "output": {
         ".html": {
           "relative_path": "docs/personnel_base/images/24.notifications.html",
           "hash": "aK0+J4k54qF3b+Ps//cw4B4ZPEUSgTqbU/Wi1Tdpxpo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/personnel_base/images/24.notifications.md",
+      "output": {
+        "resource": {
+          "relative_path": "docs/personnel_base/images/24.notifications.md"
         }
       },
       "is_incremental": false,
