@@ -369,8 +369,7 @@ If the row does not exist, a new <em>Personnel Order</em> and a row with an impo
 <li>HR Portal ID</li>
 </ul>
 <p>Each request is created as a separate order except when a request for several employees at once is created in Panorama 365. In that case, one request for several employees is created.
-It is forbidden to modify the order, the order rows or the order card. The order should be booked. If necessary, the order can be canceled; then Dynamics 365 Business Central will sent the information about the canceled record to Panorama 365.
-uz portālu informāciju, ka šis ieraksts ir <em>Atcelts</em>.</p>
+It is forbidden to modify the order, the order rows or the order card. The order should be booked. If necessary, the order can be canceled; then Dynamics 365 Business Central will sent the information about the canceled record to Panorama 365.</p>
 <p>In case the status cannot be changed to <em>Released</em>, because the standard check (for isntance, the <em>Payroll Header</em> already exists) has worked, it is allowed to delete the order or order rows to book the <em>Personnel Order</em>. The status <em>Canceled</em> will be sent to Panorama 365.</p>
 <h3 id="advance-list">Advance List</h3>
 <p>When a new <em>Advance List</em> is created for several employees, then a separate list is created for each request. In case an advance is requested for separate employees, it will be imported in the first open list in which the employee is not already included. The information for th component row is filled:</p>
