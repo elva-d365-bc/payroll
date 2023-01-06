@@ -31,8 +31,8 @@
   },
   "docs/hrw/overview.html": {
     "href": "docs/hrw/overview.html",
-    "title": "| Latvian Payroll",
-    "keywords": "Aplikācija nodrošina datu sinhonizēšanu starp Dynamics 365 Business Central un Panorama 365 sistēmām. Aplikācija dod iespēju: Atspoguļot Panorama 365 aktuālo informāciju par darbinieku no Dynamics 365 Business Central, t. sk. uzkrātā atvaļinājuma dienu atlikumu uz šodienu Sinhronizēt darbinieka personīgās informācijas izmaiņas Panorama 365 un Dynamics 365 Business Central Sinhronizēt prombūtņu ierakstus abās sistēmās Sinhronizēt informāciju par pieteiktajām piemaksām abās sistēmās Saņemt no Panorama 365 nostrādātas stundas darba algas aprēķiniem Atspoguļot algas lapiņas"
+    "title": "Apskats | Latvian Payroll",
+    "keywords": "Apskats Aplikācija nodrošina datu sinhonizēšanu starp Dynamics 365 Business Central un Panorama 365 sistēmām. Aplikācija dod iespēju: Atspoguļot Panorama 365 aktuālo informāciju par darbinieku no Dynamics 365 Business Central, t. sk. uzkrātā atvaļinājuma dienu atlikumu uz šodienu Sinhronizēt darbinieka personīgās informācijas izmaiņas Panorama 365 un Dynamics 365 Business Central Sinhronizēt prombūtņu ierakstus abās sistēmās Sinhronizēt informāciju par pieteiktajām piemaksām abās sistēmās Saņemt no Panorama 365 nostrādātas stundas darba algas aprēķiniem Atspoguļot algas lapiņas"
   },
   "docs/hrw/Panorama365.html": {
     "href": "docs/hrw/Panorama365.html",
@@ -46,8 +46,8 @@
   },
   "docs/payroll_base/overview.html": {
     "href": "docs/payroll_base/overview.html",
-    "title": "| Latvian Payroll",
-    "keywords": "Latvian Payroll ir aplikācija, kas pilnībā integrēta ar Dynamics 365 Business Central. Aplikācija nodrošina standarta funkcionalitātes algas aprēķinam saskaņā ar Latvijas likumdošanas prasībām. Aplikācija dod iespēju lietotājiem: aprēķināt algas izveidot individuālus darba laika un svētku kalendārus reģistrēt prombūtnes veikt atvaļinājumu uzkrājumus iestatīt periodiskas un vienreizējas piemaksas un atvilkumus administrēt izpildrakstu ieturējumu veikšanu un izmaksu trešajām personām sagatavot maksājuma uzdevumus Latvijas komercbankām veikt algas lapiņu izsūtni e-pastā uzturēt informāciju par darbinieku kvalifikācijām uzturēt informāciju par darbinieku radiniekiem un alternatīvām adresēm pievienot darbinieku reģistros jebkura formāta pielikumus Sagatavot atskaites augšupielādei EDS sistēmā: Ziņas par darba ņēmējiem Darba devēja ziņojums (VSAOI un IIN) Paziņojums par fiziskai personai izmaksātajām summām (kopsavilkums) IeIeN pārskats par izmaksām nerezidentiem"
+    "title": "Apskats | Latvian Payroll",
+    "keywords": "Apskats Latvian Payroll ir aplikācija, kas pilnībā integrēta ar Dynamics 365 Business Central. Aplikācija nodrošina standarta funkcionalitātes algas aprēķinam saskaņā ar Latvijas likumdošanas prasībām. Aplikācija dod iespēju lietotājiem: aprēķināt algas izveidot individuālus darba laika un svētku kalendārus reģistrēt prombūtnes veikt atvaļinājumu uzkrājumus iestatīt periodiskas un vienreizējas piemaksas un atvilkumus administrēt izpildrakstu ieturējumu veikšanu un izmaksu trešajām personām sagatavot maksājuma uzdevumus Latvijas komercbankām veikt algas lapiņu izsūtni e-pastā uzturēt informāciju par darbinieku kvalifikācijām uzturēt informāciju par darbinieku radiniekiem un alternatīvām adresēm pievienot darbinieku reģistros jebkura formāta pielikumus Sagatavot atskaites augšupielādei EDS sistēmā: Ziņas par darba ņēmējiem Darba devēja ziņojums (VSAOI un IIN) Paziņojums par fiziskai personai izmaksātajām summām (kopsavilkums) IeIeN pārskats par izmaksām nerezidentiem"
   },
   "docs/payroll_base/payroll_base.html": {
     "href": "docs/payroll_base/payroll_base.html",
@@ -176,8 +176,8 @@
   },
   "docs/payroll_extended/overview.html": {
     "href": "docs/payroll_extended/overview.html",
-    "title": "| Latvian Payroll",
-    "keywords": "Latvian Payroll Advanced ir aplikācija, kas pilnībā integrēta ar Dynamics 365 Business Central. Aplikācija nodrošina nepieciešamās funkcionalitātes algas aprēķinam saskaņā ar Latvijas normatīvo aktu prasībām. Aplikācija ietver sevī sekojošas funkcijas: Algas komponentes; Kalendāri; Avansu / starpizmaksu / algu saraksti; Departamenti; Amati; VID atskaites un risinājuma standarta atskaites; Algas datu grāmatošana virsgrāmatā; Maksājumu žurnāla aizpildīšana; Maksājumu fails eksportam uz internetbanku; Darbinieku veselības apdrošināšanas ieraksti algās; Plānotais grafiks un aktuālais grafiks; Atvaļinājuma periodu pārvaldīšana; Statistikas atskaites - Darbs-2, Darbs-5; Algas nodokļu grāmatiņu imports no EDS; Slimības lapu imports no EDS."
+    "title": "Apskats | Latvian Payroll",
+    "keywords": "Apskats Latvian Payroll Advanced ir aplikācija, kas pilnībā integrēta ar Dynamics 365 Business Central. Aplikācija nodrošina nepieciešamās funkcionalitātes algas aprēķinam saskaņā ar Latvijas normatīvo aktu prasībām. Aplikācija ietver sevī sekojošas funkcijas: Algas komponentes; Kalendāri; Avansu / starpizmaksu / algu saraksti; Departamenti; Amati; VID atskaites un risinājuma standarta atskaites; Algas datu grāmatošana virsgrāmatā; Maksājumu žurnāla aizpildīšana; Maksājumu fails eksportam uz internetbanku; Darbinieku veselības apdrošināšanas ieraksti algās; Plānotais grafiks un aktuālais grafiks; Atvaļinājuma periodu pārvaldīšana; Statistikas atskaites - Darbs-2, Darbs-5; Algas nodokļu grāmatiņu imports no EDS; Slimības lapu imports no EDS."
   },
   "docs/payroll_extended/payroll_extended.html": {
     "href": "docs/payroll_extended/payroll_extended.html",
@@ -546,8 +546,8 @@
   },
   "docs/personnel_base/overview.html": {
     "href": "docs/personnel_base/overview.html",
-    "title": "| Latvian Payroll",
-    "keywords": "Latvian Payroll Personnel ir aplikācija, kas pilnībā integrēta ar Dynamics 365 Business Central. Aplikācija nodrošina nepieciešamās funkcionalitātes personāla resursu vadībai saskaņā ar Latvijas normatīvo aktu prasībām. Aplikācija ietver sevī sekojošas funkcijas: Darba līgumu reģistrēšana; Personāla rīkojumu reģistrēšana; Darba aizsardzība- Obligātās Veselības pārbaudes, Instruktāžu vadība; Ziņojumi - atgādinājumu ziņojumu sūtīšana iepriekš definētām darbinieku grupām. Dokumentu veidošana - personāla dokumentu veidošana, rediģēšana un automātiska sagatavošana atsevišķām darbībām."
+    "title": "Apskats | Latvian Payroll",
+    "keywords": "Apskats Latvian Payroll Personnel ir aplikācija, kas pilnībā integrēta ar Dynamics 365 Business Central. Aplikācija nodrošina nepieciešamās funkcionalitātes personāla resursu vadībai saskaņā ar Latvijas normatīvo aktu prasībām. Aplikācija ietver sevī sekojošas funkcijas: Darba līgumu reģistrēšana; Personāla rīkojumu reģistrēšana; Darba aizsardzība- Obligātās Veselības pārbaudes, Instruktāžu vadība; Ziņojumi - atgādinājumu ziņojumu sūtīšana iepriekš definētām darbinieku grupām. Dokumentu veidošana - personāla dokumentu veidošana, rediģēšana un automātiska sagatavošana atsevišķām darbībām."
   },
   "docs/personnel_base/personnel_base.html": {
     "href": "docs/personnel_base/personnel_base.html",
@@ -626,8 +626,8 @@
   },
   "docs/personnel_extended/overview.html": {
     "href": "docs/personnel_extended/overview.html",
-    "title": "| Latvian Payroll",
-    "keywords": "Latvian Payroll Personnel Advanced ir aplikācija, kas pilnībā integrēta ar Dynamics 365 Business Central. Aplikācija nodrošina nepieciešamās funkcionalitātes personāla resursu vadībai saskaņā ar Latvijas likumdošanas prasībām. Aplikācija ietver sevī sekojošu funkciju: Dokumentu veidošana - personāla dokumentu veidošana, rediģēšana un automātiska sagatavošana atsevišķām darbībām."
+    "title": "Apskats | Latvian Payroll",
+    "keywords": "Apskats Latvian Payroll Personnel Advanced ir aplikācija, kas pilnībā integrēta ar Dynamics 365 Business Central. Aplikācija nodrošina nepieciešamās funkcionalitātes personāla resursu vadībai saskaņā ar Latvijas likumdošanas prasībām. Aplikācija ietver sevī sekojošu funkciju: Dokumentu veidošana - personāla dokumentu veidošana, rediģēšana un automātiska sagatavošana atsevišķām darbībām."
   },
   "docs/personnel_extended/personnel_extended.html": {
     "href": "docs/personnel_extended/personnel_extended.html",
