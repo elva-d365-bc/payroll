@@ -26,8 +26,8 @@
   },
   "docs/hrw/faq.html": {
     "href": "docs/hrw/faq.html",
-    "title": "FAQ | Latvian Payroll",
-    "keywords": "FAQ 1. Ko darīt, ja nenotiek plānotā sinhronizācija? Ir nepieciešams pārbaudīt vai atbilstoša procesa rindas ieraksta statuss ir Gatavs un nav kļūdas paziņojuma. vai sinhronizācijas ierakstos visi ieraksti ir apstrādāti. Lai to izdarītu, jāatver Personāla portāla sinhronizācijas ieraksti . Ja vismaz vienam ierakstam ir statuss Neapstrādāts , tas nozīmē, ka sistēmas ieraksti nav nosūtīti no Microsoft Dynamics 365 Business Central uz Panorama 365. Gadījumā, ja sinhronizācijas ierakstos visiem ierakstiem ir statuss Apstrādāts , bet sinhronizācija tomēr nenotiek, jāpārbauda Personāla portāla sinhronizācijas notikumu žurnāls . 2. Vai darbinieks varētu pieteikt personīgās informācijas izmaiņas (adrese, telefons, bankas konts, bērni, izglītība)? Ja Panorama 365 lietotājam ir piešķirtas tiesības pieteikt personīgas informācijas izmaiņas, tad pēc izmaiņu apstiprināšanas, dati tiks sinhronizēti (atjaunoti Microsoft Dynamics 365 Business Central). 3. Panorama 365 portālā ir apstiprināts prombūtnes pieteikums, bet sistēmā Microsoft Dynamics 365 Business Central dati nav saņemti. Pārbaudiet, vai Panorama 365 prombūtnes koda uzstādījumos ir pazīme Sinhronizēt ar ERP ."
+    "title": "Biežāk uzdotie jautājumi | Latvian Payroll",
+    "keywords": "Biežāk uzdotie jautājumi 1. Ko darīt, ja nenotiek plānotā sinhronizācija? Ir nepieciešams pārbaudīt vai atbilstoša procesa rindas ieraksta statuss ir Gatavs un nav kļūdas paziņojuma. vai sinhronizācijas ierakstos visi ieraksti ir apstrādāti. Lai to izdarītu, jāatver Personāla portāla sinhronizācijas ieraksti . Ja vismaz vienam ierakstam ir statuss Neapstrādāts , tas nozīmē, ka sistēmas ieraksti nav nosūtīti no Microsoft Dynamics 365 Business Central uz Panorama 365. Gadījumā, ja sinhronizācijas ierakstos visiem ierakstiem ir statuss Apstrādāts , bet sinhronizācija tomēr nenotiek, jāpārbauda Personāla portāla sinhronizācijas notikumu žurnāls . 2. Vai darbinieks varētu pieteikt personīgās informācijas izmaiņas (adrese, telefons, bankas konts, bērni, izglītība)? Ja Panorama 365 lietotājam ir piešķirtas tiesības pieteikt personīgas informācijas izmaiņas, tad pēc izmaiņu apstiprināšanas, dati tiks sinhronizēti (atjaunoti Microsoft Dynamics 365 Business Central). 3. Panorama 365 portālā ir apstiprināts prombūtnes pieteikums, bet sistēmā Microsoft Dynamics 365 Business Central dati nav saņemti. Pārbaudiet, vai Panorama 365 prombūtnes koda uzstādījumos ir pazīme Sinhronizēt ar ERP ."
   },
   "docs/hrw/overview.html": {
     "href": "docs/hrw/overview.html",
@@ -662,7 +662,7 @@
   "index.html": {
     "href": "index.html",
     "title": "Latvijas algu un personāla lokalizācija sastāv no sekojošām aplikācijām: | Latvian Payroll",
-    "keywords": "Latvijas algu un personāla lokalizācija sastāv no sekojošām aplikācijām: Latvian Payroll Latvian Payroll Advanced Latvian Payroll Personnel Latvian Payroll Personnel Advanced Panorama 365 Connector"
+    "keywords": "Latvijas algu un personāla lokalizācija sastāv no sekojošām aplikācijām: Latvian Payroll Latvian Payroll Advanced Latvian Payroll Personnel Latvian Payroll Personnel Advanced Latvian Payroll Connector for Panorama 365"
   },
   "readme.html": {
     "href": "readme.html",
