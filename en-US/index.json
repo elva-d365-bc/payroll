@@ -2,7 +2,7 @@
   "docs/hrw/faq.html": {
     "href": "docs/hrw/faq.html",
     "title": "FAQ | Latvian Payroll",
-    "keywords": "FAQ"
+    "keywords": "FAQ 1. What to do if the planned synchronization does not work? It is necessary to check if the corresponding job queue entry has the statuss Ready . If all entries are Processed in the table HR Portal Sync. Entries . If at least one entry has a statuss Pending , it means that Microsoft Dynamics 365 Business Central has not sent the entries to Panorama 365. In case all entries have status Processed , but the synchronization does not work, it is necessary to check the HR Portal Sync. Event Log . 2. Is it possible for an employee to apply changes for their personal information (address, phone, bank account, children, education)? If the employee has the rights to apply changes for their personal information, data is synchronized (updated in Microsoft Dynamics 365 Business Central) after the changes are accepted. 3. The absence request is approved in Panorama 365, but data is not received in Microsoft Dynamics 365 Business Central. Check if the feature Synchronize with ERP is turned on in the absence code setup in Panorama 365."
   },
   "docs/hrw/overview.html": {
     "href": "docs/hrw/overview.html",

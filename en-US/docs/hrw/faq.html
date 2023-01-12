@@ -79,6 +79,16 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="faq">FAQ</h1>
 
+<h2 id="1what-to-do-if-the-planned-synchronization-does-not-work">1.	What to do if the planned synchronization does not work?</h2>
+<p>It is necessary to check</p>
+<ul>
+<li>if the corresponding job queue entry has the statuss <em>Ready</em>.</li>
+<li>If all entries are <em>Processed</em> in the table <em>HR Portal Sync. Entries</em>. If at least one entry has a statuss <em>Pending</em>, it means that Microsoft Dynamics 365 Business Central has not sent the entries to Panorama 365. In case all entries have status <em>Processed</em>, but the synchronization does not work, it is necessary to check the <em>HR Portal Sync. Event Log</em>.</li>
+</ul>
+<h2 id="2-is-it-possible-for-an-employee-to-apply-changes-for-their-personal-information-address-phone-bank-account-children-education">2. Is it possible for an employee to apply changes for their personal information (address, phone, bank account, children, education)?</h2>
+<p>If the employee has the rights to apply changes for their personal information, data is synchronized (updated in Microsoft Dynamics 365 Business Central) after the changes are accepted.</p>
+<h2 id="3-the-absence-request-is-approved-in-panorama-365-but-data-is-not-received-in-microsoft-dynamics-365-business-central">3. The absence request is approved in Panorama 365, but data is not received in Microsoft Dynamics 365 Business Central.</h2>
+<p>Check if the feature <em>Synchronize with ERP</em> is turned on in the absence code setup in Panorama 365.</p>
 </article>
           </div>
           
