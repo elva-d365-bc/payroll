@@ -555,6 +555,7 @@
 </table>
 <h2 id="overtime-setup">Overtime Setup</h2>
 <p>In order to make correct overtime calculation in the system, the following settings must be set:</p>
+<p><img src="images/1.6_overtime_setup.png" alt="alt"></p>
 <table>
 <thead>
 <tr>
@@ -576,40 +577,40 @@
 <td>Indicates overtime calculation starting month.Designed for the aggregated working time if the beginning of the reporting period differs from the beginning of the year.In all other cases, January.</td>
 </tr>
 <tr>
-<td>Date formula</td>
-<td>Indicates the period for which overtime will be calculated.</td>
+<td>Overtime Months Count</td>
+<td>Indicates the number of months for which overtime will be calculated.</td>
 </tr>
 <tr>
-<td>Limit Type</td>
+<td>Idletime Months Count</td>
+<td>Indicates the number of monts for which the employee was not working</td>
+</tr>
+<tr>
+<td>Overtime Limit Type</td>
 <td>Specifies the type from which information about hours worked will be taken: <br>a) Hours - selects if the number of hours should be specified; <br>b) Calendar - Calendar will be used as base for the calculation of overtime.</td>
 </tr>
 <tr>
-<td>Limit Hours/Calendar</td>
+<td>Overtime Limit Hours/Calendar</td>
 <td>If the type calendar is selected, the corresponding calendar from the list is selected. If the type is hours then indicates the number of hours starting from what overtime should be calculated.</td>
+</tr>
+<tr>
+<td>Overtime DayOff Usage Month Qty. *</td>
+<td>Indicates how many months ago need to look for available overtime, which will be used as a day off.</td>
+</tr>
+<tr>
+<td>Hours Qty. For Day On Vacation *</td>
+<td>Specifies the number of overtime to assign an employee one additional vacation day.</td>
 </tr>
 <tr>
 <td>Description</td>
 <td>A freely recordable explanation.</td>
 </tr>
 <tr>
-<td>Proportional</td>
-<td>Select, if Limit Type is calendar and overtime should be calculated only from work time. The calculation also takes into account the absence and recruitment date.</td>
-</tr>
-<tr>
-<td>Default Usage Type *</td>
+<td>Overtime Default Usage Type *</td>
 <td>Select: <br>a) Pay Out; <br>b) Day Off; <br>c) Vacation Add.Day.</td>
 </tr>
 <tr>
-<td>Absence code for use of Day Off *</td>
+<td>Overtime DayOff Usage Absence Code *</td>
 <td>select the code VIRS_ATPUT.</td>
-</tr>
-<tr>
-<td>Months Qty. For DayOff Usage *</td>
-<td>Indicates how many months ago need to look for available overtime, which will be used as a day off.</td>
-</tr>
-<tr>
-<td>Hours Qty. For Day On Vacation *</td>
-<td>Specifies the number of overtime to assign an employee one additional vacation day.</td>
 </tr>
 </tbody>
 </table>
@@ -1016,6 +1017,10 @@ In each payroll component card, for more convenient maintenance of the payroll b
 <tr>
 <td>Overtime Component Code</td>
 <td>Specifies the attached Overtime payroll component.</td>
+</tr>
+<tr>
+<td>Idletime Component Code</td>
+<td>Specifies the attached Idletime payroll component.</td>
 </tr>
 <tr>
 <td>Bank Holiday Component Code</td>
@@ -2599,6 +2604,10 @@ and</p>
 <p>In case a public holiday is postponed to another date (for example 18th of November or 4th  of May), then this information should be entered in working time Calendars with type Nonworking and entry in field <em>Compensated hours</em>.</p>
 <p>This solution is intended only for payroll components that are calculated based on the hours. For example, component No. 104, where in component card's field <em>Compensated Hour Comp. Code</em> is entered Payroll Component Code No. 105 - for the calculation of the compensated hours. When entering the employee's salary components, enter the payroll component that will be used in the calculation of the compensated hours.</p>
 <p>When generating a Schedule, compensated hours will be shown in detailed entries. Hours will be shown also in case an absence or working hours will be registered on that day - then it is possible to remove or correct them manually in the Accounting table. In the Salary list, these hours will be calculated separately.</p>
+<h2 id="calculate-overtimeidletime">Calculate Overtime/Idletime</h2>
+<p>In order to calculate overtime/idletime for an employee, choose the function <em>Process</em> -&gt; <em>Calculate Overtime/Idletime</em> in the Overtime Registrations card.</p>
+<p><img src="images/Overtime_calc.png" alt="alt"></p>
+<p>By default, the column <em>Idletime Hours</em> is hidden. To open it, use the personalization function.</p>
 <h1 id="overtime-compensation-with-rest-time">Overtime compensation with rest time</h1>
 <h2 id="setup-1">Setup</h2>
 <p>In order to be able to use this functionality, the following setup is required:</p>

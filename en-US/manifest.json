@@ -4754,6 +4754,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/1.6_overtime_setup.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/1.6_overtime_setup.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/payroll_extended/images/1.7.empl_post_groups_1.png",
       "output": {
         "resource": {
@@ -5919,6 +5930,17 @@
       "version": ""
     },
     {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/Overtime_calc.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/Overtime_calc.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "docs/payroll_extended/overview.md",
       "output": {
@@ -5936,7 +5958,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/payroll_extended.html",
-          "hash": "yxp73RTCgv9bZ1FTVemQmMQ4hRGzE/8t56X7DFSur+s="
+          "hash": "DCwL02tvjVF1bOq8lNMi8j2jjGrR16bX1f4XXn+e4AY="
         }
       },
       "is_incremental": false,
