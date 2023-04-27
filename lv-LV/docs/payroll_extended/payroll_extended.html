@@ -577,32 +577,20 @@
 <td>Norāda, no kāda mēneša tiek veikts virsstundu aprēķins. Paredzēts summētajam darba laikam, ja pārskata perioda sākums atšķiras no gada sākuma. Visos pārējos gadījumos jānorāda Janvāris.</td>
 </tr>
 <tr>
-<td>Datuma formula</td>
-<td>Norāda periodu, par kuru virsstundas tiks aprēķinātas.</td>
+<td>Virsstundu mēnešu skaits</td>
+<td>Norāda mēnešu skaitu, par kuru virsstundas tiks aprēķinātas.</td>
 </tr>
 <tr>
-<td>Limita tips</td>
+<td>Dīkstāvju mēnešu skaits</td>
+<td>Norāda mēnešu skaitu, kuros darbineks ir atradies dīkstāvē</td>
+</tr>
+<tr>
+<td>Virsstundu limita tips</td>
 <td>Norāda tipu, no kura tiks ņemta informācija par nostrādātajām stundām: <br>a) Stundas - izvēlas, ja jānorāda stundu skaits; <br>b) Kalendārs - par pamatu virsstundu aprēķinam tiks izmantots kalendārs.</td>
 </tr>
 <tr>
-<td>Limita stundas/kalendārs</td>
+<td>Virsstundu limita stundas/kalendārs</td>
 <td>Ja ir izvēlēts tips kalendārs, tad izvēlas atbilstošo kalendāru no saraksta. Ja tips ir stundas, tad norāda stundu skaitu, kuras pārsniedzot tiks rēķinātas virsstundas.</td>
-</tr>
-<tr>
-<td>Nosaukums</td>
-<td>Brīvi ierakstāms paskaidrojums.</td>
-</tr>
-<tr>
-<td>Proporcionāli</td>
-<td>Izvēlas, ja laukā tips ir Kalendārs un virsstundas paredzēts rēķināt tikai no nostrādātā laika. Aprēķinā ņem vērā arī prombūtni un darbā pieņemšanas datumu.</td>
-</tr>
-<tr>
-<td>Izmantošanas veids pēc noklusējuma *</td>
-<td>Izvēlas: <br>a) Apmaksa; <br>b) Brīvdiena; <br>c) Atvaļinājuma papilddiena.</td>
-</tr>
-<tr>
-<td>Prombūtnes kods brīvdienu izmantošanai *</td>
-<td>Norāda kodu VIRS_ATPUT.</td>
 </tr>
 <tr>
 <td>Mēnešu skaits brīvdienu izmantošanai *</td>
@@ -611,6 +599,18 @@
 <tr>
 <td>Stundu sk. dienā atvaļin. papilddienai *</td>
 <td>Norāda virsstundu skaitu lai piešķirt darbiniekam vienu atvaļinājuma papilddienu.</td>
+</tr>
+<tr>
+<td>Nosaukums</td>
+<td>Brīvi ierakstāms paskaidrojums.</td>
+</tr>
+<tr>
+<td>Virsstundu izmantošanas veids pēc noklusējuma *</td>
+<td>Izvēlas: <br>a) Apmaksa; <br>b) Brīvdiena; <br>c) Atvaļinājuma papilddiena.</td>
+</tr>
+<tr>
+<td>Prombūtnes kods brīvdienu izmantošanai *</td>
+<td>Norāda kodu VIRS_ATPUT.</td>
 </tr>
 </tbody>
 </table>
@@ -1023,6 +1023,10 @@ Vienkāršākai bāžu uzturēšanai ir paredzētas divas pogas: <em>Saistītās
 <tr>
 <td>Virsstundu algas komponente</td>
 <td>Norāda piesaistīto Virsstundu algas komponenti.</td>
+</tr>
+<tr>
+<td>Dīkstāves algas komponente</td>
+<td>Norāda piesaistīto Dīkstāves algas komponenti.</td>
 </tr>
 <tr>
 <td>Svētku stundu algas komponente</td>
@@ -2582,6 +2586,10 @@ Uzskaites importēšanai atpakaļ programmā tiek izmantota funkcija <em>Imports
 <p>Gadījumā, ja svētku diena pārcelta uz citu dienu (piemēram, 18. novembris vai 4. maijs), tad šai informācijai jābūt ievadītai darba laika kalendārā ar tipu <em>Brīvdiena</em> un kompensējamām stundām.</p>
 <p>Šis risinājums paredzēts tikai algas komponentēm, kuras tiek rēķinātas pēc stundām. Piemēram komponente Nr. 104, kur komponentes kartiņas laukā <em>Kompensējamo stundu komponentes kods</em> ievadīta komponente Nr. 105 - kompensējamo stundu aprēķinam. Ievadot darbinieka algas komponenti, jābūt izvēlētai algas komponentei, kura tiks izmantota kompensējamo stundu aprēķinā.</p>
 <p>Aizpildot grafiku/tabeli, detalizētos ierakstos tiks aizpildītas kompensējamās stundas.  Stundas tiks aizpildītas arī gadījumā, ja reģistrēta  prombūtne vai darba stundas šajā dienā. Tādā gadījumā uzskaitē var izņemt/rediģēt šīs stundas manuāli. Algu sarakstā šis stundas tiks aprēķinātas atsevišķi.</p>
+<h2 id="aprēķināt-virsstundasdīkstāves">Aprēķināt virsstundas/dīkstāves</h2>
+<p>Lai aprēķinātu virsstundas/dīkstāves, Virsstundu Uzskaites kartiņā jāizvēlas funkcija <em>Process</em> -&gt; <em>Aprēķināt Virsstundas/Dīkstāves</em>.</p>
+<p><img src="images/Overtime_calc.png" alt="alt"></p>
+<p>Pēc noklusējuma, kolonna <em>Dīkstāves stundas</em> ir paslēpta. Lai to atvērtu, jāizmanto personalizācijas funkcija.</p>
 <h1 id="virsstundu-kompensācija-ar-atpūtas-laiku">Virsstundu kompensācija ar atpūtas laiku</h1>
 <h2 id="uzstādījumi-1">Uzstādījumi</h2>
 <p>Lai varētu lietot funkcionalitāti, nepieciešami sekojoši uzstādījumi:</p>

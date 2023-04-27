@@ -530,6 +530,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/images/Overtime_calc.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/images/Overtime_calc.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/images/elva_logo.jpg",
       "output": {
         "resource": {
@@ -4715,6 +4726,17 @@
       "version": ""
     },
     {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_extended/images/Overtime_calc.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_extended/images/Overtime_calc.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "docs/payroll_extended/overview.md",
       "output": {
@@ -4732,7 +4754,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_extended/payroll_extended.html",
-          "hash": "cXSI0IChlNbZT6bw4LFoymoddwY65q5C4xKTyAcEqMg="
+          "hash": "FsYVVY+TFXuRaIf1qyWPmPy+Sc2Ke2PV5hRS5AKTtK8="
         }
       },
       "is_incremental": false,
