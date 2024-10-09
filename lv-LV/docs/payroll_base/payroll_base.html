@@ -326,6 +326,18 @@
 <td>Darbojas kopā tikai ar ieslēgtu funkciju <em>Iespējotas kompensētās svētku dienu stundas</em>. Iespējot, ja nepieciešams kompensēt svētku dienas, kas iekrīt darba dienās, ja darbinieks ir pieņemts vai atbrīvots tekošajā mēnesī.</td>
 </tr>
 <tr>
+<td>ZTI vienīgās prasības ieturētās summas %</td>
+<td>Norāda saskaņā ar aktuālajām likumdošanas prasībām, cik procentus  nepieciešams ieturēt no darbinieka algas viena izpildraksta gadījumā.</td>
+</tr>
+<tr>
+<td>ZTI vairāku prasību ieturētās summas %</td>
+<td>Norāda saskaņā ar aktuālajām likumdošanas prasībām, cik procentus  nepieciešams ieturēt no darbinieka algas vairāku izpildrakstu gadījumā.</td>
+</tr>
+<tr>
+<td>ZTI Neto algas aprēķina bāzes kods</td>
+<td>Norāda algas aprēķina bāzes kodu, kas tiek izmantots visiem izpildrakstu aprēķiniem.</td>
+</tr>
+<tr>
 <td>Bērnu kopšanas prombūtnes filtrs</td>
 <td>Atbilstošais prombūtnes kods.</td>
 </tr>
@@ -2184,9 +2196,11 @@ Ieteicams brīvā formā aizpildīt arī lauku <em>Nosaukums</em>, izvēloties a
 <p>Var ērti ievadīt darbinieka kartiņas Algas komponenšu rindās.</p>
 <p><img src="images/10.salary_comp.register_8.png" alt="alt"></p>
 <h2 id="izpildrakstu-apstrāde-1">Izpildrakstu apstrāde</h2>
-<p>Gadījumā, ja uzņēmums saņem izpildrakstu par darbinieku, tad izpildraksts jāreģistrē Sistēmā. Reģistrēšanai darbinieka kartēs sadaļā <em>Algas komponentes</em> jāievada atbilstošie ieraksti.</p>
+<p>Gadījumā, ja uzņēmums saņem izpildrakstu par darbinieku, tad izpildraksts jāreģistrē Sistēmā.</p>
+<p>Nepieciešams pārbaudīt, vai <em>Algu uzstādījumi</em> sadaļā <em>Visp.inf.</em> laukos ir norādītas ieturējuma procentu vērtības, kas atbilst patreizējai likumdošanai. Kā arī laukā ZTI Neto algas aprēķina bāzes kods, kas tiek izmantots visiem izpildrakstu aprēķiniem:</p>
+<p><img src="images/10.salary_comp.register_9.png" alt="alt"></p>
+<p>Darbinieka kartes sadaļā <em>Algas komponentes</em> jāievada atbilstošie ieraksti ieturējuma veikšanai.</p>
 <p><img src="images/3.1.general_info_10.png" alt="alt"></p>
-<p><em>Konkrētajā piemērā ir ieturēti 20 % no bāzes ALIM (alga pēc nodokļu ieturēšanas) izmantojot algas komponenti Nr.740, kur minimālais ieturējums 250 EUR mēnesī, un par iepriekšējiem periodiem ir veikti ieturējumi 2000 EUR apmērā. Ieturējumam limita nav.</em></p>
 <p>Lai iestatītu izpildraksta ieturējumu, jāaizpilda sekojoši lauki:</p>
 <table>
 <thead>
@@ -2198,7 +2212,7 @@ Ieteicams brīvā formā aizpildīt arī lauku <em>Nosaukums</em>, izvēloties a
 <tbody>
 <tr>
 <td>Kods</td>
-<td>Izvēlēties algas komponenti. Atkarībā no algas komponentes uzstādījumiem tiek aprēķināta ieturējuma summa.</td>
+<td>Izvēlēties algas komponenti. Atkarībā no algas komponentes uzstādījumiem tiek aprēķināta ieturējuma summa. Jāņem vērā arī algas komponentes prioritāte, ja kāds izpildraksts ir prioritārāks par pārējiem.</td>
 </tr>
 <tr>
 <td>No datuma/ Līdz datumam</td>
@@ -2213,7 +2227,7 @@ Ieteicams brīvā formā aizpildīt arī lauku <em>Nosaukums</em>, izvēloties a
 <td>Norāda kopējo parāda summu pēc izpildraksta.</td>
 </tr>
 <tr>
-<td>Aprēķinātā summa</td>
+<td>Aprēķinātā atvilkumu summa</td>
 <td>Informatīvs lauks. Sistēma šeit atspoguļo kopējo ieturēto summa šim konkrētajam izpildrakstam (no visiem algu sarakstiem kopējā summa).</td>
 </tr>
 <tr>
@@ -2222,30 +2236,31 @@ Ieteicams brīvā formā aizpildīt arī lauku <em>Nosaukums</em>, izvēloties a
 </tr>
 <tr>
 <td>Izmaksas minimālais limits</td>
-<td>Norāda darbinieka algas izmaksas minimālo limitu. Šajā gadījumā obligāti jābūt aizpildītai izmaksas bāzei.</td>
-</tr>
-<tr>
-<td>Izmaksas limita bāze</td>
-<td>Norāda limita bāzi, ja ir norādīts izmaksas minimālais limits.</td>
+<td>Norāda darbinieka algas izmaksas minimālo limitu, kas atbilst patreizējās minimālās algas procenta daļai, kas nav ieturama. Ja gadījumā darbiniekam ir bērni, tad jāpieskaita šai summai par katru bērnu vēl 15% no valstī noteiktās minimālās algas. Piemēram, šajā gadījumā ir norādīts Izmaksas minimālais limits 350 EUR mēnesī, kas ir 50% no minimālās algas 2024. gadā, jo šī summa ir jāatņem no bāzes, no kuras tiks aprēķināts ieturējums.</td>
 </tr>
 </tbody>
 </table>
 <p><strong>Iespējamie konfigurācijas varianti:</strong></p>
 <ul>
-<li>Tiek ieturēti 30% no darbiniekam izmaksājamās, bet ne vairāk kā 350 EUR mēnesī. Kopējā ieturamā summa 350 EUR. Parādīts, ka no darbinieka ir jau ieturēta maksimālā summa 350.00 EUR.</li>
+<li>Ir saņemti vairāki izpildraksti ieturēšanai no viena darbinieka. Ieturējuma nosacījumi abiem izpildrakstiem vienādi. Sistēma šajā gadījumā sadalīs ieturējumu katram izpildrakstam proporcionāli izpildrakstu skaitam.</li>
 </ul>
 <p><img src="images/3.1.general_info_11.png" alt="alt"></p>
+<div class="TIP">
+<h5>Tip</h5>
+<p><strong>Vērtībai laukā <em>Izmaksas minimālais limits</em> ir jābūt vienādam visās izpildrakstu komponenšu rindiņās. Kad mainās valstī noteiktās minimālās algas apmērs, visām rindiņām nepieciešams izmainīt vērtības, pirms tam izdzēšot veco (ieliekot vērtību nulle) un tad rakstīt jauno limita summu.</strong></p>
+</div>
 <ul>
-<li>Tiek ieturēti 20%, pie nosacījuma, ka ir jānodrošina darbinieka algas izmaksas summa vismaz 370 EUR mēnesī. Kopējā ieturamā summa 350 EUR. Parādīts, ka no darbinieka ir ieturēts 36.00 EUR.</li>
+<li>Vienam no izpildrakstiem ir noteikts ieturējuma limits 500 EUR. Šajā gadījumā ieturējuma sadalījums nebūs proporcionāls, bet atbilstoši ieturējuma atlikuma limitam.</li>
 </ul>
 <p><img src="images/3.1.general_info_12.png" alt="alt"></p>
 <div class="TIP">
 <h5>Tip</h5>
-<p><strong>Sistēma nenodrošina abus variantus vienlaicīgi - kad tiek lietots <em>Mēneša limits</em> un <em>Izmaksas minimālais limits</em>!</strong></p>
+<p><strong>Kad izpildraksts ir pilnībā ieturēts, Darbinieka algas komponenšu sarakstā, attiecīgajam izpildraksta rindiņai, kas ir beigusies ir jāieliek datums, līdz kuram ieturējums tika veikts, lai sistēmai dotu uzdevumu atkal pārslēgties uz viena izpildraksta procentuālo ieturējumu.</strong></p>
 </div>
-<h3 id="iespējamie-zti-uzstādījumi---sadalījums-pa-kārtām">Iespējamie ZTI uzstādījumi - sadalījums pa kārtām</h3>
-<p>Sistēmā ir iespējams kontrolēt izpildrakstu kārtas.  Ja ir izpildraksts ar pirmo kārtu, tad tiek nosegta pilna pirmā kārta un pēc tam secīgi var pāriet pie nākamajām kārtām.
-Ja trūkst līdzekļu, ko ieturēt, bet kārtas ir vienādas, tad ieturamā summa tiek sadalīta proporcionāli.</p>
+<p><img src="images/3.1.general_info_12_1.png" alt="alt"></p>
+<h3 id="iespējamie-zti-uzstādījumi---sadalījums-pa-prioritātēm">Iespējamie ZTI uzstādījumi - sadalījums pa prioritātēm</h3>
+<p>Sistēmā ir iespējams kontrolēt izpildrakstu prioritātes.  Ja ir izpildraksts ar pirmo prioritāti, tad tiek nosegta pilna pirmā kārta ;šim izpildrakstam un pēc tam secīgi var pāriet pie nākamajām prioritātēm.
+Ja trūkst līdzekļu, ko ieturēt, bet prioritātes ir vienādas, tad ieturamā summa tiek sadalīta proporcionāli.</p>
 <p>Iespējamā konfigurācija:</p>
 <ol>
 <li><p><img src="images/1.payroll_comp_setup.png" alt="alt"></p>
@@ -2271,17 +2286,17 @@ Ja trūkst līdzekļu, ko ieturēt, bet kārtas ir vienādas, tad ieturamā summ
 <li><p><img src="images/1.11payroll_comp_setup.png" alt="alt"></p>
 </li>
 </ol>
-<p>Gadījumā, ja pēc ieturēšanas jāpārskaita aprēķinātā summa uz citu bankas kontu, jāievada atbilstoši visi bankas konta dati. Darbinieka kartiņa - <em>Naviģēt</em> - <em>Papildus inform. algām</em> - <em>Pārskaitījumi</em>.</p>
+<h3 id="izpildrakstu-izmaksa-trešajām-pusēm">Izpildrakstu izmaksa trešajām pusēm</h3>
+<p>Katram izpildrakstam ir jāpiesaista piegādātājs. Darbinieka kartiņa - <em>Saistītās</em> - <em>Papildus inform. algām</em> - <em>Pārskaitījumi</em>.</p>
 <p>Nepieciešams ievadīt sekojošu informāciju:</p>
 <ol>
-<li>Darbinieka algas komponente – izvēlēt no saraksta : darbinieka algas komponentes. Atbilstoši tiek veikta uzskaite pēc konkrētās darbinieka algas komponentes.</li>
+<li>Darbinieka algas komponente – izvēlēties no darbiniekam piesaistīto algas komponenšu saraksta atbilstošo izpildraksta rindiņu.</li>
 <li>Algas komponentes kods – tiks automātiski aizpildīts no lauka Darbinieka algas komponente.</li>
-<li>Piegādātāja Nr. – izvēlēt piegādātāju, kuram tiks pārskaitīta nauda, piemēram, tiesu izpildītājs. Gadījumā, ja tāda piegādātāja nav, piegādātājam jāizveido jauna kartiņa.</li>
+<li>Piegādātāja Nr. – izvēlēt piegādātāju, kuram tiks pārskaitīta nauda, piemēram, tiesu izpildītājs. Gadījumā, ja tāda piegādātāja nav, piegādātājam jāizveido jauna kartiņa Obligātie lauki - piegādātāja Nr, nosaukums, reģistrācijas numurs, banka, Visp. biznesa kontējuma grupa un piegādātāja kontējuma grupa.</li>
 <li>Piegādātāja bankas kods.</li>
-<li>Nosaukums – maksājuma žurnālam.</li>
-<li>Informācija par maksājumu – maksājuma pamatojums, automātiski tiks aizpildīts maksājumu žurnālā.  piemēram: saskaņā ar lēmumu xxxxx par Darbinieku, pers. Kods xxxxxxxxxxx.</li>
-<li>Palaižot aprēķinu, ieturējuma summa tiks aprēķināta pēc nosacījumiem, kuri tika norādīti darbinieka algas komponentes kartē.</li>
+<li>Informācija par maksājumu (Apraksts) – maksājuma pamatojums, automātiski tiks aizpildīts maksājumu žurnālā.  piemēram: saskaņā ar lēmumu xxxxx par Darbinieku, pers. Kods xxxxxxxxxxx.</li>
 </ol>
+<p>Palaižot aprēķinu, ieturējuma summa tiks aprēķināta pēc nosacījumiem, kuri tika norādīti darbinieka algas komponentes kartē.</p>
 <p>Lai veiktu izmaksu trešajām personām, jāpalaiž funkcija Eksports uz maksājumu žurnālu ar sekojošiem parametriem:</p>
 <p><img src="images/10.2.corrections2_3.png" alt="alt"></p>
 <p>Maksājuma žurnālā tiek izveidots ieraksts – maksājums. Lai izveidotu failu, kurš jāimportē internetbankā, jānospiež poga <em>Eksportēt failu ar maksājumu informāciju žurnālu rindās</em> (maksājumu fails parastiem piegādātājiem).</p>

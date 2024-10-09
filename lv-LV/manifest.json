@@ -1378,6 +1378,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/payroll_base/images/3.1.general_info_12_1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/images/3.1.general_info_12_1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/payroll_base/images/3.1.general_info_14.png",
       "output": {
         "resource": {
@@ -2076,7 +2087,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_base/payroll_base.html",
-          "hash": "P5RNxSb5WKqCCJekRQLeuGeKWi1P0Hv6+yi/UlFesWc="
+          "hash": "9I/HlNVJT4lIXXsr77KaUPG8+xvoqaJ47fUQ/pmIJc4="
         }
       },
       "is_incremental": false,
@@ -11376,7 +11387,7 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "x8vf6Rc6CkVfEtZ80cxrjvkuBFEqIMH75cAqUHevdtc="
+          "hash": "H/idPEPA6AU2Q1e6wQDrqVBcS6ecdD7j2o8TCvsL9q4="
         }
       },
       "is_incremental": false,
