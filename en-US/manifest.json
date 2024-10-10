@@ -1724,6 +1724,61 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/payroll_base/images/new1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/images/new1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_base/images/new2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/images/new2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_base/images/new3.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/images/new3.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_base/images/new4.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/images/new4.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_base/images/new5.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/images/new5.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/payroll_base/images/payroll_comp.png",
       "output": {
         "resource": {
@@ -1784,7 +1839,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_base/payroll_base.html",
-          "hash": "eJquWahTvSMt27YPt0g3beflc9xoTQwVKD80MUqfmTY="
+          "hash": "P2WyoW/ys1l90NZzw/R3F8/9jYAGWPJ1UquZJ+C0MsY="
         }
       },
       "is_incremental": false,

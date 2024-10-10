@@ -330,6 +330,18 @@
 <td>Works only if function <em>Compensated Bank Holiday Hours Enabled</em> is enabled. Enables if it's necessary to compensate holiday hours, what falls into working days, if the employee has been hired/terminated in the current month.</td>
 </tr>
 <tr>
+<td>ZTI amounts withheld by one claim, %</td>
+<td>Indicate, in accordance with the current requirements of the legislation, what percentage needs to be withheld from the employee's salary in case of one injunction.</td>
+</tr>
+<tr>
+<td>ZTI amounts withheld by several claims, %</td>
+<td>Indicate, in accordance with the current requirements of the legislation, what percentage needs to be withheld from the employee's salary in case of several injunctions.</td>
+</tr>
+<tr>
+<td>ZTI Net payroll calculation Base Code</td>
+<td>Specifies the payroll base code that is used for all injunction calculations.</td>
+</tr>
+<tr>
 <td>Child Care Absence Filter</td>
 <td>The corresponding absence code.</td>
 </tr>
@@ -2201,8 +2213,11 @@ It is also recommended to fill in the <em>Description</em> (3) field in free for
 <p>It can be easily entered in the payroll component rows of employee card.</p>
 <p><img src="images/10.salary_comp.register_8.png" alt="alt"></p>
 <h2 id="processing-the-writ-of-execution-1">Processing the writ of execution</h2>
-<p>In case a company receives a writ of execution for an employees, this document must be registered in the system. The writ of execution can be registered in the employee card's <em>Employee Payroll Components</em>.</p>
-<p><em>In the specific example, 20% of the base ALIM (salary after tax) has been deducted using salary component No. 740, where the minimum deduction is EUR 250 per month, and EUR 2000 has been deducted for previous periods. No limit to the total amount of the deductions has been set.</em></p>
+<p>In case a company receives a writ of execution for an employees, this document must be registered in the system.</p>
+<p>It is necessary to check whether the <em>Payroll settings</em> section <em>General</em> fields indicate the withholding interest values that comply with the current legislation. As well as in the field <em>ZTI Net payroll calculation base code</em>, which is used for all injunction calculations.</p>
+<p><img src="images/new1.png" alt="alt"></p>
+<p>The writ of execution can be registered in the employee card's <em>Employee Payroll Components</em>.</p>
+<p><img src="images/new2.png" alt="alt"></p>
 <p>The following fields must be filled in the Employee Payroll Components tab to set a deduction for writ of execution:</p>
 <table>
 <thead>
@@ -2238,29 +2253,32 @@ It is also recommended to fill in the <em>Description</em> (3) field in free for
 </tr>
 <tr>
 <td>PayOut Limit</td>
-<td>Indicates the minimum limit of the employee's salary payment. In this case, the field PayOut Limit Base must be completed.</td>
-</tr>
-<tr>
-<td>PayOut Limit Base</td>
-<td>Indicates the limit base if a PayOut Limit is specified.</td>
+<td>The minimum limit for the payment of the employee's salary, which corresponds to the part of the current minimum wage percentage that is not withheld, shall be indicated. If in the case the employee has children, then you need to add to this amount for each child another 15% of the minimum wage established in the country. For example, in this case, the minimum payout limit of 350 EUR per month is indicated, which is 50% of the minimum wage in 2024, since this amount must be subtracted from the base from which the deduction will be calculated.</td>
 </tr>
 </tbody>
 </table>
 <p><strong>Possible configuration options:</strong></p>
 <ul>
-<li>30% of the employee's payment is deducted, but not more than 350 EUR per month. The total amount to be deducted is 350 EUR. It is shown that the full amount of 350 EUR has been deducted from the employee.</li>
+<li>Several injunctions have been received for withholding from one employee. The conditions of withholding for both injunctions are the same. The system in this case will distribute the deduction for each injunction in proportion to the number of injunctions.</li>
 </ul>
-<p><img src="images/3.1.general_info_11.png" alt="alt"></p>
-<ul>
-<li>T20% is deducted, provided that the amount of the employee's salary payment is at least 370 EUR per month. The total amount to be deducted is 350 EUR. It is shown that on this moment 36 EUR has been deducted from the employee.</li>
-</ul>
+<p><img src="images/new3.png" alt="alt"></p>
 <div class="TIP">
 <h5>Tip</h5>
-<p><strong>The system does not provide both options at the same time - when using the <em>Month Limit</em> and <em>PayOut Limit</em>!</strong></p>
+<p><strong>The value in the <em>Payout limit</em> field must be the same across all lines of injunction components. When the amount of the national minimum wage changes, all lines need to change the values, having previously deleted the old one (putting the value at zero) and then write the new limit amount.</strong></p>
 </div>
+<ul>
+<li>One of the injunctions has a withholding limit of 500 EUR. In this case, the distribution of the withholding will not be proportional, but according to the limit of the balance of the withholding.</li>
+</ul>
+<p><img src="images/new4.png" alt="alt"></p>
+<div class="TIP">
+<h5>Tip</h5>
+<p><strong>When the injunction is fully withheld, the date by which the withholding was made must be placed on the Employee's payroll component list, the corresponding line of the invocation that has expired, in order to give the system the task to switch back to a single injunction percentage deduction.</strong></p>
+</div>
+<p><img src="images/new5.png" alt="alt"></p>
 <h3 id="possible-setup---distribution-in-parts">Possible setup - distribution in parts</h3>
 <p>It is possible to control the sequence of the writs of execution. The writ of execution [first part] is covered in full. Accordingly, the next parts are covered afterwards. If there is not enough funds, but the parts are equal, the amount to withhold is divided proportionally.</p>
-<p>Possible configuration:</p>
+<p><img src="images/3.1.general_info_11.png" alt="alt"></p>
+<p>Possible configuration - split between stages and priorities:</p>
 <ol>
 <li><p><img src="images/1.payroll_comp_setup.png" alt="alt"></p>
 </li>
@@ -2299,8 +2317,8 @@ It is also recommended to fill in the <em>Description</em> (3) field in free for
 <li>Vendor Bank code - select the required bank account from the vendor's bank account list.</li>
 <li>Description – enter a freely chosen payment description.</li>
 <li>Payment Information – enter the payment information that needs to be reflected in the bank's payment details. For example: according to decision No. xxxxx for Employee, pers. code xxxxxxxxxxx.</li>
-<li>When starting the salary calculation, deductible amount will be calculated accordingly to the conditions that were specified in employee' s card.</li>
 </ol>
+<p>When starting the salary calculation, deductible amount will be calculated accordingly to the conditions that were specified in employee' s card.</p>
 <p>To make a payment to third parties, you need to run the function <em>Export to Payment Journal</em> under the <em>Report</em> button in the <em>Salary List</em>'s toolbar.</p>
 <p>The following parameters must be entered in the pop-up window:</p>
 <p>Select from the list Third Parties Payments;
