@@ -30,7 +30,18 @@
       "output": {
         ".html": {
           "relative_path": "docs/hrw/hrw.html",
-          "hash": "fNMr1nWA4mDhV7bljOdKf2r7LOyCkyN5II4FRlJlNCg="
+          "hash": "zbwvUm3P3GCG7Z4ZeQezUQK2+fzIUa2lfzDzES2Floo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/hrw/images/Dimensions.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/hrw/images/Dimensions.png"
         }
       },
       "is_incremental": false,
