@@ -14934,6 +14934,28 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/personnel_base/images/image (1).png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/personnel_base/images/image (1).png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/personnel_base/images/image.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/personnel_base/images/image.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/personnel_base/images/salary_contract_1_eng.png",
       "output": {
         "resource": {
@@ -14961,7 +14983,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/personnel_base/personnel_base.html",
-          "hash": "gx0SxPjrhE1IbgtuWXbUdXyA38Podk3uXkNrubBp2GY="
+          "hash": "3Kot936xiICmxyAdBXsAH2OOsOS3KsEUet1ow+h8XNY="
         }
       },
       "is_incremental": false,
