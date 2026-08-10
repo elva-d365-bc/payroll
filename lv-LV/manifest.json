@@ -7036,23 +7036,23 @@
       "version": ""
     },
     {
-      "type": "Conceptual",
+      "type": "Resource",
       "source_relative_path": "docs/personnel_base/images/24.notifications.md",
       "output": {
-        ".html": {
-          "relative_path": "docs/personnel_base/images/24.notifications.html",
-          "hash": "aK0+J4k54qF3b+Ps//cw4B4ZPEUSgTqbU/Wi1Tdpxpo="
+        "resource": {
+          "relative_path": "docs/personnel_base/images/24.notifications.md"
         }
       },
       "is_incremental": false,
       "version": ""
     },
     {
-      "type": "Resource",
+      "type": "Conceptual",
       "source_relative_path": "docs/personnel_base/images/24.notifications.md",
       "output": {
-        "resource": {
-          "relative_path": "docs/personnel_base/images/24.notifications.md"
+        ".html": {
+          "relative_path": "docs/personnel_base/images/24.notifications.html",
+          "hash": "aK0+J4k54qF3b+Ps//cw4B4ZPEUSgTqbU/Wi1Tdpxpo="
         }
       },
       "is_incremental": false,
@@ -7302,6 +7302,28 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/personnel_base/images/ieklautvisusriskus1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/personnel_base/images/ieklautvisusriskus1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/personnel_base/images/ieklautvisusriskus2.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/personnel_base/images/ieklautvisusriskus2.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/personnel_base/images/salary_contract_1.png",
       "output": {
         "resource": {
@@ -7340,7 +7362,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/personnel_base/personnel_base.html",
-          "hash": "bCVaHkuxnRBo5zOvV6bWqb6vvFOk0xaThF4g2ZIlr0I="
+          "hash": "TWmyW7Bbcf9ksB0GkjkYIcdQNHCQn30CAX170nz0T6w="
         }
       },
       "is_incremental": false,
