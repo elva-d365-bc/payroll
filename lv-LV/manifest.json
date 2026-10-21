@@ -1268,6 +1268,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/payroll_base/images/2.payroll_acc_6_new1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/images/2.payroll_acc_6_new1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/payroll_base/images/2.payroll_acc_7.png",
       "output": {
         "resource": {
@@ -2581,7 +2592,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_base/setup/2.1.payroll_acc.html",
-          "hash": "APM3gZLGiv3ZL0hs4agWkcnx8GHJv2jTV+SYwwZlYpY="
+          "hash": "q6MzKo76JTwLwAHg/w0jT7wLd4yJAirtDns99e/6Zds="
         }
       },
       "is_incremental": false,
@@ -2694,6 +2705,17 @@
       "output": {
         "resource": {
           "relative_path": "docs/payroll_base/setup/2.payroll_acc_6.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_base/setup/2.payroll_acc_6_new1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/setup/2.payroll_acc_6_new1.png"
         }
       },
       "is_incremental": false,
@@ -7036,23 +7058,23 @@
       "version": ""
     },
     {
-      "type": "Resource",
-      "source_relative_path": "docs/personnel_base/images/24.notifications.md",
-      "output": {
-        "resource": {
-          "relative_path": "docs/personnel_base/images/24.notifications.md"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
       "type": "Conceptual",
       "source_relative_path": "docs/personnel_base/images/24.notifications.md",
       "output": {
         ".html": {
           "relative_path": "docs/personnel_base/images/24.notifications.html",
           "hash": "aK0+J4k54qF3b+Ps//cw4B4ZPEUSgTqbU/Wi1Tdpxpo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/personnel_base/images/24.notifications.md",
+      "output": {
+        "resource": {
+          "relative_path": "docs/personnel_base/images/24.notifications.md"
         }
       },
       "is_incremental": false,
