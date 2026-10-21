@@ -2311,7 +2311,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_base/setup/2.1.payroll_acc.html",
-          "hash": "VzOJQ7J4W7c+zE0tUKtzKv7kTsXAPgUU34UEk6KorGU="
+          "hash": "CsluhDzqITOs9Gl/8RlMrW/vpJtfz0CX/JdaKlpdm6c="
         }
       },
       "is_incremental": false,
@@ -2424,6 +2424,17 @@
       "output": {
         "resource": {
           "relative_path": "docs/payroll_base/setup/2.payroll_acc_6.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "docs/payroll_base/setup/2.payroll_acc_6_new1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/setup/2.payroll_acc_6_new1.png"
         }
       },
       "is_incremental": false,
