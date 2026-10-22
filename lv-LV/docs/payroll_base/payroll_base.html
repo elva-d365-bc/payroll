@@ -338,6 +338,10 @@
 <td>Norāda algas aprēķina bāzes kodu, kas tiek izmantots visiem izpildrakstu aprēķiniem.</td>
 </tr>
 <tr>
+<td>ZTI summas sadales metode</td>
+<td>Norāda, kā pieejamā izmaksas summa tiek sadalīta starp vienas prioritātes ZTI pieprasījumiem - vienādās daļās vai proporcionāli darbinieka algas komponentes kopējam limitam.</td>
+</tr>
+<tr>
 <td>Bērnu kopšanas prombūtnes filtrs</td>
 <td>Atbilstošais prombūtnes kods.</td>
 </tr>
@@ -820,8 +824,10 @@ Uzstādījumu definēšana ir svarīga, lai no sistēmas varētu veiksmīgi eksp
 </tbody>
 </table>
 <h3 id="darbinieku-grāmatošanas-grupas">Darbinieku grāmatošanas grupas</h3>
-<p>Darbinieka grāmatošanas grupas tiek izmantotas, ja algas aprēķinā iegūtās summas jāizdala starp dažādiem virsgrāmatas kontiem (piemēram, administrācijas algu izmaksas un strādnieku algu izmaksas). Lai apskatītu visus algu grāmatojumus vienā lapā, <em>Darbinieku grāmatošanas grupas</em> rīkjoslā jānospiež poga <em>Grāmatošanas uzstādījumi</em>.</p>
-<p><img src="images/2.payroll_acc_6.png" alt="alt"></p>
+<p>Darbinieka grāmatošanas grupas tiek izmantotas, ja algas aprēķinā iegūtās summas jāizdala starp dažādiem virsgrāmatas kontiem (piemēram, administrācijas algu izmaksas un strādnieku algu izmaksas). Katrai darbinieku grāmatošanas grupai papildus var piešķirt dažādus Darba devēja sociālā nodokļa grāmatošanas kontus, vai arī norādīt piegādātāju.
+Ja šajos uzstādījumos Darba devēja nodokļa lauki netiek aizpildīti, tad sistēma aprēķinos ņem vērā Darba devēja sociālā nodokļa uzstādījumu laukus no <em>Algas uzstādījumi</em>. Ja abās uzstādījumu vietās nav norādīti grāmatošanas nosacījumi, tad veicot algas aprēķinu grāmatošanu, sistēma uzrādīs kļūdu.</p>
+<p>Lai apskatītu visus algu grāmatojumus vienā lapā, <em>Darbinieku grāmatošanas grupas</em> rīkjoslā jānospiež poga <em>Grāmatošanas uzstādījumi</em></p>
+<p><img src="images/2.payroll_acc_6_new1.png" alt="alt"></p>
 <table>
 <thead>
 <tr>
@@ -835,8 +841,16 @@ Uzstādījumu definēšana ir svarīga, lai no sistēmas varētu veiksmīgi eksp
 <td>Darbinieka grāmatošanas grupas kods.</td>
 </tr>
 <tr>
-<td>Maksājumu konts</td>
+<td>Piegādātāja atlikuma konts</td>
 <td>Norāda Virsgrāmatas kontu, kas jālieto, grāmatojot kreditoru parādus darbiniekiem šajā kontējuma grupā.</td>
+</tr>
+<tr>
+<td>Darba devēja soc. nodokļa konta tips</td>
+<td>Izvēlas <em>V/G konts</em>, ja izmanto virsgrāmatas kontu vai izvēlas <em>Piegādātājs</em>, ja jāizmanto piegādātāja kontu.</td>
+</tr>
+<tr>
+<td>Darba devēja soc. nodokļa konta nr.</td>
+<td>Izvēlas nepieciešamo virsgrāmatas kontu vai piegādātāju.</td>
 </tr>
 </tbody>
 </table>
