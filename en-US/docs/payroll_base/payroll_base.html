@@ -330,16 +330,20 @@
 <td>Works only if function <em>Compensated Bank Holiday Hours Enabled</em> is enabled. Enables if it's necessary to compensate holiday hours, what falls into working days, if the employee has been hired/terminated in the current month.</td>
 </tr>
 <tr>
-<td>ZTI amounts withheld by one claim, %</td>
-<td>Indicate, in accordance with the current requirements of the legislation, what percentage needs to be withheld from the employee's salary in case of one injunction.</td>
+<td>Sworn Court Singular Request Deducted Amount %</td>
+<td>Specify procent from neto salary amount subtracting payout limit for singular sworn court request.</td>
 </tr>
 <tr>
-<td>ZTI amounts withheld by several claims, %</td>
-<td>Indicate, in accordance with the current requirements of the legislation, what percentage needs to be withheld from the employee's salary in case of several injunctions.</td>
+<td>Sworn Court Multi Requests Deducted Amount %</td>
+<td>Specify procent from neto salary amount subtracting payout limit for multi sworn court requests.</td>
 </tr>
 <tr>
-<td>ZTI Net payroll calculation Base Code</td>
-<td>Specifies the payroll base code that is used for all injunction calculations.</td>
+<td>Sworn Court Neto Calc. Base Code</td>
+<td>Specify bases code for neto salary amount calculating for sworn court.</td>
+</tr>
+<tr>
+<td>Sworn Court Amount Split Method</td>
+<td>Specify how the available pay-out amount is split between the sworn court requests of the same priority - in equal parts or proportionally to the Total Limit of the employee payroll component.</td>
 </tr>
 <tr>
 <td>Child Care Absence Filter</td>
@@ -825,8 +829,10 @@ Defining setup is important for successfully exporting payroll payments from the
 </tbody>
 </table>
 <h3 id="employee-posting-groups">Employee posting groups</h3>
-<p>Employee posting groups are used when amounts obtained in payroll calculation must be distributed between different general ledger accounts (for example, administration payroll costs and worker payroll costs ). To view all payroll postings on one page, on the <em>Employee posting groups</em> toolbar press a button <em>Posting Setup</em></p>
-<p><img src="images/2.payroll_acc_6.png" alt="alt"></p>
+<p>Employee posting groups are used when amounts obtained in payroll calculation must be distributed between different general ledger accounts (for example, administration payroll costs and worker payroll costs ). In addition, different Employer Social Tax posting accounts can be assigned to each employee posting group, or a vendor can be specified.
+If the Employer Tax fields are not populated in these settings, the system uses the Employer Social Tax setup fields from Payroll Setup when performing calculations. If posting conditions are not specified in either setup location, the system will display an error when posting payroll calculations.</p>
+<p>To view all payroll posting settings on a single page, click the <em>Posting Setup</em> button in the Employee Posting Groups toolbar.</p>
+<p><img src="images/2.payroll_acc_6_new1.png" alt="alt"></p>
 <table>
 <thead>
 <tr>
@@ -842,6 +848,14 @@ Defining setup is important for successfully exporting payroll payments from the
 <tr>
 <td>Payables Account</td>
 <td>Specifies the ledger account to be used when posting vendor debts to employees in this posting group.</td>
+</tr>
+<tr>
+<td>Employers Soc. Tax Acc. Type</td>
+<td>Select G/L Account if a general ledger account is to be used, or select Vendor if a vendor account should be used.</td>
+</tr>
+<tr>
+<td>Employers Soc. Tax Acc. No.</td>
+<td>Select the required general ledger account or vendor.</td>
 </tr>
 </tbody>
 </table>

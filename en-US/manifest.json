@@ -1218,6 +1218,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "docs/payroll_base/images/2.payroll_acc_6_new1.png",
+      "output": {
+        "resource": {
+          "relative_path": "docs/payroll_base/images/2.payroll_acc_6_new1.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "docs/payroll_base/images/2.payroll_acc_7.png",
       "output": {
         "resource": {
@@ -1850,7 +1861,7 @@
       "output": {
         ".html": {
           "relative_path": "docs/payroll_base/payroll_base.html",
-          "hash": "P2WyoW/ys1l90NZzw/R3F8/9jYAGWPJ1UquZJ+C0MsY="
+          "hash": "vk3bUB0JeMAIrYgqzjGvtXb5kfyIit+gv0CorM/9XC4="
         }
       },
       "is_incremental": false,
